@@ -1,0 +1,467 @@
+openapi: 3.0.3
+info:
+  title: AI_algo API
+  description: |
+    Standalone AI product for IT Algo Desktop.
+    Contracts: Inference, Ingest, Train. api_version 2026-08-20.
+  version: "2026-08-20"
+  license:
+    name: Proprietary
+
+servers:
+  - url: http://127.0.0.1:8090
+    description: Local dev
+
+security: []
+
+paths:
+  /v1/health:
+    get:
+      operationId: getHealth
+      summary: Liveness
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthResponse"
+
+  /v1/capabilities:
+    get:
+      operationId: getCapabilities
+      summary: What this instance supports
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CapabilitiesResponse"
+
+  /v1/infer:
+    post:
+      operationId: postInfer
+      summary: Inference (build, compare, advise, signal)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/InferRequest"
+      responses:
+        "200":
+          description: OK or error envelope
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/InferResponse"
+
+  /v1/ingest/bars:
+    post:
+      operationId: postIngestBars
+      summary: Ingest OHLCV and optional indicators
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/IngestBarsRequest"
+      responses:
+        "200":
+          description: Accepted
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/IngestResponse"
+
+  /v1/ingest/graphs:
+    post:
+      operationId: postIngestGraphs
+      summary: Ingest script graph(s)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/IngestGraphsRequest"
+      responses:
+        "200":
+          description: Accepted
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/IngestResponse"
+
+  /v1/ingest/runs:
+    post:
+      operationId: postIngestRuns
+      summary: Ingest backtest or live run metrics
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/IngestRunsRequest"
+      responses:
+        "200":
+          description: Accepted
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/IngestResponse"
+
+  /v1/train/jobs:
+    post:
+      operationId: postTrainJob
+      summary: Start training job (dev only)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/TrainJobRequest"
+      responses:
+        "200":
+          description: Accepted or forbidden
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TrainJobResponse"
+
+  /v1/train/jobs/{id}:
+    get:
+      operationId: getTrainJob
+      summary: Training job status
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Job status
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TrainJobStatusResponse"
+        "404":
+          description: Not found
+
+components:
+  schemas:
+    ClientInfo:
+      type: object
+      required: [product, app_version, env]
+      properties:
+        product:
+          type: string
+          example: it-algo-desktop
+        app_version:
+          type: string
+        env:
+          type: string
+          enum: [prod, dev]
+
+    AuthInfo:
+      type: object
+      properties:
+        type:
+          type: string
+          enum: [bearer, device, dev]
+        token:
+          type: string
+
+    InferIntent:
+      type: string
+      enum: [build_script, compare_scripts, advise, signal]
+
+    InferRequest:
+      type: object
+      required: [api_version, request_id, client, intent, payload]
+      properties:
+        api_version:
+          type: string
+          example: "2026-08-20"
+        request_id:
+          type: string
+          format: uuid
+        client:
+          $ref: "#/components/schemas/ClientInfo"
+        auth:
+          $ref: "#/components/schemas/AuthInfo"
+        intent:
+          $ref: "#/components/schemas/InferIntent"
+        payload:
+          type: object
+          additionalProperties: true
+
+    ModelInfo:
+      type: object
+      properties:
+        id:
+          type: string
+        kind:
+          type: string
+          enum: [lgbm, llm_pipeline, rules]
+
+    ErrorBody:
+      type: object
+      properties:
+        code:
+          type: string
+          example: unsupported_intent
+        message:
+          type: string
+
+    InferResponse:
+      type: object
+      required: [api_version, request_id, status]
+      properties:
+        api_version:
+          type: string
+        request_id:
+          type: string
+        status:
+          type: string
+          enum: [ok, error, accepted]
+        model:
+          $ref: "#/components/schemas/ModelInfo"
+        result:
+          type: object
+          additionalProperties: true
+        warnings:
+          type: array
+          items:
+            type: string
+        error:
+          type: object
+          nullable: true
+          allOf:
+            - $ref: "#/components/schemas/ErrorBody"
+
+    HealthResponse:
+      type: object
+      required: [status]
+      properties:
+        status:
+          type: string
+          example: ok
+        build:
+          type: string
+
+    CompositionCaps:
+      type: object
+      properties:
+        max_depth:
+          type: integer
+        whitelist:
+          type: array
+          items:
+            type: string
+
+    TrainCaps:
+      type: object
+      properties:
+        enabled:
+          type: boolean
+        env_only:
+          type: array
+          items:
+            type: string
+
+    CapabilitiesResponse:
+      type: object
+      required: [api_version, intents]
+      properties:
+        api_version:
+          type: string
+        intents:
+          type: array
+          items:
+            $ref: "#/components/schemas/InferIntent"
+        models:
+          type: array
+          items:
+            $ref: "#/components/schemas/ModelInfo"
+        composition:
+          $ref: "#/components/schemas/CompositionCaps"
+        train:
+          $ref: "#/components/schemas/TrainCaps"
+        ingest:
+          type: boolean
+
+    Bar:
+      type: object
+      required: [ts, open, high, low, close, volume]
+      properties:
+        ts:
+          type: string
+        open:
+          type: number
+        high:
+          type: number
+        low:
+          type: number
+        close:
+          type: number
+        volume:
+          type: number
+
+    IngestBarsRequest:
+      type: object
+      required: [symbol, timeframe, bars]
+      properties:
+        dataset_id:
+          type: string
+        symbol:
+          type: string
+        timeframe:
+          type: string
+        bars:
+          type: array
+          items:
+            $ref: "#/components/schemas/Bar"
+        indicators:
+          type: array
+          items:
+            type: object
+            additionalProperties: true
+
+    IngestGraphsRequest:
+      type: object
+      required: [graphs]
+      properties:
+        graphs:
+          type: array
+          items:
+            type: object
+            additionalProperties: true
+            description: GraphDTO — see schemas/graph.dto.json
+
+    BacktestMetrics:
+      type: object
+      required: [pnl, max_dd, winrate, trades]
+      properties:
+        pnl:
+          type: number
+        max_dd:
+          type: number
+        winrate:
+          type: number
+        trades:
+          type: integer
+        sharpe:
+          type: number
+        sortino:
+          type: number
+
+    RunIngest:
+      type: object
+      required: [run_id, graph_id, graph_version, kind, window, metrics]
+      properties:
+        run_id:
+          type: string
+        graph_id:
+          type: string
+        graph_version:
+          type: integer
+        kind:
+          type: string
+          enum: [backtest, paper, live]
+        window:
+          type: object
+          properties:
+            from:
+              type: string
+            to:
+              type: string
+        metrics:
+          $ref: "#/components/schemas/BacktestMetrics"
+        align_key:
+          type: string
+
+    IngestRunsRequest:
+      type: object
+      required: [runs]
+      properties:
+        runs:
+          type: array
+          items:
+            $ref: "#/components/schemas/RunIngest"
+
+    IngestResponse:
+      type: object
+      required: [api_version, status, result]
+      properties:
+        api_version:
+          type: string
+        status:
+          type: string
+          enum: [accepted, error]
+        result:
+          type: object
+          properties:
+            id:
+              type: string
+        error:
+          type: object
+          nullable: true
+          allOf:
+            - $ref: "#/components/schemas/ErrorBody"
+
+    TrainJobRequest:
+      type: object
+      required: [dataset_ids, loop]
+      properties:
+        dataset_ids:
+          type: array
+          items:
+            type: string
+        loop:
+          type: string
+          enum: [A_signal, B_ranker]
+        label_spec:
+          type: object
+          additionalProperties: true
+        feature_spec_id:
+          type: string
+        split:
+          type: string
+          example: walk_forward
+        client:
+          $ref: "#/components/schemas/ClientInfo"
+
+    TrainJobResponse:
+      type: object
+      required: [status]
+      properties:
+        status:
+          type: string
+          enum: [accepted, error]
+        result:
+          type: object
+          properties:
+            job_id:
+              type: string
+        error:
+          type: object
+          nullable: true
+          allOf:
+            - $ref: "#/components/schemas/ErrorBody"
+
+    TrainJobStatusResponse:
+      type: object
+      required: [job_id, status]
+      properties:
+        job_id:
+          type: string
+        status:
+          type: string
+          enum: [queued, running, succeeded, failed]
+        model_id:
+          type: string
+        metrics:
+          type: object
+          additionalProperties: true

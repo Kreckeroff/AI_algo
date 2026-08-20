@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-algo.local/schemas/envelope.response.json",
+  "title": "InferResponseEnvelope",
+  "type": "object",
+  "required": ["api_version", "request_id", "status"],
+  "additionalProperties": false,
+  "properties": {
+    "api_version": { "type": "string" },
+    "request_id": { "type": "string" },
+    "status": { "type": "string", "enum": ["ok", "error", "accepted"] },
+    "model": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "kind": { "type": "string", "enum": ["lgbm", "llm_pipeline", "rules"] }
+      }
+    },
+    "result": { "type": "object" },
+    "warnings": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "error": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "code": { "type": "string" },
+        "message": { "type": "string" }
+      }
+    }
+  }
+}

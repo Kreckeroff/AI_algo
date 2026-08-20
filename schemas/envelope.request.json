@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-algo.local/schemas/envelope.request.json",
+  "title": "InferRequestEnvelope",
+  "type": "object",
+  "required": ["api_version", "request_id", "client", "intent", "payload"],
+  "additionalProperties": false,
+  "properties": {
+    "api_version": { "type": "string", "const": "2026-08-20" },
+    "request_id": { "type": "string", "minLength": 1 },
+    "client": {
+      "type": "object",
+      "required": ["product", "app_version", "env"],
+      "additionalProperties": false,
+      "properties": {
+        "product": { "type": "string" },
+        "app_version": { "type": "string" },
+        "env": { "type": "string", "enum": ["prod", "dev"] }
+      }
+    },
+    "auth": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": { "type": "string", "enum": ["bearer", "device", "dev"] },
+        "token": { "type": "string" }
+      }
+    },
+    "intent": {
+      "type": "string",
+      "enum": ["build_script", "compare_scripts", "advise", "signal", "ingest", "train"]
+    },
+    "payload": { "type": "object" }
+  }
+}

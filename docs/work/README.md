@@ -11,6 +11,8 @@ SA-спеки, backlog, research по AI-слою IT Algo.
 | [../PRODUCT_BOUNDARY.md](../PRODUCT_BOUNDARY.md) | AI_algo как отдельный продукт |
 | [platform/INTEGRATION_INTERFACES.md](./platform/INTEGRATION_INTERFACES.md) | **Контракты** Inference / Ingest / Train |
 | [../superpowers/plans/2026-08-21-ai-algo-roadmap.md](../superpowers/plans/2026-08-21-ai-algo-roadmap.md) | **План действий** Phase 0–6 |
+| [`../../openapi/v1.yaml`](../../openapi/v1.yaml) | OpenAPI v1 |
+| [`../../schemas/`](../../schemas/) | JSON Schema (envelope, GraphDTO, …) |
 | [../templates/](../templates/) | Шаблоны SA и design |
 
 ## Области (папки появятся по мере спек)
