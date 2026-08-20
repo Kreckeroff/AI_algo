@@ -13,6 +13,7 @@ SA-спеки, backlog, research по AI-слою IT Algo.
 | [../superpowers/plans/2026-08-21-ai-algo-roadmap.md](../superpowers/plans/2026-08-21-ai-algo-roadmap.md) | **План действий** Phase 0–6 |
 | [`../../openapi/v1.yaml`](../../openapi/v1.yaml) | OpenAPI v1 |
 | [`../../schemas/`](../../schemas/) | JSON Schema (envelope, GraphDTO, …) |
+| [platform/GRAPH_DTO.md](./platform/GRAPH_DTO.md) | Canonical GraphDTO / composition |
 | [../templates/](../templates/) | Шаблоны SA и design |
 
 ## Области (папки появятся по мере спек)

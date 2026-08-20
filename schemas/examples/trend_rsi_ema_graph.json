@@ -1,0 +1,43 @@
+{
+  "graph_id": "example-trend-rsi-ema",
+  "version": 1,
+  "nodes": [
+    {
+      "id": "n1",
+      "type": "indicator",
+      "kind": "RSI",
+      "params": { "period": 14 },
+      "source": "close"
+    },
+    {
+      "id": "n2",
+      "type": "indicator",
+      "kind": "EMA",
+      "params": { "period": 5 },
+      "source_node": "n1"
+    },
+    {
+      "id": "n3",
+      "type": "condition",
+      "op": ">",
+      "left": "n2",
+      "right": 80
+    },
+    {
+      "id": "n4",
+      "type": "action",
+      "kind": "note_trend_strength",
+      "params": { "comment": "RSI>80 via EMA(RSI) = trend strength, not auto-sell" }
+    }
+  ],
+  "edges": [
+    { "from": "n1", "to": "n2" },
+    { "from": "n2", "to": "n3" },
+    { "from": "n3", "to": "n4" }
+  ],
+  "meta": {
+    "regime": "trend",
+    "symbol": "SBER",
+    "timeframe": "5m"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-algo.local/schemas/graph.dto.json",
+  "title": "GraphDTO",
+  "type": "object",
+  "required": ["graph_id", "version", "nodes"],
+  "additionalProperties": false,
+  "properties": {
+    "graph_id": { "type": "string", "minLength": 1 },
+    "version": { "type": "integer", "minimum": 1 },
+    "nodes": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/node" }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["from", "to"],
+        "additionalProperties": false,
+        "properties": {
+          "from": { "type": "string" },
+          "to": { "type": "string" }
+        }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "regime": { "type": "string", "enum": ["trend", "mr", "breakout", "unknown"] },
+        "symbol": { "type": "string" },
+        "timeframe": { "type": "string" }
+      }
+    }
+  },
+  "$defs": {
+    "node": {
+      "type": "object",
+      "required": ["id", "type"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "type": { "type": "string", "enum": ["indicator", "condition", "action"] },
+        "kind": { "type": "string" },
+        "params": { "type": "object" },
+        "source": {
+          "type": "string",
+          "enum": ["open", "high", "low", "close", "hl2", "hlc3", "ohlc4"]
+        },
+        "source_node": { "type": "string" },
+        "op": { "type": "string" },
+        "left": {},
+        "right": {}
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "type": { "const": "indicator" } }, "required": ["type"] },
+          "then": { "required": ["kind"] }
+        },
+        {
+          "if": { "properties": { "type": { "const": "condition" } }, "required": ["type"] },
+          "then": { "required": ["op", "left", "right"] }
+        }
+      ]
+    }
+  }
+}

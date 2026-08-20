@@ -357,6 +357,6 @@ Desktop при старте (или по кнопке AI) читает capabilit
 
 - [x] OpenAPI skeleton — [`openapi/v1.yaml`](../../../openapi/v1.yaml)
 - [x] JSON Schema envelope — [`schemas/envelope.request.json`](../../../schemas/envelope.request.json), [`schemas/envelope.response.json`](../../../schemas/envelope.response.json)
-- [ ] JSON Schema: GraphDTO, metrics, feature_vector  
+- [x] JSON Schema: GraphDTO, metrics, feature_vector — `schemas/graph.dto.json`, `backtest_metrics.json`, `feature_vector.json`; см. [GRAPH_DTO.md](./GRAPH_DTO.md)  
 - [ ] SA-спека `AI-PLATFORM` (этот документ → SA)  
 - [ ] Адаптер-задача в it-algo-desktop (после стабилизации контракта)

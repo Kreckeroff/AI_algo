@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-algo.local/schemas/feature_vector.json",
+  "title": "FeatureVector",
+  "type": "object",
+  "required": ["feature_schema_id", "values"],
+  "additionalProperties": false,
+  "properties": {
+    "feature_schema_id": { "type": "string", "minLength": 1 },
+    "values": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": { "type": "number" }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-algo.local/schemas/backtest_metrics.json",
+  "title": "BacktestMetrics",
+  "type": "object",
+  "required": ["pnl", "max_dd", "winrate", "trades"],
+  "additionalProperties": false,
+  "properties": {
+    "pnl": { "type": "number" },
+    "max_dd": { "type": "number" },
+    "winrate": { "type": "number", "minimum": 0, "maximum": 1 },
+    "trades": { "type": "integer", "minimum": 0 },
+    "sharpe": { "type": "number" },
+    "sortino": { "type": "number" }
+  }
+}
