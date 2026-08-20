@@ -18,5 +18,5 @@ def capabilities() -> dict:
         "models": [],
         "composition": {"max_depth": 2, "whitelist": ["MA(ind)", "HTF_filter"]},
         "train": {"enabled": False, "env_only": ["dev"]},
-        "ingest": False,
+        "ingest": True,
     }
