@@ -3,7 +3,7 @@
 | Поле | Значение |
 |------|----------|
 | **Назначение** | Стартовая точка для нового чата с агентом |
-| **Обновлено** | 2026-08-20 |
+| **Обновлено** | 2026-08-21 |
 | **Репо** | `Kreckeroff/AI_algo` |
 | **Путь** | `/Users/kreckeroff/Fintech (startup)/AI_algo` |
 | **Ветка** | `main` |
@@ -47,6 +47,7 @@
 | Бэклог / приоритеты | `docs/work/BACKLOG.md` |
 | Как учим модель | `docs/TRAINING_APPROACH.md` |
 | Контракты с Desktop | `docs/PRODUCT_BOUNDARY.md`, `docs/work/platform/INTEGRATION_INTERFACES.md` |
+| План действий | `docs/superpowers/plans/2026-08-21-ai-algo-roadmap.md` |
 | Модули продукта | `docs/PRODUCT_VISION.md` |
 | Шаблон SA | `docs/templates/FEATURE_SA_SPEC_TEMPLATE.md` |
 

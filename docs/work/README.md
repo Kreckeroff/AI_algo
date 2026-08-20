@@ -10,6 +10,7 @@ SA-спеки, backlog, research по AI-слою IT Algo.
 | [../AGENT_HANDOFF.md](../AGENT_HANDOFF.md) | Старт нового чата |
 | [../PRODUCT_BOUNDARY.md](../PRODUCT_BOUNDARY.md) | AI_algo как отдельный продукт |
 | [platform/INTEGRATION_INTERFACES.md](./platform/INTEGRATION_INTERFACES.md) | **Контракты** Inference / Ingest / Train |
+| [../superpowers/plans/2026-08-21-ai-algo-roadmap.md](../superpowers/plans/2026-08-21-ai-algo-roadmap.md) | **План действий** Phase 0–6 |
 | [../templates/](../templates/) | Шаблоны SA и design |
 
 ## Области (папки появятся по мере спек)
