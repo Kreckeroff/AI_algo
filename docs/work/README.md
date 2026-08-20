@@ -14,6 +14,8 @@ SA-спеки, backlog, research по AI-слою IT Algo.
 | [`../../openapi/v1.yaml`](../../openapi/v1.yaml) | OpenAPI v1 |
 | [`../../schemas/`](../../schemas/) | JSON Schema (envelope, GraphDTO, …) |
 | [platform/GRAPH_DTO.md](./platform/GRAPH_DTO.md) | Canonical GraphDTO / composition |
+| [`../../scripts/export_schema.md`](../../scripts/export_schema.md) | CSV export columns (v1-basic) |
+| [`../../schemas/feature_spec_v1.json`](../../schemas/feature_spec_v1.json) | Feature spec for signal A |
 | [../templates/](../templates/) | Шаблоны SA и design |
 
 ## Области (папки появятся по мере спек)

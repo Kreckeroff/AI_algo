@@ -4,7 +4,7 @@
 |------|----------|
 | **Назначение** | Стартовая точка для нового чата с агентом |
 | **Обновлено** | 2026-08-21 |
-| **API stub** | `uvicorn ai_algo.app:app --port 8090` · pytest green |
+| **API** | `uvicorn ai_algo.app:app --port 8090` · intents: compare_scripts, signal · pytest green |
 | **Репо** | `Kreckeroff/AI_algo` |
 | **Путь** | `/Users/kreckeroff/Fintech (startup)/AI_algo` |
 | **Ветка** | `main` |

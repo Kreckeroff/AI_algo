@@ -6,11 +6,12 @@ from fastapi import APIRouter
 from pydantic import BaseModel, Field
 
 from ai_algo.domain.compare import commentary, verdict_from_diff
+from ai_algo.models.loader import predict_signal
 
 router = APIRouter(tags=["infer"])
 
 API_VERSION = "2026-08-20"
-SUPPORTED_INTENTS = {"compare_scripts"}
+SUPPORTED_INTENTS = {"compare_scripts", "signal"}
 
 
 class ClientInfo(BaseModel):
@@ -31,14 +32,13 @@ class InferRequest(BaseModel):
 def _compare(payload: dict) -> dict:
     before = payload["before"]["backtest_metrics"]
     after = payload["after"]["backtest_metrics"]
-    align = payload.get("align") or {}
-    align_b = payload["before"].get("run_meta") or align
-    align_a = payload["after"].get("run_meta") or align
-    # If single align object provided, use for both; mismatch only if both sides have meta
     try:
         if payload["before"].get("run_meta") and payload["after"].get("run_meta"):
             verdict, diff, warnings, suggestions = verdict_from_diff(
-                before, after, payload["before"]["run_meta"], payload["after"]["run_meta"]
+                before,
+                after,
+                payload["before"]["run_meta"],
+                payload["after"]["run_meta"],
             )
         else:
             verdict, diff, warnings, suggestions = verdict_from_diff(before, after)
@@ -69,6 +69,25 @@ def _compare(payload: dict) -> dict:
     }
 
 
+def _signal(payload: dict) -> dict:
+    fv = payload.get("feature_vector")
+    if isinstance(fv, dict) and "values" in fv:
+        values = fv["values"]
+    elif isinstance(fv, dict):
+        values = fv
+    else:
+        return {
+            "status": "error",
+            "error": {
+                "code": "validation_failed",
+                "message": "payload.feature_vector required",
+            },
+            "result": {},
+            "warnings": [],
+        }
+    return predict_signal(values, model_id=payload.get("model_id"))
+
+
 @router.post("/v1/infer")
 def infer(body: InferRequest) -> dict:
     if body.intent not in SUPPORTED_INTENTS:
@@ -88,26 +107,22 @@ def infer(body: InferRequest) -> dict:
 
     if body.intent == "compare_scripts":
         out = _compare(body.payload)
-        return {
-            "api_version": API_VERSION,
-            "request_id": body.request_id,
-            "status": out["status"],
-            "model": out.get("model"),
-            "result": out.get("result", {}),
-            "warnings": out.get("warnings", []),
-            "error": out.get("error"),
+    elif body.intent == "signal":
+        out = _signal(body.payload)
+    else:
+        out = {
+            "status": "error",
+            "error": {"code": "not_implemented", "message": body.intent},
+            "result": {},
+            "warnings": [],
         }
 
     return {
         "api_version": API_VERSION,
         "request_id": body.request_id,
-        "status": "error",
-        "result": {},
-        "warnings": [],
-        "error": {
-            "code": "not_implemented",
-            "message": "Intent '{intent}' accepted but handler not wired".format(
-                intent=body.intent
-            ),
-        },
+        "status": out["status"],
+        "model": out.get("model"),
+        "result": out.get("result", {}),
+        "warnings": out.get("warnings", []),
+        "error": out.get("error"),
     }

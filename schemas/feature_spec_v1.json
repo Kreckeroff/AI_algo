@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-algo.local/schemas/feature_spec_v1.json",
+  "title": "FeatureSpecV1",
+  "feature_schema_id": "v1-basic",
+  "description": "Baseline tabular features for signal model A (CPU)",
+  "features": [
+    "ret_1",
+    "ret_5",
+    "rsi_14",
+    "atr_14",
+    "ema_dist_50",
+    "volume_z"
+  ],
+  "label": {
+    "name": "y_up",
+    "horizon_bars": 10,
+    "epsilon": 0.001,
+    "rule": "y = 1 if close[t+N] > close[t] * (1+eps) else 0"
+  }
+}

@@ -11,6 +11,9 @@ venv/
 data/raw/
 data/processed/
 *.joblib
+!tests/fixtures/
+!tests/fixtures/**/
+!tests/fixtures/**/*.joblib
 *.onnx
 *.pkl
 models/artifacts/
