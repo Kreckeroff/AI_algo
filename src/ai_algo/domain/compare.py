@@ -14,6 +14,10 @@ def metrics_diff(before: dict, after: dict) -> Dict[str, float]:
     return out
 
 
+def _metrics_unchanged(diff: Dict[str, float], eps: float = 1e-12) -> bool:
+    return all(abs(diff.get(k, 0.0)) <= eps for k in ("pnl", "max_dd", "winrate", "trades"))
+
+
 def verdict_from_diff(
     before: dict,
     after: dict,
@@ -34,8 +38,16 @@ def verdict_from_diff(
     if before.get("trades", 0) < 5 or after.get("trades", 0) < 5:
         warnings.append("low_sample")
 
+    if _metrics_unchanged(diff):
+        verdict = "unchanged"
+        suggestions.append(
+            "Метрики бэктеста не изменились на этом окне — либо тот же прогон, либо смена блоков/period не затронула результат."
+        )
+        suggestions.append("Убедитесь: Запомнить → изменить граф → новый бэктест → Спросить ИИ.")
+        return verdict, diff, warnings, suggestions[:3]
+
     pnl_better = after["pnl"] > before["pnl"]
-    dd_better = after["max_dd"] < before["max_dd"]  # lower drawdown is better
+    dd_better = after["max_dd"] < before["max_dd"]
     pnl_worse = after["pnl"] < before["pnl"]
     dd_worse = after["max_dd"] > before["max_dd"]
 
@@ -46,50 +58,80 @@ def verdict_from_diff(
     else:
         verdict = "mixed"
 
-    if not dd_better and dd_worse:
-        suggestions.append("Reduce max drawdown (risk / stops / size).")
-    if not pnl_better and pnl_worse:
-        suggestions.append("Improve expectancy or reduce costs before adding complexity.")
+    if dd_worse:
+        suggestions.append("Просадка выросла — проверьте стопы / размер / фильтры.")
+    if pnl_worse:
+        suggestions.append("Прибыль хуже — проверьте входы/выходы и комиссии.")
     if verdict == "mixed":
-        suggestions.append("PnL and drawdown moved in different directions — decide primary objective.")
+        suggestions.append("Прибыль и просадка разошлись — выберите главный критерий (доход или риск).")
     if not suggestions:
-        suggestions.append("Keep the change and re-validate on another out-of-sample window.")
+        suggestions.append("Оставьте изменение и проверьте на другом out-of-sample окне.")
 
     return verdict, diff, warnings, suggestions[:3]
 
 
-def commentary(verdict: str, diff: Dict[str, float]) -> str:
-    return (
-        "Verdict: {v}. "
-        "Δpnl={pnl:.4f}, Δmax_dd={dd:.4f}, Δwinrate={wr:.4f}, Δtrades={tr:.0f}."
-    ).format(
-        v=verdict,
-        pnl=diff.get("pnl", 0.0),
-        dd=diff.get("max_dd", 0.0),
-        wr=diff.get("winrate", 0.0),
-        tr=diff.get("trades", 0.0),
-    )
+_VERDICT_RU = {
+    "better": "лучше",
+    "worse": "хуже",
+    "mixed": "смешанно",
+    "unchanged": "без изменений",
+}
+
+
+def commentary(verdict: str, diff: Dict[str, float], graph_notes: Optional[List[str]] = None) -> str:
+    label = _VERDICT_RU.get(verdict, verdict)
+    parts = [
+        "Вердикт: {v}.".format(v=label),
+        "Δприбыль={pnl:.4f}, Δпросадка={dd:.4f}, Δвинрейт={wr:.4f}, Δсделки={tr:.0f}.".format(
+            pnl=diff.get("pnl", 0.0),
+            dd=diff.get("max_dd", 0.0),
+            wr=diff.get("winrate", 0.0),
+            tr=diff.get("trades", 0.0),
+        ),
+    ]
+    if verdict == "unchanged":
+        parts.append("Метрики до/после совпали.")
+    if graph_notes:
+        parts.append("Изменения блоков: " + "; ".join(graph_notes) + ".")
+    elif verdict == "unchanged":
+        parts.append("Снимка отличий графа нет — снова нажмите «Запомнить» на старой версии, затем меняйте блоки.")
+    return " ".join(parts)
 
 
 def graph_change_notes(before_graph, after_graph):
     """Human notes about block/param changes (MVP structural diff)."""
+    if before_graph is None:
+        before_graph = []
+    if after_graph is None:
+        after_graph = []
     if not isinstance(before_graph, list) or not isinstance(after_graph, list):
         return []
-    before_by_id = {str(n.get("id")): n for n in before_graph if isinstance(n, dict) and n.get("id") is not None}
-    after_by_id = {str(n.get("id")): n for n in after_graph if isinstance(n, dict) and n.get("id") is not None}
+    if not before_graph and not after_graph:
+        return []
+    before_by_id = {
+        str(n.get("id")): n for n in before_graph if isinstance(n, dict) and n.get("id") is not None
+    }
+    after_by_id = {
+        str(n.get("id")): n for n in after_graph if isinstance(n, dict) and n.get("id") is not None
+    }
     notes = []
+    if not before_graph and after_graph:
+        notes.append("в базе не было снимка графа (снова нажмите «Запомнить результат»)")
+        return notes
     added = [i for i in after_by_id if i not in before_by_id]
     removed = [i for i in before_by_id if i not in after_by_id]
     if added:
-        notes.append("added blocks: {ids}".format(ids=", ".join(added[:8])))
+        notes.append("добавлены блоки: {ids}".format(ids=", ".join(added[:8])))
     if removed:
-        notes.append("removed blocks: {ids}".format(ids=", ".join(removed[:8])))
+        notes.append("удалены блоки: {ids}".format(ids=", ".join(removed[:8])))
     for i in after_by_id:
         if i not in before_by_id:
             continue
         b, a = before_by_id[i], after_by_id[i]
         if b.get("type") != a.get("type"):
-            notes.append("block {i} type {bt} → {at}".format(i=i, bt=b.get("type"), at=a.get("type")))
+            notes.append(
+                "блок {i} тип {bt} → {at}".format(i=i, bt=b.get("type"), at=a.get("type"))
+            )
             continue
         bd = b.get("data") if isinstance(b.get("data"), dict) else {}
         ad = a.get("data") if isinstance(a.get("data"), dict) else {}
@@ -99,5 +141,6 @@ def graph_change_notes(before_graph, after_graph):
             if bd.get(k) != ad.get(k):
                 changed.append("{k}: {bv} → {av}".format(k=k, bv=bd.get(k), av=ad.get(k)))
         if changed:
-            notes.append("block {i} params: {c}".format(i=i, c="; ".join(changed[:6])))
+            label = a.get("type") or i
+            notes.append("блок {label} ({i}): {c}".format(label=label, i=i, c="; ".join(changed[:6])))
     return notes[:12]

@@ -24,6 +24,15 @@ def test_verdict_worse():
     assert v == "worse"
 
 
+def test_verdict_unchanged():
+    before = {"pnl": 1.0, "max_dd": 0.2, "winrate": 0.4, "trades": 20}
+    after = {"pnl": 1.0, "max_dd": 0.2, "winrate": 0.4, "trades": 20}
+    v, diff, _, suggestions = verdict_from_diff(before, after)
+    assert v == "unchanged"
+    assert diff["pnl"] == 0.0
+    assert any("не изменились" in s for s in suggestions)
+
+
 def test_verdict_mixed_and_low_sample():
     before = {"pnl": 1.0, "max_dd": 0.2, "winrate": 0.4, "trades": 3}
     after = {"pnl": 2.0, "max_dd": 0.3, "winrate": 0.5, "trades": 4}

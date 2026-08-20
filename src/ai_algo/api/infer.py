@@ -55,12 +55,12 @@ def _compare(payload: dict) -> dict:
             }
         raise
 
-    graph_notes = graph_change_notes(payload.get("before", {}).get("graph"), payload.get("after", {}).get("graph"))
-    text = commentary(verdict, diff)
-    if graph_notes:
-        text = text + " Graph changes: " + "; ".join(graph_notes) + "."
-        for note in graph_notes[:2]:
-            suggestions.append("Review change: " + note)
+    before_payload = payload.get("before") or {}
+    after_payload = payload.get("after") or {}
+    graph_notes = graph_change_notes(before_payload.get("graph"), after_payload.get("graph"))
+    text = commentary(verdict, diff, graph_notes)
+    for note in graph_notes[:2]:
+        suggestions.append("Смотри изменение: " + note)
 
     return {
         "status": "ok",
@@ -70,6 +70,8 @@ def _compare(payload: dict) -> dict:
             "verdict": verdict,
             "metrics_diff": diff,
             "graph_changes": graph_notes,
+            "before_metrics": before,
+            "after_metrics": after,
             "commentary": text,
             "suggestions": suggestions[:5],
         },

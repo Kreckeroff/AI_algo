@@ -12,4 +12,4 @@ def test_graph_block_added():
     before = [{"id": "n1", "type": "indicator"}]
     after = [{"id": "n1", "type": "indicator"}, {"id": "n2", "type": "condition"}]
     notes = graph_change_notes(before, after)
-    assert any("added" in n for n in notes)
+    assert any("добавлен" in n for n in notes)
