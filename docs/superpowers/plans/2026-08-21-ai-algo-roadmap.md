@@ -6,7 +6,7 @@
 
 **Architecture:** Desktop = клиент. AI_algo = inference + ingest + train (+ registry). Обучение: export offline или Train API только в `dev`. CPU-first (LightGBM); LLM только для языка/сборки.
 
-**Tech Stack (MVP):** Python 3.11+ (FastAPI), Pydantic v2, JSON Schema / OpenAPI, LightGBM + joblib, pytest; клиент позже в `it-algo-desktop` (Rust/TS adapter).
+**Tech Stack (MVP):** Python 3.9+ / 3.11+ preferred (FastAPI), Pydantic v2, JSON Schema / OpenAPI, LightGBM + joblib, pytest; клиент позже в `it-algo-desktop` (Rust/TS adapter).
 
 **Specs:** [`PRODUCT_BOUNDARY.md`](../../PRODUCT_BOUNDARY.md), [`INTEGRATION_INTERFACES.md`](../../work/platform/INTEGRATION_INTERFACES.md), [`TRAINING_APPROACH.md`](../../TRAINING_APPROACH.md), [`BACKLOG.md`](../../work/BACKLOG.md).
 
