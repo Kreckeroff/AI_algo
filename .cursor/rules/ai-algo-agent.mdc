@@ -1,0 +1,13 @@
+---
+description: AI_algo agent playbook — always apply in this repo
+alwaysApply: true
+---
+
+# AI_algo
+
+- Read `AGENTS.md` and `docs/AGENT_HANDOFF.md` before substantive work.
+- Docs-first: design in `docs/superpowers/specs/`, plans in `docs/superpowers/plans/`, SA in `docs/work/`.
+- Feature IDs: `AI-*`. Two training loops: A = CPU signal model, B = script assembly — do not conflate.
+- CPU-first; no training LLM from scratch; composition via DSL + whitelist; regime-aware RSI (trend ≠ MR).
+- Do not commit or push unless the user explicitly asks.
+- Mirror major docs to Obsidian `мое хранилище/projects/ai-algo/` when user asks or after accepted specs.

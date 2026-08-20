@@ -1,0 +1,67 @@
+# AI_algo
+
+Отдельный проект: **AI-слой для IT Algo Desktop** — конструктор скриптов из промпта, сравнение версий («лучше/хуже»), аналитик портфеля, лёгкие модели сигналов на CPU, композиция индикаторов.
+
+| Поле | Значение |
+|------|----------|
+| **GitHub** | [`Kreckeroff/AI_algo`](https://github.com/Kreckeroff/AI_algo) |
+| **Локальный путь** | `/Users/kreckeroff/Fintech (startup)/AI_algo` |
+| **Продукт-потребитель** | [it-algo-desktop](https://github.com/Kreckeroff/it-algo-desktop) |
+| **Obsidian** | `мое хранилище/projects/ai-algo/` |
+| **Статус** | ideation / docs-first |
+
+## Зачем отдельный репо
+
+- Не смешивать R&D моделей и спеки AI с релизом Desktop.
+- Единое место для обучения, экспериментов, SA-спек и агентного workflow.
+- Данные/артефакты моделей — здесь (с `.gitignore` на сырые датасеты и веса).
+
+## Смежные репозитории
+
+| Репо | Роль |
+|------|------|
+| **AI_algo** (этот) | Видение, спеки, обучение, эксперименты, контракты AI |
+| **it-algo-desktop** | Tauri UI, движок, конструктор, бэктест — интеграция AI |
+| **it-algo-site** | Биллинг/квоты AI-запросов (если облако) |
+| **fintech-web** | Архив SaaS / Teamstream — только референс |
+
+## Быстрый старт для агента
+
+1. Прочитай [`AGENTS.md`](./AGENTS.md)
+2. Затем [`docs/AGENT_HANDOFF.md`](./docs/AGENT_HANDOFF.md)
+3. Бэклог: [`docs/work/BACKLOG.md`](./docs/work/BACKLOG.md)
+4. Обучение: [`docs/TRAINING_APPROACH.md`](./docs/TRAINING_APPROACH.md)
+
+```text
+Идея → brainstorm → docs/superpowers/specs/…-design.md
+     → план docs/superpowers/plans/…
+     → SA-спека docs/work/{area}/…
+     → эксперимент / код (минимальный diff)
+```
+
+## Структура
+
+```
+AI_algo/
+├── AGENTS.md                 # playbook для Cursor-агента
+├── docs/
+│   ├── AGENT_HANDOFF.md      # старт нового чата
+│   ├── PRODUCT_VISION.md     # модули AI-слоя
+│   ├── TRAINING_APPROACH.md  # A/B обучение, сложности, путь
+│   ├── templates/            # шаблоны спек
+│   ├── work/                 # backlog + SA по фичам
+│   └── superpowers/          # design specs + implementation plans
+├── experiments/              # ноутбуки / скрипты обучения
+└── .cursor/rules/            # правила агента
+```
+
+## Принцип (коротко)
+
+Не одна большая нейросеть. Два контура обучения + продукт вокруг:
+
+- **A. Сигнал** — лёгкая CPU-модель (LightGBM) на фичах из приложения
+- **B. Сборка** — LLM + DSL/паттерны; сама подбирает блоки при недоопределённом промпте
+- **Сравнение версий** — метрики бэктеста + комментарий (must-have)
+- **Композиция** — `EMA(RSI)`, мульти-ТФ/периоды; режимы тренд ≠ mean-reversion
+
+Подробности — в `docs/`.
