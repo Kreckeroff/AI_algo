@@ -8,10 +8,10 @@
     "ema_dist_50",
     "volume_z"
   ],
-  "model_kind": "hgb",
+  "model_kind": "lgbm",
   "metrics": {
     "accuracy": 0.8252427184466019,
-    "roc_auc": 0.9590163934426229,
+    "roc_auc": 0.9672131147540984,
     "n_train": 237,
     "n_test": 103
   }

@@ -25,3 +25,11 @@ python experiments/2026-08-21-signal-cpu-baseline/train.py \
 ## Metrics
 
 Printed: accuracy + ROC-AUC on time-based 70/30 holdout.
+
+## LightGBM on Mac / Windows
+
+See [`docs/DEV_SETUP.md`](../../docs/DEV_SETUP.md).
+
+- **Mac failure mode:** package installs but `import lightgbm` needs `brew install libomp`.
+- **Windows:** pip wheel usually works; install VC++ Redistributable if DLL load fails.
+- Use `--require-lgbm` so trainers do not silently diverge to sklearn.

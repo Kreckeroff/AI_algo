@@ -75,4 +75,4 @@ pytest -v
 uvicorn ai_algo.app:app --reload --port 8090
 ```
 
-Подробнее: [`docs/DEV_SETUP.md`](docs/DEV_SETUP.md).
+Подробнее: [`docs/DEV_SETUP.md`](docs/DEV_SETUP.md) (в т.ч. **LightGBM: Mac `brew install libomp`, Windows VC++**).
