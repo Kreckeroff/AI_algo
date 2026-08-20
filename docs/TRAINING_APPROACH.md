@@ -90,6 +90,17 @@ Desktop / engine
 
 ---
 
+## 5.1 Связь с продуктовой границей
+
+Обучение кормится двумя путями (см. [`PRODUCT_BOUNDARY.md`](PRODUCT_BOUNDARY.md), [`work/platform/INTEGRATION_INTERFACES.md`](work/platform/INTEGRATION_INTERFACES.md)):
+
+| Режим | Суть |
+|-------|------|
+| **Export** | Выгрузка нод + данных из Desktop → ingest/файлы → train в AI_algo |
+| **Dev-integrated** | Ветка `dev`: живой ingest + Train API; promote в prod — отдельный шаг |
+
+---
+
 ## 6. Практический порядок работ
 
 1. Compare (продукт, почти без ML)  

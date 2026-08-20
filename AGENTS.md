@@ -15,7 +15,7 @@
 | **it-algo-site** | Квоты / API (если облачный AI) |
 | **fintech-web** | Архив — только референс |
 
-**Продукт:** AI-слой для алгоритмической торговли в IT Algo Desktop (скрипты, сигналы, советы).
+**Продукт:** отдельный AI_algo (скрипты, сигналы, советы). **Клиент v1:** IT Algo Desktop — только через integration interfaces.
 
 **Obsidian (зеркало заметок):** `/Users/kreckeroff/мое хранилище/projects/ai-algo/`
 
@@ -32,6 +32,8 @@
 7. **Вердикты на цифрах** — «лучше/хуже» только из сопоставимых метрик бэктеста, без выдуманных чисел.
 8. **Секреты / ключи API** — только в `.env` (gitignore); не коммитить датасеты с PII без нужды.
 9. **Минимальный diff** — не рефакторить несвязанное.
+10. **Отдельный продукт** — Desktop не содержит обучение; связь только по контрактам (`docs/PRODUCT_BOUNDARY.md`, `docs/work/platform/INTEGRATION_INTERFACES.md`).
+11. **Обучение:** export датасетов **или** train API только в `dev` — не из prod-клиента.
 
 ---
 
@@ -110,5 +112,6 @@
 | AI-SIGNAL-CPU | Лёгкая модель сигнала | P2 experiment | BACKLOG §6 |
 | AI-PORTFOLIO-ADVISOR | Аналитик портфеля | P1 | BACKLOG §3 |
 | AI-PLATFORM | Gateway, экспорт данных, квоты | сквозной | BACKLOG §5 |
+| AI-PLATFORM-IFACE | Контракты Inference/Ingest/Train | P0 foundation | `work/platform/INTEGRATION_INTERFACES.md` |
 
 Полный бэклог: [`docs/work/BACKLOG.md`](docs/work/BACKLOG.md).

@@ -10,26 +10,21 @@
 
 ## Одна фраза
 
-AI-слой, который помогает **собирать**, **улучшать** и **оценивать** торговые скрипты и сигналы — с пониманием композиции индикаторов и режимов рынка, без требования тяжёлого железа.
+**Отдельный продукт** AI_algo: помогает **собирать**, **улучшать** и **оценивать** торговые скрипты и сигналы — с пониманием композиции индикаторов и режимов рынка, без требования тяжёлого железа.  
+IT Algo Desktop подключается по **контрактам** (inference + data + train), без вшивания обучения в релизное ядро.
+
+См. [`PRODUCT_BOUNDARY.md`](PRODUCT_BOUNDARY.md), [`work/platform/INTEGRATION_INTERFACES.md`](work/platform/INTEGRATION_INTERFACES.md).
 
 ---
 
 ## Модули
 
 ```text
-┌─────────────────────────────────────────────────────────────┐
-│                     AI_algo layer                            │
-├──────────────┬──────────────┬──────────────┬────────────────┤
-│ Builder (B)  │ Compare      │ Advisor      │ Signal (A)     │
-│ prompt→graph │ vN vs vN+1   │ portfolio /  │ CPU model      │
-│ + defaults   │ better/worse │ script tips  │ on features    │
-├──────────────┴──────────────┴──────────────┴────────────────┤
-│ Foundation: DSL composition · export data · gateway · quotas │
-└─────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-                    it-algo-desktop
-              (constructor, backtest, UI)
+┌──────────────────────┐   Inference / Ingest / Train   ┌─────────────────────────────┐
+│  it-algo-desktop     │ ◄────────────────────────────► │  AI_algo (отдельный продукт) │
+│  UI · graph · backtest│                               │  Builder · Compare · Advisor │
+│  = клиент API        │   export ИЛИ dev-integrated    │  Signal · DSL · Registry     │
+└──────────────────────┘         обучение               └─────────────────────────────┘
 ```
 
 | Модуль | Пользовательская ценность | «Своя» модель? |

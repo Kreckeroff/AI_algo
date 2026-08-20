@@ -46,6 +46,7 @@
 |--------|----------------|
 | Бэклог / приоритеты | `docs/work/BACKLOG.md` |
 | Как учим модель | `docs/TRAINING_APPROACH.md` |
+| Контракты с Desktop | `docs/PRODUCT_BOUNDARY.md`, `docs/work/platform/INTEGRATION_INTERFACES.md` |
 | Модули продукта | `docs/PRODUCT_VISION.md` |
 | Шаблон SA | `docs/templates/FEATURE_SA_SPEC_TEMPLATE.md` |
 
@@ -56,7 +57,8 @@
 - Репозиторий создан, **docs-first**.
 - Зафиксированы: модули AI, must-have сравнение версий, композиция индикаторов, два обучения A/B, CPU-эксперимент.
 - Кода моделей пока нет — только документация и каркас `experiments/`.
-- Следующие кандидаты на спеку: `AI-COMPOSE-DSL`, `AI-SCRIPT-COMPARE`, датасет для `AI-SIGNAL-CPU`.
+- Зафиксированы граница продукта и черновик **Integration Interfaces** (inference / ingest / train; export vs dev).
+- Следующие кандидаты на спеку: OpenAPI/`AI-PLATFORM`, `AI-COMPOSE-DSL`, `AI-SCRIPT-COMPARE`, датасет для `AI-SIGNAL-CPU`.
 
 ---
 
