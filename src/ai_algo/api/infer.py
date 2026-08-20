@@ -5,7 +5,7 @@ from typing import Any, Dict, Optional
 from fastapi import APIRouter
 from pydantic import BaseModel, Field
 
-from ai_algo.domain.compare import commentary, verdict_from_diff
+from ai_algo.domain.compare import commentary, graph_change_notes, verdict_from_diff
 from ai_algo.models.loader import predict_signal
 
 router = APIRouter(tags=["infer"])
@@ -55,6 +55,13 @@ def _compare(payload: dict) -> dict:
             }
         raise
 
+    graph_notes = graph_change_notes(payload.get("before", {}).get("graph"), payload.get("after", {}).get("graph"))
+    text = commentary(verdict, diff)
+    if graph_notes:
+        text = text + " Graph changes: " + "; ".join(graph_notes) + "."
+        for note in graph_notes[:2]:
+            suggestions.append("Review change: " + note)
+
     return {
         "status": "ok",
         "error": None,
@@ -62,8 +69,9 @@ def _compare(payload: dict) -> dict:
         "result": {
             "verdict": verdict,
             "metrics_diff": diff,
-            "commentary": commentary(verdict, diff),
-            "suggestions": suggestions,
+            "graph_changes": graph_notes,
+            "commentary": text,
+            "suggestions": suggestions[:5],
         },
         "model": {"id": "compare-rules-v1", "kind": "rules"},
     }

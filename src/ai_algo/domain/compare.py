@@ -69,3 +69,35 @@ def commentary(verdict: str, diff: Dict[str, float]) -> str:
         wr=diff.get("winrate", 0.0),
         tr=diff.get("trades", 0.0),
     )
+
+
+def graph_change_notes(before_graph, after_graph):
+    """Human notes about block/param changes (MVP structural diff)."""
+    if not isinstance(before_graph, list) or not isinstance(after_graph, list):
+        return []
+    before_by_id = {str(n.get("id")): n for n in before_graph if isinstance(n, dict) and n.get("id") is not None}
+    after_by_id = {str(n.get("id")): n for n in after_graph if isinstance(n, dict) and n.get("id") is not None}
+    notes = []
+    added = [i for i in after_by_id if i not in before_by_id]
+    removed = [i for i in before_by_id if i not in after_by_id]
+    if added:
+        notes.append("added blocks: {ids}".format(ids=", ".join(added[:8])))
+    if removed:
+        notes.append("removed blocks: {ids}".format(ids=", ".join(removed[:8])))
+    for i in after_by_id:
+        if i not in before_by_id:
+            continue
+        b, a = before_by_id[i], after_by_id[i]
+        if b.get("type") != a.get("type"):
+            notes.append("block {i} type {bt} → {at}".format(i=i, bt=b.get("type"), at=a.get("type")))
+            continue
+        bd = b.get("data") if isinstance(b.get("data"), dict) else {}
+        ad = a.get("data") if isinstance(a.get("data"), dict) else {}
+        keys = sorted(set(bd) | set(ad))
+        changed = []
+        for k in keys:
+            if bd.get(k) != ad.get(k):
+                changed.append("{k}: {bv} → {av}".format(k=k, bv=bd.get(k), av=ad.get(k)))
+        if changed:
+            notes.append("block {i} params: {c}".format(i=i, c="; ".join(changed[:6])))
+    return notes[:12]
