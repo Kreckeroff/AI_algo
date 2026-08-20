@@ -20,3 +20,4 @@ models/artifacts/
 node_modules/
 dist/
 *.log
+*.egg-info/
