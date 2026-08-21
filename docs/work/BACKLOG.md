@@ -421,7 +421,7 @@ DSL/GraphDTO: `period` integer, constraint `1 ≤ period ≤ max_period` (`max_p
 | **P0** | В Desktop `ai-train` довести корпус до **~20 разных `.italgo`** (тренд / MR / breakout / composition-like) | **готово** (20 файлов; 09–20 handles под engine) |
 | **P1** | Lab: **lookback sweep** только по shortlist топов C3 (не полный декартов) | **готово** (C3b session) |
 | **P2** | Прогон 20 скриптов в Desktop engine + ingest → compare | **готово** (`2026-08-21-p2-desktop-corpus`; SBER 1d; ingest 20/20) |
-| **P2.5** | Баланс корпуса по **стороне**: long-only **и** long/short (§7D); сейчас перекос в long-only | следующий |
+| **P2.5** | Баланс корпуса по **стороне**: long-only **и** long/short (§7D) | **готово** (26 scripts; 18 LO / 8 LS; session `2026-08-21-c4-side-mode`) |
 | **P3** | Расширить lookback на больше связок / все ТФ | позже |
 | **P4** | Новые индикаторы Desktop → lab whitelist (§7B стык) | параллельно |
 
@@ -651,3 +651,4 @@ DSL/GraphDTO: `period` integer, constraint `1 ≤ period ≤ max_period` (`max_p
 | 2026-08-21 | **§7B gradual:** корпус **20 `.italgo`** в Desktop ai-train (P0); lookback shortlist lab (P1) |
 | 2026-08-21 | **§7B P2:** headless Desktop engine corpus 20 `.italgo` → AI_algo ingest; session `2026-08-21-p2-desktop-corpus` |
 | 2026-08-21 | **§7D:** обучение/корпус учитывают **long_only** и **long_short** (не только лонг); шаг P2.5 |
+| 2026-08-21 | **§7D P2.5:** twins 21–26 long_short; tagged `side_mode`; C4 session — LS mean_pnl > LO на SBER 1d |

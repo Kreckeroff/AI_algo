@@ -1,0 +1,158 @@
+[
+  {
+    "ok": true,
+    "file": "01-trend-ema-adx-rsi.italgo",
+    "side_mode": "long_only",
+    "pnl": 127.51295300000004
+  },
+  {
+    "ok": true,
+    "file": "02-mean-reversion-bb-rsi.italgo",
+    "side_mode": "long_only",
+    "pnl": -77.87303099999984
+  },
+  {
+    "ok": true,
+    "file": "03-breakout-donchian-volume.italgo",
+    "side_mode": "long_only",
+    "pnl": 0.0
+  },
+  {
+    "ok": true,
+    "file": "04-macd-stoch-long-short.italgo",
+    "side_mode": "long_short",
+    "pnl": 165.77297400000026
+  },
+  {
+    "ok": true,
+    "file": "05-trend-atr-sl-tp.italgo",
+    "side_mode": "long_only",
+    "pnl": -33.54287285714267
+  },
+  {
+    "ok": true,
+    "file": "06-session-filter-rsi.italgo",
+    "side_mode": "long_only",
+    "pnl": 0.0
+  },
+  {
+    "ok": true,
+    "file": "07-supertrend-di-adx-stack.italgo",
+    "side_mode": "long_short",
+    "pnl": 82.91840799999983
+  },
+  {
+    "ok": true,
+    "file": "08-cci-regime-trail.italgo",
+    "side_mode": "long_only",
+    "pnl": 29.73458223500006
+  },
+  {
+    "ok": true,
+    "file": "09-sma-cross-20-50.italgo",
+    "side_mode": "long_only",
+    "pnl": 102.52095400000013
+  },
+  {
+    "ok": true,
+    "file": "10-ema-cross-9-21.italgo",
+    "side_mode": "long_only",
+    "pnl": 47.483690000000095
+  },
+  {
+    "ok": true,
+    "file": "11-tema-cross-10-30.italgo",
+    "side_mode": "long_only",
+    "pnl": -127.71714799999961
+  },
+  {
+    "ok": true,
+    "file": "12-dema-cross-12-26.italgo",
+    "side_mode": "long_only",
+    "pnl": -103.43236099999991
+  },
+  {
+    "ok": true,
+    "file": "13-rsi-cross-50.italgo",
+    "side_mode": "long_only",
+    "pnl": -3.6200759999995142
+  },
+  {
+    "ok": true,
+    "file": "14-cmo-cross-0.italgo",
+    "side_mode": "long_only",
+    "pnl": -3.6200759999995142
+  },
+  {
+    "ok": true,
+    "file": "15-momentum-cross-0.italgo",
+    "side_mode": "long_only",
+    "pnl": -18.151349999999667
+  },
+  {
+    "ok": true,
+    "file": "16-supertrend-rsi-entry.italgo",
+    "side_mode": "long_only",
+    "pnl": 41.351667000000106
+  },
+  {
+    "ok": true,
+    "file": "17-supertrend-rsi-tight.italgo",
+    "side_mode": "long_only",
+    "pnl": -41.397890999999916
+  },
+  {
+    "ok": true,
+    "file": "18-mom-pct-ema50-filter.italgo",
+    "side_mode": "long_only",
+    "pnl": 43.00606600000029
+  },
+  {
+    "ok": true,
+    "file": "19-bb-rsi-mean-reversion-v2.italgo",
+    "side_mode": "long_only",
+    "pnl": -241.971949
+  },
+  {
+    "ok": true,
+    "file": "20-donchian-55.italgo",
+    "side_mode": "long_only",
+    "pnl": 0.0
+  },
+  {
+    "ok": true,
+    "file": "21-sma-cross-20-50-ls.italgo",
+    "side_mode": "long_short",
+    "pnl": 256.24967300000026
+  },
+  {
+    "ok": true,
+    "file": "22-ema-cross-9-21-ls.italgo",
+    "side_mode": "long_short",
+    "pnl": 152.98028900000014
+  },
+  {
+    "ok": true,
+    "file": "23-tema-cross-10-30-ls.italgo",
+    "side_mode": "long_short",
+    "pnl": -160.4409099999992
+  },
+  {
+    "ok": true,
+    "file": "24-rsi-cross-50-ls.italgo",
+    "side_mode": "long_short",
+    "pnl": 49.132593000000924
+  },
+  {
+    "ok": true,
+    "file": "25-momentum-cross-0-ls.italgo",
+    "side_mode": "long_short",
+    "pnl": 19.56459900000067
+  },
+  {
+    "ok": true,
+    "file": "26-supertrend-rsi-ls.italgo",
+    "side_mode": "long_short",
+    "pnl": 139.07607900000016
+  }
+]
