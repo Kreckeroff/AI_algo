@@ -1,0 +1,62 @@
+[
+  {
+    "to": "38p-04-macd-stoch-long-short__chopgate_sel.italgo",
+    "base": "04-macd-stoch-long-short.italgo",
+    "kind": "add_chop_gate",
+    "wins": 5,
+    "n_high": 11,
+    "mean_delta": 36.40076918181396,
+    "mean_delta_pnl_in_chop": 567.4832477272702,
+    "slots": [
+      "GAZP:1h",
+      "LKOH:1h",
+      "MGNT:1h",
+      "ROSN:1h",
+      "TATN:1h"
+    ]
+  },
+  {
+    "to": "38p-06b-rsi-no-session__chopgate_sel.italgo",
+    "base": "06b-rsi-no-session.italgo",
+    "kind": "add_chop_gate",
+    "wins": 4,
+    "n_high": 11,
+    "mean_delta": 561.6666133636317,
+    "mean_delta_pnl_in_chop": 299.266559090906,
+    "slots": [
+      "GAZP:1h",
+      "LKOH:1h",
+      "MGNT:1h",
+      "TATN:1h"
+    ]
+  },
+  {
+    "to": "38p-06-session-filter-rsi__chopgate_sel.italgo",
+    "base": "06-session-filter-rsi.italgo",
+    "kind": "add_chop_gate",
+    "wins": 4,
+    "n_high": 11,
+    "mean_delta": 572.6343111818142,
+    "mean_delta_pnl_in_chop": 101.40690181817976,
+    "slots": [
+      "GAZP:1h",
+      "MGNT:1h",
+      "MTSS:1h",
+      "ROSN:1h"
+    ]
+  },
+  {
+    "to": "38p-02-mean-reversion-bb-rsi__chopgate_sel.italgo",
+    "base": "02-mean-reversion-bb-rsi.italgo",
+    "kind": "add_chop_gate",
+    "wins": 3,
+    "n_high": 11,
+    "mean_delta": 384.97242981817783,
+    "mean_delta_pnl_in_chop": 70.2884382727265,
+    "slots": [
+      "LKOH:1h",
+      "MGNT:1h",
+      "ROSN:1h"
+    ]
+  }
+]

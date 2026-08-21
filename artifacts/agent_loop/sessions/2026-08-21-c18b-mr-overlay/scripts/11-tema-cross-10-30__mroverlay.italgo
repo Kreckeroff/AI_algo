@@ -1,0 +1,588 @@
+{
+  "version": 1,
+  "meta": {
+    "name": "TEMA Cross 10/30 +mr_overlay",
+    "updatedAt": "2026-08-21T15:37:07Z",
+    "createdAt": "2026-08-21T09:26:05Z",
+    "tags": [
+      "trend",
+      "tema",
+      "ai-train",
+      "training",
+      "side:long_only",
+      "long_only",
+      "c18b",
+      "b1",
+      "intervention:add_mr_overlay"
+    ],
+    "side_mode": "long_only",
+    "intervention": {
+      "kind": "add_mr_overlay",
+      "base": "11-tema-cross-10-30.italgo",
+      "adx_chop": 25,
+      "bb": 20,
+      "rsi_os": 30
+    }
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "instrument",
+        "type": "instrument",
+        "position": {
+          "x": 40,
+          "y": 200
+        },
+        "data": {
+          "symbol": "SBER",
+          "instrument_type": "stock",
+          "label": "Инструмент"
+        }
+      },
+      {
+        "id": "close",
+        "type": "source_close",
+        "position": {
+          "x": 260,
+          "y": 200
+        },
+        "data": {
+          "label": "Close"
+        }
+      },
+      {
+        "id": "ma_f",
+        "type": "indicator_tema",
+        "position": {
+          "x": 480,
+          "y": 100
+        },
+        "data": {
+          "period": 10,
+          "label": "TEMA10"
+        }
+      },
+      {
+        "id": "ma_s",
+        "type": "indicator_tema",
+        "position": {
+          "x": 480,
+          "y": 280
+        },
+        "data": {
+          "period": 30,
+          "label": "TEMA30"
+        }
+      },
+      {
+        "id": "cross_up",
+        "type": "logic_cross_up",
+        "position": {
+          "x": 700,
+          "y": 100
+        },
+        "data": {
+          "label": "↑"
+        }
+      },
+      {
+        "id": "cross_dn",
+        "type": "logic_cross_down",
+        "position": {
+          "x": 700,
+          "y": 280
+        },
+        "data": {
+          "label": "↓"
+        }
+      },
+      {
+        "id": "open",
+        "type": "position_open_market",
+        "position": {
+          "x": 920,
+          "y": 100
+        },
+        "data": {
+          "direction": "buy",
+          "qty": 1,
+          "label": "Long"
+        }
+      },
+      {
+        "id": "close_pos",
+        "type": "position_close_market",
+        "position": {
+          "x": 920,
+          "y": 280
+        },
+        "data": {
+          "label": "Close"
+        }
+      },
+      {
+        "id": "chart",
+        "type": "chart",
+        "position": {
+          "x": 700,
+          "y": 440
+        },
+        "data": {
+          "label": "Chart"
+        }
+      },
+      {
+        "id": "adx_c18b",
+        "type": "indicator_adx",
+        "position": {
+          "x": 420,
+          "y": 520
+        },
+        "data": {
+          "period": 14,
+          "label": "ADX14"
+        }
+      },
+      {
+        "id": "adx_min_c18b",
+        "type": "constant",
+        "position": {
+          "x": 420,
+          "y": 600
+        },
+        "data": {
+          "value": 25,
+          "label": "25"
+        }
+      },
+      {
+        "id": "not_chop_c18b",
+        "type": "logic_gt",
+        "position": {
+          "x": 640,
+          "y": 520
+        },
+        "data": {
+          "label": "ADX>25"
+        }
+      },
+      {
+        "id": "is_chop_c18b",
+        "type": "logic_lt",
+        "position": {
+          "x": 640,
+          "y": 600
+        },
+        "data": {
+          "label": "ADX<25"
+        }
+      },
+      {
+        "id": "bb_l_c18b",
+        "type": "indicator_bb_lower",
+        "position": {
+          "x": 420,
+          "y": 680
+        },
+        "data": {
+          "period": 20,
+          "mult": 2,
+          "label": "BB−"
+        }
+      },
+      {
+        "id": "bb_m_c18b",
+        "type": "indicator_bb",
+        "position": {
+          "x": 420,
+          "y": 760
+        },
+        "data": {
+          "period": 20,
+          "mult": 2,
+          "label": "BB mid"
+        }
+      },
+      {
+        "id": "rsi_c18b",
+        "type": "indicator_rsi",
+        "position": {
+          "x": 420,
+          "y": 840
+        },
+        "data": {
+          "period": 14,
+          "label": "RSI14"
+        }
+      },
+      {
+        "id": "rsi_lo_c18b",
+        "type": "constant",
+        "position": {
+          "x": 420,
+          "y": 920
+        },
+        "data": {
+          "value": 30,
+          "label": "30"
+        }
+      },
+      {
+        "id": "touch_lo_c18b",
+        "type": "logic_lt",
+        "position": {
+          "x": 640,
+          "y": 680
+        },
+        "data": {
+          "label": "Close<BB−"
+        }
+      },
+      {
+        "id": "rsi_os_c18b",
+        "type": "logic_lt",
+        "position": {
+          "x": 640,
+          "y": 840
+        },
+        "data": {
+          "label": "RSI<30"
+        }
+      },
+      {
+        "id": "mr_buy_c18b",
+        "type": "logic_and",
+        "position": {
+          "x": 820,
+          "y": 760
+        },
+        "data": {
+          "label": "MR buy"
+        }
+      },
+      {
+        "id": "mr_in_chop_c18b",
+        "type": "logic_and",
+        "position": {
+          "x": 980,
+          "y": 720
+        },
+        "data": {
+          "label": "MR∧chop"
+        }
+      },
+      {
+        "id": "trend_gated_c18b",
+        "type": "logic_and",
+        "position": {
+          "x": 980,
+          "y": 520
+        },
+        "data": {
+          "label": "Trend∧!chop"
+        }
+      },
+      {
+        "id": "mroverlay_or",
+        "type": "logic_or",
+        "position": {
+          "x": 1140,
+          "y": 600
+        },
+        "data": {
+          "label": "Trend∨MR"
+        }
+      },
+      {
+        "id": "cross_mid_c18b",
+        "type": "logic_cross_up",
+        "position": {
+          "x": 640,
+          "y": 760
+        },
+        "data": {
+          "label": "×BB mid"
+        }
+      },
+      {
+        "id": "exit_or_c18b",
+        "type": "logic_or",
+        "position": {
+          "x": 1140,
+          "y": 800
+        },
+        "data": {
+          "label": "Exit∨MR"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e1",
+        "source": "instrument",
+        "target": "close",
+        "sourceHandle": "instrument",
+        "targetHandle": "instrument"
+      },
+      {
+        "id": "e2",
+        "source": "close",
+        "target": "ma_f",
+        "sourceHandle": "value",
+        "targetHandle": "source"
+      },
+      {
+        "id": "e3",
+        "source": "close",
+        "target": "ma_s",
+        "sourceHandle": "value",
+        "targetHandle": "source"
+      },
+      {
+        "id": "e4",
+        "source": "ma_f",
+        "target": "cross_up",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "e5",
+        "source": "ma_s",
+        "target": "cross_up",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "e6",
+        "source": "ma_f",
+        "target": "cross_dn",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "e7",
+        "source": "ma_s",
+        "target": "cross_dn",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "e8",
+        "source": "instrument",
+        "target": "open",
+        "sourceHandle": "instrument",
+        "targetHandle": "instrument"
+      },
+      {
+        "id": "e10",
+        "source": "open",
+        "target": "close_pos",
+        "sourceHandle": "position",
+        "targetHandle": "position"
+      },
+      {
+        "id": "e12",
+        "source": "close",
+        "target": "chart",
+        "sourceHandle": "value",
+        "targetHandle": "series"
+      },
+      {
+        "id": "e13",
+        "source": "ma_f",
+        "target": "chart",
+        "sourceHandle": "value",
+        "targetHandle": "series"
+      },
+      {
+        "id": "e14",
+        "source": "ma_s",
+        "target": "chart",
+        "sourceHandle": "value",
+        "targetHandle": "series"
+      },
+      {
+        "id": "c18b_inst_adx",
+        "source": "instrument",
+        "target": "adx_c18b",
+        "sourceHandle": "instrument",
+        "targetHandle": "instrument"
+      },
+      {
+        "id": "c18b_tg_src_0",
+        "source": "cross_up",
+        "target": "trend_gated_c18b",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "c18b_tg_adx",
+        "source": "not_chop_c18b",
+        "target": "trend_gated_c18b",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "c18b_adx_a",
+        "source": "adx_c18b",
+        "target": "not_chop_c18b",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "c18b_adx_b",
+        "source": "adx_min_c18b",
+        "target": "not_chop_c18b",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "c18b_chop_a",
+        "source": "adx_c18b",
+        "target": "is_chop_c18b",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "c18b_chop_b",
+        "source": "adx_min_c18b",
+        "target": "is_chop_c18b",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "c18b_c_bbl",
+        "source": "close",
+        "target": "bb_l_c18b",
+        "sourceHandle": "value",
+        "targetHandle": "source"
+      },
+      {
+        "id": "c18b_c_bbm",
+        "source": "close",
+        "target": "bb_m_c18b",
+        "sourceHandle": "value",
+        "targetHandle": "source"
+      },
+      {
+        "id": "c18b_c_rsi",
+        "source": "close",
+        "target": "rsi_c18b",
+        "sourceHandle": "value",
+        "targetHandle": "source"
+      },
+      {
+        "id": "c18b_tl_a",
+        "source": "close",
+        "target": "touch_lo_c18b",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "c18b_tl_b",
+        "source": "bb_l_c18b",
+        "target": "touch_lo_c18b",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "c18b_rs_a",
+        "source": "rsi_c18b",
+        "target": "rsi_os_c18b",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "c18b_rs_b",
+        "source": "rsi_lo_c18b",
+        "target": "rsi_os_c18b",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "c18b_mr1",
+        "source": "touch_lo_c18b",
+        "target": "mr_buy_c18b",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "c18b_mr2",
+        "source": "rsi_os_c18b",
+        "target": "mr_buy_c18b",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "c18b_mic1",
+        "source": "mr_buy_c18b",
+        "target": "mr_in_chop_c18b",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "c18b_mic2",
+        "source": "is_chop_c18b",
+        "target": "mr_in_chop_c18b",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "c18b_cm_a",
+        "source": "close",
+        "target": "cross_mid_c18b",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "c18b_cm_b",
+        "source": "bb_m_c18b",
+        "target": "cross_mid_c18b",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "c18b_or1",
+        "source": "trend_gated_c18b",
+        "target": "mroverlay_or",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "c18b_or2",
+        "source": "mr_in_chop_c18b",
+        "target": "mroverlay_or",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "c18b_open",
+        "source": "mroverlay_or",
+        "target": "open",
+        "sourceHandle": "result",
+        "targetHandle": "condition"
+      },
+      {
+        "id": "c18b_ex_src_0",
+        "source": "cross_dn",
+        "target": "exit_or_c18b",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "c18b_ex_mr",
+        "source": "cross_mid_c18b",
+        "target": "exit_or_c18b",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "c18b_close",
+        "source": "exit_or_c18b",
+        "target": "close_pos",
+        "sourceHandle": "result",
+        "targetHandle": "condition"
+      }
+    ]
+  }
+}

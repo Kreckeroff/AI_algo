@@ -1,0 +1,23 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"/><title>C19 selective</title>
+<style>
+body{font-family:IBM Plex Sans,system-ui,sans-serif;background:#0f1419;color:#e8eef4;padding:28px}
+.card{background:#1a222c;border:1px solid #2a3542;border-radius:10px;padding:12px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.k{color:#8b9aab;font-size:.68rem;text-transform:uppercase} .v{font-size:1.1rem;font-weight:600;margin-top:4px}
+table{border-collapse:collapse;width:100%;font-size:.75rem;background:#1a222c;margin-top:14px}
+th,td{border:1px solid #2a3542;padding:6px;text-align:right} td.f,th{text-align:left;color:#8b9aab}
+.pos{color:#6dcea4} .neg{color:#e07a7a}
+</style></head><body>
+<h1>C19 — selective apply</h1>
+<div class="grid">
+<div class="card"><div class="k">CV AUC</div><div class="v">0.919</div></div>
+<div class="card"><div class="k">Always lift</div><div class="v neg">-550</div></div>
+<div class="card"><div class="k">Selective lift</div><div class="v pos">48</div></div>
+<div class="card"><div class="k">38p sel</div><div class="v">4</div></div>
+</div>
+<table><thead><tr><th>policy</th><th>lift</th><th>apply%</th><th>meanΔ applied</th></tr></thead><tbody>
+<tr><td class='f'>never</td><td>0.0</td><td>0%</td><td>0.0</td></tr><tr><td class='f'>always</td><td>-550.4</td><td>100%</td><td>-550.4</td></tr><tr><td class='f'>high_chop>=0.38</td><td>-248.3</td><td>42%</td><td>-587.0</td></tr><tr><td class='f'>model>=0.55</td><td>92.0</td><td>19%</td><td>492.7</td></tr><tr><td class='f'>sel chop&model</td><td>48.1</td><td>7%</td><td>703.1</td></tr><tr><td class='f'>oracle high_chop&better</td><td>57.1</td><td>9%</td><td>647.6</td></tr>
+</tbody></table>
+<table><thead><tr><th>promoted</th><th>kind</th><th>wins</th><th>meanΔ</th><th>meanΔchop</th></tr></thead>
+<tbody><tr><td class='f'>38p-04-macd-stoch-long-short__chopgate_sel.italgo</td><td>chop_gate</td><td>5</td><td>36.4</td><td>567.5</td></tr><tr><td class='f'>38p-06b-rsi-no-session__chopgate_sel.italgo</td><td>chop_gate</td><td>4</td><td>561.7</td><td>299.3</td></tr><tr><td class='f'>38p-06-session-filter-rsi__chopgate_sel.italgo</td><td>chop_gate</td><td>4</td><td>572.6</td><td>101.4</td></tr><tr><td class='f'>38p-02-mean-reversion-bb-rsi__chopgate_sel.italgo</td><td>chop_gate</td><td>3</td><td>385.0</td><td>70.3</td></tr></tbody></table>
+</body></html>

@@ -1,0 +1,109 @@
+{
+  "session": "2026-08-21-c18b-mr-overlay",
+  "kind": "add_mr_overlay",
+  "n_pairs": 364,
+  "n_better": 47,
+  "n_better_in_chop": 81,
+  "mean_delta": -754.0590977416026,
+  "mean_delta_pnl_in_chop": -680.0599289181146,
+  "model": {
+    "n": 364,
+    "positives": 47,
+    "better_rate": 0.12912087912087913,
+    "cv_accuracy": 0.9203296703296703,
+    "cv_auc": 0.9334854688234109
+  },
+  "n_promoted": 0,
+  "vs_chop_gate": {
+    "n_overlap": 364,
+    "mean_d_overlay": -754.0590977416026,
+    "mean_d_gate": -418.417943612352,
+    "mean_d_chop_overlay": -680.0599289181146,
+    "mean_d_chop_gate": -435.3513020303521,
+    "overlay_wins_vs_gate": 96
+  },
+  "feature_importance_top": [
+    [
+      "base_pnl",
+      329
+    ],
+    [
+      "base_edge_vs_bh",
+      254
+    ],
+    [
+      "base_trades",
+      246
+    ],
+    [
+      "base_wr",
+      222
+    ],
+    [
+      "base_dd",
+      182
+    ],
+    [
+      "base_pnl_in_trend",
+      168
+    ],
+    [
+      "buy_hold_pnl",
+      150
+    ],
+    [
+      "base_pnl_in_chop",
+      131
+    ],
+    [
+      "base_frac_trades_in_chop",
+      114
+    ],
+    [
+      "window_chop_share",
+      111
+    ],
+    [
+      "sym_GAZP",
+      39
+    ],
+    [
+      "sym_MTSS",
+      24
+    ],
+    [
+      "sym_ROSN",
+      23
+    ],
+    [
+      "sym_TATN",
+      19
+    ],
+    [
+      "sym_NVTK",
+      13
+    ],
+    [
+      "script_breakout",
+      11
+    ],
+    [
+      "script_unknown",
+      8
+    ],
+    [
+      "sym_LKOH",
+      6
+    ],
+    [
+      "tf_1d",
+      5
+    ],
+    [
+      "script_trend",
+      4
+    ]
+  ],
+  "n_overlay_ok_bases": 14,
+  "engine_fail_mroverlay_rows": 0
+}

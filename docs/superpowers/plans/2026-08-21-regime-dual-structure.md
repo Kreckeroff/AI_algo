@@ -61,15 +61,17 @@
 **Files:**
 - Create: `experiments/2026-08-21-c18-regime-dual/run_c18.py`
 
-- [ ] Step 1: Implement `add_chop_gate` graph mutation (ADX>25 into open AND)
-- [ ] Step 2: Generate variants; engine 1d+1h equities
-- [ ] Step 3: Train with B0 features; promote `38p-*` if criteria met
-- [ ] Step 4: Commit + push
+- [x] Step 1: Implement `add_chop_gate` graph mutation (ADX>25 ∧ close>SMA50 into open AND)
+- [x] Step 2: Generate variants; engine 1d+1h equities+futures
+- [x] Step 3: Train with B0 features; promote `38p-*` if criteria met → **0 promoted** (mean Δchop &lt; 0)
+- [x] Finding: ranker strong on when gate helps; absolute lift negative → proceed to `add_mr_overlay`
+- [ ] Step 4: Commit + push (по просьбе)
 
 ## Task 4: B1 MR overlay — only if gate shows chop lift
 
-- [ ] Step 1: `add_mr_overlay` mutation + validate `ok`
-- [ ] Step 2: Retrain / promote / analytics delta vs gate-only
+- [x] Step 1: `add_mr_overlay` mutation + validate `ok` (14/27 bases; LS+MR skipped)
+- [x] Step 2: Retrain / promote / analytics delta vs gate-only → **worse than gate**; 0×38p
+- [x] Finding: B1 dual-structure = good ranker, bad absolute Δ; next = threshold tune or selective apply
 
 ---
 

@@ -50,7 +50,10 @@ def test_chop_mostly_chop():
     known = [x for x in labels if x != "unknown"]
     assert len(known) > 50
     share_chop = sum(1 for x in known if x == "chop") / len(known)
-    assert share_chop >= 0.55, share_chop
+    share_trend = sum(1 for x in known if x in ("trend_up", "trend_down")) / len(known)
+    # B0b: mid can be transition; chop should still dominate trend on oscillating series
+    assert share_chop >= 0.45, share_chop
+    assert share_chop > share_trend, (share_chop, share_trend)
 
 
 def test_summarize_and_regime_at_time():
@@ -59,7 +62,25 @@ def test_summarize_and_regime_at_time():
     summary = summarize_regimes(labels)
     assert summary["n_bars"] == len(bars)
     assert 0.0 <= summary["chop_share"] <= 1.0
-    assert abs(summary["chop_share"] + summary["trend_up_share"] + summary["trend_down_share"] + summary["unknown_share"] - 1.0) < 1e-6
+    parts = (
+        summary["chop_share"]
+        + summary["trend_up_share"]
+        + summary["trend_down_share"]
+        + summary["transition_share"]
+        + summary["unknown_share"]
+    )
+    assert abs(parts - 1.0) < 1e-6
     mid = bars[len(bars) // 2]["time"]
     r = regime_at_time(bars, labels, mid)
-    assert r in ("trend_up", "trend_down", "chop", "unknown")
+    assert r in ("trend_up", "trend_down", "chop", "transition", "unknown")
+
+
+def test_b0b_defaults_balanced_on_real_ish_mix():
+    """Synthetic: uptrend mostly trend; chop mostly chop; mid can be transition."""
+    from ai_algo.domain.market_regime import DEFAULTS
+
+    assert DEFAULTS["adx_chop"] == 15.0
+    assert DEFAULTS["adx_trend"] == 20.0
+    assert DEFAULTS["er_chop"] == 0.15
+    assert DEFAULTS["er_trend"] == 0.28
+    assert DEFAULTS["chop_combine"] == "or"

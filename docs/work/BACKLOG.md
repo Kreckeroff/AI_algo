@@ -6,7 +6,33 @@
 | **Статус** | backlog / ideation — укладка в roadmap TBD |
 | **Репозиторий** | `Kreckeroff/AI_algo` |
 | **Связано** | it-algo-desktop (low-code / engine), `docs/PRODUCT_VISION.md`, `docs/TRAINING_APPROACH.md` |
-| **Дата** | 2026-08-21 (обновлено) |
+| **Дата** | 2026-08-21 (обновлено, снимок C19) |
+
+---
+
+## Снимок статусов — 2026-08-21 *(для продолжения дома)*
+
+**Бизнес-описание:** [`BUSINESS_STATUS.md`](BUSINESS_STATUS.md) · **Аналитика:** `artifacts/agent_loop/BUSINESS_ANALYTICS.html`
+
+| Блок | Статус | Комментарий |
+|------|--------|-------------|
+| §0 Foundation / контракты | backlog | GraphDTO / OpenAPI — не закрыто |
+| §1 Конструктор из промпта | backlog | после зрелости моделей |
+| §2 Compare «лучше/хуже» | частично | данные + trade labels есть; UI/вердикт LLM — нет |
+| §3 Аналитик портфеля | backlog | |
+| §4 Сигнал по рынку | backlog | |
+| §7 / 7A–7F обучение | **сильно продвинуто** | C7→C19; корпус 27p…38p_sel |
+| §7G Advisor в Desktop | **отложено** | не вшиваем |
+| §7H Дивгэп | **сделано в train** | Desktop BT native — долг |
+| §7I Beat B&H | **в метках** | абсолютный edge стратегий ещё слабый |
+| P3.6 «гений» качества | **в работе** | C19 selective = шаг вперёд |
+| History-window 1d…5y | **долг** | другой ПК |
+| Combo interventions | **долг** | после selective |
+| §9 Standalone UX | backlog | |
+
+**Сделано сегодня (режим рынка):** B0 annotate → C18 gate (вредно всегда) → C18b overlay (хуже) → B0b пороги → **C19 selective (+48 lift)** + 4×`38p-*_sel`.
+
+**Следующий приоритет дома:** (1) history-window sweep **или** (2) combo-правки **или** (3) дожать compare/Advisor offline UX — по выбору.
 
 ---
 
@@ -425,7 +451,7 @@ DSL/GraphDTO: `period` integer, constraint `1 ≤ period ≤ max_period` (`max_p
 | **P2.6** | **Trade-level train (§7E):** trades[] в ingest/сессиях; good/bad; советы блок/period | **готово-ish** (C5+C6: labels + Advisor intervention dataset 20 pairs) |
 | **P3** | Расширить lookback на больше связок / все ТФ | **готово-ish** (C13: все TF 1m…1w × 10 equities) |
 | **P3.5** | **Мульти-инструмент (§7F):** постоянно расширять набор тикеров + датасет | **частично+++** (C13: 10 equities; C14→ +futures) |
-| **P3.6** | **Качество модели «в гений»** — глубина датасета / вмешательств / TF | **в работе** (C16: +ATR/rmfilter kinds) |
+| **P3.6** | **Качество модели «в гений»** — глубина датасета / вмешательств / TF | **в работе+++** (C19 selective lift +48; always −550) |
 | **P3.7** | **Дивгэп / short cash (§7H):** дообучение на акциях+индексе с учётом дивидендного гэпа | **сделано в C17** (features+labels+WF) |
 | **P3.8** | **Beat buy&hold (§7I):** long / long-short должны бить B&H на окне графика | **готово-ish** (C15 policy; 35p-*) |
 | **P4** | Новые индикаторы Desktop → lab whitelist (§7B стык) | параллельно |
@@ -810,6 +836,10 @@ DSL/GraphDTO: `period` integer, constraint `1 ≤ period ≤ max_period` (`max_p
 | 2026-08-21 | **§7D:** обучение/корпус учитывают **long_only** и **long_short** (не только лонг); шаг P2.5 |
 | 2026-08-21 | **§7D P2.5:** twins 21–26 long_short; tagged `side_mode`; C4 session — LS mean_pnl > LO на SBER 1d |
 | 2026-08-21 | **§7E:** обучение на **списке сделок** (good/bad) + улучшения через **блок** или **period**; шаг P2.6 |
+| 2026-08-21 | **C19 selective apply:** chop≥0.38∧P≥0.55; 1066 pairs; CV≈0.90/0.92; sel lift +48 (always −550); 4×38p-*_sel |
+| 2026-08-21 | **B0b thresholds:** mid→transition; adx 15/20 er 0.15/0.28; chop 0.76→0.37; high_chop gate Δchop≈+34 overlay≈+46 |
+| 2026-08-21 | **C18b mr_overlay:** (trend∧!chop)∨(BB/RSI∧chop); 364 pairs; CV≈0.92/0.93; meanΔ−754 < gate−418; 0×38p — B1 absolute lift fail |
+| 2026-08-21 | **C18 / B1 chop_gate:** ADX>25∧SMA50; 702 pairs; CV≈0.87/0.91; meanΔ−445; 0×38p — gate alone not enough; next mr_overlay |
 | 2026-08-21 | **B regime dual-structure:** spec `docs/superpowers/specs/2026-08-21-regime-dual-structure-design.md` (B0 annotate → B1 chop_gate/mr_overlay); history×TF (A) на другом ПК |
 | 2026-08-21 | **C17:** walk-forward + §7H div labels/features; pairs 25452; CV≈0.80/0.85; OOS≈0.72–0.76; 37p-* |
 | 2026-08-21 | **C16:** +ATR SL/TP + remove-filter kinds; pairs 25452; CV≈0.77/0.84; 36p-*; atr better≈36% |

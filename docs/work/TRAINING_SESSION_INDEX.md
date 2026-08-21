@@ -28,7 +28,8 @@
 
 После каждой сессии: `ANALYTICS.html` + compare prev→current + `REPORT.md` / notes.
 
-**Сводная карта всего обучения:** `artifacts/agent_loop/TRAINING_UNIVERSE_MAP.html` (C7→C17 + WF + §7H; regenerate `scripts/build_training_universe_map.py`).
+**Сводная карта всего обучения:** `artifacts/agent_loop/TRAINING_UNIVERSE_MAP.html` (C7→C17 + WF + §7H; regenerate `scripts/build_training_universe_map.py`).  
+**Бизнес-аналитика (простым языком):** `artifacts/agent_loop/BUSINESS_ANALYTICS.html` + [`BUSINESS_STATUS.md`](BUSINESS_STATUS.md).
 
 ---
 
@@ -55,8 +56,14 @@
 | **C16** | +ATR SL/TP + remove-filter; BH labels | **25452 · 0.77/0.84** | **36p-*** |
 | **C17** | walk-forward + §7H div features/labels | **25452 · 0.80/0.85** | **37p-*** |
 | **B0** | market regime annotate (ADX+ER) on C16 1d+1h | **6552 pairs enriched** | — |
+| **C18 / B1** | `add_chop_gate` (ADX>25 ∧ close>SMA50) 1d+1h + B0 feats | **702 · 0.87/0.91** · meanΔ−445 · **0×38p** | — |
+| **C18b** | `add_mr_overlay` (trend∧!chop)∨(BB/RSI∧chop) | **364 · 0.92/0.93** · meanΔ−754 · **хуже gate** · **0×38p** | — |
+| **B0b** | regime threshold retune (mid→transition) | chop **0.76→0.37** · trend **0.21→0.34**; on high_chop gate/overlay **Δchop>0** | — |
+| **C19** | selective apply (chop≥0.38 ∧ P≥0.55) | **1066 · 0.90/0.92** · sel lift **+48** (always −550) | **4×38p-*_sel** |
 
-Актуальная модель: `artifacts/.../2026-08-21-c17-walkforward-div/models/intervention_policy_lgbm.joblib`
+Актуальная модель: `…/c19-selective-apply/models/intervention_policy_lgbm.joblib`  
+Baseline kinds corpus: C17 `37p-*` + C19 selective `38p-*_sel`.
+Labeler defaults: `market_regime.py` **B0b**.
 
 ### Покрытие данных (после C13)
 
@@ -67,17 +74,16 @@
 
 ### Intervention kinds (текущие)
 
-`…periods/filters…` · **`add_block_atr_sltp`** · **`remove_block_filter`**
+`…periods/filters…` · **`add_block_atr_sltp`** · **`remove_block_filter`** · **`add_chop_gate`** · **`add_mr_overlay`**
 
 Label better (§7I): ΔPnL>0 · DD-ok · Δedge_vs_bh>0 · beats B&H · !pseudo.
 
 ### Следующие шаги (не потерять)
 
-1. **B1:** chop_gate / MR overlay (C18) — see regime dual-structure spec.
+1. Wire selective rule into Advisor (§7G later) — пока offline policy.
 2. History-window sweep 1d…5y (§7A) — другой ПК.
-2. Desktop BT: native B&H + div cash-adjust.
-3. Больше инструментов / индексный дивкалендарь.
-4. History-window sweep 1d…5y (§7A) — ещё долг.
+3. Combo interventions (C).
+4. Desktop BT: native B&H + div cash-adjust.
 5. **Не** вшивать policy в Desktop (§7G).
 
 ---

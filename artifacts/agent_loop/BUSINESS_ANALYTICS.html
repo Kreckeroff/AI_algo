@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<title>AI_algo — бизнес-аналитика</title>
+<style>
+:root {
+  --bg:#0e141b; --card:#18222d; --line:#2a3744; --text:#e8eef4; --muted:#8b9aab;
+  --good:#6dcea4; --bad:#e07a7a; --accent:#7eb6ff;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:"IBM Plex Sans",system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.45}
+.wrap{max-width:1100px;margin:0 auto;padding:32px 20px 64px}
+h1{font-size:1.75rem;margin:0 0 6px}
+h2{font-size:1.15rem;margin:28px 0 12px;color:var(--accent)}
+.sub{color:var(--muted);margin-bottom:22px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+@media(max-width:800px){.grid{grid-template-columns:1fr 1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.k{font-size:.68rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.v{font-size:1.35rem;font-weight:650;margin-top:6px}
+.v.sm{font-size:1.05rem}
+.good{color:var(--good)} .bad{color:var(--bad)}
+p.lead{font-size:1.05rem;max-width:62ch}
+table{width:100%;border-collapse:collapse;background:var(--card);font-size:.82rem;margin-top:8px}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:right}
+th,td.l{text-align:left;color:var(--muted)}
+th{font-weight:600;color:var(--muted);font-size:.72rem;text-transform:uppercase}
+.note{color:var(--muted);font-size:.85rem;margin-top:10px}
+.bar{height:10px;background:#243040;border-radius:6px;overflow:hidden;margin-top:8px}
+.bar>i{display:block;height:100%;background:linear-gradient(90deg,#3d7ea6,#6dcea4)}
+ul.plain{margin:8px 0 0;padding-left:1.1rem;color:var(--muted)}
+ul.plain li{margin:4px 0}
+a{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>AI_algo — полная аналитика для бизнеса</h1>
+<p class="sub">Обновлено 2026-08-21 16:37 UTC · волны до C19 · см. также <code>docs/work/BUSINESS_STATUS.md</code></p>
+
+<p class="lead">
+Мы учим не «торговать вместо вас», а <b>правильно советовать правки</b> алго-скриптов:
+когда изменение графа помогает, а когда вредит. Главный вывод дня —
+правки нужно применять <b>выборочно</b>, а не всегда.
+</p>
+
+<div class="grid">
+  <div class="card"><div class="k">Качество модели (C19)</div><div class="v">90% / 0.92</div></div>
+  <div class="card"><div class="k">Всегда править</div><div class="v bad">-550</div></div>
+  <div class="card"><div class="k">Выборочно править</div><div class="v good">+48</div></div>
+  <div class="card"><div class="k">Отобрано в корпус</div><div class="v">4 × 38p_sel</div></div>
+</div>
+
+<h2>1. Вердикт для продукта</h2>
+<div class="card">
+<ul class="plain">
+<li><b>Стало лучше</b> умение выбирать момент для правки (selective lift +48 ≈ oracle +57).</li>
+<li><b>Не стало</b> доказанным «алго стабильно зарабатывает» — это советчик по изменениям, не готовый робот.</li>
+<li><b>В прод Desktop пока не вшиваем</b> (правило §7G) — сначала качество и честные метрики.</li>
+<li>Применение правил: только если доля «пилы» на окне ≥ 0.38 и уверенность модели ≥ 0.55 (сейчас срабатывает ~7% случаев).</li>
+</ul>
+</div>
+
+<h2>2. Эволюция волн обучения</h2>
+<table>
+<thead><tr><th>Волна</th><th class="l">Смысл</th><th>Объём</th><th>Качество (acc/auc)</th><th>Промоут</th></tr></thead>
+<tbody><tr><td>C14</td><td class='l'>Фьючерсы + акции</td><td>21614 пар</td><td>~0.72 / 0.79</td><td>34p-*</td></tr><tr><td>C15</td><td class='l'>Бить buy&hold</td><td>21614</td><td>~0.77 / 0.84</td><td>35p-*</td></tr><tr><td>C16</td><td class='l'>ATR стоп/тейк + снять фильтр</td><td>25452</td><td>~0.77 / 0.84</td><td>36p-*</td></tr><tr><td>C17</td><td class='l'>Дивиденды + walk-forward</td><td>25452</td><td>~0.80 / 0.85</td><td>37p-*</td></tr><tr><td>B0</td><td class='l'>Разметка тренд/пила</td><td>6552 enriched</td><td>—</td><td>—</td></tr><tr><td>C18</td><td class='l'>Правка «не входить в пилу» всегда</td><td>702</td><td>0.87 / 0.91</td><td>0</td></tr><tr><td>C18b</td><td class='l'>Правка «отскок в пиле» всегда</td><td>364</td><td>0.92 / 0.93</td><td>0</td></tr><tr><td>B0b</td><td class='l'>Тюнинг детектора пилы</td><td>26 окон</td><td>chop 0.37</td><td>—</td></tr><tr><td>C19</td><td class='l'>Выборочные правки</td><td>1066</td><td>0.90 / 0.92</td><td>4</td></tr></tbody>
+</table>
+<p class="note">C17 — лучший «общий» рангер правок на большой выборке. C19 — лучший режим «когда чинить пилу».</p>
+
+<h2>3. Режим рынка (пила vs тренд)</h2>
+<div class="grid">
+  <div class="card">
+    <div class="k">Доля пилы (было → стало)</div>
+    <div class="v sm">76% → 37%</div>
+    <div class="bar"><i style="width:37%"></i></div>
+  </div>
+  <div class="card">
+    <div class="k">Доля тренда</div>
+    <div class="v sm">21% → 34%</div>
+    <div class="bar"><i style="width:34%"></i></div>
+  </div>
+  <div class="card">
+    <div class="k">Переходная зона</div>
+    <div class="v sm">27%</div>
+    <div class="bar"><i style="width:27%"></i></div>
+  </div>
+  <div class="card">
+    <div class="k">C18 «всегда gate» mean Δ</div>
+    <div class="v sm bad">-445</div>
+  </div>
+</div>
+<p class="note">Раньше детектор почти всё называл «пилой» (~76%). После настройки — баланс ~37% пила / ~34% тренд / ~27% переход.</p>
+
+<h2>4. Политики применения правок (C19)</h2>
+<table>
+<thead><tr><th class="l">Политика</th><th>Lift к базе</th><th>% применений</th><th>Средний эффект, когда применили</th></tr></thead>
+<tbody>
+<tr><td class='l'>never</td><td class='bad'>+0.0</td><td>0.0%</td><td>+0.0</td></tr><tr><td class='l'>always</td><td class='bad'>-550.4</td><td>100.0%</td><td>-550.4</td></tr><tr><td class='l'>high_chop>=0.38</td><td class='bad'>-248.3</td><td>42.3%</td><td>-587.0</td></tr><tr><td class='l'>model>=0.55</td><td class='good'>+92.0</td><td>18.7%</td><td>+492.7</td></tr><tr><td class='l'>sel chop&model</td><td class='good'>+48.1</td><td>6.8%</td><td>+703.1</td></tr><tr><td class='l'>oracle high_chop&better</td><td class='good'>+57.1</td><td>8.8%</td><td>+647.6</td></tr>
+</tbody>
+</table>
+
+<h2>5. Отобранные скрипты (38p selective)</h2>
+<table>
+<thead><tr><th class="l">Файл</th><th>Тип правки</th><th>Побед</th><th>Средний Δ</th><th>Δ в пиле</th><th class="l">Где сработало</th></tr></thead>
+<tbody><tr><td class='l'>38p-04-macd-stoch-long-short__chopgate_sel.italgo</td><td>chop_gate</td><td>5</td><td>36</td><td>567</td><td class='l'>GAZP:1h, LKOH:1h, MGNT:1h, ROSN:1h, TATN:1h</td></tr><tr><td class='l'>38p-06b-rsi-no-session__chopgate_sel.italgo</td><td>chop_gate</td><td>4</td><td>562</td><td>299</td><td class='l'>GAZP:1h, LKOH:1h, MGNT:1h, TATN:1h</td></tr><tr><td class='l'>38p-06-session-filter-rsi__chopgate_sel.italgo</td><td>chop_gate</td><td>4</td><td>573</td><td>101</td><td class='l'>GAZP:1h, MGNT:1h, MTSS:1h, ROSN:1h</td></tr><tr><td class='l'>38p-02-mean-reversion-bb-rsi__chopgate_sel.italgo</td><td>chop_gate</td><td>3</td><td>385</td><td>70</td><td class='l'>LKOH:1h, MGNT:1h, ROSN:1h</td></tr></tbody>
+</table>
+
+<h2>6. Что смотреть дальше</h2>
+<div class="card">
+<ul class="plain">
+<li>Полная техническая карта волн: <code>artifacts/agent_loop/TRAINING_UNIVERSE_MAP.html</code></li>
+<li>Бизнес-текст: <code>docs/work/BUSINESS_STATUS.md</code></li>
+<li>Бэклог: <code>docs/work/BACKLOG.md</code> (снимок статусов вверху)</li>
+<li>Следующие крупные куски: history-window sweep · combo-правки · Advisor в UI (позже)</li>
+</ul>
+</div>
+
+</div>
+</body>
+</html>

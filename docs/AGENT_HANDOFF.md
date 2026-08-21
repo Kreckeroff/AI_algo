@@ -3,7 +3,7 @@
 | Поле | Значение |
 |------|----------|
 | **Назначение** | Стартовая точка для нового чата с агентом |
-| **Обновлено** | 2026-08-21 (после C13 + §7H) |
+| **Обновлено** | 2026-08-21 (C19 selective + бизнес-статус) |
 | **API** | `uvicorn ai_algo.app:app --port 8090` · intents: compare_scripts (+ trade_analysis), signal |
 | **Репо** | `Kreckeroff/AI_algo` |
 | **Путь** | `/Users/kreckeroff/Fintech (startup)/AI_algo` |
@@ -13,12 +13,15 @@
 >
 > Работаем над **AI_algo** — AI-слой для IT Algo Desktop.  
 > Путь: `/Users/kreckeroff/Fintech (startup)/AI_algo`.  
-> Сначала прочитай `docs/AGENT_HANDOFF.md`, затем `AGENTS.md` и `docs/work/BACKLOG.md`.  
+> Сначала прочитай `docs/work/BUSINESS_STATUS.md`, затем `docs/AGENT_HANDOFF.md`, `AGENTS.md`, `docs/work/BACKLOG.md`.  
+> Аналитика: `artifacts/agent_loop/BUSINESS_ANALYTICS.html`.  
 > Не коммить/push без просьбы. CPU-first, не одна большая нейросеть.
 >
 > ```bash
 > cd "/Users/kreckeroff/Fintech (startup)/AI_algo"
 > git fetch origin && git checkout main && git pull --ff-only origin main
+> cd "/Users/kreckeroff/Fintech (startup)/it-algo-desktop"
+> git fetch origin && git checkout ai-train && git pull --ff-only origin ai-train
 > ```
 
 ---
@@ -46,6 +49,8 @@
 | Запрос | Куда смотреть |
 |--------|----------------|
 | Бэклог / приоритеты | `docs/work/BACKLOG.md` |
+| **Бизнес-статус (простым языком)** | `docs/work/BUSINESS_STATUS.md` |
+| **Бизнес-аналитика HTML** | `artifacts/agent_loop/BUSINESS_ANALYTICS.html` |
 | Как учим модель | `docs/TRAINING_APPROACH.md` |
 | Контракты с Desktop | `docs/PRODUCT_BOUNDARY.md`, `docs/work/platform/INTEGRATION_INTERFACES.md` |
 | План действий | `docs/superpowers/plans/2026-08-21-ai-algo-roadmap.md` |
@@ -68,8 +73,8 @@
 - Compare: метрики + graph + **trade_analysis**; запрет разного ТФ/окна.
 - Desktop: только **`ai-train`** — лаборатория обучения (прод UI позже). **§7G деплой policy — backlog.**
 - Цикл обучения: [`AGENT_TRAINING_LOOP.md`](work/AGENT_TRAINING_LOOP.md). Индекс волн: [`TRAINING_SESSION_INDEX.md`](work/TRAINING_SESSION_INDEX.md).
-- **Последняя train-волна: C17** — walk-forward + §7H div; CV≈0.80/0.85; OOS≈0.72–0.76; `37p-*`.
-- Next: history-window sweep (§7A); Desktop BT B&H+div.
+- **Последняя сессия: C19** — selective apply (chop≥0.38 ∧ P≥0.55); lift **+48** vs always −550; **4×38p-*_sel** (все chopgate).
+- Model: `…/c19-selective-apply/models/…`. Labeler: B0b. Next: Advisor wire / history×TF (A) / combo (C).
 - Export: `python scripts/export_ingest_to_csv.py`
 - Команда **«продолжай обучение»** → следующая C-сессия + ANALYTICS + обновление индекса.
 - Целевой UX (чат, сборщик, dual release): [`STANDALONE_PRODUCT_UX.md`](work/STANDALONE_PRODUCT_UX.md) — после зрелости моделей.

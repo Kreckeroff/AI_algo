@@ -1,17 +1,23 @@
-"""Bar-level market regime: trend_up / trend_down / chop (§B0 dual-structure)."""
+"""Bar-level market regime: trend_up / trend_down / chop / transition (§B0 + B0b thresholds)."""
 from __future__ import annotations
 
 from typing import Any, Dict, List, Optional, Sequence
 
+# B0b (2026-08-21): mid-band is transition (not chop); softer chop floors so
+# mean chop_share≈0.38 / trend≈0.35 on C16 1d+1h (was ~0.76 / 0.21).
 DEFAULTS = {
     "adx_period": 14,
     "er_period": 20,
     "sma_period": 50,
-    "adx_trend": 25.0,
-    "adx_chop": 20.0,
-    "er_trend": 0.35,
-    "er_chop": 0.25,
+    "adx_trend": 20.0,
+    "adx_chop": 15.0,
+    "er_trend": 0.28,
+    "er_chop": 0.15,
+    # "or" = weak if ADX or ER below floor; "and" = both required
+    "chop_combine": "or",
 }
+
+REGIME_LABELS = ("chop", "trend_up", "trend_down", "transition", "unknown")
 
 
 def _sma(xs: Sequence[float], period: int) -> List[Optional[float]]:
@@ -73,12 +79,10 @@ def _adx_series(bars: Sequence[Dict[str, Any]], period: int) -> List[Optional[fl
         denom = pdi + mdi
         dx[i] = 0.0 if denom <= 1e-12 else 100.0 * abs(pdi - mdi) / denom
 
-    # ADX = Wilder smooth of DX starting when DX becomes available
     adx: List[Optional[float]] = [None] * n
     first = next((i for i, v in enumerate(dx) if v is not None), None)
     if first is None:
         return adx
-    # need `period` DX values
     start = first + period - 1
     if start >= n:
         return adx
@@ -109,7 +113,7 @@ def classify_bars(
     *,
     cfg: Optional[Dict[str, float]] = None,
 ) -> List[str]:
-    """Return per-bar labels: unknown | chop | trend_up | trend_down."""
+    """Return per-bar labels: unknown | chop | transition | trend_up | trend_down."""
     conf = {**DEFAULTS, **(cfg or {})}
     n = len(bars)
     if n == 0:
@@ -118,6 +122,7 @@ def classify_bars(
     adx = _adx_series(bars, int(conf["adx_period"]))
     er = _efficiency_ratio(closes, int(conf["er_period"]))
     sma = _sma(closes, int(conf["sma_period"]))
+    combine = str(conf.get("chop_combine") or "or").lower()
 
     labels: List[str] = []
     for i in range(n):
@@ -126,27 +131,34 @@ def classify_bars(
             continue
         a = float(adx[i])
         e = float(er[i])
-        if a < conf["adx_chop"] or e < conf["er_chop"]:
+        if combine == "and":
+            weak = a < conf["adx_chop"] and e < conf["er_chop"]
+        else:
+            weak = a < conf["adx_chop"] or e < conf["er_chop"]
+        strong = a >= conf["adx_trend"] and e >= conf["er_trend"]
+        if weak:
             labels.append("chop")
-        elif a >= conf["adx_trend"] and e >= conf["er_trend"]:
+        elif strong:
             labels.append("trend_up" if closes[i] > float(sma[i]) else "trend_down")
         else:
-            labels.append("chop")
+            labels.append("transition")
     return labels
 
 
 def summarize_regimes(labels: Sequence[str]) -> Dict[str, float]:
     n = len(labels)
+    empty = {
+        "n_bars": 0.0,
+        "chop_share": 0.0,
+        "trend_up_share": 0.0,
+        "trend_down_share": 0.0,
+        "transition_share": 0.0,
+        "unknown_share": 0.0,
+        "trend_share": 0.0,
+    }
     if n == 0:
-        return {
-            "n_bars": 0.0,
-            "chop_share": 0.0,
-            "trend_up_share": 0.0,
-            "trend_down_share": 0.0,
-            "unknown_share": 0.0,
-            "trend_share": 0.0,
-        }
-    counts = {"chop": 0, "trend_up": 0, "trend_down": 0, "unknown": 0}
+        return empty
+    counts = {k: 0 for k in REGIME_LABELS}
     for lab in labels:
         counts[lab if lab in counts else "unknown"] += 1
     return {
@@ -154,6 +166,7 @@ def summarize_regimes(labels: Sequence[str]) -> Dict[str, float]:
         "chop_share": counts["chop"] / n,
         "trend_up_share": counts["trend_up"] / n,
         "trend_down_share": counts["trend_down"] / n,
+        "transition_share": counts["transition"] / n,
         "unknown_share": counts["unknown"] / n,
         "trend_share": (counts["trend_up"] + counts["trend_down"]) / n,
     }
@@ -167,12 +180,17 @@ def regime_at_time(
     """Nearest bar at or before ts; if none, first bar."""
     if not bars or not labels or len(bars) != len(labels):
         return "unknown"
+    # binary search on bar times
+    lo, hi = 0, len(bars) - 1
     best_i = 0
-    for i, b in enumerate(bars):
-        if int(b["time"]) <= int(ts):
-            best_i = i
+    tsi = int(ts)
+    while lo <= hi:
+        mid = (lo + hi) // 2
+        if int(bars[mid]["time"]) <= tsi:
+            best_i = mid
+            lo = mid + 1
         else:
-            break
+            hi = mid - 1
     return labels[best_i]
 
 
@@ -184,8 +202,8 @@ def annotate_trades(
     use_pnl_key: str = "pnl",
 ) -> Dict[str, Any]:
     """Aggregate trade PnL split by market regime at entry."""
-    buckets = {"chop": 0.0, "trend_up": 0.0, "trend_down": 0.0, "unknown": 0.0}
-    counts = {"chop": 0, "trend_up": 0, "trend_down": 0, "unknown": 0}
+    buckets = {k: 0.0 for k in REGIME_LABELS}
+    counts = {k: 0 for k in REGIME_LABELS}
     annotated = []
     for t in trades or []:
         entry = t.get("entryTime")
@@ -193,12 +211,14 @@ def annotate_trades(
             reg = "unknown"
         else:
             reg = regime_at_time(bars, labels, int(entry))
+        if reg not in buckets:
+            reg = "unknown"
         pnl = t.get(use_pnl_key)
         if pnl is None:
             pnl = t.get("pnl")
         if pnl is not None:
-            buckets[reg] = buckets.get(reg, 0.0) + float(pnl)
-            counts[reg] = counts.get(reg, 0) + 1
+            buckets[reg] += float(pnl)
+            counts[reg] += 1
         annotated.append({**t, "market_regime_at_entry": reg})
     n_closed = sum(counts.values())
     pnl_trend = buckets["trend_up"] + buckets["trend_down"]
@@ -208,6 +228,7 @@ def annotate_trades(
         "frac_trades_in_chop": (counts["chop"] / n_closed) if n_closed else 0.0,
         "pnl_in_chop": buckets["chop"],
         "pnl_in_trend": pnl_trend,
+        "pnl_in_transition": buckets["transition"],
         "pnl_by_regime": buckets,
         "count_by_regime": counts,
     }

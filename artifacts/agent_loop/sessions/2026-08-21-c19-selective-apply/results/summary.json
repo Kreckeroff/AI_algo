@@ -1,0 +1,202 @@
+{
+  "session": "2026-08-21-c19-selective-apply",
+  "chop_thr": 0.38,
+  "proba_thr": 0.55,
+  "n_pairs": 1066,
+  "model": {
+    "n": 1066,
+    "positives": 247,
+    "better_rate": 0.23170731707317074,
+    "cv_accuracy": 0.8958724202626641,
+    "cv_auc": 0.9191222632518179
+  },
+  "policies": {
+    "never": {
+      "mean_pnl": 564.9121031170498,
+      "mean_base": 564.9121031170498,
+      "lift_vs_base": 0.0,
+      "apply_rate": 0.0,
+      "n_apply": 0,
+      "mean_delta_when_applied": 0.0
+    },
+    "always": {
+      "mean_pnl": 14.515334605940314,
+      "mean_base": 564.9121031170498,
+      "lift_vs_base": -550.3967685111095,
+      "apply_rate": 1.0,
+      "n_apply": 1066,
+      "mean_delta_when_applied": -550.3967685111095
+    },
+    "high_chop>=0.38": {
+      "mean_pnl": 316.5637228957367,
+      "mean_base": 564.9121031170498,
+      "lift_vs_base": -248.3483802213131,
+      "apply_rate": 0.4230769230769231,
+      "n_apply": 451,
+      "mean_delta_when_applied": -587.0052623412855
+    },
+    "model>=0.55": {
+      "mean_pnl": 656.8870808629142,
+      "mean_base": 564.9121031170498,
+      "lift_vs_base": 91.97497774586441,
+      "apply_rate": 0.18667917448405252,
+      "n_apply": 199,
+      "mean_delta_when_applied": 492.69008179442915
+    },
+    "sel chop&model": {
+      "mean_pnl": 613.0586726018048,
+      "mean_base": 564.9121031170498,
+      "lift_vs_base": 48.14656948475499,
+      "apply_rate": 0.06848030018761726,
+      "n_apply": 73,
+      "mean_delta_when_applied": 703.0718228869688
+    },
+    "oracle high_chop&better": {
+      "mean_pnl": 622.0197862216016,
+      "mean_base": 564.9121031170498,
+      "lift_vs_base": 57.107683104551825,
+      "apply_rate": 0.08818011257035648,
+      "n_apply": 94,
+      "mean_delta_when_applied": 647.6254275473632
+    }
+  },
+  "by_kind": {
+    "add_chop_gate": {
+      "n": 702,
+      "always": {
+        "mean_pnl": 93.29853013161,
+        "mean_base": 538.0926094120933,
+        "lift_vs_base": -444.79407928048334,
+        "apply_rate": 1.0,
+        "n_apply": 702,
+        "mean_delta_when_applied": -444.79407928048346
+      },
+      "sel": {
+        "mean_pnl": 609.3674032678608,
+        "mean_base": 538.0926094120933,
+        "lift_vs_base": 71.27479385576748,
+        "apply_rate": 0.08974358974358974,
+        "n_apply": 63,
+        "mean_delta_when_applied": 794.2048458214091
+      },
+      "oracle": {
+        "mean_pnl": 619.6007210765553,
+        "mean_base": 538.0926094120933,
+        "lift_vs_base": 81.50811166446192,
+        "apply_rate": 0.11253561253561253,
+        "n_apply": 79,
+        "mean_delta_when_applied": 724.2872707399009
+      }
+    },
+    "add_mr_overlay": {
+      "n": 364,
+      "always": {
+        "mean_pnl": -137.42368533642266,
+        "mean_base": 616.6354124051801,
+        "lift_vs_base": -754.0590977416027,
+        "apply_rate": 1.0,
+        "n_apply": 364,
+        "mean_delta_when_applied": -754.0590977416026
+      },
+      "sel": {
+        "mean_pnl": 620.1775491744107,
+        "mean_base": 616.6354124051801,
+        "lift_vs_base": 3.5421367692306376,
+        "apply_rate": 0.027472527472527472,
+        "n_apply": 10,
+        "mean_delta_when_applied": 128.93377839999437
+      },
+      "oracle": {
+        "mean_pnl": 626.6851261441909,
+        "mean_base": 616.6354124051801,
+        "lift_vs_base": 10.049713739010826,
+        "apply_rate": 0.04120879120879121,
+        "n_apply": 15,
+        "mean_delta_when_applied": 243.8730533999974
+      }
+    }
+  },
+  "n_promoted": 4,
+  "feature_importance_top": [
+    [
+      "base_edge_vs_bh",
+      305
+    ],
+    [
+      "base_pnl",
+      298
+    ],
+    [
+      "base_trades",
+      253
+    ],
+    [
+      "base_pnl_in_chop",
+      235
+    ],
+    [
+      "base_frac_trades_in_chop",
+      223
+    ],
+    [
+      "base_pnl_in_trend",
+      195
+    ],
+    [
+      "base_dd",
+      188
+    ],
+    [
+      "buy_hold_pnl",
+      188
+    ],
+    [
+      "base_wr",
+      185
+    ],
+    [
+      "kind_gate",
+      140
+    ],
+    [
+      "window_chop_share",
+      76
+    ],
+    [
+      "window_transition_share",
+      56
+    ],
+    [
+      "window_trend_share",
+      51
+    ],
+    [
+      "side_lo",
+      38
+    ],
+    [
+      "kind_overlay",
+      36
+    ],
+    [
+      "sym_NVTK",
+      28
+    ],
+    [
+      "sym_GAZP",
+      23
+    ],
+    [
+      "sym_IMOEXF",
+      17
+    ],
+    [
+      "script_breakout",
+      16
+    ],
+    [
+      "script_mr",
+      11
+    ]
+  ]
+}

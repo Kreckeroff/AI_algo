@@ -1,0 +1,229 @@
+{
+  "cfg": "v1_mid_as_chop",
+  "n_windows": 26,
+  "mean_chop": 0.764024384311109,
+  "mean_trend": 0.2133623400503905,
+  "mean_transition": 0.0,
+  "by_tf": {
+    "1d": {
+      "mean_chop": 0.7479996099987567,
+      "mean_trend": 0.21086069237787783,
+      "mean_transition": 0.0
+    },
+    "1h": {
+      "mean_chop": 0.7800491586234612,
+      "mean_trend": 0.21586398772290322,
+      "mean_transition": 0.0
+    }
+  },
+  "rows": [
+    {
+      "symbol": "CNYRUBF",
+      "timeframe": "1d",
+      "chop_share": 0.7547857793983591,
+      "trend_share": 0.20054694621695535,
+      "transition_share": 0.0,
+      "unknown_share": 0.044667274384685506
+    },
+    {
+      "symbol": "CNYRUBF",
+      "timeframe": "1h",
+      "chop_share": 0.7231666666666666,
+      "trend_share": 0.27275,
+      "transition_share": 0.0,
+      "unknown_share": 0.004083333333333333
+    },
+    {
+      "symbol": "GAZP",
+      "timeframe": "1d",
+      "chop_share": 0.7781844802342606,
+      "trend_share": 0.18594436310395315,
+      "transition_share": 0.0,
+      "unknown_share": 0.03587115666178624
+    },
+    {
+      "symbol": "GAZP",
+      "timeframe": "1h",
+      "chop_share": 0.77325,
+      "trend_share": 0.22266666666666668,
+      "transition_share": 0.0,
+      "unknown_share": 0.004083333333333333
+    },
+    {
+      "symbol": "GLDRUBF",
+      "timeframe": "1d",
+      "chop_share": 0.7399497487437185,
+      "trend_share": 0.1984924623115578,
+      "transition_share": 0.0,
+      "unknown_share": 0.06155778894472362
+    },
+    {
+      "symbol": "GLDRUBF",
+      "timeframe": "1h",
+      "chop_share": 0.7726666666666666,
+      "trend_share": 0.22325,
+      "transition_share": 0.0,
+      "unknown_share": 0.004083333333333333
+    },
+    {
+      "symbol": "GMKN",
+      "timeframe": "1d",
+      "chop_share": 0.8135095447870778,
+      "trend_share": 0.15051395007342144,
+      "transition_share": 0.0,
+      "unknown_share": 0.035976505139500736
+    },
+    {
+      "symbol": "GMKN",
+      "timeframe": "1h",
+      "chop_share": 0.7656666666666667,
+      "trend_share": 0.23025,
+      "transition_share": 0.0,
+      "unknown_share": 0.004083333333333333
+    },
+    {
+      "symbol": "IMOEXF",
+      "timeframe": "1d",
+      "chop_share": 0.7039660056657224,
+      "trend_share": 0.22662889518413598,
+      "transition_share": 0.0,
+      "unknown_share": 0.06940509915014165
+    },
+    {
+      "symbol": "IMOEXF",
+      "timeframe": "1h",
+      "chop_share": 0.749389062104997,
+      "trend_share": 0.24648184039774163,
+      "transition_share": 0.0,
+      "unknown_share": 0.004129097497261313
+    },
+    {
+      "symbol": "LKOH",
+      "timeframe": "1d",
+      "chop_share": 0.7715959004392386,
+      "trend_share": 0.1925329428989751,
+      "transition_share": 0.0,
+      "unknown_share": 0.03587115666178624
+    },
+    {
+      "symbol": "LKOH",
+      "timeframe": "1h",
+      "chop_share": 0.7869166666666667,
+      "trend_share": 0.209,
+      "transition_share": 0.0,
+      "unknown_share": 0.004083333333333333
+    },
+    {
+      "symbol": "MGNT",
+      "timeframe": "1d",
+      "chop_share": 0.7101024890190337,
+      "trend_share": 0.2540263543191801,
+      "transition_share": 0.0,
+      "unknown_share": 0.03587115666178624
+    },
+    {
+      "symbol": "MGNT",
+      "timeframe": "1h",
+      "chop_share": 0.8026666666666666,
+      "trend_share": 0.19325,
+      "transition_share": 0.0,
+      "unknown_share": 0.004083333333333333
+    },
+    {
+      "symbol": "MTSS",
+      "timeframe": "1d",
+      "chop_share": 0.6857142857142857,
+      "trend_share": 0.2783882783882784,
+      "transition_share": 0.0,
+      "unknown_share": 0.035897435897435895
+    },
+    {
+      "symbol": "MTSS",
+      "timeframe": "1h",
+      "chop_share": 0.823,
+      "trend_share": 0.17291666666666666,
+      "transition_share": 0.0,
+      "unknown_share": 0.004083333333333333
+    },
+    {
+      "symbol": "NVTK",
+      "timeframe": "1d",
+      "chop_share": 0.7687224669603524,
+      "trend_share": 0.19530102790014683,
+      "transition_share": 0.0,
+      "unknown_share": 0.035976505139500736
+    },
+    {
+      "symbol": "NVTK",
+      "timeframe": "1h",
+      "chop_share": 0.78325,
+      "trend_share": 0.21266666666666667,
+      "transition_share": 0.0,
+      "unknown_share": 0.004083333333333333
+    },
+    {
+      "symbol": "PLZL",
+      "timeframe": "1d",
+      "chop_share": 0.7225901398086828,
+      "trend_share": 0.24135393671817512,
+      "transition_share": 0.0,
+      "unknown_share": 0.036055923473142015
+    },
+    {
+      "symbol": "PLZL",
+      "timeframe": "1h",
+      "chop_share": 0.78025,
+      "trend_share": 0.21566666666666667,
+      "transition_share": 0.0,
+      "unknown_share": 0.004083333333333333
+    },
+    {
+      "symbol": "ROSN",
+      "timeframe": "1d",
+      "chop_share": 0.7745241581259151,
+      "trend_share": 0.18960468521229867,
+      "transition_share": 0.0,
+      "unknown_share": 0.03587115666178624
+    },
+    {
+      "symbol": "ROSN",
+      "timeframe": "1h",
+      "chop_share": 0.7875833333333333,
+      "trend_share": 0.20833333333333334,
+      "transition_share": 0.0,
+      "unknown_share": 0.004083333333333333
+    },
+    {
+      "symbol": "SBER",
+      "timeframe": "1d",
+      "chop_share": 0.7613469985358712,
+      "trend_share": 0.2027818448023426,
+      "transition_share": 0.0,
+      "unknown_share": 0.03587115666178624
+    },
+    {
+      "symbol": "SBER",
+      "timeframe": "1h",
+      "chop_share": 0.7976666666666666,
+      "trend_share": 0.19825,
+      "transition_share": 0.0,
+      "unknown_share": 0.004083333333333333
+    },
+    {
+      "symbol": "TATN",
+      "timeframe": "1d",
+      "chop_share": 0.7390029325513197,
+      "trend_share": 0.2250733137829912,
+      "transition_share": 0.0,
+      "unknown_share": 0.03592375366568915
+    },
+    {
+      "symbol": "TATN",
+      "timeframe": "1h",
+      "chop_share": 0.7951666666666667,
+      "trend_share": 0.20075,
+      "transition_share": 0.0,
+      "unknown_share": 0.004083333333333333
+    }
+  ]
+}

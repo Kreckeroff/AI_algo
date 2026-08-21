@@ -1,0 +1,447 @@
+{
+  "version": 1,
+  "meta": {
+    "name": "Donchian breakout 55 (HH/LL−1) +chop_gate",
+    "updatedAt": "2026-08-21T15:16:48Z",
+    "createdAt": "2026-08-21T09:26:05Z",
+    "tags": [
+      "breakout",
+      "donchian",
+      "ai-train",
+      "training",
+      "side:long_only",
+      "long_only",
+      "c8-fix",
+      "donchian-shift",
+      "c18",
+      "b1",
+      "intervention:add_chop_gate"
+    ],
+    "side_mode": "long_only",
+    "intervention": {
+      "kind": "add_chop_gate",
+      "base": "20-donchian-55.italgo",
+      "adx_min": 25,
+      "sma": 50
+    }
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "instrument",
+        "type": "instrument",
+        "position": {
+          "x": 40,
+          "y": 200
+        },
+        "data": {
+          "symbol": "SBER",
+          "instrument_type": "stock",
+          "label": "Инструмент"
+        }
+      },
+      {
+        "id": "close",
+        "type": "source_close",
+        "position": {
+          "x": 260,
+          "y": 80
+        },
+        "data": {
+          "label": "Close"
+        }
+      },
+      {
+        "id": "high",
+        "type": "source_high",
+        "position": {
+          "x": 260,
+          "y": 200
+        },
+        "data": {
+          "label": "High"
+        }
+      },
+      {
+        "id": "low",
+        "type": "source_low",
+        "position": {
+          "x": 260,
+          "y": 320
+        },
+        "data": {
+          "label": "Low"
+        }
+      },
+      {
+        "id": "hh",
+        "type": "indicator_highest",
+        "position": {
+          "x": 480,
+          "y": 140
+        },
+        "data": {
+          "period": 55,
+          "label": "HH55"
+        }
+      },
+      {
+        "id": "ll",
+        "type": "indicator_lowest",
+        "position": {
+          "x": 480,
+          "y": 300
+        },
+        "data": {
+          "period": 55,
+          "label": "LL55"
+        }
+      },
+      {
+        "id": "brk_up",
+        "type": "logic_gt",
+        "position": {
+          "x": 700,
+          "y": 120
+        },
+        "data": {
+          "label": "Close>HH"
+        }
+      },
+      {
+        "id": "brk_dn",
+        "type": "logic_lt",
+        "position": {
+          "x": 700,
+          "y": 300
+        },
+        "data": {
+          "label": "Close<LL"
+        }
+      },
+      {
+        "id": "open",
+        "type": "position_open_market",
+        "position": {
+          "x": 920,
+          "y": 120
+        },
+        "data": {
+          "direction": "buy",
+          "qty": 1,
+          "label": "Long"
+        }
+      },
+      {
+        "id": "close_pos",
+        "type": "position_close_market",
+        "position": {
+          "x": 920,
+          "y": 300
+        },
+        "data": {
+          "label": "Close"
+        }
+      },
+      {
+        "id": "chart",
+        "type": "chart",
+        "position": {
+          "x": 700,
+          "y": 460
+        },
+        "data": {
+          "label": "Chart"
+        }
+      },
+      {
+        "id": "hh_prev",
+        "type": "math_shift",
+        "position": {
+          "x": 620,
+          "y": 100
+        },
+        "data": {
+          "period": 1,
+          "label": "HH prev"
+        }
+      },
+      {
+        "id": "ll_prev",
+        "type": "math_shift",
+        "position": {
+          "x": 620,
+          "y": 280
+        },
+        "data": {
+          "period": 1,
+          "label": "LL prev"
+        }
+      },
+      {
+        "id": "adx_c18",
+        "type": "indicator_adx",
+        "position": {
+          "x": 480,
+          "y": 260
+        },
+        "data": {
+          "period": 14,
+          "label": "ADX14"
+        }
+      },
+      {
+        "id": "sma50_c18",
+        "type": "indicator_sma",
+        "position": {
+          "x": 480,
+          "y": 340
+        },
+        "data": {
+          "period": 50,
+          "label": "SMA50"
+        }
+      },
+      {
+        "id": "adx_min_c18",
+        "type": "constant",
+        "position": {
+          "x": 480,
+          "y": 420
+        },
+        "data": {
+          "value": 25,
+          "label": "25"
+        }
+      },
+      {
+        "id": "adx_ok_c18",
+        "type": "logic_gt",
+        "position": {
+          "x": 700,
+          "y": 260
+        },
+        "data": {
+          "label": "ADX>25"
+        }
+      },
+      {
+        "id": "above_sma_c18",
+        "type": "logic_gt",
+        "position": {
+          "x": 700,
+          "y": 340
+        },
+        "data": {
+          "label": "Close>SMA50"
+        }
+      },
+      {
+        "id": "chop_gate_ok",
+        "type": "logic_and",
+        "position": {
+          "x": 820,
+          "y": 300
+        },
+        "data": {
+          "label": "TrendGate"
+        }
+      },
+      {
+        "id": "chop_gate_and",
+        "type": "logic_and",
+        "position": {
+          "x": 860,
+          "y": 80
+        },
+        "data": {
+          "label": "Buy+ChopGate"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e1",
+        "source": "instrument",
+        "target": "close",
+        "sourceHandle": "instrument",
+        "targetHandle": "instrument"
+      },
+      {
+        "id": "e2",
+        "source": "instrument",
+        "target": "high",
+        "sourceHandle": "instrument",
+        "targetHandle": "instrument"
+      },
+      {
+        "id": "e3",
+        "source": "instrument",
+        "target": "low",
+        "sourceHandle": "instrument",
+        "targetHandle": "instrument"
+      },
+      {
+        "id": "e4",
+        "source": "high",
+        "target": "hh",
+        "sourceHandle": "value",
+        "targetHandle": "source"
+      },
+      {
+        "id": "e5",
+        "source": "low",
+        "target": "ll",
+        "sourceHandle": "value",
+        "targetHandle": "source"
+      },
+      {
+        "id": "e6",
+        "source": "close",
+        "target": "brk_up",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "e8",
+        "source": "close",
+        "target": "brk_dn",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "e10",
+        "source": "instrument",
+        "target": "open",
+        "sourceHandle": "instrument",
+        "targetHandle": "instrument"
+      },
+      {
+        "id": "e12",
+        "source": "open",
+        "target": "close_pos",
+        "sourceHandle": "position",
+        "targetHandle": "position"
+      },
+      {
+        "id": "e13",
+        "source": "brk_dn",
+        "target": "close_pos",
+        "sourceHandle": "result",
+        "targetHandle": "condition"
+      },
+      {
+        "id": "e14",
+        "source": "close",
+        "target": "chart",
+        "sourceHandle": "value",
+        "targetHandle": "series"
+      },
+      {
+        "id": "c8_hh_shift",
+        "source": "hh",
+        "target": "hh_prev",
+        "sourceHandle": "value",
+        "targetHandle": "source"
+      },
+      {
+        "id": "c8_ll_shift",
+        "source": "ll",
+        "target": "ll_prev",
+        "sourceHandle": "value",
+        "targetHandle": "source"
+      },
+      {
+        "id": "c8_hh_brk",
+        "source": "hh_prev",
+        "target": "brk_up",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "c8_ll_brk",
+        "source": "ll_prev",
+        "target": "brk_dn",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "c18_inst_adx",
+        "source": "instrument",
+        "target": "adx_c18",
+        "sourceHandle": "instrument",
+        "targetHandle": "instrument"
+      },
+      {
+        "id": "c18_c_sma",
+        "source": "close",
+        "target": "sma50_c18",
+        "sourceHandle": "value",
+        "targetHandle": "source"
+      },
+      {
+        "id": "c18_adx_a",
+        "source": "adx_c18",
+        "target": "adx_ok_c18",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "c18_adx_b",
+        "source": "adx_min_c18",
+        "target": "adx_ok_c18",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "c18_cl_a",
+        "source": "close",
+        "target": "above_sma_c18",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "c18_cl_b",
+        "source": "sma50_c18",
+        "target": "above_sma_c18",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "c18_g1",
+        "source": "adx_ok_c18",
+        "target": "chop_gate_ok",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "c18_g2",
+        "source": "above_sma_c18",
+        "target": "chop_gate_ok",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "c18_e11_and",
+        "source": "brk_up",
+        "target": "chop_gate_and",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "c18_chop_gate_to_and",
+        "source": "chop_gate_ok",
+        "target": "chop_gate_and",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "c18_chop_gate_open",
+        "source": "chop_gate_and",
+        "target": "open",
+        "sourceHandle": "result",
+        "targetHandle": "condition"
+      }
+    ]
+  }
+}

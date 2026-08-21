@@ -208,6 +208,27 @@ docs/superpowers/specs/2026-08-21-regime-dual-structure-design.md  # this file
 
 ---
 
+## 9c. C18 / chop_gate empirical note (2026-08-21)
+
+- Mutation: long open ∧ (ADX>25 ∧ close>SMA50); 27 bases × 13 symbols × 1d+1h → **702 pairs**.
+- Better 28.5%; **CV≈0.87/0.91** (when-to-apply ranker works).
+- **mean ΔPnL ≈ −445**, **mean Δchop ≈ −425**, **0×38p** — blanket gate cuts noise *and* winners; do not promote.
+
+## 9d. C18b / mr_overlay empirical note (2026-08-21)
+
+- Mutation: `(orig ∧ ADX>25) ∨ (BB20/RSI<30 ∧ ADX<25)` + exit∨BB mid; 14 long_only non-MR bases → **364 pairs**.
+- Better 12.9%; **CV≈0.92/0.93**.
+- **mean Δ ≈ −754** vs gate overlap **−418**; overlay>gate only 96/364; **0×38p**.
+- B1 verdict (v1 labels): dual-structure not confirmed for absolute edge.
+
+## 9e. B0b threshold retune (2026-08-21)
+
+- Root cause of chop_share≈0.76: mid-band labeled **chop**; soft floors + **transition** mid-band.
+- New DEFAULTS: `adx_chop=15`, `er_chop=0.15`, `adx_trend=20`, `er_trend=0.28`, mid→`transition`.
+- Mean shares on C16 1d+1h: chop **0.37**, trend **0.34**, transition **0.27**.
+- Re-score (same trades): on windows with chop≥0.40, **gate mean Δchop ≈ +34**, **overlay ≈ +46**; overall mean Δ still negative.
+- Graph mutations still ADX>25 (separate from labeler).
+
 ## 9b. B0 empirical note (2026-08-21)
 
 - Mean window `chop_share` on C16 1d+1h ≈ **0.76** with v1 thresholds — most bars look choppy; tune per-TF before over-trusting buckets.

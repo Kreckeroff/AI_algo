@@ -1,0 +1,102 @@
+{
+  "session": "2026-08-21-c18-regime-dual",
+  "kind": "add_chop_gate",
+  "n_pairs": 702,
+  "n_better": 200,
+  "n_better_in_chop": 259,
+  "mean_delta": -444.79407928048346,
+  "mean_delta_pnl_in_chop": -424.92335153297887,
+  "high_chop_n": 702,
+  "high_chop_better_rate": 0.2849002849002849,
+  "high_chop_mean_d_chop": -424.92335153297887,
+  "model": {
+    "n": 702,
+    "positives": 200,
+    "better_rate": 0.2849002849002849,
+    "cv_accuracy": 0.8717948717948718,
+    "cv_auc": 0.9096215139442231
+  },
+  "n_promoted": 0,
+  "feature_importance_top": [
+    [
+      "base_edge_vs_bh",
+      311
+    ],
+    [
+      "base_pnl_in_chop",
+      273
+    ],
+    [
+      "base_wr",
+      258
+    ],
+    [
+      "base_pnl",
+      247
+    ],
+    [
+      "base_dd",
+      241
+    ],
+    [
+      "base_trades",
+      221
+    ],
+    [
+      "base_pnl_in_trend",
+      205
+    ],
+    [
+      "buy_hold_pnl",
+      188
+    ],
+    [
+      "base_frac_trades_in_chop",
+      179
+    ],
+    [
+      "sym_IMOEXF",
+      40
+    ],
+    [
+      "window_chop_share",
+      38
+    ],
+    [
+      "side_lo",
+      36
+    ],
+    [
+      "sym_NVTK",
+      34
+    ],
+    [
+      "script_breakout",
+      25
+    ],
+    [
+      "sym_LKOH",
+      15
+    ],
+    [
+      "tf_1d",
+      14
+    ],
+    [
+      "sym_SBER",
+      9
+    ],
+    [
+      "script_mr",
+      7
+    ],
+    [
+      "side_ls",
+      7
+    ],
+    [
+      "sym_TATN",
+      6
+    ]
+  ]
+}
