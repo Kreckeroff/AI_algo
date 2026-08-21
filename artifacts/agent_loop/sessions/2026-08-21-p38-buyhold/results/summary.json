@@ -1,0 +1,92 @@
+{
+  "session": "2026-08-21-p38-buyhold",
+  "source": "/Users/kreckeroff/Fintech (startup)/AI_algo/artifacts/agent_loop/sessions/2026-08-21-c14-futures-expand",
+  "n_rows": 6266,
+  "beat_rate_all": 0.8262049154165336,
+  "beat_rate_long_only": 0.8149321266968326,
+  "beat_rate_long_short": 0.8531960996749729,
+  "pseudo_buy_hold_n": 0,
+  "mean_edge_vs_bh": 583.2693328663025,
+  "by_side_mode": {
+    "long_only": {
+      "n": 4420,
+      "beat_rate": 0.8149321266968326,
+      "mean_edge": 398.24522969937334,
+      "pseudo_n": 0
+    },
+    "long_short": {
+      "n": 1846,
+      "beat_rate": 0.8531960996749729,
+      "mean_edge": 1026.2847911533177,
+      "pseudo_n": 0
+    }
+  },
+  "by_symbol": {
+    "SBER": {
+      "n": 482,
+      "beat_rate": 0.7323651452282157,
+      "mean_edge": 65.82482260286358
+    },
+    "GAZP": {
+      "n": 482,
+      "beat_rate": 0.9232365145228216,
+      "mean_edge": 144.4263339356297
+    },
+    "LKOH": {
+      "n": 482,
+      "beat_rate": 0.8921161825726142,
+      "mean_edge": 2613.804166629497
+    },
+    "ROSN": {
+      "n": 482,
+      "beat_rate": 0.9439834024896265,
+      "mean_edge": 264.65908503541715
+    },
+    "GMKN": {
+      "n": 482,
+      "beat_rate": 0.9647302904564315,
+      "mean_edge": 80.98779653197145
+    },
+    "NVTK": {
+      "n": 482,
+      "beat_rate": 0.9585062240663901,
+      "mean_edge": 889.561906139319
+    },
+    "TATN": {
+      "n": 482,
+      "beat_rate": 0.7095435684647303,
+      "mean_edge": 119.34069304065213
+    },
+    "PLZL": {
+      "n": 482,
+      "beat_rate": 0.8547717842323651,
+      "mean_edge": 779.2218941998832
+    },
+    "MGNT": {
+      "n": 482,
+      "beat_rate": 0.983402489626556,
+      "mean_edge": 4838.388167402698
+    },
+    "MTSS": {
+      "n": 482,
+      "beat_rate": 0.941908713692946,
+      "mean_edge": 150.02236682893286
+    },
+    "CNYRUBF": {
+      "n": 482,
+      "beat_rate": 0.7448132780082988,
+      "mean_edge": 2.006896509396963
+    },
+    "GLDRUBF": {
+      "n": 482,
+      "beat_rate": 0.14315352697095435,
+      "mean_edge": -3857.2995557302906
+    },
+    "IMOEXF": {
+      "n": 482,
+      "beat_rate": 0.9481327800829875,
+      "mean_edge": 1491.5567541359744
+    }
+  },
+  "rule": "long_only: long_trades_pnl > BH; long_short: netPnl > BH (§7I)"
+}

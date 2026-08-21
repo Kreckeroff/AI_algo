@@ -78,6 +78,15 @@
 
 См. backlog §7H / P3.7.
 
+## Buy&hold beat (§7I) — обязательное условие
+
+На том же окне графика:
+
+- **long_only:** PnL лонговых сделок **>** buy&hold (`close_last − open_first`).
+- **long_short:** net PnL стратегии **>** buy&hold; цель — своевременные выходы и перезаходы, не «сел = B&H».
+
+Метрики: `beats_buy_hold`, `edge_vs_bh`, finding `псевдо_buy_hold`. См. backlog §7I / P3.8.
+
 ## Деплой / Advisor live (§7G) — backlog
 
 Пока **не** вшиваем policy в Desktop. Возможны hosting или локальный бандл позже.  

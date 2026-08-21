@@ -427,6 +427,7 @@ DSL/GraphDTO: `period` integer, constraint `1 ≤ period ≤ max_period` (`max_p
 | **P3.5** | **Мульти-инструмент (§7F):** постоянно расширять набор тикеров + датасет | **частично+++** (C13: 10 equities; C14→ +futures) |
 | **P3.6** | **Качество модели «в гений»** — глубина датасета / вмешательств / TF | **в работе** (C13 all-TF; next: kinds + futures) |
 | **P3.7** | **Дивгэп / short cash (§7H):** дообучение на акциях+индексе с учётом дивидендного гэпа | **частично** (calendar cache + annotate C14) |
+| **P3.8** | **Beat buy&hold (§7I):** long / long-short должны бить B&H на окне графика | **принято** (метрика + label; train next) |
 | **P4** | Новые индикаторы Desktop → lab whitelist (§7B стык) | параллельно |
 | **P5** | Inference: policy → Advisor (Desktop **или** hosting) + чтение действий юзера | **backlog** (не сейчас) |
 
@@ -477,6 +478,50 @@ DSL/GraphDTO: `period` integer, constraint `1 ≤ period ≤ max_period` (`max_p
 - [ ] Документировать в session notes: equities/index train без §7H = provisional
 
 **Статус:** backlog для дообучения на акциях и индексе; шаг **P3.7**.
+
+---
+
+## 7I. Бить buy&hold — обязательное условие обучения *(2026-08-21)*
+
+**Идея:** стратегия бесполезна, если на том же окне графика **просто купить и держать** выгоднее, чем наши входы/выходы.
+
+### Правила по `side_mode`
+
+| Режим | Условие «ок» | Смысл |
+|-------|----------------|--------|
+| **`long_only`** | `long_trades_pnl` **>** `buy_hold_pnl` (на том же окне, qty=1) | Лонговые сделки лучше пассивного удержания. Иначе скрипт = «маскировка B&H» или хуже. |
+| **`long_short`** | `strategy_net_pnl` **>** `buy_hold_pnl` **и** long-нога / timely exits создают edge vs B&H | Покупки + своевременные выходы (+шорты) выгоднее B&H. Стремимся к **осмысленным перезаходам**, не к «сел и забыл». |
+| **`short_only`** | отдельно: edge vs flat / vs inverted B&H | редко; не смешивать с LO |
+
+### Метрики (обязательные в session / ANALYTICS)
+
+| Поле | Формула / смысл |
+|------|-----------------|
+| `buy_hold_pnl` | `close_last − open_first` (qty=1) на окне баров прогона |
+| `long_trades_pnl` | Σ PnL сделок `side=buy` |
+| `short_trades_pnl` | Σ PnL сделок `side=sell` |
+| `beats_buy_hold` | bool по правилам выше |
+| `edge_vs_bh` | `strategy_net_pnl − buy_hold_pnl` (или long-only: `long_trades_pnl − buy_hold_pnl`) |
+| `n_roundtrips` / reentry | число закрытых лонгов; низкий count при PnL≈B&H → флаг «псевдо-B&H» |
+
+### Правила для train / ranker / Advisor
+
+1. Прогон без сравнения с B&H на том же окне — **неполный** (как без ANALYTICS).
+2. Label / promote: вариант **хуже**, если base бил B&H, а variant перестал (или edge ухудшился сильно).
+3. Intervention kinds: поощрять то, что **увеличивает edge vs B&H** (фильтры, выходы, перезаходы), не только raw ΔPnL.
+4. «Мало сделок + PnL ≈ B&H» → finding `псевдо_buy_hold` → совет: ужесточить entry / добавить exit / не держать весь тренд слепо.
+5. Для **тренда (§7C):** всё ещё PnL first, но **относительно B&H** — иначе «высокий PnL» может быть просто рынком.
+6. С §7H: на equities B&H тоже можно считать с дивидендами long (+div); сравнивать apples-to-apples.
+
+### Черновые подзадачи (P3.8)
+
+- [x] Считать `buy_hold_pnl` post-hoc из bars (`domain/buy_hold.py` + session p38-buyhold); в каждый engine — долг
+- [x] Annotate session p38: `beats_buy_hold`, `edge_vs_bh` per script; в pairs/policy — долг
+- [ ] Finding `псевдо_buy_hold` в trade_analysis
+- [ ] Retrain intervention policy с фичей `edge_vs_bh` / `beats_bh`
+- [ ] Compare verdict: «хуже B&H» = mixed/worse даже при +PnL абсолютном
+
+**Статус:** принято как обязательное условие обучения; шаг **P3.8**.
 
 ---
 
@@ -765,6 +810,7 @@ DSL/GraphDTO: `period` integer, constraint `1 ≤ period ≤ max_period` (`max_p
 | 2026-08-21 | **§7D:** обучение/корпус учитывают **long_only** и **long_short** (не только лонг); шаг P2.5 |
 | 2026-08-21 | **§7D P2.5:** twins 21–26 long_short; tagged `side_mode`; C4 session — LS mean_pnl > LO на SBER 1d |
 | 2026-08-21 | **§7E:** обучение на **списке сделок** (good/bad) + улучшения через **блок** или **period**; шаг P2.6 |
+| 2026-08-21 | **§7I / P3.8:** бить buy&hold — LO long trades > BH; LS net > BH; перезаходы; метрики beats_buy_hold / edge_vs_bh |
 | 2026-08-21 | **P3.7 start:** Smart-Lab div calendar cache (10 equities); annotate C14 1d+1h — short×ex-div ~3.9k; short paid tracked |
 | 2026-08-21 | **C14:** +futures CNYRUBF/GLDRUBF/IMOEXF × all TF; period×0.5; pairs 21614; CV≈0.72/0.79; 34p-*; §7H control |
 | 2026-08-21 | **TRAINING_SESSION_INDEX:** живой индекс C1–C13 + покрытие TF/тикеров/kinds; handoff/AGENTS синхронизированы |

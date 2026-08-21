@@ -45,6 +45,7 @@
 18. **Деплой (§7G):** не блокировать обучение на Desktop-интеграции; hosting vs in-app — решить позже. Сейчас — **качество модели**.
 19. **Дивгэп (§7H):** на акциях/индексе шорт через отсечку **не** зарабатывает дивгэп — дивиденд списывают. Без cash-adjust LS equities = provisional (P3.7). Фьючерсы — control без дивгэпа.
 20. **Индекс сессий:** после каждой C-волны обновлять [`docs/work/TRAINING_SESSION_INDEX.md`](docs/work/TRAINING_SESSION_INDEX.md) + строку в BACKLOG История.
+21. **Buy&hold (§7I):** long_only / long_short должны **бить buy&hold** на том же окне графика (`beats_buy_hold`, `edge_vs_bh`). Псевдо-B&H (мало сделок ≈ рынок) — finding. Шаг P3.8.
 
 ---
 

@@ -24,6 +24,7 @@
 | **7F** | Постоянно расширять **тикеры + датасет** | C9→C13: 10 equities |
 | **7G** | Деплой policy в Desktop / live actions — **не сейчас** | backlog |
 | **7H** | **Дивгэп:** шорт на акциях/индексе не зарабатывает гэп; дивиденд списывают | **P3.7 частично** (cache+annotate) |
+| **7I** | **Бить buy&hold** на окне графика (LO / LS) | **P3.8 принято** |
 
 После каждой сессии: `ANALYTICS.html` + compare prev→current + `REPORT.md` / notes.
 
@@ -70,8 +71,8 @@ Label better: `ΔPnL > 0` **и** `variant_dd ≤ 1.5 × base_dd`.
 
 1. **C15:** ATR SL/TP / remove-filter kinds; walk-forward по годам.
 2. **P3.7 next:** retrain policy с `near_ex_div` / `pnl_div_adjusted`; Desktop BT cash-adjust; индексные компоненты.
-3. History-window sweep 1d…5y (§7A) — ещё долг.
-4. Walk-forward по годам; больше kinds (SL/TP, remove block).
+3. **P3.8:** вшить `beats_buy_hold` / `edge_vs_bh` в labels + promote + ANALYTICS каждой волны.
+4. History-window sweep 1d…5y (§7A) — ещё долг.
 5. **Не** вшивать policy в Desktop (§7G).
 
 ---
