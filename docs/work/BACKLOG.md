@@ -425,7 +425,8 @@ DSL/GraphDTO: `period` integer, constraint `1 ≤ period ≤ max_period` (`max_p
 | **P2.6** | **Trade-level train (§7E):** trades[] в ingest/сессиях; good/bad; советы блок/period | **готово-ish** (C5+C6: labels + Advisor intervention dataset 20 pairs) |
 | **P3** | Расширить lookback на больше связок / все ТФ | **готово-ish** (C13: все TF 1m…1w × 10 equities) |
 | **P3.5** | **Мульти-инструмент (§7F):** постоянно расширять набор тикеров + датасет | **частично++** (C11: 9 tickers +TATN/PLZL/MGNT) |
-| **P3.6** | **Качество модели «в гений»** — глубина датасета / вмешательств / TF | **в работе** (C12: 3740 pairs, 1d+1h, DD-aware) |
+| **P3.6** | **Качество модели «в гений»** — глубина датасета / вмешательств / TF | **в работе** (C13: all TF; next interventions) |
+| **P3.7** | **Дивгэп / short cash (§7H):** дообучение на акциях+индексе с учётом дивидендного гэпа | **backlog** |
 | **P4** | Новые индикаторы Desktop → lab whitelist (§7B стык) | параллельно |
 | **P5** | Inference: policy → Advisor (Desktop **или** hosting) + чтение действий юзера | **backlog** (не сейчас) |
 
@@ -444,6 +445,38 @@ DSL/GraphDTO: `period` integer, constraint `1 ≤ period ≤ max_period` (`max_p
 **Сейчас:** фокус — **качество модели** (P3.6), без блокировки на UX-интеграции.
 
 **Статус:** отложено; обучение продолжаем.
+
+---
+
+## 7H. Дивгэп на акциях / индексе — учесть в дообучении *(обязательно)*
+
+**Проблема:** на **акциях** (и связанных **индексах**) в дату отсечки цена часто падает на дивгэп. В бэктесте «голый» OHLC это выглядит как прибыль шорта — **в реальности шорт дивгэп не зарабатывает**: дивиденд **списывают** с шорта (cash adjustment / borrow). Лонг формально «теряет» гэп, но получает дивиденд (в зависимости от модели учёта).
+
+### Что это значит для AI / обучения
+
+| Кейс | Реальность | Риск для модели |
+|------|------------|-----------------|
+| **Short через дивгэп** | Δ цены вниз ≠ PnL шорта; с счёта **забирают дивиденд** | Переоценка long/short стратегий, ложные «хорошие» шорты около ex-div |
+| **Long через дивгэп** | Цена ↓, но дивиденд может компенсировать (если учтён) | Занижение PnL лонга, если дивиденд не в метриках |
+| **Индекс** | Составные дивиденды / corporate actions влияют на ряд | Тот же bias на IMOEX / фьючерсах на индекс, если учимся на spot-like рядах |
+
+### Правила для дообучения / улучшения (§7F + §7D)
+
+1. **Не учить «сырой» шорт на акциях/индексе без модели дивгэпа** — либо корректировать PnL сделок через ex-div, либо помечать окна вокруг отсечек.
+2. В датасете / features: флаги `near_ex_div`, `div_gap_pct`, `side=short`, `asset_class=equity|index` (когда появится календарь дивидендов).
+3. Intervention / Advisor: для `long_short` на equities — советы «не держать шорт через отсечку» / «flat before ex-div» как отдельный kind вмешательства.
+4. Сравнение LO vs LS (§7D): на дивидендных бумагах без корректировки **не** делать вывод «LS лучше» только из гэпов.
+5. Фьючерсы / инструменты без дивгэпа — отдельный bucket; equities+index — bucket с §7H.
+
+### Черновые подзадачи (P3.7)
+
+- [ ] Источник календаря дивидендов / ex-div для MOEX equities (+ индексные компоненты)
+- [ ] Правило cash adjustment в Desktop BT или post-hoc в AI_algo train (short: −div; long: +div optional)
+- [ ] Разметка сделок / пар: `crossed_ex_div`, `div_adjusted_pnl`
+- [ ] Дообучить intervention policy / ranker с фичами дивгэпа; ANALYTICS: heatmap near_ex_div × side
+- [ ] Документировать в session notes: equities/index train без §7H = provisional
+
+**Статус:** backlog для дообучения на акциях и индексе; шаг **P3.7**.
 
 ---
 
@@ -491,8 +524,9 @@ DSL/GraphDTO: `period` integer, constraint `1 ≤ period ≤ max_period` (`max_p
 3. В session notes / ANALYTICS / ingest meta — поле **`side_mode`** (и в GraphDTO / run metrics, когда появится контракт).
 4. При генерации стратегий (builder) — явно выбирать режим стороны; для тренда часто предлагать **и** long-only, **и** long/short варианты одной идеи.
 5. Compare / ranker: сравнивать apples-to-apples (`long_only` vs `long_only`, `long_short` vs `long_short`), либо помечать mixed.
+6. На **акциях / индексе** шорт через **дивгэп** нельзя считать «прибылью от гэпа» — см. **§7H** (дообучение P3.7).
 
-**Долг сейчас:** корпус ai-train (после P0/P2) перекошен в long-only → шаг **P2.5**.
+**Долг сейчас:** корпус ai-train (после P0/P2) перекошен в long-only → шаг **P2.5**. Дивгэп на equities/index → **P3.7**.
 
 **Статус:** принято; backlog.
 
@@ -727,6 +761,7 @@ DSL/GraphDTO: `period` integer, constraint `1 ≤ period ≤ max_period` (`max_p
 | 2026-08-21 | **§7D:** обучение/корпус учитывают **long_only** и **long_short** (не только лонг); шаг P2.5 |
 | 2026-08-21 | **§7D P2.5:** twins 21–26 long_short; tagged `side_mode`; C4 session — LS mean_pnl > LO на SBER 1d |
 | 2026-08-21 | **§7E:** обучение на **списке сделок** (good/bad) + улучшения через **блок** или **period**; шаг P2.6 |
+| 2026-08-21 | **§7H / P3.7:** дивгэп на акциях/индексе — шорт не зарабатывает гэп, дивиденд списывают; дообучение + cash adjust |
 | 2026-08-21 | **C13:** ALL TF 1m…1w × 10 equities; pairs 14399; CV≈0.72/0.80; 33p-*; coverage heatmap |
 | 2026-08-21 | **C12:** quality push — 10 tickers ×1d/1h; 3740 pairs; DD-aware; RSI50/period×2; 32p-*; CV≈0.70/0.78 |
 | 2026-08-21 | **§7G:** Desktop wire / hosting / live user-action AI — backlog; приоритет = качество модели (P3.6) |

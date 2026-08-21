@@ -71,6 +71,12 @@
 
 См. backlog §7F / P3.5.
 
+## Дивгэп equities / index (§7H) — backlog дообучения
+
+На акциях и индексе: шорт через дивгэп **не** зарабатывает на падении цены отсечки — дивиденд **списывают** с шорта. Без cash-adjustment / флагов ex-div метрики LS на equities provisional. Дообучение + interventions «flat before ex-div» — **P3.7**.
+
+См. backlog §7H / P3.7.
+
 ## Деплой / Advisor live (§7G) — backlog
 
 Пока **не** вшиваем policy в Desktop. Возможны hosting или локальный бандл позже.  
