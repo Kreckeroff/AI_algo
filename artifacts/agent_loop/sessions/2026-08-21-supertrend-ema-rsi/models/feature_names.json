@@ -1,0 +1,42 @@
+{
+  "session": "2026-08-21-supertrend-ema-rsi",
+  "feature_schema_id": "v1-basic",
+  "feature_names": [
+    "ret_1",
+    "ret_5",
+    "rsi_14",
+    "atr_14",
+    "ema_dist_50",
+    "volume_z"
+  ],
+  "model_kind": "lgbm",
+  "metrics": {
+    "accuracy": 0.5123166104292582,
+    "roc_auc": 0.5186114303393491,
+    "n_train": 188781,
+    "n_test": 80907,
+    "n_symbols": 15
+  },
+  "symbols": [
+    "CNYRUBF",
+    "GAZP",
+    "GLDRUBF",
+    "GMKN",
+    "GSPC",
+    "IMOEXF",
+    "LKOH",
+    "MGNT",
+    "MTSS",
+    "NVTK",
+    "PLZL",
+    "ROSN",
+    "SBER",
+    "SPY",
+    "TATN"
+  ],
+  "timeframes": [
+    "1d",
+    "1h",
+    "1w"
+  ]
+}

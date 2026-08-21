@@ -1,0 +1,259 @@
+{
+  "version": 1,
+  "meta": {
+    "name": "SuperTrend + RSI Long/Short",
+    "updatedAt": "2026-07-31T12:00:00Z",
+    "createdAt": "2026-07-31T12:00:00Z",
+    "tags": ["supertrend", "rsi", "long", "short", "sber"]
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "instrument",
+        "type": "instrument",
+        "position": { "x": 40, "y": 200 },
+        "data": { "label": "Инструмент", "symbol": "SBER", "instrument_type": "stock" }
+      },
+      {
+        "id": "close",
+        "type": "source_close",
+        "position": { "x": 280, "y": 80 },
+        "data": { "label": "Close" }
+      },
+      {
+        "id": "st",
+        "type": "indicator_supertrend",
+        "position": { "x": 280, "y": 280 },
+        "data": { "label": "SuperTrend", "period": 10, "mult": 3 }
+      },
+      {
+        "id": "rsi",
+        "type": "indicator_rsi",
+        "position": { "x": 280, "y": 460 },
+        "data": { "label": "RSI", "period": 14 }
+      },
+      {
+        "id": "lvl50",
+        "type": "constant",
+        "position": { "x": 280, "y": 620 },
+        "data": { "label": "Константа", "value": 50 }
+      },
+      {
+        "id": "st_above",
+        "type": "logic_gt",
+        "position": { "x": 540, "y": 200 },
+        "data": { "label": "ST > Close" }
+      },
+      {
+        "id": "st_below",
+        "type": "logic_lt",
+        "position": { "x": 540, "y": 40 },
+        "data": { "label": "ST < Close" }
+      },
+      {
+        "id": "rsi_down",
+        "type": "logic_cross_down",
+        "position": { "x": 540, "y": 420 },
+        "data": { "label": "RSI ↓ 50" }
+      },
+      {
+        "id": "rsi_up",
+        "type": "logic_cross_up",
+        "position": { "x": 540, "y": 560 },
+        "data": { "label": "RSI ↑ 50" }
+      },
+      {
+        "id": "sell",
+        "type": "logic_and",
+        "position": { "x": 780, "y": 280 },
+        "data": { "label": "Sell" }
+      },
+      {
+        "id": "buy",
+        "type": "logic_and",
+        "position": { "x": 780, "y": 80 },
+        "data": { "label": "Buy" }
+      },
+      {
+        "id": "open_long",
+        "type": "position_open_market",
+        "position": { "x": 1020, "y": 40 },
+        "data": { "label": "Long", "direction": "buy", "qty": 1 }
+      },
+      {
+        "id": "open_short",
+        "type": "position_open_market",
+        "position": { "x": 1020, "y": 260 },
+        "data": { "label": "Short", "direction": "sell", "qty": 1 }
+      },
+      {
+        "id": "chart_price",
+        "type": "chart",
+        "position": { "x": 780, "y": 480 },
+        "data": { "label": "Цена" }
+      },
+      {
+        "id": "chart_rsi",
+        "type": "chart",
+        "position": { "x": 780, "y": 640 },
+        "data": { "label": "RSI" }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e_inst_close",
+        "source": "instrument",
+        "target": "close",
+        "sourceHandle": "instrument",
+        "targetHandle": "instrument"
+      },
+      {
+        "id": "e_inst_st",
+        "source": "instrument",
+        "target": "st",
+        "sourceHandle": "instrument",
+        "targetHandle": "instrument"
+      },
+      {
+        "id": "e_close_rsi",
+        "source": "close",
+        "target": "rsi",
+        "sourceHandle": "value",
+        "targetHandle": "source"
+      },
+      {
+        "id": "e_st_above_a",
+        "source": "st",
+        "target": "st_above",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "e_close_above_b",
+        "source": "close",
+        "target": "st_above",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "e_st_below_a",
+        "source": "st",
+        "target": "st_below",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "e_close_below_b",
+        "source": "close",
+        "target": "st_below",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "e_rsi_down_a",
+        "source": "rsi",
+        "target": "rsi_down",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "e_50_down_b",
+        "source": "lvl50",
+        "target": "rsi_down",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "e_rsi_up_a",
+        "source": "rsi",
+        "target": "rsi_up",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "e_50_up_b",
+        "source": "lvl50",
+        "target": "rsi_up",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "e_sell_st",
+        "source": "st_above",
+        "target": "sell",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "e_sell_rsi",
+        "source": "rsi_down",
+        "target": "sell",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "e_buy_st",
+        "source": "st_below",
+        "target": "buy",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "e_buy_rsi",
+        "source": "rsi_up",
+        "target": "buy",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "e_inst_long",
+        "source": "instrument",
+        "target": "open_long",
+        "sourceHandle": "instrument",
+        "targetHandle": "instrument"
+      },
+      {
+        "id": "e_buy_long",
+        "source": "buy",
+        "target": "open_long",
+        "sourceHandle": "result",
+        "targetHandle": "condition"
+      },
+      {
+        "id": "e_inst_short",
+        "source": "instrument",
+        "target": "open_short",
+        "sourceHandle": "instrument",
+        "targetHandle": "instrument"
+      },
+      {
+        "id": "e_sell_short",
+        "source": "sell",
+        "target": "open_short",
+        "sourceHandle": "result",
+        "targetHandle": "condition"
+      },
+      {
+        "id": "e_close_chart",
+        "source": "close",
+        "target": "chart_price",
+        "sourceHandle": "value",
+        "targetHandle": "series"
+      },
+      {
+        "id": "e_st_chart",
+        "source": "st",
+        "target": "chart_price",
+        "sourceHandle": "value",
+        "targetHandle": "series"
+      },
+      {
+        "id": "e_rsi_chart",
+        "source": "rsi",
+        "target": "chart_rsi",
+        "sourceHandle": "value",
+        "targetHandle": "series"
+      }
+    ]
+  }
+}

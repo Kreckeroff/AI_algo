@@ -1,0 +1,758 @@
+[
+  {
+    "variant": "v0",
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "pnl": 203.19999999999993,
+    "max_dd": 131.12000000000003,
+    "winrate": 0.3,
+    "trades": 10
+  },
+  {
+    "variant": "v1",
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "pnl": 226.15999999999985,
+    "max_dd": 131.12000000000003,
+    "winrate": 0.4,
+    "trades": 10
+  },
+  {
+    "variant": "v2",
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "pnl": 110.93999999999974,
+    "max_dd": 84.34000000000009,
+    "winrate": 0.391304347826087,
+    "trades": 23
+  },
+  {
+    "variant": "v0",
+    "symbol": "SBER",
+    "timeframe": "1h",
+    "pnl": 203.65999999999872,
+    "max_dd": 150.81000000000074,
+    "winrate": 0.4602076124567474,
+    "trades": 289
+  },
+  {
+    "variant": "v1",
+    "symbol": "SBER",
+    "timeframe": "1h",
+    "pnl": 290.75999999999885,
+    "max_dd": 138.39000000000067,
+    "winrate": 0.42105263157894735,
+    "trades": 209
+  },
+  {
+    "variant": "v2",
+    "symbol": "SBER",
+    "timeframe": "1h",
+    "pnl": 287.5599999999989,
+    "max_dd": 56.65000000000015,
+    "winrate": 0.43640897755610975,
+    "trades": 401
+  },
+  {
+    "variant": "v0",
+    "symbol": "GAZP",
+    "timeframe": "1d",
+    "pnl": 90.69999999999987,
+    "max_dd": 120.07000000000005,
+    "winrate": 0.3157894736842105,
+    "trades": 19
+  },
+  {
+    "variant": "v1",
+    "symbol": "GAZP",
+    "timeframe": "1d",
+    "pnl": 68.74999999999994,
+    "max_dd": 136.81000000000006,
+    "winrate": 0.29411764705882354,
+    "trades": 17
+  },
+  {
+    "variant": "v2",
+    "symbol": "GAZP",
+    "timeframe": "1d",
+    "pnl": -45.07000000000002,
+    "max_dd": 101.26000000000002,
+    "winrate": 0.25806451612903225,
+    "trades": 31
+  },
+  {
+    "variant": "v0",
+    "symbol": "GAZP",
+    "timeframe": "1h",
+    "pnl": -54.0199999999997,
+    "max_dd": 237.9399999999998,
+    "winrate": 0.4351145038167939,
+    "trades": 262
+  },
+  {
+    "variant": "v1",
+    "symbol": "GAZP",
+    "timeframe": "1h",
+    "pnl": 237.2800000000002,
+    "max_dd": 139.58,
+    "winrate": 0.4392523364485981,
+    "trades": 214
+  },
+  {
+    "variant": "v2",
+    "symbol": "GAZP",
+    "timeframe": "1h",
+    "pnl": 150.38000000000065,
+    "max_dd": 68.31,
+    "winrate": 0.39195979899497485,
+    "trades": 398
+  },
+  {
+    "variant": "v0",
+    "symbol": "LKOH",
+    "timeframe": "1d",
+    "pnl": -2653.5,
+    "max_dd": 7318.0,
+    "winrate": 0.55,
+    "trades": 20
+  },
+  {
+    "variant": "v1",
+    "symbol": "LKOH",
+    "timeframe": "1d",
+    "pnl": -649.5,
+    "max_dd": 5192.5,
+    "winrate": 0.4166666666666667,
+    "trades": 12
+  },
+  {
+    "variant": "v2",
+    "symbol": "LKOH",
+    "timeframe": "1d",
+    "pnl": -577.0,
+    "max_dd": 2603.5,
+    "winrate": 0.4090909090909091,
+    "trades": 22
+  },
+  {
+    "variant": "v0",
+    "symbol": "LKOH",
+    "timeframe": "1h",
+    "pnl": -7948.5,
+    "max_dd": 8397.0,
+    "winrate": 0.40625,
+    "trades": 288
+  },
+  {
+    "variant": "v1",
+    "symbol": "LKOH",
+    "timeframe": "1h",
+    "pnl": -8285.5,
+    "max_dd": 8734.0,
+    "winrate": 0.375,
+    "trades": 232
+  },
+  {
+    "variant": "v2",
+    "symbol": "LKOH",
+    "timeframe": "1h",
+    "pnl": -1928.5,
+    "max_dd": 3280.0,
+    "winrate": 0.34704370179948585,
+    "trades": 389
+  },
+  {
+    "variant": "v0",
+    "symbol": "GMKN",
+    "timeframe": "1d",
+    "pnl": 62.919999999999874,
+    "max_dd": 109.04000000000005,
+    "winrate": 0.42105263157894735,
+    "trades": 19
+  },
+  {
+    "variant": "v1",
+    "symbol": "GMKN",
+    "timeframe": "1d",
+    "pnl": 47.85999999999987,
+    "max_dd": 107.36000000000004,
+    "winrate": 0.3888888888888889,
+    "trades": 18
+  },
+  {
+    "variant": "v2",
+    "symbol": "GMKN",
+    "timeframe": "1d",
+    "pnl": 55.5199999999999,
+    "max_dd": 56.46000000000001,
+    "winrate": 0.36666666666666664,
+    "trades": 30
+  },
+  {
+    "variant": "v0",
+    "symbol": "GMKN",
+    "timeframe": "1h",
+    "pnl": 70.52000000000022,
+    "max_dd": 51.35999999999996,
+    "winrate": 0.3967741935483871,
+    "trades": 310
+  },
+  {
+    "variant": "v1",
+    "symbol": "GMKN",
+    "timeframe": "1h",
+    "pnl": 103.02000000000021,
+    "max_dd": 60.26000000000002,
+    "winrate": 0.38,
+    "trades": 250
+  },
+  {
+    "variant": "v2",
+    "symbol": "GMKN",
+    "timeframe": "1h",
+    "pnl": 72.28000000000017,
+    "max_dd": 44.87999999999994,
+    "winrate": 0.3812785388127854,
+    "trades": 438
+  },
+  {
+    "variant": "v0",
+    "symbol": "NVTK",
+    "timeframe": "1d",
+    "pnl": 696.6000000000004,
+    "max_dd": 624.3999999999996,
+    "winrate": 0.4666666666666667,
+    "trades": 15
+  },
+  {
+    "variant": "v1",
+    "symbol": "NVTK",
+    "timeframe": "1d",
+    "pnl": 903.4000000000001,
+    "max_dd": 655.3999999999995,
+    "winrate": 0.46153846153846156,
+    "trades": 13
+  },
+  {
+    "variant": "v2",
+    "symbol": "NVTK",
+    "timeframe": "1d",
+    "pnl": 77.60000000000014,
+    "max_dd": 457.10000000000014,
+    "winrate": 0.3333333333333333,
+    "trades": 27
+  },
+  {
+    "variant": "v0",
+    "symbol": "NVTK",
+    "timeframe": "1h",
+    "pnl": 513.0000000000007,
+    "max_dd": 725.3999999999999,
+    "winrate": 0.45384615384615384,
+    "trades": 260
+  },
+  {
+    "variant": "v1",
+    "symbol": "NVTK",
+    "timeframe": "1h",
+    "pnl": 26.10000000000082,
+    "max_dd": 1217.5999999999997,
+    "winrate": 0.41037735849056606,
+    "trades": 212
+  },
+  {
+    "variant": "v2",
+    "symbol": "NVTK",
+    "timeframe": "1h",
+    "pnl": 1488.6000000000013,
+    "max_dd": 283.7999999999995,
+    "winrate": 0.40240963855421685,
+    "trades": 415
+  },
+  {
+    "variant": "v0",
+    "symbol": "ROSN",
+    "timeframe": "1d",
+    "pnl": 26.45000000000016,
+    "max_dd": 395.54999999999967,
+    "winrate": 0.4,
+    "trades": 25
+  },
+  {
+    "variant": "v1",
+    "symbol": "ROSN",
+    "timeframe": "1d",
+    "pnl": 137.60000000000002,
+    "max_dd": 266.8000000000002,
+    "winrate": 0.42105263157894735,
+    "trades": 19
+  },
+  {
+    "variant": "v2",
+    "symbol": "ROSN",
+    "timeframe": "1d",
+    "pnl": 191.85000000000014,
+    "max_dd": 146.64999999999992,
+    "winrate": 0.3793103448275862,
+    "trades": 29
+  },
+  {
+    "variant": "v0",
+    "symbol": "ROSN",
+    "timeframe": "1h",
+    "pnl": -644.8500000000008,
+    "max_dd": 853.4000000000004,
+    "winrate": 0.39655172413793105,
+    "trades": 290
+  },
+  {
+    "variant": "v1",
+    "symbol": "ROSN",
+    "timeframe": "1h",
+    "pnl": -619.0000000000002,
+    "max_dd": 900.8000000000006,
+    "winrate": 0.36637931034482757,
+    "trades": 232
+  },
+  {
+    "variant": "v2",
+    "symbol": "ROSN",
+    "timeframe": "1h",
+    "pnl": -228.00000000000023,
+    "max_dd": 421.80000000000047,
+    "winrate": 0.3516209476309227,
+    "trades": 401
+  },
+  {
+    "variant": "v0",
+    "symbol": "MGNT",
+    "timeframe": "1d",
+    "pnl": -2234.5,
+    "max_dd": 6908.0,
+    "winrate": 0.3157894736842105,
+    "trades": 19
+  },
+  {
+    "variant": "v1",
+    "symbol": "MGNT",
+    "timeframe": "1d",
+    "pnl": -1338.5,
+    "max_dd": 6552.0,
+    "winrate": 0.26666666666666666,
+    "trades": 15
+  },
+  {
+    "variant": "v2",
+    "symbol": "MGNT",
+    "timeframe": "1d",
+    "pnl": -293.5,
+    "max_dd": 2035.5,
+    "winrate": 0.3333333333333333,
+    "trades": 27
+  },
+  {
+    "variant": "v0",
+    "symbol": "MGNT",
+    "timeframe": "1h",
+    "pnl": 7393.5,
+    "max_dd": 2240.5,
+    "winrate": 0.4729241877256318,
+    "trades": 277
+  },
+  {
+    "variant": "v1",
+    "symbol": "MGNT",
+    "timeframe": "1h",
+    "pnl": 8453.5,
+    "max_dd": 1797.5,
+    "winrate": 0.45161290322580644,
+    "trades": 217
+  },
+  {
+    "variant": "v2",
+    "symbol": "MGNT",
+    "timeframe": "1h",
+    "pnl": 2828.5,
+    "max_dd": 2129.0,
+    "winrate": 0.3976470588235294,
+    "trades": 425
+  },
+  {
+    "variant": "v0",
+    "symbol": "TATN",
+    "timeframe": "1d",
+    "pnl": 77.00000000000011,
+    "max_dd": 312.8,
+    "winrate": 0.3684210526315789,
+    "trades": 19
+  },
+  {
+    "variant": "v1",
+    "symbol": "TATN",
+    "timeframe": "1d",
+    "pnl": 278.10000000000014,
+    "max_dd": 312.8,
+    "winrate": 0.4166666666666667,
+    "trades": 12
+  },
+  {
+    "variant": "v2",
+    "symbol": "TATN",
+    "timeframe": "1d",
+    "pnl": 214.2000000000001,
+    "max_dd": 160.80000000000007,
+    "winrate": 0.4166666666666667,
+    "trades": 24
+  },
+  {
+    "variant": "v0",
+    "symbol": "TATN",
+    "timeframe": "1h",
+    "pnl": -19.099999999998772,
+    "max_dd": 573.7999999999996,
+    "winrate": 0.4275092936802974,
+    "trades": 269
+  },
+  {
+    "variant": "v1",
+    "symbol": "TATN",
+    "timeframe": "1h",
+    "pnl": -228.89999999999873,
+    "max_dd": 597.0999999999995,
+    "winrate": 0.38222222222222224,
+    "trades": 225
+  },
+  {
+    "variant": "v2",
+    "symbol": "TATN",
+    "timeframe": "1h",
+    "pnl": 369.50000000000074,
+    "max_dd": 137.59999999999974,
+    "winrate": 0.3914081145584726,
+    "trades": 419
+  },
+  {
+    "variant": "v0",
+    "symbol": "MTSS",
+    "timeframe": "1d",
+    "pnl": 271.8999999999999,
+    "max_dd": 105.85000000000002,
+    "winrate": 0.7333333333333333,
+    "trades": 15
+  },
+  {
+    "variant": "v1",
+    "symbol": "MTSS",
+    "timeframe": "1d",
+    "pnl": 220.30000000000004,
+    "max_dd": 124.15000000000003,
+    "winrate": 0.6363636363636364,
+    "trades": 11
+  },
+  {
+    "variant": "v2",
+    "symbol": "MTSS",
+    "timeframe": "1d",
+    "pnl": 123.14999999999998,
+    "max_dd": 54.05000000000001,
+    "winrate": 0.47368421052631576,
+    "trades": 19
+  },
+  {
+    "variant": "v0",
+    "symbol": "MTSS",
+    "timeframe": "1h",
+    "pnl": -128.40000000000003,
+    "max_dd": 255.00000000000028,
+    "winrate": 0.38064516129032255,
+    "trades": 310
+  },
+  {
+    "variant": "v1",
+    "symbol": "MTSS",
+    "timeframe": "1h",
+    "pnl": 0.9000000000003183,
+    "max_dd": 289.89999999999964,
+    "winrate": 0.39344262295081966,
+    "trades": 244
+  },
+  {
+    "variant": "v2",
+    "symbol": "MTSS",
+    "timeframe": "1h",
+    "pnl": -45.05000000000055,
+    "max_dd": 110.9000000000002,
+    "winrate": 0.3516483516483517,
+    "trades": 455
+  },
+  {
+    "variant": "v0",
+    "symbol": "PLZL",
+    "timeframe": "1d",
+    "pnl": -31.15000000000032,
+    "max_dd": 1842.9499999999998,
+    "winrate": 0.5294117647058824,
+    "trades": 17
+  },
+  {
+    "variant": "v1",
+    "symbol": "PLZL",
+    "timeframe": "1d",
+    "pnl": -1403.6499999999999,
+    "max_dd": 2061.5999999999995,
+    "winrate": 0.2857142857142857,
+    "trades": 14
+  },
+  {
+    "variant": "v2",
+    "symbol": "PLZL",
+    "timeframe": "1d",
+    "pnl": -630.6000000000006,
+    "max_dd": 1090.9000000000005,
+    "winrate": 0.30434782608695654,
+    "trades": 23
+  },
+  {
+    "variant": "v0",
+    "symbol": "PLZL",
+    "timeframe": "1h",
+    "pnl": -2043.0999999999979,
+    "max_dd": 2480.2999999999984,
+    "winrate": 0.4090909090909091,
+    "trades": 264
+  },
+  {
+    "variant": "v1",
+    "symbol": "PLZL",
+    "timeframe": "1h",
+    "pnl": 522.5999999999999,
+    "max_dd": 1549.1999999999996,
+    "winrate": 0.415,
+    "trades": 200
+  },
+  {
+    "variant": "v2",
+    "symbol": "PLZL",
+    "timeframe": "1h",
+    "pnl": 493.79999999999654,
+    "max_dd": 613.0000000000007,
+    "winrate": 0.3881401617250674,
+    "trades": 371
+  },
+  {
+    "variant": "v0",
+    "symbol": "GLDRUBF",
+    "timeframe": "1d",
+    "pnl": -2131.300000000002,
+    "max_dd": 6458.800000000001,
+    "winrate": 0.375,
+    "trades": 8
+  },
+  {
+    "variant": "v1",
+    "symbol": "GLDRUBF",
+    "timeframe": "1d",
+    "pnl": -5443.200000000002,
+    "max_dd": 8715.700000000003,
+    "winrate": 0.14285714285714285,
+    "trades": 7
+  },
+  {
+    "variant": "v2",
+    "symbol": "GLDRUBF",
+    "timeframe": "1d",
+    "pnl": -1492.3999999999996,
+    "max_dd": 1881.5999999999995,
+    "winrate": 0.2,
+    "trades": 10
+  },
+  {
+    "variant": "v0",
+    "symbol": "GLDRUBF",
+    "timeframe": "1h",
+    "pnl": -1373.1999999999844,
+    "max_dd": 4984.199999999986,
+    "winrate": 0.43783783783783786,
+    "trades": 185
+  },
+  {
+    "variant": "v1",
+    "symbol": "GLDRUBF",
+    "timeframe": "1h",
+    "pnl": -627.0000000000055,
+    "max_dd": 3508.800000000003,
+    "winrate": 0.44,
+    "trades": 125
+  },
+  {
+    "variant": "v2",
+    "symbol": "GLDRUBF",
+    "timeframe": "1h",
+    "pnl": 194.100000000004,
+    "max_dd": 2310.999999999998,
+    "winrate": 0.4041666666666667,
+    "trades": 240
+  },
+  {
+    "variant": "v0",
+    "symbol": "IMOEXF",
+    "timeframe": "1d",
+    "pnl": 421.5,
+    "max_dd": 1442.5,
+    "winrate": 0.5,
+    "trades": 4
+  },
+  {
+    "variant": "v1",
+    "symbol": "IMOEXF",
+    "timeframe": "1d",
+    "pnl": 496.5,
+    "max_dd": 1442.5,
+    "winrate": 0.5,
+    "trades": 4
+  },
+  {
+    "variant": "v2",
+    "symbol": "IMOEXF",
+    "timeframe": "1d",
+    "pnl": -60.5,
+    "max_dd": 389.5,
+    "winrate": 0.3333333333333333,
+    "trades": 9
+  },
+  {
+    "variant": "v0",
+    "symbol": "IMOEXF",
+    "timeframe": "1h",
+    "pnl": -252.0,
+    "max_dd": 1300.0,
+    "winrate": 0.44805194805194803,
+    "trades": 154
+  },
+  {
+    "variant": "v1",
+    "symbol": "IMOEXF",
+    "timeframe": "1h",
+    "pnl": 1530.0,
+    "max_dd": 1228.0,
+    "winrate": 0.4473684210526316,
+    "trades": 114
+  },
+  {
+    "variant": "v2",
+    "symbol": "IMOEXF",
+    "timeframe": "1h",
+    "pnl": 1319.0,
+    "max_dd": 543.0,
+    "winrate": 0.4558139534883721,
+    "trades": 215
+  },
+  {
+    "variant": "v0",
+    "symbol": "CNYRUBF",
+    "timeframe": "1d",
+    "pnl": 6.243999999999996,
+    "max_dd": 2.945000000000002,
+    "winrate": 0.5714285714285714,
+    "trades": 14
+  },
+  {
+    "variant": "v1",
+    "symbol": "CNYRUBF",
+    "timeframe": "1d",
+    "pnl": -2.9770000000000003,
+    "max_dd": 7.135999999999999,
+    "winrate": 0.2857142857142857,
+    "trades": 7
+  },
+  {
+    "variant": "v2",
+    "symbol": "CNYRUBF",
+    "timeframe": "1d",
+    "pnl": -0.6639999999999997,
+    "max_dd": 2.983999999999998,
+    "winrate": 0.4166666666666667,
+    "trades": 12
+  },
+  {
+    "variant": "v0",
+    "symbol": "CNYRUBF",
+    "timeframe": "1h",
+    "pnl": -0.5199999999999854,
+    "max_dd": 5.809999999999993,
+    "winrate": 0.4362745098039216,
+    "trades": 204
+  },
+  {
+    "variant": "v1",
+    "symbol": "CNYRUBF",
+    "timeframe": "1h",
+    "pnl": 4.922000000000004,
+    "max_dd": 3.5059999999999967,
+    "winrate": 0.41875,
+    "trades": 160
+  },
+  {
+    "variant": "v2",
+    "symbol": "CNYRUBF",
+    "timeframe": "1h",
+    "pnl": 5.922000000000011,
+    "max_dd": 1.8559999999999963,
+    "winrate": 0.41379310344827586,
+    "trades": 290
+  },
+  {
+    "variant": "v0",
+    "symbol": "SPY",
+    "timeframe": "1d",
+    "pnl": -77.58737182617188,
+    "max_dd": 214.92138671875,
+    "winrate": 0.4117647058823529,
+    "trades": 17
+  },
+  {
+    "variant": "v1",
+    "symbol": "SPY",
+    "timeframe": "1d",
+    "pnl": -122.72937011718739,
+    "max_dd": 214.92138671875,
+    "winrate": 0.46153846153846156,
+    "trades": 13
+  },
+  {
+    "variant": "v2",
+    "symbol": "SPY",
+    "timeframe": "1d",
+    "pnl": 33.73986816406244,
+    "max_dd": 70.95190429687494,
+    "winrate": 0.35714285714285715,
+    "trades": 28
+  },
+  {
+    "variant": "v0",
+    "symbol": "GSPC",
+    "timeframe": "1d",
+    "pnl": -661.85009765625,
+    "max_dd": 2125.759765625,
+    "winrate": 0.47058823529411764,
+    "trades": 17
+  },
+  {
+    "variant": "v1",
+    "symbol": "GSPC",
+    "timeframe": "1d",
+    "pnl": 162.48974609375,
+    "max_dd": 2433.7294921875,
+    "winrate": 0.5833333333333334,
+    "trades": 12
+  },
+  {
+    "variant": "v2",
+    "symbol": "GSPC",
+    "timeframe": "1d",
+    "pnl": -1023.170166015625,
+    "max_dd": 1803.339599609375,
+    "winrate": 0.26666666666666666,
+    "trades": 30
+  }
+]

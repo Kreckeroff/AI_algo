@@ -26,3 +26,6 @@ node_modules/
 dist/
 *.log
 *.egg-info/
+artifacts/agent_loop/sessions/**/data/
+artifacts/agent_loop/sessions/**/models/*.joblib
+artifacts/agent_loop/sessions/**/pipeline.log
