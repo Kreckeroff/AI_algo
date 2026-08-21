@@ -90,3 +90,18 @@ def test_infer_compare_ok():
     assert body["status"] == "ok"
     assert body["result"]["verdict"] == "better"
     assert "commentary" in body["result"]
+
+
+def test_align_mismatch_window():
+    before = {"pnl": 1, "max_dd": 1, "winrate": 0.5, "trades": 10}
+    after = {"pnl": 5, "max_dd": 1, "winrate": 0.5, "trades": 10}
+    try:
+        verdict_from_diff(
+            before,
+            after,
+            {"symbol": "SBER", "timeframe": "H1", "from": 1, "to": 100},
+            {"symbol": "SBER", "timeframe": "H1", "from": 1, "to": 999},
+        )
+        assert False, "expected align_mismatch"
+    except ValueError as e:
+        assert str(e) == "align_mismatch"

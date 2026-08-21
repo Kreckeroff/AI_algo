@@ -49,7 +49,11 @@ def _compare(payload: dict) -> dict:
                 "status": "error",
                 "error": {
                     "code": "align_mismatch",
-                    "message": "before/after runs are not on the same align window",
+                    "message": (
+                        "Разное окно бэктеста (символ / таймфрейм / from-to). "
+                        "Нельзя считать улучшением удлинение истории — верните то же окно "
+                        "или прогоните обе версии скрипта на одном периоде."
+                    ),
                 },
                 "result": {},
                 "warnings": [],
