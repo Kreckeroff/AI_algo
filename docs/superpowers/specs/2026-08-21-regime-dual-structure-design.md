@@ -124,10 +124,10 @@ Retrain can be a light **C18-b0** on existing pairs + new features (no new engin
 
 ### 4.4 B0 done when
 
-- [ ] `market_regime.py` + unit tests on synthetic trend vs flat series
-- [ ] Annotation over C16 `1d`+`1h` at minimum (all TF nice-to-have)
-- [ ] Analytics HTML committed under session
-- [ ] BACKLOG / TRAINING_SESSION_INDEX note: B0 complete; B1 next
+- [x] `market_regime.py` + unit tests on synthetic trend vs flat series
+- [x] Annotation over C16 `1d`+`1h` at minimum (all TF nice-to-have)
+- [x] Analytics HTML committed under session
+- [x] BACKLOG / TRAINING_SESSION_INDEX note: B0 complete; B1 next
 
 ---
 
@@ -208,8 +208,14 @@ docs/superpowers/specs/2026-08-21-regime-dual-structure-design.md  # this file
 
 ---
 
+## 9b. B0 empirical note (2026-08-21)
+
+- Mean window `chop_share` on C16 1d+1h ≈ **0.76** with v1 thresholds — most bars look choppy; tune per-TF before over-trusting buckets.
+- On `high_chop`: `add_block_ema` / `rsi50` lift `Δpnl_in_chop`; `add_block_adx` strongly negative (supports careful gate design).
+- 81 trend-script candidates lose in chop / win in trend.
+
 ## 10. Approval
 
 - [x] Direction B chosen by user (2026-08-21)  
-- [ ] User review of this written spec  
+- [x] User review of this written spec  
 - [ ] Then: implementation plan (writing-plans) → B0 code

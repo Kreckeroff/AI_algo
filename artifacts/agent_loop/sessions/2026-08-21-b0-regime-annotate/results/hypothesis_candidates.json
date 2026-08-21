@@ -1,0 +1,722 @@
+[
+  {
+    "symbol": "LKOH",
+    "timeframe": "1d",
+    "file": "12-dema-cross-12-26.italgo",
+    "window_chop_share": 0.7715959004392386,
+    "pnl_in_chop": -2922.858649999994,
+    "pnl_in_trend": 303.7252000000003,
+    "frac_trades_in_chop": 0.8888888888888888
+  },
+  {
+    "symbol": "LKOH",
+    "timeframe": "1d",
+    "file": "09-sma-cross-20-50.italgo",
+    "window_chop_share": 0.7715959004392386,
+    "pnl_in_chop": -2543.9960499999997,
+    "pnl_in_trend": 2392.385,
+    "frac_trades_in_chop": 0.7272727272727273
+  },
+  {
+    "symbol": "MGNT",
+    "timeframe": "1h",
+    "file": "16-supertrend-rsi-entry.italgo",
+    "window_chop_share": 0.8026666666666666,
+    "pnl_in_chop": -2223.7170499999957,
+    "pnl_in_trend": 233.83264999999983,
+    "frac_trades_in_chop": 0.9111111111111111
+  },
+  {
+    "symbol": "LKOH",
+    "timeframe": "1d",
+    "file": "01-trend-ema-adx-rsi.italgo",
+    "window_chop_share": 0.7715959004392386,
+    "pnl_in_chop": -2187.346549999999,
+    "pnl_in_trend": 2300.9508000000005,
+    "frac_trades_in_chop": 0.875
+  },
+  {
+    "symbol": "GLDRUBF",
+    "timeframe": "1h",
+    "file": "21-sma-cross-20-50-ls.italgo",
+    "window_chop_share": 0.7726666666666666,
+    "pnl_in_chop": -1706.7511299998978,
+    "pnl_in_trend": 2791.6308900000213,
+    "frac_trades_in_chop": 0.7827868852459017
+  },
+  {
+    "symbol": "MGNT",
+    "timeframe": "1d",
+    "file": "09-sma-cross-20-50.italgo",
+    "window_chop_share": 0.7101024890190337,
+    "pnl_in_chop": -1691.8322500000004,
+    "pnl_in_trend": 96.52034999999978,
+    "frac_trades_in_chop": 0.8333333333333334
+  },
+  {
+    "symbol": "LKOH",
+    "timeframe": "1d",
+    "file": "07-supertrend-di-adx-stack.italgo",
+    "window_chop_share": 0.7715959004392386,
+    "pnl_in_chop": -1647.7783500000005,
+    "pnl_in_trend": 176.10975000000053,
+    "frac_trades_in_chop": 0.9411764705882353
+  },
+  {
+    "symbol": "MGNT",
+    "timeframe": "1h",
+    "file": "10-ema-cross-9-21.italgo",
+    "window_chop_share": 0.8026666666666666,
+    "pnl_in_chop": -1626.6997999999821,
+    "pnl_in_trend": 380.26264999999967,
+    "frac_trades_in_chop": 0.9831932773109243
+  },
+  {
+    "symbol": "MGNT",
+    "timeframe": "1d",
+    "file": "21-sma-cross-20-50-ls.italgo",
+    "window_chop_share": 0.7101024890190337,
+    "pnl_in_chop": -1593.742850000001,
+    "pnl_in_trend": 2343.3503499999997,
+    "frac_trades_in_chop": 0.76
+  },
+  {
+    "symbol": "LKOH",
+    "timeframe": "1d",
+    "file": "21-sma-cross-20-50-ls.italgo",
+    "window_chop_share": 0.7715959004392386,
+    "pnl_in_chop": -1430.7581999999989,
+    "pnl_in_trend": 3348.3954,
+    "frac_trades_in_chop": 0.6956521739130435
+  },
+  {
+    "symbol": "GLDRUBF",
+    "timeframe": "1d",
+    "file": "11-tema-cross-10-30.italgo",
+    "window_chop_share": 0.7399497487437185,
+    "pnl_in_chop": -1331.8000100000017,
+    "pnl_in_trend": 587.4711800000023,
+    "frac_trades_in_chop": 0.8064516129032258
+  },
+  {
+    "symbol": "MGNT",
+    "timeframe": "1h",
+    "file": "18-mom-pct-ema50-filter.italgo",
+    "window_chop_share": 0.8026666666666666,
+    "pnl_in_chop": -1095.2773499999635,
+    "pnl_in_trend": 220.20005000000106,
+    "frac_trades_in_chop": 0.9276139410187667
+  },
+  {
+    "symbol": "GLDRUBF",
+    "timeframe": "1d",
+    "file": "07-supertrend-di-adx-stack.italgo",
+    "window_chop_share": 0.7399497487437185,
+    "pnl_in_chop": -1054.967510000004,
+    "pnl_in_trend": 1953.5016700000006,
+    "frac_trades_in_chop": 0.8125
+  },
+  {
+    "symbol": "PLZL",
+    "timeframe": "1h",
+    "file": "04-macd-stoch-long-short.italgo",
+    "window_chop_share": 0.78025,
+    "pnl_in_chop": -720.5396149999947,
+    "pnl_in_trend": 133.91505500000062,
+    "frac_trades_in_chop": 0.953125
+  },
+  {
+    "symbol": "MGNT",
+    "timeframe": "1h",
+    "file": "05-trend-atr-sl-tp.italgo",
+    "window_chop_share": 0.8026666666666666,
+    "pnl_in_chop": -720.3874357142595,
+    "pnl_in_trend": 58.96372857142978,
+    "frac_trades_in_chop": 0.9747126436781609
+  },
+  {
+    "symbol": "NVTK",
+    "timeframe": "1d",
+    "file": "17-supertrend-rsi-tight.italgo",
+    "window_chop_share": 0.7687224669603524,
+    "pnl_in_chop": -704.8966999999991,
+    "pnl_in_trend": 104.32776000000013,
+    "frac_trades_in_chop": 0.8823529411764706
+  },
+  {
+    "symbol": "MGNT",
+    "timeframe": "1h",
+    "file": "09-sma-cross-20-50.italgo",
+    "window_chop_share": 0.8026666666666666,
+    "pnl_in_chop": -634.0945999999906,
+    "pnl_in_trend": 705.1240000000014,
+    "frac_trades_in_chop": 0.7933884297520661
+  },
+  {
+    "symbol": "IMOEXF",
+    "timeframe": "1d",
+    "file": "12-dema-cross-12-26.italgo",
+    "window_chop_share": 0.7039660056657224,
+    "pnl_in_chop": -623.7321499999989,
+    "pnl_in_trend": 164.37490000000025,
+    "frac_trades_in_chop": 0.9
+  },
+  {
+    "symbol": "IMOEXF",
+    "timeframe": "1d",
+    "file": "21-sma-cross-20-50-ls.italgo",
+    "window_chop_share": 0.7039660056657224,
+    "pnl_in_chop": -426.725100000001,
+    "pnl_in_trend": 203.27080000000024,
+    "frac_trades_in_chop": 0.625
+  },
+  {
+    "symbol": "NVTK",
+    "timeframe": "1h",
+    "file": "09-sma-cross-20-50.italgo",
+    "window_chop_share": 0.78325,
+    "pnl_in_chop": -347.662209999998,
+    "pnl_in_trend": 475.7327899999998,
+    "frac_trades_in_chop": 0.7350427350427351
+  },
+  {
+    "symbol": "LKOH",
+    "timeframe": "1h",
+    "file": "10-ema-cross-9-21.italgo",
+    "window_chop_share": 0.7869166666666667,
+    "pnl_in_chop": -332.26649999998017,
+    "pnl_in_trend": 161.3264500000023,
+    "frac_trades_in_chop": 0.9628099173553719
+  },
+  {
+    "symbol": "TATN",
+    "timeframe": "1h",
+    "file": "18-mom-pct-ema50-filter.italgo",
+    "window_chop_share": 0.7951666666666667,
+    "pnl_in_chop": -325.4821899999922,
+    "pnl_in_trend": 132.19246000000072,
+    "frac_trades_in_chop": 0.9018789144050104
+  },
+  {
+    "symbol": "ROSN",
+    "timeframe": "1h",
+    "file": "16-supertrend-rsi-entry.italgo",
+    "window_chop_share": 0.7875833333333333,
+    "pnl_in_chop": -315.35882499999894,
+    "pnl_in_trend": 87.46535500000022,
+    "frac_trades_in_chop": 0.9347826086956522
+  },
+  {
+    "symbol": "TATN",
+    "timeframe": "1d",
+    "file": "07-supertrend-di-adx-stack.italgo",
+    "window_chop_share": 0.7390029325513197,
+    "pnl_in_chop": -287.59255999999937,
+    "pnl_in_trend": 114.60322999999994,
+    "frac_trades_in_chop": 0.8857142857142857
+  },
+  {
+    "symbol": "ROSN",
+    "timeframe": "1h",
+    "file": "26-supertrend-rsi-ls.italgo",
+    "window_chop_share": 0.7875833333333333,
+    "pnl_in_chop": -272.3234599999978,
+    "pnl_in_trend": 71.06106500000033,
+    "frac_trades_in_chop": 0.9562841530054644
+  },
+  {
+    "symbol": "TATN",
+    "timeframe": "1h",
+    "file": "12-dema-cross-12-26.italgo",
+    "window_chop_share": 0.7951666666666667,
+    "pnl_in_chop": -263.9756099999951,
+    "pnl_in_trend": 115.74338000000046,
+    "frac_trades_in_chop": 0.9036827195467422
+  },
+  {
+    "symbol": "NVTK",
+    "timeframe": "1h",
+    "file": "05-trend-atr-sl-tp.italgo",
+    "window_chop_share": 0.78325,
+    "pnl_in_chop": -247.0386971428536,
+    "pnl_in_trend": 49.190491428571136,
+    "frac_trades_in_chop": 0.975
+  },
+  {
+    "symbol": "TATN",
+    "timeframe": "1h",
+    "file": "04-macd-stoch-long-short.italgo",
+    "window_chop_share": 0.7951666666666667,
+    "pnl_in_chop": -208.78237999999783,
+    "pnl_in_trend": 42.36300000000017,
+    "frac_trades_in_chop": 0.9651741293532339
+  },
+  {
+    "symbol": "TATN",
+    "timeframe": "1h",
+    "file": "16-supertrend-rsi-entry.italgo",
+    "window_chop_share": 0.7951666666666667,
+    "pnl_in_chop": -205.62442999999905,
+    "pnl_in_trend": 96.38948000000022,
+    "frac_trades_in_chop": 0.9444444444444444
+  },
+  {
+    "symbol": "NVTK",
+    "timeframe": "1h",
+    "file": "16-supertrend-rsi-entry.italgo",
+    "window_chop_share": 0.78325,
+    "pnl_in_chop": -203.76460999999824,
+    "pnl_in_trend": 23.92986000000019,
+    "frac_trades_in_chop": 0.9647058823529412
+  },
+  {
+    "symbol": "IMOEXF",
+    "timeframe": "1h",
+    "file": "09-sma-cross-20-50.italgo",
+    "window_chop_share": 0.749389062104997,
+    "pnl_in_chop": -174.39269999999442,
+    "pnl_in_trend": 633.2276000000011,
+    "frac_trades_in_chop": 0.7391304347826086
+  },
+  {
+    "symbol": "GAZP",
+    "timeframe": "1d",
+    "file": "26-supertrend-rsi-ls.italgo",
+    "window_chop_share": 0.7781844802342606,
+    "pnl_in_chop": -173.98628299999996,
+    "pnl_in_trend": 29.97460099999998,
+    "frac_trades_in_chop": 0.9523809523809523
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "17-supertrend-rsi-tight.italgo",
+    "window_chop_share": 0.7613469985358712,
+    "pnl_in_chop": -152.84885499999993,
+    "pnl_in_trend": 78.49728399999992,
+    "frac_trades_in_chop": 0.75
+  },
+  {
+    "symbol": "PLZL",
+    "timeframe": "1h",
+    "file": "09-sma-cross-20-50.italgo",
+    "window_chop_share": 0.78025,
+    "pnl_in_chop": -115.43684999999891,
+    "pnl_in_trend": 754.9322699999997,
+    "frac_trades_in_chop": 0.7593984962406015
+  },
+  {
+    "symbol": "ROSN",
+    "timeframe": "1d",
+    "file": "23-tema-cross-10-30-ls.italgo",
+    "window_chop_share": 0.7745241581259151,
+    "pnl_in_chop": -115.3095099999993,
+    "pnl_in_trend": 211.55814000000004,
+    "frac_trades_in_chop": 0.826530612244898
+  },
+  {
+    "symbol": "ROSN",
+    "timeframe": "1d",
+    "file": "07-supertrend-di-adx-stack.italgo",
+    "window_chop_share": 0.7745241581259151,
+    "pnl_in_chop": -109.41996500000016,
+    "pnl_in_trend": 77.23840999999999,
+    "frac_trades_in_chop": 0.8709677419354839
+  },
+  {
+    "symbol": "MTSS",
+    "timeframe": "1d",
+    "file": "12-dema-cross-12-26.italgo",
+    "window_chop_share": 0.6857142857142857,
+    "pnl_in_chop": -106.22487499999968,
+    "pnl_in_trend": 66.66183000000004,
+    "frac_trades_in_chop": 0.875
+  },
+  {
+    "symbol": "IMOEXF",
+    "timeframe": "1h",
+    "file": "17-supertrend-rsi-tight.italgo",
+    "window_chop_share": 0.749389062104997,
+    "pnl_in_chop": -103.37119999999413,
+    "pnl_in_trend": 377.606600000001,
+    "frac_trades_in_chop": 0.8701298701298701
+  },
+  {
+    "symbol": "TATN",
+    "timeframe": "1h",
+    "file": "10-ema-cross-9-21.italgo",
+    "window_chop_share": 0.7951666666666667,
+    "pnl_in_chop": -102.92702999999784,
+    "pnl_in_trend": 19.21611000000007,
+    "frac_trades_in_chop": 0.9714285714285714
+  },
+  {
+    "symbol": "ROSN",
+    "timeframe": "1d",
+    "file": "01-trend-ema-adx-rsi.italgo",
+    "window_chop_share": 0.7745241581259151,
+    "pnl_in_chop": -99.2179000000001,
+    "pnl_in_trend": 8.393374999999992,
+    "frac_trades_in_chop": 0.5
+  },
+  {
+    "symbol": "ROSN",
+    "timeframe": "1d",
+    "file": "10-ema-cross-9-21.italgo",
+    "window_chop_share": 0.7745241581259151,
+    "pnl_in_chop": -92.67948499999949,
+    "pnl_in_trend": 20.835309999999993,
+    "frac_trades_in_chop": 0.9642857142857143
+  },
+  {
+    "symbol": "TATN",
+    "timeframe": "1h",
+    "file": "26-supertrend-rsi-ls.italgo",
+    "window_chop_share": 0.7951666666666667,
+    "pnl_in_chop": -91.54439999999789,
+    "pnl_in_trend": 57.59295000000026,
+    "frac_trades_in_chop": 0.9447513812154696
+  },
+  {
+    "symbol": "TATN",
+    "timeframe": "1d",
+    "file": "01-trend-ema-adx-rsi.italgo",
+    "window_chop_share": 0.7390029325513197,
+    "pnl_in_chop": -83.51225999999997,
+    "pnl_in_trend": 320.07466999999997,
+    "frac_trades_in_chop": 0.6666666666666666
+  },
+  {
+    "symbol": "ROSN",
+    "timeframe": "1h",
+    "file": "05-trend-atr-sl-tp.italgo",
+    "window_chop_share": 0.7875833333333333,
+    "pnl_in_chop": -82.44737571428357,
+    "pnl_in_trend": 19.711208571428585,
+    "frac_trades_in_chop": 0.9694835680751174
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "21-sma-cross-20-50-ls.italgo",
+    "window_chop_share": 0.7613469985358712,
+    "pnl_in_chop": -79.6183319999998,
+    "pnl_in_trend": 287.8499210000001,
+    "frac_trades_in_chop": 0.75
+  },
+  {
+    "symbol": "ROSN",
+    "timeframe": "1d",
+    "file": "11-tema-cross-10-30.italgo",
+    "window_chop_share": 0.7745241581259151,
+    "pnl_in_chop": -78.94631499999969,
+    "pnl_in_trend": 13.02443500000004,
+    "frac_trades_in_chop": 0.8979591836734694
+  },
+  {
+    "symbol": "ROSN",
+    "timeframe": "1h",
+    "file": "12-dema-cross-12-26.italgo",
+    "window_chop_share": 0.7875833333333333,
+    "pnl_in_chop": -76.46235499999801,
+    "pnl_in_trend": 63.45414000000011,
+    "frac_trades_in_chop": 0.8944099378881988
+  },
+  {
+    "symbol": "GAZP",
+    "timeframe": "1d",
+    "file": "05-trend-atr-sl-tp.italgo",
+    "window_chop_share": 0.7781844802342606,
+    "pnl_in_chop": -70.2281858571431,
+    "pnl_in_trend": 30.16285714285715,
+    "frac_trades_in_chop": 0.9795918367346939
+  },
+  {
+    "symbol": "LKOH",
+    "timeframe": "1h",
+    "file": "01-trend-ema-adx-rsi.italgo",
+    "window_chop_share": 0.7869166666666667,
+    "pnl_in_chop": -63.78979999999774,
+    "pnl_in_trend": 701.5634000000027,
+    "frac_trades_in_chop": 0.6122448979591837
+  },
+  {
+    "symbol": "MTSS",
+    "timeframe": "1h",
+    "file": "26-supertrend-rsi-ls.italgo",
+    "window_chop_share": 0.823,
+    "pnl_in_chop": -54.848025000000035,
+    "pnl_in_trend": 20.517830000000032,
+    "frac_trades_in_chop": 0.9894179894179894
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "05-trend-atr-sl-tp.italgo",
+    "window_chop_share": 0.7613469985358712,
+    "pnl_in_chop": -54.347872857142676,
+    "pnl_in_trend": 20.805000000000007,
+    "frac_trades_in_chop": 0.9761904761904762
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1h",
+    "file": "01-trend-ema-adx-rsi.italgo",
+    "window_chop_share": 0.7976666666666666,
+    "pnl_in_chop": -52.26316299999971,
+    "pnl_in_trend": 37.828791000000166,
+    "frac_trades_in_chop": 0.782608695652174
+  },
+  {
+    "symbol": "MTSS",
+    "timeframe": "1h",
+    "file": "05-trend-atr-sl-tp.italgo",
+    "window_chop_share": 0.823,
+    "pnl_in_chop": -47.42128285714162,
+    "pnl_in_trend": 4.681268571428575,
+    "frac_trades_in_chop": 0.9862204724409449
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1h",
+    "file": "09-sma-cross-20-50.italgo",
+    "window_chop_share": 0.7976666666666666,
+    "pnl_in_chop": -45.206680999999946,
+    "pnl_in_trend": 79.51084300000002,
+    "frac_trades_in_chop": 0.8292682926829268
+  },
+  {
+    "symbol": "GMKN",
+    "timeframe": "1h",
+    "file": "09-sma-cross-20-50.italgo",
+    "window_chop_share": 0.7656666666666667,
+    "pnl_in_chop": -42.96669199999988,
+    "pnl_in_trend": 16.574438000000043,
+    "frac_trades_in_chop": 0.7794117647058824
+  },
+  {
+    "symbol": "MTSS",
+    "timeframe": "1h",
+    "file": "12-dema-cross-12-26.italgo",
+    "window_chop_share": 0.823,
+    "pnl_in_chop": -42.156314999998585,
+    "pnl_in_trend": 21.65890500000006,
+    "frac_trades_in_chop": 0.9214092140921409
+  },
+  {
+    "symbol": "MTSS",
+    "timeframe": "1d",
+    "file": "10-ema-cross-9-21.italgo",
+    "window_chop_share": 0.6857142857142857,
+    "pnl_in_chop": -38.71241500000008,
+    "pnl_in_trend": 45.49317499999995,
+    "frac_trades_in_chop": 0.9310344827586207
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "18-mom-pct-ema50-filter.italgo",
+    "window_chop_share": 0.7613469985358712,
+    "pnl_in_chop": -35.3890259999998,
+    "pnl_in_trend": 78.39509200000009,
+    "frac_trades_in_chop": 0.9180327868852459
+  },
+  {
+    "symbol": "MTSS",
+    "timeframe": "1d",
+    "file": "17-supertrend-rsi-tight.italgo",
+    "window_chop_share": 0.6857142857142857,
+    "pnl_in_chop": -30.06396999999987,
+    "pnl_in_trend": 15.891464999999954,
+    "frac_trades_in_chop": 0.7142857142857143
+  },
+  {
+    "symbol": "MTSS",
+    "timeframe": "1h",
+    "file": "10-ema-cross-9-21.italgo",
+    "window_chop_share": 0.823,
+    "pnl_in_chop": -29.626239999999598,
+    "pnl_in_trend": 14.313330000000008,
+    "frac_trades_in_chop": 0.9737827715355806
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1h",
+    "file": "17-supertrend-rsi-tight.italgo",
+    "window_chop_share": 0.7976666666666666,
+    "pnl_in_chop": -27.884221999999113,
+    "pnl_in_trend": 18.099360000000274,
+    "frac_trades_in_chop": 0.8536585365853658
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "09-sma-cross-20-50.italgo",
+    "window_chop_share": 0.7613469985358712,
+    "pnl_in_chop": -27.58372599999987,
+    "pnl_in_trend": 130.10468,
+    "frac_trades_in_chop": 0.8333333333333334
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1h",
+    "file": "21-sma-cross-20-50-ls.italgo",
+    "window_chop_share": 0.7976666666666666,
+    "pnl_in_chop": -25.763357999999783,
+    "pnl_in_trend": 112.84983399999996,
+    "frac_trades_in_chop": 0.8089430894308943
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "10-ema-cross-9-21.italgo",
+    "window_chop_share": 0.7613469985358712,
+    "pnl_in_chop": -21.211609999999936,
+    "pnl_in_trend": 47.74322000000001,
+    "frac_trades_in_chop": 0.9393939393939394
+  },
+  {
+    "symbol": "TATN",
+    "timeframe": "1h",
+    "file": "08-cci-regime-trail.italgo",
+    "window_chop_share": 0.7951666666666667,
+    "pnl_in_chop": -21.044750549998696,
+    "pnl_in_trend": 130.49530125000115,
+    "frac_trades_in_chop": 0.8018867924528302
+  },
+  {
+    "symbol": "ROSN",
+    "timeframe": "1h",
+    "file": "10-ema-cross-9-21.italgo",
+    "window_chop_share": 0.7875833333333333,
+    "pnl_in_chop": -20.984034999998073,
+    "pnl_in_trend": 2.524499999999989,
+    "frac_trades_in_chop": 0.9787234042553191
+  },
+  {
+    "symbol": "MTSS",
+    "timeframe": "1h",
+    "file": "18-mom-pct-ema50-filter.italgo",
+    "window_chop_share": 0.823,
+    "pnl_in_chop": -19.39523999999804,
+    "pnl_in_trend": 19.611040000000287,
+    "frac_trades_in_chop": 0.9327731092436975
+  },
+  {
+    "symbol": "TATN",
+    "timeframe": "1h",
+    "file": "01-trend-ema-adx-rsi.italgo",
+    "window_chop_share": 0.7951666666666667,
+    "pnl_in_chop": -18.244429999999568,
+    "pnl_in_trend": 29.752080000000092,
+    "frac_trades_in_chop": 0.6730769230769231
+  },
+  {
+    "symbol": "GMKN",
+    "timeframe": "1h",
+    "file": "01-trend-ema-adx-rsi.italgo",
+    "window_chop_share": 0.7656666666666667,
+    "pnl_in_chop": -17.600103999999945,
+    "pnl_in_trend": 20.256311999999937,
+    "frac_trades_in_chop": 0.5925925925925926
+  },
+  {
+    "symbol": "ROSN",
+    "timeframe": "1h",
+    "file": "17-supertrend-rsi-tight.italgo",
+    "window_chop_share": 0.7875833333333333,
+    "pnl_in_chop": -16.56735499999826,
+    "pnl_in_trend": 0.34508000000016636,
+    "frac_trades_in_chop": 0.9156626506024096
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1h",
+    "file": "07-supertrend-di-adx-stack.italgo",
+    "window_chop_share": 0.7976666666666666,
+    "pnl_in_chop": -15.449617999999418,
+    "pnl_in_trend": 96.43453500000027,
+    "frac_trades_in_chop": 0.9029535864978903
+  },
+  {
+    "symbol": "MTSS",
+    "timeframe": "1h",
+    "file": "09-sma-cross-20-50.italgo",
+    "window_chop_share": 0.823,
+    "pnl_in_chop": -12.82093499999948,
+    "pnl_in_trend": 25.00971500000017,
+    "frac_trades_in_chop": 0.8161764705882353
+  },
+  {
+    "symbol": "GAZP",
+    "timeframe": "1h",
+    "file": "16-supertrend-rsi-entry.italgo",
+    "window_chop_share": 0.77325,
+    "pnl_in_chop": -11.105911999999606,
+    "pnl_in_trend": 2.8094309999999894,
+    "frac_trades_in_chop": 0.9518072289156626
+  },
+  {
+    "symbol": "GMKN",
+    "timeframe": "1h",
+    "file": "21-sma-cross-20-50-ls.italgo",
+    "window_chop_share": 0.7656666666666667,
+    "pnl_in_chop": -10.646391999999793,
+    "pnl_in_trend": 0.30612800000012896,
+    "frac_trades_in_chop": 0.7867647058823529
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "01-trend-ema-adx-rsi.italgo",
+    "window_chop_share": 0.7613469985358712,
+    "pnl_in_chop": -10.583416,
+    "pnl_in_trend": 138.09636900000004,
+    "frac_trades_in_chop": 0.5
+  },
+  {
+    "symbol": "GMKN",
+    "timeframe": "1d",
+    "file": "11-tema-cross-10-30.italgo",
+    "window_chop_share": 0.8135095447870778,
+    "pnl_in_chop": -8.388363999999711,
+    "pnl_in_trend": 26.36556200000004,
+    "frac_trades_in_chop": 0.82
+  },
+  {
+    "symbol": "NVTK",
+    "timeframe": "1h",
+    "file": "21-sma-cross-20-50-ls.italgo",
+    "window_chop_share": 0.78325,
+    "pnl_in_chop": -5.073899999996115,
+    "pnl_in_trend": 760.3735199999999,
+    "frac_trades_in_chop": 0.7702127659574468
+  },
+  {
+    "symbol": "GAZP",
+    "timeframe": "1h",
+    "file": "17-supertrend-rsi-tight.italgo",
+    "window_chop_share": 0.77325,
+    "pnl_in_chop": -2.8640599999996255,
+    "pnl_in_trend": 17.909951000000092,
+    "frac_trades_in_chop": 0.8823529411764706
+  },
+  {
+    "symbol": "GMKN",
+    "timeframe": "1h",
+    "file": "26-supertrend-rsi-ls.italgo",
+    "window_chop_share": 0.7656666666666667,
+    "pnl_in_chop": -2.386047999999647,
+    "pnl_in_trend": 4.336798000000002,
+    "frac_trades_in_chop": 0.9468085106382979
+  },
+  {
+    "symbol": "CNYRUBF",
+    "timeframe": "1h",
+    "file": "18-mom-pct-ema50-filter.italgo",
+    "window_chop_share": 0.7231666666666666,
+    "pnl_in_chop": -1.826087199999881,
+    "pnl_in_trend": 0.7897010000000133,
+    "frac_trades_in_chop": 0.9166666666666666
+  }
+]

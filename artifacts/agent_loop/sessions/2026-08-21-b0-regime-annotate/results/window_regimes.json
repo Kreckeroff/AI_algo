@@ -1,0 +1,262 @@
+[
+  {
+    "symbol": "CNYRUBF",
+    "timeframe": "1d",
+    "n_bars": 1097.0,
+    "chop_share": 0.7547857793983591,
+    "trend_up_share": 0.14038286235186873,
+    "trend_down_share": 0.0601640838650866,
+    "unknown_share": 0.044667274384685506,
+    "trend_share": 0.20054694621695535
+  },
+  {
+    "symbol": "CNYRUBF",
+    "timeframe": "1h",
+    "n_bars": 12000.0,
+    "chop_share": 0.7231666666666666,
+    "trend_up_share": 0.135,
+    "trend_down_share": 0.13775,
+    "unknown_share": 0.004083333333333333,
+    "trend_share": 0.27275
+  },
+  {
+    "symbol": "GAZP",
+    "timeframe": "1d",
+    "n_bars": 1366.0,
+    "chop_share": 0.7781844802342606,
+    "trend_up_share": 0.050512445095168376,
+    "trend_down_share": 0.13543191800878476,
+    "unknown_share": 0.03587115666178624,
+    "trend_share": 0.18594436310395315
+  },
+  {
+    "symbol": "GAZP",
+    "timeframe": "1h",
+    "n_bars": 12000.0,
+    "chop_share": 0.77325,
+    "trend_up_share": 0.0975,
+    "trend_down_share": 0.12516666666666668,
+    "unknown_share": 0.004083333333333333,
+    "trend_share": 0.22266666666666668
+  },
+  {
+    "symbol": "GLDRUBF",
+    "timeframe": "1d",
+    "n_bars": 796.0,
+    "chop_share": 0.7399497487437185,
+    "trend_up_share": 0.15577889447236182,
+    "trend_down_share": 0.04271356783919598,
+    "unknown_share": 0.06155778894472362,
+    "trend_share": 0.1984924623115578
+  },
+  {
+    "symbol": "GLDRUBF",
+    "timeframe": "1h",
+    "n_bars": 12000.0,
+    "chop_share": 0.7726666666666666,
+    "trend_up_share": 0.1345,
+    "trend_down_share": 0.08875,
+    "unknown_share": 0.004083333333333333,
+    "trend_share": 0.22325
+  },
+  {
+    "symbol": "GMKN",
+    "timeframe": "1d",
+    "n_bars": 1362.0,
+    "chop_share": 0.8135095447870778,
+    "trend_up_share": 0.06607929515418502,
+    "trend_down_share": 0.08443465491923642,
+    "unknown_share": 0.035976505139500736,
+    "trend_share": 0.15051395007342144
+  },
+  {
+    "symbol": "GMKN",
+    "timeframe": "1h",
+    "n_bars": 12000.0,
+    "chop_share": 0.7656666666666667,
+    "trend_up_share": 0.10316666666666667,
+    "trend_down_share": 0.12708333333333333,
+    "unknown_share": 0.004083333333333333,
+    "trend_share": 0.23025
+  },
+  {
+    "symbol": "IMOEXF",
+    "timeframe": "1d",
+    "n_bars": 706.0,
+    "chop_share": 0.7039660056657224,
+    "trend_up_share": 0.0821529745042493,
+    "trend_down_share": 0.14447592067988668,
+    "unknown_share": 0.06940509915014165,
+    "trend_share": 0.22662889518413598
+  },
+  {
+    "symbol": "IMOEXF",
+    "timeframe": "1h",
+    "n_bars": 11867.0,
+    "chop_share": 0.749389062104997,
+    "trend_up_share": 0.11704727395297886,
+    "trend_down_share": 0.12943456644476278,
+    "unknown_share": 0.004129097497261313,
+    "trend_share": 0.24648184039774163
+  },
+  {
+    "symbol": "LKOH",
+    "timeframe": "1d",
+    "n_bars": 1366.0,
+    "chop_share": 0.7715959004392386,
+    "trend_up_share": 0.10102489019033675,
+    "trend_down_share": 0.09150805270863836,
+    "unknown_share": 0.03587115666178624,
+    "trend_share": 0.1925329428989751
+  },
+  {
+    "symbol": "LKOH",
+    "timeframe": "1h",
+    "n_bars": 12000.0,
+    "chop_share": 0.7869166666666667,
+    "trend_up_share": 0.0925,
+    "trend_down_share": 0.1165,
+    "unknown_share": 0.004083333333333333,
+    "trend_share": 0.209
+  },
+  {
+    "symbol": "MGNT",
+    "timeframe": "1d",
+    "n_bars": 1366.0,
+    "chop_share": 0.7101024890190337,
+    "trend_up_share": 0.08711566617862372,
+    "trend_down_share": 0.16691068814055637,
+    "unknown_share": 0.03587115666178624,
+    "trend_share": 0.2540263543191801
+  },
+  {
+    "symbol": "MGNT",
+    "timeframe": "1h",
+    "n_bars": 12000.0,
+    "chop_share": 0.8026666666666666,
+    "trend_up_share": 0.07666666666666666,
+    "trend_down_share": 0.11658333333333333,
+    "unknown_share": 0.004083333333333333,
+    "trend_share": 0.19325
+  },
+  {
+    "symbol": "MTSS",
+    "timeframe": "1d",
+    "n_bars": 1365.0,
+    "chop_share": 0.6857142857142857,
+    "trend_up_share": 0.13553113553113552,
+    "trend_down_share": 0.14285714285714285,
+    "unknown_share": 0.035897435897435895,
+    "trend_share": 0.2783882783882784
+  },
+  {
+    "symbol": "MTSS",
+    "timeframe": "1h",
+    "n_bars": 12000.0,
+    "chop_share": 0.823,
+    "trend_up_share": 0.08508333333333333,
+    "trend_down_share": 0.08783333333333333,
+    "unknown_share": 0.004083333333333333,
+    "trend_share": 0.17291666666666666
+  },
+  {
+    "symbol": "NVTK",
+    "timeframe": "1d",
+    "n_bars": 1362.0,
+    "chop_share": 0.7687224669603524,
+    "trend_up_share": 0.08957415565345081,
+    "trend_down_share": 0.10572687224669604,
+    "unknown_share": 0.035976505139500736,
+    "trend_share": 0.19530102790014683
+  },
+  {
+    "symbol": "NVTK",
+    "timeframe": "1h",
+    "n_bars": 12000.0,
+    "chop_share": 0.78325,
+    "trend_up_share": 0.09516666666666666,
+    "trend_down_share": 0.1175,
+    "unknown_share": 0.004083333333333333,
+    "trend_share": 0.21266666666666667
+  },
+  {
+    "symbol": "PLZL",
+    "timeframe": "1d",
+    "n_bars": 1359.0,
+    "chop_share": 0.7225901398086828,
+    "trend_up_share": 0.141280353200883,
+    "trend_down_share": 0.10007358351729213,
+    "unknown_share": 0.036055923473142015,
+    "trend_share": 0.24135393671817512
+  },
+  {
+    "symbol": "PLZL",
+    "timeframe": "1h",
+    "n_bars": 12000.0,
+    "chop_share": 0.78025,
+    "trend_up_share": 0.12008333333333333,
+    "trend_down_share": 0.09558333333333334,
+    "unknown_share": 0.004083333333333333,
+    "trend_share": 0.21566666666666667
+  },
+  {
+    "symbol": "ROSN",
+    "timeframe": "1d",
+    "n_bars": 1366.0,
+    "chop_share": 0.7745241581259151,
+    "trend_up_share": 0.08711566617862372,
+    "trend_down_share": 0.10248901903367497,
+    "unknown_share": 0.03587115666178624,
+    "trend_share": 0.18960468521229867
+  },
+  {
+    "symbol": "ROSN",
+    "timeframe": "1h",
+    "n_bars": 12000.0,
+    "chop_share": 0.7875833333333333,
+    "trend_up_share": 0.08616666666666667,
+    "trend_down_share": 0.12216666666666667,
+    "unknown_share": 0.004083333333333333,
+    "trend_share": 0.20833333333333334
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "n_bars": 1366.0,
+    "chop_share": 0.7613469985358712,
+    "trend_up_share": 0.10834553440702782,
+    "trend_down_share": 0.09443631039531479,
+    "unknown_share": 0.03587115666178624,
+    "trend_share": 0.2027818448023426
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1h",
+    "n_bars": 12000.0,
+    "chop_share": 0.7976666666666666,
+    "trend_up_share": 0.09475,
+    "trend_down_share": 0.1035,
+    "unknown_share": 0.004083333333333333,
+    "trend_share": 0.19825
+  },
+  {
+    "symbol": "TATN",
+    "timeframe": "1d",
+    "n_bars": 1364.0,
+    "chop_share": 0.7390029325513197,
+    "trend_up_share": 0.11070381231671554,
+    "trend_down_share": 0.11436950146627566,
+    "unknown_share": 0.03592375366568915,
+    "trend_share": 0.2250733137829912
+  },
+  {
+    "symbol": "TATN",
+    "timeframe": "1h",
+    "n_bars": 12000.0,
+    "chop_share": 0.7951666666666667,
+    "trend_up_share": 0.09766666666666667,
+    "trend_down_share": 0.10308333333333333,
+    "unknown_share": 0.004083333333333333,
+    "trend_share": 0.20075
+  }
+]

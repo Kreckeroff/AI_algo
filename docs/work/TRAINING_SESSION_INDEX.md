@@ -54,6 +54,7 @@
 | **C15** | BH-aware labels/policy (§7I); base BH features | **21614 · 0.77/0.84** | **35p-*** |
 | **C16** | +ATR SL/TP + remove-filter; BH labels | **25452 · 0.77/0.84** | **36p-*** |
 | **C17** | walk-forward + §7H div features/labels | **25452 · 0.80/0.85** | **37p-*** |
+| **B0** | market regime annotate (ADX+ER) on C16 1d+1h | **6552 pairs enriched** | — |
 
 Актуальная модель: `artifacts/.../2026-08-21-c17-walkforward-div/models/intervention_policy_lgbm.joblib`
 
@@ -72,7 +73,8 @@ Label better (§7I): ΔPnL>0 · DD-ok · Δedge_vs_bh>0 · beats B&H · !pseudo.
 
 ### Следующие шаги (не потерять)
 
-1. History-window sweep 1d…5y (§7A).
+1. **B1:** chop_gate / MR overlay (C18) — see regime dual-structure spec.
+2. History-window sweep 1d…5y (§7A) — другой ПК.
 2. Desktop BT: native B&H + div cash-adjust.
 3. Больше инструментов / индексный дивкалендарь.
 4. History-window sweep 1d…5y (§7A) — ещё долг.

@@ -1,0 +1,94 @@
+{
+  "session": "2026-08-21-b0-regime-annotate",
+  "tfs": [
+    "1d",
+    "1h"
+  ],
+  "n_bar_windows": 26,
+  "n_script_annotations": 7254,
+  "n_enriched_pairs": 6552,
+  "n_hypothesis_candidates": 81,
+  "kind_by_chop_bucket": [
+    {
+      "kind": "add_block_ema",
+      "chop_bucket": "high_chop",
+      "n": 702,
+      "better_rate": 0.3732193732193732,
+      "mean_delta": 88.36742672804476,
+      "mean_delta_pnl_in_chop": 126.11914258915623
+    },
+    {
+      "kind": "add_block_rsi50",
+      "chop_bucket": "high_chop",
+      "n": 702,
+      "better_rate": 0.26638176638176636,
+      "mean_delta": 40.58154604266322,
+      "mean_delta_pnl_in_chop": 110.99654623075266
+    },
+    {
+      "kind": "change_period_2x",
+      "chop_bucket": "high_chop",
+      "n": 702,
+      "better_rate": 0.34045584045584043,
+      "mean_delta": 35.608040764275366,
+      "mean_delta_pnl_in_chop": 92.64298691032755
+    },
+    {
+      "kind": "change_period_15x",
+      "chop_bucket": "high_chop",
+      "n": 702,
+      "better_rate": 0.34615384615384615,
+      "mean_delta": 18.819624722311776,
+      "mean_delta_pnl_in_chop": 56.07914675460307
+    },
+    {
+      "kind": "change_period_05x",
+      "chop_bucket": "high_chop",
+      "n": 702,
+      "better_rate": 0.37037037037037035,
+      "mean_delta": 1.547277430757861,
+      "mean_delta_pnl_in_chop": 49.361621653614996
+    },
+    {
+      "kind": "add_block_atr_sltp",
+      "chop_bucket": "high_chop",
+      "n": 676,
+      "better_rate": 0.27218934911242604,
+      "mean_delta": -172.11066826594464,
+      "mean_delta_pnl_in_chop": 36.473669928753495
+    },
+    {
+      "kind": "remove_block_filter",
+      "chop_bucket": "high_chop",
+      "n": 312,
+      "better_rate": 0.27884615384615385,
+      "mean_delta": 171.68203617010647,
+      "mean_delta_pnl_in_chop": 11.627086156685081
+    },
+    {
+      "kind": "change_period_067",
+      "chop_bucket": "high_chop",
+      "n": 702,
+      "better_rate": 0.3418803418803419,
+      "mean_delta": -42.13609253470229,
+      "mean_delta_pnl_in_chop": -13.3127440371947
+    },
+    {
+      "kind": "add_block_sma200",
+      "chop_bucket": "high_chop",
+      "n": 702,
+      "better_rate": 0.3148148148148148,
+      "mean_delta": -154.39434591389355,
+      "mean_delta_pnl_in_chop": -18.455268066416316
+    },
+    {
+      "kind": "add_block_adx",
+      "chop_bucket": "high_chop",
+      "n": 650,
+      "better_rate": 0.20307692307692307,
+      "mean_delta": -528.1208047594494,
+      "mean_delta_pnl_in_chop": -265.6635473242281
+    }
+  ],
+  "mean_window_chop_share": 0.764024384311109
+}
