@@ -6,7 +6,7 @@ from fastapi import APIRouter
 from pydantic import BaseModel, Field
 
 from ai_algo.domain.graph_validate import validate_graph
-from ai_algo.store.memory import store
+from ai_algo.store import memory as store_mod
 
 router = APIRouter(tags=["ingest"])
 API_VERSION = "2026-08-20"
@@ -39,7 +39,7 @@ class IngestRunsRequest(BaseModel):
 
 @router.post("/v1/ingest/bars")
 def ingest_bars(body: IngestBarsRequest) -> dict:
-    item_id = store.put_bars(body.model_dump())
+    item_id = store_mod.store.put_bars(body.model_dump())
     return {
         "api_version": API_VERSION,
         "status": "accepted",
@@ -59,7 +59,7 @@ def ingest_graphs(body: IngestGraphsRequest) -> dict:
                 "result": {},
                 "error": {"code": "validation_failed", "message": err},
             }
-    item_id = store.put_graphs(body.graphs)
+    item_id = store_mod.store.put_graphs(body.graphs)
     return {
         "api_version": API_VERSION,
         "status": "accepted",
@@ -70,7 +70,7 @@ def ingest_graphs(body: IngestGraphsRequest) -> dict:
 
 @router.post("/v1/ingest/runs")
 def ingest_runs(body: IngestRunsRequest) -> dict:
-    item_id = store.put_runs(body.runs)
+    item_id = store_mod.store.put_runs(body.runs)
     return {
         "api_version": API_VERSION,
         "status": "accepted",
@@ -82,7 +82,8 @@ def ingest_runs(body: IngestRunsRequest) -> dict:
 @router.get("/v1/ingest/datasets")
 def list_datasets() -> dict:
     return {
-        "bars": len(store.bars),
-        "graphs": len(store.graphs),
-        "runs": len(store.runs),
+        "bars": len(store_mod.store.bars),
+        "graphs": len(store_mod.store.graphs),
+        "runs": len(store_mod.store.runs),
+        "persist": type(store_mod.store).__name__,
     }

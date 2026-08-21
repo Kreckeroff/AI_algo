@@ -1,0 +1,45 @@
+# Agent training loop — как будем учить модель
+
+| Поле | Значение |
+|------|----------|
+| **Статус** | каркас готов; цикл по команде пользователя |
+| **Дата** | 2026-08-21 |
+
+## Роли
+
+| Кто | Что делает |
+|-----|------------|
+| **Ты** | Управляешь: «сделай трендовый скрипт», «поменяй период», «сравни», «учи веса» |
+| **Агент** | Создаёт/меняет артефакты (`.italgo`, JSON compare, notes), гоняет данные в ingest, потом train |
+| **AI_algo** | Хранит датасет на диске, compare/советы, позже `train.py` / Train API |
+| **Desktop `ai-train`** | Бэктест + auto-ingest (лаборатория, не прод UI) |
+
+Полированный UI в prod — **после** того, как модель реально работает.
+
+## Цикл одной сессии
+
+```text
+1. Агент пишет script_v0.italgo (артефакт)
+2. Бэктест (Desktop или позже CLI) → ingest bars/graphs/runs (persist на диск)
+3. Ты: «измени X» → агент script_v1.italgo
+4. Снова бэктест + compare (одинаковое окно ТФ/from-to)
+5. Артефакты: notes.md, compare_result.json, метрики
+6. По команде «учи» → export CSV → LightGBM → model.joblib
+7. Смотрим OOS / веса / что лучше → следующая итерация
+```
+
+Папка сессий: `artifacts/agent_loop/sessions/<id>/`
+
+## Persist
+
+- Ingest пишется в `data/ingest/{bars,graphs,runs}/*.json` (не только RAM).
+- Env: `AI_ALGO_DATA_DIR`, `AI_ALGO_STORE=memory` (тесты).
+- Export: `python scripts/export_ingest_to_csv.py`
+
+## Когда скажешь «начинай обучать»
+
+Агент:
+1. Создаст сессию в `artifacts/agent_loop/sessions/…`
+2. Соберёт/изменит скрипты
+3. Накопит прогоны через Desktop ingest
+4. Запустит train experiment и зафикисит артефакт модели

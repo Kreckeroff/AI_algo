@@ -51,19 +51,20 @@
 | План действий | `docs/superpowers/plans/2026-08-21-ai-algo-roadmap.md` |
 | Модули продукта | `docs/PRODUCT_VISION.md` |
 | Разбор сделок | `src/ai_algo/domain/trade_analysis.py` |
+| Цикл обучения (агент) | `docs/work/AGENT_TRAINING_LOOP.md` |
 
 ---
 
 ## 3. Текущее состояние (2026-08-21)
 
-- FastAPI: health, capabilities, ingest (RAM), infer `compare_scripts` + `signal`.
-- Compare: метрики + graph notes + **`trade_analysis`** (пила / streak / sides / режим скрипта).
-- Desktop интеграция — ветка **`ai-train`** (не `main` прода): compare UI, auto-ingest, samples.
-- Следующее: авто-бэктест bridge (Desktop orchestrates dual backtest), затем `build_script`.
+- FastAPI: health, capabilities, ingest с **persist** (`data/ingest/`), infer `compare_scripts` + `signal`.
+- Compare: метрики + graph + **trade_analysis**; запрет разного ТФ/окна.
+- Desktop: только **`ai-train`** — лаборатория обучения (прод UI позже).
+- Цикл «ты управляешь агентом → артефакты скриптов → ingest → train»: [`docs/work/AGENT_TRAINING_LOOP.md`](work/AGENT_TRAINING_LOOP.md).
+- Export: `python scripts/export_ingest_to_csv.py`
+- Команда **«начинай обучать»** → агент создаёт сессию, правит скрипты, копит данные, запускает train.
 
-**Данные сделок в Desktop:**
-- Бэктест: `BacktestSnapshot.trades` (уже в UI статистики).
-- Брокер: Finam/Tinkoff history SQLite (`get_finam_trades_history`) — для Advisor позже.
+**Данные сделок:** бэктест `BacktestSnapshot.trades`; брокерская история — позже в Advisor.
 
 ---
 
