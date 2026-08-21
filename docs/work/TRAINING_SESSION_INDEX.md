@@ -23,7 +23,7 @@
 | **7E** | `trades[]` good/bad → блок / period | C5–C6+ |
 | **7F** | Постоянно расширять **тикеры + датасет** | C9→C13: 10 equities |
 | **7G** | Деплой policy в Desktop / live actions — **не сейчас** | backlog |
-| **7H** | **Дивгэп:** шорт на акциях/индексе не зарабатывает гэп; дивиденд списывают | **P3.7 backlog** |
+| **7H** | **Дивгэп:** шорт на акциях/индексе не зарабатывает гэп; дивиденд списывают | **P3.7 частично** (cache+annotate) |
 
 После каждой сессии: `ANALYTICS.html` + compare prev→current + `REPORT.md` / notes.
 
@@ -47,6 +47,7 @@
 | C12 | +MTSS; RSI50/period×2; 1d+1h; DD-aware | 3740 ~0.70/0.78 | 32p-* |
 | **C13** | **ALL TF 1m…1w × 10 equities** | **14399 ~0.72/0.80** | **33p-*** |
 | **C14** | **+3 futures** × all TF; period×0.5; `is_future` | **21614 ~0.72/0.79** | **34p-*** |
+| **P3.7** | Div calendar × C14 equities chart window; short pays | annotate session | — |
 
 Актуальная модель: `artifacts/.../2026-08-21-c14-futures-expand/models/intervention_policy_lgbm.joblib`
 
@@ -66,7 +67,7 @@ Label better: `ΔPnL > 0` **и** `variant_dd ≤ 1.5 × base_dd`.
 ### Следующие шаги (не потерять)
 
 1. **C15:** ATR SL/TP / remove-filter kinds; walk-forward по годам.
-2. **P3.7 / §7H:** календарь ex-div + cash adjust на equities; LS без adjust = provisional.
+2. **P3.7 next:** retrain policy с `near_ex_div` / `pnl_div_adjusted`; Desktop BT cash-adjust; индексные компоненты.
 3. History-window sweep 1d…5y (§7A) — ещё долг.
 4. Walk-forward по годам; больше kinds (SL/TP, remove block).
 5. **Не** вшивать policy в Desktop (§7G).

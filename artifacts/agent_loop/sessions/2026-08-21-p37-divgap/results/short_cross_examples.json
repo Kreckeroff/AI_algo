@@ -1,0 +1,646 @@
+[
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "04-macd-stoch-long-short__adx25.italgo",
+    "entryTime": 1666051200,
+    "exitTime": 1701302400,
+    "pnl_raw": -163.68897499999997,
+    "pnl_div_adjusted": -188.68897499999997,
+    "div_cash_adjust": -25.0,
+    "div_events": [
+      {
+        "date": "2023-05-08",
+        "dividend_rub": 25.0
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "04-macd-stoch-long-short__adx25.italgo",
+    "entryTime": 1725926400,
+    "exitTime": 1772668800,
+    "pnl_raw": -46.89760599999994,
+    "pnl_div_adjusted": -81.73760599999994,
+    "div_cash_adjust": -34.84,
+    "div_events": [
+      {
+        "date": "2025-07-17",
+        "dividend_rub": 34.84
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "04-macd-stoch-long-short__period05x.italgo",
+    "entryTime": 1780358400,
+    "exitTime": 1786665600,
+    "pnl_raw": 45.43995000000001,
+    "pnl_div_adjusted": 7.79995000000001,
+    "div_cash_adjust": -37.64,
+    "div_events": [
+      {
+        "date": "2026-07-17",
+        "dividend_rub": 37.64
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "04-macd-stoch-long-short__period067.italgo",
+    "entryTime": 1781481600,
+    "exitTime": 1786665600,
+    "pnl_raw": 45.68992500000002,
+    "pnl_div_adjusted": 8.049925000000016,
+    "div_cash_adjust": -37.64,
+    "div_events": [
+      {
+        "date": "2026-07-17",
+        "dividend_rub": 37.64
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "04-macd-stoch-long-short__period2x.italgo",
+    "entryTime": 1760659200,
+    "exitTime": null,
+    "pnl_raw": null,
+    "pnl_div_adjusted": null,
+    "div_cash_adjust": -37.64,
+    "div_events": [
+      {
+        "date": "2026-07-17",
+        "dividend_rub": 37.64
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "04-macd-stoch-long-short__rsi50.italgo",
+    "entryTime": 1641168000,
+    "exitTime": 1701302400,
+    "pnl_raw": 19.142740000000003,
+    "pnl_div_adjusted": -5.857259999999997,
+    "div_cash_adjust": -25.0,
+    "div_events": [
+      {
+        "date": "2023-05-08",
+        "dividend_rub": 25.0
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "04-macd-stoch-long-short__rsi50.italgo",
+    "entryTime": 1703635200,
+    "exitTime": 1746230400,
+    "pnl_raw": -28.057180000000017,
+    "pnl_div_adjusted": -61.357180000000014,
+    "div_cash_adjust": -33.3,
+    "div_events": [
+      {
+        "date": "2024-07-10",
+        "dividend_rub": 33.3
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "04-macd-stoch-long-short__rsi50.italgo",
+    "entryTime": 1754870400,
+    "exitTime": null,
+    "pnl_raw": null,
+    "pnl_div_adjusted": null,
+    "div_cash_adjust": -37.64,
+    "div_events": [
+      {
+        "date": "2026-07-17",
+        "dividend_rub": 37.64
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "04-macd-stoch-long-short__sma200.italgo",
+    "entryTime": 1641168000,
+    "exitTime": 1692835200,
+    "pnl_raw": 38.214647000000014,
+    "pnl_div_adjusted": 13.214647000000014,
+    "div_cash_adjust": -25.0,
+    "div_events": [
+      {
+        "date": "2023-05-08",
+        "dividend_rub": 25.0
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "07-supertrend-di-adx-stack.italgo",
+    "entryTime": 1782259200,
+    "exitTime": 1785801600,
+    "pnl_raw": 25.711115000000007,
+    "pnl_div_adjusted": -11.928884999999994,
+    "div_cash_adjust": -37.64,
+    "div_events": [
+      {
+        "date": "2026-07-17",
+        "dividend_rub": 37.64
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "07-supertrend-di-adx-stack__ema50.italgo",
+    "entryTime": 1782259200,
+    "exitTime": null,
+    "pnl_raw": null,
+    "pnl_div_adjusted": null,
+    "div_cash_adjust": -37.64,
+    "div_events": [
+      {
+        "date": "2026-07-17",
+        "dividend_rub": 37.64
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "07-supertrend-di-adx-stack__period05x.italgo",
+    "entryTime": 1717459200,
+    "exitTime": 1727136000,
+    "pnl_raw": 37.02151200000003,
+    "pnl_div_adjusted": 3.7215120000000326,
+    "div_cash_adjust": -33.3,
+    "div_events": [
+      {
+        "date": "2024-07-10",
+        "dividend_rub": 33.3
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "07-supertrend-di-adx-stack__period05x.italgo",
+    "entryTime": 1781827200,
+    "exitTime": 1785801600,
+    "pnl_raw": 33.88029800000004,
+    "pnl_div_adjusted": -3.7597019999999617,
+    "div_cash_adjust": -37.64,
+    "div_events": [
+      {
+        "date": "2026-07-17",
+        "dividend_rub": 37.64
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "07-supertrend-di-adx-stack__period067.italgo",
+    "entryTime": 1781827200,
+    "exitTime": 1785801600,
+    "pnl_raw": 33.88029800000004,
+    "pnl_div_adjusted": -3.7597019999999617,
+    "div_cash_adjust": -37.64,
+    "div_events": [
+      {
+        "date": "2026-07-17",
+        "dividend_rub": 37.64
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "07-supertrend-di-adx-stack__period15x.italgo",
+    "entryTime": 1782604800,
+    "exitTime": 1785888000,
+    "pnl_raw": 14.451510999999982,
+    "pnl_div_adjusted": -23.18848900000002,
+    "div_cash_adjust": -37.64,
+    "div_events": [
+      {
+        "date": "2026-07-17",
+        "dividend_rub": 37.64
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "07-supertrend-di-adx-stack__period2x.italgo",
+    "entryTime": 1783382400,
+    "exitTime": null,
+    "pnl_raw": null,
+    "pnl_div_adjusted": null,
+    "div_cash_adjust": -37.64,
+    "div_events": [
+      {
+        "date": "2026-07-17",
+        "dividend_rub": 37.64
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "07-supertrend-di-adx-stack__rsi50.italgo",
+    "entryTime": 1782259200,
+    "exitTime": 1785801600,
+    "pnl_raw": 25.711115000000007,
+    "pnl_div_adjusted": -11.928884999999994,
+    "div_cash_adjust": -37.64,
+    "div_events": [
+      {
+        "date": "2026-07-17",
+        "dividend_rub": 37.64
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "07-supertrend-di-adx-stack__sma200.italgo",
+    "entryTime": 1782259200,
+    "exitTime": null,
+    "pnl_raw": null,
+    "pnl_div_adjusted": null,
+    "div_cash_adjust": -37.64,
+    "div_events": [
+      {
+        "date": "2026-07-17",
+        "dividend_rub": 37.64
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "21-sma-cross-20-50-ls.italgo",
+    "entryTime": 1781740800,
+    "exitTime": null,
+    "pnl_raw": null,
+    "pnl_div_adjusted": null,
+    "div_cash_adjust": -37.64,
+    "div_events": [
+      {
+        "date": "2026-07-17",
+        "dividend_rub": 37.64
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "21-sma-cross-20-50-ls__adx25.italgo",
+    "entryTime": 1695859200,
+    "exitTime": 1735516800,
+    "pnl_raw": -17.653040000000033,
+    "pnl_div_adjusted": -50.95304000000003,
+    "div_cash_adjust": -33.3,
+    "div_events": [
+      {
+        "date": "2024-07-10",
+        "dividend_rub": 33.3
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "21-sma-cross-20-50-ls__adx25.italgo",
+    "entryTime": 1743984000,
+    "exitTime": null,
+    "pnl_raw": null,
+    "pnl_div_adjusted": null,
+    "div_cash_adjust": -72.48,
+    "div_events": [
+      {
+        "date": "2025-07-17",
+        "dividend_rub": 34.84
+      },
+      {
+        "date": "2026-07-17",
+        "dividend_rub": 37.64
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "21-sma-cross-20-50-ls__ema50.italgo",
+    "entryTime": 1743984000,
+    "exitTime": 1762387200,
+    "pnl_raw": -10.488102999999967,
+    "pnl_div_adjusted": -45.32810299999997,
+    "div_cash_adjust": -34.84,
+    "div_events": [
+      {
+        "date": "2025-07-17",
+        "dividend_rub": 34.84
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "21-sma-cross-20-50-ls__ema50.italgo",
+    "entryTime": 1781740800,
+    "exitTime": null,
+    "pnl_raw": null,
+    "pnl_div_adjusted": null,
+    "div_cash_adjust": -37.64,
+    "div_events": [
+      {
+        "date": "2026-07-17",
+        "dividend_rub": 37.64
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "21-sma-cross-20-50-ls__period05x.italgo",
+    "entryTime": 1752451200,
+    "exitTime": 1753315200,
+    "pnl_raw": -4.192205000000001,
+    "pnl_div_adjusted": -39.032205000000005,
+    "div_cash_adjust": -34.84,
+    "div_events": [
+      {
+        "date": "2025-07-17",
+        "dividend_rub": 34.84
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "21-sma-cross-20-50-ls__period05x.italgo",
+    "entryTime": 1781308800,
+    "exitTime": 1785974400,
+    "pnl_raw": 34.35899800000004,
+    "pnl_div_adjusted": -3.2810019999999582,
+    "div_cash_adjust": -37.64,
+    "div_events": [
+      {
+        "date": "2026-07-17",
+        "dividend_rub": 37.64
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "21-sma-cross-20-50-ls__period067.italgo",
+    "entryTime": 1780272000,
+    "exitTime": 1786406400,
+    "pnl_raw": 37.07940400000001,
+    "pnl_div_adjusted": -0.5605959999999897,
+    "div_cash_adjust": -37.64,
+    "div_events": [
+      {
+        "date": "2026-07-17",
+        "dividend_rub": 37.64
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "21-sma-cross-20-50-ls__period15x.italgo",
+    "entryTime": 1782086400,
+    "exitTime": null,
+    "pnl_raw": null,
+    "pnl_div_adjusted": null,
+    "div_cash_adjust": -37.64,
+    "div_events": [
+      {
+        "date": "2026-07-17",
+        "dividend_rub": 37.64
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "21-sma-cross-20-50-ls__period2x.italgo",
+    "entryTime": 1782518400,
+    "exitTime": null,
+    "pnl_raw": null,
+    "pnl_div_adjusted": null,
+    "div_cash_adjust": -37.64,
+    "div_events": [
+      {
+        "date": "2026-07-17",
+        "dividend_rub": 37.64
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "21-sma-cross-20-50-ls__rsi50.italgo",
+    "entryTime": 1743984000,
+    "exitTime": 1769731200,
+    "pnl_raw": -22.759329999999977,
+    "pnl_div_adjusted": -57.59932999999998,
+    "div_cash_adjust": -34.84,
+    "div_events": [
+      {
+        "date": "2025-07-17",
+        "dividend_rub": 34.84
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "21-sma-cross-20-50-ls__rsi50.italgo",
+    "entryTime": 1781740800,
+    "exitTime": null,
+    "pnl_raw": null,
+    "pnl_div_adjusted": null,
+    "div_cash_adjust": -37.64,
+    "div_events": [
+      {
+        "date": "2026-07-17",
+        "dividend_rub": 37.64
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "21-sma-cross-20-50-ls__sma200.italgo",
+    "entryTime": 1637798400,
+    "exitTime": 1697760000,
+    "pnl_raw": 53.790914999999984,
+    "pnl_div_adjusted": 28.790914999999984,
+    "div_cash_adjust": -25.0,
+    "div_events": [
+      {
+        "date": "2023-05-08",
+        "dividend_rub": 25.0
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "21-sma-cross-20-50-ls__sma200.italgo",
+    "entryTime": 1781740800,
+    "exitTime": null,
+    "pnl_raw": null,
+    "pnl_div_adjusted": null,
+    "div_cash_adjust": -37.64,
+    "div_events": [
+      {
+        "date": "2026-07-17",
+        "dividend_rub": 37.64
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "22-ema-cross-9-21-ls.italgo",
+    "entryTime": 1781654400,
+    "exitTime": 1785974400,
+    "pnl_raw": 32.57917600000002,
+    "pnl_div_adjusted": -5.0608239999999824,
+    "div_cash_adjust": -37.64,
+    "div_events": [
+      {
+        "date": "2026-07-17",
+        "dividend_rub": 37.64
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "22-ema-cross-9-21-ls__adx25.italgo",
+    "entryTime": 1752278400,
+    "exitTime": 1760745600,
+    "pnl_raw": 8.638869999999997,
+    "pnl_div_adjusted": -26.201130000000006,
+    "div_cash_adjust": -34.84,
+    "div_events": [
+      {
+        "date": "2025-07-17",
+        "dividend_rub": 34.84
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "22-ema-cross-9-21-ls__adx25.italgo",
+    "entryTime": 1761609600,
+    "exitTime": null,
+    "pnl_raw": null,
+    "pnl_div_adjusted": null,
+    "div_cash_adjust": -37.64,
+    "div_events": [
+      {
+        "date": "2026-07-17",
+        "dividend_rub": 37.64
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "22-ema-cross-9-21-ls__ema50.italgo",
+    "entryTime": 1781654400,
+    "exitTime": null,
+    "pnl_raw": null,
+    "pnl_div_adjusted": null,
+    "div_cash_adjust": -37.64,
+    "div_events": [
+      {
+        "date": "2026-07-17",
+        "dividend_rub": 37.64
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "22-ema-cross-9-21-ls__period05x.italgo",
+    "entryTime": 1720569600,
+    "exitTime": 1725926400,
+    "pnl_raw": 54.331638999999996,
+    "pnl_div_adjusted": 21.031639,
+    "div_cash_adjust": -33.3,
+    "div_events": [
+      {
+        "date": "2024-07-10",
+        "dividend_rub": 33.3
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "22-ema-cross-9-21-ls__period05x.italgo",
+    "entryTime": 1781654400,
+    "exitTime": 1785196800,
+    "pnl_raw": 45.87050500000004,
+    "pnl_div_adjusted": 8.230505000000036,
+    "div_cash_adjust": -37.64,
+    "div_events": [
+      {
+        "date": "2026-07-17",
+        "dividend_rub": 37.64
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "22-ema-cross-9-21-ls__period067.italgo",
+    "entryTime": 1781654400,
+    "exitTime": 1785715200,
+    "pnl_raw": 43.85030300000005,
+    "pnl_div_adjusted": 6.210303000000053,
+    "div_cash_adjust": -37.64,
+    "div_events": [
+      {
+        "date": "2026-07-17",
+        "dividend_rub": 37.64
+      }
+    ]
+  },
+  {
+    "symbol": "SBER",
+    "timeframe": "1d",
+    "file": "22-ema-cross-9-21-ls__period15x.italgo",
+    "entryTime": 1781740800,
+    "exitTime": null,
+    "pnl_raw": null,
+    "pnl_div_adjusted": null,
+    "div_cash_adjust": -37.64,
+    "div_events": [
+      {
+        "date": "2026-07-17",
+        "dividend_rub": 37.64
+      }
+    ]
+  }
+]

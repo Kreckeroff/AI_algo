@@ -69,7 +69,7 @@
 - Desktop: только **`ai-train`** — лаборатория обучения (прод UI позже). **§7G деплой policy — backlog.**
 - Цикл обучения: [`AGENT_TRAINING_LOOP.md`](work/AGENT_TRAINING_LOOP.md). Индекс волн: [`TRAINING_SESSION_INDEX.md`](work/TRAINING_SESSION_INDEX.md).
 - **Последняя train-волна: C14** — 10 equities + 3 futures × all TF; ~21.6k pairs; CV≈0.72/0.79; `34p-*`.
-- **Следующая: C15** — ATR SL/TP / remove-filter; **§7H дивгэп** — P3.7 backlog.
+- **P3.7:** Smart-Lab div cache + annotate C14 equities (`sessions/2026-08-21-p37-divgap`). Next: retrain with div features / C15 kinds.
 - Export: `python scripts/export_ingest_to_csv.py`
 - Команда **«продолжай обучение»** → следующая C-сессия + ANALYTICS + обновление индекса.
 - Целевой UX (чат, сборщик, dual release): [`STANDALONE_PRODUCT_UX.md`](work/STANDALONE_PRODUCT_UX.md) — после зрелости моделей.

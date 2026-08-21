@@ -1,0 +1,1800 @@
+{
+  "fetched_at": "2026-08-21T11:30:31Z",
+  "source": "smart-lab.ru/q/{SECID}/dividend/",
+  "note": "Provisional calendar for §7H. ex_effect_date=last_buy_date (cash charge if short is open through that session). MOEX ISS /dividends empty as of fetch date.",
+  "symbols": {
+    "GAZP": [
+      {
+        "secid": "GAZP",
+        "last_buy_date": "2013-05-13",
+        "registry_close_date": "2013-05-13",
+        "ex_effect_date": "2013-05-13",
+        "dividend_rub": 5.99,
+        "yield_pct": 4.6,
+        "period_label": "2012 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "GAZP",
+        "last_buy_date": "2014-07-17",
+        "registry_close_date": "2014-07-17",
+        "ex_effect_date": "2014-07-17",
+        "dividend_rub": 7.2,
+        "yield_pct": 4.9,
+        "period_label": "2013 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "GAZP",
+        "last_buy_date": "2015-07-16",
+        "registry_close_date": "2015-07-16",
+        "ex_effect_date": "2015-07-16",
+        "dividend_rub": 7.2,
+        "yield_pct": 4.9,
+        "period_label": "2014 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "GAZP",
+        "last_buy_date": "2016-07-20",
+        "registry_close_date": "2016-07-20",
+        "ex_effect_date": "2016-07-20",
+        "dividend_rub": 7.89,
+        "yield_pct": 5.4,
+        "period_label": "2015 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "GAZP",
+        "last_buy_date": "2017-07-18",
+        "registry_close_date": "2017-07-20",
+        "ex_effect_date": "2017-07-18",
+        "dividend_rub": 8.0397,
+        "yield_pct": 6.5,
+        "period_label": "2016 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "GAZP",
+        "last_buy_date": "2018-07-17",
+        "registry_close_date": "2018-07-19",
+        "ex_effect_date": "2018-07-17",
+        "dividend_rub": 8.04,
+        "yield_pct": 5.5,
+        "period_label": "2017 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "GAZP",
+        "last_buy_date": "2019-07-16",
+        "registry_close_date": "2019-07-18",
+        "ex_effect_date": "2019-07-16",
+        "dividend_rub": 16.61,
+        "yield_pct": 7.0,
+        "period_label": "2018 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "GAZP",
+        "last_buy_date": "2020-07-14",
+        "registry_close_date": "2020-07-16",
+        "ex_effect_date": "2020-07-14",
+        "dividend_rub": 15.24,
+        "yield_pct": 7.8,
+        "period_label": "2019 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "GAZP",
+        "last_buy_date": "2021-07-13",
+        "registry_close_date": "2021-07-15",
+        "ex_effect_date": "2021-07-13",
+        "dividend_rub": 12.55,
+        "yield_pct": 4.3,
+        "period_label": "2020 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "GAZP",
+        "last_buy_date": "2022-07-18",
+        "registry_close_date": "2022-07-20",
+        "ex_effect_date": "2022-07-18",
+        "dividend_rub": 52.53,
+        "yield_pct": 28.1,
+        "period_label": "2021 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "GAZP",
+        "last_buy_date": "2022-10-07",
+        "registry_close_date": "2022-10-11",
+        "ex_effect_date": "2022-10-07",
+        "dividend_rub": 51.03,
+        "yield_pct": 26.2,
+        "period_label": "2кв 2022",
+        "source": "smart-lab"
+      }
+    ],
+    "LKOH": [
+      {
+        "secid": "LKOH",
+        "last_buy_date": "2017-07-06",
+        "registry_close_date": "2017-07-10",
+        "ex_effect_date": "2017-07-06",
+        "dividend_rub": 120.0,
+        "yield_pct": 4.0,
+        "period_label": "4кв 2016",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "LKOH",
+        "last_buy_date": "2017-12-20",
+        "registry_close_date": "2017-12-22",
+        "ex_effect_date": "2017-12-20",
+        "dividend_rub": 85.0,
+        "yield_pct": 2.5,
+        "period_label": "3кв 2017",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "LKOH",
+        "last_buy_date": "2018-07-09",
+        "registry_close_date": "2018-07-11",
+        "ex_effect_date": "2018-07-09",
+        "dividend_rub": 130.0,
+        "yield_pct": 2.9,
+        "period_label": "4кв 2017",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "LKOH",
+        "last_buy_date": "2018-12-19",
+        "registry_close_date": "2018-12-21",
+        "ex_effect_date": "2018-12-19",
+        "dividend_rub": 95.0,
+        "yield_pct": 1.9,
+        "period_label": "3кв 2018",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "LKOH",
+        "last_buy_date": "2019-07-05",
+        "registry_close_date": "2019-07-09",
+        "ex_effect_date": "2019-07-05",
+        "dividend_rub": 155.0,
+        "yield_pct": 2.8,
+        "period_label": "4кв 2018",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "LKOH",
+        "last_buy_date": "2019-12-18",
+        "registry_close_date": "2019-12-20",
+        "ex_effect_date": "2019-12-18",
+        "dividend_rub": 192.0,
+        "yield_pct": 3.1,
+        "period_label": "3кв 2019",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "LKOH",
+        "last_buy_date": "2020-07-08",
+        "registry_close_date": "2020-07-10",
+        "ex_effect_date": "2020-07-08",
+        "dividend_rub": 350.0,
+        "yield_pct": 6.5,
+        "period_label": "4кв 2019",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "LKOH",
+        "last_buy_date": "2020-12-16",
+        "registry_close_date": "2020-12-18",
+        "ex_effect_date": "2020-12-16",
+        "dividend_rub": 46.0,
+        "yield_pct": 0.9,
+        "period_label": "3кв 2020",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "LKOH",
+        "last_buy_date": "2021-07-01",
+        "registry_close_date": "2021-07-05",
+        "ex_effect_date": "2021-07-01",
+        "dividend_rub": 213.0,
+        "yield_pct": 3.0,
+        "period_label": "4кв 2020",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "LKOH",
+        "last_buy_date": "2021-12-17",
+        "registry_close_date": "2021-12-21",
+        "ex_effect_date": "2021-12-17",
+        "dividend_rub": 340.0,
+        "yield_pct": 5.1,
+        "period_label": "3кв 2021",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "LKOH",
+        "last_buy_date": "2022-12-19",
+        "registry_close_date": "2022-12-21",
+        "ex_effect_date": "2022-12-19",
+        "dividend_rub": 537.0,
+        "yield_pct": 11.7,
+        "period_label": "2021 н/расп",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "LKOH",
+        "last_buy_date": "2022-12-19",
+        "registry_close_date": "2022-12-21",
+        "ex_effect_date": "2022-12-19",
+        "dividend_rub": 256.0,
+        "yield_pct": 5.6,
+        "period_label": "3кв 2022",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "LKOH",
+        "last_buy_date": "2023-06-01",
+        "registry_close_date": "2023-06-05",
+        "ex_effect_date": "2023-06-01",
+        "dividend_rub": 438.0,
+        "yield_pct": 7.8,
+        "period_label": "4кв 2022",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "LKOH",
+        "last_buy_date": "2023-12-14",
+        "registry_close_date": "2023-12-17",
+        "ex_effect_date": "2023-12-14",
+        "dividend_rub": 447.0,
+        "yield_pct": 6.5,
+        "period_label": "3кв 2023",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "LKOH",
+        "last_buy_date": "2024-05-06",
+        "registry_close_date": "2024-05-07",
+        "ex_effect_date": "2024-05-06",
+        "dividend_rub": 498.0,
+        "yield_pct": 6.2,
+        "period_label": "2023 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "LKOH",
+        "last_buy_date": "2024-12-16",
+        "registry_close_date": "2024-12-17",
+        "ex_effect_date": "2024-12-16",
+        "dividend_rub": 514.0,
+        "yield_pct": 7.6,
+        "period_label": "3кв 2024",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "LKOH",
+        "last_buy_date": "2025-06-02",
+        "registry_close_date": "2025-06-03",
+        "ex_effect_date": "2025-06-02",
+        "dividend_rub": 541.0,
+        "yield_pct": 8.0,
+        "period_label": "4кв 2024",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "LKOH",
+        "last_buy_date": "2026-01-09",
+        "registry_close_date": "2026-01-12",
+        "ex_effect_date": "2026-01-09",
+        "dividend_rub": 397.0,
+        "yield_pct": 6.8,
+        "period_label": "3кв 2025",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "LKOH",
+        "last_buy_date": "2026-04-30",
+        "registry_close_date": "2026-05-04",
+        "ex_effect_date": "2026-04-30",
+        "dividend_rub": 278.0,
+        "yield_pct": 5.1,
+        "period_label": "4кв 2025",
+        "source": "smart-lab"
+      }
+    ],
+    "ROSN": [
+      {
+        "secid": "ROSN",
+        "last_buy_date": "2017-06-29",
+        "registry_close_date": "2017-07-03",
+        "ex_effect_date": "2017-06-29",
+        "dividend_rub": 5.98,
+        "yield_pct": 1.8,
+        "period_label": "2016 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "ROSN",
+        "last_buy_date": "2017-10-06",
+        "registry_close_date": "2017-10-10",
+        "ex_effect_date": "2017-10-06",
+        "dividend_rub": 3.83,
+        "yield_pct": 1.2,
+        "period_label": "2кв 2017",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "ROSN",
+        "last_buy_date": "2018-06-28",
+        "registry_close_date": "2018-07-02",
+        "ex_effect_date": "2018-06-28",
+        "dividend_rub": 6.65,
+        "yield_pct": 1.7,
+        "period_label": "4кв 2017",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "ROSN",
+        "last_buy_date": "2018-10-05",
+        "registry_close_date": "2018-10-09",
+        "ex_effect_date": "2018-10-05",
+        "dividend_rub": 14.58,
+        "yield_pct": 2.9,
+        "period_label": "2кв 2018",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "ROSN",
+        "last_buy_date": "2019-06-13",
+        "registry_close_date": "2019-06-17",
+        "ex_effect_date": "2019-06-13",
+        "dividend_rub": 11.33,
+        "yield_pct": 2.7,
+        "period_label": "4кв 2018",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "ROSN",
+        "last_buy_date": "2019-10-09",
+        "registry_close_date": "2019-10-11",
+        "ex_effect_date": "2019-10-09",
+        "dividend_rub": 15.34,
+        "yield_pct": 3.6,
+        "period_label": "2кв 2019",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "ROSN",
+        "last_buy_date": "2020-06-10",
+        "registry_close_date": "2020-06-15",
+        "ex_effect_date": "2020-06-10",
+        "dividend_rub": 18.07,
+        "yield_pct": 4.5,
+        "period_label": "4кв 2019",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "ROSN",
+        "last_buy_date": "2021-06-11",
+        "registry_close_date": "2021-06-15",
+        "ex_effect_date": "2021-06-11",
+        "dividend_rub": 6.94,
+        "yield_pct": 1.3,
+        "period_label": "2020 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "ROSN",
+        "last_buy_date": "2021-10-07",
+        "registry_close_date": "2021-10-11",
+        "ex_effect_date": "2021-10-07",
+        "dividend_rub": 18.03,
+        "yield_pct": 2.8,
+        "period_label": "2кв 2021",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "ROSN",
+        "last_buy_date": "2022-07-07",
+        "registry_close_date": "2022-07-11",
+        "ex_effect_date": "2022-07-07",
+        "dividend_rub": 23.63,
+        "yield_pct": 6.5,
+        "period_label": "4кв 2021",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "ROSN",
+        "last_buy_date": "2023-01-10",
+        "registry_close_date": "2023-01-12",
+        "ex_effect_date": "2023-01-10",
+        "dividend_rub": 20.39,
+        "yield_pct": 5.6,
+        "period_label": "3кв 2022",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "ROSN",
+        "last_buy_date": "2023-07-07",
+        "registry_close_date": "2023-07-11",
+        "ex_effect_date": "2023-07-07",
+        "dividend_rub": 17.97,
+        "yield_pct": 3.7,
+        "period_label": "4кв 2022",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "ROSN",
+        "last_buy_date": "2024-01-10",
+        "registry_close_date": "2024-01-11",
+        "ex_effect_date": "2024-01-10",
+        "dividend_rub": 30.77,
+        "yield_pct": 5.1,
+        "period_label": "3кв 2023",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "ROSN",
+        "last_buy_date": "2024-07-08",
+        "registry_close_date": "2024-07-09",
+        "ex_effect_date": "2024-07-08",
+        "dividend_rub": 29.01,
+        "yield_pct": 5.2,
+        "period_label": "2023 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "ROSN",
+        "last_buy_date": "2025-01-09",
+        "registry_close_date": "2025-01-10",
+        "ex_effect_date": "2025-01-09",
+        "dividend_rub": 36.47,
+        "yield_pct": 7.6,
+        "period_label": "3кв 2024",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "ROSN",
+        "last_buy_date": "2025-07-17",
+        "registry_close_date": "2025-07-20",
+        "ex_effect_date": "2025-07-17",
+        "dividend_rub": 14.68,
+        "yield_pct": 3.5,
+        "period_label": "2024 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "ROSN",
+        "last_buy_date": "2026-01-09",
+        "registry_close_date": "2026-01-12",
+        "ex_effect_date": "2026-01-09",
+        "dividend_rub": 11.56,
+        "yield_pct": 2.9,
+        "period_label": "3кв 2025",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "ROSN",
+        "last_buy_date": "2026-07-08",
+        "registry_close_date": "2026-07-09",
+        "ex_effect_date": "2026-07-08",
+        "dividend_rub": 2.27,
+        "yield_pct": 0.7,
+        "period_label": "2025 год",
+        "source": "smart-lab"
+      }
+    ],
+    "GMKN": [
+      {
+        "secid": "GMKN",
+        "last_buy_date": "2014-06-06",
+        "registry_close_date": "2014-06-06",
+        "ex_effect_date": "2014-06-06",
+        "dividend_rub": 248.48,
+        "yield_pct": 3.6,
+        "period_label": "2013 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "GMKN",
+        "last_buy_date": "2014-12-11",
+        "registry_close_date": "2014-12-11",
+        "ex_effect_date": "2014-12-11",
+        "dividend_rub": 762.34,
+        "yield_pct": 8.1,
+        "period_label": "3кв 2014",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "GMKN",
+        "last_buy_date": "2015-05-13",
+        "registry_close_date": "2015-05-13",
+        "ex_effect_date": "2015-05-13",
+        "dividend_rub": 670.04,
+        "yield_pct": 6.4,
+        "period_label": "2014 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "GMKN",
+        "last_buy_date": "2015-09-14",
+        "registry_close_date": "2015-09-14",
+        "ex_effect_date": "2015-09-14",
+        "dividend_rub": 305.07,
+        "yield_pct": 2.8,
+        "period_label": "2кв 2015",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "GMKN",
+        "last_buy_date": "2015-12-19",
+        "registry_close_date": "2015-12-19",
+        "ex_effect_date": "2015-12-19",
+        "dividend_rub": 321.95,
+        "yield_pct": 3.4,
+        "period_label": "3кв 2015",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "GMKN",
+        "last_buy_date": "2016-06-21",
+        "registry_close_date": "2016-06-21",
+        "ex_effect_date": "2016-06-21",
+        "dividend_rub": 230.14,
+        "yield_pct": 2.7,
+        "period_label": "2015 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "GMKN",
+        "last_buy_date": "2016-12-28",
+        "registry_close_date": "2016-12-28",
+        "ex_effect_date": "2016-12-28",
+        "dividend_rub": 444.25,
+        "yield_pct": 4.5,
+        "period_label": "3кв 2016",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "GMKN",
+        "last_buy_date": "2017-06-21",
+        "registry_close_date": "2017-06-23",
+        "ex_effect_date": "2017-06-21",
+        "dividend_rub": 446.1,
+        "yield_pct": 5.4,
+        "period_label": "4кв 2016",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "GMKN",
+        "last_buy_date": "2017-10-17",
+        "registry_close_date": "2017-10-19",
+        "ex_effect_date": "2017-10-17",
+        "dividend_rub": 224.2,
+        "yield_pct": 2.1,
+        "period_label": "2кв 2017",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "GMKN",
+        "last_buy_date": "2018-07-13",
+        "registry_close_date": "2018-07-17",
+        "ex_effect_date": "2018-07-13",
+        "dividend_rub": 607.98,
+        "yield_pct": 5.3,
+        "period_label": "4кв 2017",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "GMKN",
+        "last_buy_date": "2018-09-27",
+        "registry_close_date": "2018-10-01",
+        "ex_effect_date": "2018-09-27",
+        "dividend_rub": 776.02,
+        "yield_pct": 6.6,
+        "period_label": "2кв 2018",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "GMKN",
+        "last_buy_date": "2019-06-19",
+        "registry_close_date": "2019-06-21",
+        "ex_effect_date": "2019-06-19",
+        "dividend_rub": 792.52,
+        "yield_pct": 5.3,
+        "period_label": "4кв 2018",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "GMKN",
+        "last_buy_date": "2019-10-03",
+        "registry_close_date": "2019-10-07",
+        "ex_effect_date": "2019-10-03",
+        "dividend_rub": 883.93,
+        "yield_pct": 5.3,
+        "period_label": "2кв 2019",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "GMKN",
+        "last_buy_date": "2019-12-25",
+        "registry_close_date": "2019-12-27",
+        "ex_effect_date": "2019-12-25",
+        "dividend_rub": 604.09,
+        "yield_pct": 3.0,
+        "period_label": "3кв 2019",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "GMKN",
+        "last_buy_date": "2020-05-21",
+        "registry_close_date": "2020-05-25",
+        "ex_effect_date": "2020-05-21",
+        "dividend_rub": 557.2,
+        "yield_pct": 2.5,
+        "period_label": "4кв 2019",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "GMKN",
+        "last_buy_date": "2020-12-22",
+        "registry_close_date": "2020-12-24",
+        "ex_effect_date": "2020-12-22",
+        "dividend_rub": 623.35,
+        "yield_pct": 2.6,
+        "period_label": "3кв 2020",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "GMKN",
+        "last_buy_date": "2021-05-28",
+        "registry_close_date": "2021-06-01",
+        "ex_effect_date": "2021-05-28",
+        "dividend_rub": 1021.22,
+        "yield_pct": 3.7,
+        "period_label": "2020 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "GMKN",
+        "last_buy_date": "2022-01-12",
+        "registry_close_date": "2022-01-14",
+        "ex_effect_date": "2022-01-12",
+        "dividend_rub": 1523.17,
+        "yield_pct": 6.3,
+        "period_label": "3кв 2021",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "GMKN",
+        "last_buy_date": "2022-06-09",
+        "registry_close_date": "2022-06-14",
+        "ex_effect_date": "2022-06-09",
+        "dividend_rub": 1166.22,
+        "yield_pct": 5.8,
+        "period_label": "4кв 2021",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "GMKN",
+        "last_buy_date": "2023-12-25",
+        "registry_close_date": "2023-12-26",
+        "ex_effect_date": "2023-12-25",
+        "dividend_rub": 915.33,
+        "yield_pct": 5.4,
+        "period_label": "3кв 2023",
+        "source": "smart-lab"
+      }
+    ],
+    "NVTK": [
+      {
+        "secid": "NVTK",
+        "last_buy_date": "2017-04-27",
+        "registry_close_date": "2017-05-02",
+        "ex_effect_date": "2017-04-27",
+        "dividend_rub": 7.0,
+        "yield_pct": 1.0,
+        "period_label": "4кв 2016",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "NVTK",
+        "last_buy_date": "2017-10-06",
+        "registry_close_date": "2017-10-10",
+        "ex_effect_date": "2017-10-06",
+        "dividend_rub": 6.95,
+        "yield_pct": 1.0,
+        "period_label": "2кв 2017",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "NVTK",
+        "last_buy_date": "2018-04-30",
+        "registry_close_date": "2018-05-03",
+        "ex_effect_date": "2018-04-30",
+        "dividend_rub": 8.0,
+        "yield_pct": 1.0,
+        "period_label": "4кв 2017",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "NVTK",
+        "last_buy_date": "2018-10-08",
+        "registry_close_date": "2018-10-10",
+        "ex_effect_date": "2018-10-08",
+        "dividend_rub": 9.25,
+        "yield_pct": 0.8,
+        "period_label": "2кв 2018",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "NVTK",
+        "last_buy_date": "2019-05-02",
+        "registry_close_date": "2019-05-06",
+        "ex_effect_date": "2019-05-02",
+        "dividend_rub": 16.81,
+        "yield_pct": 1.4,
+        "period_label": "4кв 2018",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "NVTK",
+        "last_buy_date": "2019-10-08",
+        "registry_close_date": "2019-10-10",
+        "ex_effect_date": "2019-10-08",
+        "dividend_rub": 14.23,
+        "yield_pct": 1.1,
+        "period_label": "2кв 2019",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "NVTK",
+        "last_buy_date": "2020-05-06",
+        "registry_close_date": "2020-05-08",
+        "ex_effect_date": "2020-05-06",
+        "dividend_rub": 18.1,
+        "yield_pct": 1.7,
+        "period_label": "4кв 2019",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "NVTK",
+        "last_buy_date": "2020-10-08",
+        "registry_close_date": "2020-10-12",
+        "ex_effect_date": "2020-10-08",
+        "dividend_rub": 11.82,
+        "yield_pct": 1.1,
+        "period_label": "2кв 2020",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "NVTK",
+        "last_buy_date": "2021-05-05",
+        "registry_close_date": "2021-05-07",
+        "ex_effect_date": "2021-05-05",
+        "dividend_rub": 23.74,
+        "yield_pct": 1.7,
+        "period_label": "4кв 2020",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "NVTK",
+        "last_buy_date": "2021-10-07",
+        "registry_close_date": "2021-10-11",
+        "ex_effect_date": "2021-10-07",
+        "dividend_rub": 27.67,
+        "yield_pct": 1.4,
+        "period_label": "2кв 2021",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "NVTK",
+        "last_buy_date": "2022-05-03",
+        "registry_close_date": "2022-05-05",
+        "ex_effect_date": "2022-05-03",
+        "dividend_rub": 43.77,
+        "yield_pct": 4.1,
+        "period_label": "4кв 2021",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "NVTK",
+        "last_buy_date": "2022-10-05",
+        "registry_close_date": "2022-10-09",
+        "ex_effect_date": "2022-10-05",
+        "dividend_rub": 45.0,
+        "yield_pct": 4.5,
+        "period_label": "2кв 2022",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "NVTK",
+        "last_buy_date": "2023-04-28",
+        "registry_close_date": "2023-05-03",
+        "ex_effect_date": "2023-04-28",
+        "dividend_rub": 60.58,
+        "yield_pct": 4.5,
+        "period_label": "4кв 2022",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "NVTK",
+        "last_buy_date": "2023-10-09",
+        "registry_close_date": "2023-10-10",
+        "ex_effect_date": "2023-10-09",
+        "dividend_rub": 34.5,
+        "yield_pct": 2.0,
+        "period_label": "2кв 2023",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "NVTK",
+        "last_buy_date": "2024-03-25",
+        "registry_close_date": "2024-03-26",
+        "ex_effect_date": "2024-03-25",
+        "dividend_rub": 44.09,
+        "yield_pct": 3.2,
+        "period_label": "2023 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "NVTK",
+        "last_buy_date": "2024-10-10",
+        "registry_close_date": "2024-10-11",
+        "ex_effect_date": "2024-10-10",
+        "dividend_rub": 35.5,
+        "yield_pct": 3.6,
+        "period_label": "2кв 2024",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "NVTK",
+        "last_buy_date": "2025-04-25",
+        "registry_close_date": "2025-04-28",
+        "ex_effect_date": "2025-04-25",
+        "dividend_rub": 46.65,
+        "yield_pct": 3.8,
+        "period_label": "2024 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "NVTK",
+        "last_buy_date": "2025-10-03",
+        "registry_close_date": "2025-10-06",
+        "ex_effect_date": "2025-10-03",
+        "dividend_rub": 35.5,
+        "yield_pct": 3.2,
+        "period_label": "2кв 2025",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "NVTK",
+        "last_buy_date": "2026-04-10",
+        "registry_close_date": "2026-04-13",
+        "ex_effect_date": "2026-04-10",
+        "dividend_rub": 47.23,
+        "yield_pct": 3.8,
+        "period_label": "4кв 2025",
+        "source": "smart-lab"
+      }
+    ],
+    "TATN": [
+      {
+        "secid": "TATN",
+        "last_buy_date": "2017-07-05",
+        "registry_close_date": "2017-07-07",
+        "ex_effect_date": "2017-07-05",
+        "dividend_rub": 22.81,
+        "yield_pct": 5.9,
+        "period_label": "2016 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "TATN",
+        "last_buy_date": "2017-12-20",
+        "registry_close_date": "2017-12-23",
+        "ex_effect_date": "2017-12-20",
+        "dividend_rub": 27.78,
+        "yield_pct": 5.8,
+        "period_label": "3кв 2017",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "TATN",
+        "last_buy_date": "2018-07-04",
+        "registry_close_date": "2018-07-06",
+        "ex_effect_date": "2018-07-04",
+        "dividend_rub": 12.16,
+        "yield_pct": 1.8,
+        "period_label": "4кв 2017",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "TATN",
+        "last_buy_date": "2018-10-10",
+        "registry_close_date": "2018-10-12",
+        "ex_effect_date": "2018-10-10",
+        "dividend_rub": 30.27,
+        "yield_pct": 3.7,
+        "period_label": "2кв 2018",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "TATN",
+        "last_buy_date": "2019-01-04",
+        "registry_close_date": "2019-01-09",
+        "ex_effect_date": "2019-01-04",
+        "dividend_rub": 22.26,
+        "yield_pct": 3.0,
+        "period_label": "3кв 2018",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "TATN",
+        "last_buy_date": "2019-07-03",
+        "registry_close_date": "2019-07-05",
+        "ex_effect_date": "2019-07-03",
+        "dividend_rub": 32.38,
+        "yield_pct": 4.2,
+        "period_label": "4кв 2018",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "TATN",
+        "last_buy_date": "2019-09-25",
+        "registry_close_date": "2019-09-27",
+        "ex_effect_date": "2019-09-25",
+        "dividend_rub": 40.11,
+        "yield_pct": 5.4,
+        "period_label": "2кв 2019",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "TATN",
+        "last_buy_date": "2019-12-26",
+        "registry_close_date": "2019-12-30",
+        "ex_effect_date": "2019-12-26",
+        "dividend_rub": 24.36,
+        "yield_pct": 3.1,
+        "period_label": "3кв 2019",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "TATN",
+        "last_buy_date": "2020-10-08",
+        "registry_close_date": "2020-10-12",
+        "ex_effect_date": "2020-10-08",
+        "dividend_rub": 9.94,
+        "yield_pct": 2.1,
+        "period_label": "2кв 2020",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "TATN",
+        "last_buy_date": "2021-07-07",
+        "registry_close_date": "2021-07-09",
+        "ex_effect_date": "2021-07-07",
+        "dividend_rub": 12.3,
+        "yield_pct": 2.3,
+        "period_label": "4кв 2020",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "TATN",
+        "last_buy_date": "2021-10-08",
+        "registry_close_date": "2021-10-12",
+        "ex_effect_date": "2021-10-08",
+        "dividend_rub": 16.52,
+        "yield_pct": 2.9,
+        "period_label": "2кв 2021",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "TATN",
+        "last_buy_date": "2022-01-05",
+        "registry_close_date": "2022-01-10",
+        "ex_effect_date": "2022-01-05",
+        "dividend_rub": 9.98,
+        "yield_pct": 2.0,
+        "period_label": "3кв 2021",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "TATN",
+        "last_buy_date": "2022-07-06",
+        "registry_close_date": "2022-07-08",
+        "ex_effect_date": "2022-07-06",
+        "dividend_rub": 16.14,
+        "yield_pct": 3.8,
+        "period_label": "4кв 2021",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "TATN",
+        "last_buy_date": "2022-10-07",
+        "registry_close_date": "2022-10-11",
+        "ex_effect_date": "2022-10-07",
+        "dividend_rub": 32.71,
+        "yield_pct": 8.9,
+        "period_label": "2кв 2022",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "TATN",
+        "last_buy_date": "2023-01-06",
+        "registry_close_date": "2023-01-10",
+        "ex_effect_date": "2023-01-06",
+        "dividend_rub": 6.86,
+        "yield_pct": 2.0,
+        "period_label": "3кв 2022",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "TATN",
+        "last_buy_date": "2023-07-07",
+        "registry_close_date": "2023-07-11",
+        "ex_effect_date": "2023-07-07",
+        "dividend_rub": 27.71,
+        "yield_pct": 5.5,
+        "period_label": "4кв 2022",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "TATN",
+        "last_buy_date": "2023-10-10",
+        "registry_close_date": "2023-10-11",
+        "ex_effect_date": "2023-10-10",
+        "dividend_rub": 27.54,
+        "yield_pct": 4.2,
+        "period_label": "2кв 2023",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "TATN",
+        "last_buy_date": "2024-01-08",
+        "registry_close_date": "2024-01-09",
+        "ex_effect_date": "2024-01-08",
+        "dividend_rub": 35.17,
+        "yield_pct": 4.9,
+        "period_label": "3кв 2023",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "TATN",
+        "last_buy_date": "2024-07-08",
+        "registry_close_date": "2024-07-09",
+        "ex_effect_date": "2024-07-08",
+        "dividend_rub": 25.17,
+        "yield_pct": 3.6,
+        "period_label": "2023 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "TATN",
+        "last_buy_date": "2024-10-07",
+        "registry_close_date": "2024-10-08",
+        "ex_effect_date": "2024-10-07",
+        "dividend_rub": 38.2,
+        "yield_pct": 5.8,
+        "period_label": "2кв 2024",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "TATN",
+        "last_buy_date": "2025-01-07",
+        "registry_close_date": "2025-01-08",
+        "ex_effect_date": "2025-01-07",
+        "dividend_rub": 17.39,
+        "yield_pct": 3.3,
+        "period_label": "3кв 2024",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "TATN",
+        "last_buy_date": "2025-05-30",
+        "registry_close_date": "2025-06-02",
+        "ex_effect_date": "2025-05-30",
+        "dividend_rub": 43.11,
+        "yield_pct": 6.1,
+        "period_label": "4кв 2024",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "TATN",
+        "last_buy_date": "2025-10-13",
+        "registry_close_date": "2025-10-14",
+        "ex_effect_date": "2025-10-13",
+        "dividend_rub": 14.35,
+        "yield_pct": 2.4,
+        "period_label": "2кв 2025",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "TATN",
+        "last_buy_date": "2026-01-08",
+        "registry_close_date": "2026-01-11",
+        "ex_effect_date": "2026-01-08",
+        "dividend_rub": 8.13,
+        "yield_pct": 1.4,
+        "period_label": "3кв 2025",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "TATN",
+        "last_buy_date": "2026-07-14",
+        "registry_close_date": "2026-07-15",
+        "ex_effect_date": "2026-07-14",
+        "dividend_rub": 11.61,
+        "yield_pct": 2.4,
+        "period_label": "4кв 2025",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "TATN",
+        "last_buy_date": "2026-10-12",
+        "registry_close_date": "2026-10-13",
+        "ex_effect_date": "2026-10-12",
+        "dividend_rub": 32.88,
+        "yield_pct": 6.2,
+        "period_label": "2кв 2026",
+        "source": "smart-lab"
+      }
+    ],
+    "PLZL": [
+      {
+        "secid": "PLZL",
+        "last_buy_date": "2017-07-13",
+        "registry_close_date": "2017-07-17",
+        "ex_effect_date": "2017-07-13",
+        "dividend_rub": 152.41,
+        "yield_pct": 3.8,
+        "period_label": "2016 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "PLZL",
+        "last_buy_date": "2017-09-21",
+        "registry_close_date": "2017-09-25",
+        "ex_effect_date": "2017-09-21",
+        "dividend_rub": 104.3,
+        "yield_pct": 2.3,
+        "period_label": "2кв 2017",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "PLZL",
+        "last_buy_date": "2018-06-06",
+        "registry_close_date": "2018-06-10",
+        "ex_effect_date": "2018-06-06",
+        "dividend_rub": 147.12,
+        "yield_pct": 3.8,
+        "period_label": "2017 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "PLZL",
+        "last_buy_date": "2018-10-16",
+        "registry_close_date": "2018-10-18",
+        "ex_effect_date": "2018-10-16",
+        "dividend_rub": 131.11,
+        "yield_pct": 3.0,
+        "period_label": "2кв 2018",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "PLZL",
+        "last_buy_date": "2019-05-14",
+        "registry_close_date": "2019-05-16",
+        "ex_effect_date": "2019-05-14",
+        "dividend_rub": 143.62,
+        "yield_pct": 2.9,
+        "period_label": "4кв 2018",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "PLZL",
+        "last_buy_date": "2019-10-08",
+        "registry_close_date": "2019-10-10",
+        "ex_effect_date": "2019-10-08",
+        "dividend_rub": 162.98,
+        "yield_pct": 2.1,
+        "period_label": "2кв 2019",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "PLZL",
+        "last_buy_date": "2020-08-26",
+        "registry_close_date": "2020-08-28",
+        "ex_effect_date": "2020-08-26",
+        "dividend_rub": 244.75,
+        "yield_pct": 1.3,
+        "period_label": "4кв 2019",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "PLZL",
+        "last_buy_date": "2020-10-16",
+        "registry_close_date": "2020-10-20",
+        "ex_effect_date": "2020-10-16",
+        "dividend_rub": 240.18,
+        "yield_pct": 1.4,
+        "period_label": "2кв 2020",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "PLZL",
+        "last_buy_date": "2021-06-03",
+        "registry_close_date": "2021-06-07",
+        "ex_effect_date": "2021-06-03",
+        "dividend_rub": 387.15,
+        "yield_pct": 2.4,
+        "period_label": "4кв 2020",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "PLZL",
+        "last_buy_date": "2021-10-07",
+        "registry_close_date": "2021-10-11",
+        "ex_effect_date": "2021-10-07",
+        "dividend_rub": 267.48,
+        "yield_pct": 2.1,
+        "period_label": "2кв 2021",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "PLZL",
+        "last_buy_date": "2023-06-14",
+        "registry_close_date": "2023-06-16",
+        "ex_effect_date": "2023-06-14",
+        "dividend_rub": 436.79,
+        "yield_pct": 4.2,
+        "period_label": "2022 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "PLZL",
+        "last_buy_date": "2024-12-12",
+        "registry_close_date": "2024-12-13",
+        "ex_effect_date": "2024-12-12",
+        "dividend_rub": 1301.75,
+        "yield_pct": 8.9,
+        "period_label": "3кв 2024",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "PLZL",
+        "last_buy_date": "2025-04-24",
+        "registry_close_date": "2025-04-25",
+        "ex_effect_date": "2025-04-24",
+        "dividend_rub": 73.0,
+        "yield_pct": 3.8,
+        "period_label": "2024 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "PLZL",
+        "last_buy_date": "2025-10-10",
+        "registry_close_date": "2025-10-13",
+        "ex_effect_date": "2025-10-10",
+        "dividend_rub": 70.85,
+        "yield_pct": 3.1,
+        "period_label": "2кв 2025",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "PLZL",
+        "last_buy_date": "2025-12-19",
+        "registry_close_date": "2025-12-22",
+        "ex_effect_date": "2025-12-19",
+        "dividend_rub": 36.0,
+        "yield_pct": 1.6,
+        "period_label": "3кв 2025",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "PLZL",
+        "last_buy_date": "2026-05-15",
+        "registry_close_date": "2026-05-18",
+        "ex_effect_date": "2026-05-15",
+        "dividend_rub": 56.8,
+        "yield_pct": 2.7,
+        "period_label": "4кв 2025",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "PLZL",
+        "last_buy_date": "2026-07-10",
+        "registry_close_date": "2026-07-13",
+        "ex_effect_date": "2026-07-10",
+        "dividend_rub": 29.05,
+        "yield_pct": 2.4,
+        "period_label": "1кв 2026",
+        "source": "smart-lab"
+      }
+    ],
+    "MGNT": [
+      {
+        "secid": "MGNT",
+        "last_buy_date": "2014-06-30",
+        "registry_close_date": "2014-06-30",
+        "ex_effect_date": "2014-06-30",
+        "dividend_rub": 89.15,
+        "yield_pct": 1.0,
+        "period_label": "2013 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "MGNT",
+        "last_buy_date": "2014-10-10",
+        "registry_close_date": "2014-10-10",
+        "ex_effect_date": "2014-10-10",
+        "dividend_rub": 78.3,
+        "yield_pct": 0.8,
+        "period_label": "2кв 2014",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "MGNT",
+        "last_buy_date": "2014-12-30",
+        "registry_close_date": "2014-12-30",
+        "ex_effect_date": "2014-12-30",
+        "dividend_rub": 152.07,
+        "yield_pct": 1.5,
+        "period_label": "3кв 2014",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "MGNT",
+        "last_buy_date": "2015-06-19",
+        "registry_close_date": "2015-06-19",
+        "ex_effect_date": "2015-06-19",
+        "dividend_rub": 132.57,
+        "yield_pct": 1.2,
+        "period_label": "2014 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "MGNT",
+        "last_buy_date": "2015-10-09",
+        "registry_close_date": "2015-10-09",
+        "ex_effect_date": "2015-10-09",
+        "dividend_rub": 88.4,
+        "yield_pct": 0.8,
+        "period_label": "2кв 2015",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "MGNT",
+        "last_buy_date": "2016-01-08",
+        "registry_close_date": "2016-01-08",
+        "ex_effect_date": "2016-01-08",
+        "dividend_rub": 179.77,
+        "yield_pct": 1.6,
+        "period_label": "3кв 2015",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "MGNT",
+        "last_buy_date": "2016-06-17",
+        "registry_close_date": "2016-06-17",
+        "ex_effect_date": "2016-06-17",
+        "dividend_rub": 42.3,
+        "yield_pct": 0.5,
+        "period_label": "2015 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "MGNT",
+        "last_buy_date": "2016-09-23",
+        "registry_close_date": "2016-09-23",
+        "ex_effect_date": "2016-09-23",
+        "dividend_rub": 84.6,
+        "yield_pct": 0.8,
+        "period_label": "2кв 2016",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "MGNT",
+        "last_buy_date": "2016-12-23",
+        "registry_close_date": "2016-12-23",
+        "ex_effect_date": "2016-12-23",
+        "dividend_rub": 126.12,
+        "yield_pct": 1.2,
+        "period_label": "3кв 2016",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "MGNT",
+        "last_buy_date": "2017-06-21",
+        "registry_close_date": "2017-06-23",
+        "ex_effect_date": "2017-06-21",
+        "dividend_rub": 67.41,
+        "yield_pct": 0.7,
+        "period_label": "2016 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "MGNT",
+        "last_buy_date": "2017-09-13",
+        "registry_close_date": "2017-09-15",
+        "ex_effect_date": "2017-09-13",
+        "dividend_rub": 115.51,
+        "yield_pct": 1.1,
+        "period_label": "2кв 2017",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "MGNT",
+        "last_buy_date": "2018-07-04",
+        "registry_close_date": "2018-07-06",
+        "ex_effect_date": "2018-07-04",
+        "dividend_rub": 135.5,
+        "yield_pct": 2.9,
+        "period_label": "2017 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "MGNT",
+        "last_buy_date": "2018-12-19",
+        "registry_close_date": "2018-12-21",
+        "ex_effect_date": "2018-12-19",
+        "dividend_rub": 137.38,
+        "yield_pct": 3.7,
+        "period_label": "3кв 2018",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "MGNT",
+        "last_buy_date": "2019-06-11",
+        "registry_close_date": "2019-06-14",
+        "ex_effect_date": "2019-06-11",
+        "dividend_rub": 166.78,
+        "yield_pct": 4.4,
+        "period_label": "4кв 2018",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "MGNT",
+        "last_buy_date": "2020-01-08",
+        "registry_close_date": "2020-01-10",
+        "ex_effect_date": "2020-01-08",
+        "dividend_rub": 147.19,
+        "yield_pct": 4.3,
+        "period_label": "3кв 2019",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "MGNT",
+        "last_buy_date": "2020-06-17",
+        "registry_close_date": "2020-06-19",
+        "ex_effect_date": "2020-06-17",
+        "dividend_rub": 157.0,
+        "yield_pct": 4.0,
+        "period_label": "4кв 2019",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "MGNT",
+        "last_buy_date": "2021-01-05",
+        "registry_close_date": "2021-01-08",
+        "ex_effect_date": "2021-01-05",
+        "dividend_rub": 245.31,
+        "yield_pct": 4.3,
+        "period_label": "3кв 2020",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "MGNT",
+        "last_buy_date": "2021-06-23",
+        "registry_close_date": "2021-06-25",
+        "ex_effect_date": "2021-06-23",
+        "dividend_rub": 245.31,
+        "yield_pct": 4.4,
+        "period_label": "4кв 2020",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "MGNT",
+        "last_buy_date": "2021-12-28",
+        "registry_close_date": "2021-12-31",
+        "ex_effect_date": "2021-12-28",
+        "dividend_rub": 294.37,
+        "yield_pct": 5.2,
+        "period_label": "3кв 2021",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "MGNT",
+        "last_buy_date": "2024-01-10",
+        "registry_close_date": "2024-01-11",
+        "ex_effect_date": "2024-01-10",
+        "dividend_rub": 412.13,
+        "yield_pct": 5.6,
+        "period_label": "2022 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "MGNT",
+        "last_buy_date": "2024-07-12",
+        "registry_close_date": "2024-07-15",
+        "ex_effect_date": "2024-07-12",
+        "dividend_rub": 412.13,
+        "yield_pct": 6.6,
+        "period_label": "2023 год",
+        "source": "smart-lab"
+      }
+    ],
+    "MTSS": [
+      {
+        "secid": "MTSS",
+        "last_buy_date": "2017-07-06",
+        "registry_close_date": "2017-07-10",
+        "ex_effect_date": "2017-07-06",
+        "dividend_rub": 15.6,
+        "yield_pct": 6.6,
+        "period_label": "4кв 2016",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "MTSS",
+        "last_buy_date": "2017-10-11",
+        "registry_close_date": "2017-10-13",
+        "ex_effect_date": "2017-10-11",
+        "dividend_rub": 10.4,
+        "yield_pct": 3.6,
+        "period_label": "2кв 2017",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "MTSS",
+        "last_buy_date": "2018-07-05",
+        "registry_close_date": "2018-07-09",
+        "ex_effect_date": "2018-07-05",
+        "dividend_rub": 23.4,
+        "yield_pct": 8.1,
+        "period_label": "4кв 2017",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "MTSS",
+        "last_buy_date": "2018-10-05",
+        "registry_close_date": "2018-10-09",
+        "ex_effect_date": "2018-10-05",
+        "dividend_rub": 2.6,
+        "yield_pct": 0.9,
+        "period_label": "2кв 2018",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "MTSS",
+        "last_buy_date": "2019-07-05",
+        "registry_close_date": "2019-07-09",
+        "ex_effect_date": "2019-07-05",
+        "dividend_rub": 19.98,
+        "yield_pct": 7.0,
+        "period_label": "4кв 2018",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "MTSS",
+        "last_buy_date": "2019-10-10",
+        "registry_close_date": "2019-10-14",
+        "ex_effect_date": "2019-10-10",
+        "dividend_rub": 8.68,
+        "yield_pct": 3.2,
+        "period_label": "2кв 2019",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "MTSS",
+        "last_buy_date": "2020-01-08",
+        "registry_close_date": "2020-01-10",
+        "ex_effect_date": "2020-01-08",
+        "dividend_rub": 13.25,
+        "yield_pct": 4.0,
+        "period_label": "3кв 2019",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "MTSS",
+        "last_buy_date": "2020-07-07",
+        "registry_close_date": "2020-07-09",
+        "ex_effect_date": "2020-07-07",
+        "dividend_rub": 20.57,
+        "yield_pct": 6.1,
+        "period_label": "4кв 2019",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "MTSS",
+        "last_buy_date": "2020-10-08",
+        "registry_close_date": "2020-10-12",
+        "ex_effect_date": "2020-10-08",
+        "dividend_rub": 8.93,
+        "yield_pct": 2.7,
+        "period_label": "2кв 2020",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "MTSS",
+        "last_buy_date": "2021-07-06",
+        "registry_close_date": "2021-07-08",
+        "ex_effect_date": "2021-07-06",
+        "dividend_rub": 26.51,
+        "yield_pct": 7.6,
+        "period_label": "4кв 2020",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "MTSS",
+        "last_buy_date": "2021-10-08",
+        "registry_close_date": "2021-10-12",
+        "ex_effect_date": "2021-10-08",
+        "dividend_rub": 10.55,
+        "yield_pct": 3.2,
+        "period_label": "2кв 2021",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "MTSS",
+        "last_buy_date": "2022-07-08",
+        "registry_close_date": "2022-07-12",
+        "ex_effect_date": "2022-07-08",
+        "dividend_rub": 33.85,
+        "yield_pct": 12.3,
+        "period_label": "2021 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "MTSS",
+        "last_buy_date": "2023-06-27",
+        "registry_close_date": "2023-06-29",
+        "ex_effect_date": "2023-06-27",
+        "dividend_rub": 34.29,
+        "yield_pct": 9.9,
+        "period_label": "2022 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "MTSS",
+        "last_buy_date": "2024-07-15",
+        "registry_close_date": "2024-07-16",
+        "ex_effect_date": "2024-07-15",
+        "dividend_rub": 35.0,
+        "yield_pct": 13.4,
+        "period_label": "2023 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "MTSS",
+        "last_buy_date": "2025-07-04",
+        "registry_close_date": "2025-07-07",
+        "ex_effect_date": "2025-07-04",
+        "dividend_rub": 35.0,
+        "yield_pct": 15.4,
+        "period_label": "2024 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "MTSS",
+        "last_buy_date": "2026-07-08",
+        "registry_close_date": "2026-07-09",
+        "ex_effect_date": "2026-07-08",
+        "dividend_rub": 35.0,
+        "yield_pct": 16.7,
+        "period_label": "2025 год",
+        "source": "smart-lab"
+      }
+    ],
+    "SBER": [
+      {
+        "secid": "SBER",
+        "last_buy_date": "2017-06-09",
+        "registry_close_date": "2017-06-14",
+        "ex_effect_date": "2017-06-09",
+        "dividend_rub": 6.0,
+        "yield_pct": 4.0,
+        "period_label": "2016 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "SBER",
+        "last_buy_date": "2018-06-22",
+        "registry_close_date": "2018-06-26",
+        "ex_effect_date": "2018-06-22",
+        "dividend_rub": 12.0,
+        "yield_pct": 5.6,
+        "period_label": "2017 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "SBER",
+        "last_buy_date": "2019-06-10",
+        "registry_close_date": "2019-06-13",
+        "ex_effect_date": "2019-06-10",
+        "dividend_rub": 16.0,
+        "yield_pct": 6.4,
+        "period_label": "2018 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "SBER",
+        "last_buy_date": "2020-10-01",
+        "registry_close_date": "2020-10-05",
+        "ex_effect_date": "2020-10-01",
+        "dividend_rub": 18.7,
+        "yield_pct": 8.2,
+        "period_label": "2019 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "SBER",
+        "last_buy_date": "2021-05-10",
+        "registry_close_date": "2021-05-12",
+        "ex_effect_date": "2021-05-10",
+        "dividend_rub": 18.7,
+        "yield_pct": 5.9,
+        "period_label": "2020 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "SBER",
+        "last_buy_date": "2023-05-08",
+        "registry_close_date": "2023-05-11",
+        "ex_effect_date": "2023-05-08",
+        "dividend_rub": 25.0,
+        "yield_pct": 10.5,
+        "period_label": "2022 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "SBER",
+        "last_buy_date": "2024-07-10",
+        "registry_close_date": "2024-07-11",
+        "ex_effect_date": "2024-07-10",
+        "dividend_rub": 33.3,
+        "yield_pct": 10.5,
+        "period_label": "2023 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "SBER",
+        "last_buy_date": "2025-07-17",
+        "registry_close_date": "2025-07-18",
+        "ex_effect_date": "2025-07-17",
+        "dividend_rub": 34.84,
+        "yield_pct": 10.7,
+        "period_label": "2024 год",
+        "source": "smart-lab"
+      },
+      {
+        "secid": "SBER",
+        "last_buy_date": "2026-07-17",
+        "registry_close_date": "2026-07-20",
+        "ex_effect_date": "2026-07-17",
+        "dividend_rub": 37.64,
+        "yield_pct": 13.6,
+        "period_label": "2025 год",
+        "source": "smart-lab"
+      }
+    ]
+  },
+  "errors": {},
+  "counts": {
+    "GAZP": 11,
+    "LKOH": 19,
+    "ROSN": 18,
+    "GMKN": 20,
+    "NVTK": 19,
+    "TATN": 26,
+    "PLZL": 17,
+    "MGNT": 21,
+    "MTSS": 16,
+    "SBER": 9
+  }
+}
