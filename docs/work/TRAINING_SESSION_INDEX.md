@@ -23,7 +23,7 @@
 | **7E** | `trades[]` good/bad → блок / period | C5–C6+ |
 | **7F** | Постоянно расширять **тикеры + датасет** | C9→C13: 10 equities |
 | **7G** | Деплой policy в Desktop / live actions — **не сейчас** | backlog |
-| **7H** | **Дивгэп:** шорт на акциях/индексе не зарабатывает гэп; дивиденд списывают | **P3.7 частично** (cache+annotate) |
+| **7H** | **Дивгэп:** шорт на акциях/индексе не зарабатывает гэп; дивиденд списывают | **P3.7 / C17** (features+labels) |
 | **7I** | **Бить buy&hold** на окне графика (LO / LS) | **P3.8 принято** |
 
 После каждой сессии: `ANALYTICS.html` + compare prev→current + `REPORT.md` / notes.
@@ -53,8 +53,9 @@
 | **P3.7** | Div calendar × C14 equities chart window; short pays | annotate session | — |
 | **C15** | BH-aware labels/policy (§7I); base BH features | **21614 · 0.77/0.84** | **35p-*** |
 | **C16** | +ATR SL/TP + remove-filter; BH labels | **25452 · 0.77/0.84** | **36p-*** |
+| **C17** | walk-forward + §7H div features/labels | **25452 · 0.80/0.85** | **37p-*** |
 
-Актуальная модель: `artifacts/.../2026-08-21-c16-atr-sltp/models/intervention_policy_lgbm.joblib`
+Актуальная модель: `artifacts/.../2026-08-21-c17-walkforward-div/models/intervention_policy_lgbm.joblib`
 
 ### Покрытие данных (после C13)
 
@@ -71,9 +72,9 @@ Label better (§7I): ΔPnL>0 · DD-ok · Δedge_vs_bh>0 · beats B&H · !pseudo.
 
 ### Следующие шаги (не потерять)
 
-1. **C17:** walk-forward по годам + div features (§7H) в том же label.
-2. History-window sweep 1d…5y (§7A).
-3. Desktop BT: native B&H + div cash-adjust.
+1. History-window sweep 1d…5y (§7A).
+2. Desktop BT: native B&H + div cash-adjust.
+3. Больше инструментов / индексный дивкалендарь.
 4. History-window sweep 1d…5y (§7A) — ещё долг.
 5. **Не** вшивать policy в Desktop (§7G).
 

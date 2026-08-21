@@ -1,0 +1,253 @@
+{
+  "version": 1,
+  "meta": {
+    "name": "[WF+div] TEMA Cross 10/30 period×0.5",
+    "updatedAt": "2026-08-21T12:59:05Z",
+    "createdAt": "2026-08-21T09:26:05Z",
+    "tags": [
+      "trend",
+      "tema",
+      "ai-train",
+      "training",
+      "side:long_only",
+      "long_only",
+      "c14",
+      "intervention:change_period_05x",
+      "promoted",
+      "c17",
+      "cross-symbol",
+      "beats-buyhold",
+      "div-adj"
+    ],
+    "side_mode": "long_only",
+    "intervention": {
+      "kind": "change_period_05x",
+      "base": "11-tema-cross-10-30.italgo",
+      "factor": 0.5
+    },
+    "cross_symbol": {
+      "symbols_win": [
+        "CNYRUBF",
+        "IMOEXF",
+        "LKOH",
+        "MGNT",
+        "NVTK",
+        "PLZL",
+        "ROSN",
+        "SBER",
+        "TATN"
+      ],
+      "mean_delta": 1080.4993802615404,
+      "mean_delta_edge_vs_bh": 1080.4993802615404
+    }
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "instrument",
+        "type": "instrument",
+        "position": {
+          "x": 40,
+          "y": 200
+        },
+        "data": {
+          "symbol": "SBER",
+          "instrument_type": "stock",
+          "label": "Инструмент"
+        }
+      },
+      {
+        "id": "close",
+        "type": "source_close",
+        "position": {
+          "x": 260,
+          "y": 200
+        },
+        "data": {
+          "label": "Close"
+        }
+      },
+      {
+        "id": "ma_f",
+        "type": "indicator_tema",
+        "position": {
+          "x": 480,
+          "y": 100
+        },
+        "data": {
+          "period": 5,
+          "label": "TEMA10"
+        }
+      },
+      {
+        "id": "ma_s",
+        "type": "indicator_tema",
+        "position": {
+          "x": 480,
+          "y": 280
+        },
+        "data": {
+          "period": 15,
+          "label": "TEMA30"
+        }
+      },
+      {
+        "id": "cross_up",
+        "type": "logic_cross_up",
+        "position": {
+          "x": 700,
+          "y": 100
+        },
+        "data": {
+          "label": "↑"
+        }
+      },
+      {
+        "id": "cross_dn",
+        "type": "logic_cross_down",
+        "position": {
+          "x": 700,
+          "y": 280
+        },
+        "data": {
+          "label": "↓"
+        }
+      },
+      {
+        "id": "open",
+        "type": "position_open_market",
+        "position": {
+          "x": 920,
+          "y": 100
+        },
+        "data": {
+          "direction": "buy",
+          "qty": 1,
+          "label": "Long"
+        }
+      },
+      {
+        "id": "close_pos",
+        "type": "position_close_market",
+        "position": {
+          "x": 920,
+          "y": 280
+        },
+        "data": {
+          "label": "Close"
+        }
+      },
+      {
+        "id": "chart",
+        "type": "chart",
+        "position": {
+          "x": 700,
+          "y": 440
+        },
+        "data": {
+          "label": "Chart"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e1",
+        "source": "instrument",
+        "target": "close",
+        "sourceHandle": "instrument",
+        "targetHandle": "instrument"
+      },
+      {
+        "id": "e2",
+        "source": "close",
+        "target": "ma_f",
+        "sourceHandle": "value",
+        "targetHandle": "source"
+      },
+      {
+        "id": "e3",
+        "source": "close",
+        "target": "ma_s",
+        "sourceHandle": "value",
+        "targetHandle": "source"
+      },
+      {
+        "id": "e4",
+        "source": "ma_f",
+        "target": "cross_up",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "e5",
+        "source": "ma_s",
+        "target": "cross_up",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "e6",
+        "source": "ma_f",
+        "target": "cross_dn",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "e7",
+        "source": "ma_s",
+        "target": "cross_dn",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "e8",
+        "source": "instrument",
+        "target": "open",
+        "sourceHandle": "instrument",
+        "targetHandle": "instrument"
+      },
+      {
+        "id": "e9",
+        "source": "cross_up",
+        "target": "open",
+        "sourceHandle": "result",
+        "targetHandle": "condition"
+      },
+      {
+        "id": "e10",
+        "source": "open",
+        "target": "close_pos",
+        "sourceHandle": "position",
+        "targetHandle": "position"
+      },
+      {
+        "id": "e11",
+        "source": "cross_dn",
+        "target": "close_pos",
+        "sourceHandle": "result",
+        "targetHandle": "condition"
+      },
+      {
+        "id": "e12",
+        "source": "close",
+        "target": "chart",
+        "sourceHandle": "value",
+        "targetHandle": "series"
+      },
+      {
+        "id": "e13",
+        "source": "ma_f",
+        "target": "chart",
+        "sourceHandle": "value",
+        "targetHandle": "series"
+      },
+      {
+        "id": "e14",
+        "source": "ma_s",
+        "target": "chart",
+        "sourceHandle": "value",
+        "targetHandle": "series"
+      }
+    ]
+  }
+}

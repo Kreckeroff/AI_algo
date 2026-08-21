@@ -1,0 +1,22 @@
+{
+  "near=0|side=long_only": {
+    "n": 4450,
+    "better": 1445,
+    "better_rate": 0.32471910112359553
+  },
+  "near=0|side=long_short": {
+    "n": 1850,
+    "better": 537,
+    "better_rate": 0.29027027027027025
+  },
+  "near=1|side=long_only": {
+    "n": 9256,
+    "better": 2460,
+    "better_rate": 0.2657735522904062
+  },
+  "near=1|side=long_short": {
+    "n": 3848,
+    "better": 1068,
+    "better_rate": 0.27754677754677753
+  }
+}
