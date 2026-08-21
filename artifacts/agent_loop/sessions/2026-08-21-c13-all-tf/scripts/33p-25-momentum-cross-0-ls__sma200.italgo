@@ -1,0 +1,305 @@
+{
+  "version": 1,
+  "meta": {
+    "name": "[cross-sym] Momentum Cross 0 L/S +SMA200",
+    "updatedAt": "2026-08-21T10:13:48Z",
+    "createdAt": "2026-08-21T09:41:50Z",
+    "tags": [
+      "osc",
+      "long_short",
+      "ai-train",
+      "training",
+      "side:long_short",
+      "c8",
+      "intervention:add_block_sma200",
+      "promoted",
+      "c13",
+      "cross-symbol"
+    ],
+    "side_mode": "long_short",
+    "intervention": {
+      "kind": "add_block_sma200",
+      "base": "25-momentum-cross-0-ls.italgo",
+      "block": "indicator_sma",
+      "period": 200
+    },
+    "cross_symbol": {
+      "symbols_win": [
+        "GMKN",
+        "LKOH",
+        "MGNT",
+        "NVTK",
+        "PLZL",
+        "ROSN",
+        "SBER"
+      ],
+      "mean_delta": 871.4760340999961
+    }
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "instrument",
+        "type": "instrument",
+        "position": {
+          "x": 40,
+          "y": 200
+        },
+        "data": {
+          "symbol": "SBER",
+          "instrument_type": "stock",
+          "label": "Инструмент"
+        }
+      },
+      {
+        "id": "close",
+        "type": "source_close",
+        "position": {
+          "x": 260,
+          "y": 200
+        },
+        "data": {
+          "label": "Close"
+        }
+      },
+      {
+        "id": "osc",
+        "type": "indicator_momentum",
+        "position": {
+          "x": 480,
+          "y": 160
+        },
+        "data": {
+          "period": 10,
+          "label": "Mom"
+        }
+      },
+      {
+        "id": "lvl",
+        "type": "constant",
+        "position": {
+          "x": 480,
+          "y": 320
+        },
+        "data": {
+          "value": 0,
+          "label": "0"
+        }
+      },
+      {
+        "id": "cross_up",
+        "type": "logic_cross_up",
+        "position": {
+          "x": 700,
+          "y": 120
+        },
+        "data": {
+          "label": "↑"
+        }
+      },
+      {
+        "id": "cross_dn",
+        "type": "logic_cross_down",
+        "position": {
+          "x": 700,
+          "y": 280
+        },
+        "data": {
+          "label": "↓"
+        }
+      },
+      {
+        "id": "open_l",
+        "type": "position_open_market",
+        "position": {
+          "x": 920,
+          "y": 120
+        },
+        "data": {
+          "direction": "buy",
+          "qty": 1,
+          "label": "Long"
+        }
+      },
+      {
+        "id": "open_s",
+        "type": "position_open_market",
+        "position": {
+          "x": 920,
+          "y": 280
+        },
+        "data": {
+          "direction": "sell",
+          "qty": 1,
+          "label": "Short"
+        }
+      },
+      {
+        "id": "chart",
+        "type": "chart",
+        "position": {
+          "x": 700,
+          "y": 440
+        },
+        "data": {
+          "label": "Chart"
+        }
+      },
+      {
+        "id": "sma_filter",
+        "type": "indicator_sma",
+        "position": {
+          "x": 480,
+          "y": 20
+        },
+        "data": {
+          "period": 200,
+          "label": "SMA200"
+        }
+      },
+      {
+        "id": "above_sma",
+        "type": "logic_gt",
+        "position": {
+          "x": 700,
+          "y": 20
+        },
+        "data": {
+          "label": "Close>SMA"
+        }
+      },
+      {
+        "id": "sma_filter_and",
+        "type": "logic_and",
+        "position": {
+          "x": 860,
+          "y": 80
+        },
+        "data": {
+          "label": "Buy+Filter"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e1",
+        "source": "instrument",
+        "target": "close",
+        "sourceHandle": "instrument",
+        "targetHandle": "instrument"
+      },
+      {
+        "id": "e2",
+        "source": "close",
+        "target": "osc",
+        "sourceHandle": "value",
+        "targetHandle": "source"
+      },
+      {
+        "id": "e3",
+        "source": "osc",
+        "target": "cross_up",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "e4",
+        "source": "lvl",
+        "target": "cross_up",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "e5",
+        "source": "osc",
+        "target": "cross_dn",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "e6",
+        "source": "lvl",
+        "target": "cross_dn",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "e7",
+        "source": "instrument",
+        "target": "open_l",
+        "sourceHandle": "instrument",
+        "targetHandle": "instrument"
+      },
+      {
+        "id": "e9",
+        "source": "instrument",
+        "target": "open_s",
+        "sourceHandle": "instrument",
+        "targetHandle": "instrument"
+      },
+      {
+        "id": "e10",
+        "source": "cross_dn",
+        "target": "open_s",
+        "sourceHandle": "result",
+        "targetHandle": "condition"
+      },
+      {
+        "id": "e11",
+        "source": "close",
+        "target": "chart",
+        "sourceHandle": "value",
+        "targetHandle": "series"
+      },
+      {
+        "id": "e12",
+        "source": "osc",
+        "target": "chart",
+        "sourceHandle": "value",
+        "targetHandle": "series"
+      },
+      {
+        "id": "c8_cs",
+        "source": "close",
+        "target": "sma_filter",
+        "sourceHandle": "value",
+        "targetHandle": "source"
+      },
+      {
+        "id": "c8_csa",
+        "source": "close",
+        "target": "above_sma",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "c8_ssa",
+        "source": "sma_filter",
+        "target": "above_sma",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "c8_e8_and",
+        "source": "cross_up",
+        "target": "sma_filter_and",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "c8_sma_filter_to_and",
+        "source": "above_sma",
+        "target": "sma_filter_and",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "c8_sma_filter_open",
+        "source": "sma_filter_and",
+        "target": "open_l",
+        "sourceHandle": "result",
+        "targetHandle": "condition"
+      }
+    ]
+  }
+}

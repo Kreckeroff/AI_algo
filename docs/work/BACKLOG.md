@@ -423,7 +423,7 @@ DSL/GraphDTO: `period` integer, constraint `1 ≤ period ≤ max_period` (`max_p
 | **P2** | Прогон 20 скриптов в Desktop engine + ingest → compare | **готово** (`2026-08-21-p2-desktop-corpus`; SBER 1d; ingest 20/20) |
 | **P2.5** | Баланс корпуса по **стороне**: long-only **и** long/short (§7D) | **готово** (26 scripts; 18 LO / 8 LS; session `2026-08-21-c4-side-mode`) |
 | **P2.6** | **Trade-level train (§7E):** trades[] в ingest/сессиях; good/bad; советы блок/period | **готово-ish** (C5+C6: labels + Advisor intervention dataset 20 pairs) |
-| **P3** | Расширить lookback на больше связок / все ТФ | **частично+** (C8: 12 scripts × 1d/1h/1w; new interventions) |
+| **P3** | Расширить lookback на больше связок / все ТФ | **готово-ish** (C13: все TF 1m…1w × 10 equities) |
 | **P3.5** | **Мульти-инструмент (§7F):** постоянно расширять набор тикеров + датасет | **частично++** (C11: 9 tickers +TATN/PLZL/MGNT) |
 | **P3.6** | **Качество модели «в гений»** — глубина датасета / вмешательств / TF | **в работе** (C12: 3740 pairs, 1d+1h, DD-aware) |
 | **P4** | Новые индикаторы Desktop → lab whitelist (§7B стык) | параллельно |
@@ -727,6 +727,7 @@ DSL/GraphDTO: `period` integer, constraint `1 ≤ period ≤ max_period` (`max_p
 | 2026-08-21 | **§7D:** обучение/корпус учитывают **long_only** и **long_short** (не только лонг); шаг P2.5 |
 | 2026-08-21 | **§7D P2.5:** twins 21–26 long_short; tagged `side_mode`; C4 session — LS mean_pnl > LO на SBER 1d |
 | 2026-08-21 | **§7E:** обучение на **списке сделок** (good/bad) + улучшения через **блок** или **period**; шаг P2.6 |
+| 2026-08-21 | **C13:** ALL TF 1m…1w × 10 equities; pairs 14399; CV≈0.72/0.80; 33p-*; coverage heatmap |
 | 2026-08-21 | **C12:** quality push — 10 tickers ×1d/1h; 3740 pairs; DD-aware; RSI50/period×2; 32p-*; CV≈0.70/0.78 |
 | 2026-08-21 | **§7G:** Desktop wire / hosting / live user-action AI — backlog; приоритет = качество модели (P3.6) |
 | 2026-08-21 | **C11:** 9-symbol train; pairs 1197; LOO≈0.72/0.79; 31p-* ≥4 tickers; FULL_MAP |

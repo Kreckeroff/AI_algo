@@ -1,0 +1,213 @@
+{
+  "feature_names": [
+    "base_pnl",
+    "base_wr",
+    "base_trades",
+    "base_dd",
+    "good",
+    "bad",
+    "bad_noise",
+    "good_weak",
+    "good_share",
+    "bad_share",
+    "f_\u043f\u0438\u043b\u0430_\u043a\u043e\u0440\u043e\u0442\u043a\u0438\u0435_\u0441\u0434\u0435\u043b\u043a\u0438",
+    "f_\u0441\u0432\u0435\u0440\u0445\u043a\u043e\u0440\u043e\u0442\u043a\u0438\u0435_\u0443\u0434\u0435\u0440\u0436\u0430\u043d\u0438\u044f",
+    "f_\u0441\u0435\u0440\u0438\u044f_\u0443\u0431\u044b\u0442\u043a\u043e\u0432",
+    "f_\u043f\u0435\u0440\u0435\u043a\u043e\u0441_\u0441\u0442\u043e\u0440\u043e\u043d",
+    "f_\u043c\u0430\u043b\u043e_\u0437\u0430\u043a\u0440\u044b\u0442\u044b\u0445_\u0441\u0434\u0435\u043b\u043e\u043a",
+    "regime_trend",
+    "regime_mean_reversion",
+    "regime_breakout",
+    "regime_unknown",
+    "kind_change_period_15x",
+    "kind_change_period_067",
+    "kind_change_period_2x",
+    "kind_add_block_ema",
+    "kind_add_block_adx",
+    "kind_add_block_sma200",
+    "kind_add_block_rsi50",
+    "side_long_only",
+    "side_long_short",
+    "side_unknown",
+    "sym_SBER",
+    "sym_GAZP",
+    "sym_LKOH",
+    "sym_ROSN",
+    "sym_GMKN",
+    "sym_NVTK",
+    "sym_TATN",
+    "sym_PLZL",
+    "sym_MGNT",
+    "sym_MTSS",
+    "tf_1m",
+    "tf_5m",
+    "tf_10m",
+    "tf_15m",
+    "tf_30m",
+    "tf_1h",
+    "tf_1d",
+    "tf_1w"
+  ],
+  "symbols": [
+    "SBER",
+    "GAZP",
+    "LKOH",
+    "ROSN",
+    "GMKN",
+    "NVTK",
+    "TATN",
+    "PLZL",
+    "MGNT",
+    "MTSS"
+  ],
+  "timeframes": [
+    "1m",
+    "5m",
+    "10m",
+    "15m",
+    "30m",
+    "1h",
+    "1d",
+    "1w"
+  ],
+  "metrics": {
+    "cv_accuracy": 0.7215084380859782,
+    "cv_auc": 0.7969392570429381,
+    "n": 14399,
+    "loso_1d": {
+      "SBER": {
+        "accuracy": 0.6577540106951871,
+        "auc": 0.7641939252336448,
+        "n": 187
+      },
+      "GAZP": {
+        "accuracy": 0.6684491978609626,
+        "auc": 0.7735981308411215,
+        "n": 187
+      },
+      "LKOH": {
+        "accuracy": 0.6951871657754011,
+        "auc": 0.7396187469645459,
+        "n": 187
+      },
+      "ROSN": {
+        "accuracy": 0.6203208556149733,
+        "auc": 0.7554907343857241,
+        "n": 187
+      },
+      "GMKN": {
+        "accuracy": 0.732620320855615,
+        "auc": 0.8429061784897025,
+        "n": 187
+      },
+      "NVTK": {
+        "accuracy": 0.7379679144385026,
+        "auc": 0.814115762983299,
+        "n": 187
+      },
+      "TATN": {
+        "accuracy": 0.732620320855615,
+        "auc": 0.7376421156697973,
+        "n": 187
+      },
+      "PLZL": {
+        "accuracy": 0.6951871657754011,
+        "auc": 0.7785930584672722,
+        "n": 187
+      },
+      "MGNT": {
+        "accuracy": 0.6524064171122995,
+        "auc": 0.7361556064073227,
+        "n": 187
+      },
+      "MTSS": {
+        "accuracy": 0.6310160427807486,
+        "auc": 0.7439807383627607,
+        "n": 187
+      }
+    }
+  },
+  "feature_importance_top": [
+    [
+      "base_pnl",
+      438
+    ],
+    [
+      "base_dd",
+      314
+    ],
+    [
+      "bad_share",
+      165
+    ],
+    [
+      "kind_change_period_067",
+      148
+    ],
+    [
+      "base_trades",
+      145
+    ],
+    [
+      "base_wr",
+      143
+    ],
+    [
+      "bad",
+      119
+    ],
+    [
+      "kind_add_block_adx",
+      111
+    ],
+    [
+      "bad_noise",
+      108
+    ],
+    [
+      "kind_add_block_sma200",
+      101
+    ],
+    [
+      "good_share",
+      89
+    ],
+    [
+      "kind_add_block_rsi50",
+      84
+    ],
+    [
+      "good_weak",
+      77
+    ],
+    [
+      "good",
+      76
+    ],
+    [
+      "sym_LKOH",
+      68
+    ],
+    [
+      "kind_change_period_2x",
+      65
+    ],
+    [
+      "kind_add_block_ema",
+      62
+    ],
+    [
+      "sym_PLZL",
+      59
+    ],
+    [
+      "kind_change_period_15x",
+      44
+    ],
+    [
+      "sym_MGNT",
+      40
+    ]
+  ],
+  "label_rule": "delta>0 & dd_ok"
+}
