@@ -422,8 +422,8 @@ DSL/GraphDTO: `period` integer, constraint `1 ≤ period ≤ max_period` (`max_p
 | **P1** | Lab: **lookback sweep** только по shortlist топов C3 (не полный декартов) | **готово** (C3b session) |
 | **P2** | Прогон 20 скриптов в Desktop engine + ingest → compare | **готово** (`2026-08-21-p2-desktop-corpus`; SBER 1d; ingest 20/20) |
 | **P2.5** | Баланс корпуса по **стороне**: long-only **и** long/short (§7D) | **готово** (26 scripts; 18 LO / 8 LS; session `2026-08-21-c4-side-mode`) |
-| **P2.6** | **Trade-level train (§7E):** trades[] в ingest/сессиях; good/bad; советы блок/period | **частично** (C5: 1243 trades labeled; improve loop add_block>+PnL) |
-| **P3** | Расширить lookback на больше связок / все ТФ | позже |
+| **P2.6** | **Trade-level train (§7E):** trades[] в ingest/сессиях; good/bad; советы блок/period | **готово-ish** (C5+C6: labels + Advisor intervention dataset 20 pairs) |
+| **P3** | Расширить lookback на больше связок / все ТФ | **частично** (C6: 1y/2y/5y/all на топ-5 SBER 1d) |
 | **P4** | Новые индикаторы Desktop → lab whitelist (§7B стык) | параллельно |
 
 Корпус скриптов: `it-algo-desktop/docs/work/scripting/samples/ai-train/` (ветка `ai-train`).
@@ -685,5 +685,6 @@ DSL/GraphDTO: `period` integer, constraint `1 ≤ period ≤ max_period` (`max_p
 | 2026-08-21 | **§7D:** обучение/корпус учитывают **long_only** и **long_short** (не только лонг); шаг P2.5 |
 | 2026-08-21 | **§7D P2.5:** twins 21–26 long_short; tagged `side_mode`; C4 session — LS mean_pnl > LO на SBER 1d |
 | 2026-08-21 | **§7E:** обучение на **списке сделок** (good/bad) + улучшения через **блок** или **period**; шаг P2.6 |
+| 2026-08-21 | **C6:** 20 intervention pairs (EMA filter winrate 90%, mean Δ+114); Advisor dataset; lookback top-5 |
 | 2026-08-21 | **C5b FULL_MAP:** Q–Q + heatmap side×family + block ranking + trade labels + improve A/Bs |
 | 2026-08-21 | **§7E C5:** trade labels good/bad/noise; interventions; momentum A/B — EMA filter −18→+43, period20 worse |

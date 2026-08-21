@@ -1,0 +1,612 @@
+[
+  {
+    "base": "23-tema-cross-10-30-ls.italgo",
+    "variant": "23-tema-cross-10-30-ls__ema50.italgo",
+    "kind": "add_block_ema",
+    "base_pnl": -160.4409099999992,
+    "variant_pnl": 187.7339980000001,
+    "delta_pnl": 348.1749079999993,
+    "better": true,
+    "base_wr": 0.41346153846153844,
+    "variant_wr": 0.375,
+    "base_labels": {
+      "good": 43,
+      "bad": 55,
+      "bad_noise": 6,
+      "open": 1
+    },
+    "variant_labels": {
+      "good": 24,
+      "bad": 34,
+      "bad_noise": 6,
+      "open": 1
+    },
+    "base_findings": [
+      "серия_убытков"
+    ],
+    "variant_findings": [
+      "серия_убытков",
+      "тренд_без_фильтра_флэта"
+    ],
+    "suggestions_before": [
+      "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки."
+    ]
+  },
+  {
+    "base": "19-bb-rsi-mean-reversion-v2.italgo",
+    "variant": "19-bb-rsi-mean-reversion-v2__ema50.italgo",
+    "kind": "add_block_ema",
+    "base_pnl": -241.971949,
+    "variant_pnl": 10.487385000000017,
+    "delta_pnl": 252.459334,
+    "better": true,
+    "base_wr": 0.5,
+    "variant_wr": 1.0,
+    "base_labels": {
+      "bad": 4,
+      "good": 4,
+      "open": 1
+    },
+    "variant_labels": {
+      "good": 1
+    },
+    "base_findings": [
+      "mr_слишком_долго_держит"
+    ],
+    "variant_findings": [
+      "мало_закрытых_сделок"
+    ],
+    "suggestions_before": [
+      "Mean-reversion удерживает позицию слишком долго. Добавьте быстрый выход к середине канала / противоположный RSI и жёсткий SL."
+    ]
+  },
+  {
+    "base": "17-supertrend-rsi-tight.italgo",
+    "variant": "17-supertrend-rsi-tight__period15x.italgo",
+    "kind": "change_period",
+    "base_pnl": -41.397890999999916,
+    "variant_pnl": 135.96240600000016,
+    "delta_pnl": 177.36029700000006,
+    "better": true,
+    "base_wr": 0.5625,
+    "variant_wr": 0.5238095238095238,
+    "base_labels": {
+      "good": 9,
+      "bad": 7,
+      "open": 1
+    },
+    "variant_labels": {
+      "good": 11,
+      "bad_noise": 1,
+      "bad": 9,
+      "open": 1
+    },
+    "base_findings": [],
+    "variant_findings": [],
+    "suggestions_before": [
+      "Явных паттернов «пилы»/серий не видно по сделкам — смотрите diff метрик и блоков; проверьте out-of-sample окно."
+    ]
+  },
+  {
+    "base": "11-tema-cross-10-30.italgo",
+    "variant": "11-tema-cross-10-30__ema50.italgo",
+    "kind": "add_block_ema",
+    "base_pnl": -127.71714799999961,
+    "variant_pnl": 46.370306000000056,
+    "delta_pnl": 174.08745399999967,
+    "better": true,
+    "base_wr": 0.4807692307692308,
+    "variant_wr": 0.53125,
+    "base_labels": {
+      "bad": 24,
+      "good": 25,
+      "bad_noise": 3
+    },
+    "variant_labels": {
+      "good": 17,
+      "bad": 12,
+      "bad_noise": 3
+    },
+    "base_findings": [
+      "серия_убытков"
+    ],
+    "variant_findings": [
+      "серия_убытков"
+    ],
+    "suggestions_before": [
+      "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки."
+    ]
+  },
+  {
+    "base": "17-supertrend-rsi-tight.italgo",
+    "variant": "17-supertrend-rsi-tight__ema50.italgo",
+    "kind": "add_block_ema",
+    "base_pnl": -41.397890999999916,
+    "variant_pnl": 76.78582999999993,
+    "delta_pnl": 118.18372099999985,
+    "better": true,
+    "base_wr": 0.5625,
+    "variant_wr": 0.5833333333333334,
+    "base_labels": {
+      "good": 9,
+      "bad": 7,
+      "open": 1
+    },
+    "variant_labels": {
+      "bad": 5,
+      "good": 7
+    },
+    "base_findings": [],
+    "variant_findings": [],
+    "suggestions_before": [
+      "Явных паттернов «пилы»/серий не видно по сделкам — смотрите diff метрик и блоков; проверьте out-of-sample окно."
+    ]
+  },
+  {
+    "base": "12-dema-cross-12-26.italgo",
+    "variant": "12-dema-cross-12-26__period15x.italgo",
+    "kind": "change_period",
+    "base_pnl": -103.43236099999991,
+    "variant_pnl": 10.376445999999987,
+    "delta_pnl": 113.8088069999999,
+    "better": true,
+    "base_wr": 0.38095238095238093,
+    "variant_wr": 0.4,
+    "base_labels": {
+      "bad": 23,
+      "good": 15,
+      "good_weak": 1,
+      "bad_noise": 3,
+      "open": 1
+    },
+    "variant_labels": {
+      "bad": 15,
+      "good": 9,
+      "good_weak": 1,
+      "open": 1
+    },
+    "base_findings": [
+      "серия_убытков"
+    ],
+    "variant_findings": [],
+    "suggestions_before": [
+      "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки."
+    ]
+  },
+  {
+    "base": "02-mean-reversion-bb-rsi.italgo",
+    "variant": "02-mean-reversion-bb-rsi__period15x.italgo",
+    "kind": "change_period",
+    "base_pnl": -77.87303099999984,
+    "variant_pnl": 31.556133000000102,
+    "delta_pnl": 109.42916399999994,
+    "better": true,
+    "base_wr": 0.45454545454545453,
+    "variant_wr": 0.5555555555555556,
+    "base_labels": {
+      "bad": 6,
+      "good": 5
+    },
+    "variant_labels": {
+      "bad": 4,
+      "good": 5
+    },
+    "base_findings": [],
+    "variant_findings": [],
+    "suggestions_before": [
+      "Явных паттернов «пилы»/серий не видно по сделкам — смотрите diff метрик и блоков; проверьте out-of-sample окно."
+    ]
+  },
+  {
+    "base": "02-mean-reversion-bb-rsi.italgo",
+    "variant": "02-mean-reversion-bb-rsi__ema50.italgo",
+    "kind": "add_block_ema",
+    "base_pnl": -77.87303099999984,
+    "variant_pnl": 0.0,
+    "delta_pnl": 77.87303099999984,
+    "better": true,
+    "base_wr": 0.45454545454545453,
+    "variant_wr": 0.0,
+    "base_labels": {
+      "bad": 6,
+      "good": 5
+    },
+    "variant_labels": {},
+    "base_findings": [],
+    "variant_findings": [
+      "мало_закрытых_сделок"
+    ],
+    "suggestions_before": [
+      "Явных паттернов «пилы»/серий не видно по сделкам — смотрите diff метрик и блоков; проверьте out-of-sample окно."
+    ]
+  },
+  {
+    "base": "12-dema-cross-12-26.italgo",
+    "variant": "12-dema-cross-12-26__ema50.italgo",
+    "kind": "add_block_ema",
+    "base_pnl": -103.43236099999991,
+    "variant_pnl": -33.69878799999998,
+    "delta_pnl": 69.73357299999994,
+    "better": true,
+    "base_wr": 0.38095238095238093,
+    "variant_wr": 0.38235294117647056,
+    "base_labels": {
+      "bad": 23,
+      "good": 15,
+      "good_weak": 1,
+      "bad_noise": 3,
+      "open": 1
+    },
+    "variant_labels": {
+      "bad": 18,
+      "good": 12,
+      "good_weak": 1,
+      "bad_noise": 3
+    },
+    "base_findings": [
+      "серия_убытков"
+    ],
+    "variant_findings": [
+      "серия_убытков"
+    ],
+    "suggestions_before": [
+      "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки."
+    ]
+  },
+  {
+    "base": "15-momentum-cross-0.italgo",
+    "variant": "15-momentum-cross-0__ema50.italgo",
+    "kind": "add_block_ema",
+    "base_pnl": -18.151349999999667,
+    "variant_pnl": 43.00606600000029,
+    "delta_pnl": 61.157415999999955,
+    "better": true,
+    "base_wr": 0.3673469387755102,
+    "variant_wr": 0.32786885245901637,
+    "base_labels": {
+      "good_weak": 7,
+      "bad_noise": 35,
+      "good": 29,
+      "bad": 27
+    },
+    "variant_labels": {
+      "bad_noise": 24,
+      "good_weak": 3,
+      "bad": 17,
+      "good": 17
+    },
+    "base_findings": [
+      "сверхкороткие_удержания",
+      "серия_убытков"
+    ],
+    "variant_findings": [
+      "сверхкороткие_удержания",
+      "серия_убытков",
+      "тренд_без_фильтра_флэта"
+    ],
+    "suggestions_before": [
+      "Медиана удержания очень мала — похоже на шум/overtrading. Увеличьте период сигналов, добавьте подтверждение на старшем ТФ или logic_hold.",
+      "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки."
+    ]
+  },
+  {
+    "base": "19-bb-rsi-mean-reversion-v2.italgo",
+    "variant": "19-bb-rsi-mean-reversion-v2__period15x.italgo",
+    "kind": "change_period",
+    "base_pnl": -241.971949,
+    "variant_pnl": -181.00323600000004,
+    "delta_pnl": 60.96871299999995,
+    "better": true,
+    "base_wr": 0.5,
+    "variant_wr": 0.6666666666666666,
+    "base_labels": {
+      "bad": 4,
+      "good": 4,
+      "open": 1
+    },
+    "variant_labels": {
+      "bad": 2,
+      "good": 4,
+      "open": 1
+    },
+    "base_findings": [
+      "mr_слишком_долго_держит"
+    ],
+    "variant_findings": [
+      "mr_слишком_долго_держит"
+    ],
+    "suggestions_before": [
+      "Mean-reversion удерживает позицию слишком долго. Добавьте быстрый выход к середине канала / противоположный RSI и жёсткий SL."
+    ]
+  },
+  {
+    "base": "13-rsi-cross-50.italgo",
+    "variant": "13-rsi-cross-50__period15x.italgo",
+    "kind": "change_period",
+    "base_pnl": -3.6200759999995142,
+    "variant_pnl": 53.262044000000046,
+    "delta_pnl": 56.88211999999956,
+    "better": true,
+    "base_wr": 0.32558139534883723,
+    "variant_wr": 0.4074074074074074,
+    "base_labels": {
+      "bad": 27,
+      "good_weak": 4,
+      "bad_noise": 31,
+      "good": 24
+    },
+    "variant_labels": {
+      "good": 19,
+      "bad": 19,
+      "bad_noise": 13,
+      "good_weak": 3,
+      "open": 1
+    },
+    "base_findings": [
+      "серия_убытков"
+    ],
+    "variant_findings": [
+      "серия_убытков"
+    ],
+    "suggestions_before": [
+      "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки."
+    ]
+  },
+  {
+    "base": "14-cmo-cross-0.italgo",
+    "variant": "14-cmo-cross-0__period15x.italgo",
+    "kind": "change_period",
+    "base_pnl": -3.6200759999995142,
+    "variant_pnl": 53.262044000000046,
+    "delta_pnl": 56.88211999999956,
+    "better": true,
+    "base_wr": 0.32558139534883723,
+    "variant_wr": 0.4074074074074074,
+    "base_labels": {
+      "bad": 27,
+      "good_weak": 4,
+      "bad_noise": 31,
+      "good": 24
+    },
+    "variant_labels": {
+      "good": 19,
+      "bad": 19,
+      "bad_noise": 13,
+      "good_weak": 3,
+      "open": 1
+    },
+    "base_findings": [
+      "серия_убытков"
+    ],
+    "variant_findings": [
+      "серия_убытков"
+    ],
+    "suggestions_before": [
+      "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки."
+    ]
+  },
+  {
+    "base": "05-trend-atr-sl-tp.italgo",
+    "variant": "05-trend-atr-sl-tp__period15x.italgo",
+    "kind": "change_period",
+    "base_pnl": -33.54287285714267,
+    "variant_pnl": 19.460392285714164,
+    "delta_pnl": 53.00326514285683,
+    "better": true,
+    "base_wr": 0.23809523809523808,
+    "variant_wr": 0.3103448275862069,
+    "base_labels": {
+      "bad_noise": 17,
+      "bad": 15,
+      "good_weak": 1,
+      "good": 9
+    },
+    "variant_labels": {
+      "bad": 13,
+      "good": 9,
+      "bad_noise": 7
+    },
+    "base_findings": [
+      "серия_убытков"
+    ],
+    "variant_findings": [
+      "серия_убытков"
+    ],
+    "suggestions_before": [
+      "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки."
+    ]
+  },
+  {
+    "base": "15-momentum-cross-0.italgo",
+    "variant": "15-momentum-cross-0__period15x.italgo",
+    "kind": "change_period",
+    "base_pnl": -18.151349999999667,
+    "variant_pnl": 16.801681000000443,
+    "delta_pnl": 34.95303100000011,
+    "better": true,
+    "base_wr": 0.3673469387755102,
+    "variant_wr": 0.3333333333333333,
+    "base_labels": {
+      "good_weak": 7,
+      "bad_noise": 35,
+      "good": 29,
+      "bad": 27
+    },
+    "variant_labels": {
+      "good": 19,
+      "bad_noise": 28,
+      "bad": 26,
+      "good_weak": 8
+    },
+    "base_findings": [
+      "сверхкороткие_удержания",
+      "серия_убытков"
+    ],
+    "variant_findings": [
+      "серия_убытков"
+    ],
+    "suggestions_before": [
+      "Медиана удержания очень мала — похоже на шум/overtrading. Увеличьте период сигналов, добавьте подтверждение на старшем ТФ или logic_hold.",
+      "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки."
+    ]
+  },
+  {
+    "base": "13-rsi-cross-50.italgo",
+    "variant": "13-rsi-cross-50__ema50.italgo",
+    "kind": "add_block_ema",
+    "base_pnl": -3.6200759999995142,
+    "variant_pnl": 13.616525000000465,
+    "delta_pnl": 17.23660099999998,
+    "better": true,
+    "base_wr": 0.32558139534883723,
+    "variant_wr": 0.3508771929824561,
+    "base_labels": {
+      "bad": 27,
+      "good_weak": 4,
+      "bad_noise": 31,
+      "good": 24
+    },
+    "variant_labels": {
+      "bad": 21,
+      "bad_noise": 16,
+      "good": 19,
+      "good_weak": 1
+    },
+    "base_findings": [
+      "серия_убытков"
+    ],
+    "variant_findings": [
+      "серия_убытков"
+    ],
+    "suggestions_before": [
+      "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки."
+    ]
+  },
+  {
+    "base": "14-cmo-cross-0.italgo",
+    "variant": "14-cmo-cross-0__ema50.italgo",
+    "kind": "add_block_ema",
+    "base_pnl": -3.6200759999995142,
+    "variant_pnl": 13.616525000000465,
+    "delta_pnl": 17.23660099999998,
+    "better": true,
+    "base_wr": 0.32558139534883723,
+    "variant_wr": 0.3508771929824561,
+    "base_labels": {
+      "bad": 27,
+      "good_weak": 4,
+      "bad_noise": 31,
+      "good": 24
+    },
+    "variant_labels": {
+      "bad": 21,
+      "bad_noise": 16,
+      "good": 19,
+      "good_weak": 1
+    },
+    "base_findings": [
+      "серия_убытков"
+    ],
+    "variant_findings": [
+      "серия_убытков"
+    ],
+    "suggestions_before": [
+      "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки."
+    ]
+  },
+  {
+    "base": "05-trend-atr-sl-tp.italgo",
+    "variant": "05-trend-atr-sl-tp__ema50.italgo",
+    "kind": "add_block_ema",
+    "base_pnl": -33.54287285714267,
+    "variant_pnl": -33.54287285714267,
+    "delta_pnl": 0.0,
+    "better": false,
+    "base_wr": 0.23809523809523808,
+    "variant_wr": 0.23809523809523808,
+    "base_labels": {
+      "bad_noise": 17,
+      "bad": 15,
+      "good_weak": 1,
+      "good": 9
+    },
+    "variant_labels": {
+      "bad_noise": 17,
+      "bad": 15,
+      "good_weak": 1,
+      "good": 9
+    },
+    "base_findings": [
+      "серия_убытков"
+    ],
+    "variant_findings": [
+      "серия_убытков"
+    ],
+    "suggestions_before": [
+      "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки."
+    ]
+  },
+  {
+    "base": "23-tema-cross-10-30-ls.italgo",
+    "variant": "23-tema-cross-10-30-ls__period15x.italgo",
+    "kind": "change_period",
+    "base_pnl": -160.4409099999992,
+    "variant_pnl": -163.7226889999995,
+    "delta_pnl": -3.2817790000002844,
+    "better": false,
+    "base_wr": 0.41346153846153844,
+    "variant_wr": 0.2727272727272727,
+    "base_labels": {
+      "good": 43,
+      "bad": 55,
+      "bad_noise": 6,
+      "open": 1
+    },
+    "variant_labels": {
+      "good": 21,
+      "bad": 49,
+      "bad_noise": 7,
+      "open": 1
+    },
+    "base_findings": [
+      "серия_убытков"
+    ],
+    "variant_findings": [
+      "серия_убытков"
+    ],
+    "suggestions_before": [
+      "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки."
+    ]
+  },
+  {
+    "base": "11-tema-cross-10-30.italgo",
+    "variant": "11-tema-cross-10-30__period15x.italgo",
+    "kind": "change_period",
+    "base_pnl": -127.71714799999961,
+    "variant_pnl": -131.23284999999973,
+    "delta_pnl": -3.5157020000001182,
+    "better": false,
+    "base_wr": 0.4807692307692308,
+    "variant_wr": 0.2631578947368421,
+    "base_labels": {
+      "bad": 24,
+      "good": 25,
+      "bad_noise": 3
+    },
+    "variant_labels": {
+      "bad": 24,
+      "good": 10,
+      "bad_noise": 4,
+      "open": 1
+    },
+    "base_findings": [
+      "серия_убытков"
+    ],
+    "variant_findings": [
+      "серия_убытков"
+    ],
+    "suggestions_before": [
+      "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки."
+    ]
+  }
+]

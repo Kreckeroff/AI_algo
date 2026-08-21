@@ -1,0 +1,432 @@
+{
+  "version": 1,
+  "meta": {
+    "name": "Mean-reversion BB+RSI period×1.5",
+    "updatedAt": "2026-08-21T09:58:04Z",
+    "createdAt": "2026-08-20T23:48:07Z",
+    "tags": [
+      "mean-reversion",
+      "bb",
+      "rsi",
+      "long",
+      "ai-train",
+      "training",
+      "side:long_only",
+      "long_only",
+      "c6",
+      "intervention:change_period"
+    ],
+    "side_mode": "long_only",
+    "intervention": {
+      "kind": "change_period",
+      "base": "02-mean-reversion-bb-rsi.italgo",
+      "factor": 1.5
+    }
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "instrument",
+        "type": "instrument",
+        "position": {
+          "x": 40,
+          "y": 200
+        },
+        "data": {
+          "symbol": "SBER",
+          "instrument_type": "stock",
+          "label": "Инструмент"
+        }
+      },
+      {
+        "id": "close",
+        "type": "source_close",
+        "position": {
+          "x": 260,
+          "y": 80
+        },
+        "data": {
+          "label": "Close"
+        }
+      },
+      {
+        "id": "bb_l",
+        "type": "indicator_bb_lower",
+        "position": {
+          "x": 480,
+          "y": 40
+        },
+        "data": {
+          "period": 30,
+          "mult": 2,
+          "label": "BB −"
+        }
+      },
+      {
+        "id": "bb_u",
+        "type": "indicator_bb_upper",
+        "position": {
+          "x": 480,
+          "y": 200
+        },
+        "data": {
+          "period": 30,
+          "mult": 2,
+          "label": "BB +"
+        }
+      },
+      {
+        "id": "bb_m",
+        "type": "indicator_bb",
+        "position": {
+          "x": 480,
+          "y": 360
+        },
+        "data": {
+          "period": 30,
+          "mult": 2,
+          "label": "BB mid"
+        }
+      },
+      {
+        "id": "rsi",
+        "type": "indicator_rsi",
+        "position": {
+          "x": 480,
+          "y": 500
+        },
+        "data": {
+          "period": 21,
+          "label": "RSI"
+        }
+      },
+      {
+        "id": "rsi_lo",
+        "type": "constant",
+        "position": {
+          "x": 480,
+          "y": 640
+        },
+        "data": {
+          "value": 30,
+          "label": "30"
+        }
+      },
+      {
+        "id": "rsi_hi",
+        "type": "constant",
+        "position": {
+          "x": 700,
+          "y": 640
+        },
+        "data": {
+          "value": 70,
+          "label": "70"
+        }
+      },
+      {
+        "id": "touch_lo",
+        "type": "logic_lt",
+        "position": {
+          "x": 720,
+          "y": 60
+        },
+        "data": {
+          "label": "Close < BB−"
+        }
+      },
+      {
+        "id": "touch_hi",
+        "type": "logic_gt",
+        "position": {
+          "x": 720,
+          "y": 200
+        },
+        "data": {
+          "label": "Close > BB+"
+        }
+      },
+      {
+        "id": "rsi_os",
+        "type": "logic_lt",
+        "position": {
+          "x": 720,
+          "y": 480
+        },
+        "data": {
+          "label": "RSI oversold"
+        }
+      },
+      {
+        "id": "rsi_ob",
+        "type": "logic_gt",
+        "position": {
+          "x": 900,
+          "y": 480
+        },
+        "data": {
+          "label": "RSI overbought"
+        }
+      },
+      {
+        "id": "buy",
+        "type": "logic_and",
+        "position": {
+          "x": 960,
+          "y": 80
+        },
+        "data": {
+          "label": "Long MR"
+        }
+      },
+      {
+        "id": "exit",
+        "type": "logic_or",
+        "position": {
+          "x": 960,
+          "y": 260
+        },
+        "data": {
+          "label": "Exit"
+        }
+      },
+      {
+        "id": "cross_mid",
+        "type": "logic_cross_up",
+        "position": {
+          "x": 720,
+          "y": 340
+        },
+        "data": {
+          "label": "К mid"
+        }
+      },
+      {
+        "id": "open",
+        "type": "position_open_market",
+        "position": {
+          "x": 1180,
+          "y": 60
+        },
+        "data": {
+          "direction": "buy",
+          "qty": 1,
+          "label": "Long"
+        }
+      },
+      {
+        "id": "close_pos",
+        "type": "position_close_market",
+        "position": {
+          "x": 1180,
+          "y": 240
+        },
+        "data": {
+          "label": "Закрыть"
+        }
+      },
+      {
+        "id": "chart",
+        "type": "chart",
+        "position": {
+          "x": 960,
+          "y": 520
+        },
+        "data": {
+          "label": "Цена"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e1",
+        "source": "instrument",
+        "target": "close",
+        "sourceHandle": "instrument",
+        "targetHandle": "instrument"
+      },
+      {
+        "id": "e2",
+        "source": "close",
+        "target": "bb_l",
+        "sourceHandle": "value",
+        "targetHandle": "source"
+      },
+      {
+        "id": "e3",
+        "source": "close",
+        "target": "bb_u",
+        "sourceHandle": "value",
+        "targetHandle": "source"
+      },
+      {
+        "id": "e4",
+        "source": "close",
+        "target": "bb_m",
+        "sourceHandle": "value",
+        "targetHandle": "source"
+      },
+      {
+        "id": "e5",
+        "source": "close",
+        "target": "rsi",
+        "sourceHandle": "value",
+        "targetHandle": "source"
+      },
+      {
+        "id": "e6",
+        "source": "close",
+        "target": "touch_lo",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "e7",
+        "source": "bb_l",
+        "target": "touch_lo",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "e8",
+        "source": "close",
+        "target": "touch_hi",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "e9",
+        "source": "bb_u",
+        "target": "touch_hi",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "e10",
+        "source": "rsi",
+        "target": "rsi_os",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "e11",
+        "source": "rsi_lo",
+        "target": "rsi_os",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "e12",
+        "source": "rsi",
+        "target": "rsi_ob",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "e13",
+        "source": "rsi_hi",
+        "target": "rsi_ob",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "e14",
+        "source": "close",
+        "target": "cross_mid",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "e15",
+        "source": "bb_m",
+        "target": "cross_mid",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "e16",
+        "source": "touch_lo",
+        "target": "buy",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "e17",
+        "source": "rsi_os",
+        "target": "buy",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "e18",
+        "source": "touch_hi",
+        "target": "exit",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "e19",
+        "source": "rsi_ob",
+        "target": "exit",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "e20",
+        "source": "cross_mid",
+        "target": "exit",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "e21",
+        "source": "instrument",
+        "target": "open",
+        "sourceHandle": "instrument",
+        "targetHandle": "instrument"
+      },
+      {
+        "id": "e22",
+        "source": "buy",
+        "target": "open",
+        "sourceHandle": "result",
+        "targetHandle": "condition"
+      },
+      {
+        "id": "e23",
+        "source": "open",
+        "target": "close_pos",
+        "sourceHandle": "position",
+        "targetHandle": "position"
+      },
+      {
+        "id": "e24",
+        "source": "exit",
+        "target": "close_pos",
+        "sourceHandle": "result",
+        "targetHandle": "condition"
+      },
+      {
+        "id": "e25",
+        "source": "close",
+        "target": "chart",
+        "sourceHandle": "value",
+        "targetHandle": "series"
+      },
+      {
+        "id": "e26",
+        "source": "bb_l",
+        "target": "chart",
+        "sourceHandle": "value",
+        "targetHandle": "series"
+      },
+      {
+        "id": "e27",
+        "source": "bb_u",
+        "target": "chart",
+        "sourceHandle": "value",
+        "targetHandle": "series"
+      }
+    ]
+  }
+}

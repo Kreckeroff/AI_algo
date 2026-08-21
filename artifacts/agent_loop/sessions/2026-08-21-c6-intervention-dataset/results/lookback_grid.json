@@ -1,0 +1,262 @@
+[
+  {
+    "file": "01-trend-ema-adx-rsi.italgo",
+    "window": "1y",
+    "bars": 252,
+    "stats": {
+      "losses": 0,
+      "maxDrawdown": 0.0,
+      "netPnl": 0.0,
+      "totalTrades": 0,
+      "winRate": 0.0,
+      "wins": 0
+    }
+  },
+  {
+    "file": "04-macd-stoch-long-short.italgo",
+    "window": "1y",
+    "bars": 252,
+    "stats": {
+      "losses": 1,
+      "maxDrawdown": 78.04999999999998,
+      "netPnl": -18.145307000000003,
+      "totalTrades": 2,
+      "winRate": 0.0,
+      "wins": 0
+    }
+  },
+  {
+    "file": "21-sma-cross-20-50-ls.italgo",
+    "window": "1y",
+    "bars": 252,
+    "stats": {
+      "losses": 2,
+      "maxDrawdown": 38.349999999999994,
+      "netPnl": 54.00598600000001,
+      "totalTrades": 4,
+      "winRate": 0.3333333333333333,
+      "wins": 1
+    }
+  },
+  {
+    "file": "22-ema-cross-9-21-ls.italgo",
+    "window": "1y",
+    "bars": 252,
+    "stats": {
+      "losses": 13,
+      "maxDrawdown": 62.071762000000064,
+      "netPnl": -23.95155099999988,
+      "totalTrades": 17,
+      "winRate": 0.1875,
+      "wins": 3
+    }
+  },
+  {
+    "file": "26-supertrend-rsi-ls.italgo",
+    "window": "1y",
+    "bars": 252,
+    "stats": {
+      "losses": 0,
+      "maxDrawdown": 78.04999999999998,
+      "netPnl": -35.76068399999997,
+      "totalTrades": 1,
+      "winRate": 0.0,
+      "wins": 0
+    }
+  },
+  {
+    "file": "01-trend-ema-adx-rsi.italgo",
+    "window": "2y",
+    "bars": 504,
+    "stats": {
+      "losses": 1,
+      "maxDrawdown": 29.140334000000053,
+      "netPnl": -15.66235400000005,
+      "totalTrades": 2,
+      "winRate": 0.5,
+      "wins": 1
+    }
+  },
+  {
+    "file": "04-macd-stoch-long-short.italgo",
+    "window": "2y",
+    "bars": 504,
+    "stats": {
+      "losses": 2,
+      "maxDrawdown": 78.04999999999998,
+      "netPnl": 18.62317900000022,
+      "totalTrades": 8,
+      "winRate": 0.7142857142857143,
+      "wins": 5
+    }
+  },
+  {
+    "file": "21-sma-cross-20-50-ls.italgo",
+    "window": "2y",
+    "bars": 504,
+    "stats": {
+      "losses": 5,
+      "maxDrawdown": 38.349999999999994,
+      "netPnl": 62.94953700000019,
+      "totalTrades": 10,
+      "winRate": 0.4444444444444444,
+      "wins": 4
+    }
+  },
+  {
+    "file": "22-ema-cross-9-21-ls.italgo",
+    "window": "2y",
+    "bars": 504,
+    "stats": {
+      "losses": 24,
+      "maxDrawdown": 149.8028999999998,
+      "netPnl": -108.29952999999978,
+      "totalTrades": 31,
+      "winRate": 0.2,
+      "wins": 6
+    }
+  },
+  {
+    "file": "26-supertrend-rsi-ls.italgo",
+    "window": "2y",
+    "bars": 504,
+    "stats": {
+      "losses": 6,
+      "maxDrawdown": 142.50152199999994,
+      "netPnl": -111.1431619999999,
+      "totalTrades": 9,
+      "winRate": 0.25,
+      "wins": 2
+    }
+  },
+  {
+    "file": "01-trend-ema-adx-rsi.italgo",
+    "window": "5y",
+    "bars": 1260,
+    "stats": {
+      "losses": 2,
+      "maxDrawdown": 59.189824999999985,
+      "netPnl": 127.51295300000004,
+      "totalTrades": 4,
+      "winRate": 0.5,
+      "wins": 2
+    }
+  },
+  {
+    "file": "04-macd-stoch-long-short.italgo",
+    "window": "5y",
+    "bars": 1260,
+    "stats": {
+      "losses": 9,
+      "maxDrawdown": 148.2560239999999,
+      "netPnl": 62.36619100000024,
+      "totalTrades": 19,
+      "winRate": 0.5,
+      "wins": 9
+    }
+  },
+  {
+    "file": "21-sma-cross-20-50-ls.italgo",
+    "window": "5y",
+    "bars": 1260,
+    "stats": {
+      "losses": 15,
+      "maxDrawdown": 93.84689099999997,
+      "netPnl": 75.69608300000024,
+      "totalTrades": 24,
+      "winRate": 0.34782608695652173,
+      "wins": 8
+    }
+  },
+  {
+    "file": "22-ema-cross-9-21-ls.italgo",
+    "window": "5y",
+    "bars": 1260,
+    "stats": {
+      "losses": 45,
+      "maxDrawdown": 149.8028999999998,
+      "netPnl": 72.74487200000007,
+      "totalTrades": 61,
+      "winRate": 0.25,
+      "wins": 15
+    }
+  },
+  {
+    "file": "26-supertrend-rsi-ls.italgo",
+    "window": "5y",
+    "bars": 1260,
+    "stats": {
+      "losses": 10,
+      "maxDrawdown": 142.50152199999994,
+      "netPnl": 11.414343000000201,
+      "totalTrades": 18,
+      "winRate": 0.4117647058823529,
+      "wins": 7
+    }
+  },
+  {
+    "file": "01-trend-ema-adx-rsi.italgo",
+    "window": "all",
+    "bars": 1366,
+    "stats": {
+      "losses": 2,
+      "maxDrawdown": 59.189824999999985,
+      "netPnl": 127.51295300000004,
+      "totalTrades": 4,
+      "winRate": 0.5,
+      "wins": 2
+    }
+  },
+  {
+    "file": "04-macd-stoch-long-short.italgo",
+    "window": "all",
+    "bars": 1366,
+    "stats": {
+      "losses": 9,
+      "maxDrawdown": 148.2560239999999,
+      "netPnl": 165.77297400000026,
+      "totalTrades": 20,
+      "winRate": 0.5263157894736842,
+      "wins": 10
+    }
+  },
+  {
+    "file": "21-sma-cross-20-50-ls.italgo",
+    "window": "all",
+    "bars": 1366,
+    "stats": {
+      "losses": 15,
+      "maxDrawdown": 123.71106599999996,
+      "netPnl": 256.24967300000026,
+      "totalTrades": 25,
+      "winRate": 0.375,
+      "wins": 9
+    }
+  },
+  {
+    "file": "22-ema-cross-9-21-ls.italgo",
+    "window": "all",
+    "bars": 1366,
+    "stats": {
+      "losses": 48,
+      "maxDrawdown": 149.8028999999998,
+      "netPnl": 152.98028900000014,
+      "totalTrades": 66,
+      "winRate": 0.26153846153846155,
+      "wins": 17
+    }
+  },
+  {
+    "file": "26-supertrend-rsi-ls.italgo",
+    "window": "all",
+    "bars": 1366,
+    "stats": {
+      "losses": 10,
+      "maxDrawdown": 142.50152199999994,
+      "netPnl": 139.07607900000016,
+      "totalTrades": 19,
+      "winRate": 0.4444444444444444,
+      "wins": 8
+    }
+  }
+]

@@ -1,0 +1,448 @@
+{
+  "session": "2026-08-21-c6-intervention-dataset",
+  "n_negative_bases": 10,
+  "n_pairs": 20,
+  "n_better": 17,
+  "kind_stats": {
+    "add_block_ema": {
+      "n": 10,
+      "wins": 9,
+      "sum_delta": 1136.1426389999988,
+      "mean_delta": 113.61426389999988,
+      "winrate": 0.9
+    },
+    "change_period": {
+      "n": 10,
+      "wins": 8,
+      "sum_delta": 656.4900361428554,
+      "mean_delta": 65.64900361428553,
+      "winrate": 0.8
+    }
+  },
+  "top_improves": [
+    {
+      "base": "23-tema-cross-10-30-ls.italgo",
+      "variant": "23-tema-cross-10-30-ls__ema50.italgo",
+      "kind": "add_block_ema",
+      "base_pnl": -160.4409099999992,
+      "variant_pnl": 187.7339980000001,
+      "delta_pnl": 348.1749079999993,
+      "better": true,
+      "base_wr": 0.41346153846153844,
+      "variant_wr": 0.375,
+      "base_labels": {
+        "good": 43,
+        "bad": 55,
+        "bad_noise": 6,
+        "open": 1
+      },
+      "variant_labels": {
+        "good": 24,
+        "bad": 34,
+        "bad_noise": 6,
+        "open": 1
+      },
+      "base_findings": [
+        "серия_убытков"
+      ],
+      "variant_findings": [
+        "серия_убытков",
+        "тренд_без_фильтра_флэта"
+      ],
+      "suggestions_before": [
+        "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки."
+      ]
+    },
+    {
+      "base": "19-bb-rsi-mean-reversion-v2.italgo",
+      "variant": "19-bb-rsi-mean-reversion-v2__ema50.italgo",
+      "kind": "add_block_ema",
+      "base_pnl": -241.971949,
+      "variant_pnl": 10.487385000000017,
+      "delta_pnl": 252.459334,
+      "better": true,
+      "base_wr": 0.5,
+      "variant_wr": 1.0,
+      "base_labels": {
+        "bad": 4,
+        "good": 4,
+        "open": 1
+      },
+      "variant_labels": {
+        "good": 1
+      },
+      "base_findings": [
+        "mr_слишком_долго_держит"
+      ],
+      "variant_findings": [
+        "мало_закрытых_сделок"
+      ],
+      "suggestions_before": [
+        "Mean-reversion удерживает позицию слишком долго. Добавьте быстрый выход к середине канала / противоположный RSI и жёсткий SL."
+      ]
+    },
+    {
+      "base": "17-supertrend-rsi-tight.italgo",
+      "variant": "17-supertrend-rsi-tight__period15x.italgo",
+      "kind": "change_period",
+      "base_pnl": -41.397890999999916,
+      "variant_pnl": 135.96240600000016,
+      "delta_pnl": 177.36029700000006,
+      "better": true,
+      "base_wr": 0.5625,
+      "variant_wr": 0.5238095238095238,
+      "base_labels": {
+        "good": 9,
+        "bad": 7,
+        "open": 1
+      },
+      "variant_labels": {
+        "good": 11,
+        "bad_noise": 1,
+        "bad": 9,
+        "open": 1
+      },
+      "base_findings": [],
+      "variant_findings": [],
+      "suggestions_before": [
+        "Явных паттернов «пилы»/серий не видно по сделкам — смотрите diff метрик и блоков; проверьте out-of-sample окно."
+      ]
+    },
+    {
+      "base": "11-tema-cross-10-30.italgo",
+      "variant": "11-tema-cross-10-30__ema50.italgo",
+      "kind": "add_block_ema",
+      "base_pnl": -127.71714799999961,
+      "variant_pnl": 46.370306000000056,
+      "delta_pnl": 174.08745399999967,
+      "better": true,
+      "base_wr": 0.4807692307692308,
+      "variant_wr": 0.53125,
+      "base_labels": {
+        "bad": 24,
+        "good": 25,
+        "bad_noise": 3
+      },
+      "variant_labels": {
+        "good": 17,
+        "bad": 12,
+        "bad_noise": 3
+      },
+      "base_findings": [
+        "серия_убытков"
+      ],
+      "variant_findings": [
+        "серия_убытков"
+      ],
+      "suggestions_before": [
+        "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки."
+      ]
+    },
+    {
+      "base": "17-supertrend-rsi-tight.italgo",
+      "variant": "17-supertrend-rsi-tight__ema50.italgo",
+      "kind": "add_block_ema",
+      "base_pnl": -41.397890999999916,
+      "variant_pnl": 76.78582999999993,
+      "delta_pnl": 118.18372099999985,
+      "better": true,
+      "base_wr": 0.5625,
+      "variant_wr": 0.5833333333333334,
+      "base_labels": {
+        "good": 9,
+        "bad": 7,
+        "open": 1
+      },
+      "variant_labels": {
+        "bad": 5,
+        "good": 7
+      },
+      "base_findings": [],
+      "variant_findings": [],
+      "suggestions_before": [
+        "Явных паттернов «пилы»/серий не видно по сделкам — смотрите diff метрик и блоков; проверьте out-of-sample окно."
+      ]
+    },
+    {
+      "base": "12-dema-cross-12-26.italgo",
+      "variant": "12-dema-cross-12-26__period15x.italgo",
+      "kind": "change_period",
+      "base_pnl": -103.43236099999991,
+      "variant_pnl": 10.376445999999987,
+      "delta_pnl": 113.8088069999999,
+      "better": true,
+      "base_wr": 0.38095238095238093,
+      "variant_wr": 0.4,
+      "base_labels": {
+        "bad": 23,
+        "good": 15,
+        "good_weak": 1,
+        "bad_noise": 3,
+        "open": 1
+      },
+      "variant_labels": {
+        "bad": 15,
+        "good": 9,
+        "good_weak": 1,
+        "open": 1
+      },
+      "base_findings": [
+        "серия_убытков"
+      ],
+      "variant_findings": [],
+      "suggestions_before": [
+        "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки."
+      ]
+    },
+    {
+      "base": "02-mean-reversion-bb-rsi.italgo",
+      "variant": "02-mean-reversion-bb-rsi__period15x.italgo",
+      "kind": "change_period",
+      "base_pnl": -77.87303099999984,
+      "variant_pnl": 31.556133000000102,
+      "delta_pnl": 109.42916399999994,
+      "better": true,
+      "base_wr": 0.45454545454545453,
+      "variant_wr": 0.5555555555555556,
+      "base_labels": {
+        "bad": 6,
+        "good": 5
+      },
+      "variant_labels": {
+        "bad": 4,
+        "good": 5
+      },
+      "base_findings": [],
+      "variant_findings": [],
+      "suggestions_before": [
+        "Явных паттернов «пилы»/серий не видно по сделкам — смотрите diff метрик и блоков; проверьте out-of-sample окно."
+      ]
+    },
+    {
+      "base": "02-mean-reversion-bb-rsi.italgo",
+      "variant": "02-mean-reversion-bb-rsi__ema50.italgo",
+      "kind": "add_block_ema",
+      "base_pnl": -77.87303099999984,
+      "variant_pnl": 0.0,
+      "delta_pnl": 77.87303099999984,
+      "better": true,
+      "base_wr": 0.45454545454545453,
+      "variant_wr": 0.0,
+      "base_labels": {
+        "bad": 6,
+        "good": 5
+      },
+      "variant_labels": {},
+      "base_findings": [],
+      "variant_findings": [
+        "мало_закрытых_сделок"
+      ],
+      "suggestions_before": [
+        "Явных паттернов «пилы»/серий не видно по сделкам — смотрите diff метрик и блоков; проверьте out-of-sample окно."
+      ]
+    }
+  ],
+  "lookback_n": 20,
+  "top20_by_score": [
+    {
+      "entry": "23-tema-cross-10-30-ls__ema50.italgo",
+      "filter": "add_block_ema",
+      "median_pnl": 187.7339980000001,
+      "mean_pnl": 348.1749079999993,
+      "mean_wr": 0.375,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "intervention"
+    },
+    {
+      "entry": "19-bb-rsi-mean-reversion-v2__ema50.italgo",
+      "filter": "add_block_ema",
+      "median_pnl": 10.487385000000017,
+      "mean_pnl": 252.459334,
+      "mean_wr": 1.0,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "intervention"
+    },
+    {
+      "entry": "17-supertrend-rsi-tight__period15x.italgo",
+      "filter": "change_period",
+      "median_pnl": 135.96240600000016,
+      "mean_pnl": 177.36029700000006,
+      "mean_wr": 0.5238095238095238,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "intervention"
+    },
+    {
+      "entry": "11-tema-cross-10-30__ema50.italgo",
+      "filter": "add_block_ema",
+      "median_pnl": 46.370306000000056,
+      "mean_pnl": 174.08745399999967,
+      "mean_wr": 0.53125,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "intervention"
+    },
+    {
+      "entry": "17-supertrend-rsi-tight__ema50.italgo",
+      "filter": "add_block_ema",
+      "median_pnl": 76.78582999999993,
+      "mean_pnl": 118.18372099999985,
+      "mean_wr": 0.5833333333333334,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "intervention"
+    },
+    {
+      "entry": "12-dema-cross-12-26__period15x.italgo",
+      "filter": "change_period",
+      "median_pnl": 10.376445999999987,
+      "mean_pnl": 113.8088069999999,
+      "mean_wr": 0.4,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "intervention"
+    },
+    {
+      "entry": "02-mean-reversion-bb-rsi__period15x.italgo",
+      "filter": "change_period",
+      "median_pnl": 31.556133000000102,
+      "mean_pnl": 109.42916399999994,
+      "mean_wr": 0.5555555555555556,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "intervention"
+    },
+    {
+      "entry": "02-mean-reversion-bb-rsi__ema50.italgo",
+      "filter": "add_block_ema",
+      "median_pnl": 0.0,
+      "mean_pnl": 77.87303099999984,
+      "mean_wr": 0.0,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "intervention"
+    },
+    {
+      "entry": "12-dema-cross-12-26__ema50.italgo",
+      "filter": "add_block_ema",
+      "median_pnl": -33.69878799999998,
+      "mean_pnl": 69.73357299999994,
+      "mean_wr": 0.38235294117647056,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "intervention"
+    },
+    {
+      "entry": "15-momentum-cross-0__ema50.italgo",
+      "filter": "add_block_ema",
+      "median_pnl": 43.00606600000029,
+      "mean_pnl": 61.157415999999955,
+      "mean_wr": 0.32786885245901637,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "intervention"
+    },
+    {
+      "entry": "19-bb-rsi-mean-reversion-v2__period15x.italgo",
+      "filter": "change_period",
+      "median_pnl": -181.00323600000004,
+      "mean_pnl": 60.96871299999995,
+      "mean_wr": 0.6666666666666666,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "intervention"
+    },
+    {
+      "entry": "13-rsi-cross-50__period15x.italgo",
+      "filter": "change_period",
+      "median_pnl": 53.262044000000046,
+      "mean_pnl": 56.88211999999956,
+      "mean_wr": 0.4074074074074074,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "intervention"
+    },
+    {
+      "entry": "14-cmo-cross-0__period15x.italgo",
+      "filter": "change_period",
+      "median_pnl": 53.262044000000046,
+      "mean_pnl": 56.88211999999956,
+      "mean_wr": 0.4074074074074074,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "intervention"
+    },
+    {
+      "entry": "05-trend-atr-sl-tp__period15x.italgo",
+      "filter": "change_period",
+      "median_pnl": 19.460392285714164,
+      "mean_pnl": 53.00326514285683,
+      "mean_wr": 0.3103448275862069,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "intervention"
+    },
+    {
+      "entry": "15-momentum-cross-0__period15x.italgo",
+      "filter": "change_period",
+      "median_pnl": 16.801681000000443,
+      "mean_pnl": 34.95303100000011,
+      "mean_wr": 0.3333333333333333,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "intervention"
+    },
+    {
+      "entry": "13-rsi-cross-50__ema50.italgo",
+      "filter": "add_block_ema",
+      "median_pnl": 13.616525000000465,
+      "mean_pnl": 17.23660099999998,
+      "mean_wr": 0.3508771929824561,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "intervention"
+    },
+    {
+      "entry": "14-cmo-cross-0__ema50.italgo",
+      "filter": "add_block_ema",
+      "median_pnl": 13.616525000000465,
+      "mean_pnl": 17.23660099999998,
+      "mean_wr": 0.3508771929824561,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "intervention"
+    },
+    {
+      "entry": "05-trend-atr-sl-tp__ema50.italgo",
+      "filter": "add_block_ema",
+      "median_pnl": -33.54287285714267,
+      "mean_pnl": 0.0,
+      "mean_wr": 0.23809523809523808,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "intervention"
+    },
+    {
+      "entry": "23-tema-cross-10-30-ls__period15x.italgo",
+      "filter": "change_period",
+      "median_pnl": -163.7226889999995,
+      "mean_pnl": -3.2817790000002844,
+      "mean_wr": 0.2727272727272727,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "intervention"
+    },
+    {
+      "entry": "11-tema-cross-10-30__period15x.italgo",
+      "filter": "change_period",
+      "median_pnl": -131.23284999999973,
+      "mean_pnl": -3.5157020000001182,
+      "mean_wr": 0.2631578947368421,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "intervention"
+    }
+  ]
+}
