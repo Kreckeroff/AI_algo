@@ -1,0 +1,935 @@
+[
+  {
+    "file": "01-trend-ema-adx-rsi.italgo",
+    "side_mode": "long_only",
+    "stats": {
+      "losses": 2,
+      "maxDrawdown": 59.189824999999985,
+      "netPnl": 127.51295300000004,
+      "totalTrades": 4,
+      "winRate": 0.5,
+      "wins": 2
+    },
+    "label_counts": {
+      "good": 2,
+      "bad": 2
+    },
+    "trade_report": {
+      "regime": "trend",
+      "trade_count": 4,
+      "findings": [
+        "мало_закрытых_сделок"
+      ],
+      "suggestions": [
+        "Мало закрытых сделок для разбора — расширьте окно бэктеста или ослабьте фильтры входа."
+      ]
+    },
+    "intervention_kinds": [
+      "add_block",
+      "change_period"
+    ]
+  },
+  {
+    "file": "02-mean-reversion-bb-rsi.italgo",
+    "side_mode": "long_only",
+    "stats": {
+      "losses": 6,
+      "maxDrawdown": 120.92549799999988,
+      "netPnl": -77.87303099999984,
+      "totalTrades": 11,
+      "winRate": 0.45454545454545453,
+      "wins": 5
+    },
+    "label_counts": {
+      "bad": 6,
+      "good": 5
+    },
+    "trade_report": {
+      "regime": "mean_reversion",
+      "trade_count": 11,
+      "winrate": 0.4545,
+      "median_bars_held": 17.0,
+      "flip_rate": 0.8,
+      "max_losing_streak": 2,
+      "long_pnl": -77.87303099999984,
+      "short_pnl": 0,
+      "findings": [],
+      "suggestions": [
+        "Явных паттернов «пилы»/серий не видно по сделкам — смотрите diff метрик и блоков; проверьте out-of-sample окно."
+      ]
+    },
+    "intervention_kinds": [
+      "add_block"
+    ]
+  },
+  {
+    "file": "03-breakout-donchian-volume.italgo",
+    "side_mode": "long_only",
+    "stats": {
+      "losses": 0,
+      "maxDrawdown": 0.0,
+      "netPnl": 0.0,
+      "totalTrades": 0,
+      "winRate": 0.0,
+      "wins": 0
+    },
+    "label_counts": {},
+    "trade_report": {
+      "regime": "breakout",
+      "trade_count": 0,
+      "findings": [
+        "мало_закрытых_сделок"
+      ],
+      "suggestions": [
+        "Мало закрытых сделок для разбора — расширьте окно бэктеста или ослабьте фильтры входа."
+      ]
+    },
+    "intervention_kinds": [
+      "add_block",
+      "change_period"
+    ]
+  },
+  {
+    "file": "04-macd-stoch-long-short.italgo",
+    "side_mode": "long_short",
+    "stats": {
+      "losses": 9,
+      "maxDrawdown": 148.2560239999999,
+      "netPnl": 165.77297400000026,
+      "totalTrades": 20,
+      "winRate": 0.5263157894736842,
+      "wins": 10
+    },
+    "label_counts": {
+      "bad": 9,
+      "good": 10,
+      "open": 1
+    },
+    "trade_report": {
+      "regime": "trend",
+      "trade_count": 19,
+      "winrate": 0.5263,
+      "median_bars_held": 42.0,
+      "flip_rate": 0.3333,
+      "max_losing_streak": 6,
+      "long_pnl": 36.25327000000016,
+      "short_pnl": 124.12735700000013,
+      "findings": [
+        "серия_убытков"
+      ],
+      "suggestions": [
+        "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки."
+      ]
+    },
+    "intervention_kinds": [
+      "add_block"
+    ]
+  },
+  {
+    "file": "05-trend-atr-sl-tp.italgo",
+    "side_mode": "long_only",
+    "stats": {
+      "losses": 32,
+      "maxDrawdown": 79.60345771428547,
+      "netPnl": -33.54287285714267,
+      "totalTrades": 42,
+      "winRate": 0.23809523809523808,
+      "wins": 10
+    },
+    "label_counts": {
+      "bad_noise": 17,
+      "bad": 15,
+      "good_weak": 1,
+      "good": 9
+    },
+    "trade_report": {
+      "regime": "trend",
+      "trade_count": 42,
+      "winrate": 0.2381,
+      "median_bars_held": 4.0,
+      "flip_rate": 0.3415,
+      "max_losing_streak": 13,
+      "long_pnl": -33.54287285714267,
+      "short_pnl": 0,
+      "findings": [
+        "серия_убытков"
+      ],
+      "suggestions": [
+        "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки."
+      ]
+    },
+    "intervention_kinds": [
+      "add_block"
+    ]
+  },
+  {
+    "file": "06-session-filter-rsi.italgo",
+    "side_mode": "long_only",
+    "stats": {
+      "losses": 0,
+      "maxDrawdown": 0.0,
+      "netPnl": 0.0,
+      "totalTrades": 0,
+      "winRate": 0.0,
+      "wins": 0
+    },
+    "label_counts": {},
+    "trade_report": {
+      "regime": "mean_reversion",
+      "trade_count": 0,
+      "findings": [
+        "мало_закрытых_сделок"
+      ],
+      "suggestions": [
+        "Мало закрытых сделок для разбора — расширьте окно бэктеста или ослабьте фильтры входа."
+      ]
+    },
+    "intervention_kinds": [
+      "add_block",
+      "change_period"
+    ]
+  },
+  {
+    "file": "07-supertrend-di-adx-stack.italgo",
+    "side_mode": "long_short",
+    "stats": {
+      "losses": 21,
+      "maxDrawdown": 177.68788400000022,
+      "netPnl": 82.91840799999983,
+      "totalTrades": 31,
+      "winRate": 0.3,
+      "wins": 9
+    },
+    "label_counts": {
+      "bad": 21,
+      "good": 9,
+      "open": 1
+    },
+    "trade_report": {
+      "regime": "trend",
+      "trade_count": 30,
+      "winrate": 0.3,
+      "median_bars_held": 25.0,
+      "flip_rate": 0.5172,
+      "max_losing_streak": 7,
+      "long_pnl": 4.45405799999989,
+      "short_pnl": 88.92250399999992,
+      "findings": [
+        "серия_убытков",
+        "тренд_без_фильтра_флэта"
+      ],
+      "suggestions": [
+        "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки.",
+        "Трендовая логика при низкой винрейте и частых разворотах — типичный флэт. Фильтр: торговать только при ADX выше порога или при согласии цены и EMA/SuperTrend."
+      ]
+    },
+    "intervention_kinds": [
+      "add_block"
+    ]
+  },
+  {
+    "file": "08-cci-regime-trail.italgo",
+    "side_mode": "long_only",
+    "stats": {
+      "losses": 24,
+      "maxDrawdown": 28.215053094999973,
+      "netPnl": 29.73458223500006,
+      "totalTrades": 44,
+      "winRate": 0.45454545454545453,
+      "wins": 20
+    },
+    "label_counts": {
+      "bad_noise": 14,
+      "good": 20,
+      "bad": 10
+    },
+    "trade_report": {
+      "regime": "trend",
+      "trade_count": 44,
+      "winrate": 0.4545,
+      "median_bars_held": 3.0,
+      "flip_rate": 0.5116,
+      "max_losing_streak": 5,
+      "long_pnl": 29.73458223500006,
+      "short_pnl": 0,
+      "findings": [
+        "сверхкороткие_удержания",
+        "серия_убытков"
+      ],
+      "suggestions": [
+        "Медиана удержания очень мала — похоже на шум/overtrading. Увеличьте период сигналов, добавьте подтверждение на старшем ТФ или logic_hold.",
+        "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки."
+      ]
+    },
+    "intervention_kinds": [
+      "add_block",
+      "change_period"
+    ]
+  },
+  {
+    "file": "09-sma-cross-20-50.italgo",
+    "side_mode": "long_only",
+    "stats": {
+      "losses": 6,
+      "maxDrawdown": 51.070721000000006,
+      "netPnl": 102.52095400000013,
+      "totalTrades": 12,
+      "winRate": 0.5,
+      "wins": 6
+    },
+    "label_counts": {
+      "bad": 5,
+      "good": 6,
+      "bad_noise": 1
+    },
+    "trade_report": {
+      "regime": "trend",
+      "trade_count": 12,
+      "winrate": 0.5,
+      "median_bars_held": 51.0,
+      "flip_rate": 0.7273,
+      "max_losing_streak": 2,
+      "long_pnl": 102.52095400000013,
+      "short_pnl": 0,
+      "findings": [],
+      "suggestions": [
+        "Явных паттернов «пилы»/серий не видно по сделкам — смотрите diff метрик и блоков; проверьте out-of-sample окно."
+      ]
+    },
+    "intervention_kinds": [
+      "add_block"
+    ]
+  },
+  {
+    "file": "10-ema-cross-9-21.italgo",
+    "side_mode": "long_only",
+    "stats": {
+      "losses": 23,
+      "maxDrawdown": 103.57985799999996,
+      "netPnl": 47.483690000000095,
+      "totalTrades": 33,
+      "winRate": 0.30303030303030304,
+      "wins": 10
+    },
+    "label_counts": {
+      "good": 10,
+      "bad_noise": 7,
+      "bad": 16
+    },
+    "trade_report": {
+      "regime": "trend",
+      "trade_count": 33,
+      "winrate": 0.303,
+      "median_bars_held": 12.0,
+      "flip_rate": 0.4688,
+      "max_losing_streak": 5,
+      "long_pnl": 47.483690000000095,
+      "short_pnl": 0,
+      "findings": [
+        "серия_убытков",
+        "тренд_без_фильтра_флэта"
+      ],
+      "suggestions": [
+        "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки.",
+        "Трендовая логика при низкой винрейте и частых разворотах — типичный флэт. Фильтр: торговать только при ADX выше порога или при согласии цены и EMA/SuperTrend."
+      ]
+    },
+    "intervention_kinds": [
+      "add_block"
+    ]
+  },
+  {
+    "file": "11-tema-cross-10-30.italgo",
+    "side_mode": "long_only",
+    "stats": {
+      "losses": 27,
+      "maxDrawdown": 181.330977,
+      "netPnl": -127.71714799999961,
+      "totalTrades": 52,
+      "winRate": 0.4807692307692308,
+      "wins": 25
+    },
+    "label_counts": {
+      "bad": 24,
+      "good": 25,
+      "bad_noise": 3
+    },
+    "trade_report": {
+      "regime": "trend",
+      "trade_count": 52,
+      "winrate": 0.4808,
+      "median_bars_held": 10.0,
+      "flip_rate": 0.4118,
+      "max_losing_streak": 5,
+      "long_pnl": -127.71714799999961,
+      "short_pnl": 0,
+      "findings": [
+        "серия_убытков"
+      ],
+      "suggestions": [
+        "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки."
+      ]
+    },
+    "intervention_kinds": [
+      "add_block"
+    ]
+  },
+  {
+    "file": "12-dema-cross-12-26.italgo",
+    "side_mode": "long_only",
+    "stats": {
+      "losses": 26,
+      "maxDrawdown": 148.31954400000006,
+      "netPnl": -103.43236099999991,
+      "totalTrades": 43,
+      "winRate": 0.38095238095238093,
+      "wins": 16
+    },
+    "label_counts": {
+      "bad": 23,
+      "good": 15,
+      "good_weak": 1,
+      "bad_noise": 3,
+      "open": 1
+    },
+    "trade_report": {
+      "regime": "trend",
+      "trade_count": 42,
+      "winrate": 0.381,
+      "median_bars_held": 12.0,
+      "flip_rate": 0.3415,
+      "max_losing_streak": 5,
+      "long_pnl": -100.00490999999995,
+      "short_pnl": 0,
+      "findings": [
+        "серия_убытков"
+      ],
+      "suggestions": [
+        "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки."
+      ]
+    },
+    "intervention_kinds": [
+      "add_block"
+    ]
+  },
+  {
+    "file": "13-rsi-cross-50.italgo",
+    "side_mode": "long_only",
+    "stats": {
+      "losses": 58,
+      "maxDrawdown": 120.46337599999967,
+      "netPnl": -3.6200759999995142,
+      "totalTrades": 86,
+      "winRate": 0.32558139534883723,
+      "wins": 28
+    },
+    "label_counts": {
+      "bad": 27,
+      "good_weak": 4,
+      "bad_noise": 31,
+      "good": 24
+    },
+    "trade_report": {
+      "regime": "mean_reversion",
+      "trade_count": 86,
+      "winrate": 0.3256,
+      "median_bars_held": 4.0,
+      "flip_rate": 0.3765,
+      "max_losing_streak": 8,
+      "long_pnl": -3.6200759999995142,
+      "short_pnl": 0,
+      "findings": [
+        "серия_убытков"
+      ],
+      "suggestions": [
+        "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки."
+      ]
+    },
+    "intervention_kinds": [
+      "add_block"
+    ]
+  },
+  {
+    "file": "14-cmo-cross-0.italgo",
+    "side_mode": "long_only",
+    "stats": {
+      "losses": 58,
+      "maxDrawdown": 120.46337599999967,
+      "netPnl": -3.6200759999995142,
+      "totalTrades": 86,
+      "winRate": 0.32558139534883723,
+      "wins": 28
+    },
+    "label_counts": {
+      "bad": 27,
+      "good_weak": 4,
+      "bad_noise": 31,
+      "good": 24
+    },
+    "trade_report": {
+      "regime": "unknown",
+      "trade_count": 86,
+      "winrate": 0.3256,
+      "median_bars_held": 4.0,
+      "flip_rate": 0.3765,
+      "max_losing_streak": 8,
+      "long_pnl": -3.6200759999995142,
+      "short_pnl": 0,
+      "findings": [
+        "серия_убытков"
+      ],
+      "suggestions": [
+        "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки."
+      ]
+    },
+    "intervention_kinds": [
+      "add_block"
+    ]
+  },
+  {
+    "file": "15-momentum-cross-0.italgo",
+    "side_mode": "long_only",
+    "stats": {
+      "losses": 62,
+      "maxDrawdown": 130.0328769999999,
+      "netPnl": -18.151349999999667,
+      "totalTrades": 98,
+      "winRate": 0.3673469387755102,
+      "wins": 36
+    },
+    "label_counts": {
+      "good_weak": 7,
+      "bad_noise": 35,
+      "good": 29,
+      "bad": 27
+    },
+    "trade_report": {
+      "regime": "unknown",
+      "trade_count": 98,
+      "winrate": 0.3673,
+      "median_bars_held": 3.0,
+      "flip_rate": 0.4948,
+      "max_losing_streak": 8,
+      "long_pnl": -18.151349999999667,
+      "short_pnl": 0,
+      "findings": [
+        "сверхкороткие_удержания",
+        "серия_убытков"
+      ],
+      "suggestions": [
+        "Медиана удержания очень мала — похоже на шум/overtrading. Увеличьте период сигналов, добавьте подтверждение на старшем ТФ или logic_hold.",
+        "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки."
+      ]
+    },
+    "intervention_kinds": [
+      "add_block",
+      "change_period"
+    ]
+  },
+  {
+    "file": "16-supertrend-rsi-entry.italgo",
+    "side_mode": "long_only",
+    "stats": {
+      "losses": 4,
+      "maxDrawdown": 109.59076099999996,
+      "netPnl": 41.351667000000106,
+      "totalTrades": 10,
+      "winRate": 0.5555555555555556,
+      "wins": 5
+    },
+    "label_counts": {
+      "bad": 4,
+      "good": 5,
+      "open": 1
+    },
+    "trade_report": {
+      "regime": "trend",
+      "trade_count": 9,
+      "winrate": 0.5556,
+      "median_bars_held": 53.0,
+      "flip_rate": 0.75,
+      "max_losing_streak": 1,
+      "long_pnl": 68.20146000000008,
+      "short_pnl": 0,
+      "findings": [],
+      "suggestions": [
+        "Явных паттернов «пилы»/серий не видно по сделкам — смотрите diff метрик и блоков; проверьте out-of-sample окно."
+      ]
+    },
+    "intervention_kinds": [
+      "add_block"
+    ]
+  },
+  {
+    "file": "17-supertrend-rsi-tight.italgo",
+    "side_mode": "long_only",
+    "stats": {
+      "losses": 7,
+      "maxDrawdown": 173.71483699999993,
+      "netPnl": -41.397890999999916,
+      "totalTrades": 17,
+      "winRate": 0.5625,
+      "wins": 9
+    },
+    "label_counts": {
+      "good": 9,
+      "bad": 7,
+      "open": 1
+    },
+    "trade_report": {
+      "regime": "trend",
+      "trade_count": 16,
+      "winrate": 0.5625,
+      "median_bars_held": 37.0,
+      "flip_rate": 0.5333,
+      "max_losing_streak": 2,
+      "long_pnl": -42.250867999999926,
+      "short_pnl": 0,
+      "findings": [],
+      "suggestions": [
+        "Явных паттернов «пилы»/серий не видно по сделкам — смотрите diff метрик и блоков; проверьте out-of-sample окно."
+      ]
+    },
+    "intervention_kinds": [
+      "add_block"
+    ]
+  },
+  {
+    "file": "18-mom-pct-ema50-filter.italgo",
+    "side_mode": "long_only",
+    "stats": {
+      "losses": 41,
+      "maxDrawdown": 66.29599899999994,
+      "netPnl": 43.00606600000029,
+      "totalTrades": 61,
+      "winRate": 0.32786885245901637,
+      "wins": 20
+    },
+    "label_counts": {
+      "bad_noise": 24,
+      "good_weak": 3,
+      "bad": 17,
+      "good": 17
+    },
+    "trade_report": {
+      "regime": "trend",
+      "trade_count": 61,
+      "winrate": 0.3279,
+      "median_bars_held": 3.0,
+      "flip_rate": 0.5333,
+      "max_losing_streak": 8,
+      "long_pnl": 43.00606600000029,
+      "short_pnl": 0,
+      "findings": [
+        "сверхкороткие_удержания",
+        "серия_убытков",
+        "тренд_без_фильтра_флэта"
+      ],
+      "suggestions": [
+        "Медиана удержания очень мала — похоже на шум/overtrading. Увеличьте период сигналов, добавьте подтверждение на старшем ТФ или logic_hold.",
+        "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки.",
+        "Трендовая логика при низкой винрейте и частых разворотах — типичный флэт. Фильтр: торговать только при ADX выше порога или при согласии цены и EMA/SuperTrend."
+      ]
+    },
+    "intervention_kinds": [
+      "add_block",
+      "change_period"
+    ]
+  },
+  {
+    "file": "19-bb-rsi-mean-reversion-v2.italgo",
+    "side_mode": "long_only",
+    "stats": {
+      "losses": 4,
+      "maxDrawdown": 269.836938,
+      "netPnl": -241.971949,
+      "totalTrades": 9,
+      "winRate": 0.5,
+      "wins": 4
+    },
+    "label_counts": {
+      "bad": 4,
+      "good": 4,
+      "open": 1
+    },
+    "trade_report": {
+      "regime": "mean_reversion",
+      "trade_count": 8,
+      "winrate": 0.5,
+      "median_bars_held": 45.0,
+      "flip_rate": 0.7143,
+      "max_losing_streak": 2,
+      "long_pnl": -197.570401,
+      "short_pnl": 0,
+      "findings": [
+        "mr_слишком_долго_держит"
+      ],
+      "suggestions": [
+        "Mean-reversion удерживает позицию слишком долго. Добавьте быстрый выход к середине канала / противоположный RSI и жёсткий SL."
+      ]
+    },
+    "intervention_kinds": [
+      "add_block"
+    ]
+  },
+  {
+    "file": "20-donchian-55.italgo",
+    "side_mode": "long_only",
+    "stats": {
+      "losses": 0,
+      "maxDrawdown": 0.0,
+      "netPnl": 0.0,
+      "totalTrades": 0,
+      "winRate": 0.0,
+      "wins": 0
+    },
+    "label_counts": {},
+    "trade_report": {
+      "regime": "breakout",
+      "trade_count": 0,
+      "findings": [
+        "мало_закрытых_сделок"
+      ],
+      "suggestions": [
+        "Мало закрытых сделок для разбора — расширьте окно бэктеста или ослабьте фильтры входа."
+      ]
+    },
+    "intervention_kinds": [
+      "add_block",
+      "change_period"
+    ]
+  },
+  {
+    "file": "21-sma-cross-20-50-ls.italgo",
+    "side_mode": "long_short",
+    "stats": {
+      "losses": 15,
+      "maxDrawdown": 123.71106599999996,
+      "netPnl": 256.24967300000026,
+      "totalTrades": 25,
+      "winRate": 0.375,
+      "wins": 9
+    },
+    "label_counts": {
+      "good": 9,
+      "bad": 14,
+      "bad_noise": 1,
+      "open": 1
+    },
+    "trade_report": {
+      "regime": "trend",
+      "trade_count": 24,
+      "winrate": 0.375,
+      "median_bars_held": 34.0,
+      "flip_rate": 0.5652,
+      "max_losing_streak": 4,
+      "long_pnl": 102.52095400000013,
+      "short_pnl": 105.71063500000014,
+      "findings": [
+        "тренд_без_фильтра_флэта"
+      ],
+      "suggestions": [
+        "Трендовая логика при низкой винрейте и частых разворотах — типичный флэт. Фильтр: торговать только при ADX выше порога или при согласии цены и EMA/SuperTrend."
+      ]
+    },
+    "intervention_kinds": [
+      "add_block"
+    ]
+  },
+  {
+    "file": "22-ema-cross-9-21-ls.italgo",
+    "side_mode": "long_short",
+    "stats": {
+      "losses": 48,
+      "maxDrawdown": 149.8028999999998,
+      "netPnl": 152.98028900000014,
+      "totalTrades": 66,
+      "winRate": 0.26153846153846155,
+      "wins": 17
+    },
+    "label_counts": {
+      "good": 16,
+      "bad_noise": 12,
+      "bad": 36,
+      "good_weak": 1,
+      "open": 1
+    },
+    "trade_report": {
+      "regime": "trend",
+      "trade_count": 65,
+      "winrate": 0.2615,
+      "median_bars_held": 10.0,
+      "flip_rate": 0.4844,
+      "max_losing_streak": 8,
+      "long_pnl": 47.483690000000095,
+      "short_pnl": 105.62370000000013,
+      "findings": [
+        "серия_убытков",
+        "тренд_без_фильтра_флэта"
+      ],
+      "suggestions": [
+        "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки.",
+        "Трендовая логика при низкой винрейте и частых разворотах — типичный флэт. Фильтр: торговать только при ADX выше порога или при согласии цены и EMA/SuperTrend."
+      ]
+    },
+    "intervention_kinds": [
+      "add_block"
+    ]
+  },
+  {
+    "file": "23-tema-cross-10-30-ls.italgo",
+    "side_mode": "long_short",
+    "stats": {
+      "losses": 61,
+      "maxDrawdown": 241.62601599999923,
+      "netPnl": -160.4409099999992,
+      "totalTrades": 105,
+      "winRate": 0.41346153846153844,
+      "wins": 43
+    },
+    "label_counts": {
+      "good": 43,
+      "bad": 55,
+      "bad_noise": 6,
+      "open": 1
+    },
+    "trade_report": {
+      "regime": "trend",
+      "trade_count": 104,
+      "winrate": 0.4135,
+      "median_bars_held": 11.0,
+      "flip_rate": 0.6019,
+      "max_losing_streak": 7,
+      "long_pnl": -127.71714799999961,
+      "short_pnl": -34.98642199999959,
+      "findings": [
+        "серия_убытков"
+      ],
+      "suggestions": [
+        "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки."
+      ]
+    },
+    "intervention_kinds": [
+      "add_block"
+    ]
+  },
+  {
+    "file": "24-rsi-cross-50-ls.italgo",
+    "side_mode": "long_short",
+    "stats": {
+      "losses": 120,
+      "maxDrawdown": 245.07870199999903,
+      "netPnl": 49.132593000000924,
+      "totalTrades": 172,
+      "winRate": 0.2982456140350877,
+      "wins": 51
+    },
+    "label_counts": {
+      "bad": 56,
+      "bad_noise": 64,
+      "good_weak": 5,
+      "good": 46,
+      "open": 1
+    },
+    "trade_report": {
+      "regime": "mean_reversion",
+      "trade_count": 171,
+      "winrate": 0.2982,
+      "median_bars_held": 3.0,
+      "flip_rate": 0.4824,
+      "max_losing_streak": 11,
+      "long_pnl": -3.6200759999995142,
+      "short_pnl": 47.570301000000455,
+      "findings": [
+        "сверхкороткие_удержания",
+        "серия_убытков"
+      ],
+      "suggestions": [
+        "Медиана удержания очень мала — похоже на шум/overtrading. Увеличьте период сигналов, добавьте подтверждение на старшем ТФ или logic_hold.",
+        "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки."
+      ]
+    },
+    "intervention_kinds": [
+      "add_block",
+      "change_period"
+    ]
+  },
+  {
+    "file": "25-momentum-cross-0-ls.italgo",
+    "side_mode": "long_short",
+    "stats": {
+      "losses": 132,
+      "maxDrawdown": 250.20024199999943,
+      "netPnl": 19.56459900000067,
+      "totalTrades": 197,
+      "winRate": 0.32653061224489793,
+      "wins": 64
+    },
+    "label_counts": {
+      "good": 52,
+      "good_weak": 12,
+      "bad_noise": 69,
+      "bad": 63,
+      "open": 1
+    },
+    "trade_report": {
+      "regime": "unknown",
+      "trade_count": 196,
+      "winrate": 0.3265,
+      "median_bars_held": 3.0,
+      "flip_rate": 0.3795,
+      "max_losing_streak": 12,
+      "long_pnl": -18.151349999999667,
+      "short_pnl": 31.35369900000032,
+      "findings": [
+        "сверхкороткие_удержания",
+        "серия_убытков",
+        "лонги_портят_результат"
+      ],
+      "suggestions": [
+        "Медиана удержания очень мала — похоже на шум/overtrading. Увеличьте период сигналов, добавьте подтверждение на старшем ТФ или logic_hold.",
+        "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки.",
+        "Short в плюсе, long тянет вниз — отключите лонги или усильте фильтр бычьего тренда."
+      ]
+    },
+    "intervention_kinds": [
+      "add_block",
+      "change_period",
+      "side_mode"
+    ]
+  },
+  {
+    "file": "26-supertrend-rsi-ls.italgo",
+    "side_mode": "long_short",
+    "stats": {
+      "losses": 10,
+      "maxDrawdown": 142.50152199999994,
+      "netPnl": 139.07607900000016,
+      "totalTrades": 19,
+      "winRate": 0.4444444444444444,
+      "wins": 8
+    },
+    "label_counts": {
+      "bad": 10,
+      "good": 8,
+      "open": 1
+    },
+    "trade_report": {
+      "regime": "trend",
+      "trade_count": 18,
+      "winrate": 0.4444,
+      "median_bars_held": 53.0,
+      "flip_rate": 0.5882,
+      "max_losing_streak": 3,
+      "long_pnl": 68.20146000000008,
+      "short_pnl": 97.72441200000006,
+      "findings": [],
+      "suggestions": [
+        "Явных паттернов «пилы»/серий не видно по сделкам — смотрите diff метрик и блоков; проверьте out-of-sample окно."
+      ]
+    },
+    "intervention_kinds": [
+      "add_block"
+    ]
+  }
+]

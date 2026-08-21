@@ -1,0 +1,147 @@
+[
+  {
+    "ok": true,
+    "file": "01-trend-ema-adx-rsi.italgo",
+    "trades": 4
+  },
+  {
+    "ok": true,
+    "file": "02-mean-reversion-bb-rsi.italgo",
+    "trades": 11
+  },
+  {
+    "ok": true,
+    "file": "03-breakout-donchian-volume.italgo",
+    "trades": 0
+  },
+  {
+    "ok": true,
+    "file": "04-macd-stoch-long-short.italgo",
+    "trades": 20
+  },
+  {
+    "ok": true,
+    "file": "05-trend-atr-sl-tp.italgo",
+    "trades": 42
+  },
+  {
+    "ok": true,
+    "file": "06-session-filter-rsi.italgo",
+    "trades": 0
+  },
+  {
+    "ok": true,
+    "file": "07-supertrend-di-adx-stack.italgo",
+    "trades": 31
+  },
+  {
+    "ok": true,
+    "file": "08-cci-regime-trail.italgo",
+    "trades": 44
+  },
+  {
+    "ok": true,
+    "file": "09-sma-cross-20-50.italgo",
+    "trades": 12
+  },
+  {
+    "ok": true,
+    "file": "10-ema-cross-9-21.italgo",
+    "trades": 33
+  },
+  {
+    "ok": true,
+    "file": "11-tema-cross-10-30.italgo",
+    "trades": 52
+  },
+  {
+    "ok": true,
+    "file": "12-dema-cross-12-26.italgo",
+    "trades": 43
+  },
+  {
+    "ok": true,
+    "file": "13-rsi-cross-50.italgo",
+    "trades": 86
+  },
+  {
+    "ok": true,
+    "file": "14-cmo-cross-0.italgo",
+    "trades": 86
+  },
+  {
+    "ok": true,
+    "file": "15-momentum-cross-0.italgo",
+    "trades": 98
+  },
+  {
+    "ok": true,
+    "file": "16-supertrend-rsi-entry.italgo",
+    "trades": 10
+  },
+  {
+    "ok": true,
+    "file": "17-supertrend-rsi-tight.italgo",
+    "trades": 17
+  },
+  {
+    "ok": true,
+    "file": "18-mom-pct-ema50-filter.italgo",
+    "trades": 61
+  },
+  {
+    "ok": true,
+    "file": "19-bb-rsi-mean-reversion-v2.italgo",
+    "trades": 9
+  },
+  {
+    "ok": true,
+    "file": "20-donchian-55.italgo",
+    "trades": 0
+  },
+  {
+    "ok": true,
+    "file": "21-sma-cross-20-50-ls.italgo",
+    "trades": 25
+  },
+  {
+    "ok": true,
+    "file": "22-ema-cross-9-21-ls.italgo",
+    "trades": 66
+  },
+  {
+    "ok": true,
+    "file": "23-tema-cross-10-30-ls.italgo",
+    "trades": 105
+  },
+  {
+    "ok": true,
+    "file": "24-rsi-cross-50-ls.italgo",
+    "trades": 172
+  },
+  {
+    "ok": true,
+    "file": "25-momentum-cross-0-ls.italgo",
+    "trades": 197
+  },
+  {
+    "ok": true,
+    "file": "26-supertrend-rsi-ls.italgo",
+    "trades": 19
+  },
+  {
+    "ok": true,
+    "file": "15-momentum-cross-0.italgo",
+    "trades": 98
+  },
+  {
+    "ok": true,
+    "file": "15b-momentum-period20.italgo",
+    "trades": 59
+  },
+  {
+    "ok": true,
+    "file": "15c-momentum-ema50-filter.italgo",
+    "trades": 61
+  }
+]

@@ -1,0 +1,425 @@
+{
+  "session": "2026-08-21-c5-trade-level",
+  "kind": "trade_level_p26",
+  "n_scripts": 26,
+  "n_trades_labeled": 1243,
+  "label_totals": {
+    "good": 397,
+    "bad": 478,
+    "open": 12,
+    "bad_noise": 318,
+    "good_weak": 38
+  },
+  "intervention_hint_counts": {
+    "add_block": 26,
+    "change_period": 9,
+    "side_mode": 1
+  },
+  "improve_loop": {
+    "base": {
+      "file": "15-momentum-cross-0.italgo",
+      "stats": {
+        "losses": 62,
+        "maxDrawdown": 130.0328769999999,
+        "netPnl": -18.151349999999667,
+        "totalTrades": 98,
+        "winRate": 0.3673469387755102,
+        "wins": 36
+      },
+      "label_counts": {
+        "good_weak": 7,
+        "bad_noise": 35,
+        "good": 29,
+        "bad": 27
+      },
+      "trade_report": {
+        "regime": "unknown",
+        "trade_count": 98,
+        "winrate": 0.3673,
+        "median_bars_held": 3.0,
+        "flip_rate": 0.4948,
+        "max_losing_streak": 8,
+        "long_pnl": -18.151349999999667,
+        "short_pnl": 0,
+        "findings": [
+          "\u0441\u0432\u0435\u0440\u0445\u043a\u043e\u0440\u043e\u0442\u043a\u0438\u0435_\u0443\u0434\u0435\u0440\u0436\u0430\u043d\u0438\u044f",
+          "\u0441\u0435\u0440\u0438\u044f_\u0443\u0431\u044b\u0442\u043a\u043e\u0432"
+        ],
+        "suggestions": [
+          "\u041c\u0435\u0434\u0438\u0430\u043d\u0430 \u0443\u0434\u0435\u0440\u0436\u0430\u043d\u0438\u044f \u043e\u0447\u0435\u043d\u044c \u043c\u0430\u043b\u0430 \u2014 \u043f\u043e\u0445\u043e\u0436\u0435 \u043d\u0430 \u0448\u0443\u043c/overtrading. \u0423\u0432\u0435\u043b\u0438\u0447\u044c\u0442\u0435 \u043f\u0435\u0440\u0438\u043e\u0434 \u0441\u0438\u0433\u043d\u0430\u043b\u043e\u0432, \u0434\u043e\u0431\u0430\u0432\u044c\u0442\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0435\u043d\u0438\u0435 \u043d\u0430 \u0441\u0442\u0430\u0440\u0448\u0435\u043c \u0422\u0424 \u0438\u043b\u0438 logic_hold.",
+          "\u0414\u043b\u0438\u043d\u043d\u0430\u044f \u0441\u0435\u0440\u0438\u044f \u0443\u0431\u044b\u0442\u043a\u043e\u0432 \u043f\u043e\u0434\u0440\u044f\u0434. \u0414\u043e\u0431\u0430\u0432\u044c\u0442\u0435 \u043f\u0430\u0443\u0437\u0443 \u043f\u043e\u0441\u043b\u0435 N \u0443\u0431\u044b\u0442\u043a\u043e\u0432 (\u0431\u043b\u043e\u043a \u00ab2 \u0443\u0431\u044b\u0442\u043a\u0430 \u043f\u043e\u0434\u0440\u044f\u0434\u00bb / cooldown) \u0438\u043b\u0438 \u0443\u043c\u0435\u043d\u044c\u0448\u0438\u0442\u0435 \u0440\u0430\u0437\u043c\u0435\u0440 \u043f\u043e\u0441\u043b\u0435 \u043f\u0440\u043e\u0441\u0430\u0434\u043a\u0438."
+        ]
+      },
+      "intervention_kinds": [
+        "add_block",
+        "change_period"
+      ]
+    },
+    "change_period": {
+      "file": "15b-momentum-period20.italgo",
+      "stats": {
+        "losses": 41,
+        "maxDrawdown": 176.89595999999997,
+        "netPnl": -34.229459999999946,
+        "totalTrades": 59,
+        "winRate": 0.29310344827586204,
+        "wins": 17
+      },
+      "label_counts": {
+        "bad_noise": 21,
+        "good": 15,
+        "bad": 20,
+        "good_weak": 2,
+        "open": 1
+      },
+      "trade_report": {
+        "regime": "unknown",
+        "trade_count": 58,
+        "winrate": 0.2931,
+        "median_bars_held": 4.0,
+        "flip_rate": 0.4912,
+        "max_losing_streak": 9,
+        "long_pnl": -22.811209999999946,
+        "short_pnl": 0,
+        "findings": [
+          "\u0441\u0435\u0440\u0438\u044f_\u0443\u0431\u044b\u0442\u043a\u043e\u0432"
+        ],
+        "suggestions": [
+          "\u0414\u043b\u0438\u043d\u043d\u0430\u044f \u0441\u0435\u0440\u0438\u044f \u0443\u0431\u044b\u0442\u043a\u043e\u0432 \u043f\u043e\u0434\u0440\u044f\u0434. \u0414\u043e\u0431\u0430\u0432\u044c\u0442\u0435 \u043f\u0430\u0443\u0437\u0443 \u043f\u043e\u0441\u043b\u0435 N \u0443\u0431\u044b\u0442\u043a\u043e\u0432 (\u0431\u043b\u043e\u043a \u00ab2 \u0443\u0431\u044b\u0442\u043a\u0430 \u043f\u043e\u0434\u0440\u044f\u0434\u00bb / cooldown) \u0438\u043b\u0438 \u0443\u043c\u0435\u043d\u044c\u0448\u0438\u0442\u0435 \u0440\u0430\u0437\u043c\u0435\u0440 \u043f\u043e\u0441\u043b\u0435 \u043f\u0440\u043e\u0441\u0430\u0434\u043a\u0438."
+        ]
+      },
+      "intervention_kinds": [
+        "add_block"
+      ]
+    },
+    "add_block": {
+      "file": "15c-momentum-ema50-filter.italgo",
+      "stats": {
+        "losses": 41,
+        "maxDrawdown": 66.29599899999994,
+        "netPnl": 43.00606600000029,
+        "totalTrades": 61,
+        "winRate": 0.32786885245901637,
+        "wins": 20
+      },
+      "label_counts": {
+        "bad_noise": 24,
+        "good_weak": 3,
+        "bad": 17,
+        "good": 17
+      },
+      "trade_report": {
+        "regime": "trend",
+        "trade_count": 61,
+        "winrate": 0.3279,
+        "median_bars_held": 3.0,
+        "flip_rate": 0.5333,
+        "max_losing_streak": 8,
+        "long_pnl": 43.00606600000029,
+        "short_pnl": 0,
+        "findings": [
+          "\u0441\u0432\u0435\u0440\u0445\u043a\u043e\u0440\u043e\u0442\u043a\u0438\u0435_\u0443\u0434\u0435\u0440\u0436\u0430\u043d\u0438\u044f",
+          "\u0441\u0435\u0440\u0438\u044f_\u0443\u0431\u044b\u0442\u043a\u043e\u0432",
+          "\u0442\u0440\u0435\u043d\u0434_\u0431\u0435\u0437_\u0444\u0438\u043b\u044c\u0442\u0440\u0430_\u0444\u043b\u044d\u0442\u0430"
+        ],
+        "suggestions": [
+          "\u041c\u0435\u0434\u0438\u0430\u043d\u0430 \u0443\u0434\u0435\u0440\u0436\u0430\u043d\u0438\u044f \u043e\u0447\u0435\u043d\u044c \u043c\u0430\u043b\u0430 \u2014 \u043f\u043e\u0445\u043e\u0436\u0435 \u043d\u0430 \u0448\u0443\u043c/overtrading. \u0423\u0432\u0435\u043b\u0438\u0447\u044c\u0442\u0435 \u043f\u0435\u0440\u0438\u043e\u0434 \u0441\u0438\u0433\u043d\u0430\u043b\u043e\u0432, \u0434\u043e\u0431\u0430\u0432\u044c\u0442\u0435 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0435\u043d\u0438\u0435 \u043d\u0430 \u0441\u0442\u0430\u0440\u0448\u0435\u043c \u0422\u0424 \u0438\u043b\u0438 logic_hold.",
+          "\u0414\u043b\u0438\u043d\u043d\u0430\u044f \u0441\u0435\u0440\u0438\u044f \u0443\u0431\u044b\u0442\u043a\u043e\u0432 \u043f\u043e\u0434\u0440\u044f\u0434. \u0414\u043e\u0431\u0430\u0432\u044c\u0442\u0435 \u043f\u0430\u0443\u0437\u0443 \u043f\u043e\u0441\u043b\u0435 N \u0443\u0431\u044b\u0442\u043a\u043e\u0432 (\u0431\u043b\u043e\u043a \u00ab2 \u0443\u0431\u044b\u0442\u043a\u0430 \u043f\u043e\u0434\u0440\u044f\u0434\u00bb / cooldown) \u0438\u043b\u0438 \u0443\u043c\u0435\u043d\u044c\u0448\u0438\u0442\u0435 \u0440\u0430\u0437\u043c\u0435\u0440 \u043f\u043e\u0441\u043b\u0435 \u043f\u0440\u043e\u0441\u0430\u0434\u043a\u0438.",
+          "\u0422\u0440\u0435\u043d\u0434\u043e\u0432\u0430\u044f \u043b\u043e\u0433\u0438\u043a\u0430 \u043f\u0440\u0438 \u043d\u0438\u0437\u043a\u043e\u0439 \u0432\u0438\u043d\u0440\u0435\u0439\u0442\u0435 \u0438 \u0447\u0430\u0441\u0442\u044b\u0445 \u0440\u0430\u0437\u0432\u043e\u0440\u043e\u0442\u0430\u0445 \u2014 \u0442\u0438\u043f\u0438\u0447\u043d\u044b\u0439 \u0444\u043b\u044d\u0442. \u0424\u0438\u043b\u044c\u0442\u0440: \u0442\u043e\u0440\u0433\u043e\u0432\u0430\u0442\u044c \u0442\u043e\u043b\u044c\u043a\u043e \u043f\u0440\u0438 ADX \u0432\u044b\u0448\u0435 \u043f\u043e\u0440\u043e\u0433\u0430 \u0438\u043b\u0438 \u043f\u0440\u0438 \u0441\u043e\u0433\u043b\u0430\u0441\u0438\u0438 \u0446\u0435\u043d\u044b \u0438 EMA/SuperTrend."
+        ]
+      },
+      "intervention_kinds": [
+        "add_block",
+        "change_period"
+      ]
+    }
+  },
+  "top20_by_score": [
+    {
+      "entry": "21-sma-cross-20-50-ls.italgo",
+      "filter": "long_short",
+      "median_pnl": 256.24967300000026,
+      "mean_pnl": 256.24967300000026,
+      "mean_wr": 0.375,
+      "mean_dd": 123.71106599999996,
+      "n": 25,
+      "regime": "trend",
+      "bad_trades": 15
+    },
+    {
+      "entry": "04-macd-stoch-long-short.italgo",
+      "filter": "long_short",
+      "median_pnl": 165.77297400000026,
+      "mean_pnl": 165.77297400000026,
+      "mean_wr": 0.5263157894736842,
+      "mean_dd": 148.2560239999999,
+      "n": 20,
+      "regime": "trend",
+      "bad_trades": 9
+    },
+    {
+      "entry": "22-ema-cross-9-21-ls.italgo",
+      "filter": "long_short",
+      "median_pnl": 152.98028900000014,
+      "mean_pnl": 152.98028900000014,
+      "mean_wr": 0.26153846153846155,
+      "mean_dd": 149.8028999999998,
+      "n": 66,
+      "regime": "trend",
+      "bad_trades": 48
+    },
+    {
+      "entry": "26-supertrend-rsi-ls.italgo",
+      "filter": "long_short",
+      "median_pnl": 139.07607900000016,
+      "mean_pnl": 139.07607900000016,
+      "mean_wr": 0.4444444444444444,
+      "mean_dd": 142.50152199999994,
+      "n": 19,
+      "regime": "trend",
+      "bad_trades": 10
+    },
+    {
+      "entry": "01-trend-ema-adx-rsi.italgo",
+      "filter": "long_only",
+      "median_pnl": 127.51295300000004,
+      "mean_pnl": 127.51295300000004,
+      "mean_wr": 0.5,
+      "mean_dd": 59.189824999999985,
+      "n": 4,
+      "regime": "trend",
+      "bad_trades": 2
+    },
+    {
+      "entry": "09-sma-cross-20-50.italgo",
+      "filter": "long_only",
+      "median_pnl": 102.52095400000013,
+      "mean_pnl": 102.52095400000013,
+      "mean_wr": 0.5,
+      "mean_dd": 51.070721000000006,
+      "n": 12,
+      "regime": "trend",
+      "bad_trades": 6
+    },
+    {
+      "entry": "07-supertrend-di-adx-stack.italgo",
+      "filter": "long_short",
+      "median_pnl": 82.91840799999983,
+      "mean_pnl": 82.91840799999983,
+      "mean_wr": 0.3,
+      "mean_dd": 177.68788400000022,
+      "n": 31,
+      "regime": "trend",
+      "bad_trades": 21
+    },
+    {
+      "entry": "24-rsi-cross-50-ls.italgo",
+      "filter": "long_short",
+      "median_pnl": 49.132593000000924,
+      "mean_pnl": 49.132593000000924,
+      "mean_wr": 0.2982456140350877,
+      "mean_dd": 245.07870199999903,
+      "n": 172,
+      "regime": "mean_reversion",
+      "bad_trades": 120
+    },
+    {
+      "entry": "10-ema-cross-9-21.italgo",
+      "filter": "long_only",
+      "median_pnl": 47.483690000000095,
+      "mean_pnl": 47.483690000000095,
+      "mean_wr": 0.30303030303030304,
+      "mean_dd": 103.57985799999996,
+      "n": 33,
+      "regime": "trend",
+      "bad_trades": 23
+    },
+    {
+      "entry": "18-mom-pct-ema50-filter.italgo",
+      "filter": "long_only",
+      "median_pnl": 43.00606600000029,
+      "mean_pnl": 43.00606600000029,
+      "mean_wr": 0.32786885245901637,
+      "mean_dd": 66.29599899999994,
+      "n": 61,
+      "regime": "trend",
+      "bad_trades": 41
+    },
+    {
+      "entry": "16-supertrend-rsi-entry.italgo",
+      "filter": "long_only",
+      "median_pnl": 41.351667000000106,
+      "mean_pnl": 41.351667000000106,
+      "mean_wr": 0.5555555555555556,
+      "mean_dd": 109.59076099999996,
+      "n": 10,
+      "regime": "trend",
+      "bad_trades": 4
+    },
+    {
+      "entry": "08-cci-regime-trail.italgo",
+      "filter": "long_only",
+      "median_pnl": 29.73458223500006,
+      "mean_pnl": 29.73458223500006,
+      "mean_wr": 0.45454545454545453,
+      "mean_dd": 28.215053094999973,
+      "n": 44,
+      "regime": "trend",
+      "bad_trades": 24
+    },
+    {
+      "entry": "25-momentum-cross-0-ls.italgo",
+      "filter": "long_short",
+      "median_pnl": 19.56459900000067,
+      "mean_pnl": 19.56459900000067,
+      "mean_wr": 0.32653061224489793,
+      "mean_dd": 250.20024199999943,
+      "n": 197,
+      "regime": "unknown",
+      "bad_trades": 132
+    },
+    {
+      "entry": "03-breakout-donchian-volume.italgo",
+      "filter": "long_only",
+      "median_pnl": 0.0,
+      "mean_pnl": 0.0,
+      "mean_wr": 0.0,
+      "mean_dd": 0.0,
+      "n": 0,
+      "regime": "breakout",
+      "bad_trades": 0
+    },
+    {
+      "entry": "06-session-filter-rsi.italgo",
+      "filter": "long_only",
+      "median_pnl": 0.0,
+      "mean_pnl": 0.0,
+      "mean_wr": 0.0,
+      "mean_dd": 0.0,
+      "n": 0,
+      "regime": "mean_reversion",
+      "bad_trades": 0
+    },
+    {
+      "entry": "20-donchian-55.italgo",
+      "filter": "long_only",
+      "median_pnl": 0.0,
+      "mean_pnl": 0.0,
+      "mean_wr": 0.0,
+      "mean_dd": 0.0,
+      "n": 0,
+      "regime": "breakout",
+      "bad_trades": 0
+    },
+    {
+      "entry": "13-rsi-cross-50.italgo",
+      "filter": "long_only",
+      "median_pnl": -3.6200759999995142,
+      "mean_pnl": -3.6200759999995142,
+      "mean_wr": 0.32558139534883723,
+      "mean_dd": 120.46337599999967,
+      "n": 86,
+      "regime": "mean_reversion",
+      "bad_trades": 58
+    },
+    {
+      "entry": "14-cmo-cross-0.italgo",
+      "filter": "long_only",
+      "median_pnl": -3.6200759999995142,
+      "mean_pnl": -3.6200759999995142,
+      "mean_wr": 0.32558139534883723,
+      "mean_dd": 120.46337599999967,
+      "n": 86,
+      "regime": "unknown",
+      "bad_trades": 58
+    },
+    {
+      "entry": "15-momentum-cross-0.italgo",
+      "filter": "long_only",
+      "median_pnl": -18.151349999999667,
+      "mean_pnl": -18.151349999999667,
+      "mean_wr": 0.3673469387755102,
+      "mean_dd": 130.0328769999999,
+      "n": 98,
+      "regime": "unknown",
+      "bad_trades": 62
+    },
+    {
+      "entry": "05-trend-atr-sl-tp.italgo",
+      "filter": "long_only",
+      "median_pnl": -33.54287285714267,
+      "mean_pnl": -33.54287285714267,
+      "mean_wr": 0.23809523809523808,
+      "mean_dd": 79.60345771428547,
+      "n": 42,
+      "regime": "trend",
+      "bad_trades": 32
+    },
+    {
+      "entry": "17-supertrend-rsi-tight.italgo",
+      "filter": "long_only",
+      "median_pnl": -41.397890999999916,
+      "mean_pnl": -41.397890999999916,
+      "mean_wr": 0.5625,
+      "mean_dd": 173.71483699999993,
+      "n": 17,
+      "regime": "trend",
+      "bad_trades": 7
+    },
+    {
+      "entry": "02-mean-reversion-bb-rsi.italgo",
+      "filter": "long_only",
+      "median_pnl": -77.87303099999984,
+      "mean_pnl": -77.87303099999984,
+      "mean_wr": 0.45454545454545453,
+      "mean_dd": 120.92549799999988,
+      "n": 11,
+      "regime": "mean_reversion",
+      "bad_trades": 6
+    },
+    {
+      "entry": "12-dema-cross-12-26.italgo",
+      "filter": "long_only",
+      "median_pnl": -103.43236099999991,
+      "mean_pnl": -103.43236099999991,
+      "mean_wr": 0.38095238095238093,
+      "mean_dd": 148.31954400000006,
+      "n": 43,
+      "regime": "trend",
+      "bad_trades": 26
+    },
+    {
+      "entry": "11-tema-cross-10-30.italgo",
+      "filter": "long_only",
+      "median_pnl": -127.71714799999961,
+      "mean_pnl": -127.71714799999961,
+      "mean_wr": 0.4807692307692308,
+      "mean_dd": 181.330977,
+      "n": 52,
+      "regime": "trend",
+      "bad_trades": 27
+    },
+    {
+      "entry": "23-tema-cross-10-30-ls.italgo",
+      "filter": "long_short",
+      "median_pnl": -160.4409099999992,
+      "mean_pnl": -160.4409099999992,
+      "mean_wr": 0.41346153846153844,
+      "mean_dd": 241.62601599999923,
+      "n": 105,
+      "regime": "trend",
+      "bad_trades": 61
+    },
+    {
+      "entry": "19-bb-rsi-mean-reversion-v2.italgo",
+      "filter": "long_only",
+      "median_pnl": -241.971949,
+      "mean_pnl": -241.971949,
+      "mean_wr": 0.5,
+      "mean_dd": 269.836938,
+      "n": 9,
+      "regime": "mean_reversion",
+      "bad_trades": 4
+    }
+  ]
+}
