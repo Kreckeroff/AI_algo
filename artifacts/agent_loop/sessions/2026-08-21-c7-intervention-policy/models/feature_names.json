@@ -1,0 +1,97 @@
+{
+  "feature_names": [
+    "base_pnl",
+    "base_wr",
+    "base_trades",
+    "base_dd",
+    "good",
+    "bad",
+    "bad_noise",
+    "good_weak",
+    "good_share",
+    "bad_share",
+    "f_\u043f\u0438\u043b\u0430_\u043a\u043e\u0440\u043e\u0442\u043a\u0438\u0435_\u0441\u0434\u0435\u043b\u043a\u0438",
+    "f_\u0441\u0432\u0435\u0440\u0445\u043a\u043e\u0440\u043e\u0442\u043a\u0438\u0435_\u0443\u0434\u0435\u0440\u0436\u0430\u043d\u0438\u044f",
+    "f_\u0441\u0435\u0440\u0438\u044f_\u0443\u0431\u044b\u0442\u043a\u043e\u0432",
+    "f_\u043f\u0435\u0440\u0435\u043a\u043e\u0441_\u0441\u0442\u043e\u0440\u043e\u043d",
+    "f_\u043c\u0430\u043b\u043e_\u0437\u0430\u043a\u0440\u044b\u0442\u044b\u0445_\u0441\u0434\u0435\u043b\u043e\u043a",
+    "regime_trend",
+    "regime_mean_reversion",
+    "regime_breakout",
+    "regime_unknown",
+    "kind_change_period",
+    "kind_add_block_ema",
+    "side_long_only",
+    "side_long_short",
+    "side_unknown"
+  ],
+  "model_kind": "lgbm_intervention_policy",
+  "metrics": {
+    "loo_accuracy": 0.6730769230769231,
+    "loo_auc": 0.6895424836601307,
+    "n": 52,
+    "positives": 34
+  },
+  "feature_importance_top": [
+    [
+      "kind_change_period",
+      75
+    ],
+    [
+      "base_pnl",
+      74
+    ],
+    [
+      "bad_share",
+      60
+    ],
+    [
+      "bad",
+      56
+    ],
+    [
+      "base_wr",
+      44
+    ],
+    [
+      "base_dd",
+      42
+    ],
+    [
+      "kind_add_block_ema",
+      41
+    ],
+    [
+      "base_trades",
+      34
+    ],
+    [
+      "bad_noise",
+      34
+    ],
+    [
+      "good_share",
+      33
+    ],
+    [
+      "regime_trend",
+      33
+    ],
+    [
+      "f_\u043c\u0430\u043b\u043e_\u0437\u0430\u043a\u0440\u044b\u0442\u044b\u0445_\u0441\u0434\u0435\u043b\u043e\u043a",
+      30
+    ],
+    [
+      "good",
+      15
+    ],
+    [
+      "good_weak",
+      8
+    ],
+    [
+      "f_\u0441\u0435\u0440\u0438\u044f_\u0443\u0431\u044b\u0442\u043a\u043e\u0432",
+      8
+    ]
+  ]
+}

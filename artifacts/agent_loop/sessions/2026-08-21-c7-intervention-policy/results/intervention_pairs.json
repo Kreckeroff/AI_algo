@@ -1,0 +1,1200 @@
+[
+  {
+    "base": "01-trend-ema-adx-rsi.italgo",
+    "variant": "01-trend-ema-adx-rsi__ema50.italgo",
+    "kind": "add_block_ema",
+    "side_mode": "long_only",
+    "base_pnl": 127.51295300000004,
+    "variant_pnl": 127.51295300000004,
+    "delta_pnl": 0.0,
+    "better": false,
+    "base_wr": 0.5,
+    "variant_wr": 0.5,
+    "base_trades": 4,
+    "base_dd": 59.189824999999985,
+    "base_labels": {
+      "good": 2,
+      "bad": 2
+    },
+    "findings": [
+      "мало_закрытых_сделок"
+    ],
+    "regime": "trend"
+  },
+  {
+    "base": "01-trend-ema-adx-rsi.italgo",
+    "variant": "01-trend-ema-adx-rsi__period15x.italgo",
+    "kind": "change_period",
+    "side_mode": "long_only",
+    "base_pnl": 127.51295300000004,
+    "variant_pnl": 29.842209999999966,
+    "delta_pnl": -97.67074300000007,
+    "better": false,
+    "base_wr": 0.5,
+    "variant_wr": 1.0,
+    "base_trades": 4,
+    "base_dd": 59.189824999999985,
+    "base_labels": {
+      "good": 2,
+      "bad": 2
+    },
+    "findings": [
+      "мало_закрытых_сделок"
+    ],
+    "regime": "trend"
+  },
+  {
+    "base": "02-mean-reversion-bb-rsi.italgo",
+    "variant": "02-mean-reversion-bb-rsi__ema50.italgo",
+    "kind": "add_block_ema",
+    "side_mode": "long_only",
+    "base_pnl": -77.87303099999984,
+    "variant_pnl": 0.0,
+    "delta_pnl": 77.87303099999984,
+    "better": true,
+    "base_wr": 0.45454545454545453,
+    "variant_wr": 0.0,
+    "base_trades": 11,
+    "base_dd": 120.92549799999988,
+    "base_labels": {
+      "bad": 6,
+      "good": 5
+    },
+    "findings": [],
+    "regime": "mean_reversion"
+  },
+  {
+    "base": "02-mean-reversion-bb-rsi.italgo",
+    "variant": "02-mean-reversion-bb-rsi__period15x.italgo",
+    "kind": "change_period",
+    "side_mode": "long_only",
+    "base_pnl": -77.87303099999984,
+    "variant_pnl": 31.556133000000102,
+    "delta_pnl": 109.42916399999994,
+    "better": true,
+    "base_wr": 0.45454545454545453,
+    "variant_wr": 0.5555555555555556,
+    "base_trades": 11,
+    "base_dd": 120.92549799999988,
+    "base_labels": {
+      "bad": 6,
+      "good": 5
+    },
+    "findings": [],
+    "regime": "mean_reversion"
+  },
+  {
+    "base": "03-breakout-donchian-volume.italgo",
+    "variant": "03-breakout-donchian-volume__ema50.italgo",
+    "kind": "add_block_ema",
+    "side_mode": "long_only",
+    "base_pnl": 0.0,
+    "variant_pnl": 0.0,
+    "delta_pnl": 0.0,
+    "better": false,
+    "base_wr": 0.0,
+    "variant_wr": 0.0,
+    "base_trades": 0,
+    "base_dd": 0.0,
+    "base_labels": {},
+    "findings": [
+      "мало_закрытых_сделок"
+    ],
+    "regime": "breakout"
+  },
+  {
+    "base": "03-breakout-donchian-volume.italgo",
+    "variant": "03-breakout-donchian-volume__period15x.italgo",
+    "kind": "change_period",
+    "side_mode": "long_only",
+    "base_pnl": 0.0,
+    "variant_pnl": 0.0,
+    "delta_pnl": 0.0,
+    "better": false,
+    "base_wr": 0.0,
+    "variant_wr": 0.0,
+    "base_trades": 0,
+    "base_dd": 0.0,
+    "base_labels": {},
+    "findings": [
+      "мало_закрытых_сделок"
+    ],
+    "regime": "breakout"
+  },
+  {
+    "base": "04-macd-stoch-long-short.italgo",
+    "variant": "04-macd-stoch-long-short__ema50.italgo",
+    "kind": "add_block_ema",
+    "side_mode": "long_short",
+    "base_pnl": 165.77297400000026,
+    "variant_pnl": 130.28232300000008,
+    "delta_pnl": -35.490651000000184,
+    "better": false,
+    "base_wr": 0.5263157894736842,
+    "variant_wr": 0.3076923076923077,
+    "base_trades": 20,
+    "base_dd": 148.2560239999999,
+    "base_labels": {
+      "bad": 9,
+      "good": 10,
+      "open": 1
+    },
+    "findings": [
+      "серия_убытков"
+    ],
+    "regime": "trend"
+  },
+  {
+    "base": "04-macd-stoch-long-short.italgo",
+    "variant": "04-macd-stoch-long-short__period15x.italgo",
+    "kind": "change_period",
+    "side_mode": "long_short",
+    "base_pnl": 165.77297400000026,
+    "variant_pnl": 168.89821500000005,
+    "delta_pnl": 3.1252409999997894,
+    "better": true,
+    "base_wr": 0.5263157894736842,
+    "variant_wr": 0.45454545454545453,
+    "base_trades": 20,
+    "base_dd": 148.2560239999999,
+    "base_labels": {
+      "bad": 9,
+      "good": 10,
+      "open": 1
+    },
+    "findings": [
+      "серия_убытков"
+    ],
+    "regime": "trend"
+  },
+  {
+    "base": "05-trend-atr-sl-tp.italgo",
+    "variant": "05-trend-atr-sl-tp__ema50.italgo",
+    "kind": "add_block_ema",
+    "side_mode": "long_only",
+    "base_pnl": -33.54287285714267,
+    "variant_pnl": -33.54287285714267,
+    "delta_pnl": 0.0,
+    "better": false,
+    "base_wr": 0.23809523809523808,
+    "variant_wr": 0.23809523809523808,
+    "base_trades": 42,
+    "base_dd": 79.60345771428547,
+    "base_labels": {
+      "bad_noise": 17,
+      "bad": 15,
+      "good_weak": 1,
+      "good": 9
+    },
+    "findings": [
+      "серия_убытков"
+    ],
+    "regime": "trend"
+  },
+  {
+    "base": "05-trend-atr-sl-tp.italgo",
+    "variant": "05-trend-atr-sl-tp__period15x.italgo",
+    "kind": "change_period",
+    "side_mode": "long_only",
+    "base_pnl": -33.54287285714267,
+    "variant_pnl": 19.460392285714164,
+    "delta_pnl": 53.00326514285683,
+    "better": true,
+    "base_wr": 0.23809523809523808,
+    "variant_wr": 0.3103448275862069,
+    "base_trades": 42,
+    "base_dd": 79.60345771428547,
+    "base_labels": {
+      "bad_noise": 17,
+      "bad": 15,
+      "good_weak": 1,
+      "good": 9
+    },
+    "findings": [
+      "серия_убытков"
+    ],
+    "regime": "trend"
+  },
+  {
+    "base": "06-session-filter-rsi.italgo",
+    "variant": "06-session-filter-rsi__ema50.italgo",
+    "kind": "add_block_ema",
+    "side_mode": "long_only",
+    "base_pnl": 0.0,
+    "variant_pnl": 0.0,
+    "delta_pnl": 0.0,
+    "better": false,
+    "base_wr": 0.0,
+    "variant_wr": 0.0,
+    "base_trades": 0,
+    "base_dd": 0.0,
+    "base_labels": {},
+    "findings": [
+      "мало_закрытых_сделок"
+    ],
+    "regime": "mean_reversion"
+  },
+  {
+    "base": "06-session-filter-rsi.italgo",
+    "variant": "06-session-filter-rsi__period15x.italgo",
+    "kind": "change_period",
+    "side_mode": "long_only",
+    "base_pnl": 0.0,
+    "variant_pnl": 0.0,
+    "delta_pnl": 0.0,
+    "better": false,
+    "base_wr": 0.0,
+    "variant_wr": 0.0,
+    "base_trades": 0,
+    "base_dd": 0.0,
+    "base_labels": {},
+    "findings": [
+      "мало_закрытых_сделок"
+    ],
+    "regime": "mean_reversion"
+  },
+  {
+    "base": "07-supertrend-di-adx-stack.italgo",
+    "variant": "07-supertrend-di-adx-stack__ema50.italgo",
+    "kind": "add_block_ema",
+    "side_mode": "long_short",
+    "base_pnl": 82.91840799999983,
+    "variant_pnl": 138.71899799999983,
+    "delta_pnl": 55.80059,
+    "better": true,
+    "base_wr": 0.3,
+    "variant_wr": 0.2962962962962963,
+    "base_trades": 31,
+    "base_dd": 177.68788400000022,
+    "base_labels": {
+      "bad": 21,
+      "good": 9,
+      "open": 1
+    },
+    "findings": [
+      "серия_убытков",
+      "тренд_без_фильтра_флэта"
+    ],
+    "regime": "trend"
+  },
+  {
+    "base": "07-supertrend-di-adx-stack.italgo",
+    "variant": "07-supertrend-di-adx-stack__period15x.italgo",
+    "kind": "change_period",
+    "side_mode": "long_short",
+    "base_pnl": 82.91840799999983,
+    "variant_pnl": 199.1136400000001,
+    "delta_pnl": 116.19523200000026,
+    "better": true,
+    "base_wr": 0.3,
+    "variant_wr": 0.3,
+    "base_trades": 31,
+    "base_dd": 177.68788400000022,
+    "base_labels": {
+      "bad": 21,
+      "good": 9,
+      "open": 1
+    },
+    "findings": [
+      "серия_убытков",
+      "тренд_без_фильтра_флэта"
+    ],
+    "regime": "trend"
+  },
+  {
+    "base": "08-cci-regime-trail.italgo",
+    "variant": "08-cci-regime-trail__ema50.italgo",
+    "kind": "add_block_ema",
+    "side_mode": "long_only",
+    "base_pnl": 29.73458223500006,
+    "variant_pnl": 29.73458223500006,
+    "delta_pnl": 0.0,
+    "better": false,
+    "base_wr": 0.45454545454545453,
+    "variant_wr": 0.45454545454545453,
+    "base_trades": 44,
+    "base_dd": 28.215053094999973,
+    "base_labels": {
+      "bad_noise": 14,
+      "good": 20,
+      "bad": 10
+    },
+    "findings": [
+      "сверхкороткие_удержания",
+      "серия_убытков"
+    ],
+    "regime": "trend"
+  },
+  {
+    "base": "08-cci-regime-trail.italgo",
+    "variant": "08-cci-regime-trail__period15x.italgo",
+    "kind": "change_period",
+    "side_mode": "long_only",
+    "base_pnl": 29.73458223500006,
+    "variant_pnl": 32.03559615500001,
+    "delta_pnl": 2.3010139199999458,
+    "better": true,
+    "base_wr": 0.45454545454545453,
+    "variant_wr": 0.5151515151515151,
+    "base_trades": 44,
+    "base_dd": 28.215053094999973,
+    "base_labels": {
+      "bad_noise": 14,
+      "good": 20,
+      "bad": 10
+    },
+    "findings": [
+      "сверхкороткие_удержания",
+      "серия_убытков"
+    ],
+    "regime": "trend"
+  },
+  {
+    "base": "09-sma-cross-20-50.italgo",
+    "variant": "09-sma-cross-20-50__ema50.italgo",
+    "kind": "add_block_ema",
+    "side_mode": "long_only",
+    "base_pnl": 102.52095400000013,
+    "variant_pnl": 104.02639700000003,
+    "delta_pnl": 1.5054429999999002,
+    "better": true,
+    "base_wr": 0.5,
+    "variant_wr": 0.5555555555555556,
+    "base_trades": 12,
+    "base_dd": 51.070721000000006,
+    "base_labels": {
+      "bad": 5,
+      "good": 6,
+      "bad_noise": 1
+    },
+    "findings": [],
+    "regime": "trend"
+  },
+  {
+    "base": "09-sma-cross-20-50.italgo",
+    "variant": "09-sma-cross-20-50__period15x.italgo",
+    "kind": "change_period",
+    "side_mode": "long_only",
+    "base_pnl": 102.52095400000013,
+    "variant_pnl": 164.36387000000008,
+    "delta_pnl": 61.842915999999946,
+    "better": true,
+    "base_wr": 0.5,
+    "variant_wr": 0.5,
+    "base_trades": 12,
+    "base_dd": 51.070721000000006,
+    "base_labels": {
+      "bad": 5,
+      "good": 6,
+      "bad_noise": 1
+    },
+    "findings": [],
+    "regime": "trend"
+  },
+  {
+    "base": "10-ema-cross-9-21.italgo",
+    "variant": "10-ema-cross-9-21__ema50.italgo",
+    "kind": "add_block_ema",
+    "side_mode": "long_only",
+    "base_pnl": 47.483690000000095,
+    "variant_pnl": 113.37715400000002,
+    "delta_pnl": 65.89346399999992,
+    "better": true,
+    "base_wr": 0.30303030303030304,
+    "variant_wr": 0.34782608695652173,
+    "base_trades": 33,
+    "base_dd": 103.57985799999996,
+    "base_labels": {
+      "good": 10,
+      "bad_noise": 7,
+      "bad": 16
+    },
+    "findings": [
+      "серия_убытков",
+      "тренд_без_фильтра_флэта"
+    ],
+    "regime": "trend"
+  },
+  {
+    "base": "10-ema-cross-9-21.italgo",
+    "variant": "10-ema-cross-9-21__period15x.italgo",
+    "kind": "change_period",
+    "side_mode": "long_only",
+    "base_pnl": 47.483690000000095,
+    "variant_pnl": 134.28911099999988,
+    "delta_pnl": 86.80542099999978,
+    "better": true,
+    "base_wr": 0.30303030303030304,
+    "variant_wr": 0.4117647058823529,
+    "base_trades": 33,
+    "base_dd": 103.57985799999996,
+    "base_labels": {
+      "good": 10,
+      "bad_noise": 7,
+      "bad": 16
+    },
+    "findings": [
+      "серия_убытков",
+      "тренд_без_фильтра_флэта"
+    ],
+    "regime": "trend"
+  },
+  {
+    "base": "11-tema-cross-10-30.italgo",
+    "variant": "11-tema-cross-10-30__ema50.italgo",
+    "kind": "add_block_ema",
+    "side_mode": "long_only",
+    "base_pnl": -127.71714799999961,
+    "variant_pnl": 46.370306000000056,
+    "delta_pnl": 174.08745399999967,
+    "better": true,
+    "base_wr": 0.4807692307692308,
+    "variant_wr": 0.53125,
+    "base_trades": 52,
+    "base_dd": 181.330977,
+    "base_labels": {
+      "bad": 24,
+      "good": 25,
+      "bad_noise": 3
+    },
+    "findings": [
+      "серия_убытков"
+    ],
+    "regime": "trend"
+  },
+  {
+    "base": "11-tema-cross-10-30.italgo",
+    "variant": "11-tema-cross-10-30__period15x.italgo",
+    "kind": "change_period",
+    "side_mode": "long_only",
+    "base_pnl": -127.71714799999961,
+    "variant_pnl": -131.23284999999973,
+    "delta_pnl": -3.5157020000001182,
+    "better": false,
+    "base_wr": 0.4807692307692308,
+    "variant_wr": 0.2631578947368421,
+    "base_trades": 52,
+    "base_dd": 181.330977,
+    "base_labels": {
+      "bad": 24,
+      "good": 25,
+      "bad_noise": 3
+    },
+    "findings": [
+      "серия_убытков"
+    ],
+    "regime": "trend"
+  },
+  {
+    "base": "12-dema-cross-12-26.italgo",
+    "variant": "12-dema-cross-12-26__ema50.italgo",
+    "kind": "add_block_ema",
+    "side_mode": "long_only",
+    "base_pnl": -103.43236099999991,
+    "variant_pnl": -33.69878799999998,
+    "delta_pnl": 69.73357299999994,
+    "better": true,
+    "base_wr": 0.38095238095238093,
+    "variant_wr": 0.38235294117647056,
+    "base_trades": 43,
+    "base_dd": 148.31954400000006,
+    "base_labels": {
+      "bad": 23,
+      "good": 15,
+      "good_weak": 1,
+      "bad_noise": 3,
+      "open": 1
+    },
+    "findings": [
+      "серия_убытков"
+    ],
+    "regime": "trend"
+  },
+  {
+    "base": "12-dema-cross-12-26.italgo",
+    "variant": "12-dema-cross-12-26__period15x.italgo",
+    "kind": "change_period",
+    "side_mode": "long_only",
+    "base_pnl": -103.43236099999991,
+    "variant_pnl": 10.376445999999987,
+    "delta_pnl": 113.8088069999999,
+    "better": true,
+    "base_wr": 0.38095238095238093,
+    "variant_wr": 0.4,
+    "base_trades": 43,
+    "base_dd": 148.31954400000006,
+    "base_labels": {
+      "bad": 23,
+      "good": 15,
+      "good_weak": 1,
+      "bad_noise": 3,
+      "open": 1
+    },
+    "findings": [
+      "серия_убытков"
+    ],
+    "regime": "trend"
+  },
+  {
+    "base": "13-rsi-cross-50.italgo",
+    "variant": "13-rsi-cross-50__ema50.italgo",
+    "kind": "add_block_ema",
+    "side_mode": "long_only",
+    "base_pnl": -3.6200759999995142,
+    "variant_pnl": 13.616525000000465,
+    "delta_pnl": 17.23660099999998,
+    "better": true,
+    "base_wr": 0.32558139534883723,
+    "variant_wr": 0.3508771929824561,
+    "base_trades": 86,
+    "base_dd": 120.46337599999967,
+    "base_labels": {
+      "bad": 27,
+      "good_weak": 4,
+      "bad_noise": 31,
+      "good": 24
+    },
+    "findings": [
+      "серия_убытков"
+    ],
+    "regime": "mean_reversion"
+  },
+  {
+    "base": "13-rsi-cross-50.italgo",
+    "variant": "13-rsi-cross-50__period15x.italgo",
+    "kind": "change_period",
+    "side_mode": "long_only",
+    "base_pnl": -3.6200759999995142,
+    "variant_pnl": 53.262044000000046,
+    "delta_pnl": 56.88211999999956,
+    "better": true,
+    "base_wr": 0.32558139534883723,
+    "variant_wr": 0.4074074074074074,
+    "base_trades": 86,
+    "base_dd": 120.46337599999967,
+    "base_labels": {
+      "bad": 27,
+      "good_weak": 4,
+      "bad_noise": 31,
+      "good": 24
+    },
+    "findings": [
+      "серия_убытков"
+    ],
+    "regime": "mean_reversion"
+  },
+  {
+    "base": "14-cmo-cross-0.italgo",
+    "variant": "14-cmo-cross-0__ema50.italgo",
+    "kind": "add_block_ema",
+    "side_mode": "long_only",
+    "base_pnl": -3.6200759999995142,
+    "variant_pnl": 13.616525000000465,
+    "delta_pnl": 17.23660099999998,
+    "better": true,
+    "base_wr": 0.32558139534883723,
+    "variant_wr": 0.3508771929824561,
+    "base_trades": 86,
+    "base_dd": 120.46337599999967,
+    "base_labels": {
+      "bad": 27,
+      "good_weak": 4,
+      "bad_noise": 31,
+      "good": 24
+    },
+    "findings": [
+      "серия_убытков"
+    ],
+    "regime": "unknown"
+  },
+  {
+    "base": "14-cmo-cross-0.italgo",
+    "variant": "14-cmo-cross-0__period15x.italgo",
+    "kind": "change_period",
+    "side_mode": "long_only",
+    "base_pnl": -3.6200759999995142,
+    "variant_pnl": 53.262044000000046,
+    "delta_pnl": 56.88211999999956,
+    "better": true,
+    "base_wr": 0.32558139534883723,
+    "variant_wr": 0.4074074074074074,
+    "base_trades": 86,
+    "base_dd": 120.46337599999967,
+    "base_labels": {
+      "bad": 27,
+      "good_weak": 4,
+      "bad_noise": 31,
+      "good": 24
+    },
+    "findings": [
+      "серия_убытков"
+    ],
+    "regime": "unknown"
+  },
+  {
+    "base": "15-momentum-cross-0.italgo",
+    "variant": "15-momentum-cross-0__ema50.italgo",
+    "kind": "add_block_ema",
+    "side_mode": "long_only",
+    "base_pnl": -18.151349999999667,
+    "variant_pnl": 43.00606600000029,
+    "delta_pnl": 61.157415999999955,
+    "better": true,
+    "base_wr": 0.3673469387755102,
+    "variant_wr": 0.32786885245901637,
+    "base_trades": 98,
+    "base_dd": 130.0328769999999,
+    "base_labels": {
+      "good_weak": 7,
+      "bad_noise": 35,
+      "good": 29,
+      "bad": 27
+    },
+    "findings": [
+      "сверхкороткие_удержания",
+      "серия_убытков"
+    ],
+    "regime": "unknown"
+  },
+  {
+    "base": "15-momentum-cross-0.italgo",
+    "variant": "15-momentum-cross-0__period15x.italgo",
+    "kind": "change_period",
+    "side_mode": "long_only",
+    "base_pnl": -18.151349999999667,
+    "variant_pnl": 16.801681000000443,
+    "delta_pnl": 34.95303100000011,
+    "better": true,
+    "base_wr": 0.3673469387755102,
+    "variant_wr": 0.3333333333333333,
+    "base_trades": 98,
+    "base_dd": 130.0328769999999,
+    "base_labels": {
+      "good_weak": 7,
+      "bad_noise": 35,
+      "good": 29,
+      "bad": 27
+    },
+    "findings": [
+      "сверхкороткие_удержания",
+      "серия_убытков"
+    ],
+    "regime": "unknown"
+  },
+  {
+    "base": "16-supertrend-rsi-entry.italgo",
+    "variant": "16-supertrend-rsi-entry__ema50.italgo",
+    "kind": "add_block_ema",
+    "side_mode": "long_only",
+    "base_pnl": 41.351667000000106,
+    "variant_pnl": 73.34396400000011,
+    "delta_pnl": 31.992297000000008,
+    "better": true,
+    "base_wr": 0.5555555555555556,
+    "variant_wr": 0.625,
+    "base_trades": 10,
+    "base_dd": 109.59076099999996,
+    "base_labels": {
+      "bad": 4,
+      "good": 5,
+      "open": 1
+    },
+    "findings": [],
+    "regime": "trend"
+  },
+  {
+    "base": "16-supertrend-rsi-entry.italgo",
+    "variant": "16-supertrend-rsi-entry__period15x.italgo",
+    "kind": "change_period",
+    "side_mode": "long_only",
+    "base_pnl": 41.351667000000106,
+    "variant_pnl": -46.62307200000009,
+    "delta_pnl": -87.9747390000002,
+    "better": false,
+    "base_wr": 0.5555555555555556,
+    "variant_wr": 0.5,
+    "base_trades": 10,
+    "base_dd": 109.59076099999996,
+    "base_labels": {
+      "bad": 4,
+      "good": 5,
+      "open": 1
+    },
+    "findings": [],
+    "regime": "trend"
+  },
+  {
+    "base": "17-supertrend-rsi-tight.italgo",
+    "variant": "17-supertrend-rsi-tight__ema50.italgo",
+    "kind": "add_block_ema",
+    "side_mode": "long_only",
+    "base_pnl": -41.397890999999916,
+    "variant_pnl": 76.78582999999993,
+    "delta_pnl": 118.18372099999985,
+    "better": true,
+    "base_wr": 0.5625,
+    "variant_wr": 0.5833333333333334,
+    "base_trades": 17,
+    "base_dd": 173.71483699999993,
+    "base_labels": {
+      "good": 9,
+      "bad": 7,
+      "open": 1
+    },
+    "findings": [],
+    "regime": "trend"
+  },
+  {
+    "base": "17-supertrend-rsi-tight.italgo",
+    "variant": "17-supertrend-rsi-tight__period15x.italgo",
+    "kind": "change_period",
+    "side_mode": "long_only",
+    "base_pnl": -41.397890999999916,
+    "variant_pnl": 135.96240600000016,
+    "delta_pnl": 177.36029700000006,
+    "better": true,
+    "base_wr": 0.5625,
+    "variant_wr": 0.5238095238095238,
+    "base_trades": 17,
+    "base_dd": 173.71483699999993,
+    "base_labels": {
+      "good": 9,
+      "bad": 7,
+      "open": 1
+    },
+    "findings": [],
+    "regime": "trend"
+  },
+  {
+    "base": "18-mom-pct-ema50-filter.italgo",
+    "variant": "18-mom-pct-ema50-filter__ema50.italgo",
+    "kind": "add_block_ema",
+    "side_mode": "long_only",
+    "base_pnl": 43.00606600000029,
+    "variant_pnl": 43.00606600000029,
+    "delta_pnl": 0.0,
+    "better": false,
+    "base_wr": 0.32786885245901637,
+    "variant_wr": 0.32786885245901637,
+    "base_trades": 61,
+    "base_dd": 66.29599899999994,
+    "base_labels": {
+      "bad_noise": 24,
+      "good_weak": 3,
+      "bad": 17,
+      "good": 17
+    },
+    "findings": [
+      "сверхкороткие_удержания",
+      "серия_убытков",
+      "тренд_без_фильтра_флэта"
+    ],
+    "regime": "trend"
+  },
+  {
+    "base": "18-mom-pct-ema50-filter.italgo",
+    "variant": "18-mom-pct-ema50-filter__period15x.italgo",
+    "kind": "change_period",
+    "side_mode": "long_only",
+    "base_pnl": 43.00606600000029,
+    "variant_pnl": 28.38713900000033,
+    "delta_pnl": -14.618926999999957,
+    "better": false,
+    "base_wr": 0.32786885245901637,
+    "variant_wr": 0.32075471698113206,
+    "base_trades": 61,
+    "base_dd": 66.29599899999994,
+    "base_labels": {
+      "bad_noise": 24,
+      "good_weak": 3,
+      "bad": 17,
+      "good": 17
+    },
+    "findings": [
+      "сверхкороткие_удержания",
+      "серия_убытков",
+      "тренд_без_фильтра_флэта"
+    ],
+    "regime": "trend"
+  },
+  {
+    "base": "19-bb-rsi-mean-reversion-v2.italgo",
+    "variant": "19-bb-rsi-mean-reversion-v2__ema50.italgo",
+    "kind": "add_block_ema",
+    "side_mode": "long_only",
+    "base_pnl": -241.971949,
+    "variant_pnl": 10.487385000000017,
+    "delta_pnl": 252.459334,
+    "better": true,
+    "base_wr": 0.5,
+    "variant_wr": 1.0,
+    "base_trades": 9,
+    "base_dd": 269.836938,
+    "base_labels": {
+      "bad": 4,
+      "good": 4,
+      "open": 1
+    },
+    "findings": [
+      "mr_слишком_долго_держит"
+    ],
+    "regime": "mean_reversion"
+  },
+  {
+    "base": "19-bb-rsi-mean-reversion-v2.italgo",
+    "variant": "19-bb-rsi-mean-reversion-v2__period15x.italgo",
+    "kind": "change_period",
+    "side_mode": "long_only",
+    "base_pnl": -241.971949,
+    "variant_pnl": -181.00323600000004,
+    "delta_pnl": 60.96871299999995,
+    "better": true,
+    "base_wr": 0.5,
+    "variant_wr": 0.6666666666666666,
+    "base_trades": 9,
+    "base_dd": 269.836938,
+    "base_labels": {
+      "bad": 4,
+      "good": 4,
+      "open": 1
+    },
+    "findings": [
+      "mr_слишком_долго_держит"
+    ],
+    "regime": "mean_reversion"
+  },
+  {
+    "base": "20-donchian-55.italgo",
+    "variant": "20-donchian-55__ema50.italgo",
+    "kind": "add_block_ema",
+    "side_mode": "long_only",
+    "base_pnl": 0.0,
+    "variant_pnl": 0.0,
+    "delta_pnl": 0.0,
+    "better": false,
+    "base_wr": 0.0,
+    "variant_wr": 0.0,
+    "base_trades": 0,
+    "base_dd": 0.0,
+    "base_labels": {},
+    "findings": [
+      "мало_закрытых_сделок"
+    ],
+    "regime": "breakout"
+  },
+  {
+    "base": "20-donchian-55.italgo",
+    "variant": "20-donchian-55__period15x.italgo",
+    "kind": "change_period",
+    "side_mode": "long_only",
+    "base_pnl": 0.0,
+    "variant_pnl": 0.0,
+    "delta_pnl": 0.0,
+    "better": false,
+    "base_wr": 0.0,
+    "variant_wr": 0.0,
+    "base_trades": 0,
+    "base_dd": 0.0,
+    "base_labels": {},
+    "findings": [
+      "мало_закрытых_сделок"
+    ],
+    "regime": "breakout"
+  },
+  {
+    "base": "21-sma-cross-20-50-ls.italgo",
+    "variant": "21-sma-cross-20-50-ls__ema50.italgo",
+    "kind": "add_block_ema",
+    "side_mode": "long_short",
+    "base_pnl": 256.24967300000026,
+    "variant_pnl": 259.26055900000006,
+    "delta_pnl": 3.0108859999998003,
+    "better": true,
+    "base_wr": 0.375,
+    "variant_wr": 0.3888888888888889,
+    "base_trades": 25,
+    "base_dd": 123.71106599999996,
+    "base_labels": {
+      "good": 9,
+      "bad": 14,
+      "bad_noise": 1,
+      "open": 1
+    },
+    "findings": [
+      "тренд_без_фильтра_флэта"
+    ],
+    "regime": "trend"
+  },
+  {
+    "base": "21-sma-cross-20-50-ls.italgo",
+    "variant": "21-sma-cross-20-50-ls__period15x.italgo",
+    "kind": "change_period",
+    "side_mode": "long_short",
+    "base_pnl": 256.24967300000026,
+    "variant_pnl": 185.6305400000001,
+    "delta_pnl": -70.61913300000015,
+    "better": false,
+    "base_wr": 0.375,
+    "variant_wr": 0.42105263157894735,
+    "base_trades": 25,
+    "base_dd": 123.71106599999996,
+    "base_labels": {
+      "good": 9,
+      "bad": 14,
+      "bad_noise": 1,
+      "open": 1
+    },
+    "findings": [
+      "тренд_без_фильтра_флэта"
+    ],
+    "regime": "trend"
+  },
+  {
+    "base": "22-ema-cross-9-21-ls.italgo",
+    "variant": "22-ema-cross-9-21-ls__ema50.italgo",
+    "kind": "add_block_ema",
+    "side_mode": "long_short",
+    "base_pnl": 152.98028900000014,
+    "variant_pnl": 305.719297,
+    "delta_pnl": 152.73900799999984,
+    "better": true,
+    "base_wr": 0.26153846153846155,
+    "variant_wr": 0.2608695652173913,
+    "base_trades": 66,
+    "base_dd": 149.8028999999998,
+    "base_labels": {
+      "good": 16,
+      "bad_noise": 12,
+      "bad": 36,
+      "good_weak": 1,
+      "open": 1
+    },
+    "findings": [
+      "серия_убытков",
+      "тренд_без_фильтра_флэта"
+    ],
+    "regime": "trend"
+  },
+  {
+    "base": "22-ema-cross-9-21-ls.italgo",
+    "variant": "22-ema-cross-9-21-ls__period15x.italgo",
+    "kind": "change_period",
+    "side_mode": "long_short",
+    "base_pnl": 152.98028900000014,
+    "variant_pnl": 335.9243729999997,
+    "delta_pnl": 182.94408399999958,
+    "better": true,
+    "base_wr": 0.26153846153846155,
+    "variant_wr": 0.29411764705882354,
+    "base_trades": 66,
+    "base_dd": 149.8028999999998,
+    "base_labels": {
+      "good": 16,
+      "bad_noise": 12,
+      "bad": 36,
+      "good_weak": 1,
+      "open": 1
+    },
+    "findings": [
+      "серия_убытков",
+      "тренд_без_фильтра_флэта"
+    ],
+    "regime": "trend"
+  },
+  {
+    "base": "23-tema-cross-10-30-ls.italgo",
+    "variant": "23-tema-cross-10-30-ls__ema50.italgo",
+    "kind": "add_block_ema",
+    "side_mode": "long_short",
+    "base_pnl": -160.4409099999992,
+    "variant_pnl": 187.7339980000001,
+    "delta_pnl": 348.1749079999993,
+    "better": true,
+    "base_wr": 0.41346153846153844,
+    "variant_wr": 0.375,
+    "base_trades": 105,
+    "base_dd": 241.62601599999923,
+    "base_labels": {
+      "good": 43,
+      "bad": 55,
+      "bad_noise": 6,
+      "open": 1
+    },
+    "findings": [
+      "серия_убытков"
+    ],
+    "regime": "trend"
+  },
+  {
+    "base": "23-tema-cross-10-30-ls.italgo",
+    "variant": "23-tema-cross-10-30-ls__period15x.italgo",
+    "kind": "change_period",
+    "side_mode": "long_short",
+    "base_pnl": -160.4409099999992,
+    "variant_pnl": -163.7226889999995,
+    "delta_pnl": -3.2817790000002844,
+    "better": false,
+    "base_wr": 0.41346153846153844,
+    "variant_wr": 0.2727272727272727,
+    "base_trades": 105,
+    "base_dd": 241.62601599999923,
+    "base_labels": {
+      "good": 43,
+      "bad": 55,
+      "bad_noise": 6,
+      "open": 1
+    },
+    "findings": [
+      "серия_убытков"
+    ],
+    "regime": "trend"
+  },
+  {
+    "base": "24-rsi-cross-50-ls.italgo",
+    "variant": "24-rsi-cross-50-ls__ema50.italgo",
+    "kind": "add_block_ema",
+    "side_mode": "long_short",
+    "base_pnl": 49.132593000000924,
+    "variant_pnl": 82.99036000000089,
+    "delta_pnl": 33.85776699999997,
+    "better": true,
+    "base_wr": 0.2982456140350877,
+    "variant_wr": 0.2543859649122807,
+    "base_trades": 172,
+    "base_dd": 245.07870199999903,
+    "base_labels": {
+      "bad": 56,
+      "bad_noise": 64,
+      "good_weak": 5,
+      "good": 46,
+      "open": 1
+    },
+    "findings": [
+      "сверхкороткие_удержания",
+      "серия_убытков"
+    ],
+    "regime": "mean_reversion"
+  },
+  {
+    "base": "24-rsi-cross-50-ls.italgo",
+    "variant": "24-rsi-cross-50-ls__period15x.italgo",
+    "kind": "change_period",
+    "side_mode": "long_short",
+    "base_pnl": 49.132593000000924,
+    "variant_pnl": 164.38698200000013,
+    "delta_pnl": 115.25438899999921,
+    "better": true,
+    "base_wr": 0.2982456140350877,
+    "variant_wr": 0.3333333333333333,
+    "base_trades": 172,
+    "base_dd": 245.07870199999903,
+    "base_labels": {
+      "bad": 56,
+      "bad_noise": 64,
+      "good_weak": 5,
+      "good": 46,
+      "open": 1
+    },
+    "findings": [
+      "сверхкороткие_удержания",
+      "серия_убытков"
+    ],
+    "regime": "mean_reversion"
+  },
+  {
+    "base": "25-momentum-cross-0-ls.italgo",
+    "variant": "25-momentum-cross-0-ls__ema50.italgo",
+    "kind": "add_block_ema",
+    "side_mode": "long_short",
+    "base_pnl": 19.56459900000067,
+    "variant_pnl": 141.87943100000058,
+    "delta_pnl": 122.31483199999991,
+    "better": true,
+    "base_wr": 0.32653061224489793,
+    "variant_wr": 0.26229508196721313,
+    "base_trades": 197,
+    "base_dd": 250.20024199999943,
+    "base_labels": {
+      "good": 52,
+      "good_weak": 12,
+      "bad_noise": 69,
+      "bad": 63,
+      "open": 1
+    },
+    "findings": [
+      "сверхкороткие_удержания",
+      "серия_убытков",
+      "лонги_портят_результат"
+    ],
+    "regime": "unknown"
+  },
+  {
+    "base": "25-momentum-cross-0-ls.italgo",
+    "variant": "25-momentum-cross-0-ls__period15x.italgo",
+    "kind": "change_period",
+    "side_mode": "long_short",
+    "base_pnl": 19.56459900000067,
+    "variant_pnl": 88.98600800000082,
+    "delta_pnl": 69.42140900000015,
+    "better": true,
+    "base_wr": 0.32653061224489793,
+    "variant_wr": 0.32298136645962733,
+    "base_trades": 197,
+    "base_dd": 250.20024199999943,
+    "base_labels": {
+      "good": 52,
+      "good_weak": 12,
+      "bad_noise": 69,
+      "bad": 63,
+      "open": 1
+    },
+    "findings": [
+      "сверхкороткие_удержания",
+      "серия_убытков",
+      "лонги_портят_результат"
+    ],
+    "regime": "unknown"
+  },
+  {
+    "base": "26-supertrend-rsi-ls.italgo",
+    "variant": "26-supertrend-rsi-ls__ema50.italgo",
+    "kind": "add_block_ema",
+    "side_mode": "long_short",
+    "base_pnl": 139.07607900000016,
+    "variant_pnl": 171.06837600000017,
+    "delta_pnl": 31.992297000000008,
+    "better": true,
+    "base_wr": 0.4444444444444444,
+    "variant_wr": 0.47058823529411764,
+    "base_trades": 19,
+    "base_dd": 142.50152199999994,
+    "base_labels": {
+      "bad": 10,
+      "good": 8,
+      "open": 1
+    },
+    "findings": [],
+    "regime": "trend"
+  },
+  {
+    "base": "26-supertrend-rsi-ls.italgo",
+    "variant": "26-supertrend-rsi-ls__period15x.italgo",
+    "kind": "change_period",
+    "side_mode": "long_short",
+    "base_pnl": 139.07607900000016,
+    "variant_pnl": -35.383250000000174,
+    "delta_pnl": -174.45932900000034,
+    "better": false,
+    "base_wr": 0.4444444444444444,
+    "variant_wr": 0.35,
+    "base_trades": 19,
+    "base_dd": 142.50152199999994,
+    "base_labels": {
+      "bad": 10,
+      "good": 8,
+      "open": 1
+    },
+    "findings": [],
+    "regime": "trend"
+  }
+]

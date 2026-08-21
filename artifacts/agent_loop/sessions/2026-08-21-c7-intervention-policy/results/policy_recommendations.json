@@ -1,0 +1,262 @@
+[
+  {
+    "base": "01-trend-ema-adx-rsi.italgo",
+    "recommend_kind": "change_period",
+    "p_better": 0.014707905786886568,
+    "observed_delta": -97.67074300000007,
+    "observed_better": false,
+    "base_pnl": 127.51295300000004,
+    "variant_pnl": 29.842209999999966,
+    "variant": "01-trend-ema-adx-rsi__period15x.italgo"
+  },
+  {
+    "base": "02-mean-reversion-bb-rsi.italgo",
+    "recommend_kind": "add_block_ema",
+    "p_better": 0.9993494036619699,
+    "observed_delta": 77.87303099999984,
+    "observed_better": true,
+    "base_pnl": -77.87303099999984,
+    "variant_pnl": 0.0,
+    "variant": "02-mean-reversion-bb-rsi__ema50.italgo"
+  },
+  {
+    "base": "03-breakout-donchian-volume.italgo",
+    "recommend_kind": "add_block_ema",
+    "p_better": 0.0027537120910266473,
+    "observed_delta": 0.0,
+    "observed_better": false,
+    "base_pnl": 0.0,
+    "variant_pnl": 0.0,
+    "variant": "03-breakout-donchian-volume__ema50.italgo"
+  },
+  {
+    "base": "04-macd-stoch-long-short.italgo",
+    "recommend_kind": "change_period",
+    "p_better": 0.6413519752604926,
+    "observed_delta": 3.1252409999997894,
+    "observed_better": true,
+    "base_pnl": 165.77297400000026,
+    "variant_pnl": 168.89821500000005,
+    "variant": "04-macd-stoch-long-short__period15x.italgo"
+  },
+  {
+    "base": "05-trend-atr-sl-tp.italgo",
+    "recommend_kind": "change_period",
+    "p_better": 0.9358411673479075,
+    "observed_delta": 53.00326514285683,
+    "observed_better": true,
+    "base_pnl": -33.54287285714267,
+    "variant_pnl": 19.460392285714164,
+    "variant": "05-trend-atr-sl-tp__period15x.italgo"
+  },
+  {
+    "base": "06-session-filter-rsi.italgo",
+    "recommend_kind": "add_block_ema",
+    "p_better": 0.0027537120910266473,
+    "observed_delta": 0.0,
+    "observed_better": false,
+    "base_pnl": 0.0,
+    "variant_pnl": 0.0,
+    "variant": "06-session-filter-rsi__ema50.italgo"
+  },
+  {
+    "base": "07-supertrend-di-adx-stack.italgo",
+    "recommend_kind": "change_period",
+    "p_better": 0.9953073979202134,
+    "observed_delta": 116.19523200000026,
+    "observed_better": true,
+    "base_pnl": 82.91840799999983,
+    "variant_pnl": 199.1136400000001,
+    "variant": "07-supertrend-di-adx-stack__period15x.italgo"
+  },
+  {
+    "base": "08-cci-regime-trail.italgo",
+    "recommend_kind": "change_period",
+    "p_better": 0.6934191705121795,
+    "observed_delta": 2.3010139199999458,
+    "observed_better": true,
+    "base_pnl": 29.73458223500006,
+    "variant_pnl": 32.03559615500001,
+    "variant": "08-cci-regime-trail__period15x.italgo"
+  },
+  {
+    "base": "09-sma-cross-20-50.italgo",
+    "recommend_kind": "add_block_ema",
+    "p_better": 0.975433968800101,
+    "observed_delta": 1.5054429999999002,
+    "observed_better": true,
+    "base_pnl": 102.52095400000013,
+    "variant_pnl": 104.02639700000003,
+    "variant": "09-sma-cross-20-50__ema50.italgo"
+  },
+  {
+    "base": "10-ema-cross-9-21.italgo",
+    "recommend_kind": "change_period",
+    "p_better": 0.9898713639366412,
+    "observed_delta": 86.80542099999978,
+    "observed_better": true,
+    "base_pnl": 47.483690000000095,
+    "variant_pnl": 134.28911099999988,
+    "variant": "10-ema-cross-9-21__period15x.italgo"
+  },
+  {
+    "base": "11-tema-cross-10-30.italgo",
+    "recommend_kind": "add_block_ema",
+    "p_better": 0.8487547354604181,
+    "observed_delta": 174.08745399999967,
+    "observed_better": true,
+    "base_pnl": -127.71714799999961,
+    "variant_pnl": 46.370306000000056,
+    "variant": "11-tema-cross-10-30__ema50.italgo"
+  },
+  {
+    "base": "12-dema-cross-12-26.italgo",
+    "recommend_kind": "add_block_ema",
+    "p_better": 0.9757916475433817,
+    "observed_delta": 69.73357299999994,
+    "observed_better": true,
+    "base_pnl": -103.43236099999991,
+    "variant_pnl": -33.69878799999998,
+    "variant": "12-dema-cross-12-26__ema50.italgo"
+  },
+  {
+    "base": "13-rsi-cross-50.italgo",
+    "recommend_kind": "change_period",
+    "p_better": 0.9989895177456879,
+    "observed_delta": 56.88211999999956,
+    "observed_better": true,
+    "base_pnl": -3.6200759999995142,
+    "variant_pnl": 53.262044000000046,
+    "variant": "13-rsi-cross-50__period15x.italgo"
+  },
+  {
+    "base": "14-cmo-cross-0.italgo",
+    "recommend_kind": "change_period",
+    "p_better": 0.9989895177456879,
+    "observed_delta": 56.88211999999956,
+    "observed_better": true,
+    "base_pnl": -3.6200759999995142,
+    "variant_pnl": 53.262044000000046,
+    "variant": "14-cmo-cross-0__period15x.italgo"
+  },
+  {
+    "base": "15-momentum-cross-0.italgo",
+    "recommend_kind": "change_period",
+    "p_better": 0.9944038257548673,
+    "observed_delta": 34.95303100000011,
+    "observed_better": true,
+    "base_pnl": -18.151349999999667,
+    "variant_pnl": 16.801681000000443,
+    "variant": "15-momentum-cross-0__period15x.italgo"
+  },
+  {
+    "base": "16-supertrend-rsi-entry.italgo",
+    "recommend_kind": "add_block_ema",
+    "p_better": 0.9553681271822152,
+    "observed_delta": 31.992297000000008,
+    "observed_better": true,
+    "base_pnl": 41.351667000000106,
+    "variant_pnl": 73.34396400000011,
+    "variant": "16-supertrend-rsi-entry__ema50.italgo"
+  },
+  {
+    "base": "17-supertrend-rsi-tight.italgo",
+    "recommend_kind": "add_block_ema",
+    "p_better": 0.9850962748968769,
+    "observed_delta": 118.18372099999985,
+    "observed_better": true,
+    "base_pnl": -41.397890999999916,
+    "variant_pnl": 76.78582999999993,
+    "variant": "17-supertrend-rsi-tight__ema50.italgo"
+  },
+  {
+    "base": "18-mom-pct-ema50-filter.italgo",
+    "recommend_kind": "change_period",
+    "p_better": 0.03543428913087986,
+    "observed_delta": -14.618926999999957,
+    "observed_better": false,
+    "base_pnl": 43.00606600000029,
+    "variant_pnl": 28.38713900000033,
+    "variant": "18-mom-pct-ema50-filter__period15x.italgo"
+  },
+  {
+    "base": "19-bb-rsi-mean-reversion-v2.italgo",
+    "recommend_kind": "add_block_ema",
+    "p_better": 0.9990161285777185,
+    "observed_delta": 252.459334,
+    "observed_better": true,
+    "base_pnl": -241.971949,
+    "variant_pnl": 10.487385000000017,
+    "variant": "19-bb-rsi-mean-reversion-v2__ema50.italgo"
+  },
+  {
+    "base": "20-donchian-55.italgo",
+    "recommend_kind": "add_block_ema",
+    "p_better": 0.0027537120910266473,
+    "observed_delta": 0.0,
+    "observed_better": false,
+    "base_pnl": 0.0,
+    "variant_pnl": 0.0,
+    "variant": "20-donchian-55__ema50.italgo"
+  },
+  {
+    "base": "21-sma-cross-20-50-ls.italgo",
+    "recommend_kind": "add_block_ema",
+    "p_better": 0.8609539997862568,
+    "observed_delta": 3.0108859999998003,
+    "observed_better": true,
+    "base_pnl": 256.24967300000026,
+    "variant_pnl": 259.26055900000006,
+    "variant": "21-sma-cross-20-50-ls__ema50.italgo"
+  },
+  {
+    "base": "22-ema-cross-9-21-ls.italgo",
+    "recommend_kind": "add_block_ema",
+    "p_better": 0.9964373494827307,
+    "observed_delta": 152.73900799999984,
+    "observed_better": true,
+    "base_pnl": 152.98028900000014,
+    "variant_pnl": 305.719297,
+    "variant": "22-ema-cross-9-21-ls__ema50.italgo"
+  },
+  {
+    "base": "23-tema-cross-10-30-ls.italgo",
+    "recommend_kind": "add_block_ema",
+    "p_better": 0.883333972676313,
+    "observed_delta": 348.1749079999993,
+    "observed_better": true,
+    "base_pnl": -160.4409099999992,
+    "variant_pnl": 187.7339980000001,
+    "variant": "23-tema-cross-10-30-ls__ema50.italgo"
+  },
+  {
+    "base": "24-rsi-cross-50-ls.italgo",
+    "recommend_kind": "change_period",
+    "p_better": 0.9986825971462885,
+    "observed_delta": 115.25438899999921,
+    "observed_better": true,
+    "base_pnl": 49.132593000000924,
+    "variant_pnl": 164.38698200000013,
+    "variant": "24-rsi-cross-50-ls__period15x.italgo"
+  },
+  {
+    "base": "25-momentum-cross-0-ls.italgo",
+    "recommend_kind": "change_period",
+    "p_better": 0.997252521208654,
+    "observed_delta": 69.42140900000015,
+    "observed_better": true,
+    "base_pnl": 19.56459900000067,
+    "variant_pnl": 88.98600800000082,
+    "variant": "25-momentum-cross-0-ls__period15x.italgo"
+  },
+  {
+    "base": "26-supertrend-rsi-ls.italgo",
+    "recommend_kind": "add_block_ema",
+    "p_better": 0.7491829019855742,
+    "observed_delta": 31.992297000000008,
+    "observed_better": true,
+    "base_pnl": 139.07607900000016,
+    "variant_pnl": 171.06837600000017,
+    "variant": "26-supertrend-rsi-ls__ema50.italgo"
+  }
+]

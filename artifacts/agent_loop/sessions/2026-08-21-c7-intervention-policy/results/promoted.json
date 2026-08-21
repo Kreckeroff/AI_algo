@@ -1,0 +1,149 @@
+[
+  {
+    "from": "02-mean-reversion-bb-rsi.italgo",
+    "to": "27p-02-mean-reversion-bb-rsi__period15x.italgo",
+    "delta": 109.42916399999994,
+    "pnl": 31.556133000000102,
+    "kind": "change_period"
+  },
+  {
+    "from": "05-trend-atr-sl-tp.italgo",
+    "to": "27p-05-trend-atr-sl-tp__period15x.italgo",
+    "delta": 53.00326514285683,
+    "pnl": 19.460392285714164,
+    "kind": "change_period"
+  },
+  {
+    "from": "07-supertrend-di-adx-stack.italgo",
+    "to": "27p-07-supertrend-di-adx-stack__ema50.italgo",
+    "delta": 55.80059,
+    "pnl": 138.71899799999983,
+    "kind": "add_block_ema"
+  },
+  {
+    "from": "07-supertrend-di-adx-stack.italgo",
+    "to": "27p-07-supertrend-di-adx-stack__period15x.italgo",
+    "delta": 116.19523200000026,
+    "pnl": 199.1136400000001,
+    "kind": "change_period"
+  },
+  {
+    "from": "09-sma-cross-20-50.italgo",
+    "to": "27p-09-sma-cross-20-50__period15x.italgo",
+    "delta": 61.842915999999946,
+    "pnl": 164.36387000000008,
+    "kind": "change_period"
+  },
+  {
+    "from": "10-ema-cross-9-21.italgo",
+    "to": "27p-10-ema-cross-9-21__ema50.italgo",
+    "delta": 65.89346399999992,
+    "pnl": 113.37715400000002,
+    "kind": "add_block_ema"
+  },
+  {
+    "from": "10-ema-cross-9-21.italgo",
+    "to": "27p-10-ema-cross-9-21__period15x.italgo",
+    "delta": 86.80542099999978,
+    "pnl": 134.28911099999988,
+    "kind": "change_period"
+  },
+  {
+    "from": "11-tema-cross-10-30.italgo",
+    "to": "27p-11-tema-cross-10-30__ema50.italgo",
+    "delta": 174.08745399999967,
+    "pnl": 46.370306000000056,
+    "kind": "add_block_ema"
+  },
+  {
+    "from": "12-dema-cross-12-26.italgo",
+    "to": "27p-12-dema-cross-12-26__period15x.italgo",
+    "delta": 113.8088069999999,
+    "pnl": 10.376445999999987,
+    "kind": "change_period"
+  },
+  {
+    "from": "13-rsi-cross-50.italgo",
+    "to": "27p-13-rsi-cross-50__period15x.italgo",
+    "delta": 56.88211999999956,
+    "pnl": 53.262044000000046,
+    "kind": "change_period"
+  },
+  {
+    "from": "14-cmo-cross-0.italgo",
+    "to": "27p-14-cmo-cross-0__period15x.italgo",
+    "delta": 56.88211999999956,
+    "pnl": 53.262044000000046,
+    "kind": "change_period"
+  },
+  {
+    "from": "15-momentum-cross-0.italgo",
+    "to": "27p-15-momentum-cross-0__ema50.italgo",
+    "delta": 61.157415999999955,
+    "pnl": 43.00606600000029,
+    "kind": "add_block_ema"
+  },
+  {
+    "from": "17-supertrend-rsi-tight.italgo",
+    "to": "27p-17-supertrend-rsi-tight__ema50.italgo",
+    "delta": 118.18372099999985,
+    "pnl": 76.78582999999993,
+    "kind": "add_block_ema"
+  },
+  {
+    "from": "17-supertrend-rsi-tight.italgo",
+    "to": "27p-17-supertrend-rsi-tight__period15x.italgo",
+    "delta": 177.36029700000006,
+    "pnl": 135.96240600000016,
+    "kind": "change_period"
+  },
+  {
+    "from": "19-bb-rsi-mean-reversion-v2.italgo",
+    "to": "27p-19-bb-rsi-mean-reversion-v2__ema50.italgo",
+    "delta": 252.459334,
+    "pnl": 10.487385000000017,
+    "kind": "add_block_ema"
+  },
+  {
+    "from": "22-ema-cross-9-21-ls.italgo",
+    "to": "27p-22-ema-cross-9-21-ls__ema50.italgo",
+    "delta": 152.73900799999984,
+    "pnl": 305.719297,
+    "kind": "add_block_ema"
+  },
+  {
+    "from": "22-ema-cross-9-21-ls.italgo",
+    "to": "27p-22-ema-cross-9-21-ls__period15x.italgo",
+    "delta": 182.94408399999958,
+    "pnl": 335.9243729999997,
+    "kind": "change_period"
+  },
+  {
+    "from": "23-tema-cross-10-30-ls.italgo",
+    "to": "27p-23-tema-cross-10-30-ls__ema50.italgo",
+    "delta": 348.1749079999993,
+    "pnl": 187.7339980000001,
+    "kind": "add_block_ema"
+  },
+  {
+    "from": "24-rsi-cross-50-ls.italgo",
+    "to": "27p-24-rsi-cross-50-ls__period15x.italgo",
+    "delta": 115.25438899999921,
+    "pnl": 164.38698200000013,
+    "kind": "change_period"
+  },
+  {
+    "from": "25-momentum-cross-0-ls.italgo",
+    "to": "27p-25-momentum-cross-0-ls__ema50.italgo",
+    "delta": 122.31483199999991,
+    "pnl": 141.87943100000058,
+    "kind": "add_block_ema"
+  },
+  {
+    "from": "25-momentum-cross-0-ls.italgo",
+    "to": "27p-25-momentum-cross-0-ls__period15x.italgo",
+    "delta": 69.42140900000015,
+    "pnl": 88.98600800000082,
+    "kind": "change_period"
+  }
+]
