@@ -427,7 +427,7 @@ DSL/GraphDTO: `period` integer, constraint `1 ≤ period ≤ max_period` (`max_p
 | **P3.5** | **Мульти-инструмент (§7F):** постоянно расширять набор тикеров + датасет | **частично+++** (C13: 10 equities; C14→ +futures) |
 | **P3.6** | **Качество модели «в гений»** — глубина датасета / вмешательств / TF | **в работе** (C13 all-TF; next: kinds + futures) |
 | **P3.7** | **Дивгэп / short cash (§7H):** дообучение на акциях+индексе с учётом дивидендного гэпа | **частично** (calendar cache + annotate C14) |
-| **P3.8** | **Beat buy&hold (§7I):** long / long-short должны бить B&H на окне графика | **принято** (метрика + label; train next) |
+| **P3.8** | **Beat buy&hold (§7I):** long / long-short должны бить B&H на окне графика | **готово-ish** (C15 policy; 35p-*) |
 | **P4** | Новые индикаторы Desktop → lab whitelist (§7B стык) | параллельно |
 | **P5** | Inference: policy → Advisor (Desktop **или** hosting) + чтение действий юзера | **backlog** (не сейчас) |
 
@@ -516,9 +516,9 @@ DSL/GraphDTO: `period` integer, constraint `1 ≤ period ≤ max_period` (`max_p
 ### Черновые подзадачи (P3.8)
 
 - [x] Считать `buy_hold_pnl` post-hoc из bars (`domain/buy_hold.py` + session p38-buyhold); в каждый engine — долг
-- [x] Annotate session p38: `beats_buy_hold`, `edge_vs_bh` per script; в pairs/policy — долг
+- [x] Annotate p38 + **C15 policy** labels/features/promote 35p-*
 - [ ] Finding `псевдо_buy_hold` в trade_analysis
-- [ ] Retrain intervention policy с фичей `edge_vs_bh` / `beats_bh`
+- [x] Retrain C15: base BH features + BH-aware label (CV≈0.77/0.84)
 - [ ] Compare verdict: «хуже B&H» = mixed/worse даже при +PnL абсолютном
 
 **Статус:** принято как обязательное условие обучения; шаг **P3.8**.
@@ -810,6 +810,7 @@ DSL/GraphDTO: `period` integer, constraint `1 ≤ period ≤ max_period` (`max_p
 | 2026-08-21 | **§7D:** обучение/корпус учитывают **long_only** и **long_short** (не только лонг); шаг P2.5 |
 | 2026-08-21 | **§7D P2.5:** twins 21–26 long_short; tagged `side_mode`; C4 session — LS mean_pnl > LO на SBER 1d |
 | 2026-08-21 | **§7E:** обучение на **списке сделок** (good/bad) + улучшения через **блок** или **period**; шаг P2.6 |
+| 2026-08-21 | **C15:** BH-aware intervention policy (§7I); pairs 21614; better 33%; CV≈0.77/0.84; 35p-* beats-BH promote |
 | 2026-08-21 | **§7I / P3.8:** бить buy&hold — LO long trades > BH; LS net > BH; перезаходы; метрики beats_buy_hold / edge_vs_bh |
 | 2026-08-21 | **P3.7 start:** Smart-Lab div calendar cache (10 equities); annotate C14 1d+1h — short×ex-div ~3.9k; short paid tracked |
 | 2026-08-21 | **C14:** +futures CNYRUBF/GLDRUBF/IMOEXF × all TF; period×0.5; pairs 21614; CV≈0.72/0.79; 34p-*; §7H control |

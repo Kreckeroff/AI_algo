@@ -1,0 +1,810 @@
+[
+  {
+    "to": "35p-02-mean-reversion-bb-rsi__period15x.italgo",
+    "base": "02-mean-reversion-bb-rsi.italgo",
+    "kind": "change_period_15x",
+    "mean_delta": 90.23183614615346,
+    "mean_delta_edge_vs_bh": 84.53010537692275,
+    "symbols_win": [
+      "CNYRUBF",
+      "MTSS",
+      "NVTK",
+      "ROSN",
+      "SBER",
+      "TATN"
+    ],
+    "n_symbols_win": 6
+  },
+  {
+    "to": "35p-04-macd-stoch-long-short__period05x.italgo",
+    "base": "04-macd-stoch-long-short.italgo",
+    "kind": "change_period_05x",
+    "mean_delta": 1444.0751916923073,
+    "mean_delta_edge_vs_bh": 1444.0751916923073,
+    "symbols_win": [
+      "CNYRUBF",
+      "GAZP",
+      "GMKN",
+      "IMOEXF",
+      "LKOH",
+      "MTSS",
+      "NVTK",
+      "ROSN",
+      "SBER"
+    ],
+    "n_symbols_win": 9
+  },
+  {
+    "to": "35p-04-macd-stoch-long-short__period2x.italgo",
+    "base": "04-macd-stoch-long-short.italgo",
+    "kind": "change_period_2x",
+    "mean_delta": 659.844482599999,
+    "mean_delta_edge_vs_bh": 659.844482599999,
+    "symbols_win": [
+      "GAZP",
+      "GMKN",
+      "LKOH",
+      "PLZL",
+      "ROSN",
+      "SBER"
+    ],
+    "n_symbols_win": 6
+  },
+  {
+    "to": "35p-04-macd-stoch-long-short__rsi50.italgo",
+    "base": "04-macd-stoch-long-short.italgo",
+    "kind": "add_block_rsi50",
+    "mean_delta": 536.8912730153842,
+    "mean_delta_edge_vs_bh": 536.8912730153842,
+    "symbols_win": [
+      "GAZP",
+      "GMKN",
+      "IMOEXF",
+      "LKOH",
+      "MTSS",
+      "NVTK",
+      "ROSN",
+      "TATN"
+    ],
+    "n_symbols_win": 8
+  },
+  {
+    "to": "35p-04-macd-stoch-long-short__sma200.italgo",
+    "base": "04-macd-stoch-long-short.italgo",
+    "kind": "add_block_sma200",
+    "mean_delta": 812.0159072615384,
+    "mean_delta_edge_vs_bh": 812.0159072615384,
+    "symbols_win": [
+      "GAZP",
+      "GMKN",
+      "LKOH",
+      "MTSS",
+      "NVTK",
+      "PLZL",
+      "ROSN",
+      "TATN"
+    ],
+    "n_symbols_win": 8
+  },
+  {
+    "to": "35p-07-supertrend-di-adx-stack__period15x.italgo",
+    "base": "07-supertrend-di-adx-stack.italgo",
+    "kind": "change_period_15x",
+    "mean_delta": 120.35391273846143,
+    "mean_delta_edge_vs_bh": 120.3539127384615,
+    "symbols_win": [
+      "IMOEXF",
+      "LKOH",
+      "NVTK",
+      "PLZL",
+      "ROSN",
+      "SBER",
+      "TATN"
+    ],
+    "n_symbols_win": 7
+  },
+  {
+    "to": "35p-07-supertrend-di-adx-stack__sma200.italgo",
+    "base": "07-supertrend-di-adx-stack.italgo",
+    "kind": "add_block_sma200",
+    "mean_delta": 317.9522573230767,
+    "mean_delta_edge_vs_bh": 317.9522573230767,
+    "symbols_win": [
+      "GAZP",
+      "GMKN",
+      "IMOEXF",
+      "LKOH",
+      "MTSS",
+      "NVTK",
+      "ROSN",
+      "SBER"
+    ],
+    "n_symbols_win": 8
+  },
+  {
+    "to": "35p-08-cci-regime-trail__period067.italgo",
+    "base": "08-cci-regime-trail.italgo",
+    "kind": "change_period_067",
+    "mean_delta": 262.7478460611923,
+    "mean_delta_edge_vs_bh": 262.7478460611923,
+    "symbols_win": [
+      "GAZP",
+      "GMKN",
+      "IMOEXF",
+      "LKOH",
+      "MGNT",
+      "SBER",
+      "TATN"
+    ],
+    "n_symbols_win": 7
+  },
+  {
+    "to": "35p-10-ema-cross-9-21__ema50.italgo",
+    "base": "10-ema-cross-9-21.italgo",
+    "kind": "add_block_ema",
+    "mean_delta": 78.49734127692273,
+    "mean_delta_edge_vs_bh": 214.78380821538428,
+    "symbols_win": [
+      "IMOEXF",
+      "LKOH",
+      "MGNT",
+      "MTSS",
+      "NVTK",
+      "PLZL",
+      "ROSN",
+      "SBER",
+      "TATN"
+    ],
+    "n_symbols_win": 9
+  },
+  {
+    "to": "35p-10-ema-cross-9-21__sma200.italgo",
+    "base": "10-ema-cross-9-21.italgo",
+    "kind": "add_block_sma200",
+    "mean_delta": 44.44491199230708,
+    "mean_delta_edge_vs_bh": 180.9504858538456,
+    "symbols_win": [
+      "GMKN",
+      "LKOH",
+      "MGNT",
+      "NVTK",
+      "PLZL",
+      "ROSN"
+    ],
+    "n_symbols_win": 6
+  },
+  {
+    "to": "35p-11-tema-cross-10-30__ema50.italgo",
+    "base": "11-tema-cross-10-30.italgo",
+    "kind": "add_block_ema",
+    "mean_delta": 660.266643153846,
+    "mean_delta_edge_vs_bh": 795.126522384615,
+    "symbols_win": [
+      "CNYRUBF",
+      "IMOEXF",
+      "LKOH",
+      "MTSS",
+      "NVTK",
+      "PLZL",
+      "ROSN",
+      "SBER"
+    ],
+    "n_symbols_win": 8
+  },
+  {
+    "to": "35p-11-tema-cross-10-30__period05x.italgo",
+    "base": "11-tema-cross-10-30.italgo",
+    "kind": "change_period_05x",
+    "mean_delta": 1003.3449776846174,
+    "mean_delta_edge_vs_bh": 1138.2316879538482,
+    "symbols_win": [
+      "CNYRUBF",
+      "IMOEXF",
+      "LKOH",
+      "MGNT",
+      "PLZL",
+      "ROSN",
+      "SBER",
+      "TATN"
+    ],
+    "n_symbols_win": 8
+  },
+  {
+    "to": "35p-11-tema-cross-10-30__period067.italgo",
+    "base": "11-tema-cross-10-30.italgo",
+    "kind": "change_period_067",
+    "mean_delta": 550.4162822000012,
+    "mean_delta_edge_vs_bh": 685.3029924692318,
+    "symbols_win": [
+      "CNYRUBF",
+      "LKOH",
+      "MTSS",
+      "NVTK",
+      "PLZL",
+      "ROSN",
+      "SBER",
+      "TATN"
+    ],
+    "n_symbols_win": 8
+  },
+  {
+    "to": "35p-11-tema-cross-10-30__rsi50.italgo",
+    "base": "11-tema-cross-10-30.italgo",
+    "kind": "add_block_rsi50",
+    "mean_delta": 808.7134642307689,
+    "mean_delta_edge_vs_bh": 808.7134642307689,
+    "symbols_win": [
+      "CNYRUBF",
+      "IMOEXF",
+      "MGNT",
+      "MTSS",
+      "NVTK",
+      "ROSN",
+      "SBER"
+    ],
+    "n_symbols_win": 7
+  },
+  {
+    "to": "35p-11-tema-cross-10-30__sma200.italgo",
+    "base": "11-tema-cross-10-30.italgo",
+    "kind": "add_block_sma200",
+    "mean_delta": 488.03937715384575,
+    "mean_delta_edge_vs_bh": 622.8992563846149,
+    "symbols_win": [
+      "CNYRUBF",
+      "GMKN",
+      "IMOEXF",
+      "LKOH",
+      "MGNT",
+      "NVTK",
+      "PLZL",
+      "ROSN",
+      "SBER"
+    ],
+    "n_symbols_win": 9
+  },
+  {
+    "to": "35p-12-dema-cross-12-26__ema50.italgo",
+    "base": "12-dema-cross-12-26.italgo",
+    "kind": "add_block_ema",
+    "mean_delta": 552.4638147230761,
+    "mean_delta_edge_vs_bh": 717.5298477153839,
+    "symbols_win": [
+      "GMKN",
+      "IMOEXF",
+      "LKOH",
+      "MGNT",
+      "NVTK",
+      "ROSN"
+    ],
+    "n_symbols_win": 6
+  },
+  {
+    "to": "35p-12-dema-cross-12-26__period05x.italgo",
+    "base": "12-dema-cross-12-26.italgo",
+    "kind": "change_period_05x",
+    "mean_delta": 383.87303729230916,
+    "mean_delta_edge_vs_bh": 413.8967125923093,
+    "symbols_win": [
+      "GAZP",
+      "LKOH",
+      "MTSS",
+      "NVTK",
+      "ROSN",
+      "SBER",
+      "TATN"
+    ],
+    "n_symbols_win": 7
+  },
+  {
+    "to": "35p-12-dema-cross-12-26__rsi50.italgo",
+    "base": "12-dema-cross-12-26.italgo",
+    "kind": "add_block_rsi50",
+    "mean_delta": 576.0371668615379,
+    "mean_delta_edge_vs_bh": 747.9179656230764,
+    "symbols_win": [
+      "GMKN",
+      "IMOEXF",
+      "LKOH",
+      "MGNT",
+      "NVTK",
+      "PLZL",
+      "ROSN"
+    ],
+    "n_symbols_win": 7
+  },
+  {
+    "to": "35p-15-momentum-cross-0__ema50.italgo",
+    "base": "15-momentum-cross-0.italgo",
+    "kind": "add_block_ema",
+    "mean_delta": 255.3487188153835,
+    "mean_delta_edge_vs_bh": 397.72473419999886,
+    "symbols_win": [
+      "CNYRUBF",
+      "IMOEXF",
+      "MGNT",
+      "NVTK",
+      "PLZL",
+      "ROSN",
+      "SBER",
+      "TATN"
+    ],
+    "n_symbols_win": 8
+  },
+  {
+    "to": "35p-15-momentum-cross-0__period05x.italgo",
+    "base": "15-momentum-cross-0.italgo",
+    "kind": "change_period_05x",
+    "mean_delta": 464.51066397692426,
+    "mean_delta_edge_vs_bh": 483.13575706923194,
+    "symbols_win": [
+      "CNYRUBF",
+      "IMOEXF",
+      "LKOH",
+      "MGNT",
+      "MTSS",
+      "ROSN",
+      "SBER",
+      "TATN"
+    ],
+    "n_symbols_win": 8
+  },
+  {
+    "to": "35p-15-momentum-cross-0__period15x.italgo",
+    "base": "15-momentum-cross-0.italgo",
+    "kind": "change_period_15x",
+    "mean_delta": 365.3846567615379,
+    "mean_delta_edge_vs_bh": 365.6169065846148,
+    "symbols_win": [
+      "GAZP",
+      "LKOH",
+      "MGNT",
+      "MTSS",
+      "SBER",
+      "TATN"
+    ],
+    "n_symbols_win": 6
+  },
+  {
+    "to": "35p-15-momentum-cross-0__rsi50.italgo",
+    "base": "15-momentum-cross-0.italgo",
+    "kind": "add_block_rsi50",
+    "mean_delta": 214.26475496153677,
+    "mean_delta_edge_vs_bh": 214.26475496153685,
+    "symbols_win": [
+      "CNYRUBF",
+      "LKOH",
+      "MGNT",
+      "NVTK",
+      "ROSN",
+      "SBER"
+    ],
+    "n_symbols_win": 6
+  },
+  {
+    "to": "35p-15-momentum-cross-0__sma200.italgo",
+    "base": "15-momentum-cross-0.italgo",
+    "kind": "add_block_sma200",
+    "mean_delta": 134.20986413076778,
+    "mean_delta_edge_vs_bh": 276.5858795153831,
+    "symbols_win": [
+      "CNYRUBF",
+      "GMKN",
+      "LKOH",
+      "MGNT",
+      "NVTK",
+      "PLZL",
+      "ROSN",
+      "SBER"
+    ],
+    "n_symbols_win": 8
+  },
+  {
+    "to": "35p-17-supertrend-rsi-tight__ema50.italgo",
+    "base": "17-supertrend-rsi-tight.italgo",
+    "kind": "add_block_ema",
+    "mean_delta": 68.78702283846134,
+    "mean_delta_edge_vs_bh": 67.37683672307676,
+    "symbols_win": [
+      "GMKN",
+      "IMOEXF",
+      "MTSS",
+      "PLZL",
+      "ROSN",
+      "SBER",
+      "TATN"
+    ],
+    "n_symbols_win": 7
+  },
+  {
+    "to": "35p-17-supertrend-rsi-tight__sma200.italgo",
+    "base": "17-supertrend-rsi-tight.italgo",
+    "kind": "add_block_sma200",
+    "mean_delta": 222.92591996923025,
+    "mean_delta_edge_vs_bh": 299.335904238461,
+    "symbols_win": [
+      "GMKN",
+      "LKOH",
+      "MTSS",
+      "PLZL",
+      "ROSN",
+      "SBER"
+    ],
+    "n_symbols_win": 6
+  },
+  {
+    "to": "35p-18-mom-pct-ema50-filter__period05x.italgo",
+    "base": "18-mom-pct-ema50-filter.italgo",
+    "kind": "change_period_05x",
+    "mean_delta": 278.390254569232,
+    "mean_delta_edge_vs_bh": 154.6393322769244,
+    "symbols_win": [
+      "CNYRUBF",
+      "IMOEXF",
+      "LKOH",
+      "MGNT",
+      "MTSS",
+      "SBER",
+      "TATN"
+    ],
+    "n_symbols_win": 7
+  },
+  {
+    "to": "35p-18-mom-pct-ema50-filter__sma200.italgo",
+    "base": "18-mom-pct-ema50-filter.italgo",
+    "kind": "add_block_sma200",
+    "mean_delta": 55.30787481538395,
+    "mean_delta_edge_vs_bh": 55.30787481538402,
+    "symbols_win": [
+      "GAZP",
+      "GMKN",
+      "LKOH",
+      "MGNT",
+      "MTSS",
+      "ROSN",
+      "TATN"
+    ],
+    "n_symbols_win": 7
+  },
+  {
+    "to": "35p-21-sma-cross-20-50-ls__period067.italgo",
+    "base": "21-sma-cross-20-50-ls.italgo",
+    "kind": "change_period_067",
+    "mean_delta": 243.55124230769422,
+    "mean_delta_edge_vs_bh": 243.55124230769422,
+    "symbols_win": [
+      "CNYRUBF",
+      "GMKN",
+      "IMOEXF",
+      "MGNT",
+      "MTSS",
+      "TATN"
+    ],
+    "n_symbols_win": 6
+  },
+  {
+    "to": "35p-22-ema-cross-9-21-ls__ema50.italgo",
+    "base": "22-ema-cross-9-21-ls.italgo",
+    "kind": "add_block_ema",
+    "mean_delta": 161.45227339999926,
+    "mean_delta_edge_vs_bh": 161.45227339999926,
+    "symbols_win": [
+      "GAZP",
+      "GMKN",
+      "IMOEXF",
+      "LKOH",
+      "MGNT",
+      "MTSS",
+      "NVTK",
+      "PLZL",
+      "ROSN",
+      "SBER",
+      "TATN"
+    ],
+    "n_symbols_win": 11
+  },
+  {
+    "to": "35p-22-ema-cross-9-21-ls__sma200.italgo",
+    "base": "22-ema-cross-9-21-ls.italgo",
+    "kind": "add_block_sma200",
+    "mean_delta": 93.3474148307678,
+    "mean_delta_edge_vs_bh": 93.34741483076795,
+    "symbols_win": [
+      "GAZP",
+      "GMKN",
+      "LKOH",
+      "MGNT",
+      "PLZL",
+      "ROSN"
+    ],
+    "n_symbols_win": 6
+  },
+  {
+    "to": "35p-23-tema-cross-10-30-ls__ema50.italgo",
+    "base": "23-tema-cross-10-30-ls.italgo",
+    "kind": "add_block_ema",
+    "mean_delta": 1321.7787237692303,
+    "mean_delta_edge_vs_bh": 1321.7787237692303,
+    "symbols_win": [
+      "CNYRUBF",
+      "IMOEXF",
+      "LKOH",
+      "MGNT",
+      "MTSS",
+      "NVTK",
+      "PLZL",
+      "ROSN",
+      "SBER"
+    ],
+    "n_symbols_win": 9
+  },
+  {
+    "to": "35p-23-tema-cross-10-30-ls__period05x.italgo",
+    "base": "23-tema-cross-10-30-ls.italgo",
+    "kind": "change_period_05x",
+    "mean_delta": 1872.037202523081,
+    "mean_delta_edge_vs_bh": 1872.037202523081,
+    "symbols_win": [
+      "CNYRUBF",
+      "IMOEXF",
+      "LKOH",
+      "MGNT",
+      "NVTK",
+      "ROSN",
+      "SBER",
+      "TATN"
+    ],
+    "n_symbols_win": 8
+  },
+  {
+    "to": "35p-23-tema-cross-10-30-ls__period067.italgo",
+    "base": "23-tema-cross-10-30-ls.italgo",
+    "kind": "change_period_067",
+    "mean_delta": 1042.2851481692333,
+    "mean_delta_edge_vs_bh": 1042.2851481692333,
+    "symbols_win": [
+      "CNYRUBF",
+      "IMOEXF",
+      "LKOH",
+      "MGNT",
+      "MTSS",
+      "NVTK",
+      "PLZL",
+      "ROSN",
+      "SBER",
+      "TATN"
+    ],
+    "n_symbols_win": 10
+  },
+  {
+    "to": "35p-23-tema-cross-10-30-ls__rsi50.italgo",
+    "base": "23-tema-cross-10-30-ls.italgo",
+    "kind": "add_block_rsi50",
+    "mean_delta": 1627.7146080769223,
+    "mean_delta_edge_vs_bh": 1627.7146080769223,
+    "symbols_win": [
+      "CNYRUBF",
+      "IMOEXF",
+      "LKOH",
+      "MGNT",
+      "MTSS",
+      "NVTK",
+      "ROSN",
+      "SBER"
+    ],
+    "n_symbols_win": 8
+  },
+  {
+    "to": "35p-23-tema-cross-10-30-ls__sma200.italgo",
+    "base": "23-tema-cross-10-30-ls.italgo",
+    "kind": "add_block_sma200",
+    "mean_delta": 977.3241917692301,
+    "mean_delta_edge_vs_bh": 977.3241917692303,
+    "symbols_win": [
+      "GMKN",
+      "IMOEXF",
+      "LKOH",
+      "MGNT",
+      "NVTK",
+      "PLZL",
+      "ROSN",
+      "SBER"
+    ],
+    "n_symbols_win": 8
+  },
+  {
+    "to": "35p-24-rsi-cross-50-ls__period2x.italgo",
+    "base": "24-rsi-cross-50-ls.italgo",
+    "kind": "change_period_2x",
+    "mean_delta": 603.7865394769215,
+    "mean_delta_edge_vs_bh": 603.7865394769216,
+    "symbols_win": [
+      "CNYRUBF",
+      "GLDRUBF",
+      "IMOEXF",
+      "LKOH",
+      "NVTK",
+      "SBER"
+    ],
+    "n_symbols_win": 6
+  },
+  {
+    "to": "35p-24-rsi-cross-50-ls__sma200.italgo",
+    "base": "24-rsi-cross-50-ls.italgo",
+    "kind": "add_block_sma200",
+    "mean_delta": 32.659620861536496,
+    "mean_delta_edge_vs_bh": 32.659620861536425,
+    "symbols_win": [
+      "CNYRUBF",
+      "GAZP",
+      "GMKN",
+      "LKOH",
+      "MGNT",
+      "NVTK",
+      "PLZL",
+      "ROSN",
+      "SBER"
+    ],
+    "n_symbols_win": 9
+  },
+  {
+    "to": "35p-25-momentum-cross-0-ls__ema50.italgo",
+    "base": "25-momentum-cross-0-ls.italgo",
+    "kind": "add_block_ema",
+    "mean_delta": 623.5590825538438,
+    "mean_delta_edge_vs_bh": 623.5590825538437,
+    "symbols_win": [
+      "CNYRUBF",
+      "GMKN",
+      "IMOEXF",
+      "LKOH",
+      "NVTK",
+      "PLZL",
+      "ROSN",
+      "SBER",
+      "TATN"
+    ],
+    "n_symbols_win": 9
+  },
+  {
+    "to": "35p-25-momentum-cross-0-ls__period05x.italgo",
+    "base": "25-momentum-cross-0-ls.italgo",
+    "kind": "change_period_05x",
+    "mean_delta": 896.502067415387,
+    "mean_delta_edge_vs_bh": 896.502067415387,
+    "symbols_win": [
+      "CNYRUBF",
+      "GMKN",
+      "IMOEXF",
+      "LKOH",
+      "MGNT",
+      "MTSS",
+      "NVTK",
+      "PLZL",
+      "ROSN",
+      "SBER",
+      "TATN"
+    ],
+    "n_symbols_win": 11
+  },
+  {
+    "to": "35p-25-momentum-cross-0-ls__period15x.italgo",
+    "base": "25-momentum-cross-0-ls.italgo",
+    "kind": "change_period_15x",
+    "mean_delta": 734.7568858307678,
+    "mean_delta_edge_vs_bh": 734.7568858307677,
+    "symbols_win": [
+      "GAZP",
+      "GMKN",
+      "IMOEXF",
+      "LKOH",
+      "MGNT",
+      "MTSS",
+      "SBER",
+      "TATN"
+    ],
+    "n_symbols_win": 8
+  },
+  {
+    "to": "35p-25-momentum-cross-0-ls__period2x.italgo",
+    "base": "25-momentum-cross-0-ls.italgo",
+    "kind": "change_period_2x",
+    "mean_delta": 772.0862822461525,
+    "mean_delta_edge_vs_bh": 772.0862822461523,
+    "symbols_win": [
+      "CNYRUBF",
+      "IMOEXF",
+      "LKOH",
+      "MGNT",
+      "NVTK",
+      "TATN"
+    ],
+    "n_symbols_win": 6
+  },
+  {
+    "to": "35p-25-momentum-cross-0-ls__rsi50.italgo",
+    "base": "25-momentum-cross-0-ls.italgo",
+    "kind": "add_block_rsi50",
+    "mean_delta": 457.20420869230435,
+    "mean_delta_edge_vs_bh": 457.20420869230435,
+    "symbols_win": [
+      "CNYRUBF",
+      "GMKN",
+      "IMOEXF",
+      "LKOH",
+      "NVTK",
+      "ROSN",
+      "SBER"
+    ],
+    "n_symbols_win": 7
+  },
+  {
+    "to": "35p-25-momentum-cross-0-ls__sma200.italgo",
+    "base": "25-momentum-cross-0-ls.italgo",
+    "kind": "add_block_sma200",
+    "mean_delta": 381.2813731846124,
+    "mean_delta_edge_vs_bh": 381.2813731846124,
+    "symbols_win": [
+      "GMKN",
+      "IMOEXF",
+      "LKOH",
+      "MGNT",
+      "NVTK",
+      "PLZL",
+      "ROSN",
+      "SBER"
+    ],
+    "n_symbols_win": 8
+  },
+  {
+    "to": "35p-26-supertrend-rsi-ls__period05x.italgo",
+    "base": "26-supertrend-rsi-ls.italgo",
+    "kind": "change_period_05x",
+    "mean_delta": 352.99895676923063,
+    "mean_delta_edge_vs_bh": 352.99895676923063,
+    "symbols_win": [
+      "IMOEXF",
+      "LKOH",
+      "MTSS",
+      "NVTK",
+      "ROSN",
+      "SBER",
+      "TATN"
+    ],
+    "n_symbols_win": 7
+  },
+  {
+    "to": "35p-26-supertrend-rsi-ls__period067.italgo",
+    "base": "26-supertrend-rsi-ls.italgo",
+    "kind": "change_period_067",
+    "mean_delta": 20.851087876922975,
+    "mean_delta_edge_vs_bh": 20.851087876922975,
+    "symbols_win": [
+      "CNYRUBF",
+      "GAZP",
+      "LKOH",
+      "MTSS",
+      "NVTK",
+      "PLZL",
+      "ROSN",
+      "SBER"
+    ],
+    "n_symbols_win": 8
+  },
+  {
+    "to": "35p-26-supertrend-rsi-ls__sma200.italgo",
+    "base": "26-supertrend-rsi-ls.italgo",
+    "kind": "add_block_sma200",
+    "mean_delta": 93.56641101538403,
+    "mean_delta_edge_vs_bh": 93.56641101538403,
+    "symbols_win": [
+      "GAZP",
+      "LKOH",
+      "MGNT",
+      "PLZL",
+      "SBER",
+      "TATN"
+    ],
+    "n_symbols_win": 6
+  }
+]

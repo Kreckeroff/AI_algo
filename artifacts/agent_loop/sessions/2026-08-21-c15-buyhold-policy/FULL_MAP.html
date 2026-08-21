@@ -1,0 +1,30 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"/><title>C15 BH policy</title>
+<style>
+body{margin:0;font-family:IBM Plex Sans,system-ui,sans-serif;background:#0f1419;color:#e8eef4;padding:28px}
+.sub{color:#8b9aab} .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:12px 0}
+.card{background:#1a222c;border:1px solid #2a3542;border-radius:10px;padding:12px}
+.k{color:#8b9aab;font-size:.68rem;text-transform:uppercase} .v{font-size:1.2rem;font-weight:600;margin-top:4px}
+table{border-collapse:collapse;width:100%;font-size:.78rem;background:#1a222c;margin:10px 0}
+th,td{border:1px solid #2a3542;padding:6px;text-align:right} th,td:first-child{text-align:left;color:#8b9aab}
+</style></head><body>
+<h1>C15 — buy&amp;hold-aware intervention policy</h1>
+<p class="sub">Label: ΔPnL&gt;0 · DD-ok · Δedge_vs_bh&gt;0 · variant beats B&amp;H · not pseudo · features = base-only BH (no leak)</p>
+<div class="grid">
+<div class="card"><div class="k">Pairs</div><div class="v">21614</div></div>
+<div class="card"><div class="k">Better (new)</div><div class="v">7219 (33%)</div></div>
+<div class="card"><div class="k">CV acc / AUC</div><div class="v">0.77 / 0.84</div></div>
+<div class="card"><div class="k">35p promoted</div><div class="v">46</div></div>
+<div class="card"><div class="k">Legacy better</div><div class="v">50%</div></div>
+<div class="card"><div class="k">Variant beats BH</div><div class="v">60%</div></div>
+<div class="card"><div class="k">Base beats BH</div><div class="v">57%</div></div>
+<div class="card"><div class="k">vs C14 Δacc</div><div class="v">+0.051</div></div>
+</div>
+<h2>C12→C15</h2>
+<table><thead><tr><th>wave</th><th>pairs</th><th>better</th><th>acc</th><th>AUC</th><th>promoted</th></tr></thead><tbody><tr><td>C12</td><td>3740</td><td>1878</td><td>0.699</td><td>0.780</td><td>53</td></tr><tr><td>C13</td><td>14399</td><td>7857</td><td>0.722</td><td>0.797</td><td>53</td></tr><tr><td>C14</td><td>21614</td><td>10840</td><td>0.719</td><td>0.792</td><td>53</td></tr><tr><td>C15</td><td>21614</td><td>7219</td><td>0.770</td><td>0.840</td><td>46</td></tr></tbody></table>
+<h2>Kind winrate under §7I label</h2>
+<table><thead><tr><th>kind</th><th>n</th><th>better%</th><th>mean Δedge</th></tr></thead><tbody><tr><td>add_block_sma200</td><td>2727</td><td>45.7%</td><td>78.8</td></tr><tr><td>add_block_ema</td><td>2727</td><td>37.5%</td><td>119.2</td></tr><tr><td>change_period_2x</td><td>2727</td><td>35.1%</td><td>44.9</td></tr><tr><td>change_period_15x</td><td>2727</td><td>34.7%</td><td>46.1</td></tr><tr><td>add_block_adx</td><td>2525</td><td>34.4%</td><td>-61.5</td></tr><tr><td>add_block_rsi50</td><td>2727</td><td>28.3%</td><td>93.9</td></tr><tr><td>change_period_067</td><td>2727</td><td>26.4%</td><td>-54.3</td></tr><tr><td>change_period_05x</td><td>2727</td><td>25.2%</td><td>-76.9</td></tr></tbody></table>
+<h2>1d symbol: better% · variant beats BH%</h2>
+<table><thead><tr><th>symbol</th><th>n</th><th>better%</th><th>beats BH%</th></tr></thead><tbody><tr><td>LKOH</td><td>214</td><td>60.3%</td><td>93.5%</td></tr><tr><td>SBER</td><td>214</td><td>55.6%</td><td>88.3%</td></tr><tr><td>IMOEXF</td><td>214</td><td>53.3%</td><td>97.7%</td></tr><tr><td>ROSN</td><td>214</td><td>53.3%</td><td>93.5%</td></tr><tr><td>MGNT</td><td>214</td><td>52.3%</td><td>97.2%</td></tr><tr><td>GAZP</td><td>214</td><td>51.9%</td><td>92.5%</td></tr><tr><td>NVTK</td><td>214</td><td>51.9%</td><td>96.7%</td></tr><tr><td>GMKN</td><td>214</td><td>49.5%</td><td>99.5%</td></tr><tr><td>MTSS</td><td>214</td><td>49.1%</td><td>97.7%</td></tr><tr><td>PLZL</td><td>214</td><td>38.3%</td><td>90.2%</td></tr><tr><td>CNYRUBF</td><td>214</td><td>33.2%</td><td>65.9%</td></tr><tr><td>TATN</td><td>214</td><td>32.7%</td><td>64.5%</td></tr><tr><td>GLDRUBF</td><td>214</td><td>0.5%</td><td>1.4%</td></tr></tbody></table>
+<h2>Feature importance (no variant leak)</h2>
+<table><thead><tr><th>feature</th><th>importance</th></tr></thead><tbody><tr><td>base_pnl</td><td>668</td></tr><tr><td>base_edge_vs_bh</td><td>547</td></tr><tr><td>base_dd</td><td>483</td></tr><tr><td>buy_hold_pnl</td><td>480</td></tr><tr><td>base_wr</td><td>309</td></tr><tr><td>base_trades</td><td>257</td></tr><tr><td>bad</td><td>256</td></tr><tr><td>bad_share</td><td>241</td></tr><tr><td>kind_add_block_adx</td><td>214</td></tr><tr><td>kind_change_period_05x</td><td>207</td></tr><tr><td>kind_add_block_sma200</td><td>181</td></tr><tr><td>bad_noise</td><td>167</td></tr><tr><td>good</td><td>146</td></tr><tr><td>kind_change_period_2x</td><td>144</td></tr><tr><td>kind_add_block_ema</td><td>140</td></tr></tbody></table>
+</body></html>

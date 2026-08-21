@@ -51,8 +51,9 @@
 | **C13** | **ALL TF 1m…1w × 10 equities** | **14399 ~0.72/0.80** | **33p-*** |
 | **C14** | **+3 futures** × all TF; period×0.5; `is_future` | **21614 ~0.72/0.79** | **34p-*** |
 | **P3.7** | Div calendar × C14 equities chart window; short pays | annotate session | — |
+| **C15** | BH-aware labels/policy (§7I); base BH features | **21614 · 0.77/0.84** | **35p-*** |
 
-Актуальная модель: `artifacts/.../2026-08-21-c14-futures-expand/models/intervention_policy_lgbm.joblib`
+Актуальная модель: `artifacts/.../2026-08-21-c15-buyhold-policy/models/intervention_policy_lgbm.joblib`
 
 ### Покрытие данных (после C13)
 
@@ -71,7 +72,7 @@ Label better: `ΔPnL > 0` **и** `variant_dd ≤ 1.5 × base_dd`.
 
 1. **C15:** ATR SL/TP / remove-filter kinds; walk-forward по годам.
 2. **P3.7 next:** retrain policy с `near_ex_div` / `pnl_div_adjusted`; Desktop BT cash-adjust; индексные компоненты.
-3. **P3.8:** вшить `beats_buy_hold` / `edge_vs_bh` в labels + promote + ANALYTICS каждой волны.
+3. **Next:** ATR SL/TP kinds; walk-forward; div features in same label; Desktop BT B&H+div.
 4. History-window sweep 1d…5y (§7A) — ещё долг.
 5. **Не** вшивать policy в Desktop (§7G).
 
