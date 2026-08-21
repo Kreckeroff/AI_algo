@@ -810,6 +810,7 @@ DSL/GraphDTO: `period` integer, constraint `1 ≤ period ≤ max_period` (`max_p
 | 2026-08-21 | **§7D:** обучение/корпус учитывают **long_only** и **long_short** (не только лонг); шаг P2.5 |
 | 2026-08-21 | **§7D P2.5:** twins 21–26 long_short; tagged `side_mode`; C4 session — LS mean_pnl > LO на SBER 1d |
 | 2026-08-21 | **§7E:** обучение на **списке сделок** (good/bad) + улучшения через **блок** или **period**; шаг P2.6 |
+| 2026-08-21 | **B regime dual-structure:** spec `docs/superpowers/specs/2026-08-21-regime-dual-structure-design.md` (B0 annotate → B1 chop_gate/mr_overlay); history×TF (A) на другом ПК |
 | 2026-08-21 | **C17:** walk-forward + §7H div labels/features; pairs 25452; CV≈0.80/0.85; OOS≈0.72–0.76; 37p-* |
 | 2026-08-21 | **C16:** +ATR SL/TP + remove-filter kinds; pairs 25452; CV≈0.77/0.84; 36p-*; atr better≈36% |
 | 2026-08-21 | **C15:** BH-aware intervention policy (§7I); pairs 21614; better 33%; CV≈0.77/0.84; 35p-* beats-BH promote |
