@@ -1,0 +1,443 @@
+{
+  "version": 1,
+  "meta": {
+    "name": "[cross-sym] MACD+Stoch Long/Short +EMA50",
+    "updatedAt": "2026-08-21T10:13:48Z",
+    "createdAt": "2026-08-20T23:48:07Z",
+    "tags": [
+      "macd",
+      "stoch",
+      "long",
+      "short",
+      "ai-train",
+      "training",
+      "side:long_short",
+      "long_short",
+      "c8",
+      "intervention:add_block_ema",
+      "promoted",
+      "c10",
+      "cross-symbol"
+    ],
+    "side_mode": "long_short",
+    "intervention": {
+      "kind": "add_block_ema",
+      "base": "04-macd-stoch-long-short.italgo",
+      "block": "indicator_ema",
+      "period": 50
+    },
+    "cross_symbol": {
+      "symbols_win": [
+        "GMKN",
+        "LKOH",
+        "ROSN"
+      ],
+      "mean_delta": 923.5407926666667,
+      "n_symbols_win": 3
+    }
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "instrument",
+        "type": "instrument",
+        "position": {
+          "x": 40,
+          "y": 260
+        },
+        "data": {
+          "symbol": "SBER",
+          "instrument_type": "stock",
+          "label": "Инструмент"
+        }
+      },
+      {
+        "id": "close",
+        "type": "source_close",
+        "position": {
+          "x": 260,
+          "y": 80
+        },
+        "data": {
+          "label": "Close"
+        }
+      },
+      {
+        "id": "macd",
+        "type": "indicator_macd",
+        "position": {
+          "x": 480,
+          "y": 40
+        },
+        "data": {
+          "fast": 12,
+          "slow": 26,
+          "signal": 9,
+          "label": "MACD"
+        }
+      },
+      {
+        "id": "stoch",
+        "type": "indicator_stoch_k",
+        "position": {
+          "x": 480,
+          "y": 200
+        },
+        "data": {
+          "period": 14,
+          "label": "Stoch %K"
+        }
+      },
+      {
+        "id": "zero",
+        "type": "constant",
+        "position": {
+          "x": 480,
+          "y": 360
+        },
+        "data": {
+          "value": 0,
+          "label": "0"
+        }
+      },
+      {
+        "id": "st_lo",
+        "type": "constant",
+        "position": {
+          "x": 480,
+          "y": 480
+        },
+        "data": {
+          "value": 20,
+          "label": "20"
+        }
+      },
+      {
+        "id": "st_hi",
+        "type": "constant",
+        "position": {
+          "x": 480,
+          "y": 600
+        },
+        "data": {
+          "value": 80,
+          "label": "80"
+        }
+      },
+      {
+        "id": "macd_up",
+        "type": "logic_gt",
+        "position": {
+          "x": 720,
+          "y": 40
+        },
+        "data": {
+          "label": "MACD>0"
+        }
+      },
+      {
+        "id": "macd_dn",
+        "type": "logic_lt",
+        "position": {
+          "x": 720,
+          "y": 160
+        },
+        "data": {
+          "label": "MACD<0"
+        }
+      },
+      {
+        "id": "st_os",
+        "type": "logic_lt",
+        "position": {
+          "x": 720,
+          "y": 320
+        },
+        "data": {
+          "label": "Stoch OS"
+        }
+      },
+      {
+        "id": "st_ob",
+        "type": "logic_gt",
+        "position": {
+          "x": 720,
+          "y": 460
+        },
+        "data": {
+          "label": "Stoch OB"
+        }
+      },
+      {
+        "id": "buy",
+        "type": "logic_and",
+        "position": {
+          "x": 960,
+          "y": 80
+        },
+        "data": {
+          "label": "Long"
+        }
+      },
+      {
+        "id": "sell",
+        "type": "logic_and",
+        "position": {
+          "x": 960,
+          "y": 280
+        },
+        "data": {
+          "label": "Short"
+        }
+      },
+      {
+        "id": "open_l",
+        "type": "position_open_market",
+        "position": {
+          "x": 1180,
+          "y": 60
+        },
+        "data": {
+          "direction": "buy",
+          "qty": 1,
+          "label": "Long"
+        }
+      },
+      {
+        "id": "open_s",
+        "type": "position_open_market",
+        "position": {
+          "x": 1180,
+          "y": 260
+        },
+        "data": {
+          "direction": "sell",
+          "qty": 1,
+          "label": "Short"
+        }
+      },
+      {
+        "id": "chart",
+        "type": "chart",
+        "position": {
+          "x": 960,
+          "y": 480
+        },
+        "data": {
+          "label": "Цена"
+        }
+      },
+      {
+        "id": "ema_filter",
+        "type": "indicator_ema",
+        "position": {
+          "x": 480,
+          "y": 20
+        },
+        "data": {
+          "period": 50,
+          "label": "EMA50"
+        }
+      },
+      {
+        "id": "above_ema",
+        "type": "logic_gt",
+        "position": {
+          "x": 700,
+          "y": 20
+        },
+        "data": {
+          "label": "Close>EMA"
+        }
+      },
+      {
+        "id": "ema_filter_and",
+        "type": "logic_and",
+        "position": {
+          "x": 860,
+          "y": 80
+        },
+        "data": {
+          "label": "Buy+Filter"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e1",
+        "source": "instrument",
+        "target": "close",
+        "sourceHandle": "instrument",
+        "targetHandle": "instrument"
+      },
+      {
+        "id": "e2",
+        "source": "close",
+        "target": "macd",
+        "sourceHandle": "value",
+        "targetHandle": "source"
+      },
+      {
+        "id": "e3",
+        "source": "instrument",
+        "target": "stoch",
+        "sourceHandle": "instrument",
+        "targetHandle": "instrument"
+      },
+      {
+        "id": "e4",
+        "source": "macd",
+        "target": "macd_up",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "e5",
+        "source": "zero",
+        "target": "macd_up",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "e6",
+        "source": "macd",
+        "target": "macd_dn",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "e7",
+        "source": "zero",
+        "target": "macd_dn",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "e8",
+        "source": "stoch",
+        "target": "st_os",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "e9",
+        "source": "st_lo",
+        "target": "st_os",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "e10",
+        "source": "stoch",
+        "target": "st_ob",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "e11",
+        "source": "st_hi",
+        "target": "st_ob",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "e12",
+        "source": "macd_up",
+        "target": "buy",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "e13",
+        "source": "st_os",
+        "target": "buy",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "e14",
+        "source": "macd_dn",
+        "target": "sell",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "e15",
+        "source": "st_ob",
+        "target": "sell",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "e16",
+        "source": "instrument",
+        "target": "open_l",
+        "sourceHandle": "instrument",
+        "targetHandle": "instrument"
+      },
+      {
+        "id": "e18",
+        "source": "instrument",
+        "target": "open_s",
+        "sourceHandle": "instrument",
+        "targetHandle": "instrument"
+      },
+      {
+        "id": "e19",
+        "source": "sell",
+        "target": "open_s",
+        "sourceHandle": "result",
+        "targetHandle": "condition"
+      },
+      {
+        "id": "e20",
+        "source": "close",
+        "target": "chart",
+        "sourceHandle": "value",
+        "targetHandle": "series"
+      },
+      {
+        "id": "c8_ce",
+        "source": "close",
+        "target": "ema_filter",
+        "sourceHandle": "value",
+        "targetHandle": "source"
+      },
+      {
+        "id": "c8_ca",
+        "source": "close",
+        "target": "above_ema",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "c8_ea",
+        "source": "ema_filter",
+        "target": "above_ema",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "c8_e17_and",
+        "source": "buy",
+        "target": "ema_filter_and",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "c8_ema_filter_to_and",
+        "source": "above_ema",
+        "target": "ema_filter_and",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "c8_ema_filter_open",
+        "source": "ema_filter_and",
+        "target": "open_l",
+        "sourceHandle": "result",
+        "targetHandle": "condition"
+      }
+    ]
+  }
+}
