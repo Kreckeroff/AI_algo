@@ -1,0 +1,165 @@
+{
+  "feature_names": [
+    "base_pnl",
+    "base_wr",
+    "base_trades",
+    "base_dd",
+    "good",
+    "bad",
+    "bad_noise",
+    "good_weak",
+    "good_share",
+    "bad_share",
+    "f_\u043f\u0438\u043b\u0430_\u043a\u043e\u0440\u043e\u0442\u043a\u0438\u0435_\u0441\u0434\u0435\u043b\u043a\u0438",
+    "f_\u0441\u0432\u0435\u0440\u0445\u043a\u043e\u0440\u043e\u0442\u043a\u0438\u0435_\u0443\u0434\u0435\u0440\u0436\u0430\u043d\u0438\u044f",
+    "f_\u0441\u0435\u0440\u0438\u044f_\u0443\u0431\u044b\u0442\u043a\u043e\u0432",
+    "f_\u043f\u0435\u0440\u0435\u043a\u043e\u0441_\u0441\u0442\u043e\u0440\u043e\u043d",
+    "f_\u043c\u0430\u043b\u043e_\u0437\u0430\u043a\u0440\u044b\u0442\u044b\u0445_\u0441\u0434\u0435\u043b\u043e\u043a",
+    "regime_trend",
+    "regime_mean_reversion",
+    "regime_breakout",
+    "regime_unknown",
+    "kind_change_period_15x",
+    "kind_change_period_067",
+    "kind_add_block_ema",
+    "kind_add_block_adx",
+    "kind_add_block_sma200",
+    "side_long_only",
+    "side_long_short",
+    "side_unknown",
+    "sym_SBER",
+    "sym_GAZP",
+    "sym_LKOH",
+    "sym_ROSN",
+    "sym_GMKN",
+    "sym_NVTK",
+    "sym_TATN",
+    "sym_PLZL",
+    "sym_MGNT"
+  ],
+  "symbols": [
+    "SBER",
+    "GAZP",
+    "LKOH",
+    "ROSN",
+    "GMKN",
+    "NVTK",
+    "TATN",
+    "PLZL",
+    "MGNT"
+  ],
+  "metrics": {
+    "loo_accuracy": 0.7243107769423559,
+    "loo_auc": 0.7910085363785403,
+    "n": 1197,
+    "loso": {
+      "SBER": {
+        "accuracy": 0.6240601503759399,
+        "auc": 0.7,
+        "n": 133
+      },
+      "GAZP": {
+        "accuracy": 0.706766917293233,
+        "auc": 0.7575457694210787,
+        "n": 133
+      },
+      "LKOH": {
+        "accuracy": 0.6466165413533834,
+        "auc": 0.6835784313725489,
+        "n": 133
+      },
+      "ROSN": {
+        "accuracy": 0.6691729323308271,
+        "auc": 0.7727897388914338,
+        "n": 133
+      },
+      "GMKN": {
+        "accuracy": 0.6766917293233082,
+        "auc": 0.7567816091954024,
+        "n": 133
+      },
+      "NVTK": {
+        "accuracy": 0.7368421052631579,
+        "auc": 0.8520036429872496,
+        "n": 133
+      },
+      "TATN": {
+        "accuracy": 0.631578947368421,
+        "auc": 0.6975881261595547,
+        "n": 133
+      },
+      "PLZL": {
+        "accuracy": 0.6616541353383458,
+        "auc": 0.7848731884057971,
+        "n": 133
+      },
+      "MGNT": {
+        "accuracy": 0.6766917293233082,
+        "auc": 0.8106575963718821,
+        "n": 133
+      }
+    }
+  },
+  "feature_importance_top": [
+    [
+      "base_pnl",
+      138
+    ],
+    [
+      "base_dd",
+      84
+    ],
+    [
+      "kind_add_block_ema",
+      52
+    ],
+    [
+      "bad",
+      51
+    ],
+    [
+      "bad_share",
+      46
+    ],
+    [
+      "base_wr",
+      44
+    ],
+    [
+      "kind_add_block_adx",
+      43
+    ],
+    [
+      "kind_add_block_sma200",
+      43
+    ],
+    [
+      "good",
+      35
+    ],
+    [
+      "kind_change_period_15x",
+      31
+    ],
+    [
+      "base_trades",
+      30
+    ],
+    [
+      "bad_noise",
+      23
+    ],
+    [
+      "good_share",
+      21
+    ],
+    [
+      "side_long_only",
+      20
+    ],
+    [
+      "sym_ROSN",
+      16
+    ]
+  ]
+}

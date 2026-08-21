@@ -1,0 +1,421 @@
+{
+  "session": "2026-08-21-c11-multi-symbol-9",
+  "symbols": [
+    "SBER",
+    "GAZP",
+    "LKOH",
+    "ROSN",
+    "GMKN",
+    "NVTK",
+    "TATN",
+    "PLZL",
+    "MGNT"
+  ],
+  "n_pairs": 1197,
+  "n_better": 665,
+  "model": {
+    "loo_accuracy": 0.7243107769423559,
+    "loo_auc": 0.7910085363785403,
+    "n": 1197,
+    "loso": {
+      "SBER": {
+        "accuracy": 0.6240601503759399,
+        "auc": 0.7,
+        "n": 133
+      },
+      "GAZP": {
+        "accuracy": 0.706766917293233,
+        "auc": 0.7575457694210787,
+        "n": 133
+      },
+      "LKOH": {
+        "accuracy": 0.6466165413533834,
+        "auc": 0.6835784313725489,
+        "n": 133
+      },
+      "ROSN": {
+        "accuracy": 0.6691729323308271,
+        "auc": 0.7727897388914338,
+        "n": 133
+      },
+      "GMKN": {
+        "accuracy": 0.6766917293233082,
+        "auc": 0.7567816091954024,
+        "n": 133
+      },
+      "NVTK": {
+        "accuracy": 0.7368421052631579,
+        "auc": 0.8520036429872496,
+        "n": 133
+      },
+      "TATN": {
+        "accuracy": 0.631578947368421,
+        "auc": 0.6975881261595547,
+        "n": 133
+      },
+      "PLZL": {
+        "accuracy": 0.6616541353383458,
+        "auc": 0.7848731884057971,
+        "n": 133
+      },
+      "MGNT": {
+        "accuracy": 0.6766917293233082,
+        "auc": 0.8106575963718821,
+        "n": 133
+      }
+    }
+  },
+  "kind_stats": {
+    "add_block_ema": {
+      "n": 243,
+      "wins": 144,
+      "sum_delta": 69632.56574099985,
+      "mean_delta": 286.55376848148086,
+      "winrate": 0.5925925925925926
+    },
+    "change_period_067": {
+      "n": 243,
+      "wins": 136,
+      "sum_delta": 12279.513979647763,
+      "mean_delta": 50.53297934011425,
+      "winrate": 0.5596707818930041
+    },
+    "change_period_15x": {
+      "n": 243,
+      "wins": 113,
+      "sum_delta": 2584.269902247046,
+      "mean_delta": 10.634855564802658,
+      "winrate": 0.46502057613168724
+    },
+    "add_block_sma200": {
+      "n": 243,
+      "wins": 179,
+      "sum_delta": 131014.57440343696,
+      "mean_delta": 539.1546271746377,
+      "winrate": 0.7366255144032922
+    },
+    "add_block_adx": {
+      "n": 225,
+      "wins": 93,
+      "sum_delta": -15703.548474568743,
+      "mean_delta": -69.79354877586108,
+      "winrate": 0.41333333333333333
+    }
+  },
+  "per_symbol": {
+    "SBER": {
+      "n": 133,
+      "better": 78,
+      "mean_delta": 29.948579432817652
+    },
+    "GAZP": {
+      "n": 133,
+      "better": 86,
+      "mean_delta": 40.67252273396886
+    },
+    "LKOH": {
+      "n": 133,
+      "better": 85,
+      "mean_delta": 869.5889923994791
+    },
+    "ROSN": {
+      "n": 133,
+      "better": 74,
+      "mean_delta": 52.370701422287695
+    },
+    "GMKN": {
+      "n": 133,
+      "better": 75,
+      "mean_delta": 15.034515824013567
+    },
+    "NVTK": {
+      "n": 133,
+      "better": 72,
+      "mean_delta": 107.01799944692048
+    },
+    "TATN": {
+      "n": 133,
+      "better": 56,
+      "mean_delta": -14.301575732885931
+    },
+    "PLZL": {
+      "n": 133,
+      "better": 69,
+      "mean_delta": -0.760988801924723
+    },
+    "MGNT": {
+      "n": 133,
+      "better": 70,
+      "mean_delta": 402.7403476494799
+    }
+  },
+  "coverage": {
+    "SBER": {
+      "n_bases": 27,
+      "zero_trade": [
+        "06-session-filter-rsi.italgo"
+      ],
+      "trading": 26
+    },
+    "GAZP": {
+      "n_bases": 27,
+      "zero_trade": [
+        "06-session-filter-rsi.italgo"
+      ],
+      "trading": 26
+    },
+    "LKOH": {
+      "n_bases": 27,
+      "zero_trade": [
+        "06-session-filter-rsi.italgo"
+      ],
+      "trading": 26
+    },
+    "ROSN": {
+      "n_bases": 27,
+      "zero_trade": [
+        "06-session-filter-rsi.italgo"
+      ],
+      "trading": 26
+    },
+    "GMKN": {
+      "n_bases": 27,
+      "zero_trade": [
+        "06-session-filter-rsi.italgo"
+      ],
+      "trading": 26
+    },
+    "NVTK": {
+      "n_bases": 27,
+      "zero_trade": [
+        "06-session-filter-rsi.italgo"
+      ],
+      "trading": 26
+    },
+    "TATN": {
+      "n_bases": 27,
+      "zero_trade": [
+        "06-session-filter-rsi.italgo"
+      ],
+      "trading": 26
+    },
+    "PLZL": {
+      "n_bases": 27,
+      "zero_trade": [
+        "06-session-filter-rsi.italgo"
+      ],
+      "trading": 26
+    },
+    "MGNT": {
+      "n_bases": 27,
+      "zero_trade": [
+        "06-session-filter-rsi.italgo"
+      ],
+      "trading": 26
+    }
+  },
+  "n_stable_cross": 50,
+  "n_promoted": 50,
+  "top20_by_score": [
+    {
+      "entry": "LKOH:04-macd-stoch-long-short.italgo",
+      "filter": "add_block_adx",
+      "median_pnl": 7423.893050000003,
+      "mean_pnl": 7322.841650000004,
+      "mean_wr": 0.4,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "LKOH:04-macd-stoch-long-short.italgo",
+      "filter": "add_block_sma200",
+      "median_pnl": 6703.552150000002,
+      "mean_pnl": 6602.500750000003,
+      "mean_wr": 0.375,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "LKOH:23-tema-cross-10-30-ls.italgo",
+      "filter": "add_block_sma200",
+      "median_pnl": 6422.5192999999945,
+      "mean_pnl": 5174.422900000004,
+      "mean_wr": 0.5,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "MGNT:23-tema-cross-10-30-ls.italgo",
+      "filter": "add_block_sma200",
+      "median_pnl": 5976.300299999995,
+      "mean_pnl": 5578.633550000001,
+      "mean_wr": 0.39285714285714285,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "LKOH:04-macd-stoch-long-short.italgo",
+      "filter": "add_block_ema",
+      "median_pnl": 5300.718000000002,
+      "mean_pnl": 5199.666600000002,
+      "mean_wr": 0.3333333333333333,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "MGNT:21-sma-cross-20-50-ls.italgo",
+      "filter": "add_block_adx",
+      "median_pnl": 5142.5706,
+      "mean_pnl": 5651.990799999999,
+      "mean_wr": 0.5,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "MGNT:04-macd-stoch-long-short.italgo",
+      "filter": "change_period_067",
+      "median_pnl": 5068.7261,
+      "mean_pnl": 1257.5166000000036,
+      "mean_wr": 0.3333333333333333,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "LKOH:25-momentum-cross-0-ls.italgo",
+      "filter": "add_block_sma200",
+      "median_pnl": 5033.219599999982,
+      "mean_pnl": 4980.0764000000145,
+      "mean_wr": 0.3333333333333333,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "unknown"
+    },
+    {
+      "entry": "LKOH:07-supertrend-di-adx-stack.italgo",
+      "filter": "add_block_sma200",
+      "median_pnl": 4939.6015,
+      "mean_pnl": 3243.6257000000005,
+      "mean_wr": 0.3888888888888889,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "LKOH:23-tema-cross-10-30-ls.italgo",
+      "filter": "add_block_ema",
+      "median_pnl": 4494.169999999995,
+      "mean_pnl": 3246.0736000000043,
+      "mean_wr": 0.4230769230769231,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "MGNT:26-supertrend-rsi-ls.italgo",
+      "filter": "add_block_sma200",
+      "median_pnl": 4450.549399999994,
+      "mean_pnl": 3014.509500000002,
+      "mean_wr": 0.25,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "LKOH:23-tema-cross-10-30-ls.italgo",
+      "filter": "change_period_067",
+      "median_pnl": 4401.721100000001,
+      "mean_pnl": 3153.6247000000103,
+      "mean_wr": 0.43506493506493504,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "LKOH:24-rsi-cross-50-ls.italgo",
+      "filter": "add_block_sma200",
+      "median_pnl": 4224.326399999995,
+      "mean_pnl": 5891.2934000000105,
+      "mean_wr": 0.375,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "mean_reversion"
+    },
+    {
+      "entry": "MGNT:23-tema-cross-10-30-ls.italgo",
+      "filter": "add_block_ema",
+      "median_pnl": 4185.668899999995,
+      "mean_pnl": 3788.0021500000003,
+      "mean_wr": 0.3684210526315789,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "MGNT:22-ema-cross-9-21-ls.italgo",
+      "filter": "add_block_sma200",
+      "median_pnl": 4099.405499999996,
+      "mean_pnl": 9375.415250000002,
+      "mean_wr": 0.4,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "LKOH:07-supertrend-di-adx-stack.italgo",
+      "filter": "change_period_15x",
+      "median_pnl": 4084.5219499999985,
+      "mean_pnl": 2388.546149999999,
+      "mean_wr": 0.38095238095238093,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "MGNT:21-sma-cross-20-50-ls.italgo",
+      "filter": "add_block_sma200",
+      "median_pnl": 4054.5955999999996,
+      "mean_pnl": 4564.015799999998,
+      "mean_wr": 0.375,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "MGNT:04-macd-stoch-long-short.italgo",
+      "filter": "change_period_15x",
+      "median_pnl": 3819.126849999996,
+      "mean_pnl": 7.917349999999715,
+      "mean_wr": 0.5333333333333333,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "LKOH:12-dema-cross-12-26.italgo",
+      "filter": "add_block_sma200",
+      "median_pnl": 3803.963549999995,
+      "mean_pnl": 1184.830100000001,
+      "mean_wr": 0.625,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "MGNT:17-supertrend-rsi-tight.italgo",
+      "filter": "add_block_sma200",
+      "median_pnl": 3788.729199999998,
+      "mean_pnl": -362.62884999999915,
+      "mean_wr": 0.3333333333333333,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "trend"
+    }
+  ]
+}

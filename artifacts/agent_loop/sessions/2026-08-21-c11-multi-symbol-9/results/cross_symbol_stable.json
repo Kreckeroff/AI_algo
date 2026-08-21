@@ -1,0 +1,3541 @@
+[
+  {
+    "base": "22-ema-cross-9-21-ls.italgo",
+    "kind": "add_block_ema",
+    "n_symbols_win": 9,
+    "symbols_win": [
+      "GAZP",
+      "GMKN",
+      "LKOH",
+      "MGNT",
+      "NVTK",
+      "PLZL",
+      "ROSN",
+      "SBER",
+      "TATN"
+    ],
+    "mean_delta": 453.77196755555474,
+    "by_sym": {
+      "SBER": {
+        "delta": 152.73900799999984,
+        "better": true,
+        "variant_pnl": 305.719297,
+        "variant": "22-ema-cross-9-21-ls__ema50.italgo"
+      },
+      "GAZP": {
+        "delta": 149.64201800000004,
+        "better": true,
+        "variant_pnl": 77.67961799999998,
+        "variant": "22-ema-cross-9-21-ls__ema50.italgo"
+      },
+      "LKOH": {
+        "delta": 1310.529899999996,
+        "better": true,
+        "variant_pnl": 4014.3140500000018,
+        "variant": "22-ema-cross-9-21-ls__ema50.italgo"
+      },
+      "ROSN": {
+        "delta": 169.51360999999986,
+        "better": true,
+        "variant_pnl": 328.0134800000008,
+        "variant": "22-ema-cross-9-21-ls__ema50.italgo"
+      },
+      "GMKN": {
+        "delta": 30.411221999999896,
+        "better": true,
+        "variant_pnl": 53.20211000000006,
+        "variant": "22-ema-cross-9-21-ls__ema50.italgo"
+      },
+      "NVTK": {
+        "delta": 656.8941999999993,
+        "better": true,
+        "variant_pnl": 1561.6071999999995,
+        "variant": "22-ema-cross-9-21-ls__ema50.italgo"
+      },
+      "TATN": {
+        "delta": 113.16561999999965,
+        "better": true,
+        "variant_pnl": 491.68623000000025,
+        "variant": "22-ema-cross-9-21-ls__ema50.italgo"
+      },
+      "PLZL": {
+        "delta": 169.44592999999963,
+        "better": true,
+        "variant_pnl": 1612.6719000000012,
+        "variant": "22-ema-cross-9-21-ls__ema50.italgo"
+      },
+      "MGNT": {
+        "delta": 1331.6061999999974,
+        "better": true,
+        "variant_pnl": 6607.615950000003,
+        "variant": "22-ema-cross-9-21-ls__ema50.italgo"
+      }
+    },
+    "variant": "22-ema-cross-9-21-ls__ema50.italgo"
+  },
+  {
+    "base": "25-momentum-cross-0-ls.italgo",
+    "kind": "add_block_ema",
+    "n_symbols_win": 8,
+    "symbols_win": [
+      "GMKN",
+      "LKOH",
+      "MGNT",
+      "NVTK",
+      "PLZL",
+      "ROSN",
+      "SBER",
+      "TATN"
+    ],
+    "mean_delta": 754.1266525555518,
+    "by_sym": {
+      "SBER": {
+        "delta": 122.31483199999991,
+        "better": true,
+        "variant_pnl": 141.87943100000058,
+        "variant": "25-momentum-cross-0-ls__ema50.italgo"
+      },
+      "GAZP": {
+        "delta": -197.87017599999993,
+        "better": false,
+        "variant_pnl": 57.1743220000001,
+        "variant": "25-momentum-cross-0-ls__ema50.italgo"
+      },
+      "LKOH": {
+        "delta": 1892.0725999999868,
+        "better": true,
+        "variant_pnl": 1838.929400000019,
+        "variant": "25-momentum-cross-0-ls__ema50.italgo"
+      },
+      "ROSN": {
+        "delta": 363.28145999999873,
+        "better": true,
+        "variant_pnl": 613.3748750000011,
+        "variant": "25-momentum-cross-0-ls__ema50.italgo"
+      },
+      "GMKN": {
+        "delta": 165.5704919999995,
+        "better": true,
+        "variant_pnl": 118.91083000000003,
+        "variant": "25-momentum-cross-0-ls__ema50.italgo"
+      },
+      "NVTK": {
+        "delta": 2515.064759999994,
+        "better": true,
+        "variant_pnl": 2693.921159999999,
+        "variant": "25-momentum-cross-0-ls__ema50.italgo"
+      },
+      "TATN": {
+        "delta": 148.29284999999817,
+        "better": true,
+        "variant_pnl": 471.69378000000165,
+        "variant": "25-momentum-cross-0-ls__ema50.italgo"
+      },
+      "PLZL": {
+        "delta": 1134.9258549999981,
+        "better": true,
+        "variant_pnl": 2754.2949050000016,
+        "variant": "25-momentum-cross-0-ls__ema50.italgo"
+      },
+      "MGNT": {
+        "delta": 643.4871999999914,
+        "better": true,
+        "variant_pnl": 6412.119900000003,
+        "variant": "25-momentum-cross-0-ls__ema50.italgo"
+      }
+    },
+    "variant": "25-momentum-cross-0-ls__ema50.italgo"
+  },
+  {
+    "base": "24-rsi-cross-50-ls.italgo",
+    "kind": "add_block_sma200",
+    "n_symbols_win": 8,
+    "symbols_win": [
+      "GAZP",
+      "GMKN",
+      "LKOH",
+      "MGNT",
+      "NVTK",
+      "PLZL",
+      "ROSN",
+      "SBER"
+    ],
+    "mean_delta": 692.4485324444421,
+    "by_sym": {
+      "SBER": {
+        "delta": 92.44457300000002,
+        "better": true,
+        "variant_pnl": 141.57716600000094,
+        "variant": "24-rsi-cross-50-ls__sma200.italgo"
+      },
+      "GAZP": {
+        "delta": 2.916349999999852,
+        "better": true,
+        "variant_pnl": 263.104043,
+        "variant": "24-rsi-cross-50-ls__sma200.italgo"
+      },
+      "LKOH": {
+        "delta": 4224.326399999995,
+        "better": true,
+        "variant_pnl": 5891.2934000000105,
+        "variant": "24-rsi-cross-50-ls__sma200.italgo"
+      },
+      "ROSN": {
+        "delta": 328.7959249999991,
+        "better": true,
+        "variant_pnl": 401.6625750000016,
+        "variant": "24-rsi-cross-50-ls__sma200.italgo"
+      },
+      "GMKN": {
+        "delta": 112.57702399999974,
+        "better": true,
+        "variant_pnl": 139.02096,
+        "variant": "24-rsi-cross-50-ls__sma200.italgo"
+      },
+      "NVTK": {
+        "delta": 747.2010199999977,
+        "better": true,
+        "variant_pnl": 903.4822399999996,
+        "variant": "24-rsi-cross-50-ls__sma200.italgo"
+      },
+      "TATN": {
+        "delta": -345.7414000000015,
+        "better": false,
+        "variant_pnl": 333.2922800000015,
+        "variant": "24-rsi-cross-50-ls__sma200.italgo"
+      },
+      "PLZL": {
+        "delta": 271.08449999999834,
+        "better": true,
+        "variant_pnl": 2222.3107800000053,
+        "variant": "24-rsi-cross-50-ls__sma200.italgo"
+      },
+      "MGNT": {
+        "delta": 798.4323999999897,
+        "better": true,
+        "variant_pnl": 7382.285700000002,
+        "variant": "24-rsi-cross-50-ls__sma200.italgo"
+      }
+    },
+    "variant": "24-rsi-cross-50-ls__sma200.italgo"
+  },
+  {
+    "base": "23-tema-cross-10-30-ls.italgo",
+    "kind": "add_block_sma200",
+    "n_symbols_win": 7,
+    "symbols_win": [
+      "GMKN",
+      "LKOH",
+      "MGNT",
+      "NVTK",
+      "PLZL",
+      "ROSN",
+      "SBER"
+    ],
+    "mean_delta": 1611.6648999999984,
+    "by_sym": {
+      "SBER": {
+        "delta": 304.56087999999954,
+        "better": true,
+        "variant_pnl": 144.1199700000003,
+        "variant": "23-tema-cross-10-30-ls__sma200.italgo"
+      },
+      "GAZP": {
+        "delta": -171.46140999999994,
+        "better": false,
+        "variant_pnl": 293.28455800000006,
+        "variant": "23-tema-cross-10-30-ls__sma200.italgo"
+      },
+      "LKOH": {
+        "delta": 6422.5192999999945,
+        "better": true,
+        "variant_pnl": 5174.422900000004,
+        "variant": "23-tema-cross-10-30-ls__sma200.italgo"
+      },
+      "ROSN": {
+        "delta": 320.49946,
+        "better": true,
+        "variant_pnl": 510.54195000000067,
+        "variant": "23-tema-cross-10-30-ls__sma200.italgo"
+      },
+      "GMKN": {
+        "delta": 14.558079999999563,
+        "better": true,
+        "variant_pnl": 146.86507000000017,
+        "variant": "23-tema-cross-10-30-ls__sma200.italgo"
+      },
+      "NVTK": {
+        "delta": 1190.4089199999967,
+        "better": true,
+        "variant_pnl": 1592.7805800000015,
+        "variant": "23-tema-cross-10-30-ls__sma200.italgo"
+      },
+      "TATN": {
+        "delta": -108.52733999999964,
+        "better": false,
+        "variant_pnl": 267.55953999999974,
+        "variant": "23-tema-cross-10-30-ls__sma200.italgo"
+      },
+      "PLZL": {
+        "delta": 556.1259099999995,
+        "better": true,
+        "variant_pnl": 1975.3940200000036,
+        "variant": "23-tema-cross-10-30-ls__sma200.italgo"
+      },
+      "MGNT": {
+        "delta": 5976.300299999995,
+        "better": true,
+        "variant_pnl": 5578.633550000001,
+        "variant": "23-tema-cross-10-30-ls__sma200.italgo"
+      }
+    },
+    "variant": "23-tema-cross-10-30-ls__sma200.italgo"
+  },
+  {
+    "base": "04-macd-stoch-long-short.italgo",
+    "kind": "add_block_sma200",
+    "n_symbols_win": 7,
+    "symbols_win": [
+      "GAZP",
+      "GMKN",
+      "LKOH",
+      "NVTK",
+      "PLZL",
+      "ROSN",
+      "TATN"
+    ],
+    "mean_delta": 1456.4128871111109,
+    "by_sym": {
+      "SBER": {
+        "delta": -195.9629700000001,
+        "better": false,
+        "variant_pnl": -30.189995999999837,
+        "variant": "04-macd-stoch-long-short__sma200.italgo"
+      },
+      "GAZP": {
+        "delta": 331.24394900000004,
+        "better": true,
+        "variant_pnl": 199.25458399999997,
+        "variant": "04-macd-stoch-long-short__sma200.italgo"
+      },
+      "LKOH": {
+        "delta": 6703.552150000002,
+        "better": true,
+        "variant_pnl": 6602.500750000003,
+        "variant": "04-macd-stoch-long-short__sma200.italgo"
+      },
+      "ROSN": {
+        "delta": 489.717315,
+        "better": true,
+        "variant_pnl": 267.37727500000057,
+        "variant": "04-macd-stoch-long-short__sma200.italgo"
+      },
+      "GMKN": {
+        "delta": 58.369199999999864,
+        "better": true,
+        "variant_pnl": 77.01192199999991,
+        "variant": "04-macd-stoch-long-short__sma200.italgo"
+      },
+      "NVTK": {
+        "delta": 189.82901999999967,
+        "better": true,
+        "variant_pnl": 1351.5732400000015,
+        "variant": "04-macd-stoch-long-short__sma200.italgo"
+      },
+      "TATN": {
+        "delta": 229.56362999999988,
+        "better": true,
+        "variant_pnl": 284.6380400000005,
+        "variant": "04-macd-stoch-long-short__sma200.italgo"
+      },
+      "PLZL": {
+        "delta": 2477.11099,
+        "better": true,
+        "variant_pnl": 1373.10712,
+        "variant": "04-macd-stoch-long-short__sma200.italgo"
+      },
+      "MGNT": {
+        "delta": 2824.2926999999972,
+        "better": true,
+        "variant_pnl": -986.9167999999991,
+        "variant": "04-macd-stoch-long-short__sma200.italgo"
+      }
+    },
+    "variant": "04-macd-stoch-long-short__sma200.italgo"
+  },
+  {
+    "base": "23-tema-cross-10-30-ls.italgo",
+    "kind": "change_period_067",
+    "n_symbols_win": 7,
+    "symbols_win": [
+      "LKOH",
+      "MGNT",
+      "NVTK",
+      "PLZL",
+      "ROSN",
+      "SBER",
+      "TATN"
+    ],
+    "mean_delta": 1101.2366448888906,
+    "by_sym": {
+      "SBER": {
+        "delta": 466.66489,
+        "better": true,
+        "variant_pnl": 306.2239800000008,
+        "variant": "23-tema-cross-10-30-ls__period067.italgo"
+      },
+      "GAZP": {
+        "delta": -174.31842999999964,
+        "better": false,
+        "variant_pnl": 290.42753800000037,
+        "variant": "23-tema-cross-10-30-ls__period067.italgo"
+      },
+      "LKOH": {
+        "delta": 4401.721100000001,
+        "better": true,
+        "variant_pnl": 3153.6247000000103,
+        "variant": "23-tema-cross-10-30-ls__period067.italgo"
+      },
+      "ROSN": {
+        "delta": 484.5539000000012,
+        "better": true,
+        "variant_pnl": 674.5963900000019,
+        "variant": "23-tema-cross-10-30-ls__period067.italgo"
+      },
+      "GMKN": {
+        "delta": -182.56144600000025,
+        "better": false,
+        "variant_pnl": -50.254455999999635,
+        "variant": "23-tema-cross-10-30-ls__period067.italgo"
+      },
+      "NVTK": {
+        "delta": 959.8864400000002,
+        "better": true,
+        "variant_pnl": 1362.258100000005,
+        "variant": "23-tema-cross-10-30-ls__period067.italgo"
+      },
+      "TATN": {
+        "delta": 77.7390900000039,
+        "better": true,
+        "variant_pnl": 453.8259700000033,
+        "variant": "23-tema-cross-10-30-ls__period067.italgo"
+      },
+      "PLZL": {
+        "delta": 218.40611000000285,
+        "better": true,
+        "variant_pnl": 1637.674220000007,
+        "variant": "23-tema-cross-10-30-ls__period067.italgo"
+      },
+      "MGNT": {
+        "delta": 3659.038150000009,
+        "better": true,
+        "variant_pnl": 3261.3714000000145,
+        "variant": "23-tema-cross-10-30-ls__period067.italgo"
+      }
+    },
+    "variant": "23-tema-cross-10-30-ls__period067.italgo"
+  },
+  {
+    "base": "25-momentum-cross-0-ls.italgo",
+    "kind": "add_block_sma200",
+    "n_symbols_win": 7,
+    "symbols_win": [
+      "GMKN",
+      "LKOH",
+      "MGNT",
+      "NVTK",
+      "PLZL",
+      "ROSN",
+      "SBER"
+    ],
+    "mean_delta": 990.9814145555514,
+    "by_sym": {
+      "SBER": {
+        "delta": 104.8235199999998,
+        "better": true,
+        "variant_pnl": 124.38811900000047,
+        "variant": "25-momentum-cross-0-ls__sma200.italgo"
+      },
+      "GAZP": {
+        "delta": -3.0582960000000696,
+        "better": false,
+        "variant_pnl": 251.98620199999996,
+        "variant": "25-momentum-cross-0-ls__sma200.italgo"
+      },
+      "LKOH": {
+        "delta": 5033.219599999982,
+        "better": true,
+        "variant_pnl": 4980.0764000000145,
+        "variant": "25-momentum-cross-0-ls__sma200.italgo"
+      },
+      "ROSN": {
+        "delta": 400.2480599999988,
+        "better": true,
+        "variant_pnl": 650.3414750000012,
+        "variant": "25-momentum-cross-0-ls__sma200.italgo"
+      },
+      "GMKN": {
+        "delta": 173.39757199999968,
+        "better": true,
+        "variant_pnl": 126.73791000000023,
+        "variant": "25-momentum-cross-0-ls__sma200.italgo"
+      },
+      "NVTK": {
+        "delta": 1584.509839999996,
+        "better": true,
+        "variant_pnl": 1763.366240000001,
+        "variant": "25-momentum-cross-0-ls__sma200.italgo"
+      },
+      "TATN": {
+        "delta": -37.109890000002395,
+        "better": false,
+        "variant_pnl": 286.2910400000011,
+        "variant": "25-momentum-cross-0-ls__sma200.italgo"
+      },
+      "PLZL": {
+        "delta": 255.54432499999848,
+        "better": true,
+        "variant_pnl": 1874.913375000002,
+        "variant": "25-momentum-cross-0-ls__sma200.italgo"
+      },
+      "MGNT": {
+        "delta": 1407.2579999999898,
+        "better": true,
+        "variant_pnl": 7175.890700000002,
+        "variant": "25-momentum-cross-0-ls__sma200.italgo"
+      }
+    },
+    "variant": "25-momentum-cross-0-ls__sma200.italgo"
+  },
+  {
+    "base": "22-ema-cross-9-21-ls.italgo",
+    "kind": "add_block_sma200",
+    "n_symbols_win": 7,
+    "symbols_win": [
+      "GAZP",
+      "GMKN",
+      "LKOH",
+      "MGNT",
+      "NVTK",
+      "PLZL",
+      "ROSN"
+    ],
+    "mean_delta": 928.8993162222209,
+    "by_sym": {
+      "SBER": {
+        "delta": -117.56479800000011,
+        "better": false,
+        "variant_pnl": 35.41549100000003,
+        "variant": "22-ema-cross-9-21-ls__sma200.italgo"
+      },
+      "GAZP": {
+        "delta": 289.94437400000015,
+        "better": true,
+        "variant_pnl": 217.98197400000006,
+        "variant": "22-ema-cross-9-21-ls__sma200.italgo"
+      },
+      "LKOH": {
+        "delta": 3149.2691999999943,
+        "better": true,
+        "variant_pnl": 5853.05335,
+        "variant": "22-ema-cross-9-21-ls__sma200.italgo"
+      },
+      "ROSN": {
+        "delta": 269.61920999999927,
+        "better": true,
+        "variant_pnl": 428.1190800000002,
+        "variant": "22-ema-cross-9-21-ls__sma200.italgo"
+      },
+      "GMKN": {
+        "delta": 110.52892999999986,
+        "better": true,
+        "variant_pnl": 133.31981800000003,
+        "variant": "22-ema-cross-9-21-ls__sma200.italgo"
+      },
+      "NVTK": {
+        "delta": 167.20442000000003,
+        "better": true,
+        "variant_pnl": 1071.9174200000002,
+        "variant": "22-ema-cross-9-21-ls__sma200.italgo"
+      },
+      "TATN": {
+        "delta": -433.3255399999998,
+        "better": false,
+        "variant_pnl": -54.80492999999922,
+        "variant": "22-ema-cross-9-21-ls__sma200.italgo"
+      },
+      "PLZL": {
+        "delta": 825.0125499999992,
+        "better": true,
+        "variant_pnl": 2268.238520000001,
+        "variant": "22-ema-cross-9-21-ls__sma200.italgo"
+      },
+      "MGNT": {
+        "delta": 4099.405499999996,
+        "better": true,
+        "variant_pnl": 9375.415250000002,
+        "variant": "22-ema-cross-9-21-ls__sma200.italgo"
+      }
+    },
+    "variant": "22-ema-cross-9-21-ls__sma200.italgo"
+  },
+  {
+    "base": "07-supertrend-di-adx-stack.italgo",
+    "kind": "add_block_sma200",
+    "n_symbols_win": 7,
+    "symbols_win": [
+      "GAZP",
+      "GMKN",
+      "LKOH",
+      "MGNT",
+      "NVTK",
+      "ROSN",
+      "SBER"
+    ],
+    "mean_delta": 851.9026957777774,
+    "by_sym": {
+      "SBER": {
+        "delta": 135.4332050000001,
+        "better": true,
+        "variant_pnl": 218.35161299999993,
+        "variant": "07-supertrend-di-adx-stack__sma200.italgo"
+      },
+      "GAZP": {
+        "delta": 210.6442459999999,
+        "better": true,
+        "variant_pnl": 195.30039200000016,
+        "variant": "07-supertrend-di-adx-stack__sma200.italgo"
+      },
+      "LKOH": {
+        "delta": 4939.6015,
+        "better": true,
+        "variant_pnl": 3243.6257000000005,
+        "variant": "07-supertrend-di-adx-stack__sma200.italgo"
+      },
+      "ROSN": {
+        "delta": 182.648545,
+        "better": true,
+        "variant_pnl": 183.52071499999983,
+        "variant": "07-supertrend-di-adx-stack__sma200.italgo"
+      },
+      "GMKN": {
+        "delta": 200.10135599999984,
+        "better": true,
+        "variant_pnl": 37.711614,
+        "variant": "07-supertrend-di-adx-stack__sma200.italgo"
+      },
+      "NVTK": {
+        "delta": 1023.7390199999991,
+        "better": true,
+        "variant_pnl": 1503.728659999999,
+        "variant": "07-supertrend-di-adx-stack__sma200.italgo"
+      },
+      "TATN": {
+        "delta": 167.46262999999936,
+        "better": true,
+        "variant_pnl": -26.778490000000033,
+        "variant": "07-supertrend-di-adx-stack__sma200.italgo"
+      },
+      "PLZL": {
+        "delta": -115.81729000000018,
+        "better": false,
+        "variant_pnl": 1925.0513700000008,
+        "variant": "07-supertrend-di-adx-stack__sma200.italgo"
+      },
+      "MGNT": {
+        "delta": 923.3110499999975,
+        "better": true,
+        "variant_pnl": 6536.055849999999,
+        "variant": "07-supertrend-di-adx-stack__sma200.italgo"
+      }
+    },
+    "variant": "07-supertrend-di-adx-stack__sma200.italgo"
+  },
+  {
+    "base": "26-supertrend-rsi-ls.italgo",
+    "kind": "add_block_sma200",
+    "n_symbols_win": 7,
+    "symbols_win": [
+      "GAZP",
+      "LKOH",
+      "MGNT",
+      "NVTK",
+      "PLZL",
+      "SBER",
+      "TATN"
+    ],
+    "mean_delta": 823.070747888888,
+    "by_sym": {
+      "SBER": {
+        "delta": 42.96338900000012,
+        "better": true,
+        "variant_pnl": 182.03946800000028,
+        "variant": "26-supertrend-rsi-ls__sma200.italgo"
+      },
+      "GAZP": {
+        "delta": 260.757796,
+        "better": true,
+        "variant_pnl": 70.30318399999999,
+        "variant": "26-supertrend-rsi-ls__sma200.italgo"
+      },
+      "LKOH": {
+        "delta": 741.0594499999997,
+        "better": true,
+        "variant_pnl": 2147.8953500000007,
+        "variant": "26-supertrend-rsi-ls__sma200.italgo"
+      },
+      "ROSN": {
+        "delta": 12.972839999999792,
+        "better": true,
+        "variant_pnl": -104.35302999999993,
+        "variant": "26-supertrend-rsi-ls__sma200.italgo"
+      },
+      "GMKN": {
+        "delta": -6.402823999999896,
+        "better": false,
+        "variant_pnl": 135.30808000000002,
+        "variant": "26-supertrend-rsi-ls__sma200.italgo"
+      },
+      "NVTK": {
+        "delta": 421.80017999999905,
+        "better": true,
+        "variant_pnl": 542.0188000000003,
+        "variant": "26-supertrend-rsi-ls__sma200.italgo"
+      },
+      "TATN": {
+        "delta": 355.5793999999997,
+        "better": true,
+        "variant_pnl": 68.03062000000034,
+        "variant": "26-supertrend-rsi-ls__sma200.italgo"
+      },
+      "PLZL": {
+        "delta": 1128.3570999999995,
+        "better": true,
+        "variant_pnl": 1007.9108600000009,
+        "variant": "26-supertrend-rsi-ls__sma200.italgo"
+      },
+      "MGNT": {
+        "delta": 4450.549399999994,
+        "better": true,
+        "variant_pnl": 3014.509500000002,
+        "variant": "26-supertrend-rsi-ls__sma200.italgo"
+      }
+    },
+    "variant": "26-supertrend-rsi-ls__sma200.italgo"
+  },
+  {
+    "base": "11-tema-cross-10-30.italgo",
+    "kind": "add_block_sma200",
+    "n_symbols_win": 7,
+    "symbols_win": [
+      "GMKN",
+      "LKOH",
+      "MGNT",
+      "NVTK",
+      "PLZL",
+      "ROSN",
+      "SBER"
+    ],
+    "mean_delta": 798.2776415555547,
+    "by_sym": {
+      "SBER": {
+        "delta": 152.28043999999977,
+        "better": true,
+        "variant_pnl": 24.56329200000016,
+        "variant": "11-tema-cross-10-30__sma200.italgo"
+      },
+      "GAZP": {
+        "delta": -85.73070499999996,
+        "better": false,
+        "variant_pnl": 3.595729000000034,
+        "variant": "11-tema-cross-10-30__sma200.italgo"
+      },
+      "LKOH": {
+        "delta": 3211.2596499999972,
+        "better": true,
+        "variant_pnl": 1054.324050000002,
+        "variant": "11-tema-cross-10-30__sma200.italgo"
+      },
+      "ROSN": {
+        "delta": 160.24973,
+        "better": true,
+        "variant_pnl": 94.32785000000035,
+        "variant": "11-tema-cross-10-30__sma200.italgo"
+      },
+      "GMKN": {
+        "delta": 10.461613999999727,
+        "better": true,
+        "variant_pnl": 22.07366400000008,
+        "variant": "11-tema-cross-10-30__sma200.italgo"
+      },
+      "NVTK": {
+        "delta": 626.1971399999983,
+        "better": true,
+        "variant_pnl": 308.5850900000007,
+        "variant": "11-tema-cross-10-30__sma200.italgo"
+      },
+      "TATN": {
+        "delta": -54.26366999999982,
+        "better": false,
+        "variant_pnl": 107.30836999999985,
+        "variant": "11-tema-cross-10-30__sma200.italgo"
+      },
+      "PLZL": {
+        "delta": 175.89442499999973,
+        "better": true,
+        "variant_pnl": 854.4678600000018,
+        "variant": "11-tema-cross-10-30__sma200.italgo"
+      },
+      "MGNT": {
+        "delta": 2988.150149999997,
+        "better": true,
+        "variant_pnl": 470.88030000000026,
+        "variant": "11-tema-cross-10-30__sma200.italgo"
+      }
+    },
+    "variant": "11-tema-cross-10-30__sma200.italgo"
+  },
+  {
+    "base": "21-sma-cross-20-50-ls.italgo",
+    "kind": "add_block_sma200",
+    "n_symbols_win": 7,
+    "symbols_win": [
+      "GAZP",
+      "GMKN",
+      "LKOH",
+      "MGNT",
+      "NVTK",
+      "PLZL",
+      "ROSN"
+    ],
+    "mean_delta": 689.5684924444441,
+    "by_sym": {
+      "SBER": {
+        "delta": -165.58261800000014,
+        "better": false,
+        "variant_pnl": 90.66705500000012,
+        "variant": "21-sma-cross-20-50-ls__sma200.italgo"
+      },
+      "GAZP": {
+        "delta": 529.7149879999997,
+        "better": true,
+        "variant_pnl": 229.09658499999995,
+        "variant": "21-sma-cross-20-50-ls__sma200.italgo"
+      },
+      "LKOH": {
+        "delta": 1548.3473999999987,
+        "better": true,
+        "variant_pnl": 3058.52535,
+        "variant": "21-sma-cross-20-50-ls__sma200.italgo"
+      },
+      "ROSN": {
+        "delta": 398.17673999999965,
+        "better": true,
+        "variant_pnl": 399.08082499999983,
+        "variant": "21-sma-cross-20-50-ls__sma200.italgo"
+      },
+      "GMKN": {
+        "delta": 135.79434199999994,
+        "better": true,
+        "variant_pnl": 100.096712,
+        "variant": "21-sma-cross-20-50-ls__sma200.italgo"
+      },
+      "NVTK": {
+        "delta": 82.74993999999924,
+        "better": true,
+        "variant_pnl": 2052.1843399999993,
+        "variant": "21-sma-cross-20-50-ls__sma200.italgo"
+      },
+      "TATN": {
+        "delta": -399.8088400000007,
+        "better": false,
+        "variant_pnl": -556.1155200000002,
+        "variant": "21-sma-cross-20-50-ls__sma200.italgo"
+      },
+      "PLZL": {
+        "delta": 22.12888000000021,
+        "better": true,
+        "variant_pnl": 2075.05012,
+        "variant": "21-sma-cross-20-50-ls__sma200.italgo"
+      },
+      "MGNT": {
+        "delta": 4054.5955999999996,
+        "better": true,
+        "variant_pnl": 4564.015799999998,
+        "variant": "21-sma-cross-20-50-ls__sma200.italgo"
+      }
+    },
+    "variant": "21-sma-cross-20-50-ls__sma200.italgo"
+  },
+  {
+    "base": "15-momentum-cross-0.italgo",
+    "kind": "add_block_sma200",
+    "n_symbols_win": 7,
+    "symbols_win": [
+      "GMKN",
+      "LKOH",
+      "MGNT",
+      "NVTK",
+      "PLZL",
+      "ROSN",
+      "SBER"
+    ],
+    "mean_delta": 417.0628631111091,
+    "by_sym": {
+      "SBER": {
+        "delta": 52.4117599999999,
+        "better": true,
+        "variant_pnl": 34.260410000000235,
+        "variant": "15-momentum-cross-0__sma200.italgo"
+      },
+      "GAZP": {
+        "delta": -1.529148000000049,
+        "better": false,
+        "variant_pnl": 3.0945360000000193,
+        "variant": "15-momentum-cross-0__sma200.italgo"
+      },
+      "LKOH": {
+        "delta": 2197.801749999991,
+        "better": true,
+        "variant_pnl": 963.6501500000072,
+        "variant": "15-momentum-cross-0__sma200.italgo"
+      },
+      "ROSN": {
+        "delta": 200.12402999999944,
+        "better": true,
+        "variant_pnl": 163.1527200000006,
+        "variant": "15-momentum-cross-0__sma200.italgo"
+      },
+      "GMKN": {
+        "delta": 86.69878599999984,
+        "better": true,
+        "variant_pnl": 3.7509100000001183,
+        "variant": "15-momentum-cross-0__sma200.italgo"
+      },
+      "NVTK": {
+        "delta": 792.254919999998,
+        "better": true,
+        "variant_pnl": 411.9761100000005,
+        "variant": "15-momentum-cross-0__sma200.italgo"
+      },
+      "TATN": {
+        "delta": -58.55177000000117,
+        "better": false,
+        "variant_pnl": 116.77411000000058,
+        "variant": "15-momentum-cross-0__sma200.italgo"
+      },
+      "PLZL": {
+        "delta": 9.133539999999243,
+        "better": true,
+        "variant_pnl": 771.455815000001,
+        "variant": "15-momentum-cross-0__sma200.italgo"
+      },
+      "MGNT": {
+        "delta": 475.221899999995,
+        "better": true,
+        "variant_pnl": 1325.7532500000002,
+        "variant": "15-momentum-cross-0__sma200.italgo"
+      }
+    },
+    "variant": "15-momentum-cross-0__sma200.italgo"
+  },
+  {
+    "base": "24-rsi-cross-50-ls.italgo",
+    "kind": "add_block_ema",
+    "n_symbols_win": 7,
+    "symbols_win": [
+      "GAZP",
+      "GMKN",
+      "LKOH",
+      "NVTK",
+      "PLZL",
+      "ROSN",
+      "SBER"
+    ],
+    "mean_delta": 242.64198755555358,
+    "by_sym": {
+      "SBER": {
+        "delta": 33.85776699999997,
+        "better": true,
+        "variant_pnl": 82.99036000000089,
+        "variant": "24-rsi-cross-50-ls__ema50.italgo"
+      },
+      "GAZP": {
+        "delta": 9.218773999999996,
+        "better": true,
+        "variant_pnl": 269.40646700000013,
+        "variant": "24-rsi-cross-50-ls__ema50.italgo"
+      },
+      "LKOH": {
+        "delta": 759.0181999999959,
+        "better": true,
+        "variant_pnl": 2425.985200000011,
+        "variant": "24-rsi-cross-50-ls__ema50.italgo"
+      },
+      "ROSN": {
+        "delta": 126.28303499999913,
+        "better": true,
+        "variant_pnl": 199.14968500000163,
+        "variant": "24-rsi-cross-50-ls__ema50.italgo"
+      },
+      "GMKN": {
+        "delta": 53.981951999999836,
+        "better": true,
+        "variant_pnl": 80.4258880000001,
+        "variant": "24-rsi-cross-50-ls__ema50.italgo"
+      },
+      "NVTK": {
+        "delta": 1485.5176199999994,
+        "better": true,
+        "variant_pnl": 1641.7988400000013,
+        "variant": "24-rsi-cross-50-ls__ema50.italgo"
+      },
+      "TATN": {
+        "delta": -29.61942000000147,
+        "better": false,
+        "variant_pnl": 649.4142600000015,
+        "variant": "24-rsi-cross-50-ls__ema50.italgo"
+      },
+      "PLZL": {
+        "delta": 297.15315999999825,
+        "better": true,
+        "variant_pnl": 2248.379440000005,
+        "variant": "24-rsi-cross-50-ls__ema50.italgo"
+      },
+      "MGNT": {
+        "delta": -551.6332000000084,
+        "better": false,
+        "variant_pnl": 6032.220100000004,
+        "variant": "24-rsi-cross-50-ls__ema50.italgo"
+      }
+    },
+    "variant": "24-rsi-cross-50-ls__ema50.italgo"
+  },
+  {
+    "base": "10-ema-cross-9-21.italgo",
+    "kind": "add_block_ema",
+    "n_symbols_win": 7,
+    "symbols_win": [
+      "LKOH",
+      "MGNT",
+      "NVTK",
+      "PLZL",
+      "ROSN",
+      "SBER",
+      "TATN"
+    ],
+    "mean_delta": 224.3910586666663,
+    "by_sym": {
+      "SBER": {
+        "delta": 65.89346399999992,
+        "better": true,
+        "variant_pnl": 113.37715400000002,
+        "variant": "10-ema-cross-9-21__ema50.italgo"
+      },
+      "GAZP": {
+        "delta": 74.82100899999999,
+        "better": true,
+        "variant_pnl": -94.80768100000002,
+        "variant": "10-ema-cross-9-21__ema50.italgo"
+      },
+      "LKOH": {
+        "delta": 655.264949999998,
+        "better": true,
+        "variant_pnl": 569.5101000000009,
+        "variant": "10-ema-cross-9-21__ema50.italgo"
+      },
+      "ROSN": {
+        "delta": 84.75680499999993,
+        "better": true,
+        "variant_pnl": 12.912630000000433,
+        "variant": "10-ema-cross-9-21__ema50.italgo"
+      },
+      "GMKN": {
+        "delta": 22.438589999999934,
+        "better": true,
+        "variant_pnl": -24.757815999999977,
+        "variant": "10-ema-cross-9-21__ema50.italgo"
+      },
+      "NVTK": {
+        "delta": 328.44709999999964,
+        "better": true,
+        "variant_pnl": 315.4961499999997,
+        "variant": "10-ema-cross-9-21__ema50.italgo"
+      },
+      "TATN": {
+        "delta": 56.582809999999824,
+        "better": true,
+        "variant_pnl": 236.91996000000012,
+        "variant": "10-ema-cross-9-21__ema50.italgo"
+      },
+      "PLZL": {
+        "delta": 65.51169999999979,
+        "better": true,
+        "variant_pnl": 678.2562850000006,
+        "variant": "10-ema-cross-9-21__ema50.italgo"
+      },
+      "MGNT": {
+        "delta": 665.8030999999999,
+        "better": true,
+        "variant_pnl": 1147.8552500000014,
+        "variant": "10-ema-cross-9-21__ema50.italgo"
+      }
+    },
+    "variant": "10-ema-cross-9-21__ema50.italgo"
+  },
+  {
+    "base": "23-tema-cross-10-30-ls.italgo",
+    "kind": "add_block_ema",
+    "n_symbols_win": 6,
+    "symbols_win": [
+      "LKOH",
+      "MGNT",
+      "NVTK",
+      "PLZL",
+      "ROSN",
+      "SBER"
+    ],
+    "mean_delta": 1308.0935875555542,
+    "by_sym": {
+      "SBER": {
+        "delta": 348.1749079999993,
+        "better": true,
+        "variant_pnl": 187.7339980000001,
+        "variant": "23-tema-cross-10-30-ls__ema50.italgo"
+      },
+      "GAZP": {
+        "delta": -165.62084199999993,
+        "better": false,
+        "variant_pnl": 299.1251260000001,
+        "variant": "23-tema-cross-10-30-ls__ema50.italgo"
+      },
+      "LKOH": {
+        "delta": 4494.169999999995,
+        "better": true,
+        "variant_pnl": 3246.0736000000043,
+        "variant": "23-tema-cross-10-30-ls__ema50.italgo"
+      },
+      "ROSN": {
+        "delta": 442.21868999999975,
+        "better": true,
+        "variant_pnl": 632.2611800000004,
+        "variant": "23-tema-cross-10-30-ls__ema50.italgo"
+      },
+      "GMKN": {
+        "delta": -12.546828000000403,
+        "better": false,
+        "variant_pnl": 119.76016200000021,
+        "variant": "23-tema-cross-10-30-ls__ema50.italgo"
+      },
+      "NVTK": {
+        "delta": 2019.2506999999973,
+        "better": true,
+        "variant_pnl": 2421.622360000002,
+        "variant": "23-tema-cross-10-30-ls__ema50.italgo"
+      },
+      "TATN": {
+        "delta": -209.07993999999962,
+        "better": false,
+        "variant_pnl": 167.00693999999976,
+        "variant": "23-tema-cross-10-30-ls__ema50.italgo"
+      },
+      "PLZL": {
+        "delta": 670.6066999999998,
+        "better": true,
+        "variant_pnl": 2089.874810000004,
+        "variant": "23-tema-cross-10-30-ls__ema50.italgo"
+      },
+      "MGNT": {
+        "delta": 4185.668899999995,
+        "better": true,
+        "variant_pnl": 3788.0021500000003,
+        "variant": "23-tema-cross-10-30-ls__ema50.italgo"
+      }
+    },
+    "variant": "23-tema-cross-10-30-ls__ema50.italgo"
+  },
+  {
+    "base": "12-dema-cross-12-26.italgo",
+    "kind": "add_block_ema",
+    "n_symbols_win": 6,
+    "symbols_win": [
+      "GMKN",
+      "LKOH",
+      "MGNT",
+      "NVTK",
+      "PLZL",
+      "ROSN"
+    ],
+    "mean_delta": 855.7470261111101,
+    "by_sym": {
+      "SBER": {
+        "delta": 69.73357299999994,
+        "better": true,
+        "variant_pnl": -33.69878799999998,
+        "variant": "12-dema-cross-12-26__ema50.italgo"
+      },
+      "GAZP": {
+        "delta": -24.88195500000002,
+        "better": false,
+        "variant_pnl": -48.90101799999999,
+        "variant": "12-dema-cross-12-26__ema50.italgo"
+      },
+      "LKOH": {
+        "delta": 3092.752349999996,
+        "better": true,
+        "variant_pnl": 473.6189000000022,
+        "variant": "12-dema-cross-12-26__ema50.italgo"
+      },
+      "ROSN": {
+        "delta": 168.41791499999977,
+        "better": true,
+        "variant_pnl": 34.41890500000062,
+        "variant": "12-dema-cross-12-26__ema50.italgo"
+      },
+      "GMKN": {
+        "delta": 117.96256199999985,
+        "better": true,
+        "variant_pnl": 28.069768000000053,
+        "variant": "12-dema-cross-12-26__ema50.italgo"
+      },
+      "NVTK": {
+        "delta": 1052.5058399999994,
+        "better": true,
+        "variant_pnl": 426.59617999999955,
+        "variant": "12-dema-cross-12-26__ema50.italgo"
+      },
+      "TATN": {
+        "delta": -85.70563000000021,
+        "better": false,
+        "variant_pnl": 92.6695300000003,
+        "variant": "12-dema-cross-12-26__ema50.italgo"
+      },
+      "PLZL": {
+        "delta": 87.43797999999879,
+        "better": true,
+        "variant_pnl": 620.6252850000014,
+        "variant": "12-dema-cross-12-26__ema50.italgo"
+      },
+      "MGNT": {
+        "delta": 3223.5005999999985,
+        "better": true,
+        "variant_pnl": 888.5642000000007,
+        "variant": "12-dema-cross-12-26__ema50.italgo"
+      }
+    },
+    "variant": "12-dema-cross-12-26__ema50.italgo"
+  },
+  {
+    "base": "21-sma-cross-20-50-ls.italgo",
+    "kind": "add_block_adx",
+    "n_symbols_win": 6,
+    "symbols_win": [
+      "GAZP",
+      "LKOH",
+      "MGNT",
+      "ROSN",
+      "SBER",
+      "TATN"
+    ],
+    "mean_delta": 756.5987068888888,
+    "by_sym": {
+      "SBER": {
+        "delta": 55.16745199999974,
+        "better": true,
+        "variant_pnl": 311.417125,
+        "variant": "21-sma-cross-20-50-ls__adx25.italgo"
+      },
+      "GAZP": {
+        "delta": 358.58629599999983,
+        "better": true,
+        "variant_pnl": 57.96789300000003,
+        "variant": "21-sma-cross-20-50-ls__adx25.italgo"
+      },
+      "LKOH": {
+        "delta": 3532.4338000000007,
+        "better": true,
+        "variant_pnl": 5042.611750000002,
+        "variant": "21-sma-cross-20-50-ls__adx25.italgo"
+      },
+      "ROSN": {
+        "delta": 202.32235999999966,
+        "better": true,
+        "variant_pnl": 203.22644499999984,
+        "variant": "21-sma-cross-20-50-ls__adx25.italgo"
+      },
+      "GMKN": {
+        "delta": 15.170633999999922,
+        "better": true,
+        "variant_pnl": -20.526996000000025,
+        "variant": "21-sma-cross-20-50-ls__adx25.italgo"
+      },
+      "NVTK": {
+        "delta": -711.6382600000004,
+        "better": false,
+        "variant_pnl": 1257.7961399999997,
+        "variant": "21-sma-cross-20-50-ls__adx25.italgo"
+      },
+      "TATN": {
+        "delta": 158.22271999999964,
+        "better": true,
+        "variant_pnl": 1.91604000000018,
+        "variant": "21-sma-cross-20-50-ls__adx25.italgo"
+      },
+      "PLZL": {
+        "delta": -1943.4472399999997,
+        "better": false,
+        "variant_pnl": 109.47399999999993,
+        "variant": "21-sma-cross-20-50-ls__adx25.italgo"
+      },
+      "MGNT": {
+        "delta": 5142.5706,
+        "better": true,
+        "variant_pnl": 5651.990799999999,
+        "variant": "21-sma-cross-20-50-ls__adx25.italgo"
+      }
+    },
+    "variant": "21-sma-cross-20-50-ls__adx25.italgo"
+  },
+  {
+    "base": "11-tema-cross-10-30.italgo",
+    "kind": "change_period_067",
+    "n_symbols_win": 6,
+    "symbols_win": [
+      "LKOH",
+      "NVTK",
+      "PLZL",
+      "ROSN",
+      "SBER",
+      "TATN"
+    ],
+    "mean_delta": 585.3104668888899,
+    "by_sym": {
+      "SBER": {
+        "delta": 252.18056,
+        "better": true,
+        "variant_pnl": 124.4634120000004,
+        "variant": "11-tema-cross-10-30__period067.italgo"
+      },
+      "GAZP": {
+        "delta": -82.19561499999986,
+        "better": false,
+        "variant_pnl": 7.13081900000013,
+        "variant": "11-tema-cross-10-30__period067.italgo"
+      },
+      "LKOH": {
+        "delta": 2326.8479500000003,
+        "better": true,
+        "variant_pnl": 169.91235000000506,
+        "variant": "11-tema-cross-10-30__period067.italgo"
+      },
+      "ROSN": {
+        "delta": 279.8731900000007,
+        "better": true,
+        "variant_pnl": 213.95131000000106,
+        "variant": "11-tema-cross-10-30__period067.italgo"
+      },
+      "GMKN": {
+        "delta": -89.33052800000017,
+        "better": false,
+        "variant_pnl": -77.71847799999982,
+        "variant": "11-tema-cross-10-30__period067.italgo"
+      },
+      "NVTK": {
+        "delta": 491.44437000000016,
+        "better": true,
+        "variant_pnl": 173.8323200000026,
+        "variant": "11-tema-cross-10-30__period067.italgo"
+      },
+      "TATN": {
+        "delta": 36.319800000001976,
+        "better": true,
+        "variant_pnl": 197.89184000000165,
+        "variant": "11-tema-cross-10-30__period067.italgo"
+      },
+      "PLZL": {
+        "delta": 77.8999250000013,
+        "better": true,
+        "variant_pnl": 756.4733600000034,
+        "variant": "11-tema-cross-10-30__period067.italgo"
+      },
+      "MGNT": {
+        "delta": 1974.7545500000044,
+        "better": true,
+        "variant_pnl": -542.5152999999925,
+        "variant": "11-tema-cross-10-30__period067.italgo"
+      }
+    },
+    "variant": "11-tema-cross-10-30__period067.italgo"
+  },
+  {
+    "base": "07-supertrend-di-adx-stack.italgo",
+    "kind": "change_period_15x",
+    "n_symbols_win": 6,
+    "symbols_win": [
+      "LKOH",
+      "NVTK",
+      "PLZL",
+      "ROSN",
+      "SBER",
+      "TATN"
+    ],
+    "mean_delta": 502.03560022222166,
+    "by_sym": {
+      "SBER": {
+        "delta": 116.19523200000026,
+        "better": true,
+        "variant_pnl": 199.1136400000001,
+        "variant": "07-supertrend-di-adx-stack__period15x.italgo"
+      },
+      "GAZP": {
+        "delta": -92.87183600000006,
+        "better": false,
+        "variant_pnl": -108.2156899999998,
+        "variant": "07-supertrend-di-adx-stack__period15x.italgo"
+      },
+      "LKOH": {
+        "delta": 4084.5219499999985,
+        "better": true,
+        "variant_pnl": 2388.546149999999,
+        "variant": "07-supertrend-di-adx-stack__period15x.italgo"
+      },
+      "ROSN": {
+        "delta": 505.7640999999999,
+        "better": true,
+        "variant_pnl": 506.63626999999974,
+        "variant": "07-supertrend-di-adx-stack__period15x.italgo"
+      },
+      "GMKN": {
+        "delta": 143.72291599999986,
+        "better": true,
+        "variant_pnl": -18.666825999999986,
+        "variant": "07-supertrend-di-adx-stack__period15x.italgo"
+      },
+      "NVTK": {
+        "delta": 435.9470399999998,
+        "better": true,
+        "variant_pnl": 915.9366799999998,
+        "variant": "07-supertrend-di-adx-stack__period15x.italgo"
+      },
+      "TATN": {
+        "delta": 223.84276999999923,
+        "better": true,
+        "variant_pnl": 29.601649999999836,
+        "variant": "07-supertrend-di-adx-stack__period15x.italgo"
+      },
+      "PLZL": {
+        "delta": 158.1966299999981,
+        "better": true,
+        "variant_pnl": 2199.065289999999,
+        "variant": "07-supertrend-di-adx-stack__period15x.italgo"
+      },
+      "MGNT": {
+        "delta": -1056.9984000000013,
+        "better": false,
+        "variant_pnl": 4555.7464,
+        "variant": "07-supertrend-di-adx-stack__period15x.italgo"
+      }
+    },
+    "variant": "07-supertrend-di-adx-stack__period15x.italgo"
+  },
+  {
+    "base": "10-ema-cross-9-21.italgo",
+    "kind": "add_block_sma200",
+    "n_symbols_win": 6,
+    "symbols_win": [
+      "GMKN",
+      "LKOH",
+      "MGNT",
+      "NVTK",
+      "PLZL",
+      "ROSN"
+    ],
+    "mean_delta": 461.95473299999946,
+    "by_sym": {
+      "SBER": {
+        "delta": -69.25843900000008,
+        "better": false,
+        "variant_pnl": -21.774748999999986,
+        "variant": "10-ema-cross-9-21__sma200.italgo"
+      },
+      "GAZP": {
+        "delta": 144.97218700000002,
+        "better": true,
+        "variant_pnl": -24.656502999999972,
+        "variant": "10-ema-cross-9-21__sma200.italgo"
+      },
+      "LKOH": {
+        "delta": 1574.6345999999971,
+        "better": true,
+        "variant_pnl": 1488.87975,
+        "variant": "10-ema-cross-9-21__sma200.italgo"
+      },
+      "ROSN": {
+        "delta": 134.80960499999964,
+        "better": true,
+        "variant_pnl": 62.96543000000014,
+        "variant": "10-ema-cross-9-21__sma200.italgo"
+      },
+      "GMKN": {
+        "delta": 62.497443999999916,
+        "better": true,
+        "variant_pnl": 15.301038000000005,
+        "variant": "10-ema-cross-9-21__sma200.italgo"
+      },
+      "NVTK": {
+        "delta": 83.60221000000001,
+        "better": true,
+        "variant_pnl": 70.6512600000001,
+        "variant": "10-ema-cross-9-21__sma200.italgo"
+      },
+      "TATN": {
+        "delta": -216.6627699999999,
+        "better": false,
+        "variant_pnl": -36.32561999999962,
+        "variant": "10-ema-cross-9-21__sma200.italgo"
+      },
+      "PLZL": {
+        "delta": 393.2950099999996,
+        "better": true,
+        "variant_pnl": 1006.0395950000004,
+        "variant": "10-ema-cross-9-21__sma200.italgo"
+      },
+      "MGNT": {
+        "delta": 2049.7027499999995,
+        "better": true,
+        "variant_pnl": 2531.754900000001,
+        "variant": "10-ema-cross-9-21__sma200.italgo"
+      }
+    },
+    "variant": "10-ema-cross-9-21__sma200.italgo"
+  },
+  {
+    "base": "26-supertrend-rsi-ls.italgo",
+    "kind": "change_period_067",
+    "n_symbols_win": 6,
+    "symbols_win": [
+      "GAZP",
+      "LKOH",
+      "NVTK",
+      "PLZL",
+      "ROSN",
+      "SBER"
+    ],
+    "mean_delta": 418.10719799999976,
+    "by_sym": {
+      "SBER": {
+        "delta": 126.93579499999993,
+        "better": true,
+        "variant_pnl": 266.0118740000001,
+        "variant": "26-supertrend-rsi-ls__period067.italgo"
+      },
+      "GAZP": {
+        "delta": 331.45894400000003,
+        "better": true,
+        "variant_pnl": 141.004332,
+        "variant": "26-supertrend-rsi-ls__period067.italgo"
+      },
+      "LKOH": {
+        "delta": 278.6070000000027,
+        "better": true,
+        "variant_pnl": 1685.4429000000036,
+        "variant": "26-supertrend-rsi-ls__period067.italgo"
+      },
+      "ROSN": {
+        "delta": 588.2625350000005,
+        "better": true,
+        "variant_pnl": 470.9366650000008,
+        "variant": "26-supertrend-rsi-ls__period067.italgo"
+      },
+      "GMKN": {
+        "delta": -82.34232199999991,
+        "better": false,
+        "variant_pnl": 59.368582,
+        "variant": "26-supertrend-rsi-ls__period067.italgo"
+      },
+      "NVTK": {
+        "delta": 743.1531399999997,
+        "better": true,
+        "variant_pnl": 863.3717600000009,
+        "variant": "26-supertrend-rsi-ls__period067.italgo"
+      },
+      "TATN": {
+        "delta": 49.29616999999962,
+        "better": true,
+        "variant_pnl": -238.25260999999972,
+        "variant": "26-supertrend-rsi-ls__period067.italgo"
+      },
+      "PLZL": {
+        "delta": 1220.782019999999,
+        "better": true,
+        "variant_pnl": 1100.3357800000003,
+        "variant": "26-supertrend-rsi-ls__period067.italgo"
+      },
+      "MGNT": {
+        "delta": 506.81149999999616,
+        "better": true,
+        "variant_pnl": -929.2283999999963,
+        "variant": "26-supertrend-rsi-ls__period067.italgo"
+      }
+    },
+    "variant": "26-supertrend-rsi-ls__period067.italgo"
+  },
+  {
+    "base": "09-sma-cross-20-50.italgo",
+    "kind": "add_block_sma200",
+    "n_symbols_win": 6,
+    "symbols_win": [
+      "GMKN",
+      "LKOH",
+      "MGNT",
+      "NVTK",
+      "PLZL",
+      "ROSN"
+    ],
+    "mean_delta": 345.8523061111109,
+    "by_sym": {
+      "SBER": {
+        "delta": -82.79130900000007,
+        "better": false,
+        "variant_pnl": 19.729645000000062,
+        "variant": "09-sma-cross-20-50__sma200.italgo"
+      },
+      "GAZP": {
+        "delta": 264.857494,
+        "better": true,
+        "variant_pnl": -19.02420500000001,
+        "variant": "09-sma-cross-20-50__sma200.italgo"
+      },
+      "LKOH": {
+        "delta": 774.1736999999994,
+        "better": true,
+        "variant_pnl": 215.10339999999997,
+        "variant": "09-sma-cross-20-50__sma200.italgo"
+      },
+      "ROSN": {
+        "delta": 199.08836999999983,
+        "better": true,
+        "variant_pnl": 68.06933999999995,
+        "variant": "09-sma-cross-20-50__sma200.italgo"
+      },
+      "GMKN": {
+        "delta": 77.50970999999996,
+        "better": true,
+        "variant_pnl": 2.0791459999999944,
+        "variant": "09-sma-cross-20-50__sma200.italgo"
+      },
+      "NVTK": {
+        "delta": 41.37496999999962,
+        "better": true,
+        "variant_pnl": 590.7817199999997,
+        "variant": "09-sma-cross-20-50__sma200.italgo"
+      },
+      "TATN": {
+        "delta": -199.90442000000036,
+        "better": false,
+        "variant_pnl": -263.0333100000001,
+        "variant": "09-sma-cross-20-50__sma200.italgo"
+      },
+      "PLZL": {
+        "delta": 11.064440000000104,
+        "better": true,
+        "variant_pnl": 982.7880600000001,
+        "variant": "09-sma-cross-20-50__sma200.italgo"
+      },
+      "MGNT": {
+        "delta": 2027.2977999999998,
+        "better": true,
+        "variant_pnl": 191.79859999999917,
+        "variant": "09-sma-cross-20-50__sma200.italgo"
+      }
+    },
+    "variant": "09-sma-cross-20-50__sma200.italgo"
+  },
+  {
+    "base": "15-momentum-cross-0.italgo",
+    "kind": "add_block_ema",
+    "n_symbols_win": 6,
+    "symbols_win": [
+      "MGNT",
+      "NVTK",
+      "PLZL",
+      "ROSN",
+      "SBER",
+      "TATN"
+    ],
+    "mean_delta": 298.63548211110935,
+    "by_sym": {
+      "SBER": {
+        "delta": 61.157415999999955,
+        "better": true,
+        "variant_pnl": 43.00606600000029,
+        "variant": "15-momentum-cross-0__ema50.italgo"
+      },
+      "GAZP": {
+        "delta": -98.93508800000001,
+        "better": false,
+        "variant_pnl": -94.31140399999994,
+        "variant": "15-momentum-cross-0__ema50.italgo"
+      },
+      "LKOH": {
+        "delta": 627.2282499999933,
+        "better": true,
+        "variant_pnl": -606.9233499999905,
+        "variant": "15-momentum-cross-0__ema50.italgo"
+      },
+      "ROSN": {
+        "delta": 181.64072999999934,
+        "better": true,
+        "variant_pnl": 144.6694200000005,
+        "variant": "15-momentum-cross-0__ema50.italgo"
+      },
+      "GMKN": {
+        "delta": 82.78524599999974,
+        "better": true,
+        "variant_pnl": -0.16262999999997874,
+        "variant": "15-momentum-cross-0__ema50.italgo"
+      },
+      "NVTK": {
+        "delta": 1257.5323799999976,
+        "better": true,
+        "variant_pnl": 877.2535700000001,
+        "variant": "15-momentum-cross-0__ema50.italgo"
+      },
+      "TATN": {
+        "delta": 34.14959999999911,
+        "better": true,
+        "variant_pnl": 209.47548000000086,
+        "variant": "15-momentum-cross-0__ema50.italgo"
+      },
+      "PLZL": {
+        "delta": 448.8243049999992,
+        "better": true,
+        "variant_pnl": 1211.146580000001,
+        "variant": "15-momentum-cross-0__ema50.italgo"
+      },
+      "MGNT": {
+        "delta": 93.3364999999958,
+        "better": true,
+        "variant_pnl": 943.867850000001,
+        "variant": "15-momentum-cross-0__ema50.italgo"
+      }
+    },
+    "variant": "15-momentum-cross-0__ema50.italgo"
+  },
+  {
+    "base": "25-momentum-cross-0-ls.italgo",
+    "kind": "change_period_15x",
+    "n_symbols_win": 6,
+    "symbols_win": [
+      "GAZP",
+      "GMKN",
+      "LKOH",
+      "MGNT",
+      "SBER",
+      "TATN"
+    ],
+    "mean_delta": 271.8856907777738,
+    "by_sym": {
+      "SBER": {
+        "delta": 69.42140900000015,
+        "better": true,
+        "variant_pnl": 88.98600800000082,
+        "variant": "25-momentum-cross-0-ls__period15x.italgo"
+      },
+      "GAZP": {
+        "delta": 38.10861100000005,
+        "better": true,
+        "variant_pnl": 293.1531090000001,
+        "variant": "25-momentum-cross-0-ls__period15x.italgo"
+      },
+      "LKOH": {
+        "delta": 2653.2160999999733,
+        "better": true,
+        "variant_pnl": 2600.0729000000056,
+        "variant": "25-momentum-cross-0-ls__period15x.italgo"
+      },
+      "ROSN": {
+        "delta": -14.755155000000627,
+        "better": false,
+        "variant_pnl": 235.33826000000175,
+        "variant": "25-momentum-cross-0-ls__period15x.italgo"
+      },
+      "GMKN": {
+        "delta": 50.36316200000002,
+        "better": true,
+        "variant_pnl": 3.7035000000005596,
+        "variant": "25-momentum-cross-0-ls__period15x.italgo"
+      },
+      "NVTK": {
+        "delta": -572.1832000000031,
+        "better": false,
+        "variant_pnl": -393.32679999999823,
+        "variant": "25-momentum-cross-0-ls__period15x.italgo"
+      },
+      "TATN": {
+        "delta": 596.3556499999991,
+        "better": true,
+        "variant_pnl": 919.7565800000025,
+        "variant": "25-momentum-cross-0-ls__period15x.italgo"
+      },
+      "PLZL": {
+        "delta": -535.2540600000013,
+        "better": false,
+        "variant_pnl": 1084.114990000002,
+        "variant": "25-momentum-cross-0-ls__period15x.italgo"
+      },
+      "MGNT": {
+        "delta": 161.69869999999628,
+        "better": true,
+        "variant_pnl": 5930.331400000008,
+        "variant": "25-momentum-cross-0-ls__period15x.italgo"
+      }
+    },
+    "variant": "25-momentum-cross-0-ls__period15x.italgo"
+  },
+  {
+    "base": "18-mom-pct-ema50-filter.italgo",
+    "kind": "add_block_sma200",
+    "n_symbols_win": 6,
+    "symbols_win": [
+      "GAZP",
+      "GMKN",
+      "LKOH",
+      "MGNT",
+      "ROSN",
+      "TATN"
+    ],
+    "mean_delta": 184.15486388888817,
+    "by_sym": {
+      "SBER": {
+        "delta": -13.164334000000053,
+        "better": false,
+        "variant_pnl": 29.841732000000235,
+        "variant": "18-mom-pct-ema50-filter__sma200.italgo"
+      },
+      "GAZP": {
+        "delta": 98.98776799999996,
+        "better": true,
+        "variant_pnl": 4.676364000000021,
+        "variant": "18-mom-pct-ema50-filter__sma200.italgo"
+      },
+      "LKOH": {
+        "delta": 1898.3448999999964,
+        "better": true,
+        "variant_pnl": 1291.421550000006,
+        "variant": "18-mom-pct-ema50-filter__sma200.italgo"
+      },
+      "ROSN": {
+        "delta": 19.42245999999983,
+        "better": true,
+        "variant_pnl": 164.09188000000034,
+        "variant": "18-mom-pct-ema50-filter__sma200.italgo"
+      },
+      "GMKN": {
+        "delta": 17.64969600000005,
+        "better": true,
+        "variant_pnl": 17.48706600000007,
+        "variant": "18-mom-pct-ema50-filter__sma200.italgo"
+      },
+      "NVTK": {
+        "delta": -161.43624000000045,
+        "better": false,
+        "variant_pnl": 715.8173299999996,
+        "variant": "18-mom-pct-ema50-filter__sma200.italgo"
+      },
+      "TATN": {
+        "delta": 8.535809999999799,
+        "better": true,
+        "variant_pnl": 218.01129000000066,
+        "variant": "18-mom-pct-ema50-filter__sma200.italgo"
+      },
+      "PLZL": {
+        "delta": -300.19623500000023,
+        "better": false,
+        "variant_pnl": 910.9503450000008,
+        "variant": "18-mom-pct-ema50-filter__sma200.italgo"
+      },
+      "MGNT": {
+        "delta": 89.24994999999853,
+        "better": true,
+        "variant_pnl": 1033.1177999999995,
+        "variant": "18-mom-pct-ema50-filter__sma200.italgo"
+      }
+    },
+    "variant": "18-mom-pct-ema50-filter__sma200.italgo"
+  },
+  {
+    "base": "08-cci-regime-trail.italgo",
+    "kind": "change_period_067",
+    "n_symbols_win": 6,
+    "symbols_win": [
+      "GAZP",
+      "GMKN",
+      "LKOH",
+      "MGNT",
+      "SBER",
+      "TATN"
+    ],
+    "mean_delta": 160.50247962222252,
+    "by_sym": {
+      "SBER": {
+        "delta": 7.468430554999941,
+        "better": true,
+        "variant_pnl": 37.20301279,
+        "variant": "08-cci-regime-trail__period067.italgo"
+      },
+      "GAZP": {
+        "delta": 35.91069857499997,
+        "better": true,
+        "variant_pnl": 36.54687296499998,
+        "variant": "08-cci-regime-trail__period067.italgo"
+      },
+      "LKOH": {
+        "delta": 1032.6073290000004,
+        "better": true,
+        "variant_pnl": 1851.079501750005,
+        "variant": "08-cci-regime-trail__period067.italgo"
+      },
+      "ROSN": {
+        "delta": -32.777725074999864,
+        "better": false,
+        "variant_pnl": -54.11180814999983,
+        "variant": "08-cci-regime-trail__period067.italgo"
+      },
+      "GMKN": {
+        "delta": 8.517460319999998,
+        "better": true,
+        "variant_pnl": 18.595324030000143,
+        "variant": "08-cci-regime-trail__period067.italgo"
+      },
+      "NVTK": {
+        "delta": -27.463264300000105,
+        "better": false,
+        "variant_pnl": 130.26861440000096,
+        "variant": "08-cci-regime-trail__period067.italgo"
+      },
+      "TATN": {
+        "delta": 1.7650888000001146,
+        "better": true,
+        "variant_pnl": 66.05954205000012,
+        "variant": "08-cci-regime-trail__period067.italgo"
+      },
+      "PLZL": {
+        "delta": -96.01610352499881,
+        "better": false,
+        "variant_pnl": 386.79875700000184,
+        "variant": "08-cci-regime-trail__period067.italgo"
+      },
+      "MGNT": {
+        "delta": 514.5104022500009,
+        "better": true,
+        "variant_pnl": 293.332175999999,
+        "variant": "08-cci-regime-trail__period067.italgo"
+      }
+    },
+    "variant": "08-cci-regime-trail__period067.italgo"
+  },
+  {
+    "base": "26-supertrend-rsi-ls.italgo",
+    "kind": "change_period_15x",
+    "n_symbols_win": 6,
+    "symbols_win": [
+      "GAZP",
+      "LKOH",
+      "NVTK",
+      "PLZL",
+      "ROSN",
+      "TATN"
+    ],
+    "mean_delta": 120.70249588888844,
+    "by_sym": {
+      "SBER": {
+        "delta": -174.45932900000034,
+        "better": false,
+        "variant_pnl": -35.383250000000174,
+        "variant": "26-supertrend-rsi-ls__period15x.italgo"
+      },
+      "GAZP": {
+        "delta": 242.3046460000002,
+        "better": true,
+        "variant_pnl": 51.850034000000164,
+        "variant": "26-supertrend-rsi-ls__period15x.italgo"
+      },
+      "LKOH": {
+        "delta": 1535.748300000001,
+        "better": true,
+        "variant_pnl": 2942.584200000002,
+        "variant": "26-supertrend-rsi-ls__period15x.italgo"
+      },
+      "ROSN": {
+        "delta": 278.82726999999966,
+        "better": true,
+        "variant_pnl": 161.50139999999993,
+        "variant": "26-supertrend-rsi-ls__period15x.italgo"
+      },
+      "GMKN": {
+        "delta": -229.60338399999972,
+        "better": false,
+        "variant_pnl": -87.89247999999981,
+        "variant": "26-supertrend-rsi-ls__period15x.italgo"
+      },
+      "NVTK": {
+        "delta": 819.0435399999999,
+        "better": true,
+        "variant_pnl": 939.2621600000011,
+        "variant": "26-supertrend-rsi-ls__period15x.italgo"
+      },
+      "TATN": {
+        "delta": 553.3954299999998,
+        "better": true,
+        "variant_pnl": 265.8466500000005,
+        "variant": "26-supertrend-rsi-ls__period15x.italgo"
+      },
+      "PLZL": {
+        "delta": 2081.715439999999,
+        "better": true,
+        "variant_pnl": 1961.2692000000006,
+        "variant": "26-supertrend-rsi-ls__period15x.italgo"
+      },
+      "MGNT": {
+        "delta": -4020.6494500000035,
+        "better": false,
+        "variant_pnl": -5456.689349999996,
+        "variant": "26-supertrend-rsi-ls__period15x.italgo"
+      }
+    },
+    "variant": "26-supertrend-rsi-ls__period15x.italgo"
+  },
+  {
+    "base": "04-macd-stoch-long-short.italgo",
+    "kind": "change_period_15x",
+    "n_symbols_win": 5,
+    "symbols_win": [
+      "GMKN",
+      "LKOH",
+      "MGNT",
+      "SBER",
+      "TATN"
+    ],
+    "mean_delta": 870.0324483333328,
+    "by_sym": {
+      "SBER": {
+        "delta": 3.1252409999997894,
+        "better": true,
+        "variant_pnl": 168.89821500000005,
+        "variant": "04-macd-stoch-long-short__period15x.italgo"
+      },
+      "GAZP": {
+        "delta": 130.53376100000014,
+        "better": true,
+        "variant_pnl": -1.455603999999937,
+        "variant": "04-macd-stoch-long-short__period15x.italgo"
+      },
+      "LKOH": {
+        "delta": 3314.3334000000013,
+        "better": true,
+        "variant_pnl": 3213.282000000002,
+        "variant": "04-macd-stoch-long-short__period15x.italgo"
+      },
+      "ROSN": {
+        "delta": 190.82716499999947,
+        "better": true,
+        "variant_pnl": -31.51287499999995,
+        "variant": "04-macd-stoch-long-short__period15x.italgo"
+      },
+      "GMKN": {
+        "delta": 105.29439800000013,
+        "better": true,
+        "variant_pnl": 123.93712000000018,
+        "variant": "04-macd-stoch-long-short__period15x.italgo"
+      },
+      "NVTK": {
+        "delta": -915.0802600000015,
+        "better": false,
+        "variant_pnl": 246.66396000000032,
+        "variant": "04-macd-stoch-long-short__period15x.italgo"
+      },
+      "TATN": {
+        "delta": 148.26935999999966,
+        "better": true,
+        "variant_pnl": 203.3437700000003,
+        "variant": "04-macd-stoch-long-short__period15x.italgo"
+      },
+      "PLZL": {
+        "delta": 1033.8621199999998,
+        "better": true,
+        "variant_pnl": -70.14175000000023,
+        "variant": "04-macd-stoch-long-short__period15x.italgo"
+      },
+      "MGNT": {
+        "delta": 3819.126849999996,
+        "better": true,
+        "variant_pnl": 7.917349999999715,
+        "variant": "04-macd-stoch-long-short__period15x.italgo"
+      }
+    },
+    "variant": "04-macd-stoch-long-short__period15x.italgo"
+  },
+  {
+    "base": "12-dema-cross-12-26.italgo",
+    "kind": "add_block_sma200",
+    "n_symbols_win": 5,
+    "symbols_win": [
+      "GMKN",
+      "LKOH",
+      "MGNT",
+      "PLZL",
+      "ROSN"
+    ],
+    "mean_delta": 868.0002793333323,
+    "by_sym": {
+      "SBER": {
+        "delta": 92.05445199999993,
+        "better": true,
+        "variant_pnl": -11.377908999999988,
+        "variant": "12-dema-cross-12-26__sma200.italgo"
+      },
+      "GAZP": {
+        "delta": 14.499093999999971,
+        "better": true,
+        "variant_pnl": -9.519969000000003,
+        "variant": "12-dema-cross-12-26__sma200.italgo"
+      },
+      "LKOH": {
+        "delta": 3803.963549999995,
+        "better": true,
+        "variant_pnl": 1184.830100000001,
+        "variant": "12-dema-cross-12-26__sma200.italgo"
+      },
+      "ROSN": {
+        "delta": 167.48701499999976,
+        "better": true,
+        "variant_pnl": 33.48800500000061,
+        "variant": "12-dema-cross-12-26__sma200.italgo"
+      },
+      "GMKN": {
+        "delta": 114.60755799999981,
+        "better": true,
+        "variant_pnl": 24.714764000000017,
+        "variant": "12-dema-cross-12-26__sma200.italgo"
+      },
+      "NVTK": {
+        "delta": 569.7023399999993,
+        "better": true,
+        "variant_pnl": -56.207320000000664,
+        "variant": "12-dema-cross-12-26__sma200.italgo"
+      },
+      "TATN": {
+        "delta": -218.8541600000002,
+        "better": false,
+        "variant_pnl": -40.4789999999997,
+        "variant": "12-dema-cross-12-26__sma200.italgo"
+      },
+      "PLZL": {
+        "delta": 570.2664149999991,
+        "better": true,
+        "variant_pnl": 1103.4537200000018,
+        "variant": "12-dema-cross-12-26__sma200.italgo"
+      },
+      "MGNT": {
+        "delta": 2698.2762499999985,
+        "better": true,
+        "variant_pnl": 363.33985000000075,
+        "variant": "12-dema-cross-12-26__sma200.italgo"
+      }
+    },
+    "variant": "12-dema-cross-12-26__sma200.italgo"
+  },
+  {
+    "base": "17-supertrend-rsi-tight.italgo",
+    "kind": "add_block_sma200",
+    "n_symbols_win": 5,
+    "symbols_win": [
+      "GMKN",
+      "LKOH",
+      "PLZL",
+      "ROSN",
+      "SBER"
+    ],
+    "mean_delta": 681.7803428888882,
+    "by_sym": {
+      "SBER": {
+        "delta": 114.25581999999982,
+        "better": true,
+        "variant_pnl": 72.8579289999999,
+        "variant": "17-supertrend-rsi-tight__sma200.italgo"
+      },
+      "GAZP": {
+        "delta": 97.01285999999992,
+        "better": true,
+        "variant_pnl": -24.593660999999997,
+        "variant": "17-supertrend-rsi-tight__sma200.italgo"
+      },
+      "LKOH": {
+        "delta": 546.9860999999974,
+        "better": true,
+        "variant_pnl": 2631.3657499999995,
+        "variant": "17-supertrend-rsi-tight__sma200.italgo"
+      },
+      "ROSN": {
+        "delta": 34.25077500000003,
+        "better": true,
+        "variant_pnl": 16.73249499999997,
+        "variant": "17-supertrend-rsi-tight__sma200.italgo"
+      },
+      "GMKN": {
+        "delta": 47.885485999999986,
+        "better": true,
+        "variant_pnl": 14.904576000000048,
+        "variant": "17-supertrend-rsi-tight__sma200.italgo"
+      },
+      "NVTK": {
+        "delta": 509.08036999999956,
+        "better": true,
+        "variant_pnl": -159.68739999999934,
+        "variant": "17-supertrend-rsi-tight__sma200.italgo"
+      },
+      "TATN": {
+        "delta": -59.58346000000023,
+        "better": false,
+        "variant_pnl": 13.9201300000002,
+        "variant": "17-supertrend-rsi-tight__sma200.italgo"
+      },
+      "PLZL": {
+        "delta": 1057.4059349999998,
+        "better": true,
+        "variant_pnl": 1251.6947650000009,
+        "variant": "17-supertrend-rsi-tight__sma200.italgo"
+      },
+      "MGNT": {
+        "delta": 3788.729199999998,
+        "better": true,
+        "variant_pnl": -362.62884999999915,
+        "variant": "17-supertrend-rsi-tight__sma200.italgo"
+      }
+    },
+    "variant": "17-supertrend-rsi-tight__sma200.italgo"
+  },
+  {
+    "base": "03-breakout-donchian-volume.italgo",
+    "kind": "add_block_sma200",
+    "n_symbols_win": 5,
+    "symbols_win": [
+      "GMKN",
+      "LKOH",
+      "MGNT",
+      "NVTK",
+      "PLZL"
+    ],
+    "mean_delta": 659.3735566666666,
+    "by_sym": {
+      "SBER": {
+        "delta": -31.231009999999998,
+        "better": false,
+        "variant_pnl": 114.55385499999991,
+        "variant": "03-breakout-donchian-volume__sma200.italgo"
+      },
+      "GAZP": {
+        "delta": 145.1914830000001,
+        "better": true,
+        "variant_pnl": -57.03764499999997,
+        "variant": "03-breakout-donchian-volume__sma200.italgo"
+      },
+      "LKOH": {
+        "delta": 2088.1901999999995,
+        "better": true,
+        "variant_pnl": 2413.13025,
+        "variant": "03-breakout-donchian-volume__sma200.italgo"
+      },
+      "ROSN": {
+        "delta": 137.18428999999992,
+        "better": true,
+        "variant_pnl": -19.91374500000012,
+        "variant": "03-breakout-donchian-volume__sma200.italgo"
+      },
+      "GMKN": {
+        "delta": 75.64591199999997,
+        "better": true,
+        "variant_pnl": 13.936714000000038,
+        "variant": "03-breakout-donchian-volume__sma200.italgo"
+      },
+      "NVTK": {
+        "delta": 430.12117999999987,
+        "better": true,
+        "variant_pnl": 120.67671000000018,
+        "variant": "03-breakout-donchian-volume__sma200.italgo"
+      },
+      "TATN": {
+        "delta": -43.059720000000084,
+        "better": false,
+        "variant_pnl": 107.71988000000016,
+        "variant": "03-breakout-donchian-volume__sma200.italgo"
+      },
+      "PLZL": {
+        "delta": 42.813625,
+        "better": true,
+        "variant_pnl": 1022.197930000001,
+        "variant": "03-breakout-donchian-volume__sma200.italgo"
+      },
+      "MGNT": {
+        "delta": 3089.50605,
+        "better": true,
+        "variant_pnl": 1690.9768000000008,
+        "variant": "03-breakout-donchian-volume__sma200.italgo"
+      }
+    },
+    "variant": "03-breakout-donchian-volume__sma200.italgo"
+  },
+  {
+    "base": "11-tema-cross-10-30.italgo",
+    "kind": "add_block_ema",
+    "n_symbols_win": 5,
+    "symbols_win": [
+      "LKOH",
+      "NVTK",
+      "PLZL",
+      "ROSN",
+      "SBER"
+    ],
+    "mean_delta": 646.4919853333325,
+    "by_sym": {
+      "SBER": {
+        "delta": 174.08745399999967,
+        "better": true,
+        "variant_pnl": 46.370306000000056,
+        "variant": "11-tema-cross-10-30__ema50.italgo"
+      },
+      "GAZP": {
+        "delta": -82.81042099999996,
+        "better": false,
+        "variant_pnl": 6.516013000000029,
+        "variant": "11-tema-cross-10-30__ema50.italgo"
+      },
+      "LKOH": {
+        "delta": 2247.0849999999973,
+        "better": true,
+        "variant_pnl": 90.14940000000206,
+        "variant": "11-tema-cross-10-30__ema50.italgo"
+      },
+      "ROSN": {
+        "delta": 221.10934499999985,
+        "better": true,
+        "variant_pnl": 155.1874650000002,
+        "variant": "11-tema-cross-10-30__ema50.italgo"
+      },
+      "GMKN": {
+        "delta": -3.090840000000256,
+        "better": false,
+        "variant_pnl": 8.521210000000096,
+        "variant": "11-tema-cross-10-30__ema50.italgo"
+      },
+      "NVTK": {
+        "delta": 1040.6180299999987,
+        "better": true,
+        "variant_pnl": 723.005980000001,
+        "variant": "11-tema-cross-10-30__ema50.italgo"
+      },
+      "TATN": {
+        "delta": -104.53996999999981,
+        "better": false,
+        "variant_pnl": 57.03206999999986,
+        "variant": "11-tema-cross-10-30__ema50.italgo"
+      },
+      "PLZL": {
+        "delta": 233.13481999999976,
+        "better": true,
+        "variant_pnl": 911.7082550000018,
+        "variant": "11-tema-cross-10-30__ema50.italgo"
+      },
+      "MGNT": {
+        "delta": 2092.834449999997,
+        "better": true,
+        "variant_pnl": -424.43539999999985,
+        "variant": "11-tema-cross-10-30__ema50.italgo"
+      }
+    },
+    "variant": "11-tema-cross-10-30__ema50.italgo"
+  },
+  {
+    "base": "20-donchian-55.italgo",
+    "kind": "add_block_adx",
+    "n_symbols_win": 5,
+    "symbols_win": [
+      "LKOH",
+      "MGNT",
+      "PLZL",
+      "SBER",
+      "TATN"
+    ],
+    "mean_delta": 544.2076181111111,
+    "by_sym": {
+      "SBER": {
+        "delta": 10.335081000000002,
+        "better": true,
+        "variant_pnl": 166.03515200000004,
+        "variant": "20-donchian-55__adx25.italgo"
+      },
+      "GAZP": {
+        "delta": 5.732493999999974,
+        "better": true,
+        "variant_pnl": -192.48541699999998,
+        "variant": "20-donchian-55__adx25.italgo"
+      },
+      "LKOH": {
+        "delta": 3307.305199999999,
+        "better": true,
+        "variant_pnl": 1025.1417499999998,
+        "variant": "20-donchian-55__adx25.italgo"
+      },
+      "ROSN": {
+        "delta": -67.90679000000006,
+        "better": false,
+        "variant_pnl": -58.473479999999995,
+        "variant": "20-donchian-55__adx25.italgo"
+      },
+      "GMKN": {
+        "delta": 43.22966800000003,
+        "better": true,
+        "variant_pnl": -17.4336,
+        "variant": "20-donchian-55__adx25.italgo"
+      },
+      "NVTK": {
+        "delta": -264.4264400000002,
+        "better": false,
+        "variant_pnl": -184.25572999999997,
+        "variant": "20-donchian-55__adx25.italgo"
+      },
+      "TATN": {
+        "delta": 145.31100999999995,
+        "better": true,
+        "variant_pnl": 205.85620000000011,
+        "variant": "20-donchian-55__adx25.italgo"
+      },
+      "PLZL": {
+        "delta": 86.70264000000009,
+        "better": true,
+        "variant_pnl": 264.6161050000004,
+        "variant": "20-donchian-55__adx25.italgo"
+      },
+      "MGNT": {
+        "delta": 1631.5857000000015,
+        "better": true,
+        "variant_pnl": 1028.7471500000001,
+        "variant": "20-donchian-55__adx25.italgo"
+      }
+    },
+    "variant": "20-donchian-55__adx25.italgo"
+  },
+  {
+    "base": "20-donchian-55.italgo",
+    "kind": "add_block_sma200",
+    "n_symbols_win": 5,
+    "symbols_win": [
+      "MGNT",
+      "NVTK",
+      "PLZL",
+      "SBER",
+      "TATN"
+    ],
+    "mean_delta": 422.47948577777794,
+    "by_sym": {
+      "SBER": {
+        "delta": 7.614808999999951,
+        "better": true,
+        "variant_pnl": 163.31488,
+        "variant": "20-donchian-55__sma200.italgo"
+      },
+      "GAZP": {
+        "delta": 134.89488,
+        "better": true,
+        "variant_pnl": -63.32303099999997,
+        "variant": "20-donchian-55__sma200.italgo"
+      },
+      "LKOH": {
+        "delta": 1988.1276000000007,
+        "better": true,
+        "variant_pnl": -294.0358499999984,
+        "variant": "20-donchian-55__sma200.italgo"
+      },
+      "ROSN": {
+        "delta": -11.301129999999944,
+        "better": false,
+        "variant_pnl": -1.867819999999881,
+        "variant": "20-donchian-55__sma200.italgo"
+      },
+      "GMKN": {
+        "delta": 38.90105799999996,
+        "better": true,
+        "variant_pnl": -21.762210000000067,
+        "variant": "20-donchian-55__sma200.italgo"
+      },
+      "NVTK": {
+        "delta": 167.1982999999999,
+        "better": true,
+        "variant_pnl": 247.36901000000012,
+        "variant": "20-donchian-55__sma200.italgo"
+      },
+      "TATN": {
+        "delta": 58.476039999999955,
+        "better": true,
+        "variant_pnl": 119.02123000000012,
+        "variant": "20-donchian-55__sma200.italgo"
+      },
+      "PLZL": {
+        "delta": 701.2468649999998,
+        "better": true,
+        "variant_pnl": 879.1603300000002,
+        "variant": "20-donchian-55__sma200.italgo"
+      },
+      "MGNT": {
+        "delta": 717.156950000001,
+        "better": true,
+        "variant_pnl": 114.31839999999966,
+        "variant": "20-donchian-55__sma200.italgo"
+      }
+    },
+    "variant": "20-donchian-55__sma200.italgo"
+  },
+  {
+    "base": "02-mean-reversion-bb-rsi.italgo",
+    "kind": "add_block_adx",
+    "n_symbols_win": 5,
+    "symbols_win": [
+      "LKOH",
+      "NVTK",
+      "PLZL",
+      "ROSN",
+      "TATN"
+    ],
+    "mean_delta": 329.27977266666636,
+    "by_sym": {
+      "SBER": {
+        "delta": 39.60428799999994,
+        "better": true,
+        "variant_pnl": -38.2687429999999,
+        "variant": "02-mean-reversion-bb-rsi__adx25.italgo"
+      },
+      "GAZP": {
+        "delta": 1.8381079999999486,
+        "better": true,
+        "variant_pnl": -36.97556400000005,
+        "variant": "02-mean-reversion-bb-rsi__adx25.italgo"
+      },
+      "LKOH": {
+        "delta": 1817.5832999999989,
+        "better": true,
+        "variant_pnl": 2183.3999000000026,
+        "variant": "02-mean-reversion-bb-rsi__adx25.italgo"
+      },
+      "ROSN": {
+        "delta": 239.22122499999978,
+        "better": true,
+        "variant_pnl": 75.25531500000011,
+        "variant": "02-mean-reversion-bb-rsi__adx25.italgo"
+      },
+      "GMKN": {
+        "delta": -30.965872000000118,
+        "better": false,
+        "variant_pnl": -15.855241999999919,
+        "variant": "02-mean-reversion-bb-rsi__adx25.italgo"
+      },
+      "NVTK": {
+        "delta": 322.9191199999999,
+        "better": true,
+        "variant_pnl": 86.46866000000034,
+        "variant": "02-mean-reversion-bb-rsi__adx25.italgo"
+      },
+      "TATN": {
+        "delta": 125.12439999999998,
+        "better": true,
+        "variant_pnl": 225.4033700000001,
+        "variant": "02-mean-reversion-bb-rsi__adx25.italgo"
+      },
+      "PLZL": {
+        "delta": 597.4632849999996,
+        "better": true,
+        "variant_pnl": 36.60101000000088,
+        "variant": "02-mean-reversion-bb-rsi__adx25.italgo"
+      },
+      "MGNT": {
+        "delta": -149.26990000000114,
+        "better": false,
+        "variant_pnl": -1450.9405999999994,
+        "variant": "02-mean-reversion-bb-rsi__adx25.italgo"
+      }
+    },
+    "variant": "02-mean-reversion-bb-rsi__adx25.italgo"
+  },
+  {
+    "base": "13-rsi-cross-50.italgo",
+    "kind": "add_block_sma200",
+    "n_symbols_win": 5,
+    "symbols_win": [
+      "GMKN",
+      "LKOH",
+      "PLZL",
+      "ROSN",
+      "SBER"
+    ],
+    "mean_delta": 244.21254455555442,
+    "by_sym": {
+      "SBER": {
+        "delta": 46.530004000000005,
+        "better": true,
+        "variant_pnl": 42.90992800000049,
+        "variant": "13-rsi-cross-50__sma200.italgo"
+      },
+      "GAZP": {
+        "delta": 1.4581749999999118,
+        "better": true,
+        "variant_pnl": -6.989979000000005,
+        "variant": "13-rsi-cross-50__sma200.italgo"
+      },
+      "LKOH": {
+        "delta": 1760.8583999999978,
+        "better": true,
+        "variant_pnl": 1386.7619000000054,
+        "variant": "13-rsi-cross-50__sma200.italgo"
+      },
+      "ROSN": {
+        "delta": 116.73373499999957,
+        "better": true,
+        "variant_pnl": 30.914060000000802,
+        "variant": "13-rsi-cross-50__sma200.italgo"
+      },
+      "GMKN": {
+        "delta": 56.28851199999988,
+        "better": true,
+        "variant_pnl": 12.282196000000013,
+        "variant": "13-rsi-cross-50__sma200.italgo"
+      },
+      "NVTK": {
+        "delta": 373.60050999999885,
+        "better": true,
+        "variant_pnl": -29.664720000000216,
+        "variant": "13-rsi-cross-50__sma200.italgo"
+      },
+      "TATN": {
+        "delta": -202.5167300000008,
+        "better": false,
+        "variant_pnl": 141.47461000000072,
+        "variant": "13-rsi-cross-50__sma200.italgo"
+      },
+      "PLZL": {
+        "delta": 73.63124499999913,
+        "better": true,
+        "variant_pnl": 960.4279900000026,
+        "variant": "13-rsi-cross-50__sma200.italgo"
+      },
+      "MGNT": {
+        "delta": -28.670950000004495,
+        "better": false,
+        "variant_pnl": 1229.4707000000017,
+        "variant": "13-rsi-cross-50__sma200.italgo"
+      }
+    },
+    "variant": "13-rsi-cross-50__sma200.italgo"
+  },
+  {
+    "base": "14-cmo-cross-0.italgo",
+    "kind": "add_block_sma200",
+    "n_symbols_win": 5,
+    "symbols_win": [
+      "GMKN",
+      "LKOH",
+      "PLZL",
+      "ROSN",
+      "SBER"
+    ],
+    "mean_delta": 244.21254455555442,
+    "by_sym": {
+      "SBER": {
+        "delta": 46.530004000000005,
+        "better": true,
+        "variant_pnl": 42.90992800000049,
+        "variant": "14-cmo-cross-0__sma200.italgo"
+      },
+      "GAZP": {
+        "delta": 1.4581749999999118,
+        "better": true,
+        "variant_pnl": -6.989979000000005,
+        "variant": "14-cmo-cross-0__sma200.italgo"
+      },
+      "LKOH": {
+        "delta": 1760.8583999999978,
+        "better": true,
+        "variant_pnl": 1386.7619000000054,
+        "variant": "14-cmo-cross-0__sma200.italgo"
+      },
+      "ROSN": {
+        "delta": 116.73373499999957,
+        "better": true,
+        "variant_pnl": 30.914060000000802,
+        "variant": "14-cmo-cross-0__sma200.italgo"
+      },
+      "GMKN": {
+        "delta": 56.28851199999988,
+        "better": true,
+        "variant_pnl": 12.282196000000013,
+        "variant": "14-cmo-cross-0__sma200.italgo"
+      },
+      "NVTK": {
+        "delta": 373.60050999999885,
+        "better": true,
+        "variant_pnl": -29.664720000000216,
+        "variant": "14-cmo-cross-0__sma200.italgo"
+      },
+      "TATN": {
+        "delta": -202.5167300000008,
+        "better": false,
+        "variant_pnl": 141.47461000000072,
+        "variant": "14-cmo-cross-0__sma200.italgo"
+      },
+      "PLZL": {
+        "delta": 73.63124499999913,
+        "better": true,
+        "variant_pnl": 960.4279900000026,
+        "variant": "14-cmo-cross-0__sma200.italgo"
+      },
+      "MGNT": {
+        "delta": -28.670950000004495,
+        "better": false,
+        "variant_pnl": 1229.4707000000017,
+        "variant": "14-cmo-cross-0__sma200.italgo"
+      }
+    },
+    "variant": "14-cmo-cross-0__sma200.italgo"
+  },
+  {
+    "base": "17-supertrend-rsi-tight.italgo",
+    "kind": "add_block_ema",
+    "n_symbols_win": 5,
+    "symbols_win": [
+      "GMKN",
+      "PLZL",
+      "ROSN",
+      "SBER",
+      "TATN"
+    ],
+    "mean_delta": 152.88746555555528,
+    "by_sym": {
+      "SBER": {
+        "delta": 118.18372099999985,
+        "better": true,
+        "variant_pnl": 76.78582999999993,
+        "variant": "17-supertrend-rsi-tight__ema50.italgo"
+      },
+      "GAZP": {
+        "delta": 47.49899399999997,
+        "better": true,
+        "variant_pnl": -74.10752699999995,
+        "variant": "17-supertrend-rsi-tight__ema50.italgo"
+      },
+      "LKOH": {
+        "delta": -1886.5703500000009,
+        "better": false,
+        "variant_pnl": 197.80930000000126,
+        "variant": "17-supertrend-rsi-tight__ema50.italgo"
+      },
+      "ROSN": {
+        "delta": 84.35658000000001,
+        "better": true,
+        "variant_pnl": 66.83829999999995,
+        "variant": "17-supertrend-rsi-tight__ema50.italgo"
+      },
+      "GMKN": {
+        "delta": 36.400610000000015,
+        "better": true,
+        "variant_pnl": 3.419700000000077,
+        "variant": "17-supertrend-rsi-tight__ema50.italgo"
+      },
+      "NVTK": {
+        "delta": 656.6178199999998,
+        "better": true,
+        "variant_pnl": -12.14994999999908,
+        "variant": "17-supertrend-rsi-tight__ema50.italgo"
+      },
+      "TATN": {
+        "delta": 136.52319999999958,
+        "better": true,
+        "variant_pnl": 210.02679,
+        "variant": "17-supertrend-rsi-tight__ema50.italgo"
+      },
+      "PLZL": {
+        "delta": 432.6044149999997,
+        "better": true,
+        "variant_pnl": 626.8932450000008,
+        "variant": "17-supertrend-rsi-tight__ema50.italgo"
+      },
+      "MGNT": {
+        "delta": 1750.3721999999993,
+        "better": true,
+        "variant_pnl": -2400.9858499999978,
+        "variant": "17-supertrend-rsi-tight__ema50.italgo"
+      }
+    },
+    "variant": "17-supertrend-rsi-tight__ema50.italgo"
+  },
+  {
+    "base": "15-momentum-cross-0.italgo",
+    "kind": "change_period_15x",
+    "n_symbols_win": 5,
+    "symbols_win": [
+      "GAZP",
+      "LKOH",
+      "MGNT",
+      "SBER",
+      "TATN"
+    ],
+    "mean_delta": 128.12277744444253,
+    "by_sym": {
+      "SBER": {
+        "delta": 34.95303100000011,
+        "better": true,
+        "variant_pnl": 16.801681000000443,
+        "variant": "15-momentum-cross-0__period15x.italgo"
+      },
+      "GAZP": {
+        "delta": 3.4108699999999317,
+        "better": true,
+        "variant_pnl": 8.034554,
+        "variant": "15-momentum-cross-0__period15x.italgo"
+      },
+      "LKOH": {
+        "delta": 1326.6080499999866,
+        "better": true,
+        "variant_pnl": 92.45645000000286,
+        "variant": "15-momentum-cross-0__period15x.italgo"
+      },
+      "ROSN": {
+        "delta": -10.80223500000028,
+        "better": false,
+        "variant_pnl": -47.7735449999991,
+        "variant": "15-momentum-cross-0__period15x.italgo"
+      },
+      "GMKN": {
+        "delta": 24.731626000000006,
+        "better": true,
+        "variant_pnl": -58.21624999999972,
+        "variant": "15-momentum-cross-0__period15x.italgo"
+      },
+      "NVTK": {
+        "delta": -287.19149000000164,
+        "better": false,
+        "variant_pnl": -667.4702999999992,
+        "variant": "15-momentum-cross-0__period15x.italgo"
+      },
+      "TATN": {
+        "delta": 289.6269699999995,
+        "better": true,
+        "variant_pnl": 464.95285000000126,
+        "variant": "15-momentum-cross-0__period15x.italgo"
+      },
+      "PLZL": {
+        "delta": -309.0811750000007,
+        "better": false,
+        "variant_pnl": 453.2411000000011,
+        "variant": "15-momentum-cross-0__period15x.italgo"
+      },
+      "MGNT": {
+        "delta": 80.8493499999995,
+        "better": true,
+        "variant_pnl": 931.3807000000047,
+        "variant": "15-momentum-cross-0__period15x.italgo"
+      }
+    },
+    "variant": "15-momentum-cross-0__period15x.italgo"
+  },
+  {
+    "base": "08-cci-regime-trail.italgo",
+    "kind": "change_period_15x",
+    "n_symbols_win": 5,
+    "symbols_win": [
+      "GAZP",
+      "LKOH",
+      "MGNT",
+      "ROSN",
+      "SBER"
+    ],
+    "mean_delta": 52.15531115444415,
+    "by_sym": {
+      "SBER": {
+        "delta": 2.3010139199999458,
+        "better": true,
+        "variant_pnl": 32.03559615500001,
+        "variant": "08-cci-regime-trail__period15x.italgo"
+      },
+      "GAZP": {
+        "delta": 17.252047335,
+        "better": true,
+        "variant_pnl": 17.888221725000008,
+        "variant": "08-cci-regime-trail__period15x.italgo"
+      },
+      "LKOH": {
+        "delta": 535.9476794999973,
+        "better": true,
+        "variant_pnl": 1354.419852250002,
+        "variant": "08-cci-regime-trail__period15x.italgo"
+      },
+      "ROSN": {
+        "delta": 40.62668375000004,
+        "better": true,
+        "variant_pnl": 19.292600675000074,
+        "variant": "08-cci-regime-trail__period15x.italgo"
+      },
+      "GMKN": {
+        "delta": -9.324613540000144,
+        "better": false,
+        "variant_pnl": 0.7532501700000012,
+        "variant": "08-cci-regime-trail__period15x.italgo"
+      },
+      "NVTK": {
+        "delta": -200.58842955000011,
+        "better": false,
+        "variant_pnl": -42.85655084999905,
+        "variant": "08-cci-regime-trail__period15x.italgo"
+      },
+      "TATN": {
+        "delta": -1.9030699499997468,
+        "better": false,
+        "variant_pnl": 62.39138330000026,
+        "variant": "08-cci-regime-trail__period15x.italgo"
+      },
+      "PLZL": {
+        "delta": -467.2457100749999,
+        "better": false,
+        "variant_pnl": 15.569150450000734,
+        "variant": "08-cci-regime-trail__period15x.italgo"
+      },
+      "MGNT": {
+        "delta": 552.332199,
+        "better": true,
+        "variant_pnl": 331.15397274999805,
+        "variant": "08-cci-regime-trail__period15x.italgo"
+      }
+    },
+    "variant": "08-cci-regime-trail__period15x.italgo"
+  },
+  {
+    "base": "02-mean-reversion-bb-rsi.italgo",
+    "kind": "change_period_15x",
+    "n_symbols_win": 5,
+    "symbols_win": [
+      "LKOH",
+      "NVTK",
+      "ROSN",
+      "SBER",
+      "TATN"
+    ],
+    "mean_delta": 24.143015999999484,
+    "by_sym": {
+      "SBER": {
+        "delta": 109.42916399999994,
+        "better": true,
+        "variant_pnl": 31.556133000000102,
+        "variant": "02-mean-reversion-bb-rsi__period15x.italgo"
+      },
+      "GAZP": {
+        "delta": 28.308055999999993,
+        "better": true,
+        "variant_pnl": -10.505616000000003,
+        "variant": "02-mean-reversion-bb-rsi__period15x.italgo"
+      },
+      "LKOH": {
+        "delta": 108.67059999999856,
+        "better": true,
+        "variant_pnl": 474.4872000000023,
+        "variant": "02-mean-reversion-bb-rsi__period15x.italgo"
+      },
+      "ROSN": {
+        "delta": 215.69968999999986,
+        "better": true,
+        "variant_pnl": 51.733780000000195,
+        "variant": "02-mean-reversion-bb-rsi__period15x.italgo"
+      },
+      "GMKN": {
+        "delta": -15.707806000000147,
+        "better": false,
+        "variant_pnl": -0.5971759999999477,
+        "variant": "02-mean-reversion-bb-rsi__period15x.italgo"
+      },
+      "NVTK": {
+        "delta": 329.5107800000002,
+        "better": true,
+        "variant_pnl": 93.06032000000062,
+        "variant": "02-mean-reversion-bb-rsi__period15x.italgo"
+      },
+      "TATN": {
+        "delta": 186.2950599999998,
+        "better": true,
+        "variant_pnl": 286.57402999999994,
+        "variant": "02-mean-reversion-bb-rsi__period15x.italgo"
+      },
+      "PLZL": {
+        "delta": 434.72884999999906,
+        "better": true,
+        "variant_pnl": -126.13342499999965,
+        "variant": "02-mean-reversion-bb-rsi__period15x.italgo"
+      },
+      "MGNT": {
+        "delta": -1179.6472500000018,
+        "better": false,
+        "variant_pnl": -2481.31795,
+        "variant": "02-mean-reversion-bb-rsi__period15x.italgo"
+      }
+    },
+    "variant": "02-mean-reversion-bb-rsi__period15x.italgo"
+  },
+  {
+    "base": "04-macd-stoch-long-short.italgo",
+    "kind": "add_block_adx",
+    "n_symbols_win": 4,
+    "symbols_win": [
+      "GMKN",
+      "LKOH",
+      "PLZL",
+      "TATN"
+    ],
+    "mean_delta": 1163.1615864444445,
+    "by_sym": {
+      "SBER": {
+        "delta": -347.02273600000024,
+        "better": false,
+        "variant_pnl": -181.24976199999998,
+        "variant": "04-macd-stoch-long-short__adx25.italgo"
+      },
+      "GAZP": {
+        "delta": 64.13758600000011,
+        "better": true,
+        "variant_pnl": -67.85177899999996,
+        "variant": "04-macd-stoch-long-short__adx25.italgo"
+      },
+      "LKOH": {
+        "delta": 7423.893050000003,
+        "better": true,
+        "variant_pnl": 7322.841650000004,
+        "variant": "04-macd-stoch-long-short__adx25.italgo"
+      },
+      "ROSN": {
+        "delta": 10.402809999999818,
+        "better": true,
+        "variant_pnl": -211.9372299999996,
+        "variant": "04-macd-stoch-long-short__adx25.italgo"
+      },
+      "GMKN": {
+        "delta": 45.70044799999994,
+        "better": true,
+        "variant_pnl": 64.34316999999999,
+        "variant": "04-macd-stoch-long-short__adx25.italgo"
+      },
+      "NVTK": {
+        "delta": -325.26674000000094,
+        "better": false,
+        "variant_pnl": 836.4774800000009,
+        "variant": "04-macd-stoch-long-short__adx25.italgo"
+      },
+      "TATN": {
+        "delta": 493.0369999999996,
+        "better": true,
+        "variant_pnl": 548.1114100000002,
+        "variant": "04-macd-stoch-long-short__adx25.italgo"
+      },
+      "PLZL": {
+        "delta": 1602.5202600000005,
+        "better": true,
+        "variant_pnl": 498.51639000000046,
+        "variant": "04-macd-stoch-long-short__adx25.italgo"
+      },
+      "MGNT": {
+        "delta": 1501.0525999999982,
+        "better": true,
+        "variant_pnl": -2310.156899999998,
+        "variant": "04-macd-stoch-long-short__adx25.italgo"
+      }
+    },
+    "variant": "04-macd-stoch-long-short__adx25.italgo"
+  },
+  {
+    "base": "04-macd-stoch-long-short.italgo",
+    "kind": "add_block_ema",
+    "n_symbols_win": 4,
+    "symbols_win": [
+      "GMKN",
+      "LKOH",
+      "ROSN",
+      "TATN"
+    ],
+    "mean_delta": 1058.8082506666663,
+    "by_sym": {
+      "SBER": {
+        "delta": -35.490651000000184,
+        "better": false,
+        "variant_pnl": 130.28232300000008,
+        "variant": "04-macd-stoch-long-short__ema50.italgo"
+      },
+      "GAZP": {
+        "delta": 0.4387030000000891,
+        "better": true,
+        "variant_pnl": -131.550662,
+        "variant": "04-macd-stoch-long-short__ema50.italgo"
+      },
+      "LKOH": {
+        "delta": 5300.718000000002,
+        "better": true,
+        "variant_pnl": 5199.666600000002,
+        "variant": "04-macd-stoch-long-short__ema50.italgo"
+      },
+      "ROSN": {
+        "delta": 502.5003599999999,
+        "better": true,
+        "variant_pnl": 280.16032000000047,
+        "variant": "04-macd-stoch-long-short__ema50.italgo"
+      },
+      "GMKN": {
+        "delta": 107.94604399999994,
+        "better": true,
+        "variant_pnl": 126.58876599999999,
+        "variant": "04-macd-stoch-long-short__ema50.italgo"
+      },
+      "NVTK": {
+        "delta": -334.86770000000115,
+        "better": false,
+        "variant_pnl": 826.8765200000007,
+        "variant": "04-macd-stoch-long-short__ema50.italgo"
+      },
+      "TATN": {
+        "delta": 359.73960999999974,
+        "better": true,
+        "variant_pnl": 414.81402000000037,
+        "variant": "04-macd-stoch-long-short__ema50.italgo"
+      },
+      "PLZL": {
+        "delta": 968.41959,
+        "better": true,
+        "variant_pnl": -135.58428000000004,
+        "variant": "04-macd-stoch-long-short__ema50.italgo"
+      },
+      "MGNT": {
+        "delta": 2659.8702999999978,
+        "better": true,
+        "variant_pnl": -1151.3391999999985,
+        "variant": "04-macd-stoch-long-short__ema50.italgo"
+      }
+    },
+    "variant": "04-macd-stoch-long-short__ema50.italgo"
+  },
+  {
+    "base": "04-macd-stoch-long-short.italgo",
+    "kind": "change_period_067",
+    "n_symbols_win": 4,
+    "symbols_win": [
+      "LKOH",
+      "MGNT",
+      "ROSN",
+      "SBER"
+    ],
+    "mean_delta": 969.570543,
+    "by_sym": {
+      "SBER": {
+        "delta": 291.26977999999997,
+        "better": true,
+        "variant_pnl": 457.04275400000023,
+        "variant": "04-macd-stoch-long-short__period067.italgo"
+      },
+      "GAZP": {
+        "delta": 2.0323209999999676,
+        "better": true,
+        "variant_pnl": -129.9570440000001,
+        "variant": "04-macd-stoch-long-short__period067.italgo"
+      },
+      "LKOH": {
+        "delta": 3041.0032,
+        "better": true,
+        "variant_pnl": 2939.9518000000007,
+        "variant": "04-macd-stoch-long-short__period067.italgo"
+      },
+      "ROSN": {
+        "delta": 307.55035999999996,
+        "better": true,
+        "variant_pnl": 85.21032000000054,
+        "variant": "04-macd-stoch-long-short__period067.italgo"
+      },
+      "GMKN": {
+        "delta": -88.1655639999999,
+        "better": false,
+        "variant_pnl": -69.52284199999986,
+        "variant": "04-macd-stoch-long-short__period067.italgo"
+      },
+      "NVTK": {
+        "delta": -92.15624000000116,
+        "better": false,
+        "variant_pnl": 1069.5879800000007,
+        "variant": "04-macd-stoch-long-short__period067.italgo"
+      },
+      "TATN": {
+        "delta": -253.4479399999998,
+        "better": false,
+        "variant_pnl": -198.37352999999916,
+        "variant": "04-macd-stoch-long-short__period067.italgo"
+      },
+      "PLZL": {
+        "delta": 449.3228700000009,
+        "better": true,
+        "variant_pnl": -654.6809999999991,
+        "variant": "04-macd-stoch-long-short__period067.italgo"
+      },
+      "MGNT": {
+        "delta": 5068.7261,
+        "better": true,
+        "variant_pnl": 1257.5166000000036,
+        "variant": "04-macd-stoch-long-short__period067.italgo"
+      }
+    },
+    "variant": "04-macd-stoch-long-short__period067.italgo"
+  },
+  {
+    "base": "20-donchian-55.italgo",
+    "kind": "change_period_15x",
+    "n_symbols_win": 4,
+    "symbols_win": [
+      "LKOH",
+      "NVTK",
+      "PLZL",
+      "TATN"
+    ],
+    "mean_delta": 431.9601597777777,
+    "by_sym": {
+      "SBER": {
+        "delta": -51.128051000000085,
+        "better": false,
+        "variant_pnl": 104.57201999999995,
+        "variant": "20-donchian-55__period15x.italgo"
+      },
+      "GAZP": {
+        "delta": 101.65523599999999,
+        "better": true,
+        "variant_pnl": -96.56267499999997,
+        "variant": "20-donchian-55__period15x.italgo"
+      },
+      "LKOH": {
+        "delta": 2525.456649999999,
+        "better": true,
+        "variant_pnl": 243.29320000000007,
+        "variant": "20-donchian-55__period15x.italgo"
+      },
+      "ROSN": {
+        "delta": -114.94344500000005,
+        "better": false,
+        "variant_pnl": -105.51013499999999,
+        "variant": "20-donchian-55__period15x.italgo"
+      },
+      "GMKN": {
+        "delta": 39.1926680000001,
+        "better": true,
+        "variant_pnl": -21.470599999999934,
+        "variant": "20-donchian-55__period15x.italgo"
+      },
+      "NVTK": {
+        "delta": 119.22507999999982,
+        "better": true,
+        "variant_pnl": 199.39579000000003,
+        "variant": "20-donchian-55__period15x.italgo"
+      },
+      "TATN": {
+        "delta": 3.311249999999859,
+        "better": true,
+        "variant_pnl": 63.85644000000002,
+        "variant": "20-donchian-55__period15x.italgo"
+      },
+      "PLZL": {
+        "delta": 787.6506999999997,
+        "better": true,
+        "variant_pnl": 965.564165,
+        "variant": "20-donchian-55__period15x.italgo"
+      },
+      "MGNT": {
+        "delta": 477.2213500000007,
+        "better": true,
+        "variant_pnl": -125.6172000000006,
+        "variant": "20-donchian-55__period15x.italgo"
+      }
+    },
+    "variant": "20-donchian-55__period15x.italgo"
+  },
+  {
+    "base": "09-sma-cross-20-50.italgo",
+    "kind": "add_block_adx",
+    "n_symbols_win": 4,
+    "symbols_win": [
+      "LKOH",
+      "MGNT",
+      "SBER",
+      "TATN"
+    ],
+    "mean_delta": 379.3674133333333,
+    "by_sym": {
+      "SBER": {
+        "delta": 27.58372599999987,
+        "better": true,
+        "variant_pnl": 130.10468,
+        "variant": "09-sma-cross-20-50__adx25.italgo"
+      },
+      "GAZP": {
+        "delta": 179.29314799999997,
+        "better": true,
+        "variant_pnl": -104.58855099999998,
+        "variant": "09-sma-cross-20-50__adx25.italgo"
+      },
+      "LKOH": {
+        "delta": 1766.2169000000004,
+        "better": true,
+        "variant_pnl": 1207.146600000001,
+        "variant": "09-sma-cross-20-50__adx25.italgo"
+      },
+      "ROSN": {
+        "delta": 101.16117999999983,
+        "better": true,
+        "variant_pnl": -29.85785000000004,
+        "variant": "09-sma-cross-20-50__adx25.italgo"
+      },
+      "GMKN": {
+        "delta": 17.197855999999945,
+        "better": true,
+        "variant_pnl": -58.23270800000002,
+        "variant": "09-sma-cross-20-50__adx25.italgo"
+      },
+      "NVTK": {
+        "delta": -355.8191300000002,
+        "better": false,
+        "variant_pnl": 193.5876199999999,
+        "variant": "09-sma-cross-20-50__adx25.italgo"
+      },
+      "TATN": {
+        "delta": 79.11135999999982,
+        "better": true,
+        "variant_pnl": 15.982470000000092,
+        "variant": "09-sma-cross-20-50__adx25.italgo"
+      },
+      "PLZL": {
+        "delta": -971.72362,
+        "better": false,
+        "variant_pnl": 0.0,
+        "variant": "09-sma-cross-20-50__adx25.italgo"
+      },
+      "MGNT": {
+        "delta": 2571.2853,
+        "better": true,
+        "variant_pnl": 735.7860999999994,
+        "variant": "09-sma-cross-20-50__adx25.italgo"
+      }
+    },
+    "variant": "09-sma-cross-20-50__adx25.italgo"
+  },
+  {
+    "base": "12-dema-cross-12-26.italgo",
+    "kind": "change_period_067",
+    "n_symbols_win": 4,
+    "symbols_win": [
+      "GAZP",
+      "GMKN",
+      "PLZL",
+      "ROSN"
+    ],
+    "mean_delta": 337.9368784444452,
+    "by_sym": {
+      "SBER": {
+        "delta": 86.74619800000029,
+        "better": true,
+        "variant_pnl": -16.686162999999624,
+        "variant": "12-dema-cross-12-26__period067.italgo"
+      },
+      "GAZP": {
+        "delta": 64.22818299999997,
+        "better": true,
+        "variant_pnl": 40.20912,
+        "variant": "12-dema-cross-12-26__period067.italgo"
+      },
+      "LKOH": {
+        "delta": 1392.1951000000026,
+        "better": true,
+        "variant_pnl": -1226.9383499999913,
+        "variant": "12-dema-cross-12-26__period067.italgo"
+      },
+      "ROSN": {
+        "delta": 146.1906649999999,
+        "better": true,
+        "variant_pnl": 12.191655000000765,
+        "variant": "12-dema-cross-12-26__period067.italgo"
+      },
+      "GMKN": {
+        "delta": 101.29221000000015,
+        "better": true,
+        "variant_pnl": 11.399416000000357,
+        "variant": "12-dema-cross-12-26__period067.italgo"
+      },
+      "NVTK": {
+        "delta": 352.36882000000344,
+        "better": true,
+        "variant_pnl": -273.5408399999965,
+        "variant": "12-dema-cross-12-26__period067.italgo"
+      },
+      "TATN": {
+        "delta": -76.72215999999997,
+        "better": false,
+        "variant_pnl": 101.65300000000053,
+        "variant": "12-dema-cross-12-26__period067.italgo"
+      },
+      "PLZL": {
+        "delta": 504.33244000000036,
+        "better": true,
+        "variant_pnl": 1037.519745000003,
+        "variant": "12-dema-cross-12-26__period067.italgo"
+      },
+      "MGNT": {
+        "delta": 470.8004500000002,
+        "better": true,
+        "variant_pnl": -1864.1359499999976,
+        "variant": "12-dema-cross-12-26__period067.italgo"
+      }
+    },
+    "variant": "12-dema-cross-12-26__period067.italgo"
+  },
+  {
+    "base": "21-sma-cross-20-50-ls.italgo",
+    "kind": "change_period_067",
+    "n_symbols_win": 4,
+    "symbols_win": [
+      "GMKN",
+      "LKOH",
+      "MGNT",
+      "TATN"
+    ],
+    "mean_delta": 279.4187868888904,
+    "by_sym": {
+      "SBER": {
+        "delta": -54.86166600000007,
+        "better": false,
+        "variant_pnl": 201.3880070000002,
+        "variant": "21-sma-cross-20-50-ls__period067.italgo"
+      },
+      "GAZP": {
+        "delta": 212.58827699999995,
+        "better": true,
+        "variant_pnl": -88.03012599999988,
+        "variant": "21-sma-cross-20-50-ls__period067.italgo"
+      },
+      "LKOH": {
+        "delta": 1581.9496500000068,
+        "better": true,
+        "variant_pnl": 3092.127600000008,
+        "variant": "21-sma-cross-20-50-ls__period067.italgo"
+      },
+      "ROSN": {
+        "delta": -177.07255499999883,
+        "better": false,
+        "variant_pnl": -176.16846999999865,
+        "variant": "21-sma-cross-20-50-ls__period067.italgo"
+      },
+      "GMKN": {
+        "delta": 36.046686000000136,
+        "better": true,
+        "variant_pnl": 0.3490560000001892,
+        "variant": "21-sma-cross-20-50-ls__period067.italgo"
+      },
+      "NVTK": {
+        "delta": -853.3559199999986,
+        "better": false,
+        "variant_pnl": 1116.0784800000015,
+        "variant": "21-sma-cross-20-50-ls__period067.italgo"
+      },
+      "TATN": {
+        "delta": 368.82468000000006,
+        "better": true,
+        "variant_pnl": 212.5180000000006,
+        "variant": "21-sma-cross-20-50-ls__period067.italgo"
+      },
+      "PLZL": {
+        "delta": -892.698719999996,
+        "better": false,
+        "variant_pnl": 1160.2225200000037,
+        "variant": "21-sma-cross-20-50-ls__period067.italgo"
+      },
+      "MGNT": {
+        "delta": 2293.34865,
+        "better": true,
+        "variant_pnl": 2802.7688499999986,
+        "variant": "21-sma-cross-20-50-ls__period067.italgo"
+      }
+    },
+    "variant": "21-sma-cross-20-50-ls__period067.italgo"
+  },
+  {
+    "base": "21-sma-cross-20-50-ls.italgo",
+    "kind": "add_block_ema",
+    "n_symbols_win": 4,
+    "symbols_win": [
+      "GMKN",
+      "LKOH",
+      "MGNT",
+      "SBER"
+    ],
+    "mean_delta": 35.99328133333327,
+    "by_sym": {
+      "SBER": {
+        "delta": 3.0108859999998003,
+        "better": true,
+        "variant_pnl": 259.26055900000006,
+        "variant": "21-sma-cross-20-50-ls__ema50.italgo"
+      },
+      "GAZP": {
+        "delta": 65.031722,
+        "better": true,
+        "variant_pnl": -235.58668099999983,
+        "variant": "21-sma-cross-20-50-ls__ema50.italgo"
+      },
+      "LKOH": {
+        "delta": 455.6269000000011,
+        "better": true,
+        "variant_pnl": 1965.8048500000023,
+        "variant": "21-sma-cross-20-50-ls__ema50.italgo"
+      },
+      "ROSN": {
+        "delta": -71.70007000000021,
+        "better": false,
+        "variant_pnl": -70.79598500000003,
+        "variant": "21-sma-cross-20-50-ls__ema50.italgo"
+      },
+      "GMKN": {
+        "delta": 52.44734399999996,
+        "better": true,
+        "variant_pnl": 16.74971400000001,
+        "variant": "21-sma-cross-20-50-ls__ema50.italgo"
+      },
+      "NVTK": {
+        "delta": -1230.9796400000002,
+        "better": false,
+        "variant_pnl": 738.4547599999999,
+        "variant": "21-sma-cross-20-50-ls__ema50.italgo"
+      },
+      "TATN": {
+        "delta": 15.628719999999817,
+        "better": true,
+        "variant_pnl": -140.67795999999964,
+        "variant": "21-sma-cross-20-50-ls__ema50.italgo"
+      },
+      "PLZL": {
+        "delta": -841.8352300000004,
+        "better": false,
+        "variant_pnl": 1211.0860099999993,
+        "variant": "21-sma-cross-20-50-ls__ema50.italgo"
+      },
+      "MGNT": {
+        "delta": 1876.7088999999996,
+        "better": true,
+        "variant_pnl": 2386.1290999999983,
+        "variant": "21-sma-cross-20-50-ls__ema50.italgo"
+      }
+    },
+    "variant": "21-sma-cross-20-50-ls__ema50.italgo"
+  }
+]
