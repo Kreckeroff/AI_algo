@@ -1,0 +1,274 @@
+[
+  {
+    "file": "11-tema-cross-10-30.italgo",
+    "stats": {
+      "losses": 27,
+      "maxDrawdown": 181.330977,
+      "netPnl": -127.71714799999961,
+      "totalTrades": 52,
+      "winRate": 0.4807692307692308,
+      "wins": 25
+    },
+    "labels": {
+      "bad": 24,
+      "good": 25,
+      "bad_noise": 3
+    },
+    "intervention": {},
+    "suggestions": [
+      "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки."
+    ],
+    "findings": [
+      "серия_убытков"
+    ]
+  },
+  {
+    "file": "11b-tema-slow50.italgo",
+    "stats": {
+      "losses": 28,
+      "maxDrawdown": 134.866295,
+      "netPnl": -69.98155799999968,
+      "totalTrades": 44,
+      "winRate": 0.3488372093023256,
+      "wins": 15
+    },
+    "labels": {
+      "bad": 23,
+      "good": 15,
+      "bad_noise": 5,
+      "open": 1
+    },
+    "intervention": {
+      "kind": "change_period",
+      "field": "ma_s.period",
+      "from": 30,
+      "to": 50,
+      "base": "11-tema-cross-10-30.italgo"
+    },
+    "suggestions": [
+      "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки."
+    ],
+    "findings": [
+      "серия_убытков"
+    ]
+  },
+  {
+    "file": "11c-tema-ema50-filter.italgo",
+    "stats": {
+      "losses": 15,
+      "maxDrawdown": 30.008060999999884,
+      "netPnl": 46.370306000000056,
+      "totalTrades": 32,
+      "winRate": 0.53125,
+      "wins": 17
+    },
+    "labels": {
+      "good": 17,
+      "bad": 12,
+      "bad_noise": 3
+    },
+    "intervention": {
+      "kind": "add_block",
+      "block": "indicator_ema",
+      "period": 50,
+      "base": "11-tema-cross-10-30.italgo"
+    },
+    "suggestions": [
+      "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки."
+    ],
+    "findings": [
+      "серия_убытков"
+    ]
+  },
+  {
+    "file": "13-rsi-cross-50.italgo",
+    "stats": {
+      "losses": 58,
+      "maxDrawdown": 120.46337599999967,
+      "netPnl": -3.6200759999995142,
+      "totalTrades": 86,
+      "winRate": 0.32558139534883723,
+      "wins": 28
+    },
+    "labels": {
+      "bad": 27,
+      "good_weak": 4,
+      "bad_noise": 31,
+      "good": 24
+    },
+    "intervention": {},
+    "suggestions": [
+      "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки."
+    ],
+    "findings": [
+      "серия_убытков"
+    ]
+  },
+  {
+    "file": "13b-rsi-period21.italgo",
+    "stats": {
+      "losses": 32,
+      "maxDrawdown": 97.16739899999995,
+      "netPnl": 53.262044000000046,
+      "totalTrades": 55,
+      "winRate": 0.4074074074074074,
+      "wins": 22
+    },
+    "labels": {
+      "good": 19,
+      "bad": 19,
+      "bad_noise": 13,
+      "good_weak": 3,
+      "open": 1
+    },
+    "intervention": {
+      "kind": "change_period",
+      "from": 14,
+      "to": 21,
+      "base": "13-rsi-cross-50.italgo"
+    },
+    "suggestions": [
+      "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки."
+    ],
+    "findings": [
+      "серия_убытков"
+    ]
+  },
+  {
+    "file": "15-momentum-cross-0.italgo",
+    "stats": {
+      "losses": 62,
+      "maxDrawdown": 130.0328769999999,
+      "netPnl": -18.151349999999667,
+      "totalTrades": 98,
+      "winRate": 0.3673469387755102,
+      "wins": 36
+    },
+    "labels": {
+      "good_weak": 7,
+      "bad_noise": 35,
+      "good": 29,
+      "bad": 27
+    },
+    "intervention": {},
+    "suggestions": [
+      "Медиана удержания очень мала — похоже на шум/overtrading. Увеличьте период сигналов, добавьте подтверждение на старшем ТФ или logic_hold.",
+      "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки."
+    ],
+    "findings": [
+      "сверхкороткие_удержания",
+      "серия_убытков"
+    ]
+  },
+  {
+    "file": "15b-momentum-period20.italgo",
+    "stats": {
+      "losses": 41,
+      "maxDrawdown": 176.89595999999997,
+      "netPnl": -34.229459999999946,
+      "totalTrades": 59,
+      "winRate": 0.29310344827586204,
+      "wins": 17
+    },
+    "labels": {
+      "bad_noise": 21,
+      "good": 15,
+      "bad": 20,
+      "good_weak": 2,
+      "open": 1
+    },
+    "intervention": {
+      "kind": "change_period",
+      "from": 10,
+      "to": 20,
+      "base": "15-momentum-cross-0.italgo"
+    },
+    "suggestions": [
+      "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки."
+    ],
+    "findings": [
+      "серия_убытков"
+    ]
+  },
+  {
+    "file": "15c-momentum-ema50-filter.italgo",
+    "stats": {
+      "losses": 41,
+      "maxDrawdown": 66.29599899999994,
+      "netPnl": 43.00606600000029,
+      "totalTrades": 61,
+      "winRate": 0.32786885245901637,
+      "wins": 20
+    },
+    "labels": {
+      "bad_noise": 24,
+      "good_weak": 3,
+      "bad": 17,
+      "good": 17
+    },
+    "intervention": {
+      "kind": "add_block",
+      "block": "indicator_ema",
+      "period": 50,
+      "base": "15-momentum-cross-0.italgo"
+    },
+    "suggestions": [
+      "Медиана удержания очень мала — похоже на шум/overtrading. Увеличьте период сигналов, добавьте подтверждение на старшем ТФ или logic_hold.",
+      "Длинная серия убытков подряд. Добавьте паузу после N убытков (блок «2 убытка подряд» / cooldown) или уменьшите размер после просадки."
+    ],
+    "findings": [
+      "сверхкороткие_удержания",
+      "серия_убытков",
+      "тренд_без_фильтра_флэта"
+    ]
+  },
+  {
+    "file": "19-bb-rsi-mean-reversion-v2.italgo",
+    "stats": {
+      "losses": 4,
+      "maxDrawdown": 269.836938,
+      "netPnl": -241.971949,
+      "totalTrades": 9,
+      "winRate": 0.5,
+      "wins": 4
+    },
+    "labels": {
+      "bad": 4,
+      "good": 4,
+      "open": 1
+    },
+    "intervention": {},
+    "suggestions": [
+      "Mean-reversion удерживает позицию слишком долго. Добавьте быстрый выход к середине канала / противоположный RSI и жёсткий SL."
+    ],
+    "findings": [
+      "mr_слишком_долго_держит"
+    ]
+  },
+  {
+    "file": "19b-bb-rsi7.italgo",
+    "stats": {
+      "losses": 3,
+      "maxDrawdown": 237.374924,
+      "netPnl": -207.34688899999986,
+      "totalTrades": 12,
+      "winRate": 0.7272727272727273,
+      "wins": 8
+    },
+    "labels": {
+      "bad": 3,
+      "good": 8,
+      "open": 1
+    },
+    "intervention": {
+      "kind": "change_period",
+      "from": 14,
+      "to": 7,
+      "base": "19-bb-rsi-mean-reversion-v2.italgo"
+    },
+    "suggestions": [
+      "Явных паттернов «пилы»/серий не видно по сделкам — смотрите diff метрик и блоков; проверьте out-of-sample окно."
+    ],
+    "findings": []
+  }
+]

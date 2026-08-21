@@ -685,4 +685,5 @@ DSL/GraphDTO: `period` integer, constraint `1 ≤ period ≤ max_period` (`max_p
 | 2026-08-21 | **§7D:** обучение/корпус учитывают **long_only** и **long_short** (не только лонг); шаг P2.5 |
 | 2026-08-21 | **§7D P2.5:** twins 21–26 long_short; tagged `side_mode`; C4 session — LS mean_pnl > LO на SBER 1d |
 | 2026-08-21 | **§7E:** обучение на **списке сделок** (good/bad) + улучшения через **блок** или **period**; шаг P2.6 |
+| 2026-08-21 | **C5b FULL_MAP:** Q–Q + heatmap side×family + block ranking + trade labels + improve A/Bs |
 | 2026-08-21 | **§7E C5:** trade labels good/bad/noise; interventions; momentum A/B — EMA filter −18→+43, period20 worse |

@@ -1,0 +1,206 @@
+[
+  {
+    "block": "indicator_stoch_k",
+    "n": 1,
+    "mean_pnl": 165.77297400000026,
+    "median_pnl": 165.77297400000026
+  },
+  {
+    "block": "indicator_macd",
+    "n": 1,
+    "mean_pnl": 165.77297400000026,
+    "median_pnl": 165.77297400000026
+  },
+  {
+    "block": "indicator_sma",
+    "n": 3,
+    "mean_pnl": 119.59020900000013,
+    "median_pnl": 102.52095400000013
+  },
+  {
+    "block": "indicator_adx",
+    "n": 2,
+    "mean_pnl": 105.21568049999993,
+    "median_pnl": 127.51295300000004
+  },
+  {
+    "block": "indicator_plus_di",
+    "n": 1,
+    "mean_pnl": 82.91840799999983,
+    "median_pnl": 82.91840799999983
+  },
+  {
+    "block": "indicator_minus_di",
+    "n": 1,
+    "mean_pnl": 82.91840799999983,
+    "median_pnl": 82.91840799999983
+  },
+  {
+    "block": "indicator_ema",
+    "n": 6,
+    "mean_pnl": 61.195784562976336,
+    "median_pnl": 47.483690000000095
+  },
+  {
+    "block": "indicator_supertrend",
+    "n": 4,
+    "mean_pnl": 55.48706575000004,
+    "median_pnl": 82.91840799999983
+  },
+  {
+    "block": "indicator_momentum_pct",
+    "n": 1,
+    "mean_pnl": 43.00606600000029,
+    "median_pnl": 43.00606600000029
+  },
+  {
+    "block": "indicator_cci",
+    "n": 1,
+    "mean_pnl": 29.73458223500006,
+    "median_pnl": 29.73458223500006
+  },
+  {
+    "block": "position_trail_pct",
+    "n": 1,
+    "mean_pnl": 29.73458223500006,
+    "median_pnl": 29.73458223500006
+  },
+  {
+    "block": "logic_cross_down",
+    "n": 20,
+    "mean_pnl": 25.83452301889315,
+    "median_pnl": 29.73458223500006
+  },
+  {
+    "block": "logic_and",
+    "n": 12,
+    "mean_pnl": 22.344154852916756,
+    "median_pnl": 41.351667000000106
+  },
+  {
+    "block": "logic_cross_up",
+    "n": 21,
+    "mean_pnl": 20.896068065612525,
+    "median_pnl": 19.56459900000067
+  },
+  {
+    "block": "logic_gt",
+    "n": 13,
+    "mean_pnl": 20.625373710384697,
+    "median_pnl": 29.73458223500006
+  },
+  {
+    "block": "position_open_market",
+    "n": 26,
+    "mean_pnl": 17.13603316837935,
+    "median_pnl": 19.56459900000067
+  },
+  {
+    "block": "logic_or",
+    "n": 3,
+    "mean_pnl": 16.546640666666732,
+    "median_pnl": 0.0
+  },
+  {
+    "block": "logic_lt",
+    "n": 9,
+    "mean_pnl": 7.541806333333398,
+    "median_pnl": 0.0
+  },
+  {
+    "block": "indicator_momentum",
+    "n": 2,
+    "mean_pnl": 0.7066245000005011,
+    "median_pnl": 19.56459900000067
+  },
+  {
+    "block": "indicator_highest",
+    "n": 2,
+    "mean_pnl": 0.0,
+    "median_pnl": 0.0
+  },
+  {
+    "block": "indicator_lowest",
+    "n": 2,
+    "mean_pnl": 0.0,
+    "median_pnl": 0.0
+  },
+  {
+    "block": "indicator_volume",
+    "n": 1,
+    "mean_pnl": 0.0,
+    "median_pnl": 0.0
+  },
+  {
+    "block": "indicator_rsi",
+    "n": 9,
+    "mean_pnl": -0.8655172222220023,
+    "median_pnl": 0.0
+  },
+  {
+    "block": "indicator_cmo",
+    "n": 1,
+    "mean_pnl": -3.6200759999995142,
+    "median_pnl": -3.6200759999995142
+  },
+  {
+    "block": "position_close_market",
+    "n": 18,
+    "mean_pnl": -14.428713479007772,
+    "median_pnl": 0.0
+  },
+  {
+    "block": "position_entry_price",
+    "n": 1,
+    "mean_pnl": -33.54287285714267,
+    "median_pnl": -33.54287285714267
+  },
+  {
+    "block": "position_close_sl",
+    "n": 1,
+    "mean_pnl": -33.54287285714267,
+    "median_pnl": -33.54287285714267
+  },
+  {
+    "block": "position_close_tp",
+    "n": 1,
+    "mean_pnl": -33.54287285714267,
+    "median_pnl": -33.54287285714267
+  },
+  {
+    "block": "indicator_atr",
+    "n": 1,
+    "mean_pnl": -33.54287285714267,
+    "median_pnl": -33.54287285714267
+  },
+  {
+    "block": "indicator_bb",
+    "n": 1,
+    "mean_pnl": -77.87303099999984,
+    "median_pnl": -77.87303099999984
+  },
+  {
+    "block": "indicator_dema",
+    "n": 1,
+    "mean_pnl": -103.43236099999991,
+    "median_pnl": -103.43236099999991
+  },
+  {
+    "block": "indicator_tema",
+    "n": 2,
+    "mean_pnl": -144.07902899999942,
+    "median_pnl": -127.71714799999961
+  },
+  {
+    "block": "indicator_bb_lower",
+    "n": 2,
+    "mean_pnl": -159.92248999999993,
+    "median_pnl": -77.87303099999984
+  },
+  {
+    "block": "indicator_bb_upper",
+    "n": 2,
+    "mean_pnl": -159.92248999999993,
+    "median_pnl": -77.87303099999984
+  }
+]

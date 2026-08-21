@@ -1,0 +1,424 @@
+{
+  "session": "2026-08-21-c5b-full-analytics",
+  "n_scripts": 26,
+  "n_trades": 1243,
+  "label_totals": {
+    "good": 397,
+    "bad": 478,
+    "open": 12,
+    "bad_noise": 318,
+    "good_weak": 38
+  },
+  "n_blocks": 34,
+  "improve_n": 10,
+  "mean_script_pnl": 17.13603316837935,
+  "mean_trade_pnl": 0.3977091928333567,
+  "top20_by_score": [
+    {
+      "entry": "21-sma-cross-20-50-ls.italgo",
+      "filter": "long_short",
+      "median_pnl": 256.24967300000026,
+      "mean_pnl": 256.24967300000026,
+      "mean_wr": 0.375,
+      "mean_dd": 123.71106599999996,
+      "n": 25,
+      "regime": "sma"
+    },
+    {
+      "entry": "04-macd-stoch-long-short.italgo",
+      "filter": "long_short",
+      "median_pnl": 165.77297400000026,
+      "mean_pnl": 165.77297400000026,
+      "mean_wr": 0.5263157894736842,
+      "mean_dd": 148.2560239999999,
+      "n": 20,
+      "regime": "macd"
+    },
+    {
+      "entry": "22-ema-cross-9-21-ls.italgo",
+      "filter": "long_short",
+      "median_pnl": 152.98028900000014,
+      "mean_pnl": 152.98028900000014,
+      "mean_wr": 0.26153846153846155,
+      "mean_dd": 149.8028999999998,
+      "n": 66,
+      "regime": "ema"
+    },
+    {
+      "entry": "26-supertrend-rsi-ls.italgo",
+      "filter": "long_short",
+      "median_pnl": 139.07607900000016,
+      "mean_pnl": 139.07607900000016,
+      "mean_wr": 0.4444444444444444,
+      "mean_dd": 142.50152199999994,
+      "n": 19,
+      "regime": "supertrend"
+    },
+    {
+      "entry": "01-trend-ema-adx-rsi.italgo",
+      "filter": "long_only",
+      "median_pnl": 127.51295300000004,
+      "mean_pnl": 127.51295300000004,
+      "mean_wr": 0.5,
+      "mean_dd": 59.189824999999985,
+      "n": 4,
+      "regime": "ema"
+    },
+    {
+      "entry": "09-sma-cross-20-50.italgo",
+      "filter": "long_only",
+      "median_pnl": 102.52095400000013,
+      "mean_pnl": 102.52095400000013,
+      "mean_wr": 0.5,
+      "mean_dd": 51.070721000000006,
+      "n": 12,
+      "regime": "sma"
+    },
+    {
+      "entry": "07-supertrend-di-adx-stack.italgo",
+      "filter": "long_short",
+      "median_pnl": 82.91840799999983,
+      "mean_pnl": 82.91840799999983,
+      "mean_wr": 0.3,
+      "mean_dd": 177.68788400000022,
+      "n": 31,
+      "regime": "supertrend"
+    },
+    {
+      "entry": "24-rsi-cross-50-ls.italgo",
+      "filter": "long_short",
+      "median_pnl": 49.132593000000924,
+      "mean_pnl": 49.132593000000924,
+      "mean_wr": 0.2982456140350877,
+      "mean_dd": 245.07870199999903,
+      "n": 172,
+      "regime": "rsi"
+    },
+    {
+      "entry": "10-ema-cross-9-21.italgo",
+      "filter": "long_only",
+      "median_pnl": 47.483690000000095,
+      "mean_pnl": 47.483690000000095,
+      "mean_wr": 0.30303030303030304,
+      "mean_dd": 103.57985799999996,
+      "n": 33,
+      "regime": "ema"
+    },
+    {
+      "entry": "18-mom-pct-ema50-filter.italgo",
+      "filter": "long_only",
+      "median_pnl": 43.00606600000029,
+      "mean_pnl": 43.00606600000029,
+      "mean_wr": 0.32786885245901637,
+      "mean_dd": 66.29599899999994,
+      "n": 61,
+      "regime": "ema"
+    },
+    {
+      "entry": "16-supertrend-rsi-entry.italgo",
+      "filter": "long_only",
+      "median_pnl": 41.351667000000106,
+      "mean_pnl": 41.351667000000106,
+      "mean_wr": 0.5555555555555556,
+      "mean_dd": 109.59076099999996,
+      "n": 10,
+      "regime": "supertrend"
+    },
+    {
+      "entry": "08-cci-regime-trail.italgo",
+      "filter": "long_only",
+      "median_pnl": 29.73458223500006,
+      "mean_pnl": 29.73458223500006,
+      "mean_wr": 0.45454545454545453,
+      "mean_dd": 28.215053094999973,
+      "n": 44,
+      "regime": "cci"
+    },
+    {
+      "entry": "25-momentum-cross-0-ls.italgo",
+      "filter": "long_short",
+      "median_pnl": 19.56459900000067,
+      "mean_pnl": 19.56459900000067,
+      "mean_wr": 0.32653061224489793,
+      "mean_dd": 250.20024199999943,
+      "n": 197,
+      "regime": "momentum"
+    },
+    {
+      "entry": "03-breakout-donchian-volume.italgo",
+      "filter": "long_only",
+      "median_pnl": 0.0,
+      "mean_pnl": 0.0,
+      "mean_wr": 0.0,
+      "mean_dd": 0.0,
+      "n": 0,
+      "regime": "donchian"
+    },
+    {
+      "entry": "06-session-filter-rsi.italgo",
+      "filter": "long_only",
+      "median_pnl": 0.0,
+      "mean_pnl": 0.0,
+      "mean_wr": 0.0,
+      "mean_dd": 0.0,
+      "n": 0,
+      "regime": "rsi"
+    },
+    {
+      "entry": "20-donchian-55.italgo",
+      "filter": "long_only",
+      "median_pnl": 0.0,
+      "mean_pnl": 0.0,
+      "mean_wr": 0.0,
+      "mean_dd": 0.0,
+      "n": 0,
+      "regime": "donchian"
+    },
+    {
+      "entry": "13-rsi-cross-50.italgo",
+      "filter": "long_only",
+      "median_pnl": -3.6200759999995142,
+      "mean_pnl": -3.6200759999995142,
+      "mean_wr": 0.32558139534883723,
+      "mean_dd": 120.46337599999967,
+      "n": 86,
+      "regime": "rsi"
+    },
+    {
+      "entry": "14-cmo-cross-0.italgo",
+      "filter": "long_only",
+      "median_pnl": -3.6200759999995142,
+      "mean_pnl": -3.6200759999995142,
+      "mean_wr": 0.32558139534883723,
+      "mean_dd": 120.46337599999967,
+      "n": 86,
+      "regime": "cmo"
+    },
+    {
+      "entry": "15-momentum-cross-0.italgo",
+      "filter": "long_only",
+      "median_pnl": -18.151349999999667,
+      "mean_pnl": -18.151349999999667,
+      "mean_wr": 0.3673469387755102,
+      "mean_dd": 130.0328769999999,
+      "n": 98,
+      "regime": "momentum"
+    },
+    {
+      "entry": "05-trend-atr-sl-tp.italgo",
+      "filter": "long_only",
+      "median_pnl": -33.54287285714267,
+      "mean_pnl": -33.54287285714267,
+      "mean_wr": 0.23809523809523808,
+      "mean_dd": 79.60345771428547,
+      "n": 42,
+      "regime": "other"
+    }
+  ],
+  "block_ranking": [
+    {
+      "block": "indicator_stoch_k",
+      "n": 1,
+      "mean_pnl": 165.77297400000026,
+      "median_pnl": 165.77297400000026
+    },
+    {
+      "block": "indicator_macd",
+      "n": 1,
+      "mean_pnl": 165.77297400000026,
+      "median_pnl": 165.77297400000026
+    },
+    {
+      "block": "indicator_sma",
+      "n": 3,
+      "mean_pnl": 119.59020900000013,
+      "median_pnl": 102.52095400000013
+    },
+    {
+      "block": "indicator_adx",
+      "n": 2,
+      "mean_pnl": 105.21568049999993,
+      "median_pnl": 127.51295300000004
+    },
+    {
+      "block": "indicator_plus_di",
+      "n": 1,
+      "mean_pnl": 82.91840799999983,
+      "median_pnl": 82.91840799999983
+    },
+    {
+      "block": "indicator_minus_di",
+      "n": 1,
+      "mean_pnl": 82.91840799999983,
+      "median_pnl": 82.91840799999983
+    },
+    {
+      "block": "indicator_ema",
+      "n": 6,
+      "mean_pnl": 61.195784562976336,
+      "median_pnl": 47.483690000000095
+    },
+    {
+      "block": "indicator_supertrend",
+      "n": 4,
+      "mean_pnl": 55.48706575000004,
+      "median_pnl": 82.91840799999983
+    },
+    {
+      "block": "indicator_momentum_pct",
+      "n": 1,
+      "mean_pnl": 43.00606600000029,
+      "median_pnl": 43.00606600000029
+    },
+    {
+      "block": "indicator_cci",
+      "n": 1,
+      "mean_pnl": 29.73458223500006,
+      "median_pnl": 29.73458223500006
+    },
+    {
+      "block": "position_trail_pct",
+      "n": 1,
+      "mean_pnl": 29.73458223500006,
+      "median_pnl": 29.73458223500006
+    },
+    {
+      "block": "logic_cross_down",
+      "n": 20,
+      "mean_pnl": 25.83452301889315,
+      "median_pnl": 29.73458223500006
+    },
+    {
+      "block": "logic_and",
+      "n": 12,
+      "mean_pnl": 22.344154852916756,
+      "median_pnl": 41.351667000000106
+    },
+    {
+      "block": "logic_cross_up",
+      "n": 21,
+      "mean_pnl": 20.896068065612525,
+      "median_pnl": 19.56459900000067
+    },
+    {
+      "block": "logic_gt",
+      "n": 13,
+      "mean_pnl": 20.625373710384697,
+      "median_pnl": 29.73458223500006
+    },
+    {
+      "block": "position_open_market",
+      "n": 26,
+      "mean_pnl": 17.13603316837935,
+      "median_pnl": 19.56459900000067
+    },
+    {
+      "block": "logic_or",
+      "n": 3,
+      "mean_pnl": 16.546640666666732,
+      "median_pnl": 0.0
+    },
+    {
+      "block": "logic_lt",
+      "n": 9,
+      "mean_pnl": 7.541806333333398,
+      "median_pnl": 0.0
+    },
+    {
+      "block": "indicator_momentum",
+      "n": 2,
+      "mean_pnl": 0.7066245000005011,
+      "median_pnl": 19.56459900000067
+    },
+    {
+      "block": "indicator_highest",
+      "n": 2,
+      "mean_pnl": 0.0,
+      "median_pnl": 0.0
+    },
+    {
+      "block": "indicator_lowest",
+      "n": 2,
+      "mean_pnl": 0.0,
+      "median_pnl": 0.0
+    },
+    {
+      "block": "indicator_volume",
+      "n": 1,
+      "mean_pnl": 0.0,
+      "median_pnl": 0.0
+    },
+    {
+      "block": "indicator_rsi",
+      "n": 9,
+      "mean_pnl": -0.8655172222220023,
+      "median_pnl": 0.0
+    },
+    {
+      "block": "indicator_cmo",
+      "n": 1,
+      "mean_pnl": -3.6200759999995142,
+      "median_pnl": -3.6200759999995142
+    },
+    {
+      "block": "position_close_market",
+      "n": 18,
+      "mean_pnl": -14.428713479007772,
+      "median_pnl": 0.0
+    },
+    {
+      "block": "position_entry_price",
+      "n": 1,
+      "mean_pnl": -33.54287285714267,
+      "median_pnl": -33.54287285714267
+    },
+    {
+      "block": "position_close_sl",
+      "n": 1,
+      "mean_pnl": -33.54287285714267,
+      "median_pnl": -33.54287285714267
+    },
+    {
+      "block": "position_close_tp",
+      "n": 1,
+      "mean_pnl": -33.54287285714267,
+      "median_pnl": -33.54287285714267
+    },
+    {
+      "block": "indicator_atr",
+      "n": 1,
+      "mean_pnl": -33.54287285714267,
+      "median_pnl": -33.54287285714267
+    },
+    {
+      "block": "indicator_bb",
+      "n": 1,
+      "mean_pnl": -77.87303099999984,
+      "median_pnl": -77.87303099999984
+    },
+    {
+      "block": "indicator_dema",
+      "n": 1,
+      "mean_pnl": -103.43236099999991,
+      "median_pnl": -103.43236099999991
+    },
+    {
+      "block": "indicator_tema",
+      "n": 2,
+      "mean_pnl": -144.07902899999942,
+      "median_pnl": -127.71714799999961
+    },
+    {
+      "block": "indicator_bb_lower",
+      "n": 2,
+      "mean_pnl": -159.92248999999993,
+      "median_pnl": -77.87303099999984
+    },
+    {
+      "block": "indicator_bb_upper",
+      "n": 2,
+      "mean_pnl": -159.92248999999993,
+      "median_pnl": -77.87303099999984
+    }
+  ]
+}
