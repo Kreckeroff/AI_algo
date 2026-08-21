@@ -1,0 +1,302 @@
+[
+  {
+    "ok": true,
+    "file": "01-trend-ema-adx-rsi.italgo",
+    "name": "Тренд EMA+ADX+RSI",
+    "metrics": {
+      "pnl": 127.51295300000004,
+      "max_dd": 59.189824999999985,
+      "winrate": 0.5,
+      "trades": 4
+    },
+    "barsId": "p2-desktop-SBER-1d",
+    "graphsId": "66a42713-f4b5-42cb-b2db-5625b3821e91",
+    "runsId": "945cdacf-fec3-41bc-93d9-0b4c4386c627",
+    "error": null
+  },
+  {
+    "ok": true,
+    "file": "02-mean-reversion-bb-rsi.italgo",
+    "name": "Mean-reversion BB+RSI",
+    "metrics": {
+      "pnl": -77.87303099999984,
+      "max_dd": 120.92549799999988,
+      "winrate": 0.45454545454545453,
+      "trades": 11
+    },
+    "barsId": "p2-desktop-SBER-1d",
+    "graphsId": "5f1ddc44-e1ae-4dd1-ab3a-abca1b26c495",
+    "runsId": "215cc6e8-51b1-42a8-b91e-0673b4fcead9",
+    "error": null
+  },
+  {
+    "ok": true,
+    "file": "03-breakout-donchian-volume.italgo",
+    "name": "Breakout Donchian+Volume",
+    "metrics": {
+      "pnl": 0.0,
+      "max_dd": 0.0,
+      "winrate": 0.0,
+      "trades": 0
+    },
+    "barsId": "p2-desktop-SBER-1d",
+    "graphsId": "3f08e5cd-e660-4562-b466-6696139a6e9d",
+    "runsId": "3f7dfe51-d837-4efe-9ee8-f3685ea3a850",
+    "error": null
+  },
+  {
+    "ok": true,
+    "file": "04-macd-stoch-long-short.italgo",
+    "name": "MACD+Stoch Long/Short",
+    "metrics": {
+      "pnl": 165.77297400000026,
+      "max_dd": 148.2560239999999,
+      "winrate": 0.5263157894736842,
+      "trades": 20
+    },
+    "barsId": "p2-desktop-SBER-1d",
+    "graphsId": "ea39e562-c767-4d0e-9d3b-69e952a92228",
+    "runsId": "47615c70-4101-4549-9ac1-0c6a12a7f672",
+    "error": null
+  },
+  {
+    "ok": true,
+    "file": "05-trend-atr-sl-tp.italgo",
+    "name": "Тренд EMA + ATR SL/TP",
+    "metrics": {
+      "pnl": -33.54287285714267,
+      "max_dd": 79.60345771428547,
+      "winrate": 0.23809523809523808,
+      "trades": 42
+    },
+    "barsId": "p2-desktop-SBER-1d",
+    "graphsId": "edb91742-1c65-4e2c-9caa-0a4980de4d77",
+    "runsId": "55473693-6e14-48a4-bcab-bc09aef51448",
+    "error": null
+  },
+  {
+    "ok": true,
+    "file": "06-session-filter-rsi.italgo",
+    "name": "Сессия + RSI",
+    "metrics": {
+      "pnl": 0.0,
+      "max_dd": 0.0,
+      "winrate": 0.0,
+      "trades": 0
+    },
+    "barsId": "p2-desktop-SBER-1d",
+    "graphsId": "f97bc9d1-6379-40fa-b337-f6f56656d8b0",
+    "runsId": "bdfc5a8c-1bde-4a0a-af2b-9477295a5508",
+    "error": null
+  },
+  {
+    "ok": true,
+    "file": "07-supertrend-di-adx-stack.italgo",
+    "name": "SuperTrend + DI/ADX стек",
+    "metrics": {
+      "pnl": 82.91840799999983,
+      "max_dd": 177.68788400000022,
+      "winrate": 0.3,
+      "trades": 31
+    },
+    "barsId": "p2-desktop-SBER-1d",
+    "graphsId": "b6036325-e7ab-4c2f-8d3b-4abbc93a5bcf",
+    "runsId": "d8f6cbd7-38f1-469a-b30b-49dd637737f0",
+    "error": null
+  },
+  {
+    "ok": true,
+    "file": "08-cci-regime-trail.italgo",
+    "name": "CCI режим + трейл",
+    "metrics": {
+      "pnl": 29.73458223500006,
+      "max_dd": 28.215053094999973,
+      "winrate": 0.45454545454545453,
+      "trades": 44
+    },
+    "barsId": "p2-desktop-SBER-1d",
+    "graphsId": "a15d9f98-7a7e-4685-9e14-9016ed02775d",
+    "runsId": "6949abf9-ebbb-4177-ba5e-8512671ffd14",
+    "error": null
+  },
+  {
+    "ok": true,
+    "file": "09-sma-cross-20-50.italgo",
+    "name": "SMA Cross 20/50",
+    "metrics": {
+      "pnl": 102.52095400000013,
+      "max_dd": 51.070721000000006,
+      "winrate": 0.5,
+      "trades": 12
+    },
+    "barsId": "p2-desktop-SBER-1d",
+    "graphsId": "d12eb7ea-ddf4-4db2-89dd-a17561261ba2",
+    "runsId": "c538f775-1cff-4913-a6b1-9ce9cb8b2de8",
+    "error": null
+  },
+  {
+    "ok": true,
+    "file": "10-ema-cross-9-21.italgo",
+    "name": "EMA Cross 9/21",
+    "metrics": {
+      "pnl": 47.483690000000095,
+      "max_dd": 103.57985799999996,
+      "winrate": 0.30303030303030304,
+      "trades": 33
+    },
+    "barsId": "p2-desktop-SBER-1d",
+    "graphsId": "7ab15f18-f862-4704-a90c-65b60584df4e",
+    "runsId": "576288f3-50c5-4c71-8b10-fc49b30371c2",
+    "error": null
+  },
+  {
+    "ok": true,
+    "file": "11-tema-cross-10-30.italgo",
+    "name": "TEMA Cross 10/30",
+    "metrics": {
+      "pnl": -127.71714799999961,
+      "max_dd": 181.330977,
+      "winrate": 0.4807692307692308,
+      "trades": 52
+    },
+    "barsId": "p2-desktop-SBER-1d",
+    "graphsId": "61d61bb2-770a-4648-b11a-e2106a8c6931",
+    "runsId": "d0124015-2af4-4056-a8d0-d8ae48b9d0e4",
+    "error": null
+  },
+  {
+    "ok": true,
+    "file": "12-dema-cross-12-26.italgo",
+    "name": "DEMA Cross 12/26",
+    "metrics": {
+      "pnl": -103.43236099999991,
+      "max_dd": 148.31954400000006,
+      "winrate": 0.38095238095238093,
+      "trades": 43
+    },
+    "barsId": "p2-desktop-SBER-1d",
+    "graphsId": "2eb0f048-30d2-4131-bc91-78f811ce278d",
+    "runsId": "f8d888ea-ba17-4ebc-8f07-15b924218920",
+    "error": null
+  },
+  {
+    "ok": true,
+    "file": "13-rsi-cross-50.italgo",
+    "name": "RSI Cross 50",
+    "metrics": {
+      "pnl": -3.6200759999995142,
+      "max_dd": 120.46337599999967,
+      "winrate": 0.32558139534883723,
+      "trades": 86
+    },
+    "barsId": "p2-desktop-SBER-1d",
+    "graphsId": "b30ce59c-6814-4bd8-8484-1685ae63c1a1",
+    "runsId": "d02c51aa-e163-4652-8034-a1a2f1f23d33",
+    "error": null
+  },
+  {
+    "ok": true,
+    "file": "14-cmo-cross-0.italgo",
+    "name": "CMO Cross 0",
+    "metrics": {
+      "pnl": -3.6200759999995142,
+      "max_dd": 120.46337599999967,
+      "winrate": 0.32558139534883723,
+      "trades": 86
+    },
+    "barsId": "p2-desktop-SBER-1d",
+    "graphsId": "82d6935a-f187-4ce5-a213-9c9aa46bb533",
+    "runsId": "8928bb72-d30d-4a48-83c0-f418d35d7408",
+    "error": null
+  },
+  {
+    "ok": true,
+    "file": "15-momentum-cross-0.italgo",
+    "name": "Momentum Cross 0",
+    "metrics": {
+      "pnl": -18.151349999999667,
+      "max_dd": 130.0328769999999,
+      "winrate": 0.3673469387755102,
+      "trades": 98
+    },
+    "barsId": "p2-desktop-SBER-1d",
+    "graphsId": "7ddd8a26-e20e-4a6c-8cfb-32771afb07dd",
+    "runsId": "0531bf93-9ed2-43c2-9977-f951c01b144e",
+    "error": null
+  },
+  {
+    "ok": true,
+    "file": "16-supertrend-rsi-entry.italgo",
+    "name": "SuperTrend + RSI entry",
+    "metrics": {
+      "pnl": 41.351667000000106,
+      "max_dd": 109.59076099999996,
+      "winrate": 0.5555555555555556,
+      "trades": 10
+    },
+    "barsId": "p2-desktop-SBER-1d",
+    "graphsId": "3851ccb5-aebf-45f5-89b6-b818c1239fa8",
+    "runsId": "cebb845f-754c-4351-9bb2-6d8361894547",
+    "error": null
+  },
+  {
+    "ok": true,
+    "file": "17-supertrend-rsi-tight.italgo",
+    "name": "SuperTrend7x2 + RSI7",
+    "metrics": {
+      "pnl": -41.397890999999916,
+      "max_dd": 173.71483699999993,
+      "winrate": 0.5625,
+      "trades": 17
+    },
+    "barsId": "p2-desktop-SBER-1d",
+    "graphsId": "935c242d-e424-4ff9-aad9-4ec74dcd1547",
+    "runsId": "58216f0e-22ba-4efd-b948-d7adae00799c",
+    "error": null
+  },
+  {
+    "ok": true,
+    "file": "18-mom-pct-ema50-filter.italgo",
+    "name": "Mom% + EMA50 filter",
+    "metrics": {
+      "pnl": 43.00606600000029,
+      "max_dd": 66.29599899999994,
+      "winrate": 0.32786885245901637,
+      "trades": 61
+    },
+    "barsId": "p2-desktop-SBER-1d",
+    "graphsId": "b30de6ba-716a-4fac-a723-aac89af97483",
+    "runsId": "badfea12-8c9b-4822-b96f-ad8f37f77c91",
+    "error": null
+  },
+  {
+    "ok": true,
+    "file": "19-bb-rsi-mean-reversion-v2.italgo",
+    "name": "BB+RSI mean-reversion v2",
+    "metrics": {
+      "pnl": -241.971949,
+      "max_dd": 269.836938,
+      "winrate": 0.5,
+      "trades": 9
+    },
+    "barsId": "p2-desktop-SBER-1d",
+    "graphsId": "818cad88-0fe8-4dcb-a4c3-0436a0d61177",
+    "runsId": "052a4dbf-269f-48f7-8cb7-e5abcc04e700",
+    "error": null
+  },
+  {
+    "ok": true,
+    "file": "20-donchian-55.italgo",
+    "name": "Donchian breakout 55",
+    "metrics": {
+      "pnl": 0.0,
+      "max_dd": 0.0,
+      "winrate": 0.0,
+      "trades": 0
+    },
+    "barsId": "p2-desktop-SBER-1d",
+    "graphsId": "4ec62738-d64a-4fee-87d3-35d1ea24b7d7",
+    "runsId": "4ad061fe-3e8f-4f13-92bb-607136fe66b0",
+    "error": null
+  }
+]

@@ -15,7 +15,9 @@
 | **it-algo-site** | Квоты / API (если облачный AI) |
 | **fintech-web** | Архив — только референс |
 
-**Продукт:** отдельный AI_algo (скрипты, сигналы, советы). **Клиент v1:** IT Algo Desktop — только через integration interfaces.
+**Продукт:** отдельный AI_algo (скрипты, сигналы, советы, чат).  
+**Клиенты:** IT Algo Desktop (AI из коробки) + **standalone** релиз (чат, сборщик, CSV/брокер) — см. `docs/work/STANDALONE_PRODUCT_UX.md`.  
+Связь только через integration interfaces.
 
 **Obsidian (зеркало заметок):** `/Users/kreckeroff/мое хранилище/projects/ai-algo/`
 
@@ -34,6 +36,10 @@
 9. **Минимальный diff** — не рефакторить несвязанное.
 10. **Отдельный продукт** — Desktop не содержит обучение; связь только по контрактам (`docs/PRODUCT_BOUNDARY.md`, `docs/work/platform/INTEGRATION_INTERFACES.md`).
 11. **Обучение:** export датасетов **или** train API только в `dev` — не из prod-клиента.
+12. **§7C цель метрик:** +WR и макс. PnL; для **тренда** — PnL first (WR&lt;40% норма), затем подтягивать WR.
+13. **После каждого обучения** — обязательная полная HTML-аналитика + сравнение с предыдущей сессией (§3.4).
+14. **Обучение покрывает:** все доступные **ТФ**, все whitelist-**связки**, indicator **period ∈ [1,200]**, и **кастомные окна истории от 1 дня до 3–5 лет** на каждом ТФ; временный subsample — только с долгом «догнать» (backlog §7A).
+15. **Сторона позиции (§7D):** корпус и обучение учитывают **`long_only` и `long_short`** (не перекашивать в чистый лонг); тег `side_mode` в meta/analytics.
 
 ---
 
@@ -47,7 +53,8 @@
 5. SA-спека фичи   → docs/work/{area}/{FEATURE}_SA_SPEC.md  (если продукт/контракт)
 6. Обновить индексы → docs/work/README.md, BACKLOG.md, AGENT_HANDOFF.md
 7. Эксперимент/код → experiments/ или будущий src/ (минимальный diff)
-8. Коммит / push   → только по явной просьбе пользователя
+8. После обучения  → ANALYTICS.html (полная аналитика + сравнение prev→current)  ← обязательно
+9. Коммит / push   → только по явной просьбе пользователя
 ```
 
 ### 3.1 Когда писать спеку
@@ -67,6 +74,31 @@
 
 Префикс `AI-{NAME}` (пример: `AI-SCRIPT-COMPARE`, `AI-COMPOSE-DSL`, `AI-SIGNAL-CPU`).
 
+### 3.4 Аналитика после обучения (обязательно)
+
+После **каждой** train/lab сессии агент генерирует HTML полной аналитики. Без него сессия **незавершена**.
+
+| Поле | Значение |
+|------|----------|
+| Файл | `artifacts/agent_loop/sessions/<id>/ANALYTICS.html` (+ `REPORT.md`) |
+| Скрипт | `scripts/build_training_analytics.py` |
+| Эталон | `TRAINING_MAP.html`, `C1_MAP.html` |
+
+**Содержание отчёта:**
+
+1. Как прошло обучение (данные, ТФ, **lookback windows 1d…5y**, сетка, indicator periods, n прогонов, время).
+2. Все ключевые показатели текущей версии (PnL mean/median, WR, DD, топы, heatmap).
+3. **Сравнение с предыдущей сессией** prev→current: Δ метрик, verdict `better`/`worse`/`mixed`/`unchanged` по §7C.
+4. Q–Q / форма PnL (по возможности).
+5. Covered vs missing: ТФ, связки, **history windows**.
+6. Shortlist и что дальше.
+
+```bash
+.venv/bin/python scripts/build_training_analytics.py \
+  --session artifacts/agent_loop/sessions/<current> \
+  --prev artifacts/agent_loop/sessions/<previous>
+```
+
 ---
 
 ## 4. Два контура обучения (не путать)
@@ -85,7 +117,8 @@
 | Запрос | Действие агента |
 |--------|-----------------|
 | «Что в бэклоге?» | `docs/work/BACKLOG.md` |
-| «Обучи модель / эксперимент» | TRAINING_APPROACH + `experiments/` + design при новой метке/фичах |
+| «Обучи модель / эксперимент» | TRAINING_APPROACH + `experiments/` + **ANALYTICS.html** (§3.4) |
+| «Аналитика обучения» | `scripts/build_training_analytics.py` + session `ANALYTICS.html` |
 | «Спека на фичу X» | шаблон SA → `docs/work/…` |
 | «Синхронизируй Obsidian» | обновить `мое хранилище/projects/ai-algo/` |
 | «Интеграция в Desktop» | контракт в SA + задача/ссылка в it-algo-desktop (не ломать Desktop без спеки) |

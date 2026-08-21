@@ -1,0 +1,23 @@
+{
+  "match": true,
+  "diffs": [],
+  "desktop_stats": {
+    "losses": 6,
+    "maxDrawdown": 51.070721000000006,
+    "netPnl": 102.52095400000013,
+    "totalTrades": 12,
+    "winRate": 0.5,
+    "wins": 6
+  },
+  "ai_algo_stats": {
+    "totalTrades": 12,
+    "wins": 6,
+    "losses": 6,
+    "winRate": 0.5,
+    "netPnl": 102.52095400000013,
+    "maxDrawdown": 51.070721000000006,
+    "closedTrades": 12
+  },
+  "n_trades_desktop": 12,
+  "n_trades_ai": 12
+}

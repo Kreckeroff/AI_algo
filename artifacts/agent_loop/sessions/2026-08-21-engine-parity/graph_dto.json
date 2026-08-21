@@ -1,0 +1,64 @@
+{
+  "id": "parity-sma-cross-20-50",
+  "format": "graph_dto_v1",
+  "symbol": "SBER",
+  "timeframe": "1d",
+  "nodes": [
+    {
+      "id": "close",
+      "type": "source",
+      "source": "close"
+    },
+    {
+      "id": "sma_f",
+      "type": "indicator",
+      "kind": "SMA",
+      "period": 20,
+      "source_node": "close"
+    },
+    {
+      "id": "sma_s",
+      "type": "indicator",
+      "kind": "SMA",
+      "period": 50,
+      "source_node": "close"
+    },
+    {
+      "id": "x_up",
+      "type": "condition",
+      "op": "cross_up",
+      "a": "sma_f",
+      "b": "sma_s"
+    },
+    {
+      "id": "x_dn",
+      "type": "condition",
+      "op": "cross_down",
+      "a": "sma_f",
+      "b": "sma_s"
+    },
+    {
+      "id": "open_long",
+      "type": "action",
+      "action": "open_market",
+      "side": "buy",
+      "when": "x_up"
+    },
+    {
+      "id": "close_long",
+      "type": "action",
+      "action": "close_market",
+      "when": "x_dn"
+    }
+  ],
+  "engine_rules": {
+    "signal_on": "bar_close",
+    "fill_on": "next_bar_open",
+    "commission_pct": 0.04,
+    "slippage_pct": 0.01,
+    "qty": 1,
+    "force_close_eod": false,
+    "pnl_unit": "price_points"
+  },
+  "desktop_script": "/Users/kreckeroff/Fintech (startup)/it-algo-desktop/docs/work/scripting/samples/ai-train/09-sma-cross-20-50.italgo"
+}

@@ -4,11 +4,12 @@ SA-спеки, backlog, research по AI-слою IT Algo.
 
 | Документ | Суть |
 |----------|------|
-| [BACKLOG.md](./BACKLOG.md) | Продуктовый backlog модулей |
+| [BACKLOG.md](./BACKLOG.md) | Продуктовый backlog модулей (§9 = UX dual release) |
+| [STANDALONE_PRODUCT_UX.md](./STANDALONE_PRODUCT_UX.md) | Чат, сборщик, CSV/брокер, standalone + Desktop |
 | [../PRODUCT_VISION.md](../PRODUCT_VISION.md) | Видение |
 | [../TRAINING_APPROACH.md](../TRAINING_APPROACH.md) | Обучение A/B, сложности, путь |
 | [../AGENT_HANDOFF.md](../AGENT_HANDOFF.md) | Старт нового чата |
-| [../PRODUCT_BOUNDARY.md](../PRODUCT_BOUNDARY.md) | AI_algo как отдельный продукт |
+| [../PRODUCT_BOUNDARY.md](../PRODUCT_BOUNDARY.md) | AI_algo: ядро + Desktop + standalone |
 | [platform/INTEGRATION_INTERFACES.md](./platform/INTEGRATION_INTERFACES.md) | **Контракты** Inference / Ingest / Train |
 | [../superpowers/plans/2026-08-21-ai-algo-roadmap.md](../superpowers/plans/2026-08-21-ai-algo-roadmap.md) | **План действий** Phase 0–6 |
 | [`../../openapi/v1.yaml`](../../openapi/v1.yaml) | OpenAPI v1 |

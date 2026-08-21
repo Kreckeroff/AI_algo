@@ -1,0 +1,133 @@
+{
+  "stats": {
+    "totalTrades": 12,
+    "wins": 6,
+    "losses": 6,
+    "winRate": 0.5,
+    "netPnl": 102.52095400000013,
+    "maxDrawdown": 51.070721000000006,
+    "closedTrades": 12
+  },
+  "trades": [
+    {
+      "entry_time": 1656374400,
+      "exit_time": 1660521600,
+      "side": "buy",
+      "qty": 1.0,
+      "entry_price": 141.764175,
+      "exit_price": 124.547544,
+      "pnl": -17.216630999999992,
+      "bars_held": 34
+    },
+    {
+      "entry_time": 1662422400,
+      "exit_time": 1664755200,
+      "side": "buy",
+      "qty": 1.0,
+      "entry_price": 140.91409000000002,
+      "exit_price": 110.60893800000001,
+      "pnl": -30.305152000000007,
+      "bars_held": 19
+    },
+    {
+      "entry_time": 1668384000,
+      "exit_time": 1695859200,
+      "side": "buy",
+      "qty": 1.0,
+      "entry_price": 137.51375,
+      "exit_price": 256.37435999999997,
+      "pnl": 118.86060999999998,
+      "bars_held": 222
+    },
+    {
+      "entry_time": 1697760000,
+      "exit_time": 1703030400,
+      "side": "buy",
+      "qty": 1.0,
+      "entry_price": 268.52685,
+      "exit_price": 267.483249,
+      "pnl": -1.0436010000000238,
+      "bars_held": 43
+    },
+    {
+      "entry_time": 1705968000,
+      "exit_time": 1721088000,
+      "side": "buy",
+      "qty": 1.0,
+      "entry_price": 274.72747,
+      "exit_price": 284.461551,
+      "pnl": 9.734081000000003,
+      "bars_held": 121
+    },
+    {
+      "entry_time": 1729036800,
+      "exit_time": 1729555200,
+      "side": "buy",
+      "qty": 1.0,
+      "entry_price": 262.076205,
+      "exit_price": 258.07419000000004,
+      "pnl": -4.002014999999972,
+      "bars_held": 4
+    },
+    {
+      "entry_time": 1735516800,
+      "exit_time": 1743984000,
+      "side": "buy",
+      "qty": 1.0,
+      "entry_price": 274.0274,
+      "exit_price": 285.27147,
+      "pnl": 11.244070000000022,
+      "bars_held": 74
+    },
+    {
+      "entry_time": 1746835200,
+      "exit_time": 1753488000,
+      "side": "buy",
+      "qty": 1.0,
+      "entry_price": 303.56035299999996,
+      "exit_price": 309.319065,
+      "pnl": 5.75871200000006,
+      "bars_held": 72
+    },
+    {
+      "entry_time": 1755993600,
+      "exit_time": 1757030400,
+      "side": "buy",
+      "qty": 1.0,
+      "entry_price": 312.33123,
+      "exit_price": 309.06909,
+      "pnl": -3.262139999999988,
+      "bars_held": 12
+    },
+    {
+      "entry_time": 1762387200,
+      "exit_time": 1767571200,
+      "side": "buy",
+      "qty": 1.0,
+      "entry_price": 295.759573,
+      "exit_price": 299.97,
+      "pnl": 4.210427000000038,
+      "bars_held": 51
+    },
+    {
+      "entry_time": 1769731200,
+      "exit_time": 1780704000,
+      "side": "buy",
+      "qty": 1.0,
+      "entry_price": 308.0308,
+      "exit_price": 322.177779,
+      "pnl": 14.146978999999988,
+      "bars_held": 119
+    },
+    {
+      "entry_time": 1781568000,
+      "exit_time": 1781740800,
+      "side": "buy",
+      "qty": 1.0,
+      "entry_price": 324.73247,
+      "exit_price": 319.128084,
+      "pnl": -5.604385999999977,
+      "bars_held": 2
+    }
+  ]
+}

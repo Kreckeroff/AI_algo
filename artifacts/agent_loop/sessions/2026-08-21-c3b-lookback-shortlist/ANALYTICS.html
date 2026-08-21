@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8"/>
+<title>ANALYTICS — 2026-08-21-c3b-lookback-shortlist</title>
+<style>
+:root { --bg:#0f1419; --panel:#1a222c; --text:#e8eef4; --muted:#8b9aab; --line:#2a3542; }
+body { margin:0; font-family:IBM Plex Sans,Segoe UI,system-ui,sans-serif; background:radial-gradient(1000px 500px at 0% 0%,#1a2a3a,var(--bg));
+  color:var(--text); padding:28px; }
+h1 { font-size:1.45rem; margin:0 0 6px; } h2 { font-size:1.05rem; margin:28px 0 10px; }
+.sub { color:var(--muted); max-width:920px; line-height:1.45; }
+.grid { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:16px 0 22px; }
+.card { background:var(--panel); border:1px solid var(--line); border-radius:10px; padding:12px 14px; }
+.card .k { color:var(--muted); font-size:.72rem; text-transform:uppercase; letter-spacing:.05em; }
+.card .v { font-size:1.25rem; font-weight:600; margin-top:4px; font-variant-numeric:tabular-nums; }
+table.stats { border-collapse:collapse; width:100%; background:var(--panel); border:1px solid var(--line); border-radius:10px; overflow:hidden; font-size:.85rem; }
+th,td { border:1px solid var(--line); padding:8px 10px; text-align:left; }
+th { background:#121820; color:var(--muted); font-weight:500; }
+td { font-variant-numeric:tabular-nums; }
+.verdict { padding:2px 8px; border-radius:4px; font-weight:600; }
+.verdict.better { background:#1e3d2c; color:#9ad67a; }
+.verdict.worse { background:#3d1e1e; color:#f0a0a0; }
+.verdict.mixed { background:#3d3420; color:#e6c87a; }
+.verdict.unchanged { background:#243040; color:#8b9aab; }
+</style></head><body>
+<h1>Аналитика обучения — 2026-08-21-c3b-lookback-shortlist</h1>
+<p class="sub">Сгенерировано 2026-08-21T09:22:29.488474+00:00 · AGENTS.md §3.4 · полная аналитика + сравнение версий</p>
+
+<div class="grid">
+  <div class="card"><div class="k">Session</div><div class="v" style="font-size:1rem">2026-08-21-c3b-lookback-shortlist</div></div>
+  <div class="card"><div class="k">Prev</div><div class="v" style="font-size:1rem">2026-08-21-c3-all-tf</div></div>
+  <div class="card"><div class="k">Verdict prev→cur</div><div class="v"><span class="verdict better">better</span></div></div>
+  <div class="card"><div class="k">Rows / cells</div><div class="v">1590 / 34</div></div>
+</div>
+
+<h2>Как прошло обучение</h2>
+<ul class="sub">
+  <li>Policy: P1 gradual: lookback 1d…5y on C3 shortlist only; §7C PnL-first</li>
+  <li>TFs: ['15m', '1h', '1d']</li>
+  <li>max_period: —</li>
+  <li>Summary source: results/c1_summary.json</li>
+  <li>Signal model: kind=— acc=— auc=—</li>
+</ul>
+
+<h2>Показатели текущей версии (top-20 aggregate)</h2>
+<div class="grid">
+  <div class="card"><div class="k">Best med PnL</div><div class="v">140.6</div></div>
+  <div class="card"><div class="k">Med of top med PnL</div><div class="v">53.0</div></div>
+  <div class="card"><div class="k">Mean WR</div><div class="v">0.425</div></div>
+  <div class="card"><div class="k">Mean DD</div><div class="v">338.7</div></div>
+</div>
+
+
+  <h2>Сравнение с предыдущей сессией</h2>
+  <p class="sub"><b>2026-08-21-c3-all-tf</b> → <b>2026-08-21-c3b-lookback-shortlist</b> · verdict: <span class="verdict better">better</span>
+  (политика §7C: для тренда PnL first)</p>
+  <table class="stats">
+    <thead><tr><th>метрика</th><th>prev</th><th>current</th><th>Δ</th></tr></thead>
+    <tbody>
+      <tr><td>best / top med PnL</td><td>251.5</td><td>140.6</td>
+          <td>-110.9</td></tr>
+      <tr><td>median of top-20 med PnL</td><td>16.1</td><td>53.0</td>
+          <td>36.9</td></tr>
+      <tr><td>mean of top-20 mean PnL</td><td>159.8</td><td>282.2</td>
+          <td>122.4</td></tr>
+      <tr><td>mean WR (top-20)</td><td>0.379</td><td>0.425</td>
+          <td>0.046</td></tr>
+      <tr><td>mean DD (top-20)</td><td>288.9</td><td>338.7</td>
+          <td>49.8</td></tr>
+      <tr><td>signal acc (если есть)</td><td>—</td><td>—</td>
+          <td>0</td></tr>
+      <tr><td>signal AUC</td><td>—</td><td>—</td>
+          <td>0</td></tr>
+      <tr><td>n_rows / cells</td><td>91800 / 708</td>
+          <td>1590 / 34</td><td>—</td></tr>
+    </tbody>
+  </table>
+
+
+<h2>Топ связок (текущая сессия)</h2>
+<table class="stats">
+  <thead><tr><th>#</th><th>entry</th><th>filter</th><th>regime</th><th>med PnL</th><th>mean PnL</th><th>WR</th><th>DD</th><th>n</th></tr></thead>
+  <tbody><tr><td>1</td><td>ema_rsi_ob_os|rsi21_ema14</td><td>supertrend|14x3</td><td>trend</td><td>140.6</td><td>121.6</td><td>0.528</td><td>319.0</td><td>3</td></tr><tr><td>2</td><td>ema_rsi_ob_os|rsi21_ema14</td><td>supertrend|14x3</td><td>trend</td><td>140.6</td><td>130.7</td><td>0.494</td><td>302.8</td><td>3</td></tr><tr><td>3</td><td>ema_rsi_ob_os|rsi21_ema14</td><td>supertrend|14x3</td><td>trend</td><td>140.6</td><td>130.7</td><td>0.494</td><td>302.8</td><td>3</td></tr><tr><td>4</td><td>ema_rsi_ob_os|rsi21_ema14</td><td>supertrend|14x3</td><td>trend</td><td>140.6</td><td>130.7</td><td>0.494</td><td>302.8</td><td>3</td></tr><tr><td>5</td><td>roc_momentum|20</td><td>ema|50</td><td>trend</td><td>103.5</td><td>435.3</td><td>0.344</td><td>328.2</td><td>42</td></tr><tr><td>6</td><td>keltner|20</td><td>ema|100</td><td>trend</td><td>92.5</td><td>479.3</td><td>0.405</td><td>468.8</td><td>42</td></tr><tr><td>7</td><td>donchian|10</td><td>ema|100</td><td>trend</td><td>83.4</td><td>541.4</td><td>0.389</td><td>488.7</td><td>42</td></tr><tr><td>8</td><td>ema_rsi_ob_os|rsi21_ema14</td><td>supertrend|14x3</td><td>trend</td><td>71.8</td><td>298.2</td><td>0.556</td><td>183.7</td><td>3</td></tr><tr><td>9</td><td>keltner|20</td><td>ema|100</td><td>trend</td><td>67.7</td><td>435.1</td><td>0.408</td><td>379.0</td><td>42</td></tr><tr><td>10</td><td>keltner|20</td><td>ema|100</td><td>trend</td><td>53.0</td><td>308.8</td><td>0.403</td><td>366.1</td><td>42</td></tr><tr><td>11</td><td>roc_momentum|20</td><td>ema|50</td><td>trend</td><td>52.1</td><td>352.0</td><td>0.343</td><td>302.4</td><td>42</td></tr><tr><td>12</td><td>keltner|20</td><td>ema|100</td><td>trend</td><td>50.0</td><td>117.1</td><td>0.405</td><td>179.5</td><td>31</td></tr><tr><td>13</td><td>keltner|20</td><td>ema|100</td><td>trend</td><td>47.6</td><td>257.5</td><td>0.454</td><td>203.5</td><td>42</td></tr><tr><td>14</td><td>keltner|20</td><td>ema|100</td><td>trend</td><td>42.2</td><td>347.0</td><td>0.430</td><td>289.0</td><td>42</td></tr><tr><td>15</td><td>donchian|10</td><td>ema|100</td><td>trend</td><td>35.7</td><td>323.8</td><td>0.381</td><td>457.9</td><td>42</td></tr></tbody>
+</table>
+
+<h2>Что дальше</h2>
+<p class="sub">Shortlist топов → Desktop validate · следующая волна (C2/C3 или period expand) · параллель §7B индикаторы.</p>
+</body></html>

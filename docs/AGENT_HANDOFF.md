@@ -50,6 +50,11 @@
 | Контракты с Desktop | `docs/PRODUCT_BOUNDARY.md`, `docs/work/platform/INTEGRATION_INTERFACES.md` |
 | План действий | `docs/superpowers/plans/2026-08-21-ai-algo-roadmap.md` |
 | Модули продукта | `docs/PRODUCT_VISION.md` |
+| Standalone UX + Desktop из коробки | `docs/work/STANDALONE_PRODUCT_UX.md`, backlog §9 |
+| Entry×Filter / SuperTrend-фильтр / EMA(RSI) | backlog §7A, `docs/TRAINING_APPROACH.md` |
+| Параллель: новые индикаторы Desktop + train | backlog §7B |
+| Цель: PnL / WR по режиму (тренд = PnL first) | `PRODUCT_VISION.md`, backlog §7C |
+| После обучения: ANALYTICS.html | `AGENTS.md` §3.4, `scripts/build_training_analytics.py` |
 | Разбор сделок | `src/ai_algo/domain/trade_analysis.py` |
 | Цикл обучения (агент) | `docs/work/AGENT_TRAINING_LOOP.md` |
 
@@ -63,6 +68,7 @@
 - Цикл «ты управляешь агентом → артефакты скриптов → ingest → train»: [`docs/work/AGENT_TRAINING_LOOP.md`](work/AGENT_TRAINING_LOOP.md).
 - Export: `python scripts/export_ingest_to_csv.py`
 - Команда **«начинай обучать»** → агент создаёт сессию, правит скрипты, копит данные, запускает train.
+- Целевой UX (чат, сборщик, CSV/брокер, dual release): [`STANDALONE_PRODUCT_UX.md`](work/STANDALONE_PRODUCT_UX.md) — после зрелости моделей.
 
 **Данные сделок:** бэктест `BacktestSnapshot.trades`; брокерская история — позже в Advisor.
 

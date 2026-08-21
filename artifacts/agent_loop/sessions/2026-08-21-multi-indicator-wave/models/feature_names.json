@@ -1,0 +1,76 @@
+{
+  "session": "2026-08-21-multi-indicator-wave",
+  "feature_schema_id": "v2-multi",
+  "feature_names": [
+    "ret_1",
+    "ret_5",
+    "rsi_14",
+    "atr_14",
+    "ema_dist_50",
+    "volume_z",
+    "macd_hist",
+    "bb_pct",
+    "roc_10"
+  ],
+  "model_kind": "lgbm",
+  "families": [
+    "supertrend_rsi",
+    "ema_cross",
+    "macd_cross",
+    "bb_mean_rev",
+    "rsi_ob_os",
+    "stochastic",
+    "adx_di",
+    "donchian",
+    "keltner",
+    "cci",
+    "dual_sma_rsi",
+    "roc_momentum"
+  ],
+  "metrics": {
+    "accuracy": 0.5201284247283801,
+    "roc_auc": 0.5241882970685166,
+    "n_train": 281980,
+    "n_test": 120849,
+    "n_symbols": 15
+  },
+  "symbols": [
+    "CNYRUBF",
+    "GAZP",
+    "GLDRUBF",
+    "GMKN",
+    "GSPC",
+    "IMOEXF",
+    "LKOH",
+    "MGNT",
+    "MTSS",
+    "NVTK",
+    "PLZL",
+    "ROSN",
+    "SBER",
+    "SPY",
+    "TATN"
+  ],
+  "timeframes": [
+    "10m",
+    "15m",
+    "1M",
+    "1d",
+    "1h",
+    "1m",
+    "1w",
+    "30m",
+    "5m"
+  ],
+  "lookback_days": {
+    "1m": 45,
+    "5m": 55,
+    "15m": 55,
+    "30m": 90,
+    "10m": 730,
+    "1h": 1825,
+    "1d": 1825,
+    "1w": 1825,
+    "1M": 1825
+  }
+}

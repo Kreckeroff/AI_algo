@@ -36,10 +36,14 @@
 - Env: `AI_ALGO_DATA_DIR`, `AI_ALGO_STORE=memory` (тесты).
 - Export: `python scripts/export_ingest_to_csv.py`
 
-## Когда скажешь «начинай обучать»
+## Когда скажешь «начинай обучать» / «продолжай обучение»
 
 Агент:
 1. Создаст сессию в `artifacts/agent_loop/sessions/…`
-2. Соберёт/изменит скрипты
-3. Накопит прогоны через Desktop ingest
-4. Запустит train experiment и зафикисит артефакт модели
+2. Соберёт/изменит скрипты / grid
+3. Накопит прогоны (lab и/или Desktop ingest)
+4. Запустит train/BT experiment
+5. **Обязательно** сгенерирует `ANALYTICS.html` — полная аналитика + **сравнение с предыдущей сессией** (`scripts/build_training_analytics.py`, см. `AGENTS.md` §3.4)
+6. Зафиксирует `REPORT.md` / notes
+
+Без шага 5 сессия не считается завершённой.

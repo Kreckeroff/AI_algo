@@ -29,3 +29,8 @@ dist/
 artifacts/agent_loop/sessions/**/data/
 artifacts/agent_loop/sessions/**/models/*.joblib
 artifacts/agent_loop/sessions/**/pipeline.log
+
+# Large training grids / local bars dumps (keep summaries + ANALYTICS)
+artifacts/agent_loop/sessions/**/results/*_grid_backtest.json
+artifacts/agent_loop/sessions/**/bars_*.json
+artifacts/agent_loop/sessions/**/desktop_*.jsonl

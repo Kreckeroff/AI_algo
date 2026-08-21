@@ -1,0 +1,354 @@
+{
+  "session": "2026-08-21-c3b-lookback-shortlist",
+  "policy": "P1 gradual: lookback 1d\u20265y on C3 shortlist only; \u00a77C PnL-first",
+  "lookbacks_days": [
+    1,
+    7,
+    30,
+    90,
+    180,
+    365,
+    730,
+    1095,
+    1825
+  ],
+  "bt_tfs": [
+    "15m",
+    "1h",
+    "1d"
+  ],
+  "shortlist": [
+    {
+      "entry": "ema_rsi_ob_os|rsi21_ema14",
+      "filter": "supertrend|14x3",
+      "kind": "comp"
+    },
+    {
+      "entry": "ema_rsi_ob_os|rsi14_ema14",
+      "filter": "supertrend|14x3",
+      "kind": "comp"
+    },
+    {
+      "entry": "roc_momentum|20",
+      "filter": "ema|50",
+      "kind": "entry"
+    },
+    {
+      "entry": "keltner|20",
+      "filter": "ema|100",
+      "kind": "entry"
+    },
+    {
+      "entry": "donchian|10",
+      "filter": "ema|100",
+      "kind": "entry"
+    }
+  ],
+  "n_rows": 1590,
+  "n_cells": 34,
+  "top20_by_score": [
+    {
+      "entry": "ema_rsi_ob_os|rsi21_ema14",
+      "filter": "supertrend|14x3",
+      "lookback_days": 365,
+      "regime": "trend",
+      "n": 3,
+      "median_pnl": 140.5999999999999,
+      "mean_pnl": 121.60700000000021,
+      "mean_wr": 0.5277777777777778,
+      "mean_dd": 318.9853333333334,
+      "score": 140.5999999999999
+    },
+    {
+      "entry": "ema_rsi_ob_os|rsi21_ema14",
+      "filter": "supertrend|14x3",
+      "lookback_days": 730,
+      "regime": "trend",
+      "n": 3,
+      "median_pnl": 140.5999999999999,
+      "mean_pnl": 130.6943333333333,
+      "mean_wr": 0.4944444444444444,
+      "mean_dd": 302.75199999999984,
+      "score": 140.5999999999999
+    },
+    {
+      "entry": "ema_rsi_ob_os|rsi21_ema14",
+      "filter": "supertrend|14x3",
+      "lookback_days": 1095,
+      "regime": "trend",
+      "n": 3,
+      "median_pnl": 140.5999999999999,
+      "mean_pnl": 130.6943333333333,
+      "mean_wr": 0.4944444444444444,
+      "mean_dd": 302.75199999999984,
+      "score": 140.5999999999999
+    },
+    {
+      "entry": "ema_rsi_ob_os|rsi21_ema14",
+      "filter": "supertrend|14x3",
+      "lookback_days": 1825,
+      "regime": "trend",
+      "n": 3,
+      "median_pnl": 140.5999999999999,
+      "mean_pnl": 130.6943333333333,
+      "mean_wr": 0.4944444444444444,
+      "mean_dd": 302.75199999999984,
+      "score": 140.5999999999999
+    },
+    {
+      "entry": "roc_momentum|20",
+      "filter": "ema|50",
+      "lookback_days": 1825,
+      "regime": "trend",
+      "n": 42,
+      "median_pnl": 103.47776184082042,
+      "mean_pnl": 435.2704339715861,
+      "mean_wr": 0.34368742822198195,
+      "mean_dd": 328.2287583705357,
+      "score": 103.47776184082042
+    },
+    {
+      "entry": "keltner|20",
+      "filter": "ema|100",
+      "lookback_days": 1825,
+      "regime": "trend",
+      "n": 42,
+      "median_pnl": 92.52500000000012,
+      "mean_pnl": 479.34739070638005,
+      "mean_wr": 0.4048400017186376,
+      "mean_dd": 468.82141764322904,
+      "score": 92.52500000000012
+    },
+    {
+      "entry": "donchian|10",
+      "filter": "ema|100",
+      "lookback_days": 1825,
+      "regime": "trend",
+      "n": 42,
+      "median_pnl": 83.42500000000013,
+      "mean_pnl": 541.3726509951637,
+      "mean_wr": 0.38901907933260926,
+      "mean_dd": 488.7420231526693,
+      "score": 83.42500000000013
+    },
+    {
+      "entry": "ema_rsi_ob_os|rsi21_ema14",
+      "filter": "supertrend|14x3",
+      "lookback_days": 180,
+      "regime": "trend",
+      "n": 3,
+      "median_pnl": 71.80000000000018,
+      "mean_pnl": 298.22666666666686,
+      "mean_wr": 0.5555555555555555,
+      "mean_dd": 183.67999999999998,
+      "score": 71.80000000000018
+    },
+    {
+      "entry": "keltner|20",
+      "filter": "ema|100",
+      "lookback_days": 1095,
+      "regime": "trend",
+      "n": 42,
+      "median_pnl": 67.65000000000026,
+      "mean_pnl": 435.1422821335565,
+      "mean_wr": 0.40819057085564936,
+      "mean_dd": 379.0364161551338,
+      "score": 67.65000000000026
+    },
+    {
+      "entry": "keltner|20",
+      "filter": "ema|100",
+      "lookback_days": 730,
+      "regime": "trend",
+      "n": 42,
+      "median_pnl": 53.00000000000014,
+      "mean_pnl": 308.7538122151691,
+      "mean_wr": 0.403481826104048,
+      "mean_dd": 366.1165570475259,
+      "score": 53.00000000000014
+    },
+    {
+      "entry": "roc_momentum|20",
+      "filter": "ema|50",
+      "lookback_days": 1095,
+      "regime": "trend",
+      "n": 42,
+      "median_pnl": 52.099999999999966,
+      "mean_pnl": 352.0212569347558,
+      "mean_wr": 0.3426103777689682,
+      "mean_dd": 302.36128197079614,
+      "score": 52.099999999999966
+    },
+    {
+      "entry": "keltner|20",
+      "filter": "ema|100",
+      "lookback_days": 90,
+      "regime": "trend",
+      "n": 31,
+      "median_pnl": 50.00000000000006,
+      "mean_pnl": 117.11863027658731,
+      "mean_wr": 0.40503808309081424,
+      "mean_dd": 179.47052110635076,
+      "score": 50.00000000000006
+    },
+    {
+      "entry": "keltner|20",
+      "filter": "ema|100",
+      "lookback_days": 180,
+      "regime": "trend",
+      "n": 42,
+      "median_pnl": 47.64999999999998,
+      "mean_pnl": 257.4536293480282,
+      "mean_wr": 0.45363844633735395,
+      "mean_dd": 203.50687804594477,
+      "score": 47.64999999999998
+    },
+    {
+      "entry": "keltner|20",
+      "filter": "ema|100",
+      "lookback_days": 365,
+      "regime": "trend",
+      "n": 42,
+      "median_pnl": 42.20000000000003,
+      "mean_pnl": 347.00341816638746,
+      "mean_wr": 0.4298521284531877,
+      "mean_dd": 288.96807041713157,
+      "score": 42.20000000000003
+    },
+    {
+      "entry": "donchian|10",
+      "filter": "ema|100",
+      "lookback_days": 730,
+      "regime": "trend",
+      "n": 42,
+      "median_pnl": 35.699999999999534,
+      "mean_pnl": 323.78161673409585,
+      "mean_wr": 0.38078347130716306,
+      "mean_dd": 457.9405134393601,
+      "score": 35.699999999999534
+    },
+    {
+      "entry": "donchian|10",
+      "filter": "ema|100",
+      "lookback_days": 1095,
+      "regime": "trend",
+      "n": 42,
+      "median_pnl": 33.67499999999999,
+      "mean_pnl": 412.3507023053849,
+      "mean_wr": 0.3852006948338169,
+      "mean_dd": 463.344637765067,
+      "score": 33.67499999999999
+    },
+    {
+      "entry": "donchian|10",
+      "filter": "ema|100",
+      "lookback_days": 180,
+      "regime": "trend",
+      "n": 42,
+      "median_pnl": 33.20000000000001,
+      "mean_pnl": 275.9547553478421,
+      "mean_wr": 0.4396208203833324,
+      "mean_dd": 233.13090302966876,
+      "score": 33.20000000000001
+    },
+    {
+      "entry": "donchian|10",
+      "filter": "ema|100",
+      "lookback_days": 365,
+      "regime": "trend",
+      "n": 42,
+      "median_pnl": 32.55,
+      "mean_pnl": 314.857270391555,
+      "mean_wr": 0.38905128413146156,
+      "mean_dd": 360.09678613281244,
+      "score": 32.55
+    },
+    {
+      "entry": "donchian|10",
+      "filter": "ema|100",
+      "lookback_days": 90,
+      "regime": "trend",
+      "n": 37,
+      "median_pnl": 32.5,
+      "mean_pnl": 201.54127070576422,
+      "mean_wr": 0.4248275636104411,
+      "mean_dd": 195.23820806059976,
+      "score": 32.5
+    },
+    {
+      "entry": "ema_rsi_ob_os|rsi14_ema14",
+      "filter": "supertrend|14x3",
+      "lookback_days": 730,
+      "regime": "trend",
+      "n": 2,
+      "median_pnl": 29.5,
+      "mean_pnl": 29.5,
+      "mean_wr": 0.3333333333333333,
+      "mean_dd": 648.4499999999998,
+      "score": 29.5
+    }
+  ],
+  "best_lookback_per_pair": [
+    {
+      "entry": "ema_rsi_ob_os|rsi21_ema14",
+      "filter": "supertrend|14x3",
+      "lookback_days": 365,
+      "regime": "trend",
+      "n": 3,
+      "median_pnl": 140.5999999999999,
+      "mean_pnl": 121.60700000000021,
+      "mean_wr": 0.5277777777777778,
+      "mean_dd": 318.9853333333334,
+      "score": 140.5999999999999
+    },
+    {
+      "entry": "roc_momentum|20",
+      "filter": "ema|50",
+      "lookback_days": 1825,
+      "regime": "trend",
+      "n": 42,
+      "median_pnl": 103.47776184082042,
+      "mean_pnl": 435.2704339715861,
+      "mean_wr": 0.34368742822198195,
+      "mean_dd": 328.2287583705357,
+      "score": 103.47776184082042
+    },
+    {
+      "entry": "keltner|20",
+      "filter": "ema|100",
+      "lookback_days": 1825,
+      "regime": "trend",
+      "n": 42,
+      "median_pnl": 92.52500000000012,
+      "mean_pnl": 479.34739070638005,
+      "mean_wr": 0.4048400017186376,
+      "mean_dd": 468.82141764322904,
+      "score": 92.52500000000012
+    },
+    {
+      "entry": "donchian|10",
+      "filter": "ema|100",
+      "lookback_days": 1825,
+      "regime": "trend",
+      "n": 42,
+      "median_pnl": 83.42500000000013,
+      "mean_pnl": 541.3726509951637,
+      "mean_wr": 0.38901907933260926,
+      "mean_dd": 488.7420231526693,
+      "score": 83.42500000000013
+    },
+    {
+      "entry": "ema_rsi_ob_os|rsi14_ema14",
+      "filter": "supertrend|14x3",
+      "lookback_days": 730,
+      "regime": "trend",
+      "n": 2,
+      "median_pnl": 29.5,
+      "mean_pnl": 29.5,
+      "mean_wr": 0.3333333333333333,
+      "mean_dd": 648.4499999999998,
+      "score": 29.5
+    }
+  ],
+  "generated_at": "2026-08-21T09:21:55.748066+00:00"
+}

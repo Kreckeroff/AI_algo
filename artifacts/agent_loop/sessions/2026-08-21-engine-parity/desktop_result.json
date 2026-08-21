@@ -1,0 +1,345 @@
+{
+  "bars": 1366,
+  "edges": [
+    {
+      "id": "e1",
+      "source": "instrument",
+      "sourceHandle": "instrument",
+      "target": "close",
+      "targetHandle": "instrument"
+    },
+    {
+      "id": "e2",
+      "source": "close",
+      "sourceHandle": "value",
+      "target": "ma_f",
+      "targetHandle": "source"
+    },
+    {
+      "id": "e3",
+      "source": "close",
+      "sourceHandle": "value",
+      "target": "ma_s",
+      "targetHandle": "source"
+    },
+    {
+      "id": "e4",
+      "source": "ma_f",
+      "sourceHandle": "value",
+      "target": "cross_up",
+      "targetHandle": "a"
+    },
+    {
+      "id": "e5",
+      "source": "ma_s",
+      "sourceHandle": "value",
+      "target": "cross_up",
+      "targetHandle": "b"
+    },
+    {
+      "id": "e6",
+      "source": "ma_f",
+      "sourceHandle": "value",
+      "target": "cross_dn",
+      "targetHandle": "a"
+    },
+    {
+      "id": "e7",
+      "source": "ma_s",
+      "sourceHandle": "value",
+      "target": "cross_dn",
+      "targetHandle": "b"
+    },
+    {
+      "id": "e8",
+      "source": "instrument",
+      "sourceHandle": "instrument",
+      "target": "open",
+      "targetHandle": "instrument"
+    },
+    {
+      "id": "e9",
+      "source": "cross_up",
+      "sourceHandle": "result",
+      "target": "open",
+      "targetHandle": "condition"
+    },
+    {
+      "id": "e10",
+      "source": "open",
+      "sourceHandle": "position",
+      "target": "close_pos",
+      "targetHandle": "position"
+    },
+    {
+      "id": "e11",
+      "source": "cross_dn",
+      "sourceHandle": "result",
+      "target": "close_pos",
+      "targetHandle": "condition"
+    },
+    {
+      "id": "e12",
+      "source": "close",
+      "sourceHandle": "value",
+      "target": "chart",
+      "targetHandle": "series"
+    },
+    {
+      "id": "e13",
+      "source": "ma_f",
+      "sourceHandle": "value",
+      "target": "chart",
+      "targetHandle": "series"
+    },
+    {
+      "id": "e14",
+      "source": "ma_s",
+      "sourceHandle": "value",
+      "target": "chart",
+      "targetHandle": "series"
+    }
+  ],
+  "file": "09-sma-cross-20-50.italgo",
+  "name": "SMA Cross 20/50",
+  "nodes": [
+    {
+      "data": {
+        "instrument_type": "stock",
+        "label": "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442",
+        "symbol": "SBER"
+      },
+      "id": "instrument",
+      "position": {
+        "x": 40,
+        "y": 200
+      },
+      "type": "instrument"
+    },
+    {
+      "data": {
+        "label": "Close"
+      },
+      "id": "close",
+      "position": {
+        "x": 260,
+        "y": 200
+      },
+      "type": "source_close"
+    },
+    {
+      "data": {
+        "label": "SMA20",
+        "period": 20
+      },
+      "id": "ma_f",
+      "position": {
+        "x": 480,
+        "y": 100
+      },
+      "type": "indicator_sma"
+    },
+    {
+      "data": {
+        "label": "SMA50",
+        "period": 50
+      },
+      "id": "ma_s",
+      "position": {
+        "x": 480,
+        "y": 280
+      },
+      "type": "indicator_sma"
+    },
+    {
+      "data": {
+        "label": "\u2191"
+      },
+      "id": "cross_up",
+      "position": {
+        "x": 700,
+        "y": 100
+      },
+      "type": "logic_cross_up"
+    },
+    {
+      "data": {
+        "label": "\u2193"
+      },
+      "id": "cross_dn",
+      "position": {
+        "x": 700,
+        "y": 280
+      },
+      "type": "logic_cross_down"
+    },
+    {
+      "data": {
+        "direction": "buy",
+        "label": "Long",
+        "qty": 1
+      },
+      "id": "open",
+      "position": {
+        "x": 920,
+        "y": 100
+      },
+      "type": "position_open_market"
+    },
+    {
+      "data": {
+        "label": "Close"
+      },
+      "id": "close_pos",
+      "position": {
+        "x": 920,
+        "y": 280
+      },
+      "type": "position_close_market"
+    },
+    {
+      "data": {
+        "label": "Chart"
+      },
+      "id": "chart",
+      "position": {
+        "x": 700,
+        "y": 440
+      },
+      "type": "chart"
+    }
+  ],
+  "ok": true,
+  "stats": {
+    "losses": 6,
+    "maxDrawdown": 51.070721000000006,
+    "netPnl": 102.52095400000013,
+    "totalTrades": 12,
+    "winRate": 0.5,
+    "wins": 6
+  },
+  "symbol": "SBER",
+  "timeframe": "1d",
+  "trades": [
+    {
+      "barsHeld": 34,
+      "entryPrice": 141.764175,
+      "entryTime": 1656374400,
+      "exitPrice": 124.547544,
+      "exitTime": 1660521600,
+      "pnl": -17.216630999999992,
+      "qty": 1.0,
+      "side": "buy"
+    },
+    {
+      "barsHeld": 19,
+      "entryPrice": 140.91409000000002,
+      "entryTime": 1662422400,
+      "exitPrice": 110.60893800000001,
+      "exitTime": 1664755200,
+      "pnl": -30.305152000000007,
+      "qty": 1.0,
+      "side": "buy"
+    },
+    {
+      "barsHeld": 222,
+      "entryPrice": 137.51375,
+      "entryTime": 1668384000,
+      "exitPrice": 256.37435999999997,
+      "exitTime": 1695859200,
+      "pnl": 118.86060999999998,
+      "qty": 1.0,
+      "side": "buy"
+    },
+    {
+      "barsHeld": 43,
+      "entryPrice": 268.52685,
+      "entryTime": 1697760000,
+      "exitPrice": 267.483249,
+      "exitTime": 1703030400,
+      "pnl": -1.0436010000000238,
+      "qty": 1.0,
+      "side": "buy"
+    },
+    {
+      "barsHeld": 121,
+      "entryPrice": 274.72747,
+      "entryTime": 1705968000,
+      "exitPrice": 284.461551,
+      "exitTime": 1721088000,
+      "pnl": 9.734081000000003,
+      "qty": 1.0,
+      "side": "buy"
+    },
+    {
+      "barsHeld": 4,
+      "entryPrice": 262.076205,
+      "entryTime": 1729036800,
+      "exitPrice": 258.07419000000004,
+      "exitTime": 1729555200,
+      "pnl": -4.002014999999972,
+      "qty": 1.0,
+      "side": "buy"
+    },
+    {
+      "barsHeld": 74,
+      "entryPrice": 274.0274,
+      "entryTime": 1735516800,
+      "exitPrice": 285.27147,
+      "exitTime": 1743984000,
+      "pnl": 11.244070000000022,
+      "qty": 1.0,
+      "side": "buy"
+    },
+    {
+      "barsHeld": 72,
+      "entryPrice": 303.56035299999996,
+      "entryTime": 1746835200,
+      "exitPrice": 309.319065,
+      "exitTime": 1753488000,
+      "pnl": 5.75871200000006,
+      "qty": 1.0,
+      "side": "buy"
+    },
+    {
+      "barsHeld": 12,
+      "entryPrice": 312.33123,
+      "entryTime": 1755993600,
+      "exitPrice": 309.06909,
+      "exitTime": 1757030400,
+      "pnl": -3.262139999999988,
+      "qty": 1.0,
+      "side": "buy"
+    },
+    {
+      "barsHeld": 51,
+      "entryPrice": 295.759573,
+      "entryTime": 1762387200,
+      "exitPrice": 299.97,
+      "exitTime": 1767571200,
+      "pnl": 4.210427000000038,
+      "qty": 1.0,
+      "side": "buy"
+    },
+    {
+      "barsHeld": 119,
+      "entryPrice": 308.0308,
+      "entryTime": 1769731200,
+      "exitPrice": 322.177779,
+      "exitTime": 1780704000,
+      "pnl": 14.146978999999988,
+      "qty": 1.0,
+      "side": "buy"
+    },
+    {
+      "barsHeld": 2,
+      "entryPrice": 324.73247,
+      "entryTime": 1781568000,
+      "exitPrice": 319.128084,
+      "exitTime": 1781740800,
+      "pnl": -5.604385999999977,
+      "qty": 1.0,
+      "side": "buy"
+    }
+  ]
+}
