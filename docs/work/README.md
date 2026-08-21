@@ -5,6 +5,8 @@ SA-спеки, backlog, research по AI-слою IT Algo.
 | Документ | Суть |
 |----------|------|
 | [BACKLOG.md](./BACKLOG.md) | Продуктовый backlog модулей (§9 = UX dual release) |
+| [TRAINING_SESSION_INDEX.md](./TRAINING_SESSION_INDEX.md) | Живой индекс C-сессий / покрытие / next steps |
+| [AGENT_TRAINING_LOOP.md](./AGENT_TRAINING_LOOP.md) | Цикл агентного обучения |
 | [STANDALONE_PRODUCT_UX.md](./STANDALONE_PRODUCT_UX.md) | Чат, сборщик, CSV/брокер, standalone + Desktop |
 | [../PRODUCT_VISION.md](../PRODUCT_VISION.md) | Видение |
 | [../TRAINING_APPROACH.md](../TRAINING_APPROACH.md) | Обучение A/B, сложности, путь |

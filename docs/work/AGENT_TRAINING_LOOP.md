@@ -67,7 +67,8 @@
 1. Не учить только на одном тикере дольше, чем нужно для sanity-check.
 2. Каждая новая сессия — **добавить символы** и/или **расширить набор** (скрипты, вмешательства, TF, lookback, trades).
 3. В notes / ANALYTICS: какие `symbol` покрыты, каких не хватает.
-4. Лестница: SBER → +GAZP+LKOH (C9) → +ROSN/GMKN/… → другие рынки.
+4. Лестница: SBER → +GAZP+LKOH (C9) → 6→9→10 equities (C10–C13) → +futures (C14) → другие рынки.
+5. Живой индекс сессий: [`TRAINING_SESSION_INDEX.md`](TRAINING_SESSION_INDEX.md) — обновлять после каждой C-волны.
 
 См. backlog §7F / P3.5.
 

@@ -424,8 +424,8 @@ DSL/GraphDTO: `period` integer, constraint `1 ≤ period ≤ max_period` (`max_p
 | **P2.5** | Баланс корпуса по **стороне**: long-only **и** long/short (§7D) | **готово** (26 scripts; 18 LO / 8 LS; session `2026-08-21-c4-side-mode`) |
 | **P2.6** | **Trade-level train (§7E):** trades[] в ingest/сессиях; good/bad; советы блок/period | **готово-ish** (C5+C6: labels + Advisor intervention dataset 20 pairs) |
 | **P3** | Расширить lookback на больше связок / все ТФ | **готово-ish** (C13: все TF 1m…1w × 10 equities) |
-| **P3.5** | **Мульти-инструмент (§7F):** постоянно расширять набор тикеров + датасет | **частично++** (C11: 9 tickers +TATN/PLZL/MGNT) |
-| **P3.6** | **Качество модели «в гений»** — глубина датасета / вмешательств / TF | **в работе** (C13: all TF; next interventions) |
+| **P3.5** | **Мульти-инструмент (§7F):** постоянно расширять набор тикеров + датасет | **частично+++** (C13: 10 equities; C14→ +futures) |
+| **P3.6** | **Качество модели «в гений»** — глубина датасета / вмешательств / TF | **в работе** (C13 all-TF; next: kinds + futures) |
 | **P3.7** | **Дивгэп / short cash (§7H):** дообучение на акциях+индексе с учётом дивидендного гэпа | **backlog** |
 | **P4** | Новые индикаторы Desktop → lab whitelist (§7B стык) | параллельно |
 | **P5** | Inference: policy → Advisor (Desktop **или** hosting) + чтение действий юзера | **backlog** (не сейчас) |
@@ -496,8 +496,12 @@ DSL/GraphDTO: `period` integer, constraint `1 ≤ period ≤ max_period` (`max_p
 | Волна | Тикеры | Статус |
 |-------|--------|--------|
 | C5–C8 | SBER | сделано |
-| **C9** | SBER + GAZP + LKOH | текущая |
-| Далее | + ROSN, GMKN, NVTK, TATN, … → фьючерсы / зарубежные | backlog |
+| C9 | SBER + GAZP + LKOH | сделано |
+| C10 | + ROSN, GMKN, NVTK | сделано |
+| C11 | + TATN, PLZL, MGNT | сделано |
+| C12–C13 | + MTSS (10 equities); C13 = все TF | сделано |
+| **C14** | + CNYRUBF, GLDRUBF, IMOEXF (futures, без дивгэпа) | следующая |
+| Далее | + другие equities / зарубежные; §7H cash-adjust | backlog |
 
 Сырые CSV уже в `artifacts/.../multi-indicator-wave/data/raw/MOEX_*`.
 
@@ -761,6 +765,7 @@ DSL/GraphDTO: `period` integer, constraint `1 ≤ period ≤ max_period` (`max_p
 | 2026-08-21 | **§7D:** обучение/корпус учитывают **long_only** и **long_short** (не только лонг); шаг P2.5 |
 | 2026-08-21 | **§7D P2.5:** twins 21–26 long_short; tagged `side_mode`; C4 session — LS mean_pnl > LO на SBER 1d |
 | 2026-08-21 | **§7E:** обучение на **списке сделок** (good/bad) + улучшения через **блок** или **period**; шаг P2.6 |
+| 2026-08-21 | **TRAINING_SESSION_INDEX:** живой индекс C1–C13 + покрытие TF/тикеров/kinds; handoff/AGENTS синхронизированы |
 | 2026-08-21 | **§7H / P3.7:** дивгэп на акциях/индексе — шорт не зарабатывает гэп, дивиденд списывают; дообучение + cash adjust |
 | 2026-08-21 | **C13:** ALL TF 1m…1w × 10 equities; pairs 14399; CV≈0.72/0.80; 33p-*; coverage heatmap |
 | 2026-08-21 | **C12:** quality push — 10 tickers ×1d/1h; 3740 pairs; DD-aware; RSI50/period×2; 32p-*; CV≈0.70/0.78 |
