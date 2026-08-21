@@ -1,0 +1,30 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"/><title>C16 ATR/rmfilter</title>
+<style>
+body{font-family:IBM Plex Sans,system-ui,sans-serif;background:#0f1419;color:#e8eef4;padding:28px}
+.sub{color:#8b9aab} .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.card{background:#1a222c;border:1px solid #2a3542;border-radius:10px;padding:12px}
+.k{color:#8b9aab;font-size:.68rem;text-transform:uppercase} .v{font-size:1.15rem;font-weight:600;margin-top:4px}
+table{border-collapse:collapse;width:100%;font-size:.78rem;background:#1a222c;margin:10px 0}
+th,td{border:1px solid #2a3542;padding:6px;text-align:right} th,td:first-child{text-align:left;color:#8b9aab}
+</style></head><body>
+<h1>C16 — ATR SL/TP + remove-filter</h1>
+<p class="sub">Новые kinds на полном TF×symbol корпусе · §7I BH labels · 36p-*</p>
+<div class="grid">
+<div class="card"><div class="k">Pairs</div><div class="v">25452</div></div>
+<div class="card"><div class="k">Better</div><div class="v">8438 (33%)</div></div>
+<div class="card"><div class="k">CV / AUC</div><div class="v">0.77 / 0.84</div></div>
+<div class="card"><div class="k">36p</div><div class="v">51</div></div>
+<div class="card"><div class="k">ATR SL/TP better%</div><div class="v">36%</div></div>
+<div class="card"><div class="k">rmfilter better%</div><div class="v">22%</div></div>
+<div class="card"><div class="k">New-kind better</div><div class="v">1219/3838</div></div>
+<div class="card"><div class="k">New kinds in 36p</div><div class="v">5</div></div>
+</div>
+<h2>C14→C16</h2>
+<table><thead><tr><th>wave</th><th>pairs</th><th>better</th><th>acc</th><th>AUC</th><th>promoted</th></tr></thead><tbody><tr><td>C14</td><td>21614</td><td>10840</td><td>0.719</td><td>0.792</td><td>53</td></tr><tr><td>C15</td><td>21614</td><td>7219</td><td>0.770</td><td>0.840</td><td>46</td></tr><tr><td>C16</td><td>25452</td><td>8438</td><td>0.768</td><td>0.837</td><td>51</td></tr></tbody></table>
+<h2>Kind stats (§7I label)</h2>
+<table><thead><tr><th>kind</th><th>n</th><th>better%</th><th>mean ΔPnL</th><th>mean Δedge</th></tr></thead><tbody><tr><td>add_block_sma200</td><td>2727</td><td>45.7%</td><td>72.8</td><td>78.8</td></tr><tr><td>add_block_ema</td><td>2727</td><td>37.5%</td><td>119.9</td><td>119.2</td></tr><tr><td>add_block_atr_sltp</td><td>2626</td><td>36.3%</td><td>-20.3</td><td>-16.3</td></tr><tr><td>change_period_2x</td><td>2727</td><td>35.1%</td><td>39.7</td><td>44.9</td></tr><tr><td>change_period_15x</td><td>2727</td><td>34.7%</td><td>40.3</td><td>46.1</td></tr><tr><td>add_block_adx</td><td>2525</td><td>34.4%</td><td>-63.3</td><td>-61.5</td></tr><tr><td>add_block_rsi50</td><td>2727</td><td>28.3%</td><td>99.2</td><td>93.9</td></tr><tr><td>change_period_067</td><td>2727</td><td>26.4%</td><td>-55.8</td><td>-54.3</td></tr><tr><td>change_period_05x</td><td>2727</td><td>25.2%</td><td>-80.2</td><td>-76.9</td></tr><tr><td>remove_block_filter</td><td>1212</td><td>21.9%</td><td>-61.5</td><td>-55.7</td></tr></tbody></table>
+<h2>Feature importance</h2>
+<table><thead><tr><th>feature</th><th>imp</th></tr></thead><tbody><tr><td>base_pnl</td><td>641</td></tr><tr><td>base_edge_vs_bh</td><td>555</td></tr><tr><td>buy_hold_pnl</td><td>467</td></tr><tr><td>base_dd</td><td>422</td></tr><tr><td>base_wr</td><td>310</td></tr><tr><td>base_trades</td><td>260</td></tr><tr><td>bad</td><td>242</td></tr><tr><td>bad_share</td><td>214</td></tr><tr><td>kind_add_block_sma200</td><td>184</td></tr><tr><td>kind_add_block_adx</td><td>179</td></tr><tr><td>bad_noise</td><td>178</td></tr><tr><td>kind_change_period_05x</td><td>162</td></tr></tbody></table>
+<h2>Promoted sample</h2>
+<table><thead><tr><th>file</th><th>kind</th><th>mean Δ</th><th>n win</th></tr></thead><tbody><tr><td>36p-02-mean-reversion-bb-rsi__period15x.italgo</td><td>change_period_15x</td><td>90.2</td><td>6</td></tr><tr><td>36p-04-macd-stoch-long-short__period05x.italgo</td><td>change_period_05x</td><td>1444.1</td><td>9</td></tr><tr><td>36p-04-macd-stoch-long-short__period2x.italgo</td><td>change_period_2x</td><td>659.8</td><td>6</td></tr><tr><td>36p-04-macd-stoch-long-short__rsi50.italgo</td><td>add_block_rsi50</td><td>536.9</td><td>8</td></tr><tr><td>36p-04-macd-stoch-long-short__sma200.italgo</td><td>add_block_sma200</td><td>812.0</td><td>8</td></tr><tr><td>36p-07-supertrend-di-adx-stack__period15x.italgo</td><td>change_period_15x</td><td>120.4</td><td>7</td></tr><tr><td>36p-07-supertrend-di-adx-stack__rmfilter.italgo</td><td>remove_block_filter</td><td>117.6</td><td>6</td></tr><tr><td>36p-07-supertrend-di-adx-stack__sma200.italgo</td><td>add_block_sma200</td><td>318.0</td><td>8</td></tr><tr><td>36p-08-cci-regime-trail__period067.italgo</td><td>change_period_067</td><td>262.7</td><td>7</td></tr><tr><td>36p-08-cci-regime-trail__rmfilter.italgo</td><td>remove_block_filter</td><td>161.2</td><td>9</td></tr><tr><td>36p-10-ema-cross-9-21__ema50.italgo</td><td>add_block_ema</td><td>78.5</td><td>9</td></tr><tr><td>36p-10-ema-cross-9-21__sma200.italgo</td><td>add_block_sma200</td><td>44.4</td><td>6</td></tr><tr><td>36p-11-tema-cross-10-30__ema50.italgo</td><td>add_block_ema</td><td>660.3</td><td>8</td></tr><tr><td>36p-11-tema-cross-10-30__period05x.italgo</td><td>change_period_05x</td><td>1003.3</td><td>8</td></tr><tr><td>36p-11-tema-cross-10-30__period067.italgo</td><td>change_period_067</td><td>550.4</td><td>8</td></tr><tr><td>36p-11-tema-cross-10-30__rsi50.italgo</td><td>add_block_rsi50</td><td>808.7</td><td>7</td></tr><tr><td>36p-11-tema-cross-10-30__sma200.italgo</td><td>add_block_sma200</td><td>488.0</td><td>9</td></tr><tr><td>36p-12-dema-cross-12-26__ema50.italgo</td><td>add_block_ema</td><td>552.5</td><td>6</td></tr><tr><td>36p-12-dema-cross-12-26__period05x.italgo</td><td>change_period_05x</td><td>383.9</td><td>7</td></tr><tr><td>36p-12-dema-cross-12-26__rsi50.italgo</td><td>add_block_rsi50</td><td>576.0</td><td>7</td></tr></tbody></table>
+</body></html>

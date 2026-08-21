@@ -1,0 +1,532 @@
+{
+  "version": 1,
+  "meta": {
+    "name": "[cross-sym+BH] SuperTrend7x2 + RSI7 +ATR SL/TP",
+    "updatedAt": "2026-08-21T12:20:46Z",
+    "createdAt": "2026-08-21T09:26:05Z",
+    "tags": [
+      "trend",
+      "supertrend",
+      "rsi",
+      "ai-train",
+      "training",
+      "side:long_only",
+      "long_only",
+      "c16",
+      "intervention:add_block_atr_sltp",
+      "promoted",
+      "cross-symbol",
+      "beats-buyhold"
+    ],
+    "side_mode": "long_only",
+    "intervention": {
+      "kind": "add_block_atr_sltp",
+      "base": "17-supertrend-rsi-tight.italgo",
+      "sl_mult": 1.5,
+      "tp_mult": 3.0
+    },
+    "cross_symbol": {
+      "symbols_win": [
+        "GAZP",
+        "GMKN",
+        "MGNT",
+        "MTSS",
+        "PLZL",
+        "SBER",
+        "TATN"
+      ],
+      "mean_delta": 110.92949611648335,
+      "mean_delta_edge_vs_bh": 187.40185343956026
+    }
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "instrument",
+        "type": "instrument",
+        "position": {
+          "x": 40,
+          "y": 200
+        },
+        "data": {
+          "symbol": "SBER",
+          "instrument_type": "stock",
+          "label": "Инструмент"
+        }
+      },
+      {
+        "id": "close",
+        "type": "source_close",
+        "position": {
+          "x": 260,
+          "y": 80
+        },
+        "data": {
+          "label": "Close"
+        }
+      },
+      {
+        "id": "st",
+        "type": "indicator_supertrend",
+        "position": {
+          "x": 480,
+          "y": 80
+        },
+        "data": {
+          "period": 7,
+          "mult": 2.0,
+          "label": "ST"
+        }
+      },
+      {
+        "id": "rsi",
+        "type": "indicator_rsi",
+        "position": {
+          "x": 480,
+          "y": 260
+        },
+        "data": {
+          "period": 7,
+          "label": "RSI"
+        }
+      },
+      {
+        "id": "lvl50",
+        "type": "constant",
+        "position": {
+          "x": 480,
+          "y": 400
+        },
+        "data": {
+          "value": 50,
+          "label": "50"
+        }
+      },
+      {
+        "id": "st_below",
+        "type": "logic_lt",
+        "position": {
+          "x": 700,
+          "y": 40
+        },
+        "data": {
+          "label": "ST<Close"
+        }
+      },
+      {
+        "id": "rsi_up",
+        "type": "logic_cross_up",
+        "position": {
+          "x": 700,
+          "y": 200
+        },
+        "data": {
+          "label": "RSI↑50"
+        }
+      },
+      {
+        "id": "st_above",
+        "type": "logic_gt",
+        "position": {
+          "x": 700,
+          "y": 340
+        },
+        "data": {
+          "label": "ST>Close"
+        }
+      },
+      {
+        "id": "rsi_dn",
+        "type": "logic_cross_down",
+        "position": {
+          "x": 700,
+          "y": 460
+        },
+        "data": {
+          "label": "RSI↓50"
+        }
+      },
+      {
+        "id": "buy",
+        "type": "logic_and",
+        "position": {
+          "x": 920,
+          "y": 100
+        },
+        "data": {
+          "label": "Buy"
+        }
+      },
+      {
+        "id": "sell",
+        "type": "logic_and",
+        "position": {
+          "x": 920,
+          "y": 340
+        },
+        "data": {
+          "label": "Sell"
+        }
+      },
+      {
+        "id": "open",
+        "type": "position_open_market",
+        "position": {
+          "x": 1120,
+          "y": 100
+        },
+        "data": {
+          "direction": "buy",
+          "qty": 1,
+          "label": "Long"
+        }
+      },
+      {
+        "id": "close_pos",
+        "type": "position_close_market",
+        "position": {
+          "x": 1120,
+          "y": 340
+        },
+        "data": {
+          "label": "Close"
+        }
+      },
+      {
+        "id": "chart",
+        "type": "chart",
+        "position": {
+          "x": 700,
+          "y": 600
+        },
+        "data": {
+          "label": "Chart"
+        }
+      },
+      {
+        "id": "entry_c16",
+        "type": "position_entry_price",
+        "position": {
+          "x": 920,
+          "y": 200
+        },
+        "data": {
+          "label": "Entry"
+        }
+      },
+      {
+        "id": "atr_c16",
+        "type": "indicator_atr",
+        "position": {
+          "x": 480,
+          "y": 280
+        },
+        "data": {
+          "period": 14,
+          "label": "ATR14"
+        }
+      },
+      {
+        "id": "atr_sl_c16",
+        "type": "math_mul_const",
+        "position": {
+          "x": 700,
+          "y": 320
+        },
+        "data": {
+          "label": "ATR×1.5",
+          "mult": 1.5
+        }
+      },
+      {
+        "id": "atr_tp_c16",
+        "type": "math_mul_const",
+        "position": {
+          "x": 700,
+          "y": 440
+        },
+        "data": {
+          "label": "ATR×3",
+          "mult": 3.0
+        }
+      },
+      {
+        "id": "sl_lvl_c16",
+        "type": "math_sub",
+        "position": {
+          "x": 920,
+          "y": 320
+        },
+        "data": {
+          "label": "SL=entry−ATR"
+        }
+      },
+      {
+        "id": "tp_lvl_c16",
+        "type": "math_add",
+        "position": {
+          "x": 920,
+          "y": 440
+        },
+        "data": {
+          "label": "TP=entry+ATR"
+        }
+      },
+      {
+        "id": "sl_c16",
+        "type": "position_close_sl",
+        "position": {
+          "x": 1140,
+          "y": 300
+        },
+        "data": {
+          "label": "SL"
+        }
+      },
+      {
+        "id": "tp_c16",
+        "type": "position_close_tp",
+        "position": {
+          "x": 1140,
+          "y": 440
+        },
+        "data": {
+          "label": "TP"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e1",
+        "source": "instrument",
+        "target": "close",
+        "sourceHandle": "instrument",
+        "targetHandle": "instrument"
+      },
+      {
+        "id": "e2",
+        "source": "instrument",
+        "target": "st",
+        "sourceHandle": "instrument",
+        "targetHandle": "instrument"
+      },
+      {
+        "id": "e3",
+        "source": "close",
+        "target": "rsi",
+        "sourceHandle": "value",
+        "targetHandle": "source"
+      },
+      {
+        "id": "e4",
+        "source": "st",
+        "target": "st_below",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "e5",
+        "source": "close",
+        "target": "st_below",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "e6",
+        "source": "st",
+        "target": "st_above",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "e7",
+        "source": "close",
+        "target": "st_above",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "e8",
+        "source": "rsi",
+        "target": "rsi_up",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "e9",
+        "source": "lvl50",
+        "target": "rsi_up",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "e10",
+        "source": "rsi",
+        "target": "rsi_dn",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "e11",
+        "source": "lvl50",
+        "target": "rsi_dn",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "e12",
+        "source": "st_below",
+        "target": "buy",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "e13",
+        "source": "rsi_up",
+        "target": "buy",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "e14",
+        "source": "st_above",
+        "target": "sell",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "e15",
+        "source": "rsi_dn",
+        "target": "sell",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "e16",
+        "source": "instrument",
+        "target": "open",
+        "sourceHandle": "instrument",
+        "targetHandle": "instrument"
+      },
+      {
+        "id": "e17",
+        "source": "buy",
+        "target": "open",
+        "sourceHandle": "result",
+        "targetHandle": "condition"
+      },
+      {
+        "id": "e18",
+        "source": "open",
+        "target": "close_pos",
+        "sourceHandle": "position",
+        "targetHandle": "position"
+      },
+      {
+        "id": "e19",
+        "source": "sell",
+        "target": "close_pos",
+        "sourceHandle": "result",
+        "targetHandle": "condition"
+      },
+      {
+        "id": "e20",
+        "source": "close",
+        "target": "chart",
+        "sourceHandle": "value",
+        "targetHandle": "series"
+      },
+      {
+        "id": "e21",
+        "source": "st",
+        "target": "chart",
+        "sourceHandle": "value",
+        "targetHandle": "series"
+      },
+      {
+        "id": "c16_open_entry",
+        "source": "open",
+        "target": "entry_c16",
+        "sourceHandle": "position",
+        "targetHandle": "position"
+      },
+      {
+        "id": "c16_inst_atr",
+        "source": "instrument",
+        "target": "atr_c16",
+        "sourceHandle": "instrument",
+        "targetHandle": "instrument"
+      },
+      {
+        "id": "c16_atr_sl",
+        "source": "atr_c16",
+        "target": "atr_sl_c16",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "c16_atr_tp",
+        "source": "atr_c16",
+        "target": "atr_tp_c16",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "c16_e_sl_a",
+        "source": "entry_c16",
+        "target": "sl_lvl_c16",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "c16_e_sl_b",
+        "source": "atr_sl_c16",
+        "target": "sl_lvl_c16",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "c16_e_tp_a",
+        "source": "entry_c16",
+        "target": "tp_lvl_c16",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "c16_e_tp_b",
+        "source": "atr_tp_c16",
+        "target": "tp_lvl_c16",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "c16_o_sl",
+        "source": "open",
+        "target": "sl_c16",
+        "sourceHandle": "position",
+        "targetHandle": "position"
+      },
+      {
+        "id": "c16_lvl_sl",
+        "source": "sl_lvl_c16",
+        "target": "sl_c16",
+        "sourceHandle": "value",
+        "targetHandle": "level"
+      },
+      {
+        "id": "c16_o_tp",
+        "source": "open",
+        "target": "tp_c16",
+        "sourceHandle": "position",
+        "targetHandle": "position"
+      },
+      {
+        "id": "c16_lvl_tp",
+        "source": "tp_lvl_c16",
+        "target": "tp_c16",
+        "sourceHandle": "value",
+        "targetHandle": "level"
+      }
+    ]
+  }
+}

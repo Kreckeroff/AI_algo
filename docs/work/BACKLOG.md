@@ -425,7 +425,7 @@ DSL/GraphDTO: `period` integer, constraint `1 ≤ period ≤ max_period` (`max_p
 | **P2.6** | **Trade-level train (§7E):** trades[] в ingest/сессиях; good/bad; советы блок/period | **готово-ish** (C5+C6: labels + Advisor intervention dataset 20 pairs) |
 | **P3** | Расширить lookback на больше связок / все ТФ | **готово-ish** (C13: все TF 1m…1w × 10 equities) |
 | **P3.5** | **Мульти-инструмент (§7F):** постоянно расширять набор тикеров + датасет | **частично+++** (C13: 10 equities; C14→ +futures) |
-| **P3.6** | **Качество модели «в гений»** — глубина датасета / вмешательств / TF | **в работе** (C13 all-TF; next: kinds + futures) |
+| **P3.6** | **Качество модели «в гений»** — глубина датасета / вмешательств / TF | **в работе** (C16: +ATR/rmfilter kinds) |
 | **P3.7** | **Дивгэп / short cash (§7H):** дообучение на акциях+индексе с учётом дивидендного гэпа | **частично** (calendar cache + annotate C14) |
 | **P3.8** | **Beat buy&hold (§7I):** long / long-short должны бить B&H на окне графика | **готово-ish** (C15 policy; 35p-*) |
 | **P4** | Новые индикаторы Desktop → lab whitelist (§7B стык) | параллельно |
@@ -810,6 +810,7 @@ DSL/GraphDTO: `period` integer, constraint `1 ≤ period ≤ max_period` (`max_p
 | 2026-08-21 | **§7D:** обучение/корпус учитывают **long_only** и **long_short** (не только лонг); шаг P2.5 |
 | 2026-08-21 | **§7D P2.5:** twins 21–26 long_short; tagged `side_mode`; C4 session — LS mean_pnl > LO на SBER 1d |
 | 2026-08-21 | **§7E:** обучение на **списке сделок** (good/bad) + улучшения через **блок** или **period**; шаг P2.6 |
+| 2026-08-21 | **C16:** +ATR SL/TP + remove-filter kinds; pairs 25452; CV≈0.77/0.84; 36p-*; atr better≈36% |
 | 2026-08-21 | **C15:** BH-aware intervention policy (§7I); pairs 21614; better 33%; CV≈0.77/0.84; 35p-* beats-BH promote |
 | 2026-08-21 | **§7I / P3.8:** бить buy&hold — LO long trades > BH; LS net > BH; перезаходы; метрики beats_buy_hold / edge_vs_bh |
 | 2026-08-21 | **P3.7 start:** Smart-Lab div calendar cache (10 equities); annotate C14 1d+1h — short×ex-div ~3.9k; short paid tracked |

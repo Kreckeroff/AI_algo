@@ -1,0 +1,263 @@
+{
+  "feature_names": [
+    "base_pnl",
+    "base_wr",
+    "base_trades",
+    "base_dd",
+    "good",
+    "bad",
+    "bad_noise",
+    "good_weak",
+    "good_share",
+    "bad_share",
+    "buy_hold_pnl",
+    "base_edge_vs_bh",
+    "base_beats_bh",
+    "base_pseudo_bh",
+    "f_\u043f\u0438\u043b\u0430_\u043a\u043e\u0440\u043e\u0442\u043a\u0438\u0435_\u0441\u0434\u0435\u043b\u043a\u0438",
+    "f_\u0441\u0432\u0435\u0440\u0445\u043a\u043e\u0440\u043e\u0442\u043a\u0438\u0435_\u0443\u0434\u0435\u0440\u0436\u0430\u043d\u0438\u044f",
+    "f_\u0441\u0435\u0440\u0438\u044f_\u0443\u0431\u044b\u0442\u043a\u043e\u0432",
+    "f_\u043f\u0435\u0440\u0435\u043a\u043e\u0441_\u0441\u0442\u043e\u0440\u043e\u043d",
+    "f_\u043c\u0430\u043b\u043e_\u0437\u0430\u043a\u0440\u044b\u0442\u044b\u0445_\u0441\u0434\u0435\u043b\u043e\u043a",
+    "f_\u043f\u0441\u0435\u0432\u0434\u043e_buy_hold",
+    "regime_trend",
+    "regime_mean_reversion",
+    "regime_breakout",
+    "regime_unknown",
+    "kind_change_period_15x",
+    "kind_change_period_067",
+    "kind_change_period_2x",
+    "kind_change_period_05x",
+    "kind_add_block_ema",
+    "kind_add_block_adx",
+    "kind_add_block_sma200",
+    "kind_add_block_rsi50",
+    "kind_add_block_atr_sltp",
+    "kind_remove_block_filter",
+    "side_long_only",
+    "side_long_short",
+    "side_unknown",
+    "sym_SBER",
+    "sym_GAZP",
+    "sym_LKOH",
+    "sym_ROSN",
+    "sym_GMKN",
+    "sym_NVTK",
+    "sym_TATN",
+    "sym_PLZL",
+    "sym_MGNT",
+    "sym_MTSS",
+    "sym_CNYRUBF",
+    "sym_GLDRUBF",
+    "sym_IMOEXF",
+    "tf_1m",
+    "tf_5m",
+    "tf_10m",
+    "tf_15m",
+    "tf_30m",
+    "tf_1h",
+    "tf_1d",
+    "tf_1w",
+    "is_future"
+  ],
+  "symbols": [
+    "SBER",
+    "GAZP",
+    "LKOH",
+    "ROSN",
+    "GMKN",
+    "NVTK",
+    "TATN",
+    "PLZL",
+    "MGNT",
+    "MTSS",
+    "CNYRUBF",
+    "GLDRUBF",
+    "IMOEXF"
+  ],
+  "timeframes": [
+    "1m",
+    "5m",
+    "10m",
+    "15m",
+    "30m",
+    "1h",
+    "1d",
+    "1w"
+  ],
+  "metrics": {
+    "cv_accuracy": 0.767994656608518,
+    "cv_auc": 0.8367539323819406,
+    "n": 25452,
+    "loso_1d": {
+      "SBER": {
+        "accuracy": 0.6865079365079365,
+        "auc": 0.7712484237074402,
+        "n": 252
+      },
+      "GAZP": {
+        "accuracy": 0.6468253968253969,
+        "auc": 0.7608983660336888,
+        "n": 252
+      },
+      "LKOH": {
+        "accuracy": 0.6666666666666666,
+        "auc": 0.7348372542700612,
+        "n": 252
+      },
+      "ROSN": {
+        "accuracy": 0.6626984126984127,
+        "auc": 0.7504889281433348,
+        "n": 252
+      },
+      "GMKN": {
+        "accuracy": 0.7023809523809523,
+        "auc": 0.8145791330645162,
+        "n": 252
+      },
+      "NVTK": {
+        "accuracy": 0.746031746031746,
+        "auc": 0.824936948297604,
+        "n": 252
+      },
+      "TATN": {
+        "accuracy": 0.7023809523809523,
+        "auc": 0.7046382189239332,
+        "n": 252
+      },
+      "PLZL": {
+        "accuracy": 0.6746031746031746,
+        "auc": 0.6990977646108268,
+        "n": 252
+      },
+      "MGNT": {
+        "accuracy": 0.6785714285714286,
+        "auc": 0.7655934343434343,
+        "n": 252
+      },
+      "MTSS": {
+        "accuracy": 0.5793650793650794,
+        "auc": 0.688410825815406,
+        "n": 252
+      },
+      "CNYRUBF": {
+        "accuracy": 0.6944444444444444,
+        "auc": 0.7626731506041851,
+        "n": 252
+      },
+      "GLDRUBF": {
+        "accuracy": 0.996031746031746,
+        "auc": 0.8685258964143426,
+        "n": 252
+      },
+      "IMOEXF": {
+        "accuracy": 0.7380952380952381,
+        "auc": 0.7811002491853556,
+        "n": 252
+      }
+    }
+  },
+  "feature_importance_top": [
+    [
+      "base_pnl",
+      641
+    ],
+    [
+      "base_edge_vs_bh",
+      555
+    ],
+    [
+      "buy_hold_pnl",
+      467
+    ],
+    [
+      "base_dd",
+      422
+    ],
+    [
+      "base_wr",
+      310
+    ],
+    [
+      "base_trades",
+      260
+    ],
+    [
+      "bad",
+      242
+    ],
+    [
+      "bad_share",
+      214
+    ],
+    [
+      "kind_add_block_sma200",
+      184
+    ],
+    [
+      "kind_add_block_adx",
+      179
+    ],
+    [
+      "bad_noise",
+      178
+    ],
+    [
+      "kind_change_period_05x",
+      162
+    ],
+    [
+      "good_share",
+      148
+    ],
+    [
+      "kind_remove_block_filter",
+      141
+    ],
+    [
+      "good",
+      138
+    ],
+    [
+      "kind_change_period_2x",
+      129
+    ],
+    [
+      "kind_change_period_067",
+      119
+    ],
+    [
+      "kind_add_block_atr_sltp",
+      119
+    ],
+    [
+      "kind_add_block_ema",
+      108
+    ],
+    [
+      "kind_add_block_rsi50",
+      108
+    ],
+    [
+      "side_long_only",
+      95
+    ],
+    [
+      "tf_1d",
+      74
+    ],
+    [
+      "tf_1h",
+      73
+    ],
+    [
+      "good_weak",
+      71
+    ],
+    [
+      "sym_PLZL",
+      70
+    ]
+  ],
+  "label_rule": "delta>0 & dd_ok & \u0394edge_vs_bh>0 & variant_beats_BH & !pseudo (\u00a77I)"
+}

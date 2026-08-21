@@ -1,0 +1,574 @@
+{
+  "version": 1,
+  "meta": {
+    "name": "Тренд EMA+ADX+RSI +ATR SL/TP",
+    "updatedAt": "2026-08-21T12:20:46Z",
+    "createdAt": "2026-08-20T23:48:07Z",
+    "tags": [
+      "trend",
+      "ema",
+      "adx",
+      "rsi",
+      "long",
+      "ai-train",
+      "training",
+      "side:long_only",
+      "long_only",
+      "c16",
+      "intervention:add_block_atr_sltp"
+    ],
+    "side_mode": "long_only",
+    "intervention": {
+      "kind": "add_block_atr_sltp",
+      "base": "01-trend-ema-adx-rsi.italgo",
+      "sl_mult": 1.5,
+      "tp_mult": 3.0
+    }
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "instrument",
+        "type": "instrument",
+        "position": {
+          "x": 40,
+          "y": 220
+        },
+        "data": {
+          "symbol": "SBER",
+          "instrument_type": "stock",
+          "label": "Инструмент"
+        }
+      },
+      {
+        "id": "close",
+        "type": "source_close",
+        "position": {
+          "x": 260,
+          "y": 80
+        },
+        "data": {
+          "label": "Close"
+        }
+      },
+      {
+        "id": "ema_f",
+        "type": "indicator_ema",
+        "position": {
+          "x": 480,
+          "y": 40
+        },
+        "data": {
+          "period": 12,
+          "label": "EMA fast"
+        }
+      },
+      {
+        "id": "ema_s",
+        "type": "indicator_ema",
+        "position": {
+          "x": 480,
+          "y": 180
+        },
+        "data": {
+          "period": 48,
+          "label": "EMA slow"
+        }
+      },
+      {
+        "id": "adx",
+        "type": "indicator_adx",
+        "position": {
+          "x": 480,
+          "y": 340
+        },
+        "data": {
+          "period": 14,
+          "label": "ADX"
+        }
+      },
+      {
+        "id": "rsi",
+        "type": "indicator_rsi",
+        "position": {
+          "x": 480,
+          "y": 480
+        },
+        "data": {
+          "period": 14,
+          "label": "RSI"
+        }
+      },
+      {
+        "id": "adx_min",
+        "type": "constant",
+        "position": {
+          "x": 480,
+          "y": 620
+        },
+        "data": {
+          "value": 22,
+          "label": "ADX min"
+        }
+      },
+      {
+        "id": "rsi_min",
+        "type": "constant",
+        "position": {
+          "x": 700,
+          "y": 520
+        },
+        "data": {
+          "value": 45,
+          "label": "RSI>45"
+        }
+      },
+      {
+        "id": "cross_up",
+        "type": "logic_cross_up",
+        "position": {
+          "x": 720,
+          "y": 80
+        },
+        "data": {
+          "label": "EMA ↑"
+        }
+      },
+      {
+        "id": "cross_dn",
+        "type": "logic_cross_down",
+        "position": {
+          "x": 720,
+          "y": 220
+        },
+        "data": {
+          "label": "EMA ↓"
+        }
+      },
+      {
+        "id": "adx_ok",
+        "type": "logic_gt",
+        "position": {
+          "x": 720,
+          "y": 360
+        },
+        "data": {
+          "label": "ADX сильный"
+        }
+      },
+      {
+        "id": "rsi_ok",
+        "type": "logic_gt",
+        "position": {
+          "x": 900,
+          "y": 480
+        },
+        "data": {
+          "label": "RSI ок"
+        }
+      },
+      {
+        "id": "buy",
+        "type": "logic_and",
+        "position": {
+          "x": 960,
+          "y": 100
+        },
+        "data": {
+          "label": "Long"
+        }
+      },
+      {
+        "id": "sell",
+        "type": "logic_or",
+        "position": {
+          "x": 960,
+          "y": 260
+        },
+        "data": {
+          "label": "Exit"
+        }
+      },
+      {
+        "id": "open",
+        "type": "position_open_market",
+        "position": {
+          "x": 1180,
+          "y": 80
+        },
+        "data": {
+          "direction": "buy",
+          "qty": 1,
+          "label": "Long"
+        }
+      },
+      {
+        "id": "close_pos",
+        "type": "position_close_market",
+        "position": {
+          "x": 1180,
+          "y": 240
+        },
+        "data": {
+          "label": "Закрыть"
+        }
+      },
+      {
+        "id": "chart",
+        "type": "chart",
+        "position": {
+          "x": 720,
+          "y": 640
+        },
+        "data": {
+          "label": "Цена"
+        }
+      },
+      {
+        "id": "entry_c16",
+        "type": "position_entry_price",
+        "position": {
+          "x": 920,
+          "y": 200
+        },
+        "data": {
+          "label": "Entry"
+        }
+      },
+      {
+        "id": "atr_c16",
+        "type": "indicator_atr",
+        "position": {
+          "x": 480,
+          "y": 280
+        },
+        "data": {
+          "period": 14,
+          "label": "ATR14"
+        }
+      },
+      {
+        "id": "atr_sl_c16",
+        "type": "math_mul_const",
+        "position": {
+          "x": 700,
+          "y": 320
+        },
+        "data": {
+          "label": "ATR×1.5",
+          "mult": 1.5
+        }
+      },
+      {
+        "id": "atr_tp_c16",
+        "type": "math_mul_const",
+        "position": {
+          "x": 700,
+          "y": 440
+        },
+        "data": {
+          "label": "ATR×3",
+          "mult": 3.0
+        }
+      },
+      {
+        "id": "sl_lvl_c16",
+        "type": "math_sub",
+        "position": {
+          "x": 920,
+          "y": 320
+        },
+        "data": {
+          "label": "SL=entry−ATR"
+        }
+      },
+      {
+        "id": "tp_lvl_c16",
+        "type": "math_add",
+        "position": {
+          "x": 920,
+          "y": 440
+        },
+        "data": {
+          "label": "TP=entry+ATR"
+        }
+      },
+      {
+        "id": "sl_c16",
+        "type": "position_close_sl",
+        "position": {
+          "x": 1140,
+          "y": 300
+        },
+        "data": {
+          "label": "SL"
+        }
+      },
+      {
+        "id": "tp_c16",
+        "type": "position_close_tp",
+        "position": {
+          "x": 1140,
+          "y": 440
+        },
+        "data": {
+          "label": "TP"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e1",
+        "source": "instrument",
+        "target": "close",
+        "sourceHandle": "instrument",
+        "targetHandle": "instrument"
+      },
+      {
+        "id": "e2",
+        "source": "close",
+        "target": "ema_f",
+        "sourceHandle": "value",
+        "targetHandle": "source"
+      },
+      {
+        "id": "e3",
+        "source": "close",
+        "target": "ema_s",
+        "sourceHandle": "value",
+        "targetHandle": "source"
+      },
+      {
+        "id": "e4",
+        "source": "instrument",
+        "target": "adx",
+        "sourceHandle": "instrument",
+        "targetHandle": "instrument"
+      },
+      {
+        "id": "e5",
+        "source": "close",
+        "target": "rsi",
+        "sourceHandle": "value",
+        "targetHandle": "source"
+      },
+      {
+        "id": "e6",
+        "source": "ema_f",
+        "target": "cross_up",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "e7",
+        "source": "ema_s",
+        "target": "cross_up",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "e8",
+        "source": "ema_f",
+        "target": "cross_dn",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "e9",
+        "source": "ema_s",
+        "target": "cross_dn",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "e10",
+        "source": "adx",
+        "target": "adx_ok",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "e11",
+        "source": "adx_min",
+        "target": "adx_ok",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "e12",
+        "source": "rsi",
+        "target": "rsi_ok",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "e13",
+        "source": "rsi_min",
+        "target": "rsi_ok",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "e14",
+        "source": "cross_up",
+        "target": "buy",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "e15",
+        "source": "adx_ok",
+        "target": "buy",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "e16",
+        "source": "rsi_ok",
+        "target": "buy",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "e17",
+        "source": "cross_dn",
+        "target": "sell",
+        "sourceHandle": "result",
+        "targetHandle": "conditions"
+      },
+      {
+        "id": "e18",
+        "source": "instrument",
+        "target": "open",
+        "sourceHandle": "instrument",
+        "targetHandle": "instrument"
+      },
+      {
+        "id": "e19",
+        "source": "buy",
+        "target": "open",
+        "sourceHandle": "result",
+        "targetHandle": "condition"
+      },
+      {
+        "id": "e20",
+        "source": "open",
+        "target": "close_pos",
+        "sourceHandle": "position",
+        "targetHandle": "position"
+      },
+      {
+        "id": "e21",
+        "source": "sell",
+        "target": "close_pos",
+        "sourceHandle": "result",
+        "targetHandle": "condition"
+      },
+      {
+        "id": "e22",
+        "source": "close",
+        "target": "chart",
+        "sourceHandle": "value",
+        "targetHandle": "series"
+      },
+      {
+        "id": "e23",
+        "source": "ema_f",
+        "target": "chart",
+        "sourceHandle": "value",
+        "targetHandle": "series"
+      },
+      {
+        "id": "e24",
+        "source": "ema_s",
+        "target": "chart",
+        "sourceHandle": "value",
+        "targetHandle": "series"
+      },
+      {
+        "id": "c16_open_entry",
+        "source": "open",
+        "target": "entry_c16",
+        "sourceHandle": "position",
+        "targetHandle": "position"
+      },
+      {
+        "id": "c16_inst_atr",
+        "source": "instrument",
+        "target": "atr_c16",
+        "sourceHandle": "instrument",
+        "targetHandle": "instrument"
+      },
+      {
+        "id": "c16_atr_sl",
+        "source": "atr_c16",
+        "target": "atr_sl_c16",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "c16_atr_tp",
+        "source": "atr_c16",
+        "target": "atr_tp_c16",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "c16_e_sl_a",
+        "source": "entry_c16",
+        "target": "sl_lvl_c16",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "c16_e_sl_b",
+        "source": "atr_sl_c16",
+        "target": "sl_lvl_c16",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "c16_e_tp_a",
+        "source": "entry_c16",
+        "target": "tp_lvl_c16",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "c16_e_tp_b",
+        "source": "atr_tp_c16",
+        "target": "tp_lvl_c16",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "c16_o_sl",
+        "source": "open",
+        "target": "sl_c16",
+        "sourceHandle": "position",
+        "targetHandle": "position"
+      },
+      {
+        "id": "c16_lvl_sl",
+        "source": "sl_lvl_c16",
+        "target": "sl_c16",
+        "sourceHandle": "value",
+        "targetHandle": "level"
+      },
+      {
+        "id": "c16_o_tp",
+        "source": "open",
+        "target": "tp_c16",
+        "sourceHandle": "position",
+        "targetHandle": "position"
+      },
+      {
+        "id": "c16_lvl_tp",
+        "source": "tp_lvl_c16",
+        "target": "tp_c16",
+        "sourceHandle": "value",
+        "targetHandle": "level"
+      }
+    ]
+  }
+}

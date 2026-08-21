@@ -68,8 +68,8 @@
 - Compare: метрики + graph + **trade_analysis**; запрет разного ТФ/окна.
 - Desktop: только **`ai-train`** — лаборатория обучения (прод UI позже). **§7G деплой policy — backlog.**
 - Цикл обучения: [`AGENT_TRAINING_LOOP.md`](work/AGENT_TRAINING_LOOP.md). Индекс волн: [`TRAINING_SESSION_INDEX.md`](work/TRAINING_SESSION_INDEX.md).
-- **Последняя train-волна: C15** — BH-aware policy on C14 corpus; CV≈0.77/0.84; better 33% (stricter); `35p-*`.
-- **§7I embedded** in labels/promote. Next: new intervention kinds (ATR SL/TP) + walk-forward.
+- **Последняя train-волна: C16** — +ATR SL/TP + remove-filter; 25.5k pairs; CV≈0.77/0.84; `36p-*`.
+- Next: walk-forward + div features in label (§7H).
 - Export: `python scripts/export_ingest_to_csv.py`
 - Команда **«продолжай обучение»** → следующая C-сессия + ANALYTICS + обновление индекса.
 - Целевой UX (чат, сборщик, dual release): [`STANDALONE_PRODUCT_UX.md`](work/STANDALONE_PRODUCT_UX.md) — после зрелости моделей.
