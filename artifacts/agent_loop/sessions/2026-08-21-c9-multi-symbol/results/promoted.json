@@ -1,0 +1,498 @@
+[
+  {
+    "to": "29p-07-supertrend-di-adx-stack__sma200.italgo",
+    "base": "07-supertrend-di-adx-stack.italgo",
+    "kind": "add_block_sma200",
+    "mean_delta": 1761.8929836666666,
+    "symbols_win": [
+      "GAZP",
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 3
+  },
+  {
+    "to": "29p-24-rsi-cross-50-ls__sma200.italgo",
+    "base": "24-rsi-cross-50-ls.italgo",
+    "kind": "add_block_sma200",
+    "mean_delta": 1439.895774333332,
+    "symbols_win": [
+      "GAZP",
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 3
+  },
+  {
+    "to": "29p-21-sma-cross-20-50-ls__adx25.italgo",
+    "base": "21-sma-cross-20-50-ls.italgo",
+    "kind": "add_block_adx",
+    "mean_delta": 1315.3958493333334,
+    "symbols_win": [
+      "GAZP",
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 3
+  },
+  {
+    "to": "29p-07-supertrend-di-adx-stack__period067.italgo",
+    "base": "07-supertrend-di-adx-stack.italgo",
+    "kind": "change_period_067",
+    "mean_delta": 1033.8975136666675,
+    "symbols_win": [
+      "GAZP",
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 3
+  },
+  {
+    "to": "29p-25-momentum-cross-0-ls__period15x.italgo",
+    "base": "25-momentum-cross-0-ls.italgo",
+    "kind": "change_period_15x",
+    "mean_delta": 920.2487066666578,
+    "symbols_win": [
+      "GAZP",
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 3
+  },
+  {
+    "to": "29p-22-ema-cross-9-21-ls__ema50.italgo",
+    "base": "22-ema-cross-9-21-ls.italgo",
+    "kind": "add_block_ema",
+    "mean_delta": 537.636975333332,
+    "symbols_win": [
+      "GAZP",
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 3
+  },
+  {
+    "to": "29p-15-momentum-cross-0__period15x.italgo",
+    "base": "15-momentum-cross-0.italgo",
+    "kind": "change_period_15x",
+    "mean_delta": 454.99065033332886,
+    "symbols_win": [
+      "GAZP",
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 3
+  },
+  {
+    "to": "29p-08-cci-regime-trail__period067.italgo",
+    "base": "08-cci-regime-trail.italgo",
+    "kind": "change_period_067",
+    "mean_delta": 358.6621527100001,
+    "symbols_win": [
+      "GAZP",
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 3
+  },
+  {
+    "to": "29p-26-supertrend-rsi-ls__sma200.italgo",
+    "base": "26-supertrend-rsi-ls.italgo",
+    "kind": "add_block_sma200",
+    "mean_delta": 348.26021166666663,
+    "symbols_win": [
+      "GAZP",
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 3
+  },
+  {
+    "to": "29p-24-rsi-cross-50-ls__ema50.italgo",
+    "base": "24-rsi-cross-50-ls.italgo",
+    "kind": "add_block_ema",
+    "mean_delta": 267.36491366666525,
+    "symbols_win": [
+      "GAZP",
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 3
+  },
+  {
+    "to": "29p-26-supertrend-rsi-ls__period067.italgo",
+    "base": "26-supertrend-rsi-ls.italgo",
+    "kind": "change_period_067",
+    "mean_delta": 245.66724633333422,
+    "symbols_win": [
+      "GAZP",
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 3
+  },
+  {
+    "to": "29p-08-cci-regime-trail__period15x.italgo",
+    "base": "08-cci-regime-trail.italgo",
+    "kind": "change_period_15x",
+    "mean_delta": 185.1669135849991,
+    "symbols_win": [
+      "GAZP",
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 3
+  },
+  {
+    "to": "29p-04-macd-stoch-long-short__sma200.italgo",
+    "base": "04-macd-stoch-long-short.italgo",
+    "kind": "add_block_sma200",
+    "mean_delta": 2279.611043000001,
+    "symbols_win": [
+      "GAZP",
+      "LKOH"
+    ],
+    "n_symbols_win": 2
+  },
+  {
+    "to": "29p-23-tema-cross-10-30-ls__sma200.italgo",
+    "base": "23-tema-cross-10-30-ls.italgo",
+    "kind": "add_block_sma200",
+    "mean_delta": 2185.2062566666646,
+    "symbols_win": [
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 2
+  },
+  {
+    "to": "29p-25-momentum-cross-0-ls__sma200.italgo",
+    "base": "25-momentum-cross-0-ls.italgo",
+    "kind": "add_block_sma200",
+    "mean_delta": 1711.661607999994,
+    "symbols_win": [
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 2
+  },
+  {
+    "to": "29p-23-tema-cross-10-30-ls__period067.italgo",
+    "base": "23-tema-cross-10-30-ls.italgo",
+    "kind": "change_period_067",
+    "mean_delta": 1564.6891866666672,
+    "symbols_win": [
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 2
+  },
+  {
+    "to": "29p-23-tema-cross-10-30-ls__ema50.italgo",
+    "base": "23-tema-cross-10-30-ls.italgo",
+    "kind": "add_block_ema",
+    "mean_delta": 1558.908021999998,
+    "symbols_win": [
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 2
+  },
+  {
+    "to": "29p-07-supertrend-di-adx-stack__period15x.italgo",
+    "base": "07-supertrend-di-adx-stack.italgo",
+    "kind": "change_period_15x",
+    "mean_delta": 1369.2817819999993,
+    "symbols_win": [
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 2
+  },
+  {
+    "to": "29p-06b-rsi-no-session__adx25.italgo",
+    "base": "06b-rsi-no-session.italgo",
+    "kind": "add_block_adx",
+    "mean_delta": 1175.3169566666663,
+    "symbols_win": [
+      "GAZP",
+      "LKOH"
+    ],
+    "n_symbols_win": 2
+  },
+  {
+    "to": "29p-04-macd-stoch-long-short__period15x.italgo",
+    "base": "04-macd-stoch-long-short.italgo",
+    "kind": "change_period_15x",
+    "mean_delta": 1149.330800666667,
+    "symbols_win": [
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 2
+  },
+  {
+    "to": "29p-04-macd-stoch-long-short__period067.italgo",
+    "base": "04-macd-stoch-long-short.italgo",
+    "kind": "change_period_067",
+    "mean_delta": 1111.4351003333334,
+    "symbols_win": [
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 2
+  },
+  {
+    "to": "29p-20-donchian-55__adx25.italgo",
+    "base": "20-donchian-55.italgo",
+    "kind": "add_block_adx",
+    "mean_delta": 1107.7909249999996,
+    "symbols_win": [
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 2
+  },
+  {
+    "to": "29p-22-ema-cross-9-21-ls__sma200.italgo",
+    "base": "22-ema-cross-9-21-ls.italgo",
+    "kind": "add_block_sma200",
+    "mean_delta": 1107.2162586666648,
+    "symbols_win": [
+      "GAZP",
+      "LKOH"
+    ],
+    "n_symbols_win": 2
+  },
+  {
+    "to": "29p-11-tema-cross-10-30__sma200.italgo",
+    "base": "11-tema-cross-10-30.italgo",
+    "kind": "add_block_sma200",
+    "mean_delta": 1092.6031283333323,
+    "symbols_win": [
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 2
+  },
+  {
+    "to": "29p-11-tema-cross-10-30__period067.italgo",
+    "base": "11-tema-cross-10-30.italgo",
+    "kind": "change_period_067",
+    "mean_delta": 832.2776316666668,
+    "symbols_win": [
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 2
+  },
+  {
+    "to": "29p-24-rsi-cross-50-ls__period15x.italgo",
+    "base": "24-rsi-cross-50-ls.italgo",
+    "kind": "change_period_15x",
+    "mean_delta": 824.8219299999987,
+    "symbols_win": [
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 2
+  },
+  {
+    "to": "29p-26-supertrend-rsi-ls__adx25.italgo",
+    "base": "26-supertrend-rsi-ls.italgo",
+    "kind": "add_block_adx",
+    "mean_delta": 784.6592376666663,
+    "symbols_win": [
+      "GAZP",
+      "LKOH"
+    ],
+    "n_symbols_win": 2
+  },
+  {
+    "to": "29p-11-tema-cross-10-30__ema50.italgo",
+    "base": "11-tema-cross-10-30.italgo",
+    "kind": "add_block_ema",
+    "mean_delta": 779.454010999999,
+    "symbols_win": [
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 2
+  },
+  {
+    "to": "29p-15-momentum-cross-0__sma200.italgo",
+    "base": "15-momentum-cross-0.italgo",
+    "kind": "add_block_sma200",
+    "mean_delta": 749.561453999997,
+    "symbols_win": [
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 2
+  },
+  {
+    "to": "29p-18-mom-pct-ema50-filter__sma200.italgo",
+    "base": "18-mom-pct-ema50-filter.italgo",
+    "kind": "add_block_sma200",
+    "mean_delta": 661.3894446666654,
+    "symbols_win": [
+      "GAZP",
+      "LKOH"
+    ],
+    "n_symbols_win": 2
+  },
+  {
+    "to": "29p-09-sma-cross-20-50__adx25.italgo",
+    "base": "09-sma-cross-20-50.italgo",
+    "kind": "add_block_adx",
+    "mean_delta": 657.6979246666667,
+    "symbols_win": [
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 2
+  },
+  {
+    "to": "29p-21-sma-cross-20-50-ls__sma200.italgo",
+    "base": "21-sma-cross-20-50-ls.italgo",
+    "kind": "add_block_sma200",
+    "mean_delta": 637.4932566666661,
+    "symbols_win": [
+      "GAZP",
+      "LKOH"
+    ],
+    "n_symbols_win": 2
+  },
+  {
+    "to": "29p-25-momentum-cross-0-ls__ema50.italgo",
+    "base": "25-momentum-cross-0-ls.italgo",
+    "kind": "add_block_ema",
+    "mean_delta": 605.5057519999956,
+    "symbols_win": [
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 2
+  },
+  {
+    "to": "29p-13-rsi-cross-50__sma200.italgo",
+    "base": "13-rsi-cross-50.italgo",
+    "kind": "add_block_sma200",
+    "mean_delta": 602.948859666666,
+    "symbols_win": [
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 2
+  },
+  {
+    "to": "29p-14-cmo-cross-0__sma200.italgo",
+    "base": "14-cmo-cross-0.italgo",
+    "kind": "add_block_sma200",
+    "mean_delta": 602.948859666666,
+    "symbols_win": [
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 2
+  },
+  {
+    "to": "29p-26-supertrend-rsi-ls__period15x.italgo",
+    "base": "26-supertrend-rsi-ls.italgo",
+    "kind": "change_period_15x",
+    "mean_delta": 534.531205666667,
+    "symbols_win": [
+      "GAZP",
+      "LKOH"
+    ],
+    "n_symbols_win": 2
+  },
+  {
+    "to": "29p-13-rsi-cross-50__period15x.italgo",
+    "base": "13-rsi-cross-50.italgo",
+    "kind": "change_period_15x",
+    "mean_delta": 325.20632533333264,
+    "symbols_win": [
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 2
+  },
+  {
+    "to": "29p-14-cmo-cross-0__period15x.italgo",
+    "base": "14-cmo-cross-0.italgo",
+    "kind": "change_period_15x",
+    "mean_delta": 325.20632533333264,
+    "symbols_win": [
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 2
+  },
+  {
+    "to": "29p-10-ema-cross-9-21__ema50.italgo",
+    "base": "10-ema-cross-9-21.italgo",
+    "kind": "add_block_ema",
+    "mean_delta": 265.3264743333326,
+    "symbols_win": [
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 2
+  },
+  {
+    "to": "29p-17-supertrend-rsi-tight__sma200.italgo",
+    "base": "17-supertrend-rsi-tight.italgo",
+    "kind": "add_block_sma200",
+    "mean_delta": 252.75159333333235,
+    "symbols_win": [
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 2
+  },
+  {
+    "to": "29p-21-sma-cross-20-50-ls__ema50.italgo",
+    "base": "21-sma-cross-20-50-ls.italgo",
+    "kind": "add_block_ema",
+    "mean_delta": 174.55650266666694,
+    "symbols_win": [
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 2
+  },
+  {
+    "to": "29p-22-ema-cross-9-21-ls__period15x.italgo",
+    "base": "22-ema-cross-9-21-ls.italgo",
+    "kind": "change_period_15x",
+    "mean_delta": 97.81565666666573,
+    "symbols_win": [
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 2
+  },
+  {
+    "to": "29p-10-ema-cross-9-21__period15x.italgo",
+    "base": "10-ema-cross-9-21.italgo",
+    "kind": "change_period_15x",
+    "mean_delta": 88.33152299999944,
+    "symbols_win": [
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 2
+  },
+  {
+    "to": "29p-02-mean-reversion-bb-rsi__period15x.italgo",
+    "base": "02-mean-reversion-bb-rsi.italgo",
+    "kind": "change_period_15x",
+    "mean_delta": 82.1359399999995,
+    "symbols_win": [
+      "LKOH",
+      "SBER"
+    ],
+    "n_symbols_win": 2
+  }
+]

@@ -1,0 +1,289 @@
+[
+  {
+    "from": "02-mean-reversion-bb-rsi.italgo",
+    "to": "28p-02-mean-reversion-bb-rsi__period15x.italgo",
+    "delta": 109.42916399999994,
+    "pnl": 31.556133000000102,
+    "kind": "change_period_15x"
+  },
+  {
+    "from": "04-macd-stoch-long-short.italgo",
+    "to": "28p-04-macd-stoch-long-short__period067.italgo",
+    "delta": 291.26977999999997,
+    "pnl": 457.04275400000023,
+    "kind": "change_period_067"
+  },
+  {
+    "from": "05-trend-atr-sl-tp.italgo",
+    "to": "28p-05-trend-atr-sl-tp__period15x.italgo",
+    "delta": 53.00326514285683,
+    "pnl": 19.460392285714164,
+    "kind": "change_period_15x"
+  },
+  {
+    "from": "05-trend-atr-sl-tp.italgo",
+    "to": "28p-05-trend-atr-sl-tp__adx25.italgo",
+    "delta": 54.245118285714085,
+    "pnl": 20.702245428571416,
+    "kind": "add_block_adx"
+  },
+  {
+    "from": "07-supertrend-di-adx-stack.italgo",
+    "to": "28p-07-supertrend-di-adx-stack__period15x.italgo",
+    "delta": 116.19523200000026,
+    "pnl": 199.1136400000001,
+    "kind": "change_period_15x"
+  },
+  {
+    "from": "07-supertrend-di-adx-stack.italgo",
+    "to": "28p-07-supertrend-di-adx-stack__period067.italgo",
+    "delta": 85.06367900000043,
+    "pnl": 167.98208700000026,
+    "kind": "change_period_067"
+  },
+  {
+    "from": "07-supertrend-di-adx-stack.italgo",
+    "to": "28p-07-supertrend-di-adx-stack__ema50.italgo",
+    "delta": 55.80059,
+    "pnl": 138.71899799999983,
+    "kind": "add_block_ema"
+  },
+  {
+    "from": "07-supertrend-di-adx-stack.italgo",
+    "to": "28p-07-supertrend-di-adx-stack__sma200.italgo",
+    "delta": 135.4332050000001,
+    "pnl": 218.35161299999993,
+    "kind": "add_block_sma200"
+  },
+  {
+    "from": "09-sma-cross-20-50.italgo",
+    "to": "28p-09-sma-cross-20-50__period15x.italgo",
+    "delta": 61.842915999999946,
+    "pnl": 164.36387000000008,
+    "kind": "change_period_15x"
+  },
+  {
+    "from": "10-ema-cross-9-21.italgo",
+    "to": "28p-10-ema-cross-9-21__period15x.italgo",
+    "delta": 86.80542099999978,
+    "pnl": 134.28911099999988,
+    "kind": "change_period_15x"
+  },
+  {
+    "from": "10-ema-cross-9-21.italgo",
+    "to": "28p-10-ema-cross-9-21__ema50.italgo",
+    "delta": 65.89346399999992,
+    "pnl": 113.37715400000002,
+    "kind": "add_block_ema"
+  },
+  {
+    "from": "11-tema-cross-10-30.italgo",
+    "to": "28p-11-tema-cross-10-30__period067.italgo",
+    "delta": 252.18056,
+    "pnl": 124.4634120000004,
+    "kind": "change_period_067"
+  },
+  {
+    "from": "11-tema-cross-10-30.italgo",
+    "to": "28p-11-tema-cross-10-30__ema50.italgo",
+    "delta": 174.08745399999967,
+    "pnl": 46.370306000000056,
+    "kind": "add_block_ema"
+  },
+  {
+    "from": "11-tema-cross-10-30.italgo",
+    "to": "28p-11-tema-cross-10-30__sma200.italgo",
+    "delta": 152.28043999999977,
+    "pnl": 24.56329200000016,
+    "kind": "add_block_sma200"
+  },
+  {
+    "from": "12-dema-cross-12-26.italgo",
+    "to": "28p-12-dema-cross-12-26__period15x.italgo",
+    "delta": 113.8088069999999,
+    "pnl": 10.376445999999987,
+    "kind": "change_period_15x"
+  },
+  {
+    "from": "13-rsi-cross-50.italgo",
+    "to": "28p-13-rsi-cross-50__period15x.italgo",
+    "delta": 56.88211999999956,
+    "pnl": 53.262044000000046,
+    "kind": "change_period_15x"
+  },
+  {
+    "from": "14-cmo-cross-0.italgo",
+    "to": "28p-14-cmo-cross-0__period15x.italgo",
+    "delta": 56.88211999999956,
+    "pnl": 53.262044000000046,
+    "kind": "change_period_15x"
+  },
+  {
+    "from": "15-momentum-cross-0.italgo",
+    "to": "28p-15-momentum-cross-0__period067.italgo",
+    "delta": 149.38667899999982,
+    "pnl": 131.23532900000015,
+    "kind": "change_period_067"
+  },
+  {
+    "from": "15-momentum-cross-0.italgo",
+    "to": "28p-15-momentum-cross-0__ema50.italgo",
+    "delta": 61.157415999999955,
+    "pnl": 43.00606600000029,
+    "kind": "add_block_ema"
+  },
+  {
+    "from": "15-momentum-cross-0.italgo",
+    "to": "28p-15-momentum-cross-0__sma200.italgo",
+    "delta": 52.4117599999999,
+    "pnl": 34.260410000000235,
+    "kind": "add_block_sma200"
+  },
+  {
+    "from": "16-supertrend-rsi-entry.italgo",
+    "to": "28p-16-supertrend-rsi-entry__period067.italgo",
+    "delta": 60.67261799999993,
+    "pnl": 102.02428500000003,
+    "kind": "change_period_067"
+  },
+  {
+    "from": "17-supertrend-rsi-tight.italgo",
+    "to": "28p-17-supertrend-rsi-tight__period15x.italgo",
+    "delta": 177.36029700000006,
+    "pnl": 135.96240600000016,
+    "kind": "change_period_15x"
+  },
+  {
+    "from": "17-supertrend-rsi-tight.italgo",
+    "to": "28p-17-supertrend-rsi-tight__period067.italgo",
+    "delta": 99.87768399999969,
+    "pnl": 58.47979299999977,
+    "kind": "change_period_067"
+  },
+  {
+    "from": "17-supertrend-rsi-tight.italgo",
+    "to": "28p-17-supertrend-rsi-tight__ema50.italgo",
+    "delta": 118.18372099999985,
+    "pnl": 76.78582999999993,
+    "kind": "add_block_ema"
+  },
+  {
+    "from": "17-supertrend-rsi-tight.italgo",
+    "to": "28p-17-supertrend-rsi-tight__sma200.italgo",
+    "delta": 114.25581999999982,
+    "pnl": 72.8579289999999,
+    "kind": "add_block_sma200"
+  },
+  {
+    "from": "18-mom-pct-ema50-filter.italgo",
+    "to": "28p-18-mom-pct-ema50-filter__period067.italgo",
+    "delta": 65.76610899999972,
+    "pnl": 108.772175,
+    "kind": "change_period_067"
+  },
+  {
+    "from": "19-bb-rsi-mean-reversion-v2.italgo",
+    "to": "28p-19-bb-rsi-mean-reversion-v2__ema50.italgo",
+    "delta": 252.459334,
+    "pnl": 10.487385000000017,
+    "kind": "add_block_ema"
+  },
+  {
+    "from": "21-sma-cross-20-50-ls.italgo",
+    "to": "28p-21-sma-cross-20-50-ls__adx25.italgo",
+    "delta": 55.16745199999974,
+    "pnl": 311.417125,
+    "kind": "add_block_adx"
+  },
+  {
+    "from": "22-ema-cross-9-21-ls.italgo",
+    "to": "28p-22-ema-cross-9-21-ls__period15x.italgo",
+    "delta": 182.94408399999958,
+    "pnl": 335.9243729999997,
+    "kind": "change_period_15x"
+  },
+  {
+    "from": "22-ema-cross-9-21-ls.italgo",
+    "to": "28p-22-ema-cross-9-21-ls__period067.italgo",
+    "delta": 89.07524900000016,
+    "pnl": 242.0555380000003,
+    "kind": "change_period_067"
+  },
+  {
+    "from": "22-ema-cross-9-21-ls.italgo",
+    "to": "28p-22-ema-cross-9-21-ls__ema50.italgo",
+    "delta": 152.73900799999984,
+    "pnl": 305.719297,
+    "kind": "add_block_ema"
+  },
+  {
+    "from": "23-tema-cross-10-30-ls.italgo",
+    "to": "28p-23-tema-cross-10-30-ls__period067.italgo",
+    "delta": 466.66489,
+    "pnl": 306.2239800000008,
+    "kind": "change_period_067"
+  },
+  {
+    "from": "23-tema-cross-10-30-ls.italgo",
+    "to": "28p-23-tema-cross-10-30-ls__ema50.italgo",
+    "delta": 348.1749079999993,
+    "pnl": 187.7339980000001,
+    "kind": "add_block_ema"
+  },
+  {
+    "from": "23-tema-cross-10-30-ls.italgo",
+    "to": "28p-23-tema-cross-10-30-ls__sma200.italgo",
+    "delta": 304.56087999999954,
+    "pnl": 144.1199700000003,
+    "kind": "add_block_sma200"
+  },
+  {
+    "from": "24-rsi-cross-50-ls.italgo",
+    "to": "28p-24-rsi-cross-50-ls__period15x.italgo",
+    "delta": 115.25438899999921,
+    "pnl": 164.38698200000013,
+    "kind": "change_period_15x"
+  },
+  {
+    "from": "24-rsi-cross-50-ls.italgo",
+    "to": "28p-24-rsi-cross-50-ls__sma200.italgo",
+    "delta": 92.44457300000002,
+    "pnl": 141.57716600000094,
+    "kind": "add_block_sma200"
+  },
+  {
+    "from": "25-momentum-cross-0-ls.italgo",
+    "to": "28p-25-momentum-cross-0-ls__period15x.italgo",
+    "delta": 69.42140900000015,
+    "pnl": 88.98600800000082,
+    "kind": "change_period_15x"
+  },
+  {
+    "from": "25-momentum-cross-0-ls.italgo",
+    "to": "28p-25-momentum-cross-0-ls__period067.italgo",
+    "delta": 297.7234629999996,
+    "pnl": 317.28806200000025,
+    "kind": "change_period_067"
+  },
+  {
+    "from": "25-momentum-cross-0-ls.italgo",
+    "to": "28p-25-momentum-cross-0-ls__ema50.italgo",
+    "delta": 122.31483199999991,
+    "pnl": 141.87943100000058,
+    "kind": "add_block_ema"
+  },
+  {
+    "from": "25-momentum-cross-0-ls.italgo",
+    "to": "28p-25-momentum-cross-0-ls__sma200.italgo",
+    "delta": 104.8235199999998,
+    "pnl": 124.38811900000047,
+    "kind": "add_block_sma200"
+  },
+  {
+    "from": "26-supertrend-rsi-ls.italgo",
+    "to": "28p-26-supertrend-rsi-ls__period067.italgo",
+    "delta": 126.93579499999993,
+    "pnl": 266.0118740000001,
+    "kind": "change_period_067"
+  }
+]

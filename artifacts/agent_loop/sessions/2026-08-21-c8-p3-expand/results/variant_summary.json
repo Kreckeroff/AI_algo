@@ -1,0 +1,275 @@
+{
+  "session": "2026-08-21-c8-p3-expand",
+  "n_pairs": 133,
+  "n_better": 78,
+  "model": {
+    "loo_accuracy": 0.6766917293233082,
+    "loo_auc": 0.7158508158508159,
+    "n": 133
+  },
+  "kind_stats": {
+    "change_period_15x": {
+      "n": 27,
+      "wins": 16,
+      "sum_delta": 652.0770820628534,
+      "mean_delta": 24.15100303936494,
+      "winrate": 0.5925925925925926
+    },
+    "change_period_067": {
+      "n": 27,
+      "wins": 17,
+      "sum_delta": 1933.5325697454743,
+      "mean_delta": 71.61231739798053,
+      "winrate": 0.6296296296296297
+    },
+    "add_block_ema": {
+      "n": 27,
+      "wins": 19,
+      "sum_delta": 1637.5209149999976,
+      "mean_delta": 60.648922777777685,
+      "winrate": 0.7037037037037037
+    },
+    "add_block_sma200": {
+      "n": 27,
+      "wins": 16,
+      "sum_delta": 737.9225580107127,
+      "mean_delta": 27.330465111507877,
+      "winrate": 0.5925925925925926
+    },
+    "add_block_adx": {
+      "n": 25,
+      "wins": 10,
+      "sum_delta": -977.89206025429,
+      "mean_delta": -39.1156824101716,
+      "winrate": 0.4
+    }
+  },
+  "n_promoted": 41,
+  "lookback_cells": 120,
+  "lookback_scripts": [
+    "03-breakout-donchian-volume.italgo",
+    "20-donchian-55.italgo",
+    "06b-rsi-no-session.italgo",
+    "21-sma-cross-20-50-ls.italgo",
+    "04-macd-stoch-long-short.italgo",
+    "22-ema-cross-9-21-ls.italgo",
+    "26-supertrend-rsi-ls.italgo",
+    "01-trend-ema-adx-rsi.italgo",
+    "09-sma-cross-20-50.italgo",
+    "07-supertrend-di-adx-stack.italgo",
+    "24-rsi-cross-50-ls.italgo",
+    "10-ema-cross-9-21.italgo"
+  ],
+  "zero_trade_bases": [
+    "06-session-filter-rsi.italgo"
+  ],
+  "fixes": {
+    "donchian_shift": [
+      "03-breakout-donchian-volume.italgo",
+      "20-donchian-55.italgo"
+    ],
+    "session_1d": "06b-rsi-no-session.italgo (06 remains intraday-only)"
+  },
+  "top20_by_score": [
+    {
+      "entry": "23-tema-cross-10-30-ls.italgo",
+      "filter": "change_period_067",
+      "median_pnl": 466.66489,
+      "mean_pnl": 306.2239800000008,
+      "mean_wr": 0.4507042253521127,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "23-tema-cross-10-30-ls.italgo",
+      "filter": "add_block_ema",
+      "median_pnl": 348.1749079999993,
+      "mean_pnl": 187.7339980000001,
+      "mean_wr": 0.375,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "23-tema-cross-10-30-ls.italgo",
+      "filter": "add_block_sma200",
+      "median_pnl": 304.56087999999954,
+      "mean_pnl": 144.1199700000003,
+      "mean_wr": 0.3939393939393939,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "25-momentum-cross-0-ls.italgo",
+      "filter": "change_period_067",
+      "median_pnl": 297.7234629999996,
+      "mean_pnl": 317.28806200000025,
+      "mean_wr": 0.411214953271028,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "unknown"
+    },
+    {
+      "entry": "04-macd-stoch-long-short.italgo",
+      "filter": "change_period_067",
+      "median_pnl": 291.26977999999997,
+      "mean_pnl": 457.04275400000023,
+      "mean_wr": 0.7083333333333334,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "19-bb-rsi-mean-reversion-v2.italgo",
+      "filter": "add_block_ema",
+      "median_pnl": 252.459334,
+      "mean_pnl": 10.487385000000017,
+      "mean_wr": 1.0,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "mean_reversion"
+    },
+    {
+      "entry": "11-tema-cross-10-30.italgo",
+      "filter": "change_period_067",
+      "median_pnl": 252.18056,
+      "mean_pnl": 124.4634120000004,
+      "mean_wr": 0.5070422535211268,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "19-bb-rsi-mean-reversion-v2.italgo",
+      "filter": "add_block_sma200",
+      "median_pnl": 210.23339599999997,
+      "mean_pnl": -31.738553000000024,
+      "mean_wr": 0.75,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "mean_reversion"
+    },
+    {
+      "entry": "22-ema-cross-9-21-ls.italgo",
+      "filter": "change_period_15x",
+      "median_pnl": 182.94408399999958,
+      "mean_pnl": 335.9243729999997,
+      "mean_wr": 0.29411764705882354,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "17-supertrend-rsi-tight.italgo",
+      "filter": "change_period_15x",
+      "median_pnl": 177.36029700000006,
+      "mean_pnl": 135.96240600000016,
+      "mean_wr": 0.5238095238095238,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "11-tema-cross-10-30.italgo",
+      "filter": "add_block_ema",
+      "median_pnl": 174.08745399999967,
+      "mean_pnl": 46.370306000000056,
+      "mean_wr": 0.53125,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "22-ema-cross-9-21-ls.italgo",
+      "filter": "add_block_ema",
+      "median_pnl": 152.73900799999984,
+      "mean_pnl": 305.719297,
+      "mean_wr": 0.2608695652173913,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "11-tema-cross-10-30.italgo",
+      "filter": "add_block_sma200",
+      "median_pnl": 152.28043999999977,
+      "mean_pnl": 24.56329200000016,
+      "mean_wr": 0.5454545454545454,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "15-momentum-cross-0.italgo",
+      "filter": "change_period_067",
+      "median_pnl": 149.38667899999982,
+      "mean_pnl": 131.23532900000015,
+      "mean_wr": 0.4392523364485981,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "unknown"
+    },
+    {
+      "entry": "07-supertrend-di-adx-stack.italgo",
+      "filter": "add_block_sma200",
+      "median_pnl": 135.4332050000001,
+      "mean_pnl": 218.35161299999993,
+      "mean_wr": 0.3888888888888889,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "26-supertrend-rsi-ls.italgo",
+      "filter": "change_period_067",
+      "median_pnl": 126.93579499999993,
+      "mean_pnl": 266.0118740000001,
+      "mean_wr": 0.42105263157894735,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "25-momentum-cross-0-ls.italgo",
+      "filter": "add_block_ema",
+      "median_pnl": 122.31483199999991,
+      "mean_pnl": 141.87943100000058,
+      "mean_wr": 0.26229508196721313,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "unknown"
+    },
+    {
+      "entry": "17-supertrend-rsi-tight.italgo",
+      "filter": "add_block_ema",
+      "median_pnl": 118.18372099999985,
+      "mean_pnl": 76.78582999999993,
+      "mean_wr": 0.5833333333333334,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "07-supertrend-di-adx-stack.italgo",
+      "filter": "change_period_15x",
+      "median_pnl": 116.19523200000026,
+      "mean_pnl": 199.1136400000001,
+      "mean_wr": 0.3,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "24-rsi-cross-50-ls.italgo",
+      "filter": "change_period_15x",
+      "median_pnl": 115.25438899999921,
+      "mean_pnl": 164.38698200000013,
+      "mean_wr": 0.3333333333333333,
+      "mean_dd": 0,
+      "n": 1,
+      "regime": "mean_reversion"
+    }
+  ]
+}

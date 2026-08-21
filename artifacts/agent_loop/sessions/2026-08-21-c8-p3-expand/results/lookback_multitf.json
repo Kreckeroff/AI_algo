@@ -1,0 +1,1682 @@
+[
+  {
+    "file": "01-trend-ema-adx-rsi.italgo",
+    "tf": "1d",
+    "window": "1y",
+    "bars": 252,
+    "stats": {
+      "losses": 0,
+      "maxDrawdown": 0.0,
+      "netPnl": 0.0,
+      "totalTrades": 0,
+      "winRate": 0.0,
+      "wins": 0
+    }
+  },
+  {
+    "file": "03-breakout-donchian-volume.italgo",
+    "tf": "1d",
+    "window": "1y",
+    "bars": 252,
+    "stats": {
+      "losses": 0,
+      "maxDrawdown": 11.990000000000009,
+      "netPnl": 8.817791999999997,
+      "totalTrades": 1,
+      "winRate": 1.0,
+      "wins": 1
+    }
+  },
+  {
+    "file": "04-macd-stoch-long-short.italgo",
+    "tf": "1d",
+    "window": "1y",
+    "bars": 252,
+    "stats": {
+      "losses": 1,
+      "maxDrawdown": 78.04999999999998,
+      "netPnl": -18.145307000000003,
+      "totalTrades": 2,
+      "winRate": 0.0,
+      "wins": 0
+    }
+  },
+  {
+    "file": "06b-rsi-no-session.italgo",
+    "tf": "1d",
+    "window": "1y",
+    "bars": 252,
+    "stats": {
+      "losses": 1,
+      "maxDrawdown": 77.60999999999999,
+      "netPnl": -27.67431299999987,
+      "totalTrades": 3,
+      "winRate": 0.6666666666666666,
+      "wins": 2
+    }
+  },
+  {
+    "file": "07-supertrend-di-adx-stack.italgo",
+    "tf": "1d",
+    "window": "1y",
+    "bars": 252,
+    "stats": {
+      "losses": 0,
+      "maxDrawdown": 42.79630799999998,
+      "netPnl": 16.011581000000035,
+      "totalTrades": 3,
+      "winRate": 1.0,
+      "wins": 2
+    }
+  },
+  {
+    "file": "09-sma-cross-20-50.italgo",
+    "tf": "1d",
+    "window": "1y",
+    "bars": 252,
+    "stats": {
+      "losses": 1,
+      "maxDrawdown": 10.816606999999976,
+      "netPnl": 8.54259300000001,
+      "totalTrades": 2,
+      "winRate": 0.5,
+      "wins": 1
+    }
+  },
+  {
+    "file": "10-ema-cross-9-21.italgo",
+    "tf": "1d",
+    "window": "1y",
+    "bars": 252,
+    "stats": {
+      "losses": 6,
+      "maxDrawdown": 41.00627099999991,
+      "netPnl": -26.410774999999944,
+      "totalTrades": 8,
+      "winRate": 0.25,
+      "wins": 2
+    }
+  },
+  {
+    "file": "20-donchian-55.italgo",
+    "tf": "1d",
+    "window": "1y",
+    "bars": 252,
+    "stats": {
+      "losses": 0,
+      "maxDrawdown": 11.990000000000009,
+      "netPnl": 1.4170520000000124,
+      "totalTrades": 1,
+      "winRate": 1.0,
+      "wins": 1
+    }
+  },
+  {
+    "file": "21-sma-cross-20-50-ls.italgo",
+    "tf": "1d",
+    "window": "1y",
+    "bars": 252,
+    "stats": {
+      "losses": 2,
+      "maxDrawdown": 38.349999999999994,
+      "netPnl": 54.00598600000001,
+      "totalTrades": 4,
+      "winRate": 0.3333333333333333,
+      "wins": 1
+    }
+  },
+  {
+    "file": "22-ema-cross-9-21-ls.italgo",
+    "tf": "1d",
+    "window": "1y",
+    "bars": 252,
+    "stats": {
+      "losses": 13,
+      "maxDrawdown": 62.071762000000064,
+      "netPnl": -23.95155099999988,
+      "totalTrades": 17,
+      "winRate": 0.1875,
+      "wins": 3
+    }
+  },
+  {
+    "file": "24-rsi-cross-50-ls.italgo",
+    "tf": "1d",
+    "window": "1y",
+    "bars": 252,
+    "stats": {
+      "losses": 27,
+      "maxDrawdown": 49.53716799999995,
+      "netPnl": -16.747681999999884,
+      "totalTrades": 35,
+      "winRate": 0.20588235294117646,
+      "wins": 7
+    }
+  },
+  {
+    "file": "26-supertrend-rsi-ls.italgo",
+    "tf": "1d",
+    "window": "1y",
+    "bars": 252,
+    "stats": {
+      "losses": 0,
+      "maxDrawdown": 78.04999999999998,
+      "netPnl": -35.76068399999997,
+      "totalTrades": 1,
+      "winRate": 0.0,
+      "wins": 0
+    }
+  },
+  {
+    "file": "01-trend-ema-adx-rsi.italgo",
+    "tf": "1d",
+    "window": "2y",
+    "bars": 504,
+    "stats": {
+      "losses": 1,
+      "maxDrawdown": 29.140334000000053,
+      "netPnl": -15.66235400000005,
+      "totalTrades": 2,
+      "winRate": 0.5,
+      "wins": 1
+    }
+  },
+  {
+    "file": "03-breakout-donchian-volume.italgo",
+    "tf": "1d",
+    "window": "2y",
+    "bars": 504,
+    "stats": {
+      "losses": 3,
+      "maxDrawdown": 54.49437100000006,
+      "netPnl": -30.84638200000012,
+      "totalTrades": 4,
+      "winRate": 0.25,
+      "wins": 1
+    }
+  },
+  {
+    "file": "04-macd-stoch-long-short.italgo",
+    "tf": "1d",
+    "window": "2y",
+    "bars": 504,
+    "stats": {
+      "losses": 2,
+      "maxDrawdown": 78.04999999999998,
+      "netPnl": 18.62317900000022,
+      "totalTrades": 8,
+      "winRate": 0.7142857142857143,
+      "wins": 5
+    }
+  },
+  {
+    "file": "06b-rsi-no-session.italgo",
+    "tf": "1d",
+    "window": "2y",
+    "bars": 504,
+    "stats": {
+      "losses": 2,
+      "maxDrawdown": 77.60999999999999,
+      "netPnl": -16.65236999999979,
+      "totalTrades": 7,
+      "winRate": 0.7142857142857143,
+      "wins": 5
+    }
+  },
+  {
+    "file": "07-supertrend-di-adx-stack.italgo",
+    "tf": "1d",
+    "window": "2y",
+    "bars": 504,
+    "stats": {
+      "losses": 8,
+      "maxDrawdown": 137.93227200000007,
+      "netPnl": -106.522492,
+      "totalTrades": 11,
+      "winRate": 0.2,
+      "wins": 2
+    }
+  },
+  {
+    "file": "09-sma-cross-20-50.italgo",
+    "tf": "1d",
+    "window": "2y",
+    "bars": 504,
+    "stats": {
+      "losses": 2,
+      "maxDrawdown": 24.203447999999923,
+      "netPnl": 15.24959200000012,
+      "totalTrades": 5,
+      "winRate": 0.6,
+      "wins": 3
+    }
+  },
+  {
+    "file": "10-ema-cross-9-21.italgo",
+    "tf": "1d",
+    "window": "2y",
+    "bars": 504,
+    "stats": {
+      "losses": 11,
+      "maxDrawdown": 82.12852499999991,
+      "netPnl": -72.47937499999989,
+      "totalTrades": 15,
+      "winRate": 0.26666666666666666,
+      "wins": 4
+    }
+  },
+  {
+    "file": "20-donchian-55.italgo",
+    "tf": "1d",
+    "window": "2y",
+    "bars": 504,
+    "stats": {
+      "losses": 1,
+      "maxDrawdown": 26.500985999999955,
+      "netPnl": -3.23257899999993,
+      "totalTrades": 2,
+      "winRate": 0.5,
+      "wins": 1
+    }
+  },
+  {
+    "file": "21-sma-cross-20-50-ls.italgo",
+    "tf": "1d",
+    "window": "2y",
+    "bars": 504,
+    "stats": {
+      "losses": 5,
+      "maxDrawdown": 38.349999999999994,
+      "netPnl": 62.94953700000019,
+      "totalTrades": 10,
+      "winRate": 0.4444444444444444,
+      "wins": 4
+    }
+  },
+  {
+    "file": "22-ema-cross-9-21-ls.italgo",
+    "tf": "1d",
+    "window": "2y",
+    "bars": 504,
+    "stats": {
+      "losses": 24,
+      "maxDrawdown": 149.8028999999998,
+      "netPnl": -108.29952999999978,
+      "totalTrades": 31,
+      "winRate": 0.2,
+      "wins": 6
+    }
+  },
+  {
+    "file": "24-rsi-cross-50-ls.italgo",
+    "tf": "1d",
+    "window": "2y",
+    "bars": 504,
+    "stats": {
+      "losses": 58,
+      "maxDrawdown": 206.09163599999965,
+      "netPnl": -166.12762899999927,
+      "totalTrades": 75,
+      "winRate": 0.21621621621621623,
+      "wins": 16
+    }
+  },
+  {
+    "file": "26-supertrend-rsi-ls.italgo",
+    "tf": "1d",
+    "window": "2y",
+    "bars": 504,
+    "stats": {
+      "losses": 6,
+      "maxDrawdown": 142.50152199999994,
+      "netPnl": -111.1431619999999,
+      "totalTrades": 9,
+      "winRate": 0.25,
+      "wins": 2
+    }
+  },
+  {
+    "file": "01-trend-ema-adx-rsi.italgo",
+    "tf": "1d",
+    "window": "5y",
+    "bars": 1260,
+    "stats": {
+      "losses": 2,
+      "maxDrawdown": 59.189824999999985,
+      "netPnl": 127.51295300000004,
+      "totalTrades": 4,
+      "winRate": 0.5,
+      "wins": 2
+    }
+  },
+  {
+    "file": "03-breakout-donchian-volume.italgo",
+    "tf": "1d",
+    "window": "5y",
+    "bars": 1260,
+    "stats": {
+      "losses": 4,
+      "maxDrawdown": 77.34469100000007,
+      "netPnl": 134.9537969999999,
+      "totalTrades": 9,
+      "winRate": 0.5555555555555556,
+      "wins": 5
+    }
+  },
+  {
+    "file": "04-macd-stoch-long-short.italgo",
+    "tf": "1d",
+    "window": "5y",
+    "bars": 1260,
+    "stats": {
+      "losses": 9,
+      "maxDrawdown": 148.2560239999999,
+      "netPnl": 62.36619100000024,
+      "totalTrades": 19,
+      "winRate": 0.5,
+      "wins": 9
+    }
+  },
+  {
+    "file": "06b-rsi-no-session.italgo",
+    "tf": "1d",
+    "window": "5y",
+    "bars": 1260,
+    "stats": {
+      "losses": 5,
+      "maxDrawdown": 96.63,
+      "netPnl": -54.32377399999987,
+      "totalTrades": 17,
+      "winRate": 0.7058823529411765,
+      "wins": 12
+    }
+  },
+  {
+    "file": "07-supertrend-di-adx-stack.italgo",
+    "tf": "1d",
+    "window": "5y",
+    "bars": 1260,
+    "stats": {
+      "losses": 22,
+      "maxDrawdown": 312.1419500000002,
+      "netPnl": -278.64721000000014,
+      "totalTrades": 31,
+      "winRate": 0.26666666666666666,
+      "wins": 8
+    }
+  },
+  {
+    "file": "09-sma-cross-20-50.italgo",
+    "tf": "1d",
+    "window": "5y",
+    "bars": 1260,
+    "stats": {
+      "losses": 6,
+      "maxDrawdown": 51.070721000000006,
+      "netPnl": 102.52095400000013,
+      "totalTrades": 12,
+      "winRate": 0.5,
+      "wins": 6
+    }
+  },
+  {
+    "file": "10-ema-cross-9-21.italgo",
+    "tf": "1d",
+    "window": "5y",
+    "bars": 1260,
+    "stats": {
+      "losses": 21,
+      "maxDrawdown": 90.73015499999985,
+      "netPnl": 72.57737200000005,
+      "totalTrades": 30,
+      "winRate": 0.3,
+      "wins": 9
+    }
+  },
+  {
+    "file": "20-donchian-55.italgo",
+    "tf": "1d",
+    "window": "5y",
+    "bars": 1260,
+    "stats": {
+      "losses": 1,
+      "maxDrawdown": 43.99000000000001,
+      "netPnl": 155.70007100000004,
+      "totalTrades": 4,
+      "winRate": 0.75,
+      "wins": 3
+    }
+  },
+  {
+    "file": "21-sma-cross-20-50-ls.italgo",
+    "tf": "1d",
+    "window": "5y",
+    "bars": 1260,
+    "stats": {
+      "losses": 15,
+      "maxDrawdown": 93.84689099999997,
+      "netPnl": 75.69608300000024,
+      "totalTrades": 24,
+      "winRate": 0.34782608695652173,
+      "wins": 8
+    }
+  },
+  {
+    "file": "22-ema-cross-9-21-ls.italgo",
+    "tf": "1d",
+    "window": "5y",
+    "bars": 1260,
+    "stats": {
+      "losses": 45,
+      "maxDrawdown": 149.8028999999998,
+      "netPnl": 72.74487200000007,
+      "totalTrades": 61,
+      "winRate": 0.25,
+      "wins": 15
+    }
+  },
+  {
+    "file": "24-rsi-cross-50-ls.italgo",
+    "tf": "1d",
+    "window": "5y",
+    "bars": 1260,
+    "stats": {
+      "losses": 112,
+      "maxDrawdown": 245.07870199999905,
+      "netPnl": -49.47397899999882,
+      "totalTrades": 159,
+      "winRate": 0.2911392405063291,
+      "wins": 46
+    }
+  },
+  {
+    "file": "26-supertrend-rsi-ls.italgo",
+    "tf": "1d",
+    "window": "5y",
+    "bars": 1260,
+    "stats": {
+      "losses": 10,
+      "maxDrawdown": 142.50152199999994,
+      "netPnl": 11.414343000000201,
+      "totalTrades": 18,
+      "winRate": 0.4117647058823529,
+      "wins": 7
+    }
+  },
+  {
+    "file": "01-trend-ema-adx-rsi.italgo",
+    "tf": "1d",
+    "window": "all",
+    "bars": 1366,
+    "stats": {
+      "losses": 2,
+      "maxDrawdown": 59.189824999999985,
+      "netPnl": 127.51295300000004,
+      "totalTrades": 4,
+      "winRate": 0.5,
+      "wins": 2
+    }
+  },
+  {
+    "file": "03-breakout-donchian-volume.italgo",
+    "tf": "1d",
+    "window": "all",
+    "bars": 1366,
+    "stats": {
+      "losses": 4,
+      "maxDrawdown": 77.34469100000007,
+      "netPnl": 145.7848649999999,
+      "totalTrades": 10,
+      "winRate": 0.6,
+      "wins": 6
+    }
+  },
+  {
+    "file": "04-macd-stoch-long-short.italgo",
+    "tf": "1d",
+    "window": "all",
+    "bars": 1366,
+    "stats": {
+      "losses": 9,
+      "maxDrawdown": 148.2560239999999,
+      "netPnl": 165.77297400000026,
+      "totalTrades": 20,
+      "winRate": 0.5263157894736842,
+      "wins": 10
+    }
+  },
+  {
+    "file": "06b-rsi-no-session.italgo",
+    "tf": "1d",
+    "window": "all",
+    "bars": 1366,
+    "stats": {
+      "losses": 6,
+      "maxDrawdown": 147.88535,
+      "netPnl": -100.59486699999988,
+      "totalTrades": 19,
+      "winRate": 0.6842105263157895,
+      "wins": 13
+    }
+  },
+  {
+    "file": "07-supertrend-di-adx-stack.italgo",
+    "tf": "1d",
+    "window": "all",
+    "bars": 1366,
+    "stats": {
+      "losses": 21,
+      "maxDrawdown": 177.68788400000022,
+      "netPnl": 82.91840799999983,
+      "totalTrades": 31,
+      "winRate": 0.3,
+      "wins": 9
+    }
+  },
+  {
+    "file": "09-sma-cross-20-50.italgo",
+    "tf": "1d",
+    "window": "all",
+    "bars": 1366,
+    "stats": {
+      "losses": 6,
+      "maxDrawdown": 51.070721000000006,
+      "netPnl": 102.52095400000013,
+      "totalTrades": 12,
+      "winRate": 0.5,
+      "wins": 6
+    }
+  },
+  {
+    "file": "10-ema-cross-9-21.italgo",
+    "tf": "1d",
+    "window": "all",
+    "bars": 1366,
+    "stats": {
+      "losses": 23,
+      "maxDrawdown": 103.57985799999996,
+      "netPnl": 47.483690000000095,
+      "totalTrades": 33,
+      "winRate": 0.30303030303030304,
+      "wins": 10
+    }
+  },
+  {
+    "file": "20-donchian-55.italgo",
+    "tf": "1d",
+    "window": "all",
+    "bars": 1366,
+    "stats": {
+      "losses": 1,
+      "maxDrawdown": 43.99000000000001,
+      "netPnl": 155.70007100000004,
+      "totalTrades": 4,
+      "winRate": 0.75,
+      "wins": 3
+    }
+  },
+  {
+    "file": "21-sma-cross-20-50-ls.italgo",
+    "tf": "1d",
+    "window": "all",
+    "bars": 1366,
+    "stats": {
+      "losses": 15,
+      "maxDrawdown": 123.71106599999996,
+      "netPnl": 256.24967300000026,
+      "totalTrades": 25,
+      "winRate": 0.375,
+      "wins": 9
+    }
+  },
+  {
+    "file": "22-ema-cross-9-21-ls.italgo",
+    "tf": "1d",
+    "window": "all",
+    "bars": 1366,
+    "stats": {
+      "losses": 48,
+      "maxDrawdown": 149.8028999999998,
+      "netPnl": 152.98028900000014,
+      "totalTrades": 66,
+      "winRate": 0.26153846153846155,
+      "wins": 17
+    }
+  },
+  {
+    "file": "24-rsi-cross-50-ls.italgo",
+    "tf": "1d",
+    "window": "all",
+    "bars": 1366,
+    "stats": {
+      "losses": 120,
+      "maxDrawdown": 245.07870199999903,
+      "netPnl": 49.132593000000924,
+      "totalTrades": 172,
+      "winRate": 0.2982456140350877,
+      "wins": 51
+    }
+  },
+  {
+    "file": "26-supertrend-rsi-ls.italgo",
+    "tf": "1d",
+    "window": "all",
+    "bars": 1366,
+    "stats": {
+      "losses": 10,
+      "maxDrawdown": 142.50152199999994,
+      "netPnl": 139.07607900000016,
+      "totalTrades": 19,
+      "winRate": 0.4444444444444444,
+      "wins": 8
+    }
+  },
+  {
+    "file": "01-trend-ema-adx-rsi.italgo",
+    "tf": "1h",
+    "window": "3m",
+    "bars": 1440,
+    "stats": {
+      "losses": 3,
+      "maxDrawdown": 12.094112999999936,
+      "netPnl": -12.094112999999936,
+      "totalTrades": 4,
+      "winRate": 0.25,
+      "wins": 1
+    }
+  },
+  {
+    "file": "03-breakout-donchian-volume.italgo",
+    "tf": "1h",
+    "window": "3m",
+    "bars": 1440,
+    "stats": {
+      "losses": 9,
+      "maxDrawdown": 16.947417999999857,
+      "netPnl": -9.121431999999857,
+      "totalTrades": 15,
+      "winRate": 0.4,
+      "wins": 6
+    }
+  },
+  {
+    "file": "04-macd-stoch-long-short.italgo",
+    "tf": "1h",
+    "window": "3m",
+    "bars": 1440,
+    "stats": {
+      "losses": 15,
+      "maxDrawdown": 29.77392199999997,
+      "netPnl": 25.42591800000031,
+      "totalTrades": 29,
+      "winRate": 0.4642857142857143,
+      "wins": 13
+    }
+  },
+  {
+    "file": "06b-rsi-no-session.italgo",
+    "tf": "1h",
+    "window": "3m",
+    "bars": 1440,
+    "stats": {
+      "losses": 11,
+      "maxDrawdown": 66.21362099999993,
+      "netPnl": -58.51185599999985,
+      "totalTrades": 23,
+      "winRate": 0.5,
+      "wins": 11
+    }
+  },
+  {
+    "file": "07-supertrend-di-adx-stack.italgo",
+    "tf": "1h",
+    "window": "3m",
+    "bars": 1440,
+    "stats": {
+      "losses": 17,
+      "maxDrawdown": 30.127878000000123,
+      "netPnl": 40.43338099999977,
+      "totalTrades": 29,
+      "winRate": 0.39285714285714285,
+      "wins": 11
+    }
+  },
+  {
+    "file": "09-sma-cross-20-50.italgo",
+    "tf": "1h",
+    "window": "3m",
+    "bars": 1440,
+    "stats": {
+      "losses": 10,
+      "maxDrawdown": 22.494220999999868,
+      "netPnl": -9.59443599999986,
+      "totalTrades": 15,
+      "winRate": 0.3333333333333333,
+      "wins": 5
+    }
+  },
+  {
+    "file": "10-ema-cross-9-21.italgo",
+    "tf": "1h",
+    "window": "3m",
+    "bars": 1440,
+    "stats": {
+      "losses": 17,
+      "maxDrawdown": 14.270265999999879,
+      "netPnl": 4.2710240000002955,
+      "totalTrades": 26,
+      "winRate": 0.34615384615384615,
+      "wins": 9
+    }
+  },
+  {
+    "file": "20-donchian-55.italgo",
+    "tf": "1h",
+    "window": "3m",
+    "bars": 1440,
+    "stats": {
+      "losses": 3,
+      "maxDrawdown": 17.534003999999925,
+      "netPnl": -1.464653999999996,
+      "totalTrades": 4,
+      "winRate": 0.25,
+      "wins": 1
+    }
+  },
+  {
+    "file": "21-sma-cross-20-50-ls.italgo",
+    "tf": "1h",
+    "window": "3m",
+    "bars": 1440,
+    "stats": {
+      "losses": 16,
+      "maxDrawdown": 24.857753999999943,
+      "netPnl": 34.61361600000026,
+      "totalTrades": 30,
+      "winRate": 0.4482758620689655,
+      "wins": 13
+    }
+  },
+  {
+    "file": "22-ema-cross-9-21-ls.italgo",
+    "tf": "1h",
+    "window": "3m",
+    "bars": 1440,
+    "stats": {
+      "losses": 32,
+      "maxDrawdown": 17.153101999999762,
+      "netPnl": 61.379650000000595,
+      "totalTrades": 53,
+      "winRate": 0.38461538461538464,
+      "wins": 20
+    }
+  },
+  {
+    "file": "24-rsi-cross-50-ls.italgo",
+    "tf": "1h",
+    "window": "3m",
+    "bars": 1440,
+    "stats": {
+      "losses": 121,
+      "maxDrawdown": 51.67518999999936,
+      "netPnl": 0.2118530000014971,
+      "totalTrades": 180,
+      "winRate": 0.3240223463687151,
+      "wins": 58
+    }
+  },
+  {
+    "file": "26-supertrend-rsi-ls.italgo",
+    "tf": "1h",
+    "window": "3m",
+    "bars": 1440,
+    "stats": {
+      "losses": 11,
+      "maxDrawdown": 49.35098199999982,
+      "netPnl": 19.113756999999964,
+      "totalTrades": 19,
+      "winRate": 0.3888888888888889,
+      "wins": 7
+    }
+  },
+  {
+    "file": "01-trend-ema-adx-rsi.italgo",
+    "tf": "1h",
+    "window": "1y",
+    "bars": 6000,
+    "stats": {
+      "losses": 17,
+      "maxDrawdown": 56.30225299999972,
+      "netPnl": -44.473912999999754,
+      "totalTrades": 23,
+      "winRate": 0.2608695652173913,
+      "wins": 6
+    }
+  },
+  {
+    "file": "03-breakout-donchian-volume.italgo",
+    "tf": "1h",
+    "window": "1y",
+    "bars": 6000,
+    "stats": {
+      "losses": 44,
+      "maxDrawdown": 79.4807329999997,
+      "netPnl": -57.00835899999976,
+      "totalTrades": 67,
+      "winRate": 0.34328358208955223,
+      "wins": 23
+    }
+  },
+  {
+    "file": "04-macd-stoch-long-short.italgo",
+    "tf": "1h",
+    "window": "1y",
+    "bars": 6000,
+    "stats": {
+      "losses": 56,
+      "maxDrawdown": 62.243476000000044,
+      "netPnl": 20.57049900000095,
+      "totalTrades": 109,
+      "winRate": 0.48148148148148145,
+      "wins": 52
+    }
+  },
+  {
+    "file": "06b-rsi-no-session.italgo",
+    "tf": "1h",
+    "window": "1y",
+    "bars": 6000,
+    "stats": {
+      "losses": 38,
+      "maxDrawdown": 66.21362099999993,
+      "netPnl": -2.598054999998851,
+      "totalTrades": 114,
+      "winRate": 0.6637168141592921,
+      "wins": 75
+    }
+  },
+  {
+    "file": "07-supertrend-di-adx-stack.italgo",
+    "tf": "1h",
+    "window": "1y",
+    "bars": 6000,
+    "stats": {
+      "losses": 74,
+      "maxDrawdown": 103.32491799999985,
+      "netPnl": -39.72252899999944,
+      "totalTrades": 120,
+      "winRate": 0.37815126050420167,
+      "wins": 45
+    }
+  },
+  {
+    "file": "09-sma-cross-20-50.italgo",
+    "tf": "1h",
+    "window": "1y",
+    "bars": 6000,
+    "stats": {
+      "losses": 44,
+      "maxDrawdown": 58.460969999999975,
+      "netPnl": -26.998807999999713,
+      "totalTrades": 65,
+      "winRate": 0.3230769230769231,
+      "wins": 21
+    }
+  },
+  {
+    "file": "10-ema-cross-9-21.italgo",
+    "tf": "1h",
+    "window": "1y",
+    "bars": 6000,
+    "stats": {
+      "losses": 86,
+      "maxDrawdown": 69.75296499999968,
+      "netPnl": -38.40495899999945,
+      "totalTrades": 123,
+      "winRate": 0.3008130081300813,
+      "wins": 37
+    }
+  },
+  {
+    "file": "20-donchian-55.italgo",
+    "tf": "1h",
+    "window": "1y",
+    "bars": 6000,
+    "stats": {
+      "losses": 15,
+      "maxDrawdown": 52.937792999999886,
+      "netPnl": -14.177409999999895,
+      "totalTrades": 24,
+      "winRate": 0.375,
+      "wins": 9
+    }
+  },
+  {
+    "file": "21-sma-cross-20-50-ls.italgo",
+    "tf": "1h",
+    "window": "1y",
+    "bars": 6000,
+    "stats": {
+      "losses": 86,
+      "maxDrawdown": 76.25239599999992,
+      "netPnl": -15.038625999999397,
+      "totalTrades": 131,
+      "winRate": 0.3384615384615385,
+      "wins": 44
+    }
+  },
+  {
+    "file": "22-ema-cross-9-21-ls.italgo",
+    "tf": "1h",
+    "window": "1y",
+    "bars": 6000,
+    "stats": {
+      "losses": 170,
+      "maxDrawdown": 117.41676199999966,
+      "netPnl": -35.74870399999895,
+      "totalTrades": 246,
+      "winRate": 0.30612244897959184,
+      "wins": 75
+    }
+  },
+  {
+    "file": "24-rsi-cross-50-ls.italgo",
+    "tf": "1h",
+    "window": "1y",
+    "bars": 6000,
+    "stats": {
+      "losses": 565,
+      "maxDrawdown": 170.96131399999825,
+      "netPnl": -112.36254499999757,
+      "totalTrades": 782,
+      "winRate": 0.2765685019206146,
+      "wins": 216
+    }
+  },
+  {
+    "file": "26-supertrend-rsi-ls.italgo",
+    "tf": "1h",
+    "window": "1y",
+    "bars": 6000,
+    "stats": {
+      "losses": 61,
+      "maxDrawdown": 108.00611399999997,
+      "netPnl": -49.731387000000154,
+      "totalTrades": 101,
+      "winRate": 0.39,
+      "wins": 39
+    }
+  },
+  {
+    "file": "01-trend-ema-adx-rsi.italgo",
+    "tf": "1h",
+    "window": "all",
+    "bars": 20652,
+    "stats": {
+      "losses": 70,
+      "maxDrawdown": 66.05537499999969,
+      "netPnl": -19.536175999999287,
+      "totalTrades": 98,
+      "winRate": 0.2857142857142857,
+      "wins": 28
+    }
+  },
+  {
+    "file": "03-breakout-donchian-volume.italgo",
+    "tf": "1h",
+    "window": "all",
+    "bars": 20652,
+    "stats": {
+      "losses": 117,
+      "maxDrawdown": 88.32398099999966,
+      "netPnl": 119.49946300000042,
+      "totalTrades": 193,
+      "winRate": 0.39378238341968913,
+      "wins": 76
+    }
+  },
+  {
+    "file": "04-macd-stoch-long-short.italgo",
+    "tf": "1h",
+    "window": "all",
+    "bars": 20652,
+    "stats": {
+      "losses": 195,
+      "maxDrawdown": 225.35945799999968,
+      "netPnl": 96.7742450000024,
+      "totalTrades": 376,
+      "winRate": 0.48,
+      "wins": 180
+    }
+  },
+  {
+    "file": "06b-rsi-no-session.italgo",
+    "tf": "1h",
+    "window": "all",
+    "bars": 20652,
+    "stats": {
+      "losses": 132,
+      "maxDrawdown": 265.0364629999997,
+      "netPnl": -162.33372399999735,
+      "totalTrades": 361,
+      "winRate": 0.6333333333333333,
+      "wins": 228
+    }
+  },
+  {
+    "file": "07-supertrend-di-adx-stack.italgo",
+    "tf": "1h",
+    "window": "all",
+    "bars": 20652,
+    "stats": {
+      "losses": 251,
+      "maxDrawdown": 137.49070399999988,
+      "netPnl": 384.5547530000017,
+      "totalTrades": 436,
+      "winRate": 0.42298850574712643,
+      "wins": 184
+    }
+  },
+  {
+    "file": "09-sma-cross-20-50.italgo",
+    "tf": "1h",
+    "window": "all",
+    "bars": 20652,
+    "stats": {
+      "losses": 140,
+      "maxDrawdown": 73.59950500000002,
+      "netPnl": 129.81507800000102,
+      "totalTrades": 222,
+      "winRate": 0.36936936936936937,
+      "wins": 82
+    }
+  },
+  {
+    "file": "10-ema-cross-9-21.italgo",
+    "tf": "1h",
+    "window": "all",
+    "bars": 20652,
+    "stats": {
+      "losses": 266,
+      "maxDrawdown": 69.75296499999968,
+      "netPnl": 272.5922070000017,
+      "totalTrades": 408,
+      "winRate": 0.3480392156862745,
+      "wins": 142
+    }
+  },
+  {
+    "file": "20-donchian-55.italgo",
+    "tf": "1h",
+    "window": "all",
+    "bars": 20652,
+    "stats": {
+      "losses": 43,
+      "maxDrawdown": 104.77684099999993,
+      "netPnl": 141.75724700000032,
+      "totalTrades": 79,
+      "winRate": 0.45569620253164556,
+      "wins": 36
+    }
+  },
+  {
+    "file": "21-sma-cross-20-50-ls.italgo",
+    "tf": "1h",
+    "window": "all",
+    "bars": 20652,
+    "stats": {
+      "losses": 289,
+      "maxDrawdown": 129.58676799999978,
+      "netPnl": 315.5628570000018,
+      "totalTrades": 444,
+      "winRate": 0.3476297968397291,
+      "wins": 154
+    }
+  },
+  {
+    "file": "22-ema-cross-9-21-ls.italgo",
+    "tf": "1h",
+    "window": "all",
+    "bars": 20652,
+    "stats": {
+      "losses": 539,
+      "maxDrawdown": 117.41676199999972,
+      "netPnl": 599.5669600000035,
+      "totalTrades": 816,
+      "winRate": 0.33865030674846625,
+      "wins": 276
+    }
+  },
+  {
+    "file": "24-rsi-cross-50-ls.italgo",
+    "tf": "1h",
+    "window": "all",
+    "bars": 20652,
+    "stats": {
+      "losses": 1803,
+      "maxDrawdown": 214.58095799999512,
+      "netPnl": 5.819878000014029,
+      "totalTrades": 2593,
+      "winRate": 0.30439814814814814,
+      "wins": 789
+    }
+  },
+  {
+    "file": "26-supertrend-rsi-ls.italgo",
+    "tf": "1h",
+    "window": "all",
+    "bars": 20652,
+    "stats": {
+      "losses": 175,
+      "maxDrawdown": 108.6260519999999,
+      "netPnl": 434.1688300000011,
+      "totalTrades": 314,
+      "winRate": 0.44089456869009586,
+      "wins": 138
+    }
+  },
+  {
+    "file": "01-trend-ema-adx-rsi.italgo",
+    "tf": "1w",
+    "window": "2y",
+    "bars": 104,
+    "stats": {
+      "losses": 0,
+      "maxDrawdown": 0.0,
+      "netPnl": 0.0,
+      "totalTrades": 0,
+      "winRate": 0.0,
+      "wins": 0
+    }
+  },
+  {
+    "file": "03-breakout-donchian-volume.italgo",
+    "tf": "1w",
+    "window": "2y",
+    "bars": 104,
+    "stats": {
+      "losses": 2,
+      "maxDrawdown": 52.291156,
+      "netPnl": -42.88255600000002,
+      "totalTrades": 2,
+      "winRate": 0.0,
+      "wins": 0
+    }
+  },
+  {
+    "file": "04-macd-stoch-long-short.italgo",
+    "tf": "1w",
+    "window": "2y",
+    "bars": 104,
+    "stats": {
+      "losses": 0,
+      "maxDrawdown": 75.64000000000001,
+      "netPnl": -32.92039999999997,
+      "totalTrades": 1,
+      "winRate": 0.0,
+      "wins": 0
+    }
+  },
+  {
+    "file": "06b-rsi-no-session.italgo",
+    "tf": "1w",
+    "window": "2y",
+    "bars": 104,
+    "stats": {
+      "losses": 0,
+      "maxDrawdown": 53.99999999999997,
+      "netPnl": -4.878887999999904,
+      "totalTrades": 2,
+      "winRate": 1.0,
+      "wins": 1
+    }
+  },
+  {
+    "file": "07-supertrend-di-adx-stack.italgo",
+    "tf": "1w",
+    "window": "2y",
+    "bars": 104,
+    "stats": {
+      "losses": 0,
+      "maxDrawdown": 41.44999999999999,
+      "netPnl": 57.92291200000005,
+      "totalTrades": 2,
+      "winRate": 1.0,
+      "wins": 1
+    }
+  },
+  {
+    "file": "09-sma-cross-20-50.italgo",
+    "tf": "1w",
+    "window": "2y",
+    "bars": 104,
+    "stats": {
+      "losses": 0,
+      "maxDrawdown": 75.64000000000001,
+      "netPnl": -49.08201600000001,
+      "totalTrades": 1,
+      "winRate": 0.0,
+      "wins": 0
+    }
+  },
+  {
+    "file": "10-ema-cross-9-21.italgo",
+    "tf": "1w",
+    "window": "2y",
+    "bars": 104,
+    "stats": {
+      "losses": 2,
+      "maxDrawdown": 25.00999999999999,
+      "netPnl": -11.63167500000003,
+      "totalTrades": 2,
+      "winRate": 0.0,
+      "wins": 0
+    }
+  },
+  {
+    "file": "20-donchian-55.italgo",
+    "tf": "1w",
+    "window": "2y",
+    "bars": 104,
+    "stats": {
+      "losses": 0,
+      "maxDrawdown": 0.0,
+      "netPnl": 0.0,
+      "totalTrades": 0,
+      "winRate": 0.0,
+      "wins": 0
+    }
+  },
+  {
+    "file": "21-sma-cross-20-50-ls.italgo",
+    "tf": "1w",
+    "window": "2y",
+    "bars": 104,
+    "stats": {
+      "losses": 1,
+      "maxDrawdown": 92.00403200000002,
+      "netPnl": -61.774785000000065,
+      "totalTrades": 2,
+      "winRate": 0.0,
+      "wins": 0
+    }
+  },
+  {
+    "file": "22-ema-cross-9-21-ls.italgo",
+    "tf": "1w",
+    "window": "2y",
+    "bars": 104,
+    "stats": {
+      "losses": 4,
+      "maxDrawdown": 48.182656000000065,
+      "netPnl": -3.00249000000008,
+      "totalTrades": 5,
+      "winRate": 0.0,
+      "wins": 0
+    }
+  },
+  {
+    "file": "24-rsi-cross-50-ls.italgo",
+    "tf": "1w",
+    "window": "2y",
+    "bars": 104,
+    "stats": {
+      "losses": 6,
+      "maxDrawdown": 99.23550199999994,
+      "netPnl": 7.123802000000126,
+      "totalTrades": 10,
+      "winRate": 0.3333333333333333,
+      "wins": 3
+    }
+  },
+  {
+    "file": "26-supertrend-rsi-ls.italgo",
+    "tf": "1w",
+    "window": "2y",
+    "bars": 104,
+    "stats": {
+      "losses": 0,
+      "maxDrawdown": 75.64000000000001,
+      "netPnl": -2.9173999999999864,
+      "totalTrades": 1,
+      "winRate": 0.0,
+      "wins": 0
+    }
+  },
+  {
+    "file": "01-trend-ema-adx-rsi.italgo",
+    "tf": "1w",
+    "window": "5y",
+    "bars": 258,
+    "stats": {
+      "losses": 1,
+      "maxDrawdown": 109.15439299999994,
+      "netPnl": 23.640900000000045,
+      "totalTrades": 2,
+      "winRate": 0.5,
+      "wins": 1
+    }
+  },
+  {
+    "file": "03-breakout-donchian-volume.italgo",
+    "tf": "1w",
+    "window": "5y",
+    "bars": 258,
+    "stats": {
+      "losses": 2,
+      "maxDrawdown": 95.06005599999997,
+      "netPnl": 59.93273000000002,
+      "totalTrades": 3,
+      "winRate": 0.3333333333333333,
+      "wins": 1
+    }
+  },
+  {
+    "file": "04-macd-stoch-long-short.italgo",
+    "tf": "1w",
+    "window": "5y",
+    "bars": 258,
+    "stats": {
+      "losses": 4,
+      "maxDrawdown": 307.35840199999996,
+      "netPnl": -243.60275199999998,
+      "totalTrades": 6,
+      "winRate": 0.2,
+      "wins": 1
+    }
+  },
+  {
+    "file": "06b-rsi-no-session.italgo",
+    "tf": "1w",
+    "window": "5y",
+    "bars": 258,
+    "stats": {
+      "losses": 1,
+      "maxDrawdown": 145.20621499999996,
+      "netPnl": -87.4601959999999,
+      "totalTrades": 5,
+      "winRate": 0.75,
+      "wins": 3
+    }
+  },
+  {
+    "file": "07-supertrend-di-adx-stack.italgo",
+    "tf": "1w",
+    "window": "5y",
+    "bars": 258,
+    "stats": {
+      "losses": 0,
+      "maxDrawdown": 52.93057799999997,
+      "netPnl": 360.22733500000015,
+      "totalTrades": 5,
+      "winRate": 1.0,
+      "wins": 4
+    }
+  },
+  {
+    "file": "09-sma-cross-20-50.italgo",
+    "tf": "1w",
+    "window": "5y",
+    "bars": 258,
+    "stats": {
+      "losses": 0,
+      "maxDrawdown": 135.89853300000007,
+      "netPnl": 53.59552599999992,
+      "totalTrades": 3,
+      "winRate": 1.0,
+      "wins": 2
+    }
+  },
+  {
+    "file": "10-ema-cross-9-21.italgo",
+    "tf": "1w",
+    "window": "5y",
+    "bars": 258,
+    "stats": {
+      "losses": 2,
+      "maxDrawdown": 49.44704699999994,
+      "netPnl": 142.828773,
+      "totalTrades": 4,
+      "winRate": 0.5,
+      "wins": 2
+    }
+  },
+  {
+    "file": "20-donchian-55.italgo",
+    "tf": "1w",
+    "window": "5y",
+    "bars": 258,
+    "stats": {
+      "losses": 0,
+      "maxDrawdown": 88.17999999999998,
+      "netPnl": 16.57374200000001,
+      "totalTrades": 1,
+      "winRate": 1.0,
+      "wins": 1
+    }
+  },
+  {
+    "file": "21-sma-cross-20-50-ls.italgo",
+    "tf": "1w",
+    "window": "5y",
+    "bars": 258,
+    "stats": {
+      "losses": 2,
+      "maxDrawdown": 193.98706600000017,
+      "netPnl": -4.493007000000176,
+      "totalTrades": 5,
+      "winRate": 0.5,
+      "wins": 2
+    }
+  },
+  {
+    "file": "22-ema-cross-9-21-ls.italgo",
+    "tf": "1w",
+    "window": "5y",
+    "bars": 258,
+    "stats": {
+      "losses": 5,
+      "maxDrawdown": 81.38753600000001,
+      "netPnl": 152.89137900000003,
+      "totalTrades": 8,
+      "winRate": 0.2857142857142857,
+      "wins": 2
+    }
+  },
+  {
+    "file": "24-rsi-cross-50-ls.italgo",
+    "tf": "1w",
+    "window": "5y",
+    "bars": 258,
+    "stats": {
+      "losses": 11,
+      "maxDrawdown": 99.23550199999994,
+      "netPnl": 135.39574000000022,
+      "totalTrades": 20,
+      "winRate": 0.42105263157894735,
+      "wins": 8
+    }
+  },
+  {
+    "file": "26-supertrend-rsi-ls.italgo",
+    "tf": "1w",
+    "window": "5y",
+    "bars": 258,
+    "stats": {
+      "losses": 1,
+      "maxDrawdown": 225.64999999999998,
+      "netPnl": -147.9577,
+      "totalTrades": 2,
+      "winRate": 0.0,
+      "wins": 0
+    }
+  },
+  {
+    "file": "01-trend-ema-adx-rsi.italgo",
+    "tf": "1w",
+    "window": "all",
+    "bars": 258,
+    "stats": {
+      "losses": 1,
+      "maxDrawdown": 109.15439299999994,
+      "netPnl": 23.640900000000045,
+      "totalTrades": 2,
+      "winRate": 0.5,
+      "wins": 1
+    }
+  },
+  {
+    "file": "03-breakout-donchian-volume.italgo",
+    "tf": "1w",
+    "window": "all",
+    "bars": 258,
+    "stats": {
+      "losses": 2,
+      "maxDrawdown": 95.06005599999997,
+      "netPnl": 59.93273000000002,
+      "totalTrades": 3,
+      "winRate": 0.3333333333333333,
+      "wins": 1
+    }
+  },
+  {
+    "file": "04-macd-stoch-long-short.italgo",
+    "tf": "1w",
+    "window": "all",
+    "bars": 258,
+    "stats": {
+      "losses": 4,
+      "maxDrawdown": 307.35840199999996,
+      "netPnl": -243.60275199999998,
+      "totalTrades": 6,
+      "winRate": 0.2,
+      "wins": 1
+    }
+  },
+  {
+    "file": "06b-rsi-no-session.italgo",
+    "tf": "1w",
+    "window": "all",
+    "bars": 258,
+    "stats": {
+      "losses": 1,
+      "maxDrawdown": 145.20621499999996,
+      "netPnl": -87.4601959999999,
+      "totalTrades": 5,
+      "winRate": 0.75,
+      "wins": 3
+    }
+  },
+  {
+    "file": "07-supertrend-di-adx-stack.italgo",
+    "tf": "1w",
+    "window": "all",
+    "bars": 258,
+    "stats": {
+      "losses": 0,
+      "maxDrawdown": 52.93057799999997,
+      "netPnl": 360.22733500000015,
+      "totalTrades": 5,
+      "winRate": 1.0,
+      "wins": 4
+    }
+  },
+  {
+    "file": "09-sma-cross-20-50.italgo",
+    "tf": "1w",
+    "window": "all",
+    "bars": 258,
+    "stats": {
+      "losses": 0,
+      "maxDrawdown": 135.89853300000007,
+      "netPnl": 53.59552599999992,
+      "totalTrades": 3,
+      "winRate": 1.0,
+      "wins": 2
+    }
+  },
+  {
+    "file": "10-ema-cross-9-21.italgo",
+    "tf": "1w",
+    "window": "all",
+    "bars": 258,
+    "stats": {
+      "losses": 2,
+      "maxDrawdown": 49.44704699999994,
+      "netPnl": 142.828773,
+      "totalTrades": 4,
+      "winRate": 0.5,
+      "wins": 2
+    }
+  },
+  {
+    "file": "20-donchian-55.italgo",
+    "tf": "1w",
+    "window": "all",
+    "bars": 258,
+    "stats": {
+      "losses": 0,
+      "maxDrawdown": 88.17999999999998,
+      "netPnl": 16.57374200000001,
+      "totalTrades": 1,
+      "winRate": 1.0,
+      "wins": 1
+    }
+  },
+  {
+    "file": "21-sma-cross-20-50-ls.italgo",
+    "tf": "1w",
+    "window": "all",
+    "bars": 258,
+    "stats": {
+      "losses": 2,
+      "maxDrawdown": 193.98706600000017,
+      "netPnl": -4.493007000000176,
+      "totalTrades": 5,
+      "winRate": 0.5,
+      "wins": 2
+    }
+  },
+  {
+    "file": "22-ema-cross-9-21-ls.italgo",
+    "tf": "1w",
+    "window": "all",
+    "bars": 258,
+    "stats": {
+      "losses": 5,
+      "maxDrawdown": 81.38753600000001,
+      "netPnl": 152.89137900000003,
+      "totalTrades": 8,
+      "winRate": 0.2857142857142857,
+      "wins": 2
+    }
+  },
+  {
+    "file": "24-rsi-cross-50-ls.italgo",
+    "tf": "1w",
+    "window": "all",
+    "bars": 258,
+    "stats": {
+      "losses": 11,
+      "maxDrawdown": 99.23550199999994,
+      "netPnl": 135.39574000000022,
+      "totalTrades": 20,
+      "winRate": 0.42105263157894735,
+      "wins": 8
+    }
+  },
+  {
+    "file": "26-supertrend-rsi-ls.italgo",
+    "tf": "1w",
+    "window": "all",
+    "bars": 258,
+    "stats": {
+      "losses": 1,
+      "maxDrawdown": 225.64999999999998,
+      "netPnl": -147.9577,
+      "totalTrades": 2,
+      "winRate": 0.0,
+      "wins": 0
+    }
+  }
+]

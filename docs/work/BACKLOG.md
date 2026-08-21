@@ -423,10 +423,36 @@ DSL/GraphDTO: `period` integer, constraint `1 ≤ period ≤ max_period` (`max_p
 | **P2** | Прогон 20 скриптов в Desktop engine + ingest → compare | **готово** (`2026-08-21-p2-desktop-corpus`; SBER 1d; ingest 20/20) |
 | **P2.5** | Баланс корпуса по **стороне**: long-only **и** long/short (§7D) | **готово** (26 scripts; 18 LO / 8 LS; session `2026-08-21-c4-side-mode`) |
 | **P2.6** | **Trade-level train (§7E):** trades[] в ingest/сессиях; good/bad; советы блок/period | **готово-ish** (C5+C6: labels + Advisor intervention dataset 20 pairs) |
-| **P3** | Расширить lookback на больше связок / все ТФ | **частично** (C6+C7: 1d/1h/1w windows на топ-5) |
+| **P3** | Расширить lookback на больше связок / все ТФ | **частично+** (C8: 12 scripts × 1d/1h/1w; new interventions) |
+| **P3.5** | **Мульти-инструмент (§7F):** постоянно расширять набор тикеров + датасет | **частично** (C9: SBER+GAZP+LKOH; next +ROSN/GMKN) |
 | **P4** | Новые индикаторы Desktop → lab whitelist (§7B стык) | параллельно |
 
 Корпус скриптов: `it-algo-desktop/docs/work/scripting/samples/ai-train/` (ветка `ai-train`).
+
+---
+
+## 7F. Мульти-инструмент: постоянно расширять покрытие *(обязательно)*
+
+**Проблема:** обучение только на **SBER** даёт переобучение под один тикер. Политика вмешательств и Advisor должны обобщаться.
+
+### Принцип (не разово)
+
+1. **Каждая следующая train-сессия** по возможности добавляет **новые инструменты** (не сужает покрытие).
+2. Параллельно **увеличиваем датасет**: больше пар intervention, больше lookback-ячеек, больше `trades[]`, больше `side_mode` / TF / окон.
+3. В фичах и ANALYTICS явно поле **`symbol`** (и агрегаты per-symbol + cross-symbol).
+4. Promote / «хороший фикс» проверять хотя бы на **2+ тикерах**, если данные есть — иначе помечать `sber_only` / `needs_cross_symbol`.
+
+### Стартовая лестница тикеров (MOEX, расширять)
+
+| Волна | Тикеры | Статус |
+|-------|--------|--------|
+| C5–C8 | SBER | сделано |
+| **C9** | SBER + GAZP + LKOH | текущая |
+| Далее | + ROSN, GMKN, NVTK, TATN, … → фьючерсы / зарубежные | backlog |
+
+Сырые CSV уже в `artifacts/.../multi-indicator-wave/data/raw/MOEX_*`.
+
+**Статус:** принято как постоянное правило обучения; шаг P3.5.
 
 ---
 
@@ -685,6 +711,8 @@ DSL/GraphDTO: `period` integer, constraint `1 ≤ period ≤ max_period` (`max_p
 | 2026-08-21 | **§7D:** обучение/корпус учитывают **long_only** и **long_short** (не только лонг); шаг P2.5 |
 | 2026-08-21 | **§7D P2.5:** twins 21–26 long_short; tagged `side_mode`; C4 session — LS mean_pnl > LO на SBER 1d |
 | 2026-08-21 | **§7E:** обучение на **списке сделок** (good/bad) + улучшения через **блок** или **period**; шаг P2.6 |
+| 2026-08-21 | **§7F / C9:** постоянно расширять инструменты+датасет; multi-symbol train SBER+GAZP+LKOH |
+| 2026-08-21 | **C8:** P3 expand — Donchian/06b fixes; 5 intervention kinds; LOO policy retrain; lookback×12; 28p-* |
 | 2026-08-21 | **C7:** LightGBM intervention policy LOO acc≈0.67 AUC≈0.69; 21 promoted fixes; multi-TF lookback |
 | 2026-08-21 | **C6:** 20 intervention pairs (EMA filter winrate 90%, mean Δ+114); Advisor dataset; lookback top-5 |
 | 2026-08-21 | **C5b FULL_MAP:** Q–Q + heatmap side×family + block ranking + trade labels + improve A/Bs |
