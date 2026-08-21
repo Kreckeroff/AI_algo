@@ -87,7 +87,7 @@
 |------|----------|
 | Файл | `artifacts/agent_loop/sessions/<id>/ANALYTICS.html` (+ `REPORT.md`) |
 | Скрипт | `scripts/build_training_analytics.py` |
-| Эталон | `TRAINING_MAP.html`, `C1_MAP.html` |
+| Эталон | `TRAINING_MAP.html`, `C1_MAP.html`, **`artifacts/agent_loop/TRAINING_UNIVERSE_MAP.html`** (сводная) |
 
 **Содержание отчёта:**
 

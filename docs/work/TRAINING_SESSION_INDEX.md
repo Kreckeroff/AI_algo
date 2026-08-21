@@ -27,6 +27,8 @@
 
 После каждой сессии: `ANALYTICS.html` + compare prev→current + `REPORT.md` / notes.
 
+**Сводная карта всего обучения:** `artifacts/agent_loop/TRAINING_UNIVERSE_MAP.html` (C7→C14 + §7H events; regenerate `scripts/build_training_universe_map.py`).
+
 ---
 
 ## Волна C1…C13 (факт)
