@@ -68,8 +68,8 @@
 - Compare: метрики + graph + **trade_analysis**; запрет разного ТФ/окна.
 - Desktop: только **`ai-train`** — лаборатория обучения (прод UI позже). **§7G деплой policy — backlog.**
 - Цикл обучения: [`AGENT_TRAINING_LOOP.md`](work/AGENT_TRAINING_LOOP.md). Индекс волн: [`TRAINING_SESSION_INDEX.md`](work/TRAINING_SESSION_INDEX.md).
-- **Последняя train-волна: C13** — все ТФ `1m…1w` × 10 equities; ~14k intervention pairs; CV≈0.72/0.80; promotes `33p-*`.
-- **Следующая: C14** — +futures (CNYRUBF/GLDRUBF/IMOEXF), новые intervention kinds; **§7H дивгэп** — P3.7 backlog.
+- **Последняя train-волна: C14** — 10 equities + 3 futures × all TF; ~21.6k pairs; CV≈0.72/0.79; `34p-*`.
+- **Следующая: C15** — ATR SL/TP / remove-filter; **§7H дивгэп** — P3.7 backlog.
 - Export: `python scripts/export_ingest_to_csv.py`
 - Команда **«продолжай обучение»** → следующая C-сессия + ANALYTICS + обновление индекса.
 - Целевой UX (чат, сборщик, dual release): [`STANDALONE_PRODUCT_UX.md`](work/STANDALONE_PRODUCT_UX.md) — после зрелости моделей.

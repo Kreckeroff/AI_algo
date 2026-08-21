@@ -1,0 +1,236 @@
+{
+  "feature_names": [
+    "base_pnl",
+    "base_wr",
+    "base_trades",
+    "base_dd",
+    "good",
+    "bad",
+    "bad_noise",
+    "good_weak",
+    "good_share",
+    "bad_share",
+    "f_\u043f\u0438\u043b\u0430_\u043a\u043e\u0440\u043e\u0442\u043a\u0438\u0435_\u0441\u0434\u0435\u043b\u043a\u0438",
+    "f_\u0441\u0432\u0435\u0440\u0445\u043a\u043e\u0440\u043e\u0442\u043a\u0438\u0435_\u0443\u0434\u0435\u0440\u0436\u0430\u043d\u0438\u044f",
+    "f_\u0441\u0435\u0440\u0438\u044f_\u0443\u0431\u044b\u0442\u043a\u043e\u0432",
+    "f_\u043f\u0435\u0440\u0435\u043a\u043e\u0441_\u0441\u0442\u043e\u0440\u043e\u043d",
+    "f_\u043c\u0430\u043b\u043e_\u0437\u0430\u043a\u0440\u044b\u0442\u044b\u0445_\u0441\u0434\u0435\u043b\u043e\u043a",
+    "regime_trend",
+    "regime_mean_reversion",
+    "regime_breakout",
+    "regime_unknown",
+    "kind_change_period_15x",
+    "kind_change_period_067",
+    "kind_change_period_2x",
+    "kind_add_block_ema",
+    "kind_add_block_adx",
+    "kind_add_block_sma200",
+    "kind_add_block_rsi50",
+    "kind_change_period_05x",
+    "side_long_only",
+    "side_long_short",
+    "side_unknown",
+    "sym_SBER",
+    "sym_GAZP",
+    "sym_LKOH",
+    "sym_ROSN",
+    "sym_GMKN",
+    "sym_NVTK",
+    "sym_TATN",
+    "sym_PLZL",
+    "sym_MGNT",
+    "sym_MTSS",
+    "sym_CNYRUBF",
+    "sym_GLDRUBF",
+    "sym_IMOEXF",
+    "tf_1m",
+    "tf_5m",
+    "tf_10m",
+    "tf_15m",
+    "tf_30m",
+    "tf_1h",
+    "tf_1d",
+    "tf_1w",
+    "is_future"
+  ],
+  "symbols": [
+    "SBER",
+    "GAZP",
+    "LKOH",
+    "ROSN",
+    "GMKN",
+    "NVTK",
+    "TATN",
+    "PLZL",
+    "MGNT",
+    "MTSS",
+    "CNYRUBF",
+    "GLDRUBF",
+    "IMOEXF"
+  ],
+  "timeframes": [
+    "1m",
+    "5m",
+    "10m",
+    "15m",
+    "30m",
+    "1h",
+    "1d",
+    "1w"
+  ],
+  "metrics": {
+    "cv_accuracy": 0.7189321735911909,
+    "cv_auc": 0.7918891454554048,
+    "n": 21614,
+    "loso_1d": {
+      "SBER": {
+        "accuracy": 0.6728971962616822,
+        "auc": 0.7685393258426967,
+        "n": 214
+      },
+      "GAZP": {
+        "accuracy": 0.6728971962616822,
+        "auc": 0.7595338983050848,
+        "n": 214
+      },
+      "LKOH": {
+        "accuracy": 0.6635514018691588,
+        "auc": 0.730622853429871,
+        "n": 214
+      },
+      "ROSN": {
+        "accuracy": 0.6308411214953271,
+        "auc": 0.6999122807017543,
+        "n": 214
+      },
+      "GMKN": {
+        "accuracy": 0.705607476635514,
+        "auc": 0.7892208245981831,
+        "n": 214
+      },
+      "NVTK": {
+        "accuracy": 0.7476635514018691,
+        "auc": 0.820640756302521,
+        "n": 214
+      },
+      "TATN": {
+        "accuracy": 0.705607476635514,
+        "auc": 0.7430989229794551,
+        "n": 214
+      },
+      "PLZL": {
+        "accuracy": 0.6915887850467289,
+        "auc": 0.7250510974851152,
+        "n": 214
+      },
+      "MGNT": {
+        "accuracy": 0.6635514018691588,
+        "auc": 0.7374923333041269,
+        "n": 214
+      },
+      "MTSS": {
+        "accuracy": 0.5934579439252337,
+        "auc": 0.7181413223862346,
+        "n": 214
+      },
+      "CNYRUBF": {
+        "accuracy": 0.6261682242990654,
+        "auc": 0.7203256302521008,
+        "n": 214
+      },
+      "GLDRUBF": {
+        "accuracy": 0.7336448598130841,
+        "auc": 0.7879499217527387,
+        "n": 214
+      },
+      "IMOEXF": {
+        "accuracy": 0.7289719626168224,
+        "auc": 0.7501759324419423,
+        "n": 214
+      }
+    }
+  },
+  "feature_importance_top": [
+    [
+      "base_pnl",
+      393
+    ],
+    [
+      "base_dd",
+      283
+    ],
+    [
+      "bad",
+      164
+    ],
+    [
+      "kind_change_period_05x",
+      161
+    ],
+    [
+      "kind_change_period_067",
+      138
+    ],
+    [
+      "good",
+      118
+    ],
+    [
+      "kind_add_block_adx",
+      116
+    ],
+    [
+      "bad_share",
+      114
+    ],
+    [
+      "bad_noise",
+      113
+    ],
+    [
+      "base_wr",
+      111
+    ],
+    [
+      "base_trades",
+      111
+    ],
+    [
+      "good_share",
+      108
+    ],
+    [
+      "kind_add_block_sma200",
+      89
+    ],
+    [
+      "good_weak",
+      87
+    ],
+    [
+      "sym_GLDRUBF",
+      87
+    ],
+    [
+      "kind_change_period_2x",
+      71
+    ],
+    [
+      "tf_1d",
+      54
+    ],
+    [
+      "kind_add_block_ema",
+      52
+    ],
+    [
+      "sym_LKOH",
+      50
+    ],
+    [
+      "sym_PLZL",
+      47
+    ]
+  ],
+  "label_rule": "delta>0 & dd_ok"
+}

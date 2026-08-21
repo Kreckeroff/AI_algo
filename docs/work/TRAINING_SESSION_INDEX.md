@@ -46,25 +46,26 @@
 | C11 | +TATN+PLZL+MGNT (9) | 1197 ~0.72/0.79 | 31p-* |
 | C12 | +MTSS; RSI50/period×2; 1d+1h; DD-aware | 3740 ~0.70/0.78 | 32p-* |
 | **C13** | **ALL TF 1m…1w × 10 equities** | **14399 ~0.72/0.80** | **33p-*** |
+| **C14** | **+3 futures** × all TF; period×0.5; `is_future` | **21614 ~0.72/0.79** | **34p-*** |
 
-Актуальная модель: `artifacts/.../2026-08-21-c13-all-tf/models/intervention_policy_lgbm.joblib`
+Актуальная модель: `artifacts/.../2026-08-21-c14-futures-expand/models/intervention_policy_lgbm.joblib`
 
 ### Покрытие данных (после C13)
 
 | Класс | Тикеры | ТФ | Примечание |
 |-------|--------|-----|------------|
 | Equities | SBER GAZP LKOH ROSN GMKN NVTK TATN PLZL MGNT MTSS | 1m 5m 10m 15m 30m 1h 1d 1w | ROSN: нет 5m/15m/30m |
-| Futures (сырьё есть) | CNYRUBF GLDRUBF IMOEXF | все 8 | ещё не в train до C14; **без дивгэпа** (§7H control) |
+| Futures | CNYRUBF GLDRUBF IMOEXF | все 8 | **в C14**; **без дивгэпа** (§7H control) |
 
 ### Intervention kinds (текущие)
 
-`change_period_15x` · `change_period_067` · `change_period_2x` · `add_block_ema` · `add_block_adx` · `add_block_sma200` · `add_block_rsi50`
+`change_period_15x` · `change_period_067` · `change_period_2x` · `change_period_05x` · `add_block_ema` · `add_block_adx` · `add_block_sma200` · `add_block_rsi50`
 
 Label better: `ΔPnL > 0` **и** `variant_dd ≤ 1.5 × base_dd`.
 
 ### Следующие шаги (не потерять)
 
-1. **C14:** +фьючерсы (CNYRUBF/GLDRUBF/IMOEXF) на всех ТФ; `asset_class` в фичах; новые kinds (period×0.5 / ATR SL-TP / remove filter).
+1. **C15:** ATR SL/TP / remove-filter kinds; walk-forward по годам.
 2. **P3.7 / §7H:** календарь ex-div + cash adjust на equities; LS без adjust = provisional.
 3. History-window sweep 1d…5y (§7A) — ещё долг.
 4. Walk-forward по годам; больше kinds (SL/TP, remove block).

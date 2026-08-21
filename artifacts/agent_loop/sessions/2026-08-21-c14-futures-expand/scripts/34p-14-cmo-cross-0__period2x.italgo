@@ -1,0 +1,233 @@
+{
+  "version": 1,
+  "meta": {
+    "name": "[cross-sym] CMO Cross 0 period×2",
+    "updatedAt": "2026-08-21T10:42:23Z",
+    "createdAt": "2026-08-21T09:26:05Z",
+    "tags": [
+      "osc",
+      "cmo",
+      "ai-train",
+      "training",
+      "side:long_only",
+      "long_only",
+      "c12",
+      "intervention:change_period_2x",
+      "promoted",
+      "c14",
+      "cross-symbol"
+    ],
+    "side_mode": "long_only",
+    "intervention": {
+      "kind": "change_period_2x",
+      "base": "14-cmo-cross-0.italgo",
+      "factor": 2.0
+    },
+    "cross_symbol": {
+      "symbols_win": [
+        "CNYRUBF",
+        "GLDRUBF",
+        "IMOEXF",
+        "LKOH",
+        "NVTK",
+        "SBER"
+      ],
+      "mean_delta": 262.10503623846085
+    }
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "instrument",
+        "type": "instrument",
+        "position": {
+          "x": 40,
+          "y": 200
+        },
+        "data": {
+          "symbol": "SBER",
+          "instrument_type": "stock",
+          "label": "Инструмент"
+        }
+      },
+      {
+        "id": "close",
+        "type": "source_close",
+        "position": {
+          "x": 260,
+          "y": 200
+        },
+        "data": {
+          "label": "Close"
+        }
+      },
+      {
+        "id": "osc",
+        "type": "indicator_cmo",
+        "position": {
+          "x": 480,
+          "y": 160
+        },
+        "data": {
+          "period": 28,
+          "label": "CMO"
+        }
+      },
+      {
+        "id": "lvl",
+        "type": "constant",
+        "position": {
+          "x": 480,
+          "y": 320
+        },
+        "data": {
+          "value": 0,
+          "label": "0"
+        }
+      },
+      {
+        "id": "cross_up",
+        "type": "logic_cross_up",
+        "position": {
+          "x": 700,
+          "y": 120
+        },
+        "data": {
+          "label": "↑"
+        }
+      },
+      {
+        "id": "cross_dn",
+        "type": "logic_cross_down",
+        "position": {
+          "x": 700,
+          "y": 280
+        },
+        "data": {
+          "label": "↓"
+        }
+      },
+      {
+        "id": "open",
+        "type": "position_open_market",
+        "position": {
+          "x": 920,
+          "y": 120
+        },
+        "data": {
+          "direction": "buy",
+          "qty": 1,
+          "label": "Long"
+        }
+      },
+      {
+        "id": "close_pos",
+        "type": "position_close_market",
+        "position": {
+          "x": 920,
+          "y": 280
+        },
+        "data": {
+          "label": "Close"
+        }
+      },
+      {
+        "id": "chart",
+        "type": "chart",
+        "position": {
+          "x": 700,
+          "y": 440
+        },
+        "data": {
+          "label": "Chart"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e1",
+        "source": "instrument",
+        "target": "close",
+        "sourceHandle": "instrument",
+        "targetHandle": "instrument"
+      },
+      {
+        "id": "e2",
+        "source": "close",
+        "target": "osc",
+        "sourceHandle": "value",
+        "targetHandle": "source"
+      },
+      {
+        "id": "e3",
+        "source": "osc",
+        "target": "cross_up",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "e4",
+        "source": "lvl",
+        "target": "cross_up",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "e5",
+        "source": "osc",
+        "target": "cross_dn",
+        "sourceHandle": "value",
+        "targetHandle": "a"
+      },
+      {
+        "id": "e6",
+        "source": "lvl",
+        "target": "cross_dn",
+        "sourceHandle": "value",
+        "targetHandle": "b"
+      },
+      {
+        "id": "e7",
+        "source": "instrument",
+        "target": "open",
+        "sourceHandle": "instrument",
+        "targetHandle": "instrument"
+      },
+      {
+        "id": "e8",
+        "source": "cross_up",
+        "target": "open",
+        "sourceHandle": "result",
+        "targetHandle": "condition"
+      },
+      {
+        "id": "e9",
+        "source": "open",
+        "target": "close_pos",
+        "sourceHandle": "position",
+        "targetHandle": "position"
+      },
+      {
+        "id": "e10",
+        "source": "cross_dn",
+        "target": "close_pos",
+        "sourceHandle": "result",
+        "targetHandle": "condition"
+      },
+      {
+        "id": "e11",
+        "source": "close",
+        "target": "chart",
+        "sourceHandle": "value",
+        "targetHandle": "series"
+      },
+      {
+        "id": "e12",
+        "source": "osc",
+        "target": "chart",
+        "sourceHandle": "value",
+        "targetHandle": "series"
+      }
+    ]
+  }
+}

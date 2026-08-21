@@ -500,7 +500,7 @@ DSL/GraphDTO: `period` integer, constraint `1 ≤ period ≤ max_period` (`max_p
 | C10 | + ROSN, GMKN, NVTK | сделано |
 | C11 | + TATN, PLZL, MGNT | сделано |
 | C12–C13 | + MTSS (10 equities); C13 = все TF | сделано |
-| **C14** | + CNYRUBF, GLDRUBF, IMOEXF (futures, без дивгэпа) | следующая |
+| **C14** | + CNYRUBF, GLDRUBF, IMOEXF (futures, без дивгэпа) | **сделано** |
 | Далее | + другие equities / зарубежные; §7H cash-adjust | backlog |
 
 Сырые CSV уже в `artifacts/.../multi-indicator-wave/data/raw/MOEX_*`.
@@ -765,6 +765,7 @@ DSL/GraphDTO: `period` integer, constraint `1 ≤ period ≤ max_period` (`max_p
 | 2026-08-21 | **§7D:** обучение/корпус учитывают **long_only** и **long_short** (не только лонг); шаг P2.5 |
 | 2026-08-21 | **§7D P2.5:** twins 21–26 long_short; tagged `side_mode`; C4 session — LS mean_pnl > LO на SBER 1d |
 | 2026-08-21 | **§7E:** обучение на **списке сделок** (good/bad) + улучшения через **блок** или **period**; шаг P2.6 |
+| 2026-08-21 | **C14:** +futures CNYRUBF/GLDRUBF/IMOEXF × all TF; period×0.5; pairs 21614; CV≈0.72/0.79; 34p-*; §7H control |
 | 2026-08-21 | **TRAINING_SESSION_INDEX:** живой индекс C1–C13 + покрытие TF/тикеров/kinds; handoff/AGENTS синхронизированы |
 | 2026-08-21 | **§7H / P3.7:** дивгэп на акциях/индексе — шорт не зарабатывает гэп, дивиденд списывают; дообучение + cash adjust |
 | 2026-08-21 | **C13:** ALL TF 1m…1w × 10 equities; pairs 14399; CV≈0.72/0.80; 33p-*; coverage heatmap |
