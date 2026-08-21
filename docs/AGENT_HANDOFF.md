@@ -4,7 +4,7 @@
 |------|----------|
 | **Назначение** | Стартовая точка для нового чата с агентом |
 | **Обновлено** | 2026-08-21 |
-| **API** | `uvicorn ai_algo.app:app --port 8090` · intents: compare_scripts, signal · pytest green |
+| **API** | `uvicorn ai_algo.app:app --port 8090` · intents: compare_scripts (+ trade_analysis), signal |
 | **Репо** | `Kreckeroff/AI_algo` |
 | **Путь** | `/Users/kreckeroff/Fintech (startup)/AI_algo` |
 | **Ветка** | `main` |
@@ -28,7 +28,7 @@
 | Репо | Путь | GitHub | Роль |
 |------|------|--------|------|
 | **AI_algo** | `…/AI_algo` | `Kreckeroff/AI_algo` | спеки, обучение, эксперименты |
-| **it-algo-desktop** | `…/it-algo-desktop` | `Kreckeroff/it-algo-desktop` | UI + engine + интеграция |
+| **it-algo-desktop** | `…/it-algo-desktop` | `Kreckeroff/it-algo-desktop` | UI + engine + интеграция (**AI только ветка `ai-train`**) |
 | **it-algo-site** | `…/it-algo-site` | `Kreckeroff/it-algo-site` | квоты / API |
 | **Obsidian** | `…/мое хранилище/projects/ai-algo/` | — | личное зеркало доков |
 
@@ -50,20 +50,23 @@
 | Контракты с Desktop | `docs/PRODUCT_BOUNDARY.md`, `docs/work/platform/INTEGRATION_INTERFACES.md` |
 | План действий | `docs/superpowers/plans/2026-08-21-ai-algo-roadmap.md` |
 | Модули продукта | `docs/PRODUCT_VISION.md` |
-| Шаблон SA | `docs/templates/FEATURE_SA_SPEC_TEMPLATE.md` |
+| Разбор сделок | `src/ai_algo/domain/trade_analysis.py` |
 
 ---
 
-## 3. Текущее состояние (2026-08-20)
+## 3. Текущее состояние (2026-08-21)
 
-- Репозиторий создан, **docs-first**.
-- Зафиксированы: модули AI, must-have сравнение версий, композиция индикаторов, два обучения A/B, CPU-эксперимент.
-- Кода моделей пока нет — только документация и каркас `experiments/`.
-- Зафиксированы граница продукта и черновик **Integration Interfaces** (inference / ingest / train; export vs dev).
-- Следующие кандидаты на спеку: OpenAPI/`AI-PLATFORM`, `AI-COMPOSE-DSL`, `AI-SCRIPT-COMPARE`, датасет для `AI-SIGNAL-CPU`.
+- FastAPI: health, capabilities, ingest (RAM), infer `compare_scripts` + `signal`.
+- Compare: метрики + graph notes + **`trade_analysis`** (пила / streak / sides / режим скрипта).
+- Desktop интеграция — ветка **`ai-train`** (не `main` прода): compare UI, auto-ingest, samples.
+- Следующее: авто-бэктест bridge (Desktop orchestrates dual backtest), затем `build_script`.
+
+**Данные сделок в Desktop:**
+- Бэктест: `BacktestSnapshot.trades` (уже в UI статистики).
+- Брокер: Finam/Tinkoff history SQLite (`get_finam_trades_history`) — для Advisor позже.
 
 ---
 
 ## 4. Открытые продуктовые вопросы
 
-См. конец [`docs/work/BACKLOG.md`](work/BACKLOG.md) (глубина вложенности, whitelist, определение тренда, где живёт AI).
+См. конец [`docs/work/BACKLOG.md`](work/BACKLOG.md).

@@ -117,20 +117,24 @@ sequenceDiagram
 
 | Поле | Описание |
 |------|----------|
-| `before` | `{ graph?, backtest_metrics, run_meta }` |
+| `before` | `{ graph?, backtest_metrics, trades?, run_meta }` |
 | `after` | то же |
 | `align` | период, symbol, комиссия — должны совпадать |
 
 `backtest_metrics` (минимум): `pnl`, `max_dd`, `winrate`, `trades`, `sharpe?`, …
 
+`trades[]` (рекомендуется): закрытые сделки бэктеста — `entryTime`, `exitTime`, `side`, `qty`, `entryPrice`, `exitPrice`, `pnl`, `barsHeld`.  
+AI разбирает паттерны (пила, серии убытков, перекос long/short) и даёт советы с учётом режима скрипта (тренд / MR / breakout).
+
 **Выход:**
 
 | Поле | Описание |
 |------|----------|
-| `verdict` | `better\|worse\|mixed` |
+| `verdict` | `better\|worse\|mixed\|unchanged` |
 | `metrics_diff` | посчитанный diff |
+| `trade_analysis` | findings + suggestions по сделкам |
 | `commentary` | текст |
-| `suggestions[]` | 1–3 совета с опорой на метрики |
+| `suggestions[]` | советы с опорой на метрики **и** сделки |
 
 ### 4.3 `advise` — портфель / скрипт
 

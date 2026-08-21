@@ -6,6 +6,7 @@ from fastapi import APIRouter
 from pydantic import BaseModel, Field
 
 from ai_algo.domain.compare import commentary, graph_change_notes, verdict_from_diff
+from ai_algo.domain.trade_analysis import analyze_trades
 from ai_algo.models.loader import predict_signal
 
 router = APIRouter(tags=["infer"])
@@ -58,7 +59,16 @@ def _compare(payload: dict) -> dict:
     before_payload = payload.get("before") or {}
     after_payload = payload.get("after") or {}
     graph_notes = graph_change_notes(before_payload.get("graph"), after_payload.get("graph"))
-    text = commentary(verdict, diff, graph_notes)
+
+    # Prefer after (current) trades; fall back to before
+    trades = after_payload.get("trades") or before_payload.get("trades")
+    graph_for_regime = after_payload.get("graph") or before_payload.get("graph")
+    trade_report = analyze_trades(trades if isinstance(trades, list) else None, graph_nodes=graph_for_regime)
+    for tip in trade_report.get("suggestions") or []:
+        if tip not in suggestions:
+            suggestions.append(tip)
+
+    text = commentary(verdict, diff, graph_notes, trade_report=trade_report)
     for note in graph_notes[:2]:
         suggestions.append("Смотри изменение: " + note)
 
@@ -72,8 +82,9 @@ def _compare(payload: dict) -> dict:
             "graph_changes": graph_notes,
             "before_metrics": before,
             "after_metrics": after,
+            "trade_analysis": trade_report,
             "commentary": text,
-            "suggestions": suggestions[:5],
+            "suggestions": suggestions[:6],
         },
         "model": {"id": "compare-rules-v1", "kind": "rules"},
     }

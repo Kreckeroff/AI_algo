@@ -78,7 +78,12 @@ _VERDICT_RU = {
 }
 
 
-def commentary(verdict: str, diff: Dict[str, float], graph_notes: Optional[List[str]] = None) -> str:
+def commentary(
+    verdict: str,
+    diff: Dict[str, float],
+    graph_notes: Optional[List[str]] = None,
+    trade_report: Optional[dict] = None,
+) -> str:
     label = _VERDICT_RU.get(verdict, verdict)
     parts = [
         "Вердикт: {v}.".format(v=label),
@@ -95,6 +100,14 @@ def commentary(verdict: str, diff: Dict[str, float], graph_notes: Optional[List[
         parts.append("Изменения блоков: " + "; ".join(graph_notes) + ".")
     elif verdict == "unchanged":
         parts.append("Снимка отличий графа нет — снова нажмите «Запомнить» на старой версии, затем меняйте блоки.")
+    if trade_report and trade_report.get("findings"):
+        parts.append(
+            "Разбор сделок ({regime}, n={n}): {f}.".format(
+                regime=trade_report.get("regime") or "?",
+                n=trade_report.get("trade_count") or 0,
+                f=", ".join(trade_report.get("findings") or []),
+            )
+        )
     return " ".join(parts)
 
 
