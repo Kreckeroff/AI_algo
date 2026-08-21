@@ -425,9 +425,25 @@ DSL/GraphDTO: `period` integer, constraint `1 ≤ period ≤ max_period` (`max_p
 | **P2.6** | **Trade-level train (§7E):** trades[] в ingest/сессиях; good/bad; советы блок/period | **готово-ish** (C5+C6: labels + Advisor intervention dataset 20 pairs) |
 | **P3** | Расширить lookback на больше связок / все ТФ | **частично+** (C8: 12 scripts × 1d/1h/1w; new interventions) |
 | **P3.5** | **Мульти-инструмент (§7F):** постоянно расширять набор тикеров + датасет | **частично++** (C11: 9 tickers +TATN/PLZL/MGNT) |
+| **P3.6** | **Качество модели «в гений»** — глубина датасета / вмешательств / TF | **в работе** (C12: 3740 pairs, 1d+1h, DD-aware) |
 | **P4** | Новые индикаторы Desktop → lab whitelist (§7B стык) | параллельно |
+| **P5** | Inference: policy → Advisor (Desktop **или** hosting) + чтение действий юзера | **backlog** (не сейчас) |
 
 Корпус скриптов: `it-algo-desktop/docs/work/scripting/samples/ai-train/` (ветка `ai-train`).
+
+---
+
+## 7G. Деплой policy / Advisor — пока backlog *(решение 2026-08-21)*
+
+**Сейчас не делаем:** вшивать intervention policy в IT Algo Desktop.
+
+**Открытые варианты позже:** hosting / in-Desktop / гибрид.
+
+**Целевое (backlog):** ИИ постоянно читает изменения графа и действия пользователя и предлагает вмешательства.
+
+**Сейчас:** фокус — **качество модели** (P3.6), без блокировки на UX-интеграции.
+
+**Статус:** отложено; обучение продолжаем.
 
 ---
 
@@ -711,6 +727,8 @@ DSL/GraphDTO: `period` integer, constraint `1 ≤ period ≤ max_period` (`max_p
 | 2026-08-21 | **§7D:** обучение/корпус учитывают **long_only** и **long_short** (не только лонг); шаг P2.5 |
 | 2026-08-21 | **§7D P2.5:** twins 21–26 long_short; tagged `side_mode`; C4 session — LS mean_pnl > LO на SBER 1d |
 | 2026-08-21 | **§7E:** обучение на **списке сделок** (good/bad) + улучшения через **блок** или **period**; шаг P2.6 |
+| 2026-08-21 | **C12:** quality push — 10 tickers ×1d/1h; 3740 pairs; DD-aware; RSI50/period×2; 32p-*; CV≈0.70/0.78 |
+| 2026-08-21 | **§7G:** Desktop wire / hosting / live user-action AI — backlog; приоритет = качество модели (P3.6) |
 | 2026-08-21 | **C11:** 9-symbol train; pairs 1197; LOO≈0.72/0.79; 31p-* ≥4 tickers; FULL_MAP |
 | 2026-08-21 | **C10:** 6-symbol train; pairs 798; LOO acc≈0.72 AUC≈0.79; 30p-* ≥3 tickers; FULL_MAP Q–Q/heatmap |
 | 2026-08-21 | **§7F / C9:** постоянно расширять инструменты+датасет; multi-symbol train SBER+GAZP+LKOH |

@@ -1,0 +1,456 @@
+{
+  "session": "2026-08-21-c12-quality-push",
+  "symbols": [
+    "SBER",
+    "GAZP",
+    "LKOH",
+    "ROSN",
+    "GMKN",
+    "NVTK",
+    "TATN",
+    "PLZL",
+    "MGNT",
+    "MTSS"
+  ],
+  "timeframes": [
+    "1d",
+    "1h"
+  ],
+  "n_pairs": 3740,
+  "n_better": 1878,
+  "model": {
+    "cv_accuracy": 0.698663101604278,
+    "cv_auc": 0.7796848350909222,
+    "n": 3740,
+    "loso_1d": {
+      "SBER": {
+        "accuracy": 0.6631016042780749,
+        "auc": 0.7629672897196261,
+        "n": 187
+      },
+      "GAZP": {
+        "accuracy": 0.679144385026738,
+        "auc": 0.7647196261682243,
+        "n": 187
+      },
+      "LKOH": {
+        "accuracy": 0.6149732620320856,
+        "auc": 0.7122389509470617,
+        "n": 187
+      },
+      "ROSN": {
+        "accuracy": 0.6577540106951871,
+        "auc": 0.7453671928620453,
+        "n": 187
+      },
+      "GMKN": {
+        "accuracy": 0.6898395721925134,
+        "auc": 0.7764302059496568,
+        "n": 187
+      },
+      "NVTK": {
+        "accuracy": 0.7433155080213903,
+        "auc": 0.8448867536032943,
+        "n": 187
+      },
+      "TATN": {
+        "accuracy": 0.6737967914438503,
+        "auc": 0.7475284231339595,
+        "n": 187
+      },
+      "PLZL": {
+        "accuracy": 0.6737967914438503,
+        "auc": 0.7707896575821104,
+        "n": 187
+      },
+      "MGNT": {
+        "accuracy": 0.6310160427807486,
+        "auc": 0.7578947368421053,
+        "n": 187
+      },
+      "MTSS": {
+        "accuracy": 0.6149732620320856,
+        "auc": 0.6895207521210732,
+        "n": 187
+      }
+    }
+  },
+  "kind_stats": {
+    "add_block_ema": {
+      "n": 540,
+      "wins": 328,
+      "sum_delta": 146547.80382688827,
+      "mean_delta": 271.38482190164495,
+      "winrate": 0.6074074074074074
+    },
+    "change_period_067": {
+      "n": 540,
+      "wins": 257,
+      "sum_delta": -32819.316916548065,
+      "mean_delta": -60.77651280842234,
+      "winrate": 0.4759259259259259
+    },
+    "change_period_15x": {
+      "n": 540,
+      "wins": 265,
+      "sum_delta": 27291.447750591815,
+      "mean_delta": 50.53971805665151,
+      "winrate": 0.49074074074074076
+    },
+    "change_period_2x": {
+      "n": 540,
+      "wins": 247,
+      "sum_delta": 28613.044058612,
+      "mean_delta": 52.98711862705925,
+      "winrate": 0.45740740740740743
+    },
+    "add_block_rsi50": {
+      "n": 540,
+      "wins": 253,
+      "sum_delta": 139175.99887710155,
+      "mean_delta": 257.7333312538918,
+      "winrate": 0.4685185185185185
+    },
+    "add_block_sma200": {
+      "n": 540,
+      "wins": 323,
+      "sum_delta": 172887.96057562798,
+      "mean_delta": 320.1628899548666,
+      "winrate": 0.5981481481481481
+    },
+    "add_block_adx": {
+      "n": 500,
+      "wins": 205,
+      "sum_delta": -17808.401702620173,
+      "mean_delta": -35.61680340524035,
+      "winrate": 0.41
+    }
+  },
+  "per_symbol_tf": {
+    "SBER": {
+      "1d": {
+        "n": 187,
+        "better": 107,
+        "mean_delta": 33.12898027774118
+      },
+      "1h": {
+        "n": 187,
+        "better": 72,
+        "mean_delta": -13.819742051188525
+      }
+    },
+    "GAZP": {
+      "1d": {
+        "n": 187,
+        "better": 107,
+        "mean_delta": 25.845777971940425
+      },
+      "1h": {
+        "n": 187,
+        "better": 79,
+        "mean_delta": 1.3892784478821665
+      }
+    },
+    "LKOH": {
+      "1d": {
+        "n": 187,
+        "better": 116,
+        "mean_delta": 894.0010324584906
+      },
+      "1h": {
+        "n": 187,
+        "better": 86,
+        "mean_delta": 121.33259533949035
+      }
+    },
+    "ROSN": {
+      "1d": {
+        "n": 187,
+        "better": 94,
+        "mean_delta": 47.79911664646657
+      },
+      "1h": {
+        "n": 187,
+        "better": 104,
+        "mean_delta": 7.467390669683173
+      }
+    },
+    "GMKN": {
+      "1d": {
+        "n": 187,
+        "better": 95,
+        "mean_delta": 9.492240175864495
+      },
+      "1h": {
+        "n": 187,
+        "better": 77,
+        "mean_delta": -5.209261978683753
+      }
+    },
+    "NVTK": {
+      "1d": {
+        "n": 187,
+        "better": 94,
+        "mean_delta": 115.57647834208005
+      },
+      "1h": {
+        "n": 187,
+        "better": 97,
+        "mean_delta": 42.691649620216346
+      }
+    },
+    "TATN": {
+      "1d": {
+        "n": 187,
+        "better": 68,
+        "mean_delta": -25.43456056884405
+      },
+      "1h": {
+        "n": 187,
+        "better": 108,
+        "mean_delta": 103.10592867747454
+      }
+    },
+    "PLZL": {
+      "1d": {
+        "n": 187,
+        "better": 81,
+        "mean_delta": -5.38014076741187
+      },
+      "1h": {
+        "n": 187,
+        "better": 89,
+        "mean_delta": 33.76914779216453
+      }
+    },
+    "MGNT": {
+      "1d": {
+        "n": 187,
+        "better": 95,
+        "mean_delta": 352.79640019168477
+      },
+      "1h": {
+        "n": 187,
+        "better": 117,
+        "mean_delta": 732.9626432547633
+      }
+    },
+    "MTSS": {
+      "1d": {
+        "n": 187,
+        "better": 89,
+        "mean_delta": -1.1985505306532125
+      },
+      "1h": {
+        "n": 187,
+        "better": 103,
+        "mean_delta": 10.370956831123928
+      }
+    }
+  },
+  "n_stable_cross": 53,
+  "n_promoted": 53,
+  "label_rule": "delta>0 & dd_ok",
+  "top20_by_score": [
+    {
+      "entry": "LKOH:1d:04-macd-stoch-long-short.italgo",
+      "filter": "add_block_adx",
+      "median_pnl": 7423.893050000003,
+      "mean_pnl": 7322.841650000004,
+      "mean_wr": 0.4,
+      "mean_dd": 1669.5,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "LKOH:1d:04-macd-stoch-long-short.italgo",
+      "filter": "add_block_sma200",
+      "median_pnl": 6703.552150000002,
+      "mean_pnl": 6602.500750000003,
+      "mean_wr": 0.375,
+      "mean_dd": 2174.2366,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "MGNT:1d:23-tema-cross-10-30-ls.italgo",
+      "filter": "add_block_rsi50",
+      "median_pnl": 6556.891899999995,
+      "mean_pnl": 6159.225150000001,
+      "mean_wr": 0.375,
+      "mean_dd": 3607.7597000000005,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "LKOH:1d:23-tema-cross-10-30-ls.italgo",
+      "filter": "add_block_sma200",
+      "median_pnl": 6422.5192999999945,
+      "mean_pnl": 5174.422900000004,
+      "mean_wr": 0.5,
+      "mean_dd": 1867.7617999999966,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "LKOH:1h:25-momentum-cross-0-ls.italgo",
+      "filter": "change_period_15x",
+      "median_pnl": 5995.357799999945,
+      "mean_pnl": 2708.8577000002133,
+      "mean_wr": 0.33357988165680474,
+      "mean_dd": 2182.7095999999674,
+      "n": 1,
+      "regime": "unknown"
+    },
+    {
+      "entry": "MGNT:1h:23-tema-cross-10-30-ls.italgo",
+      "filter": "add_block_rsi50",
+      "median_pnl": 5980.555699999949,
+      "mean_pnl": 5110.212200000051,
+      "mean_wr": 0.3491271820448878,
+      "mean_dd": 1245.3038999999972,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "MGNT:1d:23-tema-cross-10-30-ls.italgo",
+      "filter": "add_block_sma200",
+      "median_pnl": 5976.300299999995,
+      "mean_pnl": 5578.633550000001,
+      "mean_wr": 0.39285714285714285,
+      "mean_dd": 3799.0388000000003,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "LKOH:1h:25-momentum-cross-0-ls.italgo",
+      "filter": "change_period_2x",
+      "median_pnl": 5963.185099999879,
+      "mean_pnl": 2676.685000000147,
+      "mean_wr": 0.3298791018998273,
+      "mean_dd": 2797.486999999952,
+      "n": 1,
+      "regime": "unknown"
+    },
+    {
+      "entry": "LKOH:1d:04-macd-stoch-long-short.italgo",
+      "filter": "add_block_rsi50",
+      "median_pnl": 5779.483350000001,
+      "mean_pnl": 5678.431950000002,
+      "mean_wr": 0.625,
+      "mean_dd": 2144.5,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "MGNT:1h:25-momentum-cross-0-ls.italgo",
+      "filter": "add_block_sma200",
+      "median_pnl": 5423.106899999913,
+      "mean_pnl": 5986.780100000064,
+      "mean_wr": 0.31846153846153846,
+      "mean_dd": 1430.6758999999875,
+      "n": 1,
+      "regime": "unknown"
+    },
+    {
+      "entry": "LKOH:1d:24-rsi-cross-50-ls.italgo",
+      "filter": "change_period_2x",
+      "median_pnl": 5342.481399999992,
+      "mean_pnl": 7009.4484000000075,
+      "mean_wr": 0.4,
+      "mean_dd": 1625.394999999995,
+      "n": 1,
+      "regime": "mean_reversion"
+    },
+    {
+      "entry": "MGNT:1h:19-bb-rsi-mean-reversion-v2.italgo",
+      "filter": "add_block_rsi50",
+      "median_pnl": 5302.170149999991,
+      "mean_pnl": 0.0,
+      "mean_wr": 0.0,
+      "mean_dd": 0.0,
+      "n": 1,
+      "regime": "mean_reversion"
+    },
+    {
+      "entry": "LKOH:1d:04-macd-stoch-long-short.italgo",
+      "filter": "add_block_ema",
+      "median_pnl": 5300.718000000002,
+      "mean_pnl": 5199.666600000002,
+      "mean_wr": 0.3333333333333333,
+      "mean_dd": 2174.2366,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "MGNT:1d:21-sma-cross-20-50-ls.italgo",
+      "filter": "add_block_adx",
+      "median_pnl": 5142.5706,
+      "mean_pnl": 5651.990799999999,
+      "mean_wr": 0.5,
+      "mean_dd": 2677.9593000000004,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "MGNT:1h:19-bb-rsi-mean-reversion-v2.italgo",
+      "filter": "add_block_sma200",
+      "median_pnl": 5133.062599999994,
+      "mean_pnl": -169.10754999999745,
+      "mean_wr": 0.6,
+      "mean_dd": 998.7742000000007,
+      "n": 1,
+      "regime": "mean_reversion"
+    },
+    {
+      "entry": "MGNT:1h:25-momentum-cross-0-ls.italgo",
+      "filter": "add_block_rsi50",
+      "median_pnl": 5070.076899999929,
+      "mean_pnl": 5633.75010000008,
+      "mean_wr": 0.3488095238095238,
+      "mean_dd": 1227.6630999999852,
+      "n": 1,
+      "regime": "unknown"
+    },
+    {
+      "entry": "MGNT:1h:19-bb-rsi-mean-reversion-v2.italgo",
+      "filter": "add_block_ema",
+      "median_pnl": 5068.8082999999915,
+      "mean_pnl": -233.36184999999978,
+      "mean_wr": 0.5,
+      "mean_dd": 586.0,
+      "n": 1,
+      "regime": "mean_reversion"
+    },
+    {
+      "entry": "MGNT:1d:04-macd-stoch-long-short.italgo",
+      "filter": "change_period_067",
+      "median_pnl": 5068.7261,
+      "mean_pnl": 1257.5166000000036,
+      "mean_wr": 0.3333333333333333,
+      "mean_dd": 3870.3886999999977,
+      "n": 1,
+      "regime": "trend"
+    },
+    {
+      "entry": "LKOH:1d:25-momentum-cross-0-ls.italgo",
+      "filter": "add_block_sma200",
+      "median_pnl": 5033.219599999982,
+      "mean_pnl": 4980.0764000000145,
+      "mean_wr": 0.3333333333333333,
+      "mean_dd": 2733.3525999999974,
+      "n": 1,
+      "regime": "unknown"
+    },
+    {
+      "entry": "LKOH:1d:07-supertrend-di-adx-stack.italgo",
+      "filter": "add_block_sma200",
+      "median_pnl": 4939.6015,
+      "mean_pnl": 3243.6257000000005,
+      "mean_wr": 0.3888888888888889,
+      "mean_dd": 3346.277,
+      "n": 1,
+      "regime": "trend"
+    }
+  ]
+}
